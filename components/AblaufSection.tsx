@@ -2,17 +2,17 @@ import { Reveal } from './Reveal';
 
 const STEPS = [
   {
-    num: 'i',
+    num: 'I',
     title: 'Kennenlernen',
     text: 'Ein erstes Gespräch — telefonisch oder bei Ihnen zu Hause. Wir hören zu und klären, was wirklich gebraucht wird.',
   },
   {
-    num: 'ii',
+    num: 'II',
     title: 'Planung',
     text: 'Gemeinsam mit Ihnen erstellen wir ein passgenaues Pflege- und Begleitkonzept — flexibel, jederzeit anpassbar.',
   },
   {
-    num: 'iii',
+    num: 'III',
     title: 'Begleitung',
     text: 'Ein kleines, festes Team begleitet Sie. Mit regelmäßigem Austausch und einer Person, die immer ansprechbar ist.',
   },
@@ -35,7 +35,7 @@ export function AblaufSection() {
         {STEPS.map((s, i) => (
           <Reveal key={s.num} delay={((i + 1) as 1 | 2 | 3)}>
             <div className="text-center">
-              <div className="font-serif text-5xl text-gold-deep italic">{s.num}</div>
+              <div className="font-serif text-6xl font-light text-gold-deep tracking-wide">{s.num}</div>
               <h3 className="mt-4 font-serif text-2xl font-medium text-anthracite">{s.title}</h3>
               <p className="mt-3 text-[15px] leading-relaxed text-anthracite-soft">{s.text}</p>
             </div>
