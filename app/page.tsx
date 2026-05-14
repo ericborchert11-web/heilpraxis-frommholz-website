@@ -4,6 +4,7 @@ import { LeistungenGrid } from '@/components/LeistungenGrid';
 import { HaltungSection } from '@/components/HaltungSection';
 import { Testimonials } from '@/components/Testimonials';
 import { AblaufSection } from '@/components/AblaufSection';
+import { KontaktSection } from '@/components/KontaktSection';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <HaltungSection />
       <Testimonials />
       <AblaufSection />
+      <KontaktSection />
     </>
   );
 }
