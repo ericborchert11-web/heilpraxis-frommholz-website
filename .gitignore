@@ -47,6 +47,9 @@ web_modules/
 # TypeScript cache
 *.tsbuildinfo
 
+# Next.js auto-generated TS reference (flips between dev/build modes)
+next-env.d.ts
+
 # Optional npm cache directory
 .npm
 
