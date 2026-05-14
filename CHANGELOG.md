@@ -2,6 +2,32 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [SEO Welle 3] – 2026-05-14
+
+Dritte (und letzte) Welle des SEO-Mega-Briefings: vollständige lokale SEO-Abdeckung über 11 Stadtteil-Seiten + 5 Recruiting-Seiten. Damit ist das Briefing inhaltlich abgearbeitet.
+
+### Drin
+
+- **`/standorte` Hub + 11 Detail-Seiten**: Moabit (Hauptstandort), Tiergarten, Berlin-Mitte, Hansaviertel, Charlottenburg, Wilmersdorf, Westend, Grunewald, Zehlendorf, Dahlem, Schmargendorf. Pro Standort: Schwerpunkt-Beschreibung, Krankenhäuser, Anfahrtszeit, Stadtteil-FAQs, Service-Schema mit `areaServed`.
+- **`/karriere` Hub + 5 Detail-Seiten**: Pflegejob ohne Schichtdienst, Pflege ohne Zeitdruck, Pflege ohne körperliche Belastung, In der Rente weiterarbeiten, Bezahltes Ehrenamt (Sitzwachen).
+- **Daten**: `lib/standorte.ts` (11 Einträge mit PLZ, Geo, Bezirks-Zuordnung, vollem Detail-Content), `lib/karriere.ts` (5 Recruiting-Einträge).
+- **Routen-Konflikt aufgelöst**: `lib/bezirke.ts` entfernt (12 Verwaltungsbezirke, Footer linkte auf 404-`/pflege-in-{slug}`-Routen). Stattdessen 11 Ortsteile aus dem Briefing — keyword-stärker.
+- **Footer aktualisiert**: rechte Spalte heißt jetzt „Pflege in Ihrem Kiez", listet 11 Ortsteile + Link zum Hub. Karriere-Link in der Bottom-Nav führt jetzt auf eine echte Seite, nicht mehr 404.
+- **Sitemap auf 35 URLs**: Startseite, 4 Hubs, 8 Money-Pages, 8 Themen, 11 Standorte, 5 Karriere, 3 Rechtsseiten.
+
+### Briefing-Konflikt: 12 Bezirke → 11 Ortsteile
+
+`lib/bezirke.ts` listete die 12 Berliner Verwaltungsbezirke (`mitte`, `charlottenburg-wilmersdorf`, `pankow`, …). Briefing definiert stattdessen 11 Ortsteile/Quartiere (`moabit`, `wilmersdorf`, `grunewald` separat usw.) für SEO. Bezirks-Datei ersatzlos gestrichen, Footer und alle Verweise auf das Ortsteil-Modell umgestellt. Die alten `/pflege-in-{bezirk}`-Routen waren ohnehin 404, niemand verliert echten Traffic.
+
+### Nicht drin (bewusst)
+
+- Karten-Komponente auf `/standorte` (Briefing schlägt Leaflet + OpenStreetMap vor) — vertagt, weil sie eine Client-Komponente + DSGVO-Check + Map-Tile-Subkosten braucht; aktueller Hub mit gruppierter Liste reicht für SEO.
+- Hero-Sektion-Umbau (TEIL 7.2 voll) — Hero-Komponente bleibt unangetastet, weil sie mit dem Team-Foto kuratiert ist; nur die Page-Title-Default-Variante wurde in Welle 2 angepasst.
+- OG-Default-Bild — weiterhin offen
+- Berufshaftpflicht-Versicherer im Impressum — weiterhin als `[wird nachgereicht]` markiert
+
+---
+
 ## [SEO Welle 2] – 2026-05-14
 
 Zweite Welle des SEO-Mega-Briefings: alle 8 Money-Pages haben jetzt Voll-Inhalt, der komplette Themen-Hub mit 8 informativen Seiten ist live, Footer hat eine Themen-Spalte, Startseiten-Title ist keyword-stärker.

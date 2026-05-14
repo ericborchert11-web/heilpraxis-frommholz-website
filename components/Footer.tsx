@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { BUSINESS, SITE } from '@/lib/site-config';
-import { BEZIRKE } from '@/lib/bezirke';
+import { STANDORTE } from '@/lib/standorte';
 import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
 import { THEMEN } from '@/lib/themen';
 
@@ -71,16 +71,21 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">Pflege in Ihrem Bezirk</h4>
+          <h4 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">Pflege in Ihrem Kiez</h4>
           <ul className="list-none grid grid-cols-2 gap-x-4 gap-y-2">
-            {BEZIRKE.map((b) => (
-              <li key={b.slug}>
-                <Link href={`/pflege-in-${b.slug}`} className="text-[13px] hover:text-gold-soft">
-                  {b.name}
-                  {b.isHauptstandort && <span className="text-gold/80"> · Hauptstandort</span>}
+            {STANDORTE.map((s) => (
+              <li key={s.slug}>
+                <Link href={`/standorte/${s.slug}`} className="text-[13px] hover:text-gold-soft">
+                  {s.name}
+                  {s.isHauptstandort && <span className="text-gold/80"> · Hauptstandort</span>}
                 </Link>
               </li>
             ))}
+            <li className="col-span-2 pt-1">
+              <Link href="/standorte" className="text-[13px] hover:text-gold-soft underline">
+                → Alle Standorte
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
