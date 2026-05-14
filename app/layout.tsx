@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { Cormorant_Garamond, Manrope } from 'next/font/google';
 import './globals.css';
+import { A11yBar } from '@/components/A11yBar';
+import { a11yInitScript } from '@/lib/a11y-init';
+import { SITE } from '@/lib/site-config';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -18,15 +21,19 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: 'Heilpraxis Frommholz – Private Pflege & Beratung in Berlin',
-  description: 'Private Pflege, Alltagsbegleitung und Beratung in Berlin und Umland. Stundenweise bis 24/7. Mit Erfahrung, Sorgfalt und Haltung.',
+  title: `${SITE.name} – Private Pflege & Beratung in Berlin`,
+  description: SITE.description,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de" className={`${cormorant.variable} ${manrope.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: a11yInitScript }} />
+      </head>
       <body className="bg-cream text-anthracite font-sans antialiased">
-        {children}
+        <A11yBar />
+        <main className="pt-12">{children}</main>
       </body>
     </html>
   );
