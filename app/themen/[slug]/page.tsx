@@ -3,16 +3,14 @@ import { notFound } from 'next/navigation';
 import { Breadcrumbs } from '@/components/SEO/Breadcrumbs';
 import { BreadcrumbJsonLd } from '@/components/SEO/BreadcrumbJsonLd';
 import { FaqJsonLd } from '@/components/SEO/FaqJsonLd';
-import { ServiceJsonLd } from '@/components/SEO/JsonLd';
 import { SeoDetailContent } from '@/components/SeoDetailContent';
 import { SITE } from '@/lib/site-config';
-import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
+import { THEMEN, getThema } from '@/lib/themen';
 
 type RouteParams = { slug: string };
 
-// Nur Slugs mit ausgearbeitetem Detail werden statisch generiert.
 export async function generateStaticParams(): Promise<RouteParams[]> {
-  return LEISTUNGEN_SEO.filter(hasDetail).map((l) => ({ slug: l.slug }));
+  return THEMEN.map((t) => ({ slug: t.slug }));
 }
 
 export const dynamicParams = false;
@@ -21,32 +19,32 @@ export async function generateMetadata(
   { params }: { params: Promise<RouteParams> }
 ): Promise<Metadata> {
   const { slug } = await params;
-  const l = LEISTUNGEN_SEO.find((x) => x.slug === slug);
-  if (!l || !hasDetail(l)) return {};
+  const t = getThema(slug);
+  if (!t) return {};
   return {
-    title: l.metaTitle,
-    description: l.metaDescription,
-    alternates: { canonical: `${SITE.url}/leistungen/${l.slug}` },
+    title: t.metaTitle,
+    description: t.metaDescription,
+    alternates: { canonical: `${SITE.url}/themen/${t.slug}` },
     robots: { index: true, follow: true },
-    keywords: [l.primaryKeyword, ...l.secondaryKeywords],
+    keywords: [t.primaryKeyword],
   };
 }
 
-export default async function LeistungDetailPage({
+export default async function ThemenDetailPage({
   params,
 }: {
   params: Promise<RouteParams>;
 }) {
   const { slug } = await params;
-  const l = LEISTUNGEN_SEO.find((x) => x.slug === slug);
-  if (!l || !hasDetail(l)) {
+  const t = getThema(slug);
+  if (!t) {
     notFound();
   }
 
   const crumbs = [
     { name: 'Start', href: '/' },
-    { name: 'Leistungen', href: '/leistungen' },
-    { name: l.title, href: `/leistungen/${l.slug}` },
+    { name: 'Themen', href: '/themen' },
+    { name: t.title, href: `/themen/${t.slug}` },
   ];
 
   return (
@@ -54,11 +52,10 @@ export default async function LeistungDetailPage({
       <Breadcrumbs crumbs={crumbs} />
       <BreadcrumbJsonLd crumbs={crumbs} />
       <h1 className="mt-6 font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight font-light text-anthracite">
-        {l.h1}
+        {t.h1}
       </h1>
-      <SeoDetailContent detail={l.detail!} />
-      <ServiceJsonLd serviceName={l.title} serviceDescription={l.metaDescription} />
-      <FaqJsonLd items={l.detail!.faq} />
+      <SeoDetailContent detail={t.detail} />
+      <FaqJsonLd items={t.detail.faq} />
     </article>
   );
 }

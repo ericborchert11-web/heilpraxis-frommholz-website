@@ -12,6 +12,8 @@ export type SeoLeistungSection = {
   list?: string[];
   /** "**Label:** Text"-Pattern: Begriff fett + erläuternder Block */
   stronglist?: Array<{ label: string; text: string }>;
+  /** Paragraphen, die NACH list/stronglist erscheinen sollen */
+  trailingParagraphs?: string[];
 };
 
 export type SeoLeistungDetail = {
@@ -266,7 +268,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
     },
   },
 
-  // === Stubs (Welle 2 — Cards im Hub, noch keine Detail-Seite) ================
+  // === Money Page 4: 24-Stunden-Betreuung =====================================
   {
     slug: '24-stunden-betreuung',
     title: '24-Stunden-Betreuung',
@@ -276,7 +278,69 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
     h1: '24-Stunden-Betreuung in Berlin — ohne Graumarkt',
     primaryKeyword: '24-Stunden-Betreuung Berlin',
     secondaryKeywords: ['Rund-um-die-Uhr Pflege', 'Häusliche Pflege Berlin', '24h-Pflege legal'],
+    detail: {
+      intro: [
+        'Viele Anbieter werben mit „24-Stunden-Pflege" und meinen damit eine einzelne Person, die für mehrere Tage oder Wochen am Stück im Haus lebt. Rechtlich ist das in fast allen Konstellationen Graumarkt — Arbeitszeitgesetz, Mindestlohn, Sozialversicherung, Pausenregelung. Aktuelle Gerichtsurteile (BAG, EuGH) machen deutlich: Dieses Modell hält nicht, was es verspricht. Auftraggeber haften zunehmend persönlich.',
+        'Wir machen das anders.',
+        'Bei uns bedeutet 24-Stunden-Betreuung: Ein kleines festes Team deutscher Pflegekräfte und Betreuungskräfte im Wechselschicht-Modell. Korrekt angemeldet, korrekt bezahlt, Nacht- und Sonntagszuschläge gemäß § 3b EStG transparent ausgewiesen. Keine versteckten Kosten, keine rechtlichen Risiken für Sie als Auftraggeber.',
+      ],
+      sections: [
+        {
+          heading: 'Wie unser Schichtmodell konkret aussieht',
+          paragraphs: ['Ein typisches Beispiel — die Realität ist immer individuell:'],
+          stronglist: [
+            { label: 'Frühschicht 06:00–14:00', text: 'Pflegekraft Anna.' },
+            { label: 'Spätschicht 14:00–22:00', text: 'Pflegekraft Bernhard.' },
+            { label: 'Nachtschicht 22:00–06:00', text: 'Pflegekraft Carla (Rufbereitschaft oder aktive Wache).' },
+          ],
+        },
+        {
+          heading: 'Wer im Team ist',
+          paragraphs: ['Unsere 24-Stunden-Teams bestehen aus:'],
+          stronglist: [
+            { label: 'Examinierten Pflegekräften', text: 'für die fachliche Pflege (Medikamente, Wundversorgung, Beratung der Angehörigen).' },
+            { label: 'Pflegehilfskräften und Betreuungskräften', text: 'für die alltägliche Begleitung (Hygiene, Mobilisation, Beschäftigung, Essen).' },
+            { label: 'Optional: Sozialpädagoginnen/-pädagogen oder geschulten Demenz-Begleitungen', text: 'bei Bedarf.' },
+          ],
+        },
+        {
+          heading: 'Was 24-Stunden-Betreuung bei uns kostet',
+          paragraphs: ['Eine durchgehende Betreuung mit drei Schichten pro Tag, sieben Tage die Woche, kostet realistisch:'],
+          stronglist: [
+            { label: 'Mit Nachtbereitschaft (passive Anwesenheit)', text: 'ca. 12.000–15.000 €/Monat.' },
+            { label: 'Mit aktiver Nachtbetreuung', text: 'ca. 15.000–19.000 €/Monat.' },
+            { label: 'Mit hoher pflegerischer Qualifikation (z. B. Beatmung, Wundmanagement)', text: 'ca. 18.000–25.000 €/Monat.' },
+          ],
+        },
+        {
+          heading: 'Worauf Sie bei anderen Anbietern achten sollten',
+          paragraphs: ['Es gibt im Markt zahlreiche Vermittler, die „24-Stunden-Kräfte aus Osteuropa" anbieten. Diese Modelle bewegen sich rechtlich auf dünnem Eis:'],
+          stronglist: [
+            { label: 'Arbeitszeitgesetz', text: 'Eine Person darf nicht legal „24 Stunden präsent" sein. Pausen und Ruhezeiten müssen eingehalten werden.' },
+            { label: 'Mindestlohn', text: 'Bei 24 Stunden Bereitschaft pro Tag werden in vielen Modellen faktisch Stundensätze deutlich unter Mindestlohn gezahlt.' },
+            { label: 'Sozialversicherung', text: 'Bei Entsendung von Selbständigen aus dem EU-Ausland bestehen erhebliche Compliance-Risiken.' },
+            { label: 'Haftung', text: 'Wenn die Pflegekraft sich auf dem Weg zur Toilette die Hüfte bricht, haftet im Zweifelsfall der Auftraggeber.' },
+          ],
+        },
+      ],
+      faq: [
+        { question: 'Wie viele Personen sind insgesamt im Team?', answer: 'Für eine 24/7-Versorgung brauchen wir 4-6 Personen im festen Team — so sind auch Urlaub, Krankheit und Wochenenden gedeckt. Sie haben aber pro Schicht immer nur eine Person vor sich.' },
+        { question: 'Wechselt das Personal oft?', answer: 'Nein. Wir arbeiten mit langfristigen Anstellungsverhältnissen. Wenn ein Teammitglied wegfällt, ersetzen wir zuerst aus einem erweiterten Pool von Kolleginnen und Kollegen, die Ihre Klientinnen und Klienten schon kennen — bevor ein wirklich neuer Mensch dazukommt.' },
+        { question: 'Können wir auch Schichten von 12 Stunden vereinbaren?', answer: 'Ja, das ist in begrenztem Maß möglich (z. B. bei langen Tag-/Nachtwechseln). Wir prüfen, ob das arbeitsrechtlich umsetzbar ist.' },
+        { question: 'Wer haftet, wenn die Pflegekraft etwas kaputt macht?', answer: 'Wir sind berufshaftpflichtversichert. Schäden werden über uns abgewickelt — nicht über Ihre Hausratversicherung.' },
+        { question: 'Können wir kurzfristig starten?', answer: 'Bei akuten Übernahmen (z. B. Entlassung aus der Klinik) brauchen wir 5-10 Tage. Bei langfristigem Planungshorizont können wir individueller eingehen.' },
+        { question: 'Was passiert, wenn unser Familienmitglied stirbt?', answer: 'Bei Versterben endet der Vertrag automatisch zum Tag des Versterbens. Offene Stunden werden noch abgerechnet, danach sind keine Kosten mehr fällig — keine Restlaufzeit, keine Kündigungsfrist.' },
+        { question: 'Können Sie auch nach einer OP für 3-4 Wochen kommen?', answer: 'Ja. Befristete 24-Stunden-Einsätze (postoperative Reha, Genesungsphase) sind ein häufiges Anliegen. Mindestbuchung ist eine Woche.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
+        { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin', note: 'wenn nur die Nacht abgedeckt werden muss' },
+        { label: 'Pflegeberatung', href: '/leistungen/pflegeberatung-berlin', note: 'zu Pflegegrad und Finanzierung' },
+      ],
+    },
   },
+  // === Money Page 5: Pflegeberatung Berlin =====================================
   {
     slug: 'pflegeberatung-berlin',
     title: 'Pflegeberatung Berlin',
@@ -286,7 +350,73 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
     h1: 'Pflegeberatung in Berlin — klar, unabhängig, verständlich',
     primaryKeyword: 'Pflegeberatung Berlin',
     secondaryKeywords: ['§7a SGB XI', 'Pflegegrad beantragen', 'MDK Beratung'],
+    detail: {
+      intro: [
+        'Pflege ist kompliziert geworden. Pflegegrade, Verhinderungspflege, Entlastungsbudget, Kombinationsleistung, Hilfsmittelpauschale, Kurzzeitpflege, Tagespflege, Wohngruppenzuschlag, Pflegeunterstützungsgeld — selbst Fachkräfte verlieren manchmal den Überblick. Wir nicht.',
+        'Und weil wir wissen, wie viel Geld auf der Strecke bleibt, wenn man die falschen Anträge stellt oder den richtigen Zeitpunkt verpasst, bieten wir Pflegeberatung an, die wirklich nützt — mit einem Schwerpunkt, der sich von der Standard-Kassenberatung unterscheidet: Wir denken vom Bedarf her, nicht vom Leistungskatalog.',
+      ],
+      sections: [
+        {
+          heading: 'Wofür wir konkret beraten',
+          stronglist: [
+            { label: 'Pflegegrad-Antrag und MDK-Begutachtung', text: 'Wir bereiten Sie auf den Termin mit dem Medizinischen Dienst vor, helfen bei der Dokumentation des Hilfebedarfs, formulieren mit Ihnen den Antrag. Bei nicht ausreichendem Bescheid unterstützen wir bei Widerspruch und Höherstufung.' },
+            { label: 'Leistungsoptimierung bei vorhandenem Pflegegrad', text: 'Wir prüfen, ob alle zustehenden Leistungen tatsächlich abgerufen werden — oft bleiben mehrere Tausend Euro jährlich liegen, weil Entlastungsbudget, Verhinderungspflege oder Hilfsmittelpauschale nicht genutzt werden.' },
+            { label: 'Übergänge gestalten', text: 'Wenn aus dem Krankenhaus die Entlassung näher rückt, wenn Tagespflege oder ambulanter Dienst gewechselt wird, wenn ein Heimplatz gesucht werden muss — wir helfen, die richtigen Schritte in der richtigen Reihenfolge zu tun.' },
+            { label: 'Vollmachten und Vorsorge', text: 'Vorsorgevollmacht, Betreuungsverfügung, Patientenverfügung — was wirklich gebraucht wird, wie es formuliert sein muss, wo es hinterlegt gehört.' },
+            { label: 'Bauliche Anpassungen', text: 'Was an Umbauten finanziert die Pflegekasse (bis 4.000 € pro Maßnahme)? Welche Hilfsmittel zahlt die Krankenkasse? Wo lohnt der Antrag, wo nicht?' },
+            { label: 'Familieninterne Konflikte', text: 'Wenn Geschwister sich um die Pflege der Eltern streiten, wenn Erwartungen aneinander prallen, wenn Schuldgefühle die Entscheidungen blockieren — wir hören zu, ordnen, schlagen Wege vor.' },
+          ],
+        },
+        {
+          heading: 'Was Pflegeberatung nach § 7a SGB XI ist (und was wir anders machen)',
+          paragraphs: [
+            'Pflegekassen sind seit 2009 verpflichtet, eine kostenlose Pflegeberatung anzubieten. Diese Beratung ist eine wichtige Leistung — aber sie hat strukturelle Schwächen:',
+          ],
+          list: [
+            'Die Beraterinnen und Berater sind bei der Kasse angestellt — sie können nicht vollkommen unabhängig empfehlen.',
+            'Die Termine sind oft kurz (45-60 Minuten) und auf Standardthemen ausgerichtet.',
+            'Komplexe Konstellationen (mehrere Pflegegrade in der Familie, internationale Versicherung, Übergänge zwischen Versorgungsformen) werden nicht in der Tiefe bearbeitet.',
+          ],
+        },
+        {
+          heading: 'Was es kostet',
+          paragraphs: ['Das Erstgespräch ist kostenlos und unverbindlich. Für ausführliche Beratung und Begleitung gilt folgender Rahmen:'],
+          stronglist: [
+            { label: 'Beratung im Büro oder telefonisch', text: '90–120 € pro Stunde.' },
+            { label: 'Hausbesuch in Berlin', text: 'ab 150 € pro Stunde inkl. Fahrt.' },
+            { label: 'Begleitung beim MDK-Termin (vor Ort)', text: 'ab 250 € als Paket.' },
+            { label: 'Antragsbegleitung schriftlich', text: 'nach Aufwand, in der Regel 200-500 €.' },
+          ],
+        },
+        {
+          heading: 'Wann Pflegeberatung sich besonders lohnt',
+          list: [
+            'Vor dem ersten MDK-Termin — die Vorbereitung entscheidet oft über einen oder zwei Pflegegrade Unterschied.',
+            'Bei abgelehntem oder zu niedrigem Pflegegrad — hier ist Widerspruchsfrist einzuhalten (4 Wochen!).',
+            'Bei Krankenhausentlassung — die ersten Wochen sind entscheidend für die Versorgungsstabilität.',
+            'Bei plötzlichem Pflegebedarf (Schlaganfall, Sturz) — schnelle Antragstellung sichert rückwirkende Leistungen ab Antragstellung.',
+            'Bei familiären Konflikten über die Pflege der Eltern.',
+          ],
+        },
+      ],
+      faq: [
+        { question: 'Sind Sie Pflegeberater*in nach § 7a SGB XI?', answer: 'Wir bieten unabhängige private Pflegeberatung an. Die formale Anerkennung nach § 7a ist für unsere Klientinnen und Klienten meist nicht relevant, weil wir nicht über die Kasse abrechnen. Sollten Sie die offizielle § 7a-Beratung wollen, vermitteln wir Sie gerne weiter.' },
+        { question: 'Können Sie auch in unserer Wohnung kommen?', answer: 'Ja — Hausbesuche sind sogar typisch. Vieles lässt sich nur vor Ort beurteilen.' },
+        { question: 'Helfen Sie auch beim Pflegegrad-Widerspruch?', answer: 'Ja. Wir formulieren Widersprüche und können bei Bedarf auch zur erneuten Begutachtung dazukommen.' },
+        { question: 'Kennen Sie sich auch mit privater Pflegeversicherung aus?', answer: 'Ja — private Versicherer haben oft andere Tarifstrukturen und Beihilfeansprüche. Wir kennen die wichtigsten privaten Pflegeversicherer in Berlin.' },
+        { question: 'Wie lange dauert es vom Antrag bis zum Pflegegrad?', answer: 'Gesetzlich 5 Wochen ab Antragsdatum, in Berlin aktuell oft 6-8 Wochen. Leistungen werden rückwirkend zum Antragsdatum gewährt — deshalb lohnt eine schnelle Antragstellung.' },
+        { question: 'Was ist der Unterschied zwischen Pflegeberatung und Pflegekoordination?', answer: 'Beratung = strukturierte Vermittlung von Wissen und Optionen. Koordination = aktives Management der Pflegesituation (Termine machen, mit Diensten sprechen, Anträge stellen). Wir bieten beides — getrennt buchbar.' },
+        { question: 'Kann ich Pflegeberatung von der Steuer absetzen?', answer: 'Pflegekosten sind als außergewöhnliche Belastung ab gewissen Schwellen absetzbar. Beratungskosten in der Regel auch. Details mit Ihrer Steuerberatung klären.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Pflegegrad beantragen', href: '/themen/pflegegrad-beantragen', note: 'die konkrete Anleitung' },
+        { label: 'MDK-Begutachtung', href: '/themen/mdk-begutachtung', note: 'was Sie erwartet' },
+        { label: 'Verhinderungspflege', href: '/themen/verhinderungspflege', note: 'der oft unterschätzte Anspruch' },
+      ],
+    },
   },
+  // === Money Page 6: Nachtwachen Berlin =======================================
   {
     slug: 'nachtwachen-berlin',
     title: 'Nachtwachen Berlin',
@@ -296,7 +426,57 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
     h1: 'Nachtwachen in Berlin — sichere Begleitung durch die Nacht',
     primaryKeyword: 'Nachtwache Berlin',
     secondaryKeywords: ['Nachtbegleitung', 'Sturzprophylaxe nachts', 'Demenz Nachtruhe'],
+    detail: {
+      intro: [
+        'Nachts wird vieles schwerer. Verwirrtheit, Schmerz, Angst, Atemnot — was tagsüber zu handhaben war, wird im Dunkeln zur Bedrohung. Wer alleine ist, ist nachts noch alleiner. Wer pflegt, ist nachts noch erschöpfter.',
+        'Eine Nachtwache von der Heilpraxis Frommholz übernimmt genau diese Stunden. Von 20:00 oder 22:00 Uhr bis 06:00 oder 08:00 Uhr morgens. Bei Bedarf einmalig, für eine bestimmte Phase, oder dauerhaft.',
+      ],
+      sections: [
+        {
+          heading: 'Wann eine Nachtwache hilft',
+          stronglist: [
+            { label: 'Demenz mit nächtlicher Unruhe', text: 'Aufstehen, Wandern, Verwirrung über Tag und Nacht — das zermürbt Angehörige innerhalb weniger Wochen. Eine Nachtwache fängt die nächtlichen Phasen ab und schafft Schlaf für die Familie.' },
+            { label: 'Sturzgefahr', text: 'Wer nachts aufstehen will und nicht mehr sicher steht, gehört nicht ungesichert ins Bett. Eine Nachtwache ist da, wenn aufgestanden wird, hilft, beruhigt — und verhindert die Stürze, die alles ändern.' },
+            { label: 'Sterbebegleitung in den letzten Nächten', text: 'Manche Menschen sterben in einer bestimmten Nacht. Niemand kann das vorhersagen, aber alle können sich darauf einstellen, dass sie da sind. Eine Nachtwache übernimmt, wenn die Familie zwischendurch schlafen muss.' },
+            { label: 'Nach Klinikentlassung', text: 'Die ersten Nächte zu Hause nach einem Krankenhausaufenthalt sind oft die kritischsten. Eine Nachtwache überbrückt, bis Stabilität zurückgekehrt ist.' },
+            { label: 'Bei akuter psychischer Belastung', text: 'Suizidale Phasen, schwere depressive Episoden, Angstzustände — eine wache Anwesenheit schützt und entlastet gleichzeitig die Angehörigen.' },
+          ],
+        },
+        {
+          heading: 'Wache Nachtwache oder Bereitschaftsnachtwache?',
+          paragraphs: ['Wir unterscheiden zwei Modelle:'],
+          stronglist: [
+            { label: 'Aktive (wache) Nachtwache', text: 'Die Mitarbeiterin bleibt durchgehend wach, beobachtet aktiv, dokumentiert regelmäßig. Sinnvoll bei akuten Situationen (Sterbephase, schwere Verwirrtheit, post-OP).' },
+            { label: 'Bereitschaftsnachtwache', text: 'Die Mitarbeiterin schläft in einem angrenzenden Raum (oder in einem Schlafstuhl im selben Zimmer), wird aber bei jedem Geräusch geweckt. Sinnvoll bei Klientinnen und Klienten, die meist durchschlafen, aber nicht alleine sein dürfen.' },
+          ],
+        },
+        {
+          heading: 'Was eine Nachtwache kostet',
+          stronglist: [
+            { label: 'Aktive Nachtwache', text: '42–48 €/h (Standardqualifikation), 48–55 €/h (examinierte Pflegekraft).' },
+            { label: 'Bereitschaftsnachtwache', text: '28–35 €/h.' },
+            { label: 'Nachtzuschlag (22:00–06:00)', text: '25 % — bereits in den Sätzen oben enthalten.' },
+          ],
+          paragraphs: ['Eine 10-Stunden-Nachtwache (z. B. 20:00–06:00) kostet in der Standardausführung also rund 350–400 € brutto.'],
+        },
+      ],
+      faq: [
+        { question: 'Wie kurzfristig kann eine Nachtwache organisiert werden?', answer: 'In Akutsituationen ab demselben Tag, normal ab 24-48 Stunden Vorlauf.' },
+        { question: 'Können wir nur eine einzelne Nacht buchen?', answer: 'Ja. Einzelnachtwachen sind möglich, ebenso einzelne Wochenend-Nächte oder einzelne Wochen für die Reha-Phase.' },
+        { question: 'Was passiert in einem medizinischen Notfall?', answer: 'Die Nachtwache verständigt den Notarzt (112), informiert die Angehörigen, bleibt bei der Person bis zum Eintreffen. Bei Verschlechterung der Atmung, Bewusstlosigkeit, Verdacht auf Schlaganfall oder Herzinfarkt wird sofort gehandelt.' },
+        { question: 'Schläft die Nachtwache im Bett?', answer: 'Bei wacher Nachtwache: nein. Bei Bereitschaftsnachtwache: ja — im Bereitschaftsraum oder einem Schlafstuhl. Das ist arbeitsrechtlich korrekt.' },
+        { question: 'Brauchen wir einen separaten Raum für die Nachtwache?', answer: 'Bei Bereitschaft: ein Sofa, ein Sessel, ein Schlafstuhl reicht — kein Bett notwendig. Bei wacher Nachtwache reicht ein Stuhl im Zimmer.' },
+        { question: 'Welche Tätigkeiten übernimmt die Nachtwache?', answer: 'Lagerung, Toilettengang-Begleitung, Inkontinenz-Versorgung, Medikamentengabe nach Plan, Trinken anreichen, beruhigen. Komplexere medizinische Tätigkeiten (Verbandswechsel, Injektionen) nur, wenn entsprechend qualifizierte Kraft gebucht ist.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'punktuelle 1:1-Begleitung tags und nachts' },
+        { label: 'Hospiz-Sitzwachen', href: '/leistungen/hospiz-sitzwachen', note: 'bei Sterbebegleitung' },
+        { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung', note: 'wenn nicht nur die Nacht abgedeckt werden muss' },
+      ],
+    },
   },
+  // === Money Page 7: Hospiz-Sitzwachen ========================================
   {
     slug: 'hospiz-sitzwachen',
     title: 'Hospiz-Sitzwachen',
@@ -306,7 +486,66 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
     h1: 'Hospiz-Sitzwachen — jemand bleibt da',
     primaryKeyword: 'Hospiz Sitzwache Berlin',
     secondaryKeywords: ['Sterbebegleitung', 'Palliativ-Sitzwache', 'Letzte Stunden Begleitung'],
+    detail: {
+      intro: [
+        'Es gibt einen besonderen Auftrag in unserer Arbeit: Da zu sein, wenn jemand geht. Nicht als medizinische Kraft — dafür gibt es Palliativteams. Sondern als wache, ruhige Anwesenheit, die nicht mehr verlangt als zuhören, halten, warten.',
+        'Hospiz-Sitzwachen unterscheiden sich von anderen Sitzwachen in einem entscheidenden Punkt: Sie haben kein medizinisches Ziel mehr. Es geht nicht darum, dass etwas besser wird. Es geht darum, dass der Mensch nicht alleine ist — und dass die Familie dabei nicht zerbricht.',
+      ],
+      sections: [
+        {
+          heading: 'Wo wir Hospiz-Sitzwachen anbieten',
+          stronglist: [
+            { label: 'Im Hospiz', text: 'Die meisten Hospize in Berlin (Ricam Hospiz, Hospiz Schöneberg-Steglitz, Hospiz Wilmersdorf, Christophorus Hospiz, Lazarus Hospiz, u. a.) haben ihre eigenen ehrenamtlichen Sitzwachen-Strukturen. Wir kommen als Ergänzung dazu — oft bei Klientinnen und Klienten, die eine durchgehende Begleitung wünschen, was über das ehrenamtliche Angebot hinausgeht.' },
+            { label: 'Auf der Palliativstation', text: 'Wir kommen ins Krankenhaus, in Abstimmung mit dem Pflegeteam. Wir sind kein Konkurrenz-Angebot — wir entlasten die Pflege, indem wir die 1:1-Anwesenheit übernehmen, die im Stationsalltag selten möglich ist.' },
+            { label: 'Zu Hause', text: 'Viele Menschen wollen zu Hause sterben — und können das auch, wenn die Familie es organisiert bekommt. Wir kommen dann oft für die Nachtstunden, für die Wochenenden, für die Phasen, in denen die Angehörigen selbst Erschöpfung spüren.' },
+          ],
+        },
+        {
+          heading: 'Was Hospiz-Sitzwachen tun (und was nicht)',
+          stronglist: [
+            { label: 'Sie tun', text: 'wach sein, beobachten, ruhig sprechen, vorlesen, schweigen, Hand halten, Lippen befeuchten, leise sein. Sie rufen die Angehörigen, wenn es Zeit ist. Sie rufen das Palliativteam, wenn die Symptomatik sich verändert.' },
+            { label: 'Sie tun nicht', text: 'Schmerzmittel anpassen (das macht der Arzt), Pflege im engeren Sinne durchführen (das macht der Pflegedienst), Trost spenden, der unecht wirkt. Sie reden nicht über Religion, wenn es nicht von der sterbenden Person ausgeht. Sie weinen nicht laut, wenn es um Halten geht.' },
+          ],
+        },
+        {
+          heading: 'Was unsere Mitarbeitenden in dieser Arbeit ausmacht',
+          paragraphs: ['Hospiz-Sitzwachen sind eine besondere Aufgabe. Wir setzen Kolleginnen und Kollegen ein, die:'],
+          list: [
+            'Erfahrung mit Sterbebegleitung haben (Hospizpraktikum, Pflegeerfahrung, Trauerbegleitung-Ausbildung).',
+            'ruhig sind, wirklich ruhig — nicht still aus Unsicherheit, sondern still aus Haltung.',
+            'mit eigenen Verlusten gearbeitet haben, sodass nicht ihre Trauer im Zimmer steht.',
+            'bei körperlichen Veränderungen in der Sterbephase nicht in Hektik geraten.',
+          ],
+          trailingParagraphs: ['Sterbebegleitung ist keine Anfänger-Aufgabe. Wir vermitteln sie nur an erfahrene Mitarbeitende.'],
+        },
+        {
+          heading: 'Was Hospiz-Sitzwachen kosten',
+          paragraphs: ['Sitzwachen am Lebensende sind oft schon teure Tage in einer ohnehin teuren Phase. Wir berechnen einen reduzierten Sterbebegleitungs-Tarif:'],
+          stronglist: [
+            { label: 'Tagsüber', text: '38 €/h.' },
+            { label: 'Nachts (22:00–06:00)', text: '45 €/h (inkl. 25 % Nachtzuschlag).' },
+            { label: 'Sonn-/Feiertags', text: '50 % Zuschlag.' },
+          ],
+          trailingParagraphs: ['Eine 12-Stunden-Nacht kostet damit ca. 540 € brutto. Eine durchgehende 24-Stunden-Sterbebegleitung über drei Tage liegt bei etwa 3.500–4.000 €.'],
+        },
+      ],
+      faq: [
+        { question: 'Können Sie auch im Hospiz dazukommen, obwohl es dort schon Sitzwachen gibt?', answer: 'Ja — in Absprache mit dem Hospizteam. Wir verstehen uns als Ergänzung, nicht als Ersatz. Oft bringen wir gerade in den letzten 24 Stunden zusätzliche Anwesenheit ein, weil ehrenamtliche Sitzwachen nicht durchgehend verfügbar sind.' },
+        { question: 'Wie schnell können Sie kommen, wenn klar wird, dass es zu Ende geht?', answer: 'Wenn wir Vorlauf von 24 Stunden haben, ja. In echten Akutsituationen (wenige Stunden) versuchen wir es, können es aber nicht immer garantieren.' },
+        { question: 'Reden Ihre Mitarbeitenden mit dem Sterbenden über den Tod?', answer: 'Nur, wenn der Mensch selbst es initiiert. Wir hören zu. Wir geben keinen Anstoß zu Themen, die wir nicht einschätzen können.' },
+        { question: 'Können Sie auch nach dem Tod helfen?', answer: 'Wir bleiben — wenn gewünscht — in den ersten Stunden nach dem Versterben da. Wir helfen, den Notarzt für die Todesfeststellung zu rufen, sind für die Familie da, übergeben an den Bestatter. Trauerbegleitung in den darauffolgenden Wochen vermitteln wir an spezialisierte Stellen.' },
+        { question: 'Kennen Sie sich mit verschiedenen religiösen Traditionen aus?', answer: 'Wir respektieren alle Traditionen. Bei spezifischen Riten (z. B. muslimischer Brauch der Waschung durch Familienangehörige, orthodoxe Liturgien, jüdische Bräuche der Schiwa) bitten wir die Familie um klare Hinweise. Wir lernen schnell, aber wir setzen nichts voraus.' },
+        { question: 'Können Sie auch bei nicht-religiösen Sterbeprozessen begleiten?', answer: 'Selbstverständlich. Die meisten unserer Sterbebegleitungen sind säkular. Wir machen niemandem etwas religiös, was er nicht selbst will.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'das allgemeine Angebot' },
+        { label: 'Palliativ zu Hause', href: '/themen/palliativ-zuhause', note: 'Hintergrundwissen' },
+        { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin', note: 'wenn nur die Nachtstunden gebraucht werden' },
+      ],
+    },
   },
+  // === Money Page 8: Reisebegleitung für Senioren =============================
   {
     slug: 'reisebegleitung-senioren',
     title: 'Reisebegleitung für Senioren',
@@ -316,6 +555,67 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
     h1: 'Reisebegleitung für Senioren — sicher unterwegs',
     primaryKeyword: 'Reisebegleitung Senioren Berlin',
     secondaryKeywords: ['Medizinische Reisebegleitung', 'Senioren-Begleitservice', 'Begleitete Heimreise'],
+    detail: {
+      intro: [
+        'Reisen ist im Alter nicht mehr selbstverständlich. Die Wege werden länger, die Treppen steiler, die Anschlüsse knapper. Eine OP-Nachsorge im Ausland, ein Familienbesuch in Süddeutschland, die letzte gemeinsame Reise mit dem erkrankten Ehepartner — in solchen Situationen ist eine erfahrene Begleitung oft das, was eine Reise überhaupt erst möglich macht.',
+        'Die Heilpraxis Frommholz bietet Reisebegleitung für Seniorinnen und Senioren ab Berlin an — mit medizinischer Qualifikation, wenn nötig, oder als reine Reisehilfe.',
+      ],
+      sections: [
+        {
+          heading: 'Was wir bei Reisebegleitungen tun',
+          stronglist: [
+            { label: 'Hin- und Rückreise organisieren', text: 'Bahntickets, Sitzplätze, Rollstuhl-Service, Gepäckmanagement, Anschlüsse, ggf. Hotel in der Mitte. Wir kümmern uns um die Logistik, Sie müssen nur ankommen wollen.' },
+            { label: 'Während der Reise begleiten', text: 'Wir reisen mit Ihnen — vom Anfang bis zum Ende. Wir helfen beim Ein- und Aussteigen, bei der Mahlzeit im Speisewagen, bei der Toilettenpause auf der Raststätte. Wir bewahren die Tickets auf, übersetzen am Schalter, beruhigen, wenn es hektisch wird.' },
+            { label: 'Medizinische Versorgung unterwegs', text: 'Wenn medizinische Bedarfe bestehen (Wundversorgung, Medikamenten-Management, Sauerstoff-Mitführung, Insulin-Gabe), setzen wir eine qualifizierte Pflegekraft als Begleitung ein.' },
+            { label: 'Krankenhausverlegungen', text: 'Wenn ein*e Angehörige*r aus einem Krankenhaus im Ausland nach Berlin zurückgebracht werden muss, organisieren wir das in Zusammenarbeit mit Rettungstransport-Diensten — wir sind die menschliche Begleitperson, die die Patientin oder den Patienten von Bett zu Bett begleitet.' },
+          ],
+        },
+        {
+          heading: 'Welche Reisen wir begleiten',
+          list: [
+            'Klassische Erholungsreisen — z. B. Kurreisen, Familienbesuche in Deutschland oder Europa.',
+            'Medizinisch motivierte Reisen — Klinikaufenthalte, Reha-Anfahrt, Spezialistenbesuche.',
+            'Heimführungen — aus Pflegeheimen oder Krankenhäusern zurück in die vertraute Umgebung.',
+            'Letzte Reisen — wenn der Wunsch besteht, noch einmal an einen bestimmten Ort zu kommen (z. B. Geburtsort, Familiengrab, Lieblingsplatz).',
+            'Reisen aus dem Ausland zurück — z. B. von einer Urlaubsreise, die durch Krankheit unterbrochen wurde.',
+          ],
+        },
+        {
+          heading: 'Wie eine Reisebegleitung organisiert ist',
+          stronglist: [
+            { label: 'Erstgespräch und Planung', text: 'Wir verstehen erst, worum es geht, dann planen wir. Das kann telefonisch oder vor Ort sein.' },
+            { label: 'Vorbereitung', text: 'Wir prüfen Versicherungsfragen (Reisekrankenversicherung, Auslandsreisepolice), klären medizinische Sondersituationen mit Hausarzt oder Klinik ab, beschaffen Transportdokumente.' },
+            { label: 'Durchführung', text: 'Wir holen Sie zu Hause ab. Wir bleiben bis zum Zielort oder bis zur Übergabe an die nächste verantwortliche Person (z. B. Verwandte, Klinik, Hotel-Concierge).' },
+            { label: 'Nachbereitung', text: 'Wenn nötig, organisieren wir die Rückreise oder die Anschlussversorgung am Zielort.' },
+          ],
+        },
+        {
+          heading: 'Was Reisebegleitung kostet',
+          paragraphs: ['Hier wird die Kalkulation komplex — es kommt auf Dauer, Strecke und Qualifikation an:'],
+          stronglist: [
+            { label: 'Reisebegleitung ohne medizinische Qualifikation, innerdeutsch', text: 'ab 380 €/Tag.' },
+            { label: 'Reisebegleitung mit examinierter Pflegekraft, innerdeutsch', text: 'ab 480 €/Tag.' },
+            { label: 'Internationale Reisebegleitung', text: 'nach Absprache, oft 600–800 €/Tag zzgl. Reisekosten.' },
+            { label: 'Krankenhausverlegungs-Begleitung', text: 'nach Aufwand, in der Regel 1.500–3.000 € pro Strecke.' },
+          ],
+          trailingParagraphs: ['Reisekosten (Bahn, Flug, Hotel) trägt der Auftraggeber separat. Wir reisen in derselben Klasse wie die zu begleitende Person.'],
+        },
+      ],
+      faq: [
+        { question: 'Können Sie auch ins Ausland mitreisen?', answer: 'Ja — in den Schengen-Raum problemlos, in andere Länder mit etwas Vorlauf für Visa- und Versicherungsfragen.' },
+        { question: 'Was, wenn der Klient während der Reise medizinisch verschlechtert?', answer: 'Bei Verschlechterung wenden wir uns sofort an die nächste medizinische Versorgung (Notarzt, lokales Krankenhaus). Wir bleiben bei der Person und informieren die Angehörigen.' },
+        { question: 'Können Sie auch mit Rollstuhl-Reisenden umgehen?', answer: 'Selbstverständlich. Wir organisieren Rollstuhl-Service der Bahn, Hilfsstationen, Park-Berechtigungen. Bei Bedarf bringen wir leichte mobile Aufstehhilfen mit.' },
+        { question: 'Wie weit im Voraus muss eine Reisebegleitung gebucht werden?', answer: 'Innerdeutsch ab 2 Wochen Vorlauf, international ab 4-6 Wochen. Akute Krankenhausverlegungen können auch in 2-3 Tagen organisiert werden.' },
+        { question: 'Übernehmen Sie auch Reisen mit Pflegegrad-Personen?', answer: 'Ja — in jeder Pflegegradstufe, sofern reisefähig (das klären wir vorab mit Hausarzt und Klient*in). Mit höheren Pflegegraden setzen wir grundsätzlich examinierte Kräfte ein.' },
+        { question: 'Was passiert, wenn die Reise verlängert werden muss?', answer: 'Wir verlängern bei Bedarf — eine schriftliche Verlängerung wird per Mail bestätigt. Tagespreise gelten weiter.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
+        { label: 'Krankenhaus-Begleitung', href: '/themen/krankenhaus-begleitung', note: 'bei Klinikaufenthalten' },
+        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'für stationäre 1:1-Begleitung' },
+      ],
+    },
   },
 ] as const;
 

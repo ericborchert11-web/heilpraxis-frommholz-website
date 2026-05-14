@@ -2,6 +2,38 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [SEO Welle 2] – 2026-05-14
+
+Zweite Welle des SEO-Mega-Briefings: alle 8 Money-Pages haben jetzt Voll-Inhalt, der komplette Themen-Hub mit 8 informativen Seiten ist live, Footer hat eine Themen-Spalte, Startseiten-Title ist keyword-stärker.
+
+### Drin
+
+- **5 Money-Pages fertig ausgearbeitet** (vorher Stubs): 24-Stunden-Betreuung, Pflegeberatung Berlin, Nachtwachen Berlin, Hospiz-Sitzwachen, Reisebegleitung für Senioren — alle mit Service- & FAQ-Schema, Breadcrumbs, related Links.
+- **Themen-Hub `/themen` + 8 Detail-Seiten**:
+  - `/themen/pflegegrad-beantragen`
+  - `/themen/verhinderungspflege`
+  - `/themen/entlastungsbudget`
+  - `/themen/mdk-begutachtung`
+  - `/themen/demenz-begleitung`
+  - `/themen/palliativ-zuhause`
+  - `/themen/krankenhaus-begleitung`
+  - `/themen/wohnungsaufloesung-pflegefall`
+- **Refactor**: `components/SeoDetailContent.tsx` als wiederverwendbares Render-Modul für Leistungs- und Themen-Detail-Seiten.
+- **Sitemap erweitert**: jetzt 17 URLs (Startseite + Hubs + 8 Money + 8 Themen + 3 Legal).
+- **Footer**: zusätzliche Themen-Spalte (8 Themen + Hub-Link), Grid auf 4 Spalten umgestellt.
+- **Startseiten-Title**: jetzt `Pflege, Sitzwachen & Begleitung Berlin – Heilpraxis Frommholz` (Briefing TEIL 7.2, abgespeckt — Hero selbst bleibt unverändert).
+- **Daten**: `lib/themen.ts` mit 8 Themen-Einträgen, `lib/leistungen-seo.ts` um `trailingParagraphs` erweitert.
+
+### Nicht drin (Welle 3 ausstehend)
+
+- 11 Stadtteilseiten + Standorte-Hub mit Karte
+- 5 Recruiting-Seiten + Karriere-Hub
+- Hero-Sektion-Umbau auf neue H1-Variante (Briefing TEIL 7.2 voll)
+- OG-Default-Bild (`/og-default.jpg`) — weiterhin offen
+- Berufshaftpflicht-Versicherer im Impressum
+
+---
+
 ## [SEO Welle 1] – 2026-05-14
 
 Erste Welle des SEO-Mega-Briefings: technisches Fundament, Rechtspflichtseiten, drei Money-Pages, globale FAQ. Quelle: `briefings/SEO-MEGA-BRIEFING.md` (untracked, lokal). Plan: `docs/superpowers/specs/2026-05-14-seo-phase-1.md`.

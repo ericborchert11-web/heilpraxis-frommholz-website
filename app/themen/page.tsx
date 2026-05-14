@@ -1,0 +1,49 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { PageLayout } from '@/components/PageLayout';
+import { SITE } from '@/lib/site-config';
+import { THEMEN } from '@/lib/themen';
+
+export const metadata: Metadata = {
+  title: 'Themen',
+  description: 'Pflegegrad, Verhinderungspflege, MDK-Begutachtung, Demenz, Palliativ — Hintergrundwissen für Familien in Berlin, kompakt und ehrlich.',
+  alternates: { canonical: `${SITE.url}/themen` },
+  robots: { index: true, follow: true },
+};
+
+export default function ThemenHubPage() {
+  return (
+    <PageLayout
+      title="Themen rund um Pflege"
+      lead="Hintergrundwissen zu den Fragen, die viele Familien zuerst haben — Pflegegrad, Leistungsansprüche, Demenz, Sterbephase. Verständlich, ohne Werbe-Floskeln, aus über 15 Jahren Praxis."
+      crumbs={[
+        { name: 'Start', href: '/' },
+        { name: 'Themen', href: '/themen' },
+      ]}
+    >
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-5 list-none">
+        {THEMEN.map((t) => (
+          <li key={t.slug}>
+            <Link
+              href={`/themen/${t.slug}`}
+              className="block p-6 bg-cream border border-gold/20 hover:border-gold/60 transition-colors"
+            >
+              <h3 className="font-serif text-xl font-medium text-anthracite">{t.title}</h3>
+              <p className="mt-2 text-[14px] leading-relaxed text-anthracite-soft">{t.short}</p>
+              <span className="mt-4 inline-block font-sans text-[11px] uppercase tracking-[1.5px] text-gold-deep border-b border-gold-deep/30 pb-1">
+                Weiterlesen
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      <p className="mt-10 text-anthracite-soft">
+        Eine konkrete Frage zur eigenen Situation?{' '}
+        <Link href="/leistungen/pflegeberatung-berlin" className="underline hover:text-gold-deep">
+          → Pflegeberatung
+        </Link>
+      </p>
+    </PageLayout>
+  );
+}

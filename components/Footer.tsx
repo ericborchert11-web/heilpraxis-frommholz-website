@@ -3,13 +3,14 @@ import Link from 'next/link';
 import { BUSINESS, SITE } from '@/lib/site-config';
 import { BEZIRKE } from '@/lib/bezirke';
 import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
+import { THEMEN } from '@/lib/themen';
 
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="bg-anthracite text-cream/70 pt-20 pb-8 px-6 md:px-12">
-      <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-12 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-10 max-w-7xl mx-auto">
         <div>
           <div className="flex items-center gap-3.5">
             <Image src="/logo.png" alt={`${SITE.name} Wappen`} width={52} height={52} className="object-contain" />
@@ -51,7 +52,25 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="md:col-span-2">
+        <div>
+          <h4 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">Themen</h4>
+          <ul className="list-none space-y-2.5">
+            {THEMEN.map((t) => (
+              <li key={t.slug}>
+                <Link href={`/themen/${t.slug}`} className="text-sm hover:text-gold-soft">
+                  {t.title}
+                </Link>
+              </li>
+            ))}
+            <li className="pt-2">
+              <Link href="/themen" className="text-sm hover:text-gold-soft underline">
+                → Alle Themen
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
           <h4 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">Pflege in Ihrem Bezirk</h4>
           <ul className="list-none grid grid-cols-2 gap-x-4 gap-y-2">
             {BEZIRKE.map((b) => (
