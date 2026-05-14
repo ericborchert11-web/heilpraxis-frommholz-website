@@ -4,6 +4,7 @@ import './globals.css';
 import { A11yBar } from '@/components/A11yBar';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
+import { MedicalBusinessJsonLd } from '@/components/SEO/JsonLd';
 import { a11yInitScript } from '@/lib/a11y-init';
 import { SITE } from '@/lib/site-config';
 
@@ -29,10 +30,19 @@ export const metadata: Metadata = {
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,
+  alternates: {
+    canonical: SITE.url,
+  },
   openGraph: {
     type: 'website',
     locale: 'de_DE',
     siteName: SITE.name,
+    url: SITE.url,
+    images: [SITE.defaultOgImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -45,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: a11yInitScript }} />
+        <MedicalBusinessJsonLd />
       </head>
       <body className="bg-cream text-anthracite font-sans antialiased">
         <A11yBar />

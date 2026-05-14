@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BUSINESS, SITE } from '@/lib/site-config';
 import { BEZIRKE } from '@/lib/bezirke';
-import { LEISTUNGEN } from '@/lib/leistungen';
+import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -30,11 +30,24 @@ export function Footer() {
         <div>
           <h4 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">Leistungen</h4>
           <ul className="list-none space-y-2.5">
-            {LEISTUNGEN.map((l) => (
+            {LEISTUNGEN_SEO.map((l) => (
               <li key={l.slug}>
-                <Link href={`/leistungen/${l.slug}`} className="text-sm hover:text-gold-soft">{l.title}</Link>
+                {hasDetail(l) ? (
+                  <Link href={`/leistungen/${l.slug}`} className="text-sm hover:text-gold-soft">
+                    {l.title}
+                  </Link>
+                ) : (
+                  <span className="text-sm text-cream/40" title="Detail-Seite folgt">
+                    {l.title}
+                  </span>
+                )}
               </li>
             ))}
+            <li className="pt-2">
+              <Link href="/leistungen" className="text-sm hover:text-gold-soft underline">
+                → Alle Leistungen
+              </Link>
+            </li>
           </ul>
         </div>
 

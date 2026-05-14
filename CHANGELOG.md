@@ -2,6 +2,41 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [SEO Welle 1] – 2026-05-14
+
+Erste Welle des SEO-Mega-Briefings: technisches Fundament, Rechtspflichtseiten, drei Money-Pages, globale FAQ. Quelle: `briefings/SEO-MEGA-BRIEFING.md` (untracked, lokal). Plan: `docs/superpowers/specs/2026-05-14-seo-phase-1.md`.
+
+### Drin
+
+- **Technisches SEO**: `app/sitemap.ts`, `app/robots.ts`, MedicalBusiness-JSON-LD im Root-Layout, OG/Canonical/Robots in `metadata`
+- **SEO-Komponenten**: `components/SEO/{JsonLd,FaqJsonLd,BreadcrumbJsonLd,Breadcrumbs}.tsx`, `components/PageLayout.tsx`, `components/FaqAccordion.tsx`, `components/FaqSection.tsx`
+- **Rechtsseiten**: `/impressum`, `/datenschutz`, `/agb` mit vollständigen Pflichtinhalten (Berufshaftpflicht-Versicherer als `[wird nachgereicht]` markiert)
+- **Money-Pages**: `/leistungen` (Hub, 8 Karten) + 3 Detailseiten mit Service- & FAQ-Schema:
+  - `/leistungen/sitzwachen-berlin`
+  - `/leistungen/systemsprenger-betreuung`
+  - `/leistungen/pflegedienst-selbstzahler`
+- **Globale FAQ** auf Startseite (8 Fragen) mit FAQPage-Schema
+- **Daten**: `lib/leistungen-seo.ts` (8 Einträge), `lib/faq-global.ts` (8 FAQs), `lib/site-config.ts` erweitert (Geo, Beruf, USt, Versicherung, Service-Areas)
+- **Footer-Fix**: Leistungs-Spalte zeigt jetzt die 8 SEO-Slugs (3 verlinkt, 5 graustichig) + „Alle Leistungen"-Link auf Hub
+
+### Konflikte mit Briefing-Wortlaut bewusst aufgelöst
+
+- Briefing nennt Festnetz `030 6446 1243` / `kontakt@…` → Code & Memory nutzen Handy `0151 14140251` / `simeon@…` (gewinnt).
+- Briefing legt Daten unter `content/*.ts` → Repo-Konvention `lib/*.ts` (bleibt).
+- Briefing zeigt statische Ordner-Routen pro Slug → dynamische Route `app/leistungen/[slug]/page.tsx` mit `generateStaticParams` (URLs identisch).
+
+### Nicht drin (Welle 2 + 3 ausstehend)
+
+- 8 Themen-Seiten (`/themen/*`)
+- Restliche 5 Money-Pages (24h, Pflegeberatung, Nachtwachen, Hospiz, Reise) — als Stubs im Hub gelistet
+- Startseiten-Hero-Umbau (TEIL 7.2)
+- 11 Stadtteilseiten + Standorte-Hub mit Karte
+- 5 Recruiting-Seiten + Karriere-Hub
+- OG-Default-Bild (`/og-default.jpg`) muss noch geliefert werden
+- Berufshaftpflicht-Versicherer im Impressum
+
+---
+
 ## [Etappe 1] – 2026-05-14 — vorläufig geschlossen für Vercel-Deploy
 
 Etappe 1 ist hier vorläufig abgeschlossen, damit die Seite heute Abend live gehen kann. Feinschliff folgt in Etappe 1.5 / 2.
