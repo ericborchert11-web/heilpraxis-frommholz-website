@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Cormorant_Garamond, Manrope } from 'next/font/google';
 import './globals.css';
 import { A11yBar } from '@/components/A11yBar';
+import { Nav } from '@/components/Nav';
 import { a11yInitScript } from '@/lib/a11y-init';
 import { SITE } from '@/lib/site-config';
 
@@ -37,7 +38,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-cream text-anthracite font-sans antialiased">
         <A11yBar />
-        <main className="pt-12">{children}</main>
+        <Nav />
+        <main className="pt-[122px]">{children}</main>
       </body>
     </html>
   );
