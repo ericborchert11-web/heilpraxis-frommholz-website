@@ -1,17 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+import { useActionState } from 'react';
 import { BUSINESS } from '@/lib/site-config';
 import { Reveal } from './Reveal';
+import { sendContact, initialContactState } from '@/app/actions/send-contact';
 
 export function KontaktSection() {
-  const [sent, setSent] = useState(false);
-
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 5000);
-  };
+  const [state, formAction, pending] = useActionState(sendContact, initialContactState);
+  const success = state.status === 'success';
+  const errorField = (key: 'name' | 'contact' | 'subject' | 'consent') =>
+    state.fieldErrors?.[key];
 
   return (
     <section id="kontakt" className="px-6 md:px-12 py-24 max-w-6xl mx-auto scroll-mt-32">
@@ -50,36 +48,129 @@ export function KontaktSection() {
         </div>
 
         <Reveal delay={2}>
-          <form onSubmit={onSubmit} className="bg-cream-deep border border-gold/20 p-8 space-y-5">
-            <div>
-              <label className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">Name</label>
-              <input type="text" required placeholder="Ihr Name" className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep" />
+          {success ? (
+            <div className="bg-cream-deep border border-gold/40 p-8">
+              <p className="font-serif text-xl text-anthracite">Danke — wir haben Ihre Nachricht erhalten.</p>
+              <p className="mt-3 text-[15px] text-anthracite-soft leading-relaxed">
+                {state.message ?? 'Wir melden uns innerhalb weniger Tage zurück. In dringenden Fällen erreichen Sie uns direkt unter '}
+                {!state.message && (
+                  <>
+                    <a href={`tel:${BUSINESS.phone}`} className="underline hover:text-gold-deep">{BUSINESS.phoneDisplay}</a>.
+                  </>
+                )}
+              </p>
             </div>
-            <div>
-              <label className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">Telefon oder E-Mail</label>
-              <input type="text" required placeholder="Wie dürfen wir Sie erreichen?" className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep" />
-            </div>
-            <div>
-              <label className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">Worum geht es?</label>
-              <select className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep">
-                <option>Erstgespräch zur Pflege</option>
-                <option>Pflegeberatung</option>
-                <option>Inklusionsberatung</option>
-                <option>Reisebegleitung</option>
-                <option>Etwas anderes</option>
-              </select>
-            </div>
-            <div>
-              <label className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">Ihre Nachricht (optional)</label>
-              <textarea rows={4} placeholder="Erzählen Sie uns kurz, was Sie umtreibt…" className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep" />
-            </div>
-            <button type="submit" disabled={sent} className="w-full bg-anthracite text-cream py-3.5 rounded-sm font-sans text-sm uppercase tracking-[1.5px] hover:bg-gold-deep transition-colors disabled:opacity-60">
-              {sent ? 'Nachricht erhalten — danke!' : 'Nachricht senden'}
-            </button>
-            <p className="text-[11px] text-warm-gray italic">
-              Hinweis: Versand ist in dieser Vorschauversion noch nicht angeschlossen. Bitte nutzen Sie Telefon oder E-Mail.
-            </p>
-          </form>
+          ) : (
+            <form action={formAction} className="bg-cream-deep border border-gold/20 p-8 space-y-5">
+              {/* Honeypot — von echten Nutzer*innen nicht sichtbar */}
+              <div className="absolute -left-[9999px]" aria-hidden="true">
+                <label>
+                  Bitte leer lassen
+                  <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+                </label>
+              </div>
+
+              <div>
+                <label htmlFor="contact-name" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
+                  Name
+                </label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Ihr Name"
+                  aria-invalid={Boolean(errorField('name'))}
+                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep aria-[invalid=true]:border-red-700"
+                />
+                {errorField('name') && (
+                  <p className="mt-1 text-xs text-red-700">{errorField('name')}</p>
+                )}
+              </div>
+
+              <div>
+                <label htmlFor="contact-reach" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
+                  Telefon oder E-Mail
+                </label>
+                <input
+                  id="contact-reach"
+                  type="text"
+                  name="contact"
+                  required
+                  placeholder="Wie dürfen wir Sie erreichen?"
+                  aria-invalid={Boolean(errorField('contact'))}
+                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep aria-[invalid=true]:border-red-700"
+                />
+                {errorField('contact') && (
+                  <p className="mt-1 text-xs text-red-700">{errorField('contact')}</p>
+                )}
+              </div>
+
+              <div>
+                <label htmlFor="contact-subject" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
+                  Worum geht es?
+                </label>
+                <select
+                  id="contact-subject"
+                  name="subject"
+                  required
+                  defaultValue="Erstgespräch zur Pflege"
+                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep"
+                >
+                  <option>Erstgespräch zur Pflege</option>
+                  <option>Sitzwache / Nachtwache</option>
+                  <option>24-Stunden-Betreuung</option>
+                  <option>Pflegeberatung</option>
+                  <option>Reisebegleitung</option>
+                  <option>Hospiz-Sitzwache</option>
+                  <option>Etwas anderes</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="contact-message" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
+                  Ihre Nachricht (optional)
+                </label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows={4}
+                  placeholder="Erzählen Sie uns kurz, was Sie umtreibt…"
+                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep"
+                />
+              </div>
+
+              <label className="flex items-start gap-3 text-[12px] text-anthracite-soft leading-relaxed">
+                <input
+                  type="checkbox"
+                  name="consent"
+                  required
+                  aria-invalid={Boolean(errorField('consent'))}
+                  className="mt-1 shrink-0"
+                />
+                <span>
+                  Ich willige ein, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden.
+                  Hinweise zur Datenverarbeitung finden Sie in der{' '}
+                  <a href="/datenschutz" className="underline hover:text-gold-deep">Datenschutzerklärung</a>.
+                </span>
+              </label>
+              {errorField('consent') && (
+                <p className="-mt-3 text-xs text-red-700">{errorField('consent')}</p>
+              )}
+
+              {state.status === 'error' && state.message && (
+                <p role="alert" className="text-[13px] text-red-700">{state.message}</p>
+              )}
+
+              <button
+                type="submit"
+                disabled={pending}
+                className="w-full bg-anthracite text-cream py-3.5 rounded-sm font-sans text-sm uppercase tracking-[1.5px] hover:bg-gold-deep transition-colors disabled:opacity-60"
+              >
+                {pending ? 'Wird gesendet …' : 'Nachricht senden'}
+              </button>
+            </form>
+          )}
         </Reveal>
       </div>
     </section>

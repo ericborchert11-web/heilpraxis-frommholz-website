@@ -52,6 +52,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       intro: [
         'Eine Sitzwache bedeutet: Jemand ist da. Nicht zur medizinischen Versorgung — dafür gibt es Ärztinnen und Pflegekräfte. Sondern für die Anwesenheit selbst. Für das Gefühl, dass jemand bleibt, wenn die Nacht lang wird, wenn die Operation ansteht, wenn die Verwirrtheit kommt und wieder geht.',
         'Die Heilpraxis Frommholz vermittelt Sitzwachen in Berlin — im Krankenhaus, in der Psychiatrie, im Hospiz und zu Hause. Wir sind seit über 15 Jahren auf 1:1-Betreuung spezialisiert. Wer eine Sitzwache braucht, hat oft schon viel hinter sich. Wir verstehen, dass es in diesen Momenten weniger um Fachlichkeit als um Menschlichkeit geht — und unsere Mitarbeitenden bringen beides mit.',
+        'Einen Teil unserer Sitzwachen-Einsätze tragen wir gemeinsam mit unserem gemeinnützigen Partnerverein Leben Pflegen Reisen e.V. — vor allem dort, wo neben Pflegekompetenz auch ehrenamtliches Engagement und längere Anwesenheitsphasen gefragt sind.',
       ],
       sections: [
         {
@@ -490,6 +491,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       intro: [
         'Es gibt einen besonderen Auftrag in unserer Arbeit: Da zu sein, wenn jemand geht. Nicht als medizinische Kraft — dafür gibt es Palliativteams. Sondern als wache, ruhige Anwesenheit, die nicht mehr verlangt als zuhören, halten, warten.',
         'Hospiz-Sitzwachen unterscheiden sich von anderen Sitzwachen in einem entscheidenden Punkt: Sie haben kein medizinisches Ziel mehr. Es geht nicht darum, dass etwas besser wird. Es geht darum, dass der Mensch nicht alleine ist — und dass die Familie dabei nicht zerbricht.',
+        'In dieser Arbeit kooperieren wir eng mit unserem Partnerverein Leben Pflegen Reisen e.V., dessen ehrenamtliches Netzwerk gerade bei Sterbebegleitungen die Heilpraxis-Stunden ergänzt — und die Familie nicht allein lässt, wenn unsere bezahlten Schichten zu Ende gehen.',
       ],
       sections: [
         {
@@ -558,7 +560,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
     detail: {
       intro: [
         'Reisen ist im Alter nicht mehr selbstverständlich. Die Wege werden länger, die Treppen steiler, die Anschlüsse knapper. Eine OP-Nachsorge im Ausland, ein Familienbesuch in Süddeutschland, die letzte gemeinsame Reise mit dem erkrankten Ehepartner — in solchen Situationen ist eine erfahrene Begleitung oft das, was eine Reise überhaupt erst möglich macht.',
-        'Die Heilpraxis Frommholz bietet Reisebegleitung für Seniorinnen und Senioren ab Berlin an — mit medizinischer Qualifikation, wenn nötig, oder als reine Reisehilfe.',
+        'Die Heilpraxis Frommholz bietet Reisebegleitung für Seniorinnen und Senioren ab Berlin an — mit medizinischer Qualifikation, wenn nötig, oder als reine Reisehilfe. Organisiert wird das in Kooperation mit unserem gemeinnützigen Partnerverein Leben Pflegen Reisen e.V., der seit Jahren Reisen für pflegebedürftige Menschen plant und begleitet.',
       ],
       sections: [
         {

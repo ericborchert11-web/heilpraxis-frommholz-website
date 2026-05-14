@@ -2,6 +2,32 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [Kontaktformular + LPR-Kooperation + Schichtplaner-Link] – 2026-05-14
+
+### Drin
+
+- **Kontaktformular ist live**: Server Action `app/actions/send-contact.ts` ruft die Resend-HTTP-API auf und sendet an `simeon@heilpraxis-frommholz.de`. Validierung, Honeypot-Spam-Schutz, DSGVO-Consent-Checkbox, freundliche Error-States.
+- **KontaktSection** refactored: nutzt `useActionState` (React 19), zeigt Pending-/Success-/Error-Zustände inline, behält die Designsprache.
+- **`.env.example`** im Repo, mit Doku zu `RESEND_API_KEY`, `MAIL_FROM`, `MAIL_TO`.
+- **LPR-Kooperation referenziert**: auf `/leistungen/sitzwachen-berlin`, `/leistungen/hospiz-sitzwachen` und `/leistungen/reisebegleitung-senioren` jeweils ein Hinweis auf den Partnerverein „Leben Pflegen Reisen e.V." in der Intro.
+- **Schichtplaner-Link im Footer**: externer Link auf `zuhause.heilpraxis-frommholz.de` (separates Repo, interner Mitarbeiterbereich), unten neben Impressum/Datenschutz/AGB/Karriere. Tote `/ueber-uns`-Link aus der Bottom-Row entfernt, AGB-Link ergänzt.
+
+### Konfiguration in Vercel (vor dem nächsten Deploy einmal eintragen)
+
+| Variable | Wert |
+|---|---|
+| `RESEND_API_KEY` | API-Key aus dem Resend-Dashboard |
+| `MAIL_FROM` | `Heilpraxis Frommholz <kontakt@heilpraxis-frommholz.de>` (nur wenn Domain in Resend verifiziert ist; sonst `Heilpraxis Frommholz <onboarding@resend.dev>`) |
+| `MAIL_TO` | optional, default ist `simeon@heilpraxis-frommholz.de` |
+
+Solange `RESEND_API_KEY` fehlt, zeigt das Formular nach dem Klick einen kurzen Fehlerhinweis und weist auf Telefon/E-Mail hin — niemand bekommt eine kaputte Seite zu sehen.
+
+### Nicht drin
+
+- **LPR-Website-Link**: URL des Partnervereins noch nicht eingetragen — sobald Eric sie liefert, lege ich `PARTNERS.lpr.url` in `lib/site-config.ts` an und mache die Erwähnungen klickbar.
+
+---
+
 ## [SEO Welle 3] – 2026-05-14
 
 Dritte (und letzte) Welle des SEO-Mega-Briefings: vollständige lokale SEO-Abdeckung über 11 Stadtteil-Seiten + 5 Recruiting-Seiten. Damit ist das Briefing inhaltlich abgearbeitet.

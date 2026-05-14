@@ -92,11 +92,21 @@ export function Footer() {
 
       <div className="border-t border-cream/10 mt-12 pt-6 flex flex-col md:flex-row md:justify-between text-xs text-warm-gray gap-3">
         <span>© {year} {SITE.name}. Alle Rechte vorbehalten.</span>
-        <div className="flex gap-5">
+        <div className="flex flex-wrap gap-x-5 gap-y-2">
           <Link href="/impressum" className="hover:text-gold-soft">Impressum</Link>
           <Link href="/datenschutz" className="hover:text-gold-soft">Datenschutz</Link>
-          <Link href="/ueber-uns" className="hover:text-gold-soft">Über uns</Link>
+          <Link href="/agb" className="hover:text-gold-soft">AGB</Link>
           <Link href="/karriere" className="hover:text-gold-soft">Karriere</Link>
+          <a
+            href="https://zuhause.heilpraxis-frommholz.de"
+            target="_blank"
+            rel="noopener"
+            className="hover:text-gold-soft"
+            title="Mitarbeiterbereich (Schichtplaner) — externe Seite"
+          >
+            Schichtplaner
+            <span aria-hidden="true" className="ml-1">↗</span>
+          </a>
         </div>
       </div>
     </footer>
