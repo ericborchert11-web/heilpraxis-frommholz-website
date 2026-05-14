@@ -183,7 +183,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
         { question: 'Nehmen Sie auch Klienten auf, die andere Pflegedienste abgelehnt haben?', answer: 'Ja — oft sind es genau diese Anfragen, die zu uns kommen. Wir prüfen jeden Fall einzeln im Erstgespräch.' },
         { question: 'Können Sie Klientinnen und Klienten mit gesetzlicher Betreuung übernehmen?', answer: 'Ja. Wir arbeiten regelmäßig mit gesetzlichen Betreuern (Berufs- und Familienbetreuern) zusammen. Der Vertrag kommt dann mit dem Betreuer als Vertretungsberechtigten zustande.' },
         { question: 'Wie schnell können Sie übernehmen?', answer: 'Bei akuten Übernahmen aus der Klinik in der Regel innerhalb von 3-7 Tagen, je nach Komplexität des Settings. Eine schnellere Übernahme ist in Notfällen möglich.' },
-        { question: 'Was kostet eine 24-Stunden-Systemsprenger-Betreuung pro Monat ungefähr?', answer: 'Sehr unterschiedlich, je nach erforderlicher Qualifikation und Setting. Realistisch sind 12.000–20.000 € pro Monat für eine durchgehende 1:1-Betreuung im Wechselschicht-Modell. Wir geben im Erstgespräch eine konkrete Kalkulation.' },
+        { question: 'Was kostet eine 24-Stunden-Systemsprenger-Betreuung pro Monat ungefähr?', answer: 'Stark unterschiedlich, je nach erforderlicher Qualifikation, Setting und Komplexität. Eine durchgehende 1:1-Betreuung im Wechselschicht-Modell liegt deutlich über klassischer ambulanter Pflege — die genaue Kalkulation bekommen Sie im Erstgespräch nach Bedarfsklärung.' },
         { question: 'Was passiert, wenn ein Klient gewalttätig wird?', answer: 'Wir haben klare Eskalationsprotokolle. Bei akuter Gefährdung verständigen wir Notarzt und ggf. Polizei. Das ist Teil unserer Erfahrung — solche Situationen sind anstrengend, aber nicht ungewöhnlich.' },
         { question: 'Müssen Klientinnen und Klienten einer Betreuung zustimmen?', answer: 'Ja — es gibt keine Zwangsbetreuung durch uns. Wenn jemand uns nicht in der Wohnung haben will, sind wir nicht zuständig. In solchen Fällen können wir aber Angehörige beraten, wie sie ggf. eine gesetzliche Betreuung anregen.' },
       ],
@@ -237,13 +237,8 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
         {
           heading: 'Was es kostet',
           paragraphs: [
-            'Pauschalpreise haben wir nicht, weil unsere Klientinnen und Klienten unterschiedliche Bedarfe haben. Realistisch sollten Sie kalkulieren:',
-          ],
-          list: [
-            'Stundenweise Begleitung tagsüber: ab 38–45 €/h (je nach Qualifikation).',
-            'Nachtwache: ab 42–48 €/h.',
-            '24-Stunden-Betreuung im Wechselschichtmodell: ca. 12.000–15.000 €/Monat.',
-            'Zuschläge nach § 3b EStG: 25 % nachts (22-6 Uhr), 50 % sonn- und feiertags.',
+            'Pauschalpreise haben wir nicht, weil unsere Klientinnen und Klienten unterschiedliche Bedarfe haben. Stundenweise Begleitung, Nachtwachen und durchgehende 24-Stunden-Betreuung werden je nach Qualifikation der eingesetzten Person und je nach Tageszeit kalkuliert. Zuschläge nach § 3b EStG (25 % nachts von 22:00–06:00, 50 % sonn- und feiertags) sind transparent ausgewiesen.',
+            'Im kostenlosen Erstgespräch hören wir erst zu — danach machen wir einen schriftlichen Vorschlag mit konkretem Stundensatz, Schichtplan und monatlicher Größenordnung. Sie entscheiden in Ruhe.',
           ],
         },
         {
@@ -306,11 +301,9 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
         },
         {
           heading: 'Was 24-Stunden-Betreuung bei uns kostet',
-          paragraphs: ['Eine durchgehende Betreuung mit drei Schichten pro Tag, sieben Tage die Woche, kostet realistisch:'],
-          stronglist: [
-            { label: 'Mit Nachtbereitschaft (passive Anwesenheit)', text: 'ca. 12.000–15.000 €/Monat.' },
-            { label: 'Mit aktiver Nachtbetreuung', text: 'ca. 15.000–19.000 €/Monat.' },
-            { label: 'Mit hoher pflegerischer Qualifikation (z. B. Beatmung, Wundmanagement)', text: 'ca. 18.000–25.000 €/Monat.' },
+          paragraphs: [
+            'Eine durchgehende Betreuung mit drei Schichten pro Tag, sieben Tage die Woche, ist eine erhebliche monatliche Investition. Was sie konkret kostet, hängt von drei Faktoren ab: ob die Nacht in Bereitschaft oder aktiv gefahren wird, welche Qualifikation pflegerisch nötig ist (Examinierte Pflegekraft, Pflegehilfskraft, Betreuungskraft), und welche besonderen Anforderungen es gibt (Beatmung, Wundmanagement, herausforderndes Verhalten).',
+            'Im Erstgespräch (60–90 Minuten, kostenlos) gehen wir das Setting konkret durch und liefern eine schriftliche Kalkulation mit monatlicher Größenordnung — keine Pauschalen, keine Überraschungen.',
           ],
         },
         {
@@ -381,12 +374,8 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
         },
         {
           heading: 'Was es kostet',
-          paragraphs: ['Das Erstgespräch ist kostenlos und unverbindlich. Für ausführliche Beratung und Begleitung gilt folgender Rahmen:'],
-          stronglist: [
-            { label: 'Beratung im Büro oder telefonisch', text: '90–120 € pro Stunde.' },
-            { label: 'Hausbesuch in Berlin', text: 'ab 150 € pro Stunde inkl. Fahrt.' },
-            { label: 'Begleitung beim MDK-Termin (vor Ort)', text: 'ab 250 € als Paket.' },
-            { label: 'Antragsbegleitung schriftlich', text: 'nach Aufwand, in der Regel 200-500 €.' },
+          paragraphs: [
+            'Das Erstgespräch ist kostenlos und unverbindlich. Für ausführliche Beratung, Hausbesuche, MDK-Begleitung und Antragsbegleitung kalkulieren wir nach Aufwand — die jeweilige Größenordnung nennen wir Ihnen direkt im Erstgespräch und halten sie schriftlich fest. Pauschalpreise haben wir nicht, weil die Anliegen zu unterschiedlich sind.',
           ],
         },
         {
@@ -453,12 +442,10 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
         },
         {
           heading: 'Was eine Nachtwache kostet',
-          stronglist: [
-            { label: 'Aktive Nachtwache', text: '42–48 €/h (Standardqualifikation), 48–55 €/h (examinierte Pflegekraft).' },
-            { label: 'Bereitschaftsnachtwache', text: '28–35 €/h.' },
-            { label: 'Nachtzuschlag (22:00–06:00)', text: '25 % — bereits in den Sätzen oben enthalten.' },
+          paragraphs: [
+            'Der Stundensatz hängt davon ab, ob es eine aktive Nachtwache ist (durchgehend wach, dokumentierend) oder eine Bereitschaftsnachtwache (Schlaf im Nebenraum, bei Bedarf geweckt). Und davon, welche Qualifikation eingesetzt wird — examinierte Pflegekraft oder erfahrene Betreuungskraft.',
+            'Im Erstgespräch klären wir den konkreten Bedarf und nennen Ihnen den Stundensatz sowie die voraussichtliche Gesamtsumme für die geplante Schicht. Nacht- und Sonntagszuschläge nach § 3b EStG sind in den Sätzen bereits enthalten und transparent ausgewiesen.',
           ],
-          paragraphs: ['Eine 10-Stunden-Nachtwache (z. B. 20:00–06:00) kostet in der Standardausführung also rund 350–400 € brutto.'],
         },
       ],
       faq: [
@@ -522,13 +509,10 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
         },
         {
           heading: 'Was Hospiz-Sitzwachen kosten',
-          paragraphs: ['Sitzwachen am Lebensende sind oft schon teure Tage in einer ohnehin teuren Phase. Wir berechnen einen reduzierten Sterbebegleitungs-Tarif:'],
-          stronglist: [
-            { label: 'Tagsüber', text: '38 €/h.' },
-            { label: 'Nachts (22:00–06:00)', text: '45 €/h (inkl. 25 % Nachtzuschlag).' },
-            { label: 'Sonn-/Feiertags', text: '50 % Zuschlag.' },
+          paragraphs: [
+            'Sitzwachen am Lebensende sind oft schon teure Tage in einer ohnehin teuren Phase. Wir berechnen einen reduzierten Sterbebegleitungs-Tarif, der unter unserem Standard liegt — die genaue Summe für eine Nachtschicht oder mehrtägige Begleitung nennen wir im Erstgespräch.',
+            'Nacht- (25 %) und Sonn-/Feiertagszuschläge (50 %) nach § 3b EStG sind transparent ausgewiesen.',
           ],
-          trailingParagraphs: ['Eine 12-Stunden-Nacht kostet damit ca. 540 € brutto. Eine durchgehende 24-Stunden-Sterbebegleitung über drei Tage liegt bei etwa 3.500–4.000 €.'],
         },
       ],
       faq: [
@@ -593,14 +577,10 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
         },
         {
           heading: 'Was Reisebegleitung kostet',
-          paragraphs: ['Hier wird die Kalkulation komplex — es kommt auf Dauer, Strecke und Qualifikation an:'],
-          stronglist: [
-            { label: 'Reisebegleitung ohne medizinische Qualifikation, innerdeutsch', text: 'ab 380 €/Tag.' },
-            { label: 'Reisebegleitung mit examinierter Pflegekraft, innerdeutsch', text: 'ab 480 €/Tag.' },
-            { label: 'Internationale Reisebegleitung', text: 'nach Absprache, oft 600–800 €/Tag zzgl. Reisekosten.' },
-            { label: 'Krankenhausverlegungs-Begleitung', text: 'nach Aufwand, in der Regel 1.500–3.000 € pro Strecke.' },
+          paragraphs: [
+            'Hier wird die Kalkulation komplex — es kommt auf Dauer, Strecke und Qualifikation an. Eine innerdeutsche Reisebegleitung ohne medizinischen Bedarf wird anders kalkuliert als eine internationale Reise mit examinierter Pflegekraft oder eine Krankenhausverlegung mit Rettungstransport-Anbindung. Wir machen Ihnen nach dem Erstgespräch einen schriftlichen Vorschlag mit Tagessatz und Gesamtsumme.',
+            'Reisekosten (Bahn, Flug, Hotel) trägt der Auftraggeber separat. Wir reisen in derselben Klasse wie die zu begleitende Person.',
           ],
-          trailingParagraphs: ['Reisekosten (Bahn, Flug, Hotel) trägt der Auftraggeber separat. Wir reisen in derselben Klasse wie die zu begleitende Person.'],
         },
       ],
       faq: [

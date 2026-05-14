@@ -29,7 +29,7 @@ export const GLOBAL_FAQ: readonly FaqItem[] = [
   {
     question: 'Was kostet 1:1-Betreuung bei Ihnen?',
     answer:
-      'Stundenweise Begleitung ab 38 €/h, Nachtwachen ab 42 €/h, 24-Stunden-Betreuung ab ca. 12.000 €/Monat. Pauschalpreise nennen wir nicht, weil die Situationen sehr unterschiedlich sind. Im kostenlosen Erstgespräch erhalten Sie einen verbindlichen Kostenvoranschlag.',
+      'Pauschalpreise nennen wir nicht, weil die Situationen sehr unterschiedlich sind — Bedarf, Qualifikation, Tageszeit und Setting fließen in die Kalkulation ein. Im kostenlosen Erstgespräch hören wir erst zu, dann machen wir einen schriftlichen Vorschlag mit verbindlichem Preis. Sie entscheiden in Ruhe.',
   },
   {
     question: 'Wer sind Ihre Mitarbeitenden?',

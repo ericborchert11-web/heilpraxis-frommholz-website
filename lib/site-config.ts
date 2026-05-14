@@ -12,7 +12,6 @@ export const SITE = {
   description: 'Private Pflege, Alltagsbegleitung und Beratung in Berlin und Umland. Stundenweise bis 24/7. Mit Erfahrung, Sorgfalt und Haltung.',
   url: RUNTIME_SITE_URL,
   defaultOgImage: '/og-default.jpg',
-  priceRange: '€€€',
   /**
    * Profile + verbundene Seiten — wichtig als „sameAs"-Trust-Signal für
    * Google. Hier erweitern, sobald LinkedIn/Facebook/Google-Business-URLs

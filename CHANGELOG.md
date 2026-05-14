@@ -2,6 +2,26 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [Preise raus] – 2026-05-14
+
+Eric: „Es darf keine Preise geben." Sämtliche konkreten €-Beträge für eigene Leistungen und Mitarbeitergehälter sind aus dem öffentlichen Content entfernt. Stattdessen einheitlich der Hinweis: konkrete Kalkulation im kostenlosen Erstgespräch bzw. Bewerbungsgespräch.
+
+### Was raus ist
+
+- Money-Pages (`lib/leistungen-seo.ts`): Stundensätze, Tagessätze, Monatspakete für Selbstzahler-Pflege, 24-Stunden-Betreuung, Pflegeberatung, Nachtwachen, Hospiz-Sitzwachen, Reisebegleitung. „Was es kostet"-Sektionen umformuliert auf Bedarfsklärung.
+- Themen-Pages (`lib/themen.ts`): MDK-Begleitung-Pauschale, Demenz-Begleitung-Stundensatz, Krankenhaus-Begleitung-Tarife, Wohnungsauflösung-Stundensätze.
+- Standorte (`lib/standorte.ts`): zwei FAQ-Antworten in Wilmersdorf und Schmargendorf, in denen konkrete Preise standen.
+- Startseiten-FAQ (`lib/faq-global.ts`): „Was kostet 1:1-Betreuung?"-Antwort.
+- Karriere (`lib/karriere.ts`): alle Stundensätze, Monatsschätzungen und Beispielsrechnungen aus den 5 Recruiting-Seiten. Tonfall: „deutlich über Branchendurchschnitt der ambulanten Pflege, Zuschläge nach § 3b EStG voll ausgezahlt — konkrete Sätze im Bewerbungsgespräch".
+- JSON-LD `priceRange: €€€` aus `lib/site-config.ts` und `components/SEO/JsonLd.tsx`.
+
+### Was bleibt
+
+- Alle SGB-XI-Beträge der Pflegekasse: Pflegegeld-Tabelle (332/573/765/947 €), Sachleistungs-Beträge, Entlastungsbetrag (125 €), Verhinderungspflege (1.612 € + bis 806 € aus Kurzzeitpflege), Kurzzeitpflege-Übertrag, Wohnraumanpassung (bis 4.000 €), 70 € Verzugsanspruch bei MDK-Fristüberschreitung. Das sind staatliche Fakten, nicht unsere Preise.
+- AGB § 4 Zuschläge nach § 3b EStG (25 % nachts, 50 % Sonn-/Feiertag): Vertragsstruktur, kein absoluter Preis.
+
+---
+
 ## [SEO-Fixes nach mobilem Live-Check] – 2026-05-14
 
 Reaktion auf das mobile-Claude-Briefing (`briefings/SEO-FIXES-BRIEFING.md`, gitignored). Drei zusammenhängende Bugs identifiziert, hier der Code-Anteil:

@@ -264,7 +264,7 @@ export const THEMEN: readonly SeoThema[] = [
         },
         {
           heading: 'Wenn Sie unsicher sind',
-          paragraphs: ['Wir bieten Begleitung bei MDK-Terminen an. Unser*e Mitarbeiter*in nimmt am Termin teil, stellt fundierte Fragen, fügt Beobachtungen hinzu, schützt vor Unterbewertung. Pauschalpreis 250 €.'],
+          paragraphs: ['Wir bieten Begleitung bei MDK-Terminen an. Unser*e Mitarbeiter*in nimmt am Termin teil, stellt fundierte Fragen, fügt Beobachtungen hinzu, schützt vor Unterbewertung. Die Konditionen besprechen wir im Erstgespräch.'],
         },
       ],
       faq: [
@@ -272,7 +272,7 @@ export const THEMEN: readonly SeoThema[] = [
         { question: 'Was passiert, wenn ich mit dem Bescheid nicht einverstanden bin?', answer: 'Sie können innerhalb von 4 Wochen formlos Widerspruch einlegen.' },
         { question: 'Wie oft kann der Pflegegrad neu begutachtet werden?', answer: 'Bei Verschlechterung jederzeit. Bei einer Routine-Wiederholung in der Regel alle 1-2 Jahre.' },
         { question: 'Wer entscheidet am Ende über den Pflegegrad?', answer: 'Die Pflegekasse — auf Basis des MDK-Gutachtens. Sie kann theoretisch davon abweichen, tut es aber selten.' },
-        { question: 'Was kostet die Vorbereitung?', answer: 'Erstgespräch kostenlos. Tiefere Beratung 90-150 €/h. MDK-Begleitung als Pauschale 250 €.' },
+        { question: 'Was kostet die Vorbereitung?', answer: 'Erstgespräch kostenlos. Tiefere Beratung und MDK-Begleitung kalkulieren wir nach Aufwand und Setting — die jeweilige Größenordnung erfahren Sie direkt im Erstgespräch.' },
       ],
       cta: { text: 'Pflegeberatung anfragen', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
@@ -339,7 +339,7 @@ export const THEMEN: readonly SeoThema[] = [
       faq: [
         { question: 'Ab wann ist Demenz behandlungsbedürftig?', answer: 'Sobald sich Alltag oder Sicherheit verändern. Eine Frühdiagnose hilft, Verlauf zu verlangsamen und Strukturen aufzubauen.' },
         { question: 'Können Demenzkranke noch alleine wohnen?', answer: 'In Phase 1 oft ja, mit Unterstützung. In Phase 2 nur mit klarer Tagesstruktur und stundenweise Begleitung. In Phase 3 in der Regel nicht mehr.' },
-        { question: 'Was kostet eine stundenweise Demenz-Begleitung?', answer: 'Bei uns ab 38 €/h. Zuschläge nachts und sonntags.' },
+        { question: 'Was kostet eine stundenweise Demenz-Begleitung?', answer: 'Stundensätze hängen von der eingesetzten Qualifikation ab; Zuschläge nach § 3b EStG (25 % nachts, 50 % sonn-/feiertags) kommen hinzu. Konkrete Kalkulation im kostenlosen Erstgespräch.' },
         { question: 'Übernimmt die Pflegekasse die Kosten?', answer: 'Nicht direkt — wir rechnen als Selbstzahler-Leistung ab. Pflegegeld und Entlastungsbetrag können aber anteilig genutzt werden.' },
       ],
       cta: { text: 'Pflegeberatung anfragen', href: '/leistungen/pflegeberatung-berlin' },
@@ -461,12 +461,10 @@ export const THEMEN: readonly SeoThema[] = [
         },
         {
           heading: 'Was es kostet',
-          stronglist: [
-            { label: 'Tagsüber', text: '40–45 €/h (Standard), 48–55 €/h (examinierte Pflegekraft).' },
-            { label: 'Nachts', text: '45–52 €/h.' },
-            { label: 'Sonn-/Feiertags', text: '50 % Zuschlag.' },
+          paragraphs: [
+            'Stundenweise Krankenhaus-Begleitung wird nach Qualifikation, Tageszeit und Wochentag kalkuliert. Eine durchgehende Begleitung über mehrere Tage (z. B. erste 48 Stunden nach OP, letzte Tage vor Verlegung) wird zur Gesamtsumme zusammengefasst. Zuschläge nach § 3b EStG (Nacht 25 %, Sonn-/Feiertag 50 %) sind transparent ausgewiesen.',
+            'Im Erstgespräch klären wir Setting und Dauer und nennen Ihnen eine konkrete Summe für die geplante Begleitung.',
           ],
-          paragraphs: ['Eine 24-Stunden-Begleitung über 5 Tage liegt bei ca. 5.500–7.500 € (je nach Qualifikation und Wochentag-Mix).'],
         },
         {
           heading: 'Versicherungsfragen',
@@ -533,11 +531,9 @@ export const THEMEN: readonly SeoThema[] = [
         },
         {
           heading: 'Was es kostet',
-          paragraphs: ['Pauschalpreise gibt es bei uns nicht für diese Leistung — der Aufwand ist zu individuell.'],
-          stronglist: [
-            { label: 'Beratung und Koordination', text: 'ab 80–120 €/h.' },
-            { label: 'Koordination externer Anbieter', text: 'wir vermitteln Entrümpler etc. und legen deren Preise als Anlage bei.' },
-            { label: 'Begleitung der Person beim Umzug', text: 'zu üblichen Stundensätzen (38–45 €/h).' },
+          paragraphs: [
+            'Pauschalpreise gibt es bei uns nicht für diese Leistung — der Aufwand ist zu individuell. Beratung und Koordination, die Begleitung der pflegebedürftigen Person beim Umzug, das Sortieren der Wertsachen, die Vermittlung externer Anbieter (Entrümpler, Endreinigung) — alle Bausteine werden nach Aufwand kalkuliert. Im Erstgespräch besprechen wir, was wirklich gebraucht wird, und nennen Ihnen eine konkrete Summe pro Baustein.',
+            'Kosten externer Anbieter (Entrümpler etc.) legen wir transparent als Anlage zur Rechnung bei.',
           ],
         },
       ],

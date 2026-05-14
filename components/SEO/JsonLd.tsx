@@ -31,7 +31,6 @@ export function MedicalBusinessJsonLd() {
     url: SITE.url,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
-    priceRange: SITE.priceRange,
     address: {
       '@type': 'PostalAddress',
       streetAddress: BUSINESS.address.streetLong,

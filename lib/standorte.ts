@@ -355,7 +355,7 @@ export const STANDORTE: readonly SeoStandort[] = [
       faq: [
         { question: 'Mein Vater ist 92 und will keinen Pflegedienst, weil er keine „fremden Leute" in der Wohnung haben will. Was tun?', answer: 'Häufige Situation. Wir gehen das langsam an — oft mit einem ersten Besuch, in dem nichts gepflegt wird, nur ein Gespräch geführt. Unsere Mitarbeitenden sind erfahren im Aufbau von Vertrauen. Oft löst sich der Widerstand innerhalb weniger Besuche.' },
         { question: 'Können Sie Klassik-Hörerinnen bei Konzertbesuchen begleiten?', answer: 'Ja — das ist sogar eine unserer Spezialitäten in Wilmersdorf. Begleitung zur Berliner Philharmonie, zur Deutschen Oper, in die Konzerthäuser — mit Mitarbeitenden, die mit der Musik und der Etikette vertraut sind.' },
-        { question: 'Was kostet eine 24-Stunden-Betreuung in einer 6-Zimmer-Altbauwohnung?', answer: 'Die Wohnungsgröße ändert nichts am Preis — der hängt von der erforderlichen Qualifikation ab. Eine 24-Stunden-Standardbetreuung liegt bei 12.000–15.000 € monatlich.' },
+        { question: 'Was kostet eine 24-Stunden-Betreuung in einer 6-Zimmer-Altbauwohnung?', answer: 'Die Wohnungsgröße ändert nichts am Preis — entscheidend ist die erforderliche Qualifikation pro Schicht und ob die Nacht aktiv oder in Bereitschaft gefahren wird. Konkrete monatliche Größenordnung bekommen Sie im Erstgespräch nach Bedarfsklärung.' },
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
@@ -639,7 +639,7 @@ export const STANDORTE: readonly SeoStandort[] = [
       ],
       faq: [
         { question: 'Können Sie auch nur für 3-4 Stunden am Nachmittag kommen?', answer: 'Ja — das ist sogar oft das gewünschte Modell hier. Eine Nachmittagsbegleitung von 14-18 Uhr für gemeinsamen Spaziergang, Kaffee und Gespräch ist typisch.' },
-        { question: 'Was kostet eine Nachtwache?', answer: 'Standard-Nachtwache mit Anwesenheit 22-6 Uhr: ca. 350-400 €. Inklusive Nachtzuschläge. Bei wacher Nachtwache mit aktiver Versorgung höher.' },
+        { question: 'Was kostet eine Nachtwache?', answer: 'Der Stundensatz hängt von der Qualifikation und davon ab, ob die Nacht aktiv (durchgehend wach) oder in Bereitschaft gefahren wird. Nacht- und Sonntagszuschläge nach § 3b EStG sind enthalten. Konkrete Summe für die geplante Schicht bekommen Sie im Erstgespräch.' },
         { question: 'Wir wollen für die Pflege unseres Vaters jemanden, der dauerhaft bleibt und nicht häufig wechselt. Geht das?', answer: 'Genau das ist unser Modell. Wir setzen kleine feste Teams ein (2-4 Personen), die sich abwechseln. Der Klient hat nicht jeden Tag ein neues Gesicht vor sich.' },
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },

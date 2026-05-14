@@ -46,13 +46,10 @@ export const KARRIERE: readonly SeoKarriere[] = [
         },
         {
           heading: 'Was Sie verdienen',
-          paragraphs: ['Stundensätze richten sich nach Qualifikation:'],
-          stronglist: [
-            { label: 'Pflegehilfskraft mit Erfahrung', text: 'ab 18–22 €/h.' },
-            { label: 'Examinierte Pflegekraft', text: 'ab 25–30 €/h.' },
-            { label: 'Spezialqualifikation (z. B. Palliative Care, Demenzbegleitung)', text: 'ab 28–32 €/h.' },
+          paragraphs: [
+            'Stundensätze richten sich nach Ihrer Qualifikation (Pflegehilfskraft, Examinierte Pflegekraft, Spezialqualifikation wie Palliative Care oder Demenzbegleitung). Wir zahlen deutlich über dem Branchendurchschnitt der ambulanten Pflege — und Zuschläge nach § 3b EStG (Nacht 25 %, Sonntag 50 %, Feiertag 100 %) werden voll ausgezahlt.',
+            'Konkrete Sätze besprechen wir im Bewerbungsgespräch, abhängig von Ihrer Berufserfahrung und gewünschtem Modell.',
           ],
-          trailingParagraphs: ['Plus Zuschläge: Nacht (22-6 Uhr) 25 %, Sonntag 50 %, Feiertag 100 %.'],
         },
         {
           heading: 'Was Sie tun',
@@ -70,7 +67,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
       ],
       faq: [
         { question: 'Ist das wirklich realistisch — Pflege ohne Schichtdienst?', answer: 'Ja — in unserem Modell. Wir können das, weil wir keine 24/7-Stationsversorgung machen, sondern individuelle Betreuung im Auftrag von Selbstzahlern. Schichtdienst ist keine Notwendigkeit unseres Modells.' },
-        { question: 'Verdiene ich weniger als in der Klinik?', answer: 'Brutto pro Stunde meist mehr. Brutto pro Monat hängt von Ihrer Stundenzahl ab — wenn Sie 100 % arbeiten, kommen Sie auf ein Klinik-vergleichbares Einkommen mit deutlich weniger Belastung.' },
+        { question: 'Verdiene ich weniger als in der Klinik?', answer: 'Brutto pro Stunde meist mehr — deutlich über dem Branchendurchschnitt der ambulanten Pflege, Zuschläge voll ausgezahlt. Brutto pro Monat hängt von Ihrer Stundenzahl ab.' },
         { question: 'Bekomme ich genug Stunden?', answer: 'Wir haben deutlich mehr Anfragen als wir Kräfte haben — Stunden gibt es, soviel Sie wollen.' },
       ],
       cta: { text: 'Jetzt bewerben', href: 'mailto:simeon@heilpraxis-frommholz.de' },
@@ -121,7 +118,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
         },
         {
           heading: 'Was Sie verdienen',
-          paragraphs: ['Stundensätze ab 22 € (Pflegehilfskraft mit Erfahrung) bis 30 € (Examinierte Pflegekraft mit Spezialqualifikation), plus Zuschläge nach § 3b EStG.'],
+          paragraphs: ['Deutlich über dem Branchendurchschnitt der ambulanten Pflege, gestaffelt nach Qualifikation und Berufserfahrung. Zuschläge nach § 3b EStG (Nacht 25 %, Sonntag 50 %, Feiertag 100 %) werden voll ausgezahlt. Konkrete Sätze besprechen wir im Bewerbungsgespräch.'],
         },
       ],
       faq: [
@@ -184,7 +181,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
         },
         {
           heading: 'Was Sie verdienen',
-          paragraphs: ['Wie bei den anderen Stellen: Pflegehilfskraft ab 18-22 €/h, Examinierte ab 25-30 €/h, plus Zuschläge.'],
+          paragraphs: ['Wie bei den anderen Stellen: deutlich über Branchendurchschnitt, gestaffelt nach Qualifikation, plus Zuschläge nach § 3b EStG. Konkrete Sätze im Bewerbungsgespräch.'],
         },
       ],
       faq: [
@@ -228,7 +225,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
           heading: 'Was Sie verdienen',
           paragraphs: [
             'Seit 2023 gilt keine Hinzuverdienstgrenze mehr für Altersrentner*innen. Sie können also so viel arbeiten, wie Sie wollen, ohne dass die Rente gekürzt wird.',
-            'Stundensätze: 18–30 €/h je nach Qualifikation. Plus Zuschläge. Mit 10 Stunden pro Woche zu üblichen Sätzen sind 800–1.200 € monatlich brutto realistisch.',
+            'Stundensätze richten sich nach Qualifikation und Berufserfahrung — deutlich über dem Branchendurchschnitt der ambulanten Pflege, mit voll ausgezahlten Zuschlägen nach § 3b EStG. Konkrete Sätze klären wir im Bewerbungsgespräch.',
           ],
         },
         {
@@ -288,8 +285,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
         },
         {
           heading: 'Was Sie verdienen',
-          paragraphs: ['Sitzwachen werden bei uns mit 16–20 €/h vergütet, je nach Vorerfahrung. Zuschläge bei Nacht- und Wochenenddiensten: Nacht (22-6) +25 %, Sonntag +50 %.'],
-          trailingParagraphs: ['Eine 8-Stunden-Nachtwache am Sonntag bringt also brutto ca. 200–280 €.'],
+          paragraphs: ['Sitzwachen werden marktüblich vergütet, gestaffelt nach Vorerfahrung. Zuschläge bei Nacht- und Wochenenddiensten nach § 3b EStG: Nacht (22-6) +25 %, Sonntag +50 %, Feiertag +100 %. Konkrete Sätze klären wir im Bewerbungsgespräch — Wochenend- und Nachtdienste lohnen sich besonders.'],
         },
         {
           heading: 'Was Sie können müssen',
@@ -312,7 +308,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
       ],
       faq: [
         { question: 'Brauche ich eine Ausbildung?', answer: 'Nein. Lebensreife und Eignung zählen. Pflegerische Tätigkeiten machen Sie nicht.' },
-        { question: 'Wie viel kann ich verdienen pro Monat?', answer: 'Mit 6-10 Stunden pro Woche zu üblichen Sätzen sind 350-600 € monatlich realistisch.' },
+        { question: 'Wie viel kann ich verdienen pro Monat?', answer: 'Das hängt von Ihrer Stundenzahl pro Woche und der Verteilung der Dienste ab (Wochenend- und Nachtdienste bringen Zuschläge). Konkrete Erwartung können wir im Bewerbungsgespräch durchrechnen.' },
         { question: 'Kann ich Sitzwachen mit Studium oder Hauptberuf kombinieren?', answer: 'Ja — die meisten Sitzwachen-Schichten finden abends, nachts oder am Wochenende statt. Genau dafür entworfen.' },
       ],
       cta: { text: 'Jetzt bewerben', href: 'mailto:simeon@heilpraxis-frommholz.de' },
