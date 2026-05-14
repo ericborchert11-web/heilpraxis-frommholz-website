@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Reveal } from './Reveal';
 
 export function Hero() {
@@ -39,14 +40,15 @@ export function Hero() {
       </div>
 
       <Reveal delay={2} className="relative">
-        <div className="aspect-[4/5] bg-cream-deep border border-gold/30 relative overflow-hidden">
-          <div className="absolute inset-4 border border-gold/40 flex items-center justify-center text-center p-8">
-            <p className="font-sans text-sm text-warm-gray italic leading-relaxed">
-              Hier kommt später ein echtes Foto<br />
-              — Begegnung, Wärme, Berliner Lichtsituation —<br />
-              <span className="text-xs text-warm-gray-light">Platzhalter</span>
-            </p>
-          </div>
+        <div className="aspect-[3/2] bg-cream-deep border border-gold/30 relative overflow-hidden">
+          <Image
+            src="/hero-team.jpg"
+            alt="Das Team der Heilpraxis Frommholz mit einem Klienten in der häuslichen und stationären Begleitung"
+            fill
+            priority
+            sizes="(min-width: 1024px) 45vw, 100vw"
+            className="object-cover"
+          />
         </div>
         <div className="mt-6 pl-6 border-l-2 border-gold">
           <p className="font-serif text-lg italic text-anthracite-light leading-relaxed">
