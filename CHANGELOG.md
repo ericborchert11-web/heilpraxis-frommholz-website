@@ -2,6 +2,23 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [SEO-Fixes nach mobilem Live-Check] – 2026-05-14
+
+Reaktion auf das mobile-Claude-Briefing (`briefings/SEO-FIXES-BRIEFING.md`, gitignored). Drei zusammenhängende Bugs identifiziert, hier der Code-Anteil:
+
+### Drin
+
+- **JSON-LD `@type` korrigiert**: war `MedicalBusiness` (Heilkundler-Cluster). Jetzt `["LocalBusiness", "HomeHealthCareService"]` — Pflegedienst-Cluster, dem Geschäftsmodell entsprechend, Google routet in den richtigen lokalen Index.
+- **`sameAs` in JSON-LD ergänzt**: aktuell mit `simeonfrommholz.de`. In `lib/site-config.ts` als Liste, weitere Profile (Google Business, LinkedIn, Facebook) durch Eric ergänzbar.
+- **Site-URL konfigurierbar via `NEXT_PUBLIC_SITE_URL`**: Default bleibt Apex `https://heilpraxis-frommholz.de`. Falls jemals auf www umgestellt werden soll, reicht eine Env-Var-Änderung + Redeploy — kein Code-Change. Greift auf Canonicals, Sitemap, robots.txt und JSON-LD.
+
+### Bewusst nicht im Code (gehört zu Vercel/DNS)
+
+- **Apex-404 (GitHub-Pages-Residue)**: `heilpraxis-frommholz.de` zeigt aktuell auf alte GitHub-Pages-IPs (`185.199.108-111.x`) gemischt mit einer Vercel-IP — Kollege Round-Robin zwischen tot und lebendig. Fix bei **Ionos-DNS** (NS-Records zeigen `ui-dns.*`, nicht Vercel) — die A-Records auf GitHub müssen weg, stattdessen Vercel-Apex-IP `76.76.21.21` setzen. Anleitung im Recap an Eric.
+- **Canonicals/Sitemap/robots.txt**: stimmen aktuell für Apex-als-primary. Sobald DNS gefixt ist, ist alles konsistent — ohne weiteren Eingriff.
+
+---
+
 ## [Kontaktformular + LPR-Kooperation + Schichtplaner-Link] – 2026-05-14
 
 ### Drin

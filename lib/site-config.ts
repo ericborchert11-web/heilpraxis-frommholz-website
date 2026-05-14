@@ -1,11 +1,29 @@
+// Wenn Eric jemals von Apex auf www (oder umgekehrt) wechseln will,
+// reicht das Setzen von NEXT_PUBLIC_SITE_URL in den Vercel-Project-ENVs
+// + ein Redeploy. Kein Code-Change nötig.
+const RUNTIME_SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, '') ??
+  'https://heilpraxis-frommholz.de';
+
 export const SITE = {
   name: 'Heilpraxis Frommholz',
   legalName: 'Heilpraxis Frommholz – Inh. Simeon Frommholz',
   tagline: 'Pflege · Beratung · Begleitung',
   description: 'Private Pflege, Alltagsbegleitung und Beratung in Berlin und Umland. Stundenweise bis 24/7. Mit Erfahrung, Sorgfalt und Haltung.',
-  url: 'https://heilpraxis-frommholz.de',
+  url: RUNTIME_SITE_URL,
   defaultOgImage: '/og-default.jpg',
   priceRange: '€€€',
+  /**
+   * Profile + verbundene Seiten — wichtig als „sameAs"-Trust-Signal für
+   * Google. Hier erweitern, sobald LinkedIn/Facebook/Google-Business-URLs
+   * existieren. Leere Einträge stillschweigend ignoriert.
+   */
+  sameAs: [
+    'https://simeonfrommholz.de',
+    // 'https://www.google.com/maps/place/?q=place_id:XXXX',  // Google Business Profile
+    // 'https://www.linkedin.com/company/heilpraxis-frommholz',
+    // 'https://www.facebook.com/heilpraxisfrommholz',
+  ],
 } as const;
 
 export const BUSINESS = {

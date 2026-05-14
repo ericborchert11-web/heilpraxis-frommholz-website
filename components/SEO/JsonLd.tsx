@@ -9,13 +9,20 @@ function jsonLdString(data: object): string {
 }
 
 /**
- * Globales MedicalBusiness-Schema. Wird im Root-Layout im <head> gerendert,
+ * Globales Business-Schema. Wird im Root-Layout im <head> gerendert,
  * damit jede Seite das Business als @id referenzieren kann.
+ *
+ * @type ist absichtlich ein Array: HomeHealthCareService ist der präzise
+ * Typ für einen Pflegedienst und triggert in Google den richtigen lokalen
+ * Cluster (Krankenpflege, nicht Heilkundler). LocalBusiness als zweiter
+ * Eintrag stellt sicher, dass auch Parser, die HomeHealthCareService nicht
+ * kennen, das Geschäft weiterhin als lokales Unternehmen erkennen.
  */
 export function MedicalBusinessJsonLd() {
+  const sameAs = SITE.sameAs.filter((u) => u.length > 0);
   const data = {
     '@context': 'https://schema.org',
-    '@type': 'MedicalBusiness',
+    '@type': ['LocalBusiness', 'HomeHealthCareService'],
     '@id': `${SITE.url}/#business`,
     name: SITE.name,
     legalName: SITE.legalName,
@@ -52,6 +59,7 @@ export function MedicalBusinessJsonLd() {
       name: BUSINESS.owner,
       jobTitle: BUSINESS.jobTitle,
     },
+    ...(sameAs.length > 0 ? { sameAs } : {}),
   };
 
   return (
