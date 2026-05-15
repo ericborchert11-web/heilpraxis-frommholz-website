@@ -112,6 +112,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
+        { label: 'Klinik-Begleitung Berlin', href: '/leistungen/klinik-begleitung-berlin', note: 'Sitzwachen speziell im Krankenhaus' },
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
         { label: 'Systemsprenger-Betreuung', href: '/leistungen/systemsprenger-betreuung', note: 'bei komplexen psychiatrischen Verläufen' },
       ],
@@ -329,6 +330,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
+        { label: 'Klinik-Begleitung Berlin', href: '/leistungen/klinik-begleitung-berlin', note: 'wenn die durchgehende Begleitung im Krankenhaus stattfindet' },
         { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin', note: 'wenn nur die Nacht abgedeckt werden muss' },
         { label: 'Pflegeberatung', href: '/leistungen/pflegeberatung-berlin', note: 'zu Pflegegrad und Finanzierung' },
       ],
@@ -596,6 +598,76 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
         { label: 'Krankenhaus-Begleitung', href: '/themen/krankenhaus-begleitung', note: 'bei Klinikaufenthalten' },
         { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'für stationäre 1:1-Begleitung' },
+      ],
+    },
+  },
+
+  // === Money Page 9: Klinik-Begleitung Berlin ==================================
+  {
+    slug: 'klinik-begleitung-berlin',
+    title: 'Klinik-Begleitung Berlin',
+    short: '1:1-Begleitung im Krankenhaus — wenn Angehörige nicht jeden Moment vor Ort sein können.',
+    metaTitle: 'Klinik-Begleitung Berlin — 1:1-Betreuung im Krankenhaus',
+    metaDescription: 'Private Klinik-Begleitung in Berlin: Wenn Pflegekräfte 18 Patienten parallel betreuen, sind wir 1:1 für Ihren Angehörigen da. Bei Demenz, Sturzgefahr, nach OPs. Stundenweise bis durchgehend.',
+    h1: 'Klinik-Begleitung in Berlin — wenn Angehörige nicht jeden Moment vor Ort sein können',
+    primaryKeyword: 'Klinik-Begleitung Berlin',
+    secondaryKeywords: ['Krankenhaus Begleitung Berlin', 'private Sitzwache Krankenhaus', 'Demenz Klinik Begleitung', 'Sturzprophylaxe nach OP'],
+    detail: {
+      intro: [
+        'Ein Krankenhausaufenthalt ist für ältere Menschen oft eine Ausnahmesituation — fremde Umgebung, wechselndes Personal, lange Wartezeiten am Klingelknopf. Pflegekräfte versorgen im Stationsalltag oft 18 oder mehr Patientinnen und Patienten parallel; eine 1:1-Anwesenheit ist im Klinikalltag selten möglich.',
+        'Wir begleiten Ihre Angehörigen privat im Krankenhaus: zur Vorbereitung auf eine Reha, in der Nacht nach einer Operation, bei Demenz oder Sturzgefahr, bei längeren Aufenthalten. Stundenweise oder rund um die Uhr — als Ergänzung zum Klinikpersonal, nicht als dessen Ersatz.',
+      ],
+      sections: [
+        {
+          heading: 'Was wir konkret tun',
+          stronglist: [
+            { label: 'Da sein, wenn das Personal nicht kann', text: 'Pflegekräfte versorgen oft 18 oder mehr Patientinnen parallel im Schichtdienst. Wir sind 1:1 vor Ort — durchgehend, wach, beobachtend.' },
+            { label: 'Sturzprophylaxe nach OP', text: 'Gerade nachts nach Narkose, bei Verwirrtheit, in fremder Umgebung. Wir bleiben am Bett und helfen beim Aufstehen, bevor etwas passiert.' },
+            { label: 'Demenz-Begleitung im Krankenhaus', text: 'Wir kennen den Umgang mit Bettflucht, Orientierungsverlust, postoperativem Delir. Eine ruhige Anwesenheit reduziert Stress und den Bedarf an Fixierungen oder Sedierung deutlich.' },
+            { label: 'Essen anreichen, Trinken anbieten', text: 'Was Klinikpersonal aus Zeitnot oft nicht in Ruhe leisten kann — gerade bei Demenzkranken, die das Essen schlicht „vergessen".' },
+            { label: 'Klingel im Blick, Ansprechpartner für Pflege und Ärzte', text: 'Übermittlung von Beobachtungen, Vermittlung bei der Visite, Gedächtnisstütze für Fragen, die im Klinikalltag oft untergehen.' },
+            { label: 'Begleitung zu Untersuchungen und Transporten', text: 'Patientin oder Patient nicht allein auf dem Gang oder beim Warten — wir bleiben dabei.' },
+            { label: 'Entlastung der Familie', text: 'Sie müssen nicht jeden Abend nach der Arbeit hetzen. Sie wissen: Jemand ist da.' },
+          ],
+        },
+        {
+          heading: 'Wann macht das Sinn?',
+          paragraphs: ['Vier typische Situationen, in denen Familien uns rufen:'],
+          stronglist: [
+            { label: 'Nach geplanter OP', text: 'Erste 2–5 Nächte zur Sicherheit — die Phase mit dem höchsten Delir- und Sturzrisiko.' },
+            { label: 'Bei Demenz oder Verwirrtheit', text: 'Dauerhafte Begleitung für die gesamte Aufenthaltszeit, weil die Klinik-Umgebung Demenz oft massiv verschlechtert.' },
+            { label: 'Bei längeren Aufenthalten (über eine Woche)', text: 'Tageweise oder stundenweise, dort wo Angehörige nicht durchgehend selbst kommen können.' },
+            { label: 'In der Notaufnahme', text: 'Kurzfristige Unterstützung, wenn niemand aus der Familie schnell genug vor Ort sein kann.' },
+          ],
+        },
+        {
+          heading: 'Was uns auszeichnet',
+          stronglist: [
+            { label: 'Erfahrene Pflegekräfte, kein Hilfspersonal', text: 'Klinik-Begleitung ist anspruchsvoll. Diese Einsätze übernehmen bei uns nur Kräfte mit entsprechender Berufserfahrung — Beobachtungsgabe, ruhiges Auftreten, Umgang mit Verwirrtheit und Angehörigen, fachliche Einordnung von Beobachtungen für die Übergabe an Klinikpersonal.' },
+            { label: 'Beziehung zur Pflege und zu Ärzten', text: 'Wir wissen, wie man sich im Klinikalltag bewegt, ohne zu stören. Wir melden uns bei Aufnahme und Pflegeleitung an, stimmen Anwesenheitszeiten ab, integrieren uns in die Stationsroutine.' },
+            { label: 'Diskret und würdig', text: 'Wir reden nicht über andere Patienten, ergänzen das Stationsteam respektvoll, nehmen uns zurück, wenn die Familie da ist.' },
+          ],
+        },
+      ],
+      faq: [
+        { question: 'Was kostet eine private Krankenhausbegleitung in Berlin?', answer: 'Die Kosten richten sich nach Stundenumfang, Tag-/Nachtanteil und der erforderlichen Qualifikation. Pauschalpreise nennen wir nicht, weil die Situationen sehr unterschiedlich sind. Im kostenlosen Erstgespräch hören wir erst zu — danach machen wir einen konkreten, transparenten Vorschlag.' },
+        { question: 'Übernimmt die Krankenkasse eine Klinik-Begleitung durch einen Pflegedienst?', answer: 'In den meisten Fällen nicht. Die gesetzliche Krankenkasse zahlt die medizinische Versorgung im Krankenhaus, aber keine zusätzliche 1:1-Betreuung durch einen externen Pflegedienst. Ausnahmen gibt es bei „Rooming-In" für Kinder und in seltenen Sonderfällen. Für Erwachsene mit Demenz, Sturzgefahr oder besonderem Betreuungsbedarf ist die private Klinik-Begleitung in der Regel eine Selbstzahlerleistung. Manche private Zusatzversicherungen erstatten anteilig — bitte vorab klären.' },
+        { question: 'Was kann eine private Begleitung im Krankenhaus überhaupt tun?', answer: 'Anwesend sein, Klingel und Patient im Blick behalten, Essen und Trinken anreichen, beim Lagewechsel helfen, bei Verwirrtheit beruhigen, Pflegekräfte und Ärzte über Beobachtungen informieren, zu Untersuchungen begleiten. Wir ersetzen nicht das Klinikpersonal — wir ergänzen es um eine ständig anwesende Bezugsperson. Medizinische Aufgaben (Medikation, Wundversorgung, Verbandswechsel) liegen weiter beim Klinikpersonal.' },
+        { question: 'Mein Vater hat nach der OP Verwirrtheit (Delir) — was können wir tun?', answer: 'Postoperatives Delir betrifft vor allem ältere Menschen und tritt häufig in den ersten Nächten nach einer Operation auf. Die wirksamste Maßnahme ist eine ruhige, vertraute Anwesenheit — Studien zeigen, dass Sitzwachen den Bedarf an Fixierungen und Sedierung deutlich reduzieren können. Wenn Sie selbst nicht durchgehend vor Ort sein können, übernehmen wir das. Besonders in den Nachtstunden, wenn Verwirrtheit häufig stärker wird.' },
+        { question: 'Meine Mutter hat Demenz und muss ins Krankenhaus — wie können wir helfen?', answer: 'Krankenhausaufenthalte sind für Menschen mit Demenz besonders belastend: fremde Umgebung, fehlende Routinen, viele unbekannte Gesichter. Eine konstante Begleitperson reduziert Angst, Bettflucht und Sturzgefahr deutlich. Wenn Familie nicht durchgehend vor Ort sein kann, übernehmen wir die Begleitung — wir kennen den Umgang mit Demenz und stimmen uns eng mit dem Klinikpersonal ab. Auch das Anreichen von Essen, das bei Demenz oft „vergessen" wird, gehört dazu.' },
+        { question: 'Wie schnell können Sie kommen?', answer: 'Bei geplanten Aufenthalten (OP, Reha) am besten ein paar Tage Vorlauf. Bei akuten Situationen (Notaufnahme, plötzlicher Bedarf) versuchen wir, innerhalb von 24 Stunden eine erste Begleitung zu organisieren — je nach Wochentag und Tageszeit auch schneller. Rufen Sie uns an, dann besprechen wir, was geht.' },
+        { question: 'Darf das Krankenhaus eine private Begleitperson überhaupt zulassen?', answer: 'Ja. Angehörige und von Angehörigen beauftragte Begleitpersonen haben grundsätzlich Zugang zum Patienten. Wir melden uns selbstverständlich bei Aufnahme und Pflegepersonal an und stimmen Anwesenheitszeiten ab. Die meisten Berliner Kliniken kennen das Modell und kooperieren gut. Bei Mehrbettzimmern besprechen wir Rücksichtnahme auf Mitpatienten.' },
+        { question: 'Können Sie auch nur eine einzelne Nacht übernehmen?', answer: 'Ja. Viele unserer Einsätze sind genau das: eine, zwei oder drei Nächte direkt nach einer OP, wenn das Risiko für Sturz oder Verwirrtheit am höchsten ist. Längere Begleitungen über mehrere Wochen machen wir genauso.' },
+        { question: 'In welchen Krankenhäusern sind Sie tätig?', answer: 'Wir begleiten in allen Berliner Kliniken — Charité, Helios, Vivantes, DRK, Park-Klinik Weissensee, St. Joseph, Schlosspark-Klinik, St. Gertrauden und allen weiteren. Schwerpunkt unseres Einsatzgebietes ist der Berliner Westen (Zehlendorf, Grunewald, Charlottenburg, Wilmersdorf, Dahlem, Schmargendorf, Westend), aber wir sind auch in Mitte, Moabit, Tiergarten und Umland aktiv.' },
+        { question: 'Wer macht den Einsatz konkret — Auszubildende oder erfahrene Kräfte?', answer: 'Erfahrene Pflegekräfte mit entsprechender Qualifikation. Klinik-Begleitung ist anspruchsvoll: Beobachtungsgabe, ruhiges Auftreten, Umgang mit Verwirrtheit und Angehörigen, fachliche Einordnung von Beobachtungen für die Übergabe an Klinikpersonal. Diese Einsätze übernehmen bei uns nur Kräfte mit entsprechender Erfahrung.' },
+        { question: 'Was, wenn meine Mutter Sie nicht mag?', answer: 'In der Regel sind wir binnen kurzer Zeit ein vertrautes Gesicht — die meisten Patientinnen und Patienten beruhigen sich schon nach der ersten Stunde. Sollte es im Einzelfall nicht passen, tauschen wir die Kraft aus. Persönliche Chemie ist gerade in diesen Situationen wichtig.' },
+        { question: 'Wie buchen wir das?', answer: 'Ein erstes Telefonat genügt. Wir klären die Situation (geplante OP, akut, dauerhaft), das Bedarfsbild (Demenz, Sturzgefahr, allgemeine Unsicherheit), den Umfang (Tag, Nacht, durchgehend) und das Krankenhaus. Innerhalb von 24 Stunden bekommen Sie ein konkretes Angebot.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'die engste Verwandtschaft — auch zu Hause und im Hospiz' },
+        { label: 'Krankenhaus-Begleitung (Hintergrundwissen)', href: '/themen/krankenhaus-begleitung', note: 'wann eine Begleitung sinnvoll ist, wer sie braucht' },
+        { label: 'Demenz-Begleitung', href: '/themen/demenz-begleitung', note: 'Hintergrund zur Begleitung Demenzerkrankter' },
       ],
     },
   },

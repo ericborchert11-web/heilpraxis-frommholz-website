@@ -2,6 +2,36 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [Klinik-Begleitung Berlin als 9. Money-Page] – 2026-05-15
+
+Neue Premium-Leistungsseite `/leistungen/klinik-begleitung-berlin` aus dem Mobile-Briefing („Klinik-Begleitung Berlin"). Zielgruppe: gut situierte Familien, deren Eltern im Krankenhaus liegen und 1:1-Begleitung neben dem überlasteten Klinikpersonal brauchen.
+
+### Drin
+
+- **9. Eintrag in `lib/leistungen-seo.ts`**: `klinik-begleitung-berlin` mit vollem Detail — Hero/Intro über das 18-Patientinnen-Verhältnis im Krankenhaus, drei Sections (Was wir konkret tun, Wann macht das Sinn, Was uns auszeichnet), 12 FAQs (für FAQPage-Rich-Snippets), CTA, drei relatedLinks.
+- **Position 9 ans Ende der Liste** — bestehende Reihenfolge im Footer und im Hub bleibt unverändert.
+- **Automatische Folgerungen** dank daten-getriebener Architektur: Footer-Spalte „Leistungen" zeigt Klinik-Begleitung; Sitemap-Eintrag via `leistungenWithDetail()`; `/leistungen` Hub zeigt 9. Karte; Service- + FAQPage- + BreadcrumbList-JSON-LD durch `app/leistungen/[slug]/page.tsx`-Template.
+- **Interne Verlinkung ausgebaut**:
+  - `/leistungen/sitzwachen-berlin` → relatedLink ergänzt
+  - `/leistungen/24-stunden-betreuung` → relatedLink ergänzt
+  - `/themen/krankenhaus-begleitung` → Brücken-Hinweis im Intro + Klinik-Begleitung als erster relatedLink
+  - `/themen/demenz-begleitung` → relatedLink ergänzt
+
+### Entscheidung: parallele Seiten statt 301
+
+`/themen/krankenhaus-begleitung` (informativ, „was ist das, wann brauche ich das?") und `/leistungen/klinik-begleitung-berlin` (transaktional, „wir bieten das an") bleiben beide live — bedienen unterschiedliche Suchintents. Themen-Seite bekommt einen prominenten Bridge-Link auf die Leistungsseite.
+
+### Memory-konform
+
+FAQ-Frage 1 („Was kostet …?") nennt **keine** konkreten Stundensätze (auch keine Bereiche), sondern verweist auf das kostenlose Erstgespräch — bleibt linientreu zu [[feedback-no-prices-on-site]].
+
+### Stand der Build
+
+- 46 statisch generierte Pages (vorher 45)
+- Sitemap auf 36 URLs (vorher 35)
+
+---
+
 ## [Preise raus] – 2026-05-14
 
 Eric: „Es darf keine Preise geben." Sämtliche konkreten €-Beträge für eigene Leistungen und Mitarbeitergehälter sind aus dem öffentlichen Content entfernt. Stattdessen einheitlich der Hinweis: konkrete Kalkulation im kostenlosen Erstgespräch bzw. Bewerbungsgespräch.

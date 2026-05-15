@@ -344,6 +344,7 @@ export const THEMEN: readonly SeoThema[] = [
       ],
       cta: { text: 'Pflegeberatung anfragen', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
+        { label: 'Klinik-Begleitung Berlin', href: '/leistungen/klinik-begleitung-berlin', note: 'für Demenz-Patient*innen im Krankenhaus' },
         { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin' },
@@ -427,6 +428,7 @@ export const THEMEN: readonly SeoThema[] = [
       intro: [
         'Ein Krankenhausaufenthalt ist für gesunde Menschen schon anstrengend. Für verwirrte, ängstliche oder schwerkranke Menschen kann er traumatisch sein. Unbekannte Stimmen, fremde Geräusche, ständig wechselndes Personal, lange Stunden des Wartens.',
         'Eine 1:1-Begleitung im Krankenhaus macht den Unterschied. Wir kommen ins Krankenhaus, wir bleiben, wir sind da.',
+        'Diese Seite erklärt das Thema im Hintergrund. Wer direkt eine private Klinik-Begleitung in Berlin buchen möchte, findet die konkrete Leistungsseite weiter unten in den Verweisen.',
       ],
       sections: [
         {
@@ -481,6 +483,7 @@ export const THEMEN: readonly SeoThema[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
+        { label: 'Klinik-Begleitung Berlin (Leistung)', href: '/leistungen/klinik-begleitung-berlin', note: 'die buchbare Premium-Begleitung' },
         { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin' },
         { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Demenz-Begleitung', href: '/themen/demenz-begleitung' },
