@@ -2,6 +2,28 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [Soziales Engagement: toter Link aufgelöst] – 2026-05-15
+
+Die HaltungSection auf der Startseite verlinkte mit „Soziales Engagement →" auf `/soziales-engagement`, was 404 lieferte (einziger toter Link auf der Site nach Audit). Seite jetzt angelegt.
+
+### Drin
+
+- **Neue Page `/soziales-engagement`** mit fünf Sections:
+  - Wer bei uns arbeitet (zweiter Arbeitsmarkt, Quereinsteigerinnen, sieben Mitarbeitende ohne klassischen Pflege-Lebenslauf)
+  - Wurzeln in der gemeinnützigen Krankenpflege Frommholz (gGmbH-Schwesterorganisation, externer Link auf simeonfrommholz.de)
+  - Kooperation mit Leben Pflegen Reisen e.V. (mit Verweisen auf Sitzwachen, Hospiz-Sitzwachen, Reisebegleitung)
+  - Ausbildungs- und Praktikumsplätze (FSJ, Quereinstieg, mit Links zur Karriere-Seite)
+  - Was das für Klient*innen heißt (Selbstzahler-Modell als Voraussetzung sozialer Pflegearbeit)
+  - CTA-Box mit Karriere- und Erstgespräch-Link
+- **Sitemap-Eintrag** ergänzt (Priority 0.5, yearly).
+- **Audit ergeben:** alle anderen 30 internen Slug-Links (Leistungen/Themen/Standorte/Karriere) zeigen auf existierende Routen ✓. Top-Level-Routes alle vorhanden ✓.
+
+### Stand der Build
+
+- 47 statisch generierte Pages (vorher 46)
+
+---
+
 ## [Klinik-Begleitung Berlin als 9. Money-Page] – 2026-05-15
 
 Neue Premium-Leistungsseite `/leistungen/klinik-begleitung-berlin` aus dem Mobile-Briefing („Klinik-Begleitung Berlin"). Zielgruppe: gut situierte Familien, deren Eltern im Krankenhaus liegen und 1:1-Begleitung neben dem überlasteten Klinikpersonal brauchen.

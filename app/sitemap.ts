@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/themen`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE.url}/standorte`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE.url}/karriere`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${SITE.url}/soziales-engagement`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${SITE.url}/impressum`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${SITE.url}/datenschutz`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${SITE.url}/agb`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
