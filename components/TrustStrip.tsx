@@ -1,7 +1,7 @@
 const ITEMS = [
   { num: '20+', label: 'Jahre Pflegeerfahrung' },
   { num: '24/7', label: 'Verlässlich erreichbar' },
-  { num: '§ 3b', label: 'Korrekte Abrechnung' },
+  { num: '100 %', label: 'fest angestellt' },
   { num: 'Berlin', label: '& Umland' },
 ];
 
