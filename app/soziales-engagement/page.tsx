@@ -5,7 +5,7 @@ import { pageMeta } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Soziales Engagement',
-  description: 'Aus der gemeinnützigen Krankenpflege Frommholz: Wer bei uns arbeitet, woran wir glauben, mit wem wir kooperieren. Pflege als soziale Aufgabe.',
+  description: 'Soziales Engagement der Heilpraxis Frommholz: getragen gemeinsam mit unserem Partnerverein Leben Pflegen Reisen e.V. Pflege als soziale Aufgabe — Herkunft, Haltung, Kooperation.',
   ...pageMeta('/soziales-engagement'),
   robots: { index: true, follow: true },
 };
@@ -14,16 +14,37 @@ export default function SozialesEngagementPage() {
   return (
     <PageLayout
       title="Soziales Engagement — Pflege als soziale Aufgabe"
-      lead="Aus der gemeinnützigen Krankenpflege Frommholz bringen wir eine Überzeugung mit: Gute Pflege ist nicht nur eine Frage von Fachlichkeit, sondern auch eine Frage, wem wir eine Chance geben — als Klient und als Mitarbeitende."
+      lead="Soziale Verantwortung gehört für uns zur Pflege — ein großer Teil davon läuft heute über unseren gemeinnützigen Partnerverein Leben Pflegen Reisen e.V. Hier zeigen wir, woher diese Haltung kommt und wie die Zusammenarbeit aussieht."
       crumbs={[
         { name: 'Start', href: '/' },
         { name: 'Soziales Engagement', href: '/soziales-engagement' },
       ]}
     >
       <section>
+        <h2 className="font-serif text-2xl text-anthracite font-light">
+          Getragen mit dem Partnerverein Leben Pflegen Reisen e.V.
+        </h2>
+        <p className="mt-3">
+          Für{' '}
+          <Link href="/leistungen/sitzwachen-berlin" className="underline hover:text-gold-deep">
+            Sitzwachen
+          </Link>
+          ,{' '}
+          <Link href="/leistungen/hospiz-sitzwachen" className="underline hover:text-gold-deep">
+            Hospiz-Sitzwachen
+          </Link>{' '}
+          und{' '}
+          <Link href="/leistungen/reisebegleitung-senioren" className="underline hover:text-gold-deep">
+            Reisebegleitung
+          </Link>{' '}
+          arbeiten wir eng mit dem gemeinnützigen Verein <strong className="text-anthracite">Leben Pflegen Reisen e.V.</strong> zusammen. Der Verein bringt ein ehrenamtliches Netzwerk und langjährige Erfahrung in der Begleitung pflegebedürftiger Menschen auf Reisen mit — eine Ergänzung zu unseren bezahlten pflegerischen Schichten, die Familien gerade in den letzten Stunden eines Lebens oder auf einer letzten gemeinsamen Reise nicht alleine lässt.
+        </p>
+      </section>
+
+      <section>
         <h2 className="font-serif text-2xl text-anthracite font-light">Wer bei uns arbeitet</h2>
         <p className="mt-3">
-          Bei uns arbeiten Menschen, denen das Regelsystem den Wiedereinstieg schwer gemacht hat: Langzeitarbeitslose, Quereinsteigerinnen mit Lebenserfahrung, ältere Pflegekräfte, die anderswo aussortiert wurden, Menschen aus dem sogenannten zweiten Arbeitsmarkt. Sieben unserer aktuellen Mitarbeitenden sind über genau diesen Weg zu uns gekommen.
+          Bei uns arbeiten Menschen, denen das Regelsystem den Wiedereinstieg schwer gemacht hat: Langzeitarbeitslose, Quereinsteigerinnen mit Lebenserfahrung, ältere Pflegekräfte, die anderswo aussortiert wurden, Menschen aus dem sogenannten zweiten Arbeitsmarkt. Etliche unserer Mitarbeitenden sind über genau diesen Weg zu uns gekommen.
         </p>
         <p className="mt-3">
           Wir bilden sie aus, begleiten sie, geben ihnen einen Rahmen, in dem sie wachsen können. Und merken jeden Tag, wie viel Wärme, Geduld und Lebenserfahrung sie in die Pflege bringen — Qualitäten, die in standardisierten Stellenprofilen nicht abgefragt werden, in der täglichen Arbeit am Menschen aber den Unterschied machen.
@@ -32,7 +53,7 @@ export default function SozialesEngagementPage() {
 
       <section>
         <h2 className="font-serif text-2xl text-anthracite font-light">
-          Wurzeln in der gemeinnützigen Krankenpflege Frommholz
+          Woher unsere Haltung kommt
         </h2>
         <p className="mt-3">
           Die Heilpraxis Frommholz ist aus der gemeinnützigen Krankenpflege Frommholz hervorgegangen — eine gGmbH, die seit Jahren in Berlin Pflege für Menschen organisiert, die im Regelsystem schwer Platz finden. Diese Erfahrung prägt uns bis heute: in der Auswahl unserer Mitarbeitenden, in der Bereitschaft, schwierige Klient-Konstellationen anzunehmen (siehe{' '}
@@ -52,25 +73,6 @@ export default function SozialesEngagementPage() {
             simeonfrommholz.de
           </a>
           .
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-serif text-2xl text-anthracite font-light">Kooperation: Leben Pflegen Reisen e.V.</h2>
-        <p className="mt-3">
-          Für{' '}
-          <Link href="/leistungen/sitzwachen-berlin" className="underline hover:text-gold-deep">
-            Sitzwachen
-          </Link>
-          ,{' '}
-          <Link href="/leistungen/hospiz-sitzwachen" className="underline hover:text-gold-deep">
-            Hospiz-Sitzwachen
-          </Link>{' '}
-          und{' '}
-          <Link href="/leistungen/reisebegleitung-senioren" className="underline hover:text-gold-deep">
-            Reisebegleitung
-          </Link>{' '}
-          arbeiten wir eng mit dem gemeinnützigen Verein <strong className="text-anthracite">Leben Pflegen Reisen e.V.</strong> zusammen. Der Verein bringt ein ehrenamtliches Netzwerk und langjährige Erfahrung in der Begleitung pflegebedürftiger Menschen auf Reisen mit — eine Ergänzung zu unseren bezahlten pflegerischen Schichten, die Familien gerade in den letzten Stunden eines Lebens oder auf einer letzten gemeinsamen Reise nicht alleine lässt.
         </p>
       </section>
 
