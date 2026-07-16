@@ -18,6 +18,8 @@ export type SeoStandort = {
   geo: { lat: number; lng: number };
   hook: string;
   isHauptstandort?: boolean;
+  /** Aus der Footer-Standortliste ausblenden (Anbindung via Index + Nachbarn). */
+  hideInFooter?: boolean;
   metaTitle: string;
   metaDescription: string;
   h1: string;
@@ -663,6 +665,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     plz: ['14109', '14129', '14163'],
     geo: { lat: 52.434, lng: 13.201 },
     hook: 'Villenkolonie am See.',
+    hideInFooter: true,
     metaTitle: 'Pflegedienst Nikolassee — diskret in der Villenkolonie',
     metaDescription: 'Privater Pflegedienst in Nikolassee: Pflege, Sitzwachen und 24h-Betreuung für die Villenkolonie am Schlachtensee und Nikolassee. Diskret und verlässlich.',
     h1: 'Pflegedienst Nikolassee — am See, in der Villenkolonie',
@@ -723,6 +726,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     plz: ['14109'],
     geo: { lat: 52.421, lng: 13.163 },
     hook: 'Am Wasser, in Ruhe.',
+    hideInFooter: true,
     metaTitle: 'Pflegedienst Wannsee — Pflege am Wasser, diskret',
     metaDescription: 'Privater Pflegedienst in Wannsee: Pflege, Sitzwachen und 24h-Betreuung in den Villen- und Wasserlagen am Großen Wannsee. Verlässlich und diskret.',
     h1: 'Pflegedienst Wannsee — am Wasser zu Hause bleiben',
@@ -783,6 +787,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     plz: ['13465'],
     geo: { lat: 52.640, lng: 13.291 },
     hook: 'Gartenstadt im Norden.',
+    hideInFooter: true,
     metaTitle: 'Pflegedienst Frohnau — Gartenstadt im Berliner Norden',
     metaDescription: 'Privater Pflegedienst in Frohnau: Pflege, Sitzwachen und 24h-Betreuung in der Gartenstadt im Norden Berlins. Verlässliche Versorgung, auch bei weiter Anfahrt.',
     h1: 'Pflegedienst Frohnau — in der Gartenstadt im Norden',
@@ -840,6 +845,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     plz: ['14532'],
     geo: { lat: 52.408, lng: 13.225 },
     hook: 'Direkt an der Stadtgrenze.',
+    hideInFooter: true,
     metaTitle: 'Pflegedienst Kleinmachnow — grenznah in Brandenburg',
     metaDescription: 'Privater Pflegedienst in Kleinmachnow: Pflege, Sitzwachen und 24h-Betreuung in der Gemeinde direkt an der Berliner Grenze. Einsatz über die Stadtgrenze.',
     h1: 'Pflegedienst Kleinmachnow — grenznah in Brandenburg',
@@ -900,6 +906,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     plz: ['14467', '14469', '14471', '14473', '14476', '14478', '14480', '14482'],
     geo: { lat: 52.399, lng: 13.066 },
     hook: 'Landeshauptstadt an den Seen.',
+    hideInFooter: true,
     metaTitle: 'Pflegedienst Potsdam — private Pflege in der Landeshauptstadt',
     metaDescription: 'Privater Pflegedienst in Potsdam: Pflege, Sitzwachen und 24h-Betreuung in Babelsberg, Berliner Vorstadt und den Seenlagen. Diskret, auch bei weiter Anfahrt.',
     h1: 'Pflegedienst Potsdam — in der Landeshauptstadt an den Seen',

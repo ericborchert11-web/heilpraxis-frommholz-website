@@ -73,7 +73,7 @@ export function Footer() {
         <div>
           <h4 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">Pflege in Ihrem Kiez</h4>
           <ul className="list-none grid grid-cols-2 gap-x-4 gap-y-2">
-            {STANDORTE.map((s) => (
+            {STANDORTE.filter((s) => !s.hideInFooter).map((s) => (
               <li key={s.slug}>
                 <Link href={`/standorte/${s.slug}`} className="text-[13px] hover:text-gold-soft">
                   {s.name}
