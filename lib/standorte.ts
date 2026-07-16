@@ -494,7 +494,7 @@ export const STANDORTE: readonly SeoStandort[] = [
         {
           heading: 'Wer in Zehlendorf zu uns kommt',
           stronglist: [
-            { label: 'Mehrgenerationenhäuser', text: 'Großeltern leben in einem eigenen Bereich des Familienhauses. Familie hilft, soviel sie kann — aber irgendwann reicht das nicht mehr. Wir ergänzen, ohne den familiären Charakter zu stören.' },
+            { label: 'Mehrgenerationenhäuser', text: 'Großeltern leben in einem eigenen Bereich des Familienhauses. Familie hilft, so viel sie kann — aber irgendwann reicht das nicht mehr. Wir ergänzen, ohne den familiären Charakter zu stören.' },
             { label: 'Alleinerbende Witwen und Witwer', text: 'Im großen Familienhaus, die Kinder sind ausgezogen, Tochter in München, Sohn in Frankfurt. Wer kommt vorbei? Wir.' },
             { label: 'Eltern, die ihre eigenen Eltern aufgenommen haben', text: 'Plötzlicher Pflegebedarf, oft mit Demenz, ohne lokales soziales Netz für die Aufgenommenen. Wir helfen, das aufzubauen.' },
             { label: 'Akademikerfamilien', text: 'Universitätsangehörige der nahegelegenen FU, Stiftungsangestellte, Wissenschaftler*innen aus den Berliner Forschungseinrichtungen.' },
@@ -546,7 +546,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     primaryKeyword: 'Pflegedienst Dahlem',
     detail: {
       intro: [
-        'Dahlem ist Akademie. Die Freie Universität, das Botanische Garten, das Max-Planck-Institut für Bildungsforschung, das Max-Planck-Institut für Wissenschaftsgeschichte, die John-F.-Kennedy-Schule. Wer in Dahlem wohnt, gehört oft zu einer dieser Institutionen oder hat einen Bezug dazu. Die Gegend ist still, baumbestanden, beträchtlich gepflegt — und sie altert.',
+        'Dahlem ist Akademie. Die Freie Universität, der Botanische Garten, das Max-Planck-Institut für Bildungsforschung, das Max-Planck-Institut für Wissenschaftsgeschichte, die John-F.-Kennedy-Schule. Wer in Dahlem wohnt, gehört oft zu einer dieser Institutionen oder hat einen Bezug dazu. Die Gegend ist still, baumbestanden, beträchtlich gepflegt — und sie altert.',
         'Viele Professorinnen und Professoren, die in den 60er, 70er, 80er Jahren nach Dahlem zogen, sind jetzt in einem Alter, in dem Pflege ins Spiel kommt. Wir kommen zu ihnen.',
       ],
       sections: [

@@ -182,7 +182,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       ],
       faq: [
         { question: 'Nehmen Sie auch Klienten auf, die andere Pflegedienste abgelehnt haben?', answer: 'Ja — oft sind es genau diese Anfragen, die zu uns kommen. Wir prüfen jeden Fall einzeln im Erstgespräch.' },
-        { question: 'Können Sie Klientinnen und Klienten mit gesetzlicher Betreuung übernehmen?', answer: 'Ja. Wir arbeiten regelmäßig mit gesetzlichen Betreuern (Berufs- und Familienbetreuern) zusammen. Der Vertrag kommt dann mit dem Betreuer als Vertretungsberechtigten zustande.' },
+        { question: 'Können Sie Klientinnen und Klienten mit gesetzlicher Betreuung übernehmen?', answer: 'Ja. Wir arbeiten regelmäßig mit gesetzlichen Betreuern (Berufs- und Familienbetreuern) zusammen. Der Vertrag kommt dann mit dem Betreuer als Vertretungsberechtigtem zustande.' },
         { question: 'Wie schnell können Sie übernehmen?', answer: 'Bei akuten Übernahmen aus der Klinik in der Regel innerhalb von 3-7 Tagen, je nach Komplexität des Settings. Eine schnellere Übernahme ist in Notfällen möglich.' },
         { question: 'Was kostet eine 24-Stunden-Systemsprenger-Betreuung pro Monat ungefähr?', answer: 'Stark unterschiedlich, je nach erforderlicher Qualifikation, Setting und Komplexität. Eine durchgehende 1:1-Betreuung im Wechselschicht-Modell liegt deutlich über klassischer ambulanter Pflege — die genaue Kalkulation bekommen Sie im Erstgespräch nach Bedarfsklärung.' },
         { question: 'Was passiert, wenn ein Klient gewalttätig wird?', answer: 'Wir haben klare Eskalationsprotokolle. Bei akuter Gefährdung verständigen wir Notarzt und ggf. Polizei. Das ist Teil unserer Erfahrung — solche Situationen sind anstrengend, aber nicht ungewöhnlich.' },
@@ -360,7 +360,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
             { label: 'Übergänge gestalten', text: 'Wenn aus dem Krankenhaus die Entlassung näher rückt, wenn Tagespflege oder ambulanter Dienst gewechselt wird, wenn ein Heimplatz gesucht werden muss — wir helfen, die richtigen Schritte in der richtigen Reihenfolge zu tun.' },
             { label: 'Vollmachten und Vorsorge', text: 'Vorsorgevollmacht, Betreuungsverfügung, Patientenverfügung — was wirklich gebraucht wird, wie es formuliert sein muss, wo es hinterlegt gehört.' },
             { label: 'Bauliche Anpassungen', text: 'Was an Umbauten finanziert die Pflegekasse (bis 4.000 € pro Maßnahme)? Welche Hilfsmittel zahlt die Krankenkasse? Wo lohnt der Antrag, wo nicht?' },
-            { label: 'Familieninterne Konflikte', text: 'Wenn Geschwister sich um die Pflege der Eltern streiten, wenn Erwartungen aneinander prallen, wenn Schuldgefühle die Entscheidungen blockieren — wir hören zu, ordnen, schlagen Wege vor.' },
+            { label: 'Familieninterne Konflikte', text: 'Wenn Geschwister sich um die Pflege der Eltern streiten, wenn Erwartungen aneinanderprallen, wenn Schuldgefühle die Entscheidungen blockieren — wir hören zu, ordnen, schlagen Wege vor.' },
           ],
         },
         {
@@ -502,7 +502,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
           heading: 'Was unsere Mitarbeitenden in dieser Arbeit ausmacht',
           paragraphs: ['Hospiz-Sitzwachen sind eine besondere Aufgabe. Wir setzen Kolleginnen und Kollegen ein, die:'],
           list: [
-            'Erfahrung mit Sterbebegleitung haben (Hospizpraktikum, Pflegeerfahrung, Trauerbegleitung-Ausbildung).',
+            'Erfahrung mit Sterbebegleitung haben (Hospizpraktikum, Pflegeerfahrung, Trauerbegleitungs-Ausbildung).',
             'ruhig sind, wirklich ruhig — nicht still aus Unsicherheit, sondern still aus Haltung.',
             'mit eigenen Verlusten gearbeitet haben, sodass nicht ihre Trauer im Zimmer steht.',
             'bei körperlichen Veränderungen in der Sterbephase nicht in Hektik geraten.',
@@ -587,7 +587,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       ],
       faq: [
         { question: 'Können Sie auch ins Ausland mitreisen?', answer: 'Ja — in den Schengen-Raum problemlos, in andere Länder mit etwas Vorlauf für Visa- und Versicherungsfragen.' },
-        { question: 'Was, wenn der Klient während der Reise medizinisch verschlechtert?', answer: 'Bei Verschlechterung wenden wir uns sofort an die nächste medizinische Versorgung (Notarzt, lokales Krankenhaus). Wir bleiben bei der Person und informieren die Angehörigen.' },
+        { question: 'Was, wenn der Klient sich während der Reise medizinisch verschlechtert?', answer: 'Bei Verschlechterung wenden wir uns sofort an die nächste medizinische Versorgung (Notarzt, lokales Krankenhaus). Wir bleiben bei der Person und informieren die Angehörigen.' },
         { question: 'Können Sie auch mit Rollstuhl-Reisenden umgehen?', answer: 'Selbstverständlich. Wir organisieren Rollstuhl-Service der Bahn, Hilfsstationen, Park-Berechtigungen. Bei Bedarf bringen wir leichte mobile Aufstehhilfen mit.' },
         { question: 'Wie weit im Voraus muss eine Reisebegleitung gebucht werden?', answer: 'Innerdeutsch ab 2 Wochen Vorlauf, international ab 4-6 Wochen. Akute Krankenhausverlegungen können auch in 2-3 Tagen organisiert werden.' },
         { question: 'Übernehmen Sie auch Reisen mit Pflegegrad-Personen?', answer: 'Ja — in jeder Pflegegradstufe, sofern reisefähig (das klären wir vorab mit Hausarzt und Klient*in). Mit höheren Pflegegraden setzen wir grundsätzlich examinierte Kräfte ein.' },
