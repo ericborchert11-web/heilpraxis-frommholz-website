@@ -1,7 +1,7 @@
 import { Hero } from '@/components/Hero';
 import { TrustStrip } from '@/components/TrustStrip';
 import { LeistungenGrid } from '@/components/LeistungenGrid';
-import { HaltungSection } from '@/components/HaltungSection';
+import { QualitaetSection } from '@/components/QualitaetSection';
 import { Testimonials } from '@/components/Testimonials';
 import { AblaufSection } from '@/components/AblaufSection';
 import { FaqSection } from '@/components/FaqSection';
@@ -13,7 +13,7 @@ export default function HomePage() {
       <Hero />
       <TrustStrip />
       <LeistungenGrid />
-      <HaltungSection />
+      <QualitaetSection />
       <Testimonials />
       <AblaufSection />
       <FaqSection />
