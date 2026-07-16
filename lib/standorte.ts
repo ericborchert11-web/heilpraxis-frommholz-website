@@ -651,6 +651,303 @@ export const STANDORTE: readonly SeoStandort[] = [
       ],
     },
   },
+
+  // === 12. Nikolassee ==========================================================
+  {
+    slug: 'nikolassee',
+    name: 'Nikolassee',
+    bezirk: 'Steglitz-Zehlendorf',
+    plz: ['14109', '14129', '14163'],
+    geo: { lat: 52.434, lng: 13.201 },
+    hook: 'Villenkolonie am See.',
+    metaTitle: 'Pflegedienst Nikolassee — diskret in der Villenkolonie',
+    metaDescription: 'Privater Pflegedienst in Nikolassee: Pflege, Sitzwachen und 24h-Betreuung für die Villenkolonie am Schlachtensee und Nikolassee. Diskret und verlässlich.',
+    h1: 'Pflegedienst Nikolassee — am See, in der Villenkolonie',
+    primaryKeyword: 'Pflegedienst Nikolassee',
+    detail: {
+      intro: [
+        'Nikolassee wurde ab 1901 als Villenkolonie am Rand des Grunewalds angelegt — zwischen Schlachtensee und Nikolassee, mit großen Grundstücken, alten Baumbeständen und einer Ruhe, die man in Berlin selten findet. Wer hier ein Haus besitzt, hat es oft vor Jahrzehnten gekauft oder von den Eltern übernommen. Die Kolonie ist mit ihren Bewohnerinnen und Bewohnern alt geworden.',
+        'Genau daraus entsteht der Pflegebedarf: Eigentümerinnen und Eigentümer, die ihr Haus am See nicht verlassen wollen und auch nicht müssen. Wir kommen zu ihnen — dorthin, wo sie ihr Leben verbracht haben, statt sie in eine Einrichtung zu verlegen.',
+      ],
+      sections: [
+        {
+          heading: 'Wer in Nikolassee zu uns kommt',
+          list: [
+            'Ältere Hauseigentümer*innen, die seit Jahrzehnten in der Villenkolonie leben und dort bleiben möchten.',
+            'Ehepaare, bei denen ein Partner pflegebedürftig wird und der andere Entlastung braucht.',
+            'Erwachsene Kinder, die selbst nicht in Berlin wohnen und eine verlässliche Betreuung für die Eltern am See suchen.',
+            'Menschen mit beginnender Demenz, für die die vertraute Umgebung am Wasser ein Anker ist.',
+          ],
+        },
+        {
+          heading: 'Was Pflege in Nikolassee ausmacht',
+          stronglist: [
+            { label: 'Haus statt Wohnung', text: 'Pflege findet hier meist im Einfamilienhaus über mehrere Etagen statt. Treppen, Garten, Wege zum See — wir stimmen die Betreuung auf die tatsächliche Wohnsituation ab, nicht auf eine Standard-Wohnung.' },
+            { label: 'Bindung an die Seenlage', text: 'Der tägliche Weg an den Schlachtensee oder Nikolassee gehört für viele zum Leben. Wir begleiten diese Spaziergänge, solange es geht — Bewegung an vertrauten Orten hält länger stabil als jedes Programm.' },
+            { label: 'Diskretion in der Kolonie', text: 'In einer überschaubaren Villenkolonie kennt man einander. Unser Team tritt zurückhaltend auf, ohne Firmenwagen-Show, und respektiert, dass Nachbarschaft hier auch Öffentlichkeit bedeutet.' },
+          ],
+        },
+        {
+          heading: 'Krankenhäuser & Anfahrt',
+          list: [
+            'Helios Klinikum Emil von Behring (Zehlendorf) — rund 4 km.',
+            'Krankenhaus Waldfriede — rund 3 km.',
+            'Immanuel Krankenhaus Wannsee — 3-4 km.',
+          ],
+          trailingParagraphs: ['Von unserem Sitz in Moabit sind es je nach Verkehr etwa 20-30 Minuten über AVUS und A115.'],
+        },
+      ],
+      faq: [
+        { question: 'Können Sie meinen Vater auf seinen täglichen Weg an den Schlachtensee begleiten?', answer: 'Ja. Begleitete Spaziergänge gehören zu unseren häufigsten Einsätzen hier. Wir passen Tempo und Strecke an die Tagesform an und sind auch bei Unsicherheit oder Sturzgefahr an der Seite.' },
+        { question: 'Das Haus hat mehrere Etagen — ist das ein Problem für die Pflege?', answer: 'Nein, aber wir schauen es uns im Erstgespräch an. Wir beraten auch, wie sich der Alltag auf eine Etage verlagern lässt oder welche Hilfsmittel Treppen sicherer machen.' },
+        { question: 'Wie schnell sind Sie im Notfall aus Moabit da?', answer: 'Für spontane Akuteinsätze ist die Fahrzeit von 20-30 Minuten ehrlich einzuplanen. Deshalb arbeiten wir hier mit festen, vorab geplanten Diensten statt mit Minutenreaktion — so ist immer jemand vor Ort, wenn es zählt.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Wannsee', href: '/standorte/wannsee', note: 'benachbart' },
+        { label: 'Grunewald', href: '/standorte/grunewald' },
+        { label: 'Zehlendorf', href: '/standorte/zehlendorf' },
+        { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
+      ],
+    },
+  },
+
+  // === 13. Wannsee =============================================================
+  {
+    slug: 'wannsee',
+    name: 'Wannsee',
+    bezirk: 'Steglitz-Zehlendorf',
+    plz: ['14109'],
+    geo: { lat: 52.421, lng: 13.163 },
+    hook: 'Am Wasser, in Ruhe.',
+    metaTitle: 'Pflegedienst Wannsee — Pflege am Wasser, diskret',
+    metaDescription: 'Privater Pflegedienst in Wannsee: Pflege, Sitzwachen und 24h-Betreuung in den Villen- und Wasserlagen am Großen Wannsee. Verlässlich und diskret.',
+    h1: 'Pflegedienst Wannsee — am Wasser zu Hause bleiben',
+    primaryKeyword: 'Pflegedienst Wannsee',
+    detail: {
+      intro: [
+        'Wannsee ist Wasser, Wald und Weite. Zwischen Großem Wannsee und Havel liegen großzügige Villen, Wassergrundstücke und ruhige Straßen am äußersten Südwestrand Berlins. Wer hier wohnt, hat sich meist bewusst für die Abgeschiedenheit entschieden — und will sie auch im Alter nicht aufgeben.',
+        'Für die Pflege heißt das: Wir kommen dorthin, wo der öffentliche Nahverkehr dünn wird und die Wege lang werden. Etablierte, ältere Anwohnerinnen und Anwohner in den Wasserlagen sind unsere typischen Klient*innen — Menschen, die in ihrem Haus am See bleiben möchten, so lange es geht.',
+      ],
+      sections: [
+        {
+          heading: 'Wer in Wannsee zu uns kommt',
+          list: [
+            'Ältere Villenbesitzer*innen in den Wasser- und Waldlagen, die zu Hause versorgt werden wollen.',
+            'Ehepaare, bei denen die häusliche Pflege durch einen Partner an ihre Grenzen kommt.',
+            'Angehörige, die aus der Ferne organisieren und eine feste Betreuung vor Ort brauchen.',
+            'Menschen mit hohem Pflegebedarf, für die eine 24-Stunden-Begleitung im eigenen Haus die Alternative zum Heim ist.',
+          ],
+        },
+        {
+          heading: 'Was Pflege in Wannsee ausmacht',
+          stronglist: [
+            { label: 'Abgeschiedene Lagen', text: 'Wassergrundstücke liegen oft am Ende langer Zufahrten, mancher Weg führt durch den Garten bis ans Ufer. Unser Team stellt sich auf diese Wege ein und bringt mit, was für den Tag gebraucht wird.' },
+            { label: 'Nähe zum eigenen Krankenhaus', text: 'Mit dem Immanuel Krankenhaus liegt ein Haus direkt im Ortsteil. Für Übergänge zwischen Klinik und Zuhause — etwa nach einer Reha oder OP — ist das ein echter Vorteil, den wir für die Betreuung nutzen.' },
+            { label: '24-Stunden-Modelle', text: 'Wegen der Lage und des oft höheren Pflegebedarfs sind hier durchgehende Betreuungen häufiger als anderswo. Wir arbeiten mit festen, kleinen Teams, damit auch nachts jemand Vertrautes da ist.' },
+          ],
+        },
+        {
+          heading: 'Krankenhäuser & Anfahrt',
+          list: [
+            'Immanuel Krankenhaus Wannsee (Königstr. 63) — im Ortsteil.',
+            'Helios Klinikum Emil von Behring — rund 6 km.',
+            'Klinikum Ernst von Bergmann Potsdam — rund 8 km.',
+          ],
+          trailingParagraphs: ['Von Moabit nach Wannsee sind je nach Verkehr etwa 25-35 Minuten über A115 und AVUS zu rechnen.'],
+        },
+      ],
+      faq: [
+        { question: 'Unser Haus liegt direkt am Wasser mit langer Zufahrt — kommen Sie trotzdem?', answer: 'Ja. Wir betreuen regelmäßig Adressen in abgelegenen Wasserlagen. Wichtig ist nur, dass wir die Zufahrt und Parksituation vorab kennen, damit jeder Dienst reibungslos beginnt.' },
+        { question: 'Mein Mann kommt bald aus dem Immanuel Krankenhaus zurück. Können Sie die Versorgung übernehmen?', answer: 'Gerne. Weil das Immanuel im Ortsteil liegt, lässt sich der Übergang von der Klinik nach Hause gut abstimmen. Wir richten die häusliche Betreuung so ein, dass sie nahtlos an die Entlassung anschließt.' },
+        { question: 'Lohnt sich der Weg aus Moabit für Sie überhaupt?', answer: 'Ja — wir betreuen Wannsee bewusst mit. Bei der Fahrzeit von 25-35 Minuten planen wir Dienste im Voraus und in sinnvollen Blöcken; kurze Stippvisiten von 20 Minuten sind hier weniger praktikabel als längere, verlässliche Einsätze.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Nikolassee', href: '/standorte/nikolassee', note: 'benachbart' },
+        { label: 'Zehlendorf', href: '/standorte/zehlendorf' },
+        { label: 'Kleinmachnow', href: '/standorte/kleinmachnow', note: 'jenseits der Stadtgrenze' },
+        { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
+      ],
+    },
+  },
+
+  // === 14. Frohnau =============================================================
+  {
+    slug: 'frohnau',
+    name: 'Frohnau',
+    bezirk: 'Reinickendorf',
+    plz: ['13465'],
+    geo: { lat: 52.640, lng: 13.291 },
+    hook: 'Gartenstadt im Norden.',
+    metaTitle: 'Pflegedienst Frohnau — Gartenstadt im Berliner Norden',
+    metaDescription: 'Privater Pflegedienst in Frohnau: Pflege, Sitzwachen und 24h-Betreuung in der Gartenstadt im Norden Berlins. Verlässliche Versorgung, auch bei weiter Anfahrt.',
+    h1: 'Pflegedienst Frohnau — in der Gartenstadt im Norden',
+    primaryKeyword: 'Pflegedienst Frohnau',
+    detail: {
+      intro: [
+        'Frohnau ist der nördlichste Ortsteil Berlins — 1910 als Gartenstadt am Reißbrett geplant, mit weiten Einfamilienhaus-Straßen, viel Grün und einer ausgesprochenen Ruhe. Die Häuser sind oft seit Generationen in Familienhand, die Eigentümerinnen und Eigentümer im Ruhestand. Wer hier alt wird, will die Gartenstadt in aller Regel nicht mehr verlassen.',
+        'Ehrlich gesagt: Frohnau liegt am äußersten Rand unseres Einsatzgebiets. Von unserem Sitz in Moabit sind es rund 25-35 Minuten über die A111. Deshalb planen wir hier bewusst mit festen, längeren Diensten statt mit kurzen Visiten — so ist die Betreuung verlässlich, und die Wegzeit fällt nicht bei jedem Einsatz neu ins Gewicht.',
+      ],
+      sections: [
+        {
+          heading: 'Wer in Frohnau zu uns kommt',
+          list: [
+            'Ältere Hauseigentümer*innen in den Einfamilienhaus-Straßen, die zu Hause bleiben möchten.',
+            'Ehepaare im Ruhestand, bei denen ein Partner pflegebedürftig wird.',
+            'Erwachsene Kinder, die weiter entfernt wohnen und eine verlässliche Betreuung der Eltern im Norden organisieren.',
+            'Menschen mit Demenz, für die die vertraute, ruhige Gartenstadt ein wichtiger Halt ist.',
+          ],
+        },
+        {
+          heading: 'Was Pflege in Frohnau ausmacht',
+          stronglist: [
+            { label: 'Haus und Garten', text: 'Pflege findet hier fast immer im eigenen Haus mit Garten statt. Wege, Treppen und Außenbereich gehören zum Alltag — wir richten die Betreuung an der realen Wohnsituation aus.' },
+            { label: 'Planbarkeit statt Spontaneinsatz', text: 'Wegen der nördlichen Randlage arbeiten wir mit festen Dienstplänen und kleinen Teams. Das gibt Ruhe im Ablauf und stellt sicher, dass immer jemand Vertrautes vor Ort ist.' },
+            { label: 'Selbstbestimmtes Zuhause', text: 'Die Frohnauer Klient*innen sind meist eigenständige Menschen mit klaren Vorstellungen. Wir unterstützen, ohne zu bevormunden, und halten die gewohnten Abläufe so lange wie möglich aufrecht.' },
+          ],
+        },
+        {
+          heading: 'Krankenhäuser & Anfahrt',
+          list: [
+            'Vivantes Humboldt-Klinikum (Am Nordgraben, Reinickendorf) — 5-6 km.',
+          ],
+          trailingParagraphs: ['Von Moabit nach Frohnau sind es je nach Verkehr etwa 25-35 Minuten über die A111. Frohnau liegt für uns am nördlichen Rand — für die längere Anfahrt kann je nach Umfang eine Anfahrtspauschale anfallen, die wir vorab transparent besprechen.'],
+        },
+      ],
+      faq: [
+        { question: 'Frohnau liegt weit im Norden — betreuen Sie uns trotzdem?', answer: 'Ja. Wir fahren Frohnau bewusst an, planen aber mit festen, längeren Diensten. So bleibt die Betreuung verlässlich und wirtschaftlich sinnvoll, obwohl die Anfahrt aus Moabit rund eine halbe Stunde dauert.' },
+        { question: 'Fällt wegen der Entfernung ein Aufschlag an?', answer: 'Je nach Einsatzumfang kann für die weite Anfahrt eine Anfahrtspauschale anfallen. Wir sagen Ihnen das offen im Erstgespräch, bevor irgendein Vertrag zustande kommt — versteckte Kosten gibt es bei uns nicht.' },
+        { question: 'Können Sie auch eine durchgehende Betreuung im Haus stellen?', answer: 'Ja. Gerade in der Randlage sind längere oder durchgehende Einsätze oft die praktikabelste Lösung. Wir arbeiten mit kleinen festen Teams, damit auch bei einer 24-Stunden-Betreuung nicht ständig neue Gesichter im Haus sind.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Moabit', href: '/standorte/moabit', note: 'unser Sitz' },
+        { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
+        { label: 'Demenz-Begleitung', href: '/themen/demenz-begleitung' },
+      ],
+    },
+  },
+
+  // === 15. Kleinmachnow ========================================================
+  {
+    slug: 'kleinmachnow',
+    name: 'Kleinmachnow',
+    bezirk: 'Potsdam-Mittelmark (Brandenburg)',
+    plz: ['14532'],
+    geo: { lat: 52.408, lng: 13.225 },
+    hook: 'Direkt an der Stadtgrenze.',
+    metaTitle: 'Pflegedienst Kleinmachnow — grenznah in Brandenburg',
+    metaDescription: 'Privater Pflegedienst in Kleinmachnow: Pflege, Sitzwachen und 24h-Betreuung in der Gemeinde direkt an der Berliner Grenze. Einsatz über die Stadtgrenze.',
+    h1: 'Pflegedienst Kleinmachnow — grenznah in Brandenburg',
+    primaryKeyword: 'Pflegedienst Kleinmachnow',
+    detail: {
+      intro: [
+        'Kleinmachnow liegt in Brandenburg, im Landkreis Potsdam-Mittelmark — aber es grenzt direkt an Berlin-Zehlendorf. Die Gemeinde mit rund 20.000 Einwohnern ist nach 1990 stark gewachsen: viele Villen, Einfamilienhäuser und gut situierte Familien, die die Nähe zu Berlin bei mehr Grün und Ruhe schätzen. Ein Teil dieser Zuzügler ist inzwischen im Rentenalter, ein anderer Teil hat hier immer schon gewohnt.',
+        'Für uns ist Kleinmachnow ein Einsatz über die Stadtgrenze hinaus. Weil die Gemeinde unmittelbar an Zehlendorf anschließt, ist sie von unseren Südwest-Gebieten aus gut erreichbar — die Grenze zwischen Berlin und Brandenburg ist hier eher eine Linie auf der Karte als eine echte Distanz.',
+      ],
+      sections: [
+        {
+          heading: 'Wer in Kleinmachnow zu uns kommt',
+          list: [
+            'Ältere Eigentümer*innen der zahlreichen Villen und Einfamilienhäuser, die zu Hause versorgt werden wollen.',
+            'Familien, die nach 1990 zugezogen sind und deren Eltern nun pflegebedürftig werden.',
+            'Ehepaare, bei denen die häusliche Pflege durch einen Partner Entlastung braucht.',
+            'Angehörige, die einen privaten Anbieter mit Berliner Anbindung suchen statt einer rein regionalen Lösung.',
+          ],
+        },
+        {
+          heading: 'Was Pflege in Kleinmachnow ausmacht',
+          stronglist: [
+            { label: 'Brandenburg, aber grenznah', text: 'Kleinmachnow gehört verwaltungsrechtlich zu Brandenburg, liegt aber Tür an Tür mit Zehlendorf. Für die Betreuung heißt das kurze Wege von unseren Südwest-Standorten — und trotzdem ein Umfeld mit dörflicherer Ruhe.' },
+            { label: 'Haus- und Gartenlagen', text: 'Die typische Kleinmachnower Adresse ist ein Einfamilienhaus mit Grundstück. Treppen, Garten und Wege gehören zum Alltag; wir richten die Pflege an der konkreten Wohnsituation aus.' },
+            { label: 'Klarheit bei den Wegen', text: 'Weil wir über die Stadtgrenze fahren, planen wir Dienste vorausschauend und in sinnvollen Blöcken. So bleibt die Betreuung verlässlich, ohne dass die Fahrzeit den Einsatz auffrisst.' },
+          ],
+        },
+        {
+          heading: 'Krankenhäuser & Anfahrt',
+          list: [
+            'Helios Klinikum Emil von Behring (Zehlendorf) — 5-6 km, nächstes großes Akuthaus.',
+            'Ev. Krankenhaus Ludwigsfelde-Teltow — 6-8 km.',
+            'Klinikum Ernst von Bergmann Potsdam — rund 12 km.',
+          ],
+          trailingParagraphs: ['Von Moabit nach Kleinmachnow sind es je nach Verkehr etwa 25-40 Minuten über die A115. Weil wir hier über die Berliner Stadtgrenze fahren, kann je nach Einsatzumfang eine Anfahrtspauschale anfallen — das klären wir vorab.'],
+        },
+      ],
+      faq: [
+        { question: 'Kleinmachnow liegt in Brandenburg — sind Sie überhaupt dort tätig?', answer: 'Ja. Wir fahren regelmäßig über die Stadtgrenze nach Kleinmachnow. Weil die Gemeinde direkt an Zehlendorf grenzt, ist sie von unseren Südwest-Gebieten aus gut erreichbar.' },
+        { question: 'Welches Krankenhaus ist im Ernstfall am nächsten?', answer: 'Für die Akutversorgung ist meist das Helios Klinikum Emil von Behring in Zehlendorf das nächste große Haus, nur 5-6 km entfernt. Für einzelne Fachrichtungen kommen auch Potsdam oder Ludwigsfelde-Teltow in Frage.' },
+        { question: 'Kostet die Fahrt über die Landesgrenze extra?', answer: 'Je nach Umfang des Einsatzes kann eine Anfahrtspauschale anfallen. Wir besprechen das offen im Erstgespräch, bevor Sie sich entscheiden — ohne versteckte Posten.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Zehlendorf', href: '/standorte/zehlendorf', note: 'grenznah' },
+        { label: 'Wannsee', href: '/standorte/wannsee' },
+        { label: 'Potsdam', href: '/standorte/potsdam' },
+        { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler' },
+      ],
+    },
+  },
+
+  // === 16. Potsdam =============================================================
+  {
+    slug: 'potsdam',
+    name: 'Potsdam',
+    bezirk: 'Landeshauptstadt Brandenburg',
+    plz: ['14467', '14469', '14471', '14473', '14476', '14478', '14480', '14482'],
+    geo: { lat: 52.399, lng: 13.066 },
+    hook: 'Landeshauptstadt an den Seen.',
+    metaTitle: 'Pflegedienst Potsdam — private Pflege in der Landeshauptstadt',
+    metaDescription: 'Privater Pflegedienst in Potsdam: Pflege, Sitzwachen und 24h-Betreuung in Babelsberg, Berliner Vorstadt und den Seenlagen. Diskret, auch bei weiter Anfahrt.',
+    h1: 'Pflegedienst Potsdam — in der Landeshauptstadt an den Seen',
+    primaryKeyword: 'Pflegedienst Potsdam',
+    detail: {
+      intro: [
+        'Potsdam ist die Landeshauptstadt Brandenburgs — eine kreisfreie Stadt mit rund 180.000 Einwohnern, historischer Mitte, weiten Seenlagen und wohlhabenden Villenvierteln wie Babelsberg und der Berliner Vorstadt. In diesen Quartieren an den Seen und in den ruhigen Wohnstraßen leben viele ältere Menschen und Besserverdienende, die ihr Zuhause auch bei Pflegebedarf nicht aufgeben wollen.',
+        'Für uns ist Potsdam ehrlicherweise der am weitesten entfernte Punkt unseres Einsatzgebiets: Von Moabit sind es je nach Verkehr etwa 35-50 Minuten über A115 und AVUS. Wir betreuen Potsdam bewusst mit — aber mit festen, längeren Diensten und, je nach Umfang, einer transparent besprochenen Anfahrtspauschale. Für kurze Stippvisiten ist die Strecke zu weit; für verlässliche, geplante Betreuung ist sie gut machbar.',
+      ],
+      sections: [
+        {
+          heading: 'Wer in Potsdam zu uns kommt',
+          list: [
+            'Ältere Eigentümer*innen in den Villenvierteln Babelsberg und Berliner Vorstadt, die zu Hause bleiben möchten.',
+            'Bewohner*innen der ruhigen Seenlagen im Westen der Stadt mit gehobenem Pflegeanspruch.',
+            'Angehörige, die einen diskreten privaten Anbieter mit Berliner Anbindung suchen.',
+            'Ehepaare, bei denen die häusliche Pflege durch einen Partner an ihre Grenzen stößt.',
+          ],
+        },
+        {
+          heading: 'Was Pflege in Potsdam ausmacht',
+          stronglist: [
+            { label: 'Große, ruhige Anwesen', text: 'Die typische Adresse in Babelsberg oder der Berliner Vorstadt ist ein großzügiges Haus mit Garten, oft in Wasser- oder Parknähe. Wir stellen die Betreuung auf diese Wohnsituation ein, statt sie in ein Standard-Raster zu pressen.' },
+            { label: 'Eigene Klinik-Landschaft', text: 'Potsdam hat mit dem Klinikum Ernst von Bergmann ein großes Haus vor Ort. Für Übergänge zwischen Klinik und Zuhause — nach OP oder Reha — nutzen wir die kurzen Wege innerhalb der Stadt.' },
+            { label: 'Planung statt Reaktion', text: 'Wegen der Entfernung aus Moabit arbeiten wir in Potsdam mit festen Dienstplänen und kleinen Teams. Das macht die Betreuung verlässlich und sorgt dafür, dass immer jemand Vertrautes vor Ort ist.' },
+          ],
+        },
+        {
+          heading: 'Krankenhäuser & Anfahrt',
+          list: [
+            'Klinikum Ernst von Bergmann (Charlottenstr. 72) — größtes Haus der Stadt, rund 1.100 Betten.',
+            'Oberlinklinik Babelsberg — Schwerpunkt Orthopädie.',
+            'St. Josefs-Krankenhaus Potsdam-Sanssouci.',
+          ],
+          trailingParagraphs: ['Von Moabit nach Potsdam sind je nach Verkehr etwa 35-50 Minuten über A115 und AVUS zu rechnen. Für diese längere Anfahrt kann je nach Einsatzumfang eine Anfahrtspauschale anfallen, die wir vorab offen mit Ihnen besprechen.'],
+        },
+      ],
+      faq: [
+        { question: 'Potsdam ist von Berlin ein gutes Stück entfernt — betreuen Sie dort wirklich?', answer: 'Ja, aber ehrlich gesagt am Rand unseres Gebiets. Von Moabit sind es 35-50 Minuten. Deshalb planen wir Potsdam mit festen, längeren Diensten statt mit kurzen Visiten — so ist die Betreuung verlässlich und die Wegzeit sinnvoll eingesetzt.' },
+        { question: 'Fällt für Potsdam eine Anfahrtspauschale an?', answer: 'Je nach Umfang des Einsatzes ja. Wir sagen Ihnen die Konditionen vollständig im Erstgespräch, bevor Sie sich festlegen. Versteckte Zusatzkosten gibt es bei uns nicht.' },
+        { question: 'Welches Krankenhaus ist bei uns vor Ort das wichtigste?', answer: 'Das Klinikum Ernst von Bergmann in der Charlottenstraße ist mit rund 1.100 Betten das größte Haus der Stadt. Für Orthopädie ist die Oberlinklinik in Babelsberg eine Adresse, dazu das St. Josefs-Krankenhaus in Sanssouci.' },
+      ],
+      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
+      relatedLinks: [
+        { label: 'Wannsee', href: '/standorte/wannsee' },
+        { label: 'Kleinmachnow', href: '/standorte/kleinmachnow' },
+        { label: 'Grunewald', href: '/standorte/grunewald', note: 'über die Havel' },
+        { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
+      ],
+    },
+  },
 ];
 
 export function getStandort(slug: string): SeoStandort | undefined {
