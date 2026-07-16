@@ -88,7 +88,7 @@ export const LEISTUNGEN: readonly Leistung[] = [
     title: 'Inklusionsberatung',
     iconKey: 'people',
     card: {
-      lead: 'Aus jahrelanger Erfahrung in der gemeinnützigen Krankenpflege Frommholz: Beratung zu Teilhabe, Hilfsmitteln, persönlicher Assistenz — für Menschen mit Behinderung und ihre Familien.',
+      lead: 'Aus vielen Jahren Praxis in Teilhabe und Assistenz: Beratung zu Teilhabeleistungen, Hilfsmitteln und persönlicher Assistenz — für Menschen mit Behinderung und ihre Familien.',
     },
     detail: emptyDetail,
   },
