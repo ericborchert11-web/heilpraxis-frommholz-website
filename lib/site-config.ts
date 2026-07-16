@@ -69,3 +69,31 @@ export const SERVICE_AREAS = ['Berlin', 'Moabit', 'Tiergarten', 'Mitte', 'Charlo
 
 // UWG § 5 Schutzschalter — bewusste, sichtbare Aktivierung vor Go-Live nötig
 export const SHOW_TESTIMONIALS = false;
+
+/**
+ * Gemeinsame OpenGraph-Basisfelder. Nach Next-Metadata-Regeln ersetzt eine
+ * Seite, die `openGraph` setzt, das komplette `openGraph`-Objekt des Layouts
+ * (kein Deep-Merge). Ohne diese Basis würden Unterseiten siteName/images/type
+ * verlieren, sobald sie eine eigene og:url setzen.
+ * Quelle: node_modules/next/dist/docs/.../generate-metadata.md (Overwriting fields)
+ */
+export const OG_BASE = {
+  type: 'website',
+  locale: 'de_DE',
+  siteName: SITE.name,
+  images: [SITE.defaultOgImage],
+} as const;
+
+/**
+ * Baut Canonical + og:url für einen Seitenpfad synchron, sodass beide immer
+ * identisch sind. `path` beginnt mit '/'. Startseite: pageMeta('/') → SITE.url.
+ */
+export function pageMeta(path: string) {
+  const url = path === '/' ? SITE.url : `${SITE.url}${path}`;
+  return {
+    alternates: { canonical: url },
+    // images bewusst als frische, veränderbare Kopie — Next's OpenGraph-Typ
+    // akzeptiert das `readonly`-Tupel aus `OG_BASE` (as const) nicht.
+    openGraph: { ...OG_BASE, images: [...OG_BASE.images], url },
+  };
+}

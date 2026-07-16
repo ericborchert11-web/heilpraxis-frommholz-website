@@ -4,7 +4,7 @@ import { Breadcrumbs } from '@/components/SEO/Breadcrumbs';
 import { BreadcrumbJsonLd } from '@/components/SEO/BreadcrumbJsonLd';
 import { FaqJsonLd } from '@/components/SEO/FaqJsonLd';
 import { SeoDetailContent } from '@/components/SeoDetailContent';
-import { SITE } from '@/lib/site-config';
+import { pageMeta } from '@/lib/site-config';
 import { THEMEN, getThema } from '@/lib/themen';
 
 type RouteParams = { slug: string };
@@ -24,7 +24,7 @@ export async function generateMetadata(
   return {
     title: t.metaTitle,
     description: t.metaDescription,
-    alternates: { canonical: `${SITE.url}/themen/${t.slug}` },
+    ...pageMeta(`/themen/${t.slug}`),
     robots: { index: true, follow: true },
     keywords: [t.primaryKeyword],
   };

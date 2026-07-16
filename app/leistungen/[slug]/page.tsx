@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/SEO/BreadcrumbJsonLd';
 import { FaqJsonLd } from '@/components/SEO/FaqJsonLd';
 import { ServiceJsonLd } from '@/components/SEO/JsonLd';
 import { SeoDetailContent } from '@/components/SeoDetailContent';
-import { SITE } from '@/lib/site-config';
+import { pageMeta } from '@/lib/site-config';
 import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
 
 type RouteParams = { slug: string };
@@ -26,7 +26,7 @@ export async function generateMetadata(
   return {
     title: l.metaTitle,
     description: l.metaDescription,
-    alternates: { canonical: `${SITE.url}/leistungen/${l.slug}` },
+    ...pageMeta(`/leistungen/${l.slug}`),
     robots: { index: true, follow: true },
     keywords: [l.primaryKeyword, ...l.secondaryKeywords],
   };

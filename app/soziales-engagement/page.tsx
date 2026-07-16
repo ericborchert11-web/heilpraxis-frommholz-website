@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageLayout } from '@/components/PageLayout';
-import { SITE } from '@/lib/site-config';
+import { pageMeta } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Soziales Engagement',
   description: 'Aus der gemeinnützigen Krankenpflege Frommholz: Wer bei uns arbeitet, woran wir glauben, mit wem wir kooperieren. Pflege als soziale Aufgabe.',
-  alternates: { canonical: `${SITE.url}/soziales-engagement` },
+  ...pageMeta('/soziales-engagement'),
   robots: { index: true, follow: true },
 };
 

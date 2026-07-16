@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { PageLayout } from '@/components/PageLayout';
-import { BUSINESS, SITE } from '@/lib/site-config';
+import { BUSINESS, SITE, pageMeta } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'AGB',
   description: 'Allgemeine Geschäftsbedingungen für Pflege- und Begleitleistungen der Heilpraxis Frommholz.',
-  alternates: { canonical: `${SITE.url}/agb` },
+  ...pageMeta('/agb'),
   robots: { index: true, follow: true },
 };
 

@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageLayout } from '@/components/PageLayout';
-import { SITE } from '@/lib/site-config';
+import { pageMeta } from '@/lib/site-config';
 import { STANDORTE, type SeoStandort } from '@/lib/standorte';
 
 export const metadata: Metadata = {
   title: 'Standorte in Berlin',
   description: 'Wo wir pflegen in Berlin — Schwerpunkte in Charlottenburg, Wilmersdorf, Zehlendorf, Grunewald und Mitte. Überblick aller Stadtteile.',
-  alternates: { canonical: `${SITE.url}/standorte` },
+  ...pageMeta('/standorte'),
   robots: { index: true, follow: true },
 };
 

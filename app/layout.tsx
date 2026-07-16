@@ -6,7 +6,7 @@ import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { MedicalBusinessJsonLd } from '@/components/SEO/JsonLd';
 import { a11yInitScript } from '@/lib/a11y-init';
-import { SITE } from '@/lib/site-config';
+import { SITE, pageMeta } from '@/lib/site-config';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -30,16 +30,7 @@ export const metadata: Metadata = {
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,
-  alternates: {
-    canonical: SITE.url,
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'de_DE',
-    siteName: SITE.name,
-    url: SITE.url,
-    images: [SITE.defaultOgImage],
-  },
+  ...pageMeta('/'),
   robots: {
     index: true,
     follow: true,

@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageLayout } from '@/components/PageLayout';
-import { SITE } from '@/lib/site-config';
+import { pageMeta } from '@/lib/site-config';
 import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
 
 export const metadata: Metadata = {
   title: 'Leistungen',
   description: 'Sitzwachen, Pflege für Selbstzahler, 24-Stunden-Betreuung, Pflegeberatung — die Leistungen der Heilpraxis Frommholz in Berlin.',
-  alternates: { canonical: `${SITE.url}/leistungen` },
+  ...pageMeta('/leistungen'),
   robots: { index: true, follow: true },
 };
 

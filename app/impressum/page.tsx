@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { PageLayout } from '@/components/PageLayout';
-import { BUSINESS, SITE } from '@/lib/site-config';
+import { BUSINESS, SITE, pageMeta } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Impressum',
   description: `Impressum und rechtliche Angaben der ${SITE.name}, Inh. ${BUSINESS.owner}, ${BUSINESS.address.streetLong}, ${BUSINESS.address.zip} ${BUSINESS.address.city}.`,
-  alternates: { canonical: `${SITE.url}/impressum` },
+  ...pageMeta('/impressum'),
   robots: { index: true, follow: true },
 };
 

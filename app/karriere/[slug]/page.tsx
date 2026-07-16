@@ -4,7 +4,7 @@ import { Breadcrumbs } from '@/components/SEO/Breadcrumbs';
 import { BreadcrumbJsonLd } from '@/components/SEO/BreadcrumbJsonLd';
 import { FaqJsonLd } from '@/components/SEO/FaqJsonLd';
 import { SeoDetailContent } from '@/components/SeoDetailContent';
-import { SITE } from '@/lib/site-config';
+import { pageMeta } from '@/lib/site-config';
 import { KARRIERE, getKarriere } from '@/lib/karriere';
 
 type RouteParams = { slug: string };
@@ -24,7 +24,7 @@ export async function generateMetadata(
   return {
     title: k.metaTitle,
     description: k.metaDescription,
-    alternates: { canonical: `${SITE.url}/karriere/${k.slug}` },
+    ...pageMeta(`/karriere/${k.slug}`),
     robots: { index: true, follow: true },
     keywords: [k.primaryKeyword],
   };

@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageLayout } from '@/components/PageLayout';
-import { SITE } from '@/lib/site-config';
+import { pageMeta } from '@/lib/site-config';
 import { THEMEN } from '@/lib/themen';
 
 export const metadata: Metadata = {
   title: 'Themen',
   description: 'Pflegegrad, Verhinderungspflege, MDK-Begutachtung, Demenz, Palliativ — Hintergrundwissen für Familien in Berlin, kompakt und ehrlich.',
-  alternates: { canonical: `${SITE.url}/themen` },
+  ...pageMeta('/themen'),
   robots: { index: true, follow: true },
 };
 

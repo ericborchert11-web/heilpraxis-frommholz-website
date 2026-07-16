@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/SEO/BreadcrumbJsonLd';
 import { FaqJsonLd } from '@/components/SEO/FaqJsonLd';
 import { ServiceJsonLd } from '@/components/SEO/JsonLd';
 import { SeoDetailContent } from '@/components/SeoDetailContent';
-import { SITE } from '@/lib/site-config';
+import { pageMeta } from '@/lib/site-config';
 import { STANDORTE, getStandort } from '@/lib/standorte';
 
 type RouteParams = { slug: string };
@@ -25,7 +25,7 @@ export async function generateMetadata(
   return {
     title: s.metaTitle,
     description: s.metaDescription,
-    alternates: { canonical: `${SITE.url}/standorte/${s.slug}` },
+    ...pageMeta(`/standorte/${s.slug}`),
     robots: { index: true, follow: true },
     keywords: [s.primaryKeyword, `Pflege ${s.name}`, `Sitzwache ${s.name}`],
   };

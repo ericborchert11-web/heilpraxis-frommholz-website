@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { PageLayout } from '@/components/PageLayout';
-import { BUSINESS, SITE } from '@/lib/site-config';
+import { BUSINESS, SITE, pageMeta } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
   description: 'Informationen zum Umgang mit personenbezogenen Daten gemäß DSGVO. Heilpraxis Frommholz, Berlin.',
-  alternates: { canonical: `${SITE.url}/datenschutz` },
+  ...pageMeta('/datenschutz'),
   robots: { index: true, follow: true },
 };
 

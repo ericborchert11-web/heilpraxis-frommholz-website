@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageLayout } from '@/components/PageLayout';
-import { BUSINESS, SITE } from '@/lib/site-config';
+import { BUSINESS, pageMeta } from '@/lib/site-config';
 import { KARRIERE } from '@/lib/karriere';
 
 export const metadata: Metadata = {
   title: 'Karriere — Pflegejobs Berlin',
   description: 'Pflegejob bei Heilpraxis Frommholz: ohne klassischen Schichtdienst, mit Zeit pro Klient*in, korrekt nach Arbeitsrecht. Auch für Rentner*innen und Quereinsteiger*innen.',
-  alternates: { canonical: `${SITE.url}/karriere` },
+  ...pageMeta('/karriere'),
   robots: { index: true, follow: true },
 };
 
