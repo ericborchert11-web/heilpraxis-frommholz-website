@@ -7,7 +7,7 @@ import { SITE } from '@/lib/site-config';
 
 const LINKS = [
   { href: '/#leistungen', label: 'Leistungen' },
-  { href: '/#haltung', label: 'Unsere Haltung' },
+  { href: '/#qualitaet', label: 'Qualität' },
   { href: '/#ablauf', label: 'So läuft es' },
 ];
 
