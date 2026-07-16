@@ -65,7 +65,7 @@ export const BUSINESS = {
   },
 } as const;
 
-export const SERVICE_AREAS = ['Berlin', 'Moabit', 'Tiergarten', 'Mitte', 'Charlottenburg', 'Wilmersdorf', 'Westend', 'Grunewald', 'Zehlendorf', 'Dahlem', 'Schmargendorf'] as const;
+export const SERVICE_AREAS = ['Berlin', 'Moabit', 'Tiergarten', 'Mitte', 'Charlottenburg', 'Wilmersdorf', 'Westend', 'Grunewald', 'Zehlendorf', 'Dahlem', 'Schmargendorf', 'Nikolassee', 'Wannsee', 'Frohnau', 'Kleinmachnow', 'Potsdam'] as const;
 
 // UWG § 5 Schutzschalter — bewusste, sichtbare Aktivierung vor Go-Live nötig
 export const SHOW_TESTIMONIALS = false;
