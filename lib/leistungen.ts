@@ -68,7 +68,7 @@ export const LEISTUNGEN: readonly Leistung[] = [
     title: 'Reisebegleitung',
     iconKey: 'travel',
     card: {
-      lead: 'Begleitete Reisen für pflegebedürftige Menschen — Kur, Familienbesuch, Urlaub. In Kooperation mit unserem Partnerverein „Leben & Pflegen & Reisen".',
+      lead: 'Begleitete Reisen für pflegebedürftige Menschen — Kur, Familienbesuch, Urlaub. In Kooperation mit unserem Partnerverein Leben Pflegen Reisen e.V.',
     },
     detail: emptyDetail,
   },
