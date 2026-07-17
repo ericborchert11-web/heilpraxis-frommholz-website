@@ -2,7 +2,6 @@ import { Hero } from '@/components/Hero';
 import { TrustStrip } from '@/components/TrustStrip';
 import { LeistungenGrid } from '@/components/LeistungenGrid';
 import { QualitaetSection } from '@/components/QualitaetSection';
-import { Testimonials } from '@/components/Testimonials';
 import { AblaufSection } from '@/components/AblaufSection';
 import { FamilienbereichSection } from '@/components/FamilienbereichSection';
 import { FaqSection } from '@/components/FaqSection';
@@ -15,7 +14,6 @@ export default function HomePage() {
       <TrustStrip />
       <LeistungenGrid />
       <QualitaetSection />
-      <Testimonials />
       <AblaufSection />
       <FamilienbereichSection />
       <FaqSection />

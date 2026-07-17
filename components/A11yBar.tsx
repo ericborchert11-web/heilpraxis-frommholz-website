@@ -1,20 +1,19 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { BUSINESS } from '@/lib/site-config';
 
 type Size = 'normal' | 'large' | 'xlarge';
 
 export function A11yBar() {
-  const [size, setSize] = useState<Size>('normal');
-  const [contrast, setContrast] = useState(false);
-
-  useEffect(() => {
-    const storedSize = (localStorage.getItem('hpf:a11y:size') as Size | null) ?? 'normal';
-    const storedContrast = localStorage.getItem('hpf:a11y:contrast') === '1';
-    setSize(storedSize);
-    setContrast(storedContrast);
-  }, []);
+  const [size, setSize] = useState<Size>(() =>
+    typeof window !== 'undefined'
+      ? ((localStorage.getItem('hpf:a11y:size') as Size | null) ?? 'normal')
+      : 'normal'
+  );
+  const [contrast, setContrast] = useState(() =>
+    typeof window !== 'undefined' ? localStorage.getItem('hpf:a11y:contrast') === '1' : false
+  );
 
   const applySize = (next: Size) => {
     const root = document.documentElement;
