@@ -124,6 +124,9 @@ export async function sendContact(
     };
   }
 
+  if (!process.env.MAIL_FROM) {
+    console.warn('MAIL_FROM ist nicht gesetzt — Fallback-Absender wird verwendet');
+  }
   const from = process.env.MAIL_FROM ?? 'Heilpraxis Frommholz <onboarding@resend.dev>';
   const to = process.env.MAIL_TO ?? BUSINESS.email;
 

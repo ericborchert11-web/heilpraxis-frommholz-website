@@ -17,13 +17,20 @@ function jsonLdString(data: object): string {
  * Cluster (Krankenpflege, nicht Heilkundler). LocalBusiness als zweiter
  * Eintrag stellt sicher, dass auch Parser, die HomeHealthCareService nicht
  * kennen, das Geschäft weiterhin als lokales Unternehmen erkennen.
+ *
+ * Alles hängt an einem einzigen @graph, damit Person, WebSite und Business
+ * sich sauber per @id referenzieren können, statt Duplikate/Inline-Objekte
+ * zu verstreuen.
  */
 export function MedicalBusinessJsonLd() {
   const sameAs = SITE.sameAs.filter((u) => u.length > 0);
-  const data = {
-    '@context': 'https://schema.org',
+  const businessId = `${SITE.url}/#business`;
+  const personId = `${SITE.url}/#simeon`;
+  const websiteId = `${SITE.url}/#website`;
+
+  const business = {
     '@type': ['LocalBusiness', 'HomeHealthCareService'],
-    '@id': `${SITE.url}/#business`,
+    '@id': businessId,
     name: SITE.name,
     legalName: SITE.legalName,
     alternateName: 'Heilpraxis Frommholz Berlin',
@@ -53,12 +60,32 @@ export function MedicalBusinessJsonLd() {
         closes: '23:59',
       },
     ],
-    founder: {
-      '@type': 'Person',
-      name: BUSINESS.owner,
-      jobTitle: BUSINESS.jobTitle,
-    },
+    founder: { '@id': personId },
     ...(sameAs.length > 0 ? { sameAs } : {}),
+  };
+
+  const person = {
+    '@type': 'Person',
+    '@id': personId,
+    name: BUSINESS.owner,
+    jobTitle: BUSINESS.jobTitle,
+    url: 'https://simeonfrommholz.de',
+    sameAs: ['https://simeonfrommholz.de'],
+    worksFor: { '@id': businessId },
+  };
+
+  const website = {
+    '@type': 'WebSite',
+    '@id': websiteId,
+    url: SITE.url,
+    name: SITE.name,
+    publisher: { '@id': businessId },
+    inLanguage: 'de-DE',
+  };
+
+  const data = {
+    '@context': 'https://schema.org',
+    '@graph': [business, person, website],
   };
 
   return (
@@ -81,10 +108,7 @@ export function ServiceJsonLd({ serviceName, serviceDescription, areaServed }: S
     '@type': 'Service',
     name: serviceName,
     description: serviceDescription,
-    provider: {
-      '@type': 'MedicalBusiness',
-      '@id': `${SITE.url}/#business`,
-    },
+    provider: { '@id': `${SITE.url}/#business` },
     areaServed: (areaServed ?? ['Berlin']).map((a) => ({ '@type': 'City', name: a })),
   };
 
