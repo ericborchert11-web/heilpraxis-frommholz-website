@@ -91,6 +91,12 @@ export default function DatenschutzPage() {
         <p className="mt-3">
           <strong className="font-medium text-anthracite">Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
         </p>
+        <p className="mt-3">
+          <strong className="font-medium text-anthracite">Auftragsverarbeiter:</strong> Für den technischen Versand der Formularanfragen setzen wir den E-Mail-Dienstleister <strong className="font-medium text-anthracite">Resend, Inc.</strong> (USA) ein. Mit Resend besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO. Ihre Angaben aus dem Kontaktformular werden zum Zweck der Zustellung an Resend übermittelt und dort verarbeitet.
+        </p>
+        <p className="mt-3">
+          <strong className="font-medium text-anthracite">Datenübermittlung in die USA:</strong> Die Übermittlung erfolgt auf Grundlage von Standardvertragsklauseln gemäß Art. 46 DSGVO sowie, soweit anwendbar, im Rahmen des EU-US Data Privacy Framework.
+        </p>
 
         <h3 className="mt-5 font-serif text-xl text-anthracite font-light">4.2 E-Mail-Anfragen</h3>
         <p className="mt-3">
@@ -99,7 +105,29 @@ export default function DatenschutzPage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-anthracite font-light">5. Hosting</h2>
+        <h2 className="font-serif text-2xl text-anthracite font-light">5. Geschützter Familienbereich</h2>
+        <p className="mt-3">
+          Klient:innen und von ihnen berechtigten Angehörigen bieten wir auf Wunsch einen geschützten Online-Zugang (&bdquo;Familienbereich&ldquo;) an, über den Dienstpläne, Rechnungen und Pflegedokumentation eingesehen werden können.
+        </p>
+        <p className="mt-3">
+          <strong className="font-medium text-anthracite">Verarbeitete Daten:</strong> Zugangs- und Authentifizierungsdaten (z. B. Anmeldedaten, ggf. Session-Cookies zur Aufrechterhaltung der Anmeldung) sowie die im Familienbereich einsehbaren Inhalte, insbesondere Dienstpläne, Rechnungen und Pflegedokumentation.
+        </p>
+        <p className="mt-3">
+          <strong className="font-medium text-anthracite">Besondere Kategorien personenbezogener Daten:</strong> Die Pflegedokumentation enthält Gesundheitsdaten im Sinne des Art. 9 DSGVO. Die Verarbeitung dieser besonderen Kategorie personenbezogener Daten erfolgt auf Grundlage der ausdrücklichen Einwilligung der betroffenen Person bzw. der berechtigten Angehörigen (Art. 9 Abs. 2 lit. a DSGVO) im Rahmen des bestehenden Betreuungsverhältnisses.
+        </p>
+        <p className="mt-3">
+          <strong className="font-medium text-anthracite">Rechtsgrundlage im Übrigen:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des Betreuungs- bzw. Behandlungsvertrags) sowie Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), soweit einschlägig.
+        </p>
+        <p className="mt-3">
+          <strong className="font-medium text-anthracite">Zugriff:</strong> Zugriff auf den Familienbereich erhalten ausschließlich die von der Klientin bzw. dem Klienten hierzu berechtigten Angehörigen. Die Übertragung der Daten erfolgt über eine verschlüsselte (TLS-)Verbindung. Die technische Bereitstellung kann über ein internes System bzw. einen entsprechend beauftragten Dienstleister erfolgen; die Auswahl erfolgt unter Berücksichtigung angemessener technischer und organisatorischer Maßnahmen gemäß Art. 32 DSGVO.
+        </p>
+        <p className="mt-3">
+          <strong className="font-medium text-anthracite">Speicherdauer:</strong> Die im Familienbereich verfügbaren Daten werden im Rahmen der gesetzlichen Aufbewahrungsfristen gespeichert (siehe Ziffer 4.1) und nach Ende des Betreuungsverhältnisses sowie Ablauf der jeweiligen Aufbewahrungsfrist gelöscht.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-serif text-2xl text-anthracite font-light">6. Hosting</h2>
         <p className="mt-3">
           Diese Website wird bei <strong className="font-medium text-anthracite">Vercel Inc.</strong> (USA) gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Anbieters gespeichert. Hierbei kann es sich auch um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten und vergleichbare Daten handeln.
         </p>
@@ -109,14 +137,14 @@ export default function DatenschutzPage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-anthracite font-light">6. Externe Schriftarten</h2>
+        <h2 className="font-serif text-2xl text-anthracite font-light">7. Externe Schriftarten</h2>
         <p className="mt-3">
           Wir setzen Schriftarten lokal über das Next.js-Font-System ein. Die Dateien werden bei jedem Build auf unseren Servern bei Vercel gehostet — es findet <strong className="font-medium text-anthracite">keine direkte Verbindung des Browsers zu Google-Fonts-Servern</strong> statt.
         </p>
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-anthracite font-light">7. Ihre Rechte als betroffene Person</h2>
+        <h2 className="font-serif text-2xl text-anthracite font-light">8. Ihre Rechte als betroffene Person</h2>
         <p className="mt-3">Sie haben jederzeit das Recht auf:</p>
         <ul className="mt-3 list-disc list-outside pl-6 space-y-1">
           <li><strong className="font-medium text-anthracite">Auskunft</strong> über die zu Ihrer Person gespeicherten Daten (Art. 15 DSGVO)</li>
@@ -133,7 +161,7 @@ export default function DatenschutzPage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-anthracite font-light">8. Beschwerderecht bei der Aufsichtsbehörde</h2>
+        <h2 className="font-serif text-2xl text-anthracite font-light">9. Beschwerderecht bei der Aufsichtsbehörde</h2>
         <p className="mt-3">
           Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Die für uns zuständige Behörde ist:
         </p>
@@ -156,14 +184,14 @@ export default function DatenschutzPage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-anthracite font-light">9. Datensicherheit</h2>
+        <h2 className="font-serif text-2xl text-anthracite font-light">10. Datensicherheit</h2>
         <p className="mt-3">
           Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-/TLS-Verschlüsselungsverfahren. Erkennbar ist dies am Schloss-Symbol in Ihrem Browser sowie dem Zusatz &bdquo;https://&ldquo; in der Adresszeile.
         </p>
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-anthracite font-light">10. Aktualität dieser Datenschutzerklärung</h2>
+        <h2 className="font-serif text-2xl text-anthracite font-light">11. Aktualität dieser Datenschutzerklärung</h2>
         <p className="mt-3">
           Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht. Die aktuelle Fassung gilt jeweils ab Veröffentlichung auf dieser Website.
         </p>

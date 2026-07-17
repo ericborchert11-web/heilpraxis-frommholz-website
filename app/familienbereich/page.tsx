@@ -26,7 +26,7 @@ const FAQ: readonly FaqItem[] = [
   {
     question: 'Wie sicher sind meine Daten?',
     answer:
-      'Der Zugang ist geschützt und verschlüsselt, die Verarbeitung erfolgt nach den Vorgaben der DSGVO, und nur berechtigte Angehörige sehen die Inhalte. Details in unserer Datenschutzerklärung.',
+      'Der Zugang ist geschützt, die Daten werden über eine TLS-verschlüsselte Verbindung übertragen, die Verarbeitung erfolgt nach den Vorgaben der DSGVO, und nur berechtigte Angehörige sehen die Inhalte. Details in unserer Datenschutzerklärung.',
   },
 ];
 
@@ -70,7 +70,7 @@ export default function FamilienbereichPage() {
       <section>
         <h2 className="font-serif text-2xl text-anthracite font-light">Sicherheit &amp; Datenschutz</h2>
         <p className="mt-3">
-          Der Zugang ist geschützt und verschlüsselt. Es sehen ausschließlich die Angehörigen, die Sie berechtigen. Wir verarbeiten die Daten nach den Vorgaben der DSGVO und behandeln die besonders sensiblen Inhalte der Pflegedokumentation mit entsprechender Sorgfalt. Wie wir mit Ihren Daten umgehen, lesen Sie in unserer{' '}
+          Der Zugang ist geschützt und die Daten werden über eine verschlüsselte (TLS-)Verbindung übertragen. Es sehen ausschließlich die Angehörigen, die Sie berechtigen. Wir verarbeiten die Daten nach den Vorgaben der DSGVO und behandeln die besonders sensiblen Inhalte der Pflegedokumentation mit entsprechender Sorgfalt. Wie wir mit Ihren Daten umgehen, lesen Sie in unserer{' '}
           <Link href="/datenschutz" className="underline hover:text-gold-deep">Datenschutzerklärung</Link>.
         </p>
       </section>
