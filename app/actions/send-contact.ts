@@ -1,5 +1,6 @@
 'use server';
 
+import { headers } from 'next/headers';
 import { BUSINESS, SITE } from '@/lib/site-config';
 
 /**
@@ -20,6 +21,30 @@ export type ContactState = {
 };
 
 export const initialContactState: ContactState = { status: 'idle' };
+
+// Sehr einfaches In-Memory-Rate-Limit pro IP (best effort — der Zustand lebt
+// nur in dieser Serverless-Instanz und wird bei Kaltstart/Skalierung über
+// mehrere Instanzen NICHT geteilt. Für eine belastbare Lösung bräuchte es
+// einen persistenten Store wie Upstash Redis.
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+const submissionTimestamps = new Map<string, number[]>();
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const recent = (submissionTimestamps.get(ip) ?? []).filter(
+    (ts) => now - ts < RATE_LIMIT_WINDOW_MS,
+  );
+
+  if (recent.length >= RATE_LIMIT_MAX) {
+    submissionTimestamps.set(ip, recent);
+    return true;
+  }
+
+  recent.push(now);
+  submissionTimestamps.set(ip, recent);
+  return false;
+}
 
 type Sanitized = {
   name: string;
@@ -79,6 +104,14 @@ export async function sendContact(
       status: 'error',
       message: 'Bitte überprüfen Sie die markierten Felder.',
       fieldErrors,
+    };
+  }
+
+  const ip = (await headers()).get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown';
+  if (isRateLimited(ip)) {
+    return {
+      status: 'error',
+      message: 'Zu viele Anfragen. Bitte versuchen Sie es später erneut.',
     };
   }
 
@@ -144,6 +177,7 @@ export async function sendContact(
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(8000),
     });
 
     if (!res.ok) {
