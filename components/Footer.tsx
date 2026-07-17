@@ -34,17 +34,11 @@ export function Footer() {
         <div>
           <h4 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">Leistungen</h4>
           <ul className="list-none space-y-2.5">
-            {LEISTUNGEN_SEO.map((l) => (
+            {LEISTUNGEN_SEO.filter(hasDetail).map((l) => (
               <li key={l.slug}>
-                {hasDetail(l) ? (
-                  <Link href={`/leistungen/${l.slug}`} className="text-sm hover:text-gold-soft">
-                    {l.title}
-                  </Link>
-                ) : (
-                  <span className="text-sm text-cream/40" title="Detail-Seite folgt">
-                    {l.title}
-                  </span>
-                )}
+                <Link href={`/leistungen/${l.slug}`} className="text-sm hover:text-gold-soft">
+                  {l.title}
+                </Link>
               </li>
             ))}
             <li className="pt-2">
