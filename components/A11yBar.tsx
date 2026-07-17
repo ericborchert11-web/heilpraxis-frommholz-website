@@ -47,10 +47,10 @@ export function A11yBar() {
         {BUSINESS.phoneDisplay}
       </a>
       <div className="flex items-center gap-1.5">
-        <button onClick={() => applySize('normal')} className={`${btnBase} ${size === 'normal' ? btnActive : ''}`} aria-label="Schriftgröße normal">A</button>
-        <button onClick={() => applySize('large')} className={`${btnBase} ${size === 'large' ? btnActive : ''}`} aria-label="Schriftgröße größer">A+</button>
-        <button onClick={() => applySize('xlarge')} className={`${btnBase} ${size === 'xlarge' ? btnActive : ''}`} aria-label="Schriftgröße sehr groß">A++</button>
-        <button onClick={toggleContrast} className={`${btnBase} ${contrast ? btnActive : ''}`} aria-label="Hochkontrast umschalten">Kontrast</button>
+        <button onClick={() => applySize('normal')} className={`${btnBase} ${size === 'normal' ? btnActive : ''}`} aria-label="Schriftgröße normal" aria-pressed={size === 'normal'}>A</button>
+        <button onClick={() => applySize('large')} className={`${btnBase} ${size === 'large' ? btnActive : ''}`} aria-label="Schriftgröße größer" aria-pressed={size === 'large'}>A+</button>
+        <button onClick={() => applySize('xlarge')} className={`${btnBase} ${size === 'xlarge' ? btnActive : ''}`} aria-label="Schriftgröße sehr groß" aria-pressed={size === 'xlarge'}>A++</button>
+        <button onClick={toggleContrast} className={`${btnBase} ${contrast ? btnActive : ''}`} aria-label="Hochkontrast umschalten" aria-pressed={contrast}>Kontrast</button>
       </div>
     </div>
   );

@@ -23,6 +23,15 @@ export function Nav() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [open]);
+
   return (
     <nav
       className={`fixed inset-x-0 top-[38px] z-[100] flex items-center justify-between px-6 md:px-12 bg-cream/95 backdrop-blur-md border-b border-anthracite/5 transition-all duration-300 ${
@@ -61,8 +70,9 @@ export function Nav() {
       <button
         className="md:hidden flex flex-col gap-1.5 p-2"
         onClick={() => setOpen((o) => !o)}
-        aria-label="Menü öffnen"
+        aria-label={open ? 'Menü schließen' : 'Menü öffnen'}
         aria-expanded={open}
+        aria-controls="mobile-menu"
       >
         <span className={`block h-[2px] w-6 bg-anthracite transition-transform ${open ? 'translate-y-2 rotate-45' : ''}`} />
         <span className={`block h-[2px] w-6 bg-anthracite transition-opacity ${open ? 'opacity-0' : ''}`} />
@@ -70,7 +80,7 @@ export function Nav() {
       </button>
 
       {open && (
-        <ul className="md:hidden absolute left-0 right-0 top-full flex flex-col items-stretch bg-cream border-b border-anthracite/10 list-none">
+        <ul id="mobile-menu" className="md:hidden absolute left-0 right-0 top-full flex flex-col items-stretch bg-cream border-b border-anthracite/10 list-none">
           {LINKS.map((l) => (
             <li key={l.href}>
               <Link

@@ -70,9 +70,11 @@ export function KontaktSection() {
                 </label>
               </div>
 
+              <p className="text-[11px] text-anthracite-light">* Pflichtfeld</p>
+
               <div>
                 <label htmlFor="contact-name" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
-                  Name
+                  Name *
                 </label>
                 <input
                   id="contact-name"
@@ -81,16 +83,17 @@ export function KontaktSection() {
                   required
                   placeholder="Ihr Name"
                   aria-invalid={Boolean(errorField('name'))}
-                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep aria-[invalid=true]:border-red-700"
+                  aria-describedby={errorField('name') ? 'err-name' : undefined}
+                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:border-gold-deep aria-[invalid=true]:border-red-700"
                 />
                 {errorField('name') && (
-                  <p className="mt-1 text-xs text-red-700">{errorField('name')}</p>
+                  <p id="err-name" className="mt-1 text-xs text-red-700">{errorField('name')}</p>
                 )}
               </div>
 
               <div>
                 <label htmlFor="contact-reach" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
-                  Telefon oder E-Mail
+                  Telefon oder E-Mail *
                 </label>
                 <input
                   id="contact-reach"
@@ -99,23 +102,24 @@ export function KontaktSection() {
                   required
                   placeholder="Wie dürfen wir Sie erreichen?"
                   aria-invalid={Boolean(errorField('contact'))}
-                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep aria-[invalid=true]:border-red-700"
+                  aria-describedby={errorField('contact') ? 'err-contact' : undefined}
+                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:border-gold-deep aria-[invalid=true]:border-red-700"
                 />
                 {errorField('contact') && (
-                  <p className="mt-1 text-xs text-red-700">{errorField('contact')}</p>
+                  <p id="err-contact" className="mt-1 text-xs text-red-700">{errorField('contact')}</p>
                 )}
               </div>
 
               <div>
                 <label htmlFor="contact-subject" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
-                  Worum geht es?
+                  Worum geht es? *
                 </label>
                 <select
                   id="contact-subject"
                   name="subject"
                   required
                   defaultValue="Erstgespräch zur Pflege"
-                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep"
+                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:border-gold-deep"
                 >
                   <option>Erstgespräch zur Pflege</option>
                   <option>Sitzwache / Nachtwache</option>
@@ -136,7 +140,7 @@ export function KontaktSection() {
                   name="message"
                   rows={4}
                   placeholder="Erzählen Sie uns kurz, was Sie umtreibt…"
-                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:outline-none focus:border-gold-deep"
+                  className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:border-gold-deep"
                 />
               </div>
 
@@ -146,16 +150,17 @@ export function KontaktSection() {
                   name="consent"
                   required
                   aria-invalid={Boolean(errorField('consent'))}
+                  aria-describedby={errorField('consent') ? 'err-consent' : undefined}
                   className="mt-1 shrink-0"
                 />
                 <span>
-                  Ich willige ein, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden.
+                  * Ich willige ein, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden.
                   Hinweise zur Datenverarbeitung finden Sie in der{' '}
                   <a href="/datenschutz" className="underline hover:text-gold-deep">Datenschutzerklärung</a>.
                 </span>
               </label>
               {errorField('consent') && (
-                <p className="-mt-3 text-xs text-red-700">{errorField('consent')}</p>
+                <p id="err-consent" className="-mt-3 text-xs text-red-700">{errorField('consent')}</p>
               )}
 
               {state.status === 'error' && state.message && (
