@@ -49,9 +49,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MedicalBusinessJsonLd />
       </head>
       <body className="bg-cream text-anthracite font-sans antialiased">
+        <a href="#main" className="skip-link">Zum Inhalt springen</a>
         <A11yBar />
         <Nav />
-        <main className="pt-[122px]">{children}</main>
+        <main id="main" className="pt-[122px]">{children}</main>
         <Footer />
       </body>
     </html>

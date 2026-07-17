@@ -2,7 +2,7 @@
 
 @theme {
   --color-gold: #C9A352;
-  --color-gold-deep: #A8862F;
+  --color-gold-deep: #8a6d1f;
   --color-gold-soft: #E8D49C;
   --color-anthracite: #1a1a1a;
   --color-anthracite-light: #2a2a2a;
@@ -19,6 +19,18 @@
 
 html { font-size: 17px; scroll-behavior: smooth; }
 body { line-height: 1.7; font-weight: 300; overflow-x: hidden; }
+
+:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 2px; border-radius: 2px; }
+
+.skip-link { position: fixed; left: 8px; top: -60px; z-index: 200;
+  background: var(--color-anthracite, #23211c); color: #fff; padding: 10px 16px;
+  border-radius: 6px; transition: top .15s ease; }
+.skip-link:focus { top: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--color-cream); }
