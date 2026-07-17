@@ -23,7 +23,7 @@ export async function generateMetadata(
   const s = getStandort(slug);
   if (!s) return {};
   return {
-    title: s.metaTitle,
+    title: { absolute: s.metaTitle },
     description: s.metaDescription,
     ...pageMeta(`/standorte/${s.slug}`),
     robots: { index: true, follow: true },

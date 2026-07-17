@@ -22,7 +22,7 @@ export async function generateMetadata(
   const t = getThema(slug);
   if (!t) return {};
   return {
-    title: t.metaTitle,
+    title: { absolute: t.metaTitle },
     description: t.metaDescription,
     ...pageMeta(`/themen/${t.slug}`),
     robots: { index: true, follow: true },

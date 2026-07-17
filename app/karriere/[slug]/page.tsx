@@ -22,7 +22,7 @@ export async function generateMetadata(
   const k = getKarriere(slug);
   if (!k) return {};
   return {
-    title: k.metaTitle,
+    title: { absolute: k.metaTitle },
     description: k.metaDescription,
     ...pageMeta(`/karriere/${k.slug}`),
     robots: { index: true, follow: true },

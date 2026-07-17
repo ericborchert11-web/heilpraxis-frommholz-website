@@ -24,7 +24,7 @@ export async function generateMetadata(
   const l = LEISTUNGEN_SEO.find((x) => x.slug === slug);
   if (!l || !hasDetail(l)) return {};
   return {
-    title: l.metaTitle,
+    title: { absolute: l.metaTitle },
     description: l.metaDescription,
     ...pageMeta(`/leistungen/${l.slug}`),
     robots: { index: true, follow: true },
