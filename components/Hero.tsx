@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Reveal } from './Reveal';
+import { BUSINESS } from '@/lib/site-config';
 
 export function Hero() {
   return (
@@ -34,6 +35,9 @@ export function Hero() {
             </a>
             <a href="#leistungen" className="border border-anthracite text-anthracite px-7 py-3.5 rounded-sm font-sans text-sm uppercase tracking-[1.5px] hover:bg-anthracite hover:text-cream transition-colors">
               Unsere Leistungen
+            </a>
+            <a href={`tel:${BUSINESS.phone}`} className="border border-anthracite text-anthracite px-7 py-3.5 rounded-sm font-sans text-sm uppercase tracking-[1.5px] hover:bg-anthracite hover:text-cream transition-colors">
+              Anrufen: {BUSINESS.phoneDisplay}
             </a>
           </div>
         </Reveal>

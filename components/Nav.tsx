@@ -6,9 +6,10 @@ import { useEffect, useState } from 'react';
 import { SITE } from '@/lib/site-config';
 
 const LINKS = [
-  { href: '/#leistungen', label: 'Leistungen' },
+  { href: '/leistungen', label: 'Leistungen' },
+  { href: '/standorte', label: 'Standorte' },
+  { href: '/familienbereich', label: 'Familienbereich' },
   { href: '/#qualitaet', label: 'Qualität' },
-  { href: '/#ablauf', label: 'So läuft es' },
 ];
 
 export function Nav() {
