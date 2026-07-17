@@ -4,6 +4,7 @@ import { LeistungenGrid } from '@/components/LeistungenGrid';
 import { QualitaetSection } from '@/components/QualitaetSection';
 import { Testimonials } from '@/components/Testimonials';
 import { AblaufSection } from '@/components/AblaufSection';
+import { FamilienbereichSection } from '@/components/FamilienbereichSection';
 import { FaqSection } from '@/components/FaqSection';
 import { KontaktSection } from '@/components/KontaktSection';
 
@@ -16,6 +17,7 @@ export default function HomePage() {
       <QualitaetSection />
       <Testimonials />
       <AblaufSection />
+      <FamilienbereichSection />
       <FaqSection />
       <KontaktSection />
     </>
