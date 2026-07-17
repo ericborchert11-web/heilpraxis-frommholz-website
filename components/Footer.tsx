@@ -26,6 +26,9 @@ export function Footer() {
             <a href={`mailto:${BUSINESS.email}`} className="hover:text-gold-soft">{BUSINESS.email}</a>
           </p>
           <p className="mt-3 text-sm">{BUSINESS.hours.label}</p>
+          <Link href="/familienbereich" className="mt-4 inline-block text-sm text-gold hover:text-gold-soft underline">
+            → Familienbereich für Angehörige
+          </Link>
         </div>
 
         <div>

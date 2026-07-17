@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Reveal } from './Reveal';
 
 const STEPS = [
@@ -42,6 +43,12 @@ export function AblaufSection() {
           </Reveal>
         ))}
       </div>
+      <p className="mt-10 text-[14px] text-anthracite-light text-center max-w-2xl mx-auto">
+        Und danach bleiben Sie im Bild:{' '}
+        <Link href="/familienbereich" className="text-gold-deep underline hover:text-gold">
+          Ihr Familienbereich für Angehörige →
+        </Link>
+      </p>
     </section>
   );
 }
