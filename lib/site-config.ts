@@ -11,7 +11,9 @@ export const SITE = {
   tagline: 'Pflege · Beratung · Begleitung',
   description: 'Private Pflege, Alltagsbegleitung und Beratung in Berlin und Umland. Stundenweise bis 24/7. Mit Erfahrung, Sorgfalt und Haltung.',
   url: RUNTIME_SITE_URL,
-  defaultOgImage: '/og-default.jpg',
+  // TODO: durch ein eigens erstelltes 1200×630 OG-Bild ersetzen; bis dahin
+  // ein existierendes Bild, damit Social-Previews nicht 404en.
+  defaultOgImage: '/hero-team.jpg',
   /**
    * Profile + verbundene Seiten — wichtig als „sameAs"-Trust-Signal für
    * Google. Hier erweitern, sobald LinkedIn/Facebook/Google-Business-URLs
@@ -59,7 +61,9 @@ export const BUSINESS = {
   },
   ustBefreiung: '§ 4 Nr. 14 UStG (Heilbehandlungen) und § 4 Nr. 16 UStG (pflegerische Leistungen)',
   versicherung: {
-    // Sobald Eric die Daten liefert, hier eintragen
+    // Echte Versicherer-Daten noch nicht eingetragen — bis dahin verweist das
+    // Impressum auf "Angaben auf Anfrage", statt diesen Platzhalter zu drucken.
+    // Sobald Eric die Daten liefert, hier eintragen.
     name: '[wird nachgereicht]',
     geltungsraum: 'Deutschland',
   },

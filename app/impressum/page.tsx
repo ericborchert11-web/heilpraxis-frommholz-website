@@ -19,7 +19,7 @@ export default function ImpressumPage() {
       ]}
     >
       <section>
-        <h2 className="font-serif text-2xl text-anthracite font-light">Angaben gemäß § 5 TMG</h2>
+        <h2 className="font-serif text-2xl text-anthracite font-light">Angaben gemäß § 5 DDG</h2>
         <p className="mt-3">
           <strong className="font-medium text-anthracite">{SITE.name}</strong>
           <br />
@@ -71,9 +71,7 @@ export default function ImpressumPage() {
       <section>
         <h2 className="font-serif text-2xl text-anthracite font-light">Berufshaftpflichtversicherung</h2>
         <p className="mt-3">
-          <strong className="font-medium text-anthracite">Name und Sitz des Versicherers:</strong> {BUSINESS.versicherung.name}
-          <br />
-          <strong className="font-medium text-anthracite">Geltungsraum:</strong> {BUSINESS.versicherung.geltungsraum}
+          Angaben zu unserer Berufshaftpflichtversicherung stellen wir Ihnen auf Anfrage zur Verfügung.
         </p>
       </section>
 
@@ -112,7 +110,7 @@ export default function ImpressumPage() {
       <section>
         <h2 className="font-serif text-2xl text-anthracite font-light">Haftung für Inhalte</h2>
         <p className="mt-3">
-          Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+          Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
         </p>
         <p className="mt-3">
           Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.

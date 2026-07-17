@@ -19,7 +19,7 @@ export function Hero() {
         </Reveal>
         <Reveal delay={2}>
           <p className="mt-7 font-serif text-[clamp(1.15rem,1.8vw,1.45rem)] leading-relaxed text-anthracite-light italic">
-            Wir sind nah am Menschen — mit Erfahrung aus über zwei Jahrzehnten Pflege, Beratung und Begleitung in Berlin.
+            Wir sind nah am Menschen — mit über 15 Jahren Erfahrung in Pflege, Beratung und Begleitung in Berlin.
           </p>
         </Reveal>
         <Reveal delay={3}>
