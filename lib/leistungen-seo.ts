@@ -61,10 +61,10 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
             'Eine Sitzwache ist mehr als ein Stuhl neben dem Bett. Sie schützt, sie beruhigt, sie verhindert Schlimmeres. Typische Situationen, in denen unsere Klientinnen und Klienten uns rufen:',
           ],
           stronglist: [
-            { label: 'Nach Operationen', text: 'Postoperative Verwirrtheit (Delir) ist eine der häufigsten Komplikationen bei älteren Patientinnen und Patienten. Eine vertraute Anwesenheit reduziert das Risiko deutlich — und beschleunigt die Genesung.' },
-            { label: 'Bei Sturzgefahr', text: 'Wer nachts unruhig wird, aufstehen will, sich nicht mehr orientiert, ist sturzgefährdet. Eine Sitzwache beobachtet, beruhigt, hilft beim Aufstehen — und verhindert Brüche, die sonst eine ganze Lebensphase entscheiden.' },
+            { label: 'Nach Operationen', text: 'Postoperative Verwirrtheit (Delir) ist eine der häufigsten Komplikationen bei älteren Patientinnen und Patienten. Eine vertraute Anwesenheit kann das Risiko eines Delirs senken und den Genesungsverlauf unterstützen.' },
+            { label: 'Bei Sturzgefahr', text: 'Wer nachts unruhig wird, aufstehen will, sich nicht mehr orientiert, ist sturzgefährdet. Eine Sitzwache beobachtet, beruhigt, hilft beim Aufstehen — und kann Stürzen und damit verbundenen Verletzungen vorbeugen, die sonst eine ganze Lebensphase prägen können.' },
             { label: 'In der Sterbephase', text: 'Wenn klar ist, dass es zu Ende geht, wollen viele Angehörige nicht, dass ihre Liebsten allein gehen. Aber nicht jeder kann durchgehend am Bett sein. Wir übernehmen die Nachtstunden, die Wochenenden, die Phasen, in denen Sie selbst Pause brauchen.' },
-            { label: 'Bei psychiatrischen Krisen', text: 'Akute Eigen- oder Fremdgefährdung, suizidale Phasen, schwere depressive Episoden. Eine 1:1-Betreuung schützt — und kann eine Zwangseinweisung verhindern.' },
+            { label: 'Bei psychiatrischen Krisen', text: 'Akute Eigen- oder Fremdgefährdung, suizidale Phasen, schwere depressive Episoden. Eine 1:1-Betreuung schützt — und kann in manchen Fällen helfen, eine Zwangseinweisung zu vermeiden.' },
             { label: 'Bei Demenz', text: 'Nächtliche Wachphasen, Weglaufgefahr, Orientierungslosigkeit — eine Sitzwache bringt Ruhe in eine Situation, die Angehörige sonst zermürbt.' },
           ],
         },
@@ -428,7 +428,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
           heading: 'Wann eine Nachtwache hilft',
           stronglist: [
             { label: 'Demenz mit nächtlicher Unruhe', text: 'Aufstehen, Wandern, Verwirrung über Tag und Nacht — das zermürbt Angehörige innerhalb weniger Wochen. Eine Nachtwache fängt die nächtlichen Phasen ab und schafft Schlaf für die Familie.' },
-            { label: 'Sturzgefahr', text: 'Wer nachts aufstehen will und nicht mehr sicher steht, gehört nicht ungesichert ins Bett. Eine Nachtwache ist da, wenn aufgestanden wird, hilft, beruhigt — und verhindert die Stürze, die alles ändern.' },
+            { label: 'Sturzgefahr', text: 'Wer nachts aufstehen will und nicht mehr sicher steht, gehört nicht ungesichert ins Bett. Eine Nachtwache ist da, wenn aufgestanden wird, hilft, beruhigt — und kann Stürzen vorbeugen, die sonst alles ändern.' },
             { label: 'Sterbebegleitung in den letzten Nächten', text: 'Manche Menschen sterben in einer bestimmten Nacht. Niemand kann das vorhersagen, aber alle können sich darauf einstellen, dass sie da sind. Eine Nachtwache übernimmt, wenn die Familie zwischendurch schlafen muss.' },
             { label: 'Nach Klinikentlassung', text: 'Die ersten Nächte zu Hause nach einem Krankenhausaufenthalt sind oft die kritischsten. Eine Nachtwache überbrückt, bis Stabilität zurückgekehrt ist.' },
             { label: 'Bei akuter psychischer Belastung', text: 'Suizidale Phasen, schwere depressive Episoden, Angstzustände — eine wache Anwesenheit schützt und entlastet gleichzeitig die Angehörigen.' },

@@ -337,7 +337,7 @@ export const THEMEN: readonly SeoThema[] = [
         },
       ],
       faq: [
-        { question: 'Ab wann ist Demenz behandlungsbedürftig?', answer: 'Sobald sich Alltag oder Sicherheit verändern. Eine Frühdiagnose hilft, Verlauf zu verlangsamen und Strukturen aufzubauen.' },
+        { question: 'Ab wann ist Demenz behandlungsbedürftig?', answer: 'Sobald sich Alltag oder Sicherheit verändern. Eine Frühdiagnose kann helfen, den Verlauf günstig zu beeinflussen und frühzeitig Strukturen aufzubauen.' },
         { question: 'Können Demenzkranke noch alleine wohnen?', answer: 'In Phase 1 oft ja, mit Unterstützung. In Phase 2 nur mit klarer Tagesstruktur und stundenweise Begleitung. In Phase 3 in der Regel nicht mehr.' },
         { question: 'Was kostet eine stundenweise Demenz-Begleitung?', answer: 'Stundensätze hängen von der eingesetzten Qualifikation ab; Zuschläge nach § 3b EStG (25 % nachts, 50 % sonn-/feiertags) kommen hinzu. Konkrete Kalkulation im kostenlosen Erstgespräch.' },
         { question: 'Übernimmt die Pflegekasse die Kosten?', answer: 'Nicht direkt — wir rechnen als Selbstzahler-Leistung ab. Pflegegeld und Entlastungsbetrag können aber anteilig genutzt werden.' },
