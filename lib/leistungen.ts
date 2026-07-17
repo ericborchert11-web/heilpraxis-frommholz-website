@@ -14,6 +14,8 @@ export type Leistung = {
   title: string;
   iconKey: IconKey;
   card: { lead: string };
+  /** Ziel des "Mehr erfahren"-Links auf der Karte — bestehende Detailseite oder die Leistungen-Hub-Seite. */
+  href: string;
   detail: {
     hero: { h1: string; lead: string };
     wasWirTun: string[];
@@ -40,6 +42,7 @@ export const LEISTUNGEN: readonly Leistung[] = [
     card: {
       lead: 'Durchgehende Pflege und Begleitung im eigenen Zuhause, im Wechselschicht-Modell. Mit festem, kleinem Team — damit Vertrauen wachsen kann.',
     },
+    href: '/leistungen/24-stunden-betreuung',
     detail: emptyDetail,
   },
   {
@@ -50,6 +53,7 @@ export const LEISTUNGEN: readonly Leistung[] = [
     card: {
       lead: 'Stundenweise Hilfe im Alltag — Einkäufe, Arztbesuche, Spaziergänge, Gesellschaft. Flexibel buchbar, von einer Stunde bis zum ganzen Tag.',
     },
+    href: '/leistungen',
     detail: emptyDetail,
   },
   {
@@ -60,6 +64,7 @@ export const LEISTUNGEN: readonly Leistung[] = [
     card: {
       lead: 'Wenn pflegende Angehörige eine Auszeit brauchen — Urlaub, Krankheit, oder einfach einmal durchatmen. Wir übernehmen verlässlich.',
     },
+    href: '/themen/verhinderungspflege',
     detail: emptyDetail,
   },
   {
@@ -70,6 +75,7 @@ export const LEISTUNGEN: readonly Leistung[] = [
     card: {
       lead: 'Begleitete Reisen für pflegebedürftige Menschen — Kur, Familienbesuch, Urlaub. In Kooperation mit unserem Partnerverein Leben Pflegen Reisen e.V.',
     },
+    href: '/leistungen/reisebegleitung-senioren',
     detail: emptyDetail,
   },
   {
@@ -80,6 +86,7 @@ export const LEISTUNGEN: readonly Leistung[] = [
     card: {
       lead: 'Unabhängige Beratung zu Pflegegraden, Leistungsansprüchen und Finanzierung. Wir helfen, sich im System zurechtzufinden — verständlich, in Ruhe.',
     },
+    href: '/leistungen/pflegeberatung-berlin',
     detail: emptyDetail,
   },
   {
@@ -90,10 +97,7 @@ export const LEISTUNGEN: readonly Leistung[] = [
     card: {
       lead: 'Aus vielen Jahren Praxis in Teilhabe und Assistenz: Beratung zu Teilhabeleistungen, Hilfsmitteln und persönlicher Assistenz — für Menschen mit Behinderung und ihre Familien.',
     },
+    href: '/leistungen',
     detail: emptyDetail,
   },
 ] as const;
-
-export function hasDetailPage(leistung: Leistung): boolean {
-  return leistung.detail.hero.h1.length > 0;
-}

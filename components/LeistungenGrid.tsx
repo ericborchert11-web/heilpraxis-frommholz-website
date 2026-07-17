@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { LEISTUNGEN } from '@/lib/leistungen';
 import { LeistungCard } from './LeistungCard';
 import { Reveal } from './Reveal';
@@ -28,6 +29,17 @@ export function LeistungenGrid() {
           </Reveal>
         ))}
       </div>
+
+      <Reveal delay={6}>
+        <div className="mt-12 text-center">
+          <Link
+            href="/leistungen"
+            className="inline-block border border-anthracite text-anthracite px-6 py-3 font-sans text-sm uppercase tracking-[1.5px] hover:bg-anthracite hover:text-cream transition-colors"
+          >
+            Alle Leistungen ansehen →
+          </Link>
+        </div>
+      </Reveal>
     </section>
   );
 }
