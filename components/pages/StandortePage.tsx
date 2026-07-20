@@ -3,6 +3,7 @@ import { PageLayout } from '@/components/PageLayout';
 import { type SeoStandort } from '@/lib/standorte';
 import { getStandorte } from '@/lib/i18n/content';
 import { localizedHref } from '@/lib/i18n/slugs';
+import { getDictionary } from '@/lib/i18n/dictionaries';
 import type { Locale } from '@/lib/i18n/config';
 
 function groupByBezirk(standorte: readonly SeoStandort[]): Map<string, SeoStandort[]> {
@@ -15,15 +16,16 @@ function groupByBezirk(standorte: readonly SeoStandort[]): Map<string, SeoStando
 }
 
 export function StandortePage({ lang }: { lang: Locale }) {
+  const t = getDictionary(lang);
   const grouped = groupByBezirk(getStandorte(lang));
 
   return (
     <PageLayout
-      title="Wo wir pflegen — unsere Schwerpunkte in Berlin"
-      lead="Unser Sitz ist in Moabit, Stephanstraße 46. Von hier aus sind wir in 20–30 Minuten in jedem Stadtteil Berlins. Schwerpunkte unserer Arbeit liegen in den westlichen Innenstadt-Bezirken."
+      title={t.standortePage.title}
+      lead={t.standortePage.lead}
       crumbs={[
-        { name: 'Start', href: localizedHref('/', lang) },
-        { name: 'Standorte', href: localizedHref('/standorte', lang) },
+        { name: t.crumbs.start, href: localizedHref('/', lang) },
+        { name: t.crumbs.standorte, href: localizedHref('/standorte', lang) },
       ]}
     >
       {Array.from(grouped.entries()).map(([bezirk, list]) => (
@@ -40,7 +42,7 @@ export function StandortePage({ lang }: { lang: Locale }) {
                     {s.name}
                     {s.isHauptstandort && (
                       <span className="ml-2 font-sans text-[10px] uppercase tracking-[1.5px] text-gold-deep">
-                        · Hauptstandort
+                        {`· ${t.standortePage.hauptstandort}`}
                       </span>
                     )}
                   </h3>
@@ -53,15 +55,13 @@ export function StandortePage({ lang }: { lang: Locale }) {
       ))}
 
       <section className="mt-10">
-        <h2 className="font-serif text-2xl text-anthracite font-light">Auch außerhalb dieser Schwerpunkte</h2>
-        <p className="mt-3">
-          Wir sind grundsätzlich für ganz Berlin verfügbar — mit Anfahrtspauschale außerhalb unserer Kernbezirke. Wenn Sie in einem anderen Berliner Stadtteil wohnen und Pflege brauchen, melden Sie sich gerne. Wir prüfen die Anfrage und sagen ehrlich, ob wir die richtigen sind.
-        </p>
+        <h2 className="font-serif text-2xl text-anthracite font-light">{t.standortePage.outroHeading}</h2>
+        <p className="mt-3">{t.standortePage.outroText}</p>
         <Link
           href={localizedHref('/#kontakt', lang)}
           className="mt-6 inline-block bg-anthracite text-cream px-7 py-3 font-sans text-sm uppercase tracking-[1.5px] hover:bg-gold-deep transition-colors"
         >
-          Erstgespräch anfragen
+          {t.standortePage.outroCta}
         </Link>
       </section>
     </PageLayout>

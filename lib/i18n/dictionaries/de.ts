@@ -18,6 +18,13 @@ export const de = {
     contrast: 'Kontrast',
     contrastToggle: 'Hochkontrast umschalten',
   },
+  /** Brotkrumen-Beschriftungen. Die Pfade selbst laufen über `localizedHref`. */
+  crumbs: {
+    start: 'Start',
+    leistungen: 'Leistungen',
+    themen: 'Themen',
+    standorte: 'Standorte',
+  },
   nav: {
     leistungen: 'Leistungen',
     standorte: 'Standorte',
@@ -150,6 +157,56 @@ export const de = {
     consentAfter: '.',
     submit: 'Nachricht senden',
     submitting: 'Wird gesendet …',
+  },
+  /**
+   * Rückmeldungen der Server-Action `sendContact`. Sie gehen an die
+   * anfragende Person und müssen darum in deren Sprache stehen — der
+   * Sprachhinweis in der Benachrichtigungsmail ans Team bleibt deutsch.
+   *
+   * `sendUnavailable` und `sendFailed` enden bewusst mit einem Leerzeichen:
+   * die Action hängt E-Mail-Adresse bzw. Telefonnummer und den Punkt an.
+   */
+  kontaktMeldungen: {
+    fieldName: 'Bitte Ihren Namen angeben.',
+    fieldContact: 'Bitte Telefon oder E-Mail angeben, damit wir uns melden können.',
+    fieldSubject: 'Bitte ein Thema wählen.',
+    fieldConsent: 'Bitte der Datenverarbeitung zustimmen.',
+    checkFields: 'Bitte überprüfen Sie die markierten Felder.',
+    rateLimited: 'Zu viele Anfragen. Bitte versuchen Sie es später erneut.',
+    sendUnavailable: 'Versand aktuell nicht möglich. Bitte rufen Sie uns direkt an oder schicken Sie eine E-Mail an ',
+    sendFailed: 'Versand fehlgeschlagen. Bitte versuchen Sie es später erneut — oder erreichen Sie uns direkt unter ',
+    networkError: 'Netzwerkfehler beim Versand. Bitte später erneut versuchen.',
+    success: 'Nachricht angekommen — wir melden uns innerhalb weniger Tage zurück.',
+  },
+  /** Oberfläche der SEO-Detailseiten (Leistungen, Themen, Standorte). */
+  seoDetail: {
+    faqHeading: 'Häufig gestellte Fragen',
+    ctaTitle: 'Bereit für ein erstes Gespräch?',
+    ctaText: 'Kostenlos, unverbindlich, in Ruhe. Wir hören erst zu — und melden uns dann mit einem konkreten Vorschlag zurück.',
+    relatedHeading: 'Vielleicht interessiert Sie auch',
+  },
+  leistungenPage: {
+    title: 'Unsere Leistungen',
+    lead: 'Acht Wege, in denen wir Menschen in Berlin begleiten — von der Sitzwache im Krankenhaus bis zur 24-Stunden-Betreuung zu Hause. Alle als Selbstzahler-Leistung, mit kleinem festem Team.',
+    more: 'Mehr erfahren',
+    detailPending: 'Detail-Seite folgt',
+    outroBefore: 'Sie wissen nicht, welche Leistung passt? Wir hören erst zu, dann beraten wir.',
+    outroLink: 'Erstgespräch anfragen →',
+  },
+  themenPage: {
+    title: 'Themen rund um Pflege',
+    lead: 'Hintergrundwissen zu den Fragen, die viele Familien zuerst haben — Pflegegrad, Leistungsansprüche, Demenz, Sterbephase. Verständlich, ohne Werbe-Floskeln, aus über 15 Jahren Praxis.',
+    more: 'Weiterlesen',
+    outroBefore: 'Eine konkrete Frage zur eigenen Situation?',
+    outroLink: '→ Pflegeberatung',
+  },
+  standortePage: {
+    title: 'Wo wir pflegen — unsere Schwerpunkte in Berlin',
+    lead: 'Unser Sitz ist in Moabit, Stephanstraße 46. Von hier aus sind wir in 20–30 Minuten in jedem Stadtteil Berlins. Schwerpunkte unserer Arbeit liegen in den westlichen Innenstadt-Bezirken.',
+    hauptstandort: 'Hauptstandort',
+    outroHeading: 'Auch außerhalb dieser Schwerpunkte',
+    outroText: 'Wir sind grundsätzlich für ganz Berlin verfügbar — mit Anfahrtspauschale außerhalb unserer Kernbezirke. Wenn Sie in einem anderen Berliner Stadtteil wohnen und Pflege brauchen, melden Sie sich gerne. Wir prüfen die Anfrage und sagen ehrlich, ob wir die richtigen sind.',
+    outroCta: 'Erstgespräch anfragen',
   },
   footer: {
     familyLink: '→ Familienbereich für Angehörige',

@@ -3,7 +3,8 @@
 import { headers } from 'next/headers';
 import { BUSINESS, SITE } from '@/lib/site-config';
 import type { ContactState } from '@/lib/contact-state';
-import { isLocale } from '@/lib/i18n/config';
+import { DEFAULT_LOCALE, isLocale } from '@/lib/i18n/config';
+import { getDictionary } from '@/lib/i18n/dictionaries';
 
 /**
  * Server Action für das Kontaktformular auf der Startseite.
@@ -86,6 +87,14 @@ export async function sendContact(
 ): Promise<ContactState> {
   const data = sanitize(formData);
 
+  // `lang` kommt aus dem Formular und ist damit nicht vertrauenswürdig. Erst
+  // gegen die bekannten Sprachen prüfen, dann verwenden — so ist `lang` immer
+  // eine der vier festen Sprachen, nie Nutzereingabe.
+  const lang = isLocale(data.lang) ? data.lang : DEFAULT_LOCALE;
+  // Die Rückmeldungen unten gehen an die anfragende Person und stehen darum
+  // in deren Sprache.
+  const m = getDictionary(lang).kontaktMeldungen;
+
   // Honeypot: Bots füllen das versteckte "website"-Feld. Wir tun, als sei
   // alles ok, senden aber nichts.
   if (data.honeypot.length > 0) {
@@ -94,15 +103,15 @@ export async function sendContact(
 
   // Validierung
   const fieldErrors: NonNullable<ContactState['fieldErrors']> = {};
-  if (data.name.length < 2) fieldErrors.name = 'Bitte Ihren Namen angeben.';
-  if (data.contact.length < 3) fieldErrors.contact = 'Bitte Telefon oder E-Mail angeben, damit wir uns melden können.';
-  if (data.subject.length === 0) fieldErrors.subject = 'Bitte ein Thema wählen.';
-  if (!data.consent) fieldErrors.consent = 'Bitte der Datenverarbeitung zustimmen.';
+  if (data.name.length < 2) fieldErrors.name = m.fieldName;
+  if (data.contact.length < 3) fieldErrors.contact = m.fieldContact;
+  if (data.subject.length === 0) fieldErrors.subject = m.fieldSubject;
+  if (!data.consent) fieldErrors.consent = m.fieldConsent;
 
   if (Object.keys(fieldErrors).length > 0) {
     return {
       status: 'error',
-      message: 'Bitte überprüfen Sie die markierten Felder.',
+      message: m.checkFields,
       fieldErrors,
     };
   }
@@ -111,7 +120,7 @@ export async function sendContact(
   if (isRateLimited(ip)) {
     return {
       status: 'error',
-      message: 'Zu viele Anfragen. Bitte versuchen Sie es später erneut.',
+      message: m.rateLimited,
     };
   }
 
@@ -120,7 +129,7 @@ export async function sendContact(
     console.error('[contact-form] RESEND_API_KEY ist nicht gesetzt.');
     return {
       status: 'error',
-      message: 'Versand aktuell nicht möglich. Bitte rufen Sie uns direkt an oder schicken Sie eine E-Mail an ' + BUSINESS.email + '.',
+      message: m.sendUnavailable + BUSINESS.email + '.',
     };
   }
 
@@ -130,6 +139,8 @@ export async function sendContact(
   const from = process.env.MAIL_FROM ?? 'Heilpraxis Frommholz <onboarding@resend.dev>';
   const to = process.env.MAIL_TO ?? BUSINESS.email;
 
+  // Bleibt deutsch: dieser Hinweis geht in die Benachrichtigungsmail ans Team,
+  // nicht an die anfragende Person.
   const LANGUAGE_HINT: Record<string, string> = {
     de: 'Deutsch',
     en: 'Englisch — bitte auf Englisch antworten',
@@ -137,10 +148,7 @@ export async function sendContact(
     it: 'Italienisch — Anfrage auf Italienisch, Betreuung auf Deutsch oder Englisch',
   };
 
-  // `lang` kommt aus dem Formular und ist damit nicht vertrauenswürdig. Erst
-  // gegen die bekannten Sprachen prüfen, dann nachschlagen — so kann der
-  // Hinweis nur einer der vier festen Strings sein, nie Nutzereingabe.
-  const languageHint = LANGUAGE_HINT[isLocale(data.lang) ? data.lang : 'de'];
+  const languageHint = LANGUAGE_HINT[lang];
 
   // Plain-Text-Body — Resend rendert das ohnehin als Text-Mail
   const textBody = [
@@ -202,19 +210,19 @@ export async function sendContact(
       console.error('[contact-form] Resend-Fehler', res.status, errText);
       return {
         status: 'error',
-        message: 'Versand fehlgeschlagen. Bitte versuchen Sie es später erneut — oder erreichen Sie uns direkt unter ' + BUSINESS.phoneDisplay + '.',
+        message: m.sendFailed + BUSINESS.phoneDisplay + '.',
       };
     }
   } catch (err) {
     console.error('[contact-form] Netzwerkfehler', err);
     return {
       status: 'error',
-      message: 'Netzwerkfehler beim Versand. Bitte später erneut versuchen.',
+      message: m.networkError,
     };
   }
 
   return {
     status: 'success',
-    message: 'Nachricht angekommen — wir melden uns innerhalb weniger Tage zurück.',
+    message: m.success,
   };
 }

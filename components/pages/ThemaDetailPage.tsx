@@ -5,18 +5,26 @@ import { FaqJsonLd } from '@/components/SEO/FaqJsonLd';
 import { SeoDetailContent } from '@/components/SeoDetailContent';
 import { getThema } from '@/lib/i18n/content';
 import { localizedHref } from '@/lib/i18n/slugs';
-import type { Locale } from '@/lib/i18n/config';
+import { getDictionary } from '@/lib/i18n/dictionaries';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 
 /** `slug` ist immer der deutsche Slug — übersetzte Slugs werden vorher zurückgerechnet. */
 export function ThemaDetailPage({ lang, slug }: { lang: Locale; slug: string }) {
+  const d = getDictionary(lang);
   const t = getThema(slug, lang);
   if (!t) {
     notFound();
   }
 
+  // Identität statt Inhalt: ohne Überlagerung liefert `getThema` denselben
+  // deutschen Eintrag zurück — dann ist dieser Eintrag nachweislich noch
+  // unübersetzt. Sobald die Überlagerung steht, schaltet sich das JSON-LD von
+  // selbst zu.
+  const istUebersetzt = t !== getThema(slug, DEFAULT_LOCALE);
+
   const crumbs = [
-    { name: 'Start', href: localizedHref('/', lang) },
-    { name: 'Themen', href: localizedHref('/themen', lang) },
+    { name: d.crumbs.start, href: localizedHref('/', lang) },
+    { name: d.crumbs.themen, href: localizedHref('/themen', lang) },
     { name: t.title, href: localizedHref(`/themen/${t.slug}`, lang) },
   ];
 
@@ -28,7 +36,8 @@ export function ThemaDetailPage({ lang, slug }: { lang: Locale; slug: string }) 
         {t.h1}
       </h1>
       <SeoDetailContent detail={t.detail} lang={lang} />
-      <FaqJsonLd items={t.detail.faq} />
+      {/* Strukturierte FAQ-Daten nur, wenn sie auch in der Seitensprache vorliegen. */}
+      {(lang === DEFAULT_LOCALE || istUebersetzt) && <FaqJsonLd items={t.detail.faq} />}
     </article>
   );
 }

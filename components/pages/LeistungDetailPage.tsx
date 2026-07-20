@@ -7,18 +7,26 @@ import { SeoDetailContent } from '@/components/SeoDetailContent';
 import { hasDetail } from '@/lib/leistungen-seo';
 import { getLeistungSeo } from '@/lib/i18n/content';
 import { localizedHref } from '@/lib/i18n/slugs';
-import type { Locale } from '@/lib/i18n/config';
+import { getDictionary } from '@/lib/i18n/dictionaries';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 
 /** `slug` ist immer der deutsche Slug — übersetzte Slugs werden vorher zurückgerechnet. */
 export function LeistungDetailPage({ lang, slug }: { lang: Locale; slug: string }) {
+  const t = getDictionary(lang);
   const l = getLeistungSeo(slug, lang);
   if (!l || !hasDetail(l)) {
     notFound();
   }
 
+  // Identität statt Inhalt: ohne Überlagerung liefert `getLeistungSeo` denselben
+  // deutschen Eintrag zurück — dann ist dieser Eintrag nachweislich noch
+  // unübersetzt. Sobald die Überlagerung steht, schaltet sich das JSON-LD von
+  // selbst zu.
+  const istUebersetzt = l !== getLeistungSeo(slug, DEFAULT_LOCALE);
+
   const crumbs = [
-    { name: 'Start', href: localizedHref('/', lang) },
-    { name: 'Leistungen', href: localizedHref('/leistungen', lang) },
+    { name: t.crumbs.start, href: localizedHref('/', lang) },
+    { name: t.crumbs.leistungen, href: localizedHref('/leistungen', lang) },
     { name: l.title, href: localizedHref(`/leistungen/${l.slug}`, lang) },
   ];
 
@@ -31,7 +39,8 @@ export function LeistungDetailPage({ lang, slug }: { lang: Locale; slug: string 
       </h1>
       <SeoDetailContent detail={l.detail!} lang={lang} />
       <ServiceJsonLd serviceName={l.title} serviceDescription={l.metaDescription} />
-      <FaqJsonLd items={l.detail!.faq} />
+      {/* Strukturierte FAQ-Daten nur, wenn sie auch in der Seitensprache vorliegen. */}
+      {(lang === DEFAULT_LOCALE || istUebersetzt) && <FaqJsonLd items={l.detail!.faq} />}
     </article>
   );
 }

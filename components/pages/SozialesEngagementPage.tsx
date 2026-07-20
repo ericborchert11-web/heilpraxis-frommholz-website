@@ -1,17 +1,25 @@
 import Link from 'next/link';
 import { PageLayout } from '@/components/PageLayout';
+import { localizedHref } from '@/lib/i18n/slugs';
 import type { Locale } from '@/lib/i18n/config';
 
+/**
+ * Die Fließtexte dieser Seite werden erst ab Aufgabe 12 übersetzt; die Links
+ * zeigen aber schon jetzt in die jeweilige Sprachfassung.
+ *
+ * Ausnahme: /karriere und /karriere/… existieren nur auf Deutsch. Sie laufen
+ * bewusst NICHT durch `localizedHref` — das schickte sie auf die
+ * Sprachstartseite. Der Fußbereich weist allgemein auf die nur deutschen
+ * Seiten hin.
+ */
 export function SozialesEngagementPage({ lang }: { lang: Locale }) {
-  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
-  void lang;
   return (
     <PageLayout
       title="Soziales Engagement — Pflege als soziale Aufgabe"
       lead="Soziale Verantwortung gehört für uns zur Pflege — ein großer Teil davon läuft heute über unseren gemeinnützigen Partnerverein Leben Pflegen Reisen e.V. Hier zeigen wir, woher diese Haltung kommt und wie die Zusammenarbeit aussieht."
       crumbs={[
-        { name: 'Start', href: '/' },
-        { name: 'Soziales Engagement', href: '/soziales-engagement' },
+        { name: 'Start', href: localizedHref('/', lang) },
+        { name: 'Soziales Engagement', href: localizedHref('/soziales-engagement', lang) },
       ]}
     >
       <section>
@@ -20,15 +28,15 @@ export function SozialesEngagementPage({ lang }: { lang: Locale }) {
         </h2>
         <p className="mt-3">
           Für{' '}
-          <Link href="/leistungen/sitzwachen-berlin" className="underline hover:text-gold-deep">
+          <Link href={localizedHref('/leistungen/sitzwachen-berlin', lang)} className="underline hover:text-gold-deep">
             Sitzwachen
           </Link>
           ,{' '}
-          <Link href="/leistungen/hospiz-sitzwachen" className="underline hover:text-gold-deep">
+          <Link href={localizedHref('/leistungen/hospiz-sitzwachen', lang)} className="underline hover:text-gold-deep">
             Hospiz-Sitzwachen
           </Link>{' '}
           und{' '}
-          <Link href="/leistungen/reisebegleitung-senioren" className="underline hover:text-gold-deep">
+          <Link href={localizedHref('/leistungen/reisebegleitung-senioren', lang)} className="underline hover:text-gold-deep">
             Reisebegleitung
           </Link>{' '}
           arbeiten wir eng mit dem gemeinnützigen Verein <strong className="text-anthracite">Leben Pflegen Reisen e.V.</strong> zusammen. Der Verein bringt ein ehrenamtliches Netzwerk und langjährige Erfahrung in der Begleitung pflegebedürftiger Menschen auf Reisen mit — eine Ergänzung zu unseren bezahlten pflegerischen Schichten, die Familien gerade in den letzten Stunden eines Lebens oder auf einer letzten gemeinsamen Reise nicht alleine lässt.
@@ -51,7 +59,7 @@ export function SozialesEngagementPage({ lang }: { lang: Locale }) {
         </h2>
         <p className="mt-3">
           Die Heilpraxis Frommholz ist aus der gemeinnützigen Krankenpflege Frommholz hervorgegangen — eine gGmbH, die seit Jahren in Berlin Pflege für Menschen organisiert, die im Regelsystem schwer Platz finden. Diese Erfahrung prägt uns bis heute: in der Auswahl unserer Mitarbeitenden, in der Bereitschaft, schwierige Klient-Konstellationen anzunehmen (siehe{' '}
-          <Link href="/leistungen/systemsprenger-betreuung" className="underline hover:text-gold-deep">
+          <Link href={localizedHref('/leistungen/systemsprenger-betreuung', lang)} className="underline hover:text-gold-deep">
             Systemsprenger-Betreuung
           </Link>
           ), in der Haltung gegenüber Inklusionsfragen.
@@ -115,7 +123,7 @@ export function SozialesEngagementPage({ lang }: { lang: Locale }) {
             Stellenkonzepte ansehen
           </Link>
           <Link
-            href="/#kontakt"
+            href={localizedHref('/#kontakt', lang)}
             className="inline-block border border-anthracite text-anthracite px-6 py-3 font-sans text-sm uppercase tracking-[1.5px] hover:bg-anthracite hover:text-cream transition-colors"
           >
             Erstgespräch anfragen

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FaqAccordion } from './FaqAccordion';
 import { localizedHref } from '@/lib/i18n/slugs';
+import { getDictionary } from '@/lib/i18n/dictionaries';
 import type { Locale } from '@/lib/i18n/config';
 import type { SeoLeistungDetail, SeoLeistungSection } from '@/lib/leistungen-seo';
 
@@ -51,6 +52,7 @@ function Section({ section }: { section: SeoLeistungSection }) {
  * übersetzten Seiten zurück auf die deutschen URLs.
  */
 export function SeoDetailContent({ detail, lang }: { detail: SeoLeistungDetail; lang: Locale }) {
+  const t = getDictionary(lang);
   return (
     <>
       {detail.intro.map((p, i) => (
@@ -65,18 +67,17 @@ export function SeoDetailContent({ detail, lang }: { detail: SeoLeistungDetail; 
 
       <section className="mt-12">
         <h2 className="font-serif text-2xl md:text-3xl font-light text-anthracite">
-          Häufig gestellte Fragen
+          {t.seoDetail.faqHeading}
         </h2>
         <FaqAccordion items={detail.faq} />
       </section>
 
       <section className="mt-12 p-8 bg-cream-deep border border-gold/30">
         <p className="font-serif text-xl text-anthracite font-light">
-          Bereit für ein erstes Gespräch?
+          {t.seoDetail.ctaTitle}
         </p>
         <p className="mt-2 text-[15px] leading-relaxed text-anthracite-soft">
-          Kostenlos, unverbindlich, in Ruhe. Wir hören erst zu — und melden uns dann mit
-          einem konkreten Vorschlag zurück.
+          {t.seoDetail.ctaText}
         </p>
         <Link
           href={localizedHref(detail.cta.href, lang)}
@@ -89,7 +90,7 @@ export function SeoDetailContent({ detail, lang }: { detail: SeoLeistungDetail; 
       {detail.relatedLinks.length > 0 && (
         <section className="mt-12 border-t border-gold/20 pt-8">
           <p className="font-sans text-[11px] uppercase tracking-[2px] text-gold-deep">
-            Vielleicht interessiert Sie auch
+            {t.seoDetail.relatedHeading}
           </p>
           <ul className="mt-4 space-y-2 list-none">
             {detail.relatedLinks.map((r) => (

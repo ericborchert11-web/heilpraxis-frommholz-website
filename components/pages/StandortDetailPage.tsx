@@ -6,18 +6,26 @@ import { ServiceJsonLd } from '@/components/SEO/JsonLd';
 import { SeoDetailContent } from '@/components/SeoDetailContent';
 import { getStandort } from '@/lib/i18n/content';
 import { localizedHref } from '@/lib/i18n/slugs';
-import type { Locale } from '@/lib/i18n/config';
+import { getDictionary } from '@/lib/i18n/dictionaries';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 
 /** `slug` ist immer der deutsche Slug — übersetzte Slugs werden vorher zurückgerechnet. */
 export function StandortDetailPage({ lang, slug }: { lang: Locale; slug: string }) {
+  const t = getDictionary(lang);
   const s = getStandort(slug, lang);
   if (!s) {
     notFound();
   }
 
+  // Identität statt Inhalt: ohne Überlagerung liefert `getStandort` denselben
+  // deutschen Eintrag zurück — dann ist dieser Eintrag nachweislich noch
+  // unübersetzt. Sobald die Überlagerung steht, schaltet sich das JSON-LD von
+  // selbst zu.
+  const istUebersetzt = s !== getStandort(slug, DEFAULT_LOCALE);
+
   const crumbs = [
-    { name: 'Start', href: localizedHref('/', lang) },
-    { name: 'Standorte', href: localizedHref('/standorte', lang) },
+    { name: t.crumbs.start, href: localizedHref('/', lang) },
+    { name: t.crumbs.standorte, href: localizedHref('/standorte', lang) },
     { name: s.name, href: localizedHref(`/standorte/${s.slug}`, lang) },
   ];
 
@@ -34,7 +42,8 @@ export function StandortDetailPage({ lang, slug }: { lang: Locale; slug: string 
         serviceDescription={s.metaDescription}
         areaServed={[s.name]}
       />
-      <FaqJsonLd items={s.detail.faq} />
+      {/* Strukturierte FAQ-Daten nur, wenn sie auch in der Seitensprache vorliegen. */}
+      {(lang === DEFAULT_LOCALE || istUebersetzt) && <FaqJsonLd items={s.detail.faq} />}
     </article>
   );
 }

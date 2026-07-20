@@ -6,7 +6,7 @@ import { BUSINESS } from '@/lib/site-config';
 import { Reveal } from './Reveal';
 import { sendContact } from '@/app/actions/send-contact';
 import { initialContactState } from '@/lib/contact-state';
-import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
+import { type Locale } from '@/lib/i18n/config';
 import { getDictionary } from '@/lib/i18n/dictionaries';
 
 export function KontaktSection({ lang }: { lang: Locale }) {
@@ -57,7 +57,11 @@ export function KontaktSection({ lang }: { lang: Locale }) {
             <div className="bg-cream-deep border border-gold/40 p-8">
               <p className="font-serif text-xl text-anthracite">{t.kontakt.successTitle}</p>
               <p className="mt-3 text-[15px] text-anthracite-soft leading-relaxed">
-                {lang === DEFAULT_LOCALE && state.message ? (
+                {/*
+                  Die Server-Action liefert die Meldung in der Seitensprache;
+                  der Wörterbuch-Text ist der Rückfall, wenn keine kam.
+                */}
+                {state.message ? (
                   state.message
                 ) : (
                   <>

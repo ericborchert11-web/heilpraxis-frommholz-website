@@ -3,17 +3,19 @@ import { PageLayout } from '@/components/PageLayout';
 import { hasDetail } from '@/lib/leistungen-seo';
 import { getLeistungenSeo } from '@/lib/i18n/content';
 import { localizedHref } from '@/lib/i18n/slugs';
+import { getDictionary } from '@/lib/i18n/dictionaries';
 import type { Locale } from '@/lib/i18n/config';
 
 export function LeistungenPage({ lang }: { lang: Locale }) {
+  const t = getDictionary(lang);
   const leistungen = getLeistungenSeo(lang);
   return (
     <PageLayout
-      title="Unsere Leistungen"
-      lead="Acht Wege, in denen wir Menschen in Berlin begleiten — von der Sitzwache im Krankenhaus bis zur 24-Stunden-Betreuung zu Hause. Alle als Selbstzahler-Leistung, mit kleinem festem Team."
+      title={t.leistungenPage.title}
+      lead={t.leistungenPage.lead}
       crumbs={[
-        { name: 'Start', href: localizedHref('/', lang) },
-        { name: 'Leistungen', href: localizedHref('/leistungen', lang) },
+        { name: t.crumbs.start, href: localizedHref('/', lang) },
+        { name: t.crumbs.leistungen, href: localizedHref('/leistungen', lang) },
       ]}
     >
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-5 list-none">
@@ -26,11 +28,11 @@ export function LeistungenPage({ lang }: { lang: Locale }) {
               <p className="mt-2 text-[14px] leading-relaxed text-anthracite-soft">{l.short}</p>
               {linked ? (
                 <span className="mt-4 inline-block font-sans text-[11px] uppercase tracking-[1.5px] text-gold-deep border-b border-gold-deep/30 pb-1">
-                  Mehr erfahren
+                  {t.leistungenPage.more}
                 </span>
               ) : (
                 <span className="mt-4 inline-block font-sans text-[10px] uppercase tracking-[1.5px] text-warm-gray italic">
-                  Detail-Seite folgt
+                  {t.leistungenPage.detailPending}
                 </span>
               )}
             </>
@@ -50,9 +52,9 @@ export function LeistungenPage({ lang }: { lang: Locale }) {
       </ul>
 
       <p className="mt-10 text-anthracite-soft">
-        Sie wissen nicht, welche Leistung passt? Wir hören erst zu, dann beraten wir.{' '}
+        {t.leistungenPage.outroBefore}{' '}
         <Link href={localizedHref('/#kontakt', lang)} className="underline hover:text-gold-deep">
-          Erstgespräch anfragen →
+          {t.leistungenPage.outroLink}
         </Link>
       </p>
     </PageLayout>

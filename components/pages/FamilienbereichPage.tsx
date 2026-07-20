@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { PageLayout } from '@/components/PageLayout';
 import { FaqAccordion } from '@/components/FaqAccordion';
 import { FaqJsonLd } from '@/components/SEO/FaqJsonLd';
+import { localizedHref } from '@/lib/i18n/slugs';
 import type { FaqItem } from '@/lib/faq-global';
-import type { Locale } from '@/lib/i18n/config';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 
 const FAQ: readonly FaqItem[] = [
   {
@@ -21,16 +22,19 @@ const FAQ: readonly FaqItem[] = [
   },
 ];
 
+/**
+ * Die Fließtexte dieser Seite werden erst ab Aufgabe 12 übersetzt; die Links
+ * zeigen aber schon jetzt in die jeweilige Sprachfassung. `/datenschutz`
+ * existiert nur auf Deutsch und bleibt darum ein deutscher Pfad.
+ */
 export function FamilienbereichPage({ lang }: { lang: Locale }) {
-  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
-  void lang;
   return (
     <PageLayout
       title="Ihr Familienbereich — alles Wichtige an einem geschützten Ort"
       lead="Wenn ein Mensch gepflegt wird, wollen Angehörige wissen, was passiert — auch wenn sie nicht daneben stehen können. Der Familienbereich gibt Ihnen genau das: einen geschützten Online-Zugang zu Dienstplänen, Rechnungen und Dokumentation. Für alle unsere Klient:innen inklusive."
       crumbs={[
-        { name: 'Start', href: '/' },
-        { name: 'Familienbereich', href: '/familienbereich' },
+        { name: 'Start', href: localizedHref('/', lang) },
+        { name: 'Familienbereich', href: localizedHref('/familienbereich', lang) },
       ]}
     >
       <section>
@@ -87,7 +91,7 @@ export function FamilienbereichPage({ lang }: { lang: Locale }) {
         </p>
         <div className="mt-5">
           <Link
-            href="/#kontakt"
+            href={localizedHref('/#kontakt', lang)}
             className="inline-block bg-anthracite text-cream px-6 py-3 font-sans text-sm uppercase tracking-[1.5px] hover:bg-gold-deep transition-colors"
           >
             Erstgespräch anfragen
@@ -95,7 +99,12 @@ export function FamilienbereichPage({ lang }: { lang: Locale }) {
         </div>
       </section>
 
-      <FaqJsonLd items={FAQ} />
+      {/*
+        Diese FAQ liegt nur auf Deutsch vor. Strukturierte Daten darum nur auf
+        der deutschen Fassung — sonst bekäme Google deutsche Inhalte als
+        englische deklariert.
+      */}
+      {lang === DEFAULT_LOCALE && <FaqJsonLd items={FAQ} />}
     </PageLayout>
   );
 }
