@@ -2,10 +2,13 @@
 
 import { useState } from 'react';
 import { BUSINESS } from '@/lib/site-config';
+import type { Locale } from '@/lib/i18n/config';
 
 type Size = 'normal' | 'large' | 'xlarge';
 
-export function A11yBar() {
+export function A11yBar({ lang }: { lang: Locale }) {
+  // lang wird ab Etappe 1 / Aufgabe 7 fuer die Uebersetzung gebraucht.
+  void lang;
   const [size, setSize] = useState<Size>(() =>
     typeof window !== 'undefined'
       ? ((localStorage.getItem('hpf:a11y:size') as Size | null) ?? 'normal')

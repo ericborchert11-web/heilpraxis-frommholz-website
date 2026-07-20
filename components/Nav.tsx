@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { SITE } from '@/lib/site-config';
+import type { Locale } from '@/lib/i18n/config';
 
 const LINKS = [
   { href: '/leistungen', label: 'Leistungen' },
@@ -12,7 +13,9 @@ const LINKS = [
   { href: '/#qualitaet', label: 'Qualität' },
 ];
 
-export function Nav() {
+export function Nav({ lang }: { lang: Locale }) {
+  // lang wird ab Etappe 1 / Aufgabe 7 fuer die Uebersetzung gebraucht.
+  void lang;
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 

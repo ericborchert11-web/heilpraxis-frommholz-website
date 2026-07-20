@@ -4,8 +4,11 @@ import { BUSINESS, SITE } from '@/lib/site-config';
 import { STANDORTE } from '@/lib/standorte';
 import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
 import { THEMEN } from '@/lib/themen';
+import type { Locale } from '@/lib/i18n/config';
 
-export function Footer() {
+export function Footer({ lang }: { lang: Locale }) {
+  // lang wird ab Etappe 1 / Aufgabe 7 fuer die Uebersetzung gebraucht.
+  void lang;
   const year = new Date().getFullYear();
 
   return (

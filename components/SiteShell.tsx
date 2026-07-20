@@ -1,12 +1,11 @@
-import type { Metadata } from 'next';
 import { Cormorant_Garamond, Manrope } from 'next/font/google';
-import './globals.css';
 import { A11yBar } from '@/components/A11yBar';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { MedicalBusinessJsonLd } from '@/components/SEO/JsonLd';
 import { a11yInitScript } from '@/lib/a11y-init';
-import { SITE, pageMeta } from '@/lib/site-config';
+import { getDictionary } from '@/lib/i18n/dictionaries';
+import type { Locale } from '@/lib/i18n/config';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -23,24 +22,17 @@ const manrope = Manrope({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(SITE.url),
-  title: {
-    default: `Pflege, Sitzwachen & Begleitung Berlin – ${SITE.name}`,
-    template: `%s · ${SITE.name}`,
-  },
-  description: SITE.description,
-  ...pageMeta('/'),
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+/**
+ * Gemeinsames HTML-Gerüst beider Root-Layouts. `<html lang>` kann nur in
+ * einem Root-Layout gesetzt werden — darum gibt es zwei davon (Route-Groups
+ * `(de)` und `(intl)`), die beide diese Komponente rendern.
+ */
+export function SiteShell({ lang, children }: { lang: Locale; children: React.ReactNode }) {
+  const t = getDictionary(lang);
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
-      lang="de"
+      lang={lang}
       className={`${cormorant.variable} ${manrope.variable}`}
       suppressHydrationWarning
     >
@@ -49,11 +41,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MedicalBusinessJsonLd />
       </head>
       <body className="bg-cream text-anthracite font-sans antialiased">
-        <a href="#main" className="skip-link">Zum Inhalt springen</a>
-        <A11yBar />
-        <Nav />
+        <a href="#main" className="skip-link">{t.meta.skipLink}</a>
+        <A11yBar lang={lang} />
+        <Nav lang={lang} />
         <main id="main" className="pt-[122px]">{children}</main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );
