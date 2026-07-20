@@ -5,11 +5,11 @@ import Link from 'next/link';
 import { BUSINESS } from '@/lib/site-config';
 import { Reveal } from './Reveal';
 import { sendContact, initialContactState } from '@/app/actions/send-contact';
-import type { Locale } from '@/lib/i18n/config';
+import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
+import { getDictionary } from '@/lib/i18n/dictionaries';
 
 export function KontaktSection({ lang }: { lang: Locale }) {
-  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
-  void lang;
+  const t = getDictionary(lang);
   const [state, formAction, pending] = useActionState(sendContact, initialContactState);
   const success = state.status === 'success';
   const errorField = (key: 'name' | 'contact' | 'subject' | 'consent') =>
@@ -20,16 +20,16 @@ export function KontaktSection({ lang }: { lang: Locale }) {
       <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-20 items-start">
         <div>
           <Reveal>
-            <span className="font-sans text-[11px] uppercase tracking-[3px] text-gold-deep">Kontakt aufnehmen</span>
+            <span className="font-sans text-[11px] uppercase tracking-[3px] text-gold-deep">{t.kontakt.eyebrow}</span>
           </Reveal>
           <Reveal delay={1} as="h2">
             <span className="block mt-4 font-serif text-[clamp(2rem,4vw,3rem)] leading-tight font-light text-anthracite">
-              Beginnen wir mit einem <em className="text-gold-deep not-italic font-medium">Gespräch.</em>
+              {t.kontakt.h2Line1} <em className="text-gold-deep not-italic font-medium">{t.kontakt.h2Emphasis}</em>
             </span>
           </Reveal>
           <Reveal delay={2}>
             <p className="mt-5 text-[15px] leading-relaxed text-anthracite-soft">
-              Sie überlegen, ob unsere Begleitung passt? Wir nehmen uns Zeit für ein erstes, unverbindliches Gespräch — am Telefon, per E-Mail oder direkt bei Ihnen.
+              {t.kontakt.lead}
             </p>
           </Reveal>
           <Reveal delay={3}>
@@ -54,11 +54,13 @@ export function KontaktSection({ lang }: { lang: Locale }) {
         <Reveal delay={2}>
           {success ? (
             <div className="bg-cream-deep border border-gold/40 p-8">
-              <p className="font-serif text-xl text-anthracite">Danke — wir haben Ihre Nachricht erhalten.</p>
+              <p className="font-serif text-xl text-anthracite">{t.kontakt.successTitle}</p>
               <p className="mt-3 text-[15px] text-anthracite-soft leading-relaxed">
-                {state.message ?? 'Wir melden uns innerhalb weniger Tage zurück. In dringenden Fällen erreichen Sie uns direkt unter '}
-                {!state.message && (
+                {lang === DEFAULT_LOCALE && state.message ? (
+                  state.message
+                ) : (
                   <>
+                    {t.kontakt.successFallback}
                     <a href={`tel:${BUSINESS.phone}`} className="underline hover:text-gold-deep">{BUSINESS.phoneDisplay}</a>.
                   </>
                 )}
@@ -69,23 +71,26 @@ export function KontaktSection({ lang }: { lang: Locale }) {
               {/* Honeypot — von echten Nutzer*innen nicht sichtbar */}
               <div className="absolute -left-[9999px]" aria-hidden="true">
                 <label>
-                  Bitte leer lassen
+                  {t.kontakt.honeypotLabel}
                   <input type="text" name="website" tabIndex={-1} autoComplete="off" />
                 </label>
               </div>
 
-              <p className="text-[11px] text-anthracite-light">* Pflichtfeld</p>
+              {/* Anfragesprache — landet als Hinweis in der Benachrichtigungsmail. */}
+              <input type="hidden" name="lang" value={lang} />
+
+              <p className="text-[11px] text-anthracite-light">{t.kontakt.requiredNote}</p>
 
               <div>
                 <label htmlFor="contact-name" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
-                  Name *
+                  {t.kontakt.labelName}
                 </label>
                 <input
                   id="contact-name"
                   type="text"
                   name="name"
                   required
-                  placeholder="Ihr Name"
+                  placeholder={t.kontakt.placeholderName}
                   aria-invalid={Boolean(errorField('name'))}
                   aria-describedby={errorField('name') ? 'err-name' : undefined}
                   className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:border-gold-deep aria-[invalid=true]:border-red-700"
@@ -97,14 +102,14 @@ export function KontaktSection({ lang }: { lang: Locale }) {
 
               <div>
                 <label htmlFor="contact-reach" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
-                  Telefon oder E-Mail *
+                  {t.kontakt.labelReach}
                 </label>
                 <input
                   id="contact-reach"
                   type="text"
                   name="contact"
                   required
-                  placeholder="Wie dürfen wir Sie erreichen?"
+                  placeholder={t.kontakt.placeholderReach}
                   aria-invalid={Boolean(errorField('contact'))}
                   aria-describedby={errorField('contact') ? 'err-contact' : undefined}
                   className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:border-gold-deep aria-[invalid=true]:border-red-700"
@@ -116,34 +121,30 @@ export function KontaktSection({ lang }: { lang: Locale }) {
 
               <div>
                 <label htmlFor="contact-subject" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
-                  Worum geht es? *
+                  {t.kontakt.labelSubject}
                 </label>
                 <select
                   id="contact-subject"
                   name="subject"
                   required
-                  defaultValue="Erstgespräch zur Pflege"
+                  defaultValue={t.kontakt.subjects[0]}
                   className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:border-gold-deep"
                 >
-                  <option>Erstgespräch zur Pflege</option>
-                  <option>Sitzwache / Nachtwache</option>
-                  <option>24-Stunden-Betreuung</option>
-                  <option>Pflegeberatung</option>
-                  <option>Reisebegleitung</option>
-                  <option>Hospiz-Sitzwache</option>
-                  <option>Etwas anderes</option>
+                  {t.kontakt.subjects.map((s) => (
+                    <option key={s}>{s}</option>
+                  ))}
                 </select>
               </div>
 
               <div>
                 <label htmlFor="contact-message" className="block font-sans text-[11px] uppercase tracking-[2px] text-anthracite-light mb-2">
-                  Ihre Nachricht (optional)
+                  {t.kontakt.labelMessage}
                 </label>
                 <textarea
                   id="contact-message"
                   name="message"
                   rows={4}
-                  placeholder="Erzählen Sie uns kurz, was Sie umtreibt…"
+                  placeholder={t.kontakt.placeholderMessage}
                   className="w-full px-4 py-3 bg-cream border border-gold/20 font-sans text-sm focus:border-gold-deep"
                 />
               </div>
@@ -158,9 +159,9 @@ export function KontaktSection({ lang }: { lang: Locale }) {
                   className="mt-1 shrink-0"
                 />
                 <span>
-                  * Ich willige ein, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden.
-                  Hinweise zur Datenverarbeitung finden Sie in der{' '}
-                  <Link href="/datenschutz" className="underline hover:text-gold-deep">Datenschutzerklärung</Link>.
+                  {t.kontakt.consentBefore}
+                  <Link href="/datenschutz" className="underline hover:text-gold-deep">{t.kontakt.consentLink}</Link>
+                  {t.kontakt.consentAfter}
                 </span>
               </label>
               {errorField('consent') && (
@@ -176,7 +177,7 @@ export function KontaktSection({ lang }: { lang: Locale }) {
                 disabled={pending}
                 className="w-full bg-anthracite text-cream py-3.5 rounded-sm font-sans text-sm uppercase tracking-[1.5px] hover:bg-gold-deep transition-colors disabled:opacity-60"
               >
-                {pending ? 'Wird gesendet …' : 'Nachricht senden'}
+                {pending ? t.kontakt.submitting : t.kontakt.submit}
               </button>
             </form>
           )}

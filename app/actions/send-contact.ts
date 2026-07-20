@@ -2,6 +2,7 @@
 
 import { headers } from 'next/headers';
 import { BUSINESS, SITE } from '@/lib/site-config';
+import { isLocale } from '@/lib/i18n/config';
 
 /**
  * Server Action für das Kontaktformular auf der Startseite.
@@ -53,6 +54,7 @@ type Sanitized = {
   message: string;
   consent: boolean;
   honeypot: string;
+  lang: string;
 };
 
 function sanitize(formData: FormData): Sanitized {
@@ -64,6 +66,7 @@ function sanitize(formData: FormData): Sanitized {
     message: get('message'),
     consent: formData.get('consent') === 'on',
     honeypot: get('website'),
+    lang: get('lang') || 'de',
   };
 }
 
@@ -130,6 +133,18 @@ export async function sendContact(
   const from = process.env.MAIL_FROM ?? 'Heilpraxis Frommholz <onboarding@resend.dev>';
   const to = process.env.MAIL_TO ?? BUSINESS.email;
 
+  const LANGUAGE_HINT: Record<string, string> = {
+    de: 'Deutsch',
+    en: 'Englisch — bitte auf Englisch antworten',
+    es: 'Spanisch — Anfrage auf Spanisch, Betreuung auf Deutsch oder Englisch',
+    it: 'Italienisch — Anfrage auf Italienisch, Betreuung auf Deutsch oder Englisch',
+  };
+
+  // `lang` kommt aus dem Formular und ist damit nicht vertrauenswürdig. Erst
+  // gegen die bekannten Sprachen prüfen, dann nachschlagen — so kann der
+  // Hinweis nur einer der vier festen Strings sein, nie Nutzereingabe.
+  const languageHint = LANGUAGE_HINT[isLocale(data.lang) ? data.lang : 'de'];
+
   // Plain-Text-Body — Resend rendert das ohnehin als Text-Mail
   const textBody = [
     'Neue Anfrage über das Kontaktformular der Heilpraxis Frommholz',
@@ -137,6 +152,7 @@ export async function sendContact(
     `Name:     ${data.name}`,
     `Kontakt:  ${data.contact}`,
     `Thema:    ${data.subject}`,
+    `Sprache:  ${languageHint}`,
     '',
     'Nachricht:',
     data.message.length > 0 ? data.message : '(keine Nachricht angegeben)',
@@ -149,7 +165,8 @@ export async function sendContact(
     '<p><strong>Neue Anfrage über das Kontaktformular der Heilpraxis Frommholz</strong></p>',
     `<p><b>Name:</b> ${escapeHtml(data.name)}<br>`,
     `<b>Kontakt:</b> ${escapeHtml(data.contact)}<br>`,
-    `<b>Thema:</b> ${escapeHtml(data.subject)}</p>`,
+    `<b>Thema:</b> ${escapeHtml(data.subject)}<br>`,
+    `<b>Sprache:</b> ${escapeHtml(languageHint)}</p>`,
     '<p><b>Nachricht:</b><br>',
     data.message.length > 0
       ? escapeHtml(data.message).replace(/\n/g, '<br>')
