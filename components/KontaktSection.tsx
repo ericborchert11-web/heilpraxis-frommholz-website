@@ -4,7 +4,8 @@ import { useActionState } from 'react';
 import Link from 'next/link';
 import { BUSINESS } from '@/lib/site-config';
 import { Reveal } from './Reveal';
-import { sendContact, initialContactState } from '@/app/actions/send-contact';
+import { sendContact } from '@/app/actions/send-contact';
+import { initialContactState } from '@/lib/contact-state';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 import { getDictionary } from '@/lib/i18n/dictionaries';
 

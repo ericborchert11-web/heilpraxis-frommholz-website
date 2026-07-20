@@ -2,6 +2,7 @@
 
 import { headers } from 'next/headers';
 import { BUSINESS, SITE } from '@/lib/site-config';
+import type { ContactState } from '@/lib/contact-state';
 import { isLocale } from '@/lib/i18n/config';
 
 /**
@@ -15,13 +16,9 @@ import { isLocale } from '@/lib/i18n/config';
  *   - MAIL_TO: Empfänger-Adresse, default = simeon@heilpraxis-frommholz.de
  */
 
-export type ContactState = {
-  status: 'idle' | 'success' | 'error';
-  message?: string;
-  fieldErrors?: Partial<Record<'name' | 'contact' | 'subject' | 'consent', string>>;
-};
-
-export const initialContactState: ContactState = { status: 'idle' };
+// Typ und Startzustand liegen in lib/contact-state.ts — eine `'use server'`-
+// Datei darf nur async-Funktionen exportieren, sonst schlägt das Absenden
+// zur Laufzeit fehl. Siehe die Erläuterung dort.
 
 // Sehr einfaches In-Memory-Rate-Limit pro IP (best effort — der Zustand lebt
 // nur in dieser Serverless-Instanz und wird bei Kaltstart/Skalierung über
