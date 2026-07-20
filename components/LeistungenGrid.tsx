@@ -2,8 +2,11 @@ import Link from 'next/link';
 import { LEISTUNGEN } from '@/lib/leistungen';
 import { LeistungCard } from './LeistungCard';
 import { Reveal } from './Reveal';
+import type { Locale } from '@/lib/i18n/config';
 
-export function LeistungenGrid() {
+export function LeistungenGrid({ lang }: { lang: Locale }) {
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
+  void lang;
   return (
     <section id="leistungen" className="px-6 md:px-12 py-24 max-w-6xl mx-auto scroll-mt-32">
       <div className="text-center max-w-2xl mx-auto">

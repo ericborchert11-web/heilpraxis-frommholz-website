@@ -1,3 +1,5 @@
+import type { Locale } from '@/lib/i18n/config';
+
 const ITEMS = [
   { num: '20+', label: 'Jahre Pflegeerfahrung' },
   { num: '24/7', label: 'Verlässlich erreichbar' },
@@ -5,7 +7,9 @@ const ITEMS = [
   { num: 'Berlin', label: '& Umland' },
 ];
 
-export function TrustStrip() {
+export function TrustStrip({ lang }: { lang: Locale }) {
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
+  void lang;
   return (
     <section className="bg-cream-deep border-y border-gold/20">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 px-6 md:px-12 py-12 max-w-6xl mx-auto">

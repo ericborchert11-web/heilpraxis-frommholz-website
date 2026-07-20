@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Reveal } from './Reveal';
+import type { Locale } from '@/lib/i18n/config';
 
 const BAUSTEINE = [
   {
@@ -16,7 +17,9 @@ const BAUSTEINE = [
   },
 ];
 
-export function FamilienbereichSection() {
+export function FamilienbereichSection({ lang }: { lang: Locale }) {
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
+  void lang;
   return (
     <section id="familienbereich" className="px-6 md:px-12 py-24 max-w-6xl mx-auto scroll-mt-32">
       <Reveal>

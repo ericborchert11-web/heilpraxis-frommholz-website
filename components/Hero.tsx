@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import { BUSINESS } from '@/lib/site-config';
+import type { Locale } from '@/lib/i18n/config';
 
-export function Hero() {
+export function Hero({ lang }: { lang: Locale }) {
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
+  void lang;
   return (
     <section className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-20 items-center px-6 md:px-12 py-20 lg:py-28 min-h-[80vh]">
       <div>

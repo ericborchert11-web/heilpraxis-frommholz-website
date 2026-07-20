@@ -1,4 +1,5 @@
 import { Reveal } from './Reveal';
+import type { Locale } from '@/lib/i18n/config';
 
 const CARD_DELAYS: (1 | 2 | 3 | 4 | 5 | 6)[] = [1, 2, 3, 4, 4];
 
@@ -25,7 +26,9 @@ const POINTS = [
   },
 ];
 
-export function QualitaetSection() {
+export function QualitaetSection({ lang }: { lang: Locale }) {
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
+  void lang;
   return (
     <section id="qualitaet" className="bg-anthracite text-cream py-24 px-6 md:px-12 scroll-mt-32">
       <div className="max-w-6xl mx-auto">

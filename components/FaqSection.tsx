@@ -2,8 +2,11 @@ import { FaqAccordion } from './FaqAccordion';
 import { FaqJsonLd } from './SEO/FaqJsonLd';
 import { GLOBAL_FAQ } from '@/lib/faq-global';
 import { Reveal } from './Reveal';
+import type { Locale } from '@/lib/i18n/config';
 
-export function FaqSection() {
+export function FaqSection({ lang }: { lang: Locale }) {
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
+  void lang;
   return (
     <section id="faq" className="bg-cream-deep px-6 md:px-12 py-24 scroll-mt-32">
       <div className="max-w-3xl mx-auto">

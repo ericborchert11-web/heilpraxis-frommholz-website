@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Reveal } from './Reveal';
+import type { Locale } from '@/lib/i18n/config';
 
 const STEPS = [
   {
@@ -19,7 +20,9 @@ const STEPS = [
   },
 ];
 
-export function AblaufSection() {
+export function AblaufSection({ lang }: { lang: Locale }) {
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
+  void lang;
   return (
     <section id="ablauf" className="bg-cream-deep py-24 px-6 md:px-12 scroll-mt-32">
       <div className="text-center max-w-2xl mx-auto">

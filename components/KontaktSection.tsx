@@ -4,8 +4,11 @@ import { useActionState } from 'react';
 import { BUSINESS } from '@/lib/site-config';
 import { Reveal } from './Reveal';
 import { sendContact, initialContactState } from '@/app/actions/send-contact';
+import type { Locale } from '@/lib/i18n/config';
 
-export function KontaktSection() {
+export function KontaktSection({ lang }: { lang: Locale }) {
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
+  void lang;
   const [state, formAction, pending] = useActionState(sendContact, initialContactState);
   const success = state.status === 'success';
   const errorField = (key: 'name' | 'contact' | 'subject' | 'consent') =>
