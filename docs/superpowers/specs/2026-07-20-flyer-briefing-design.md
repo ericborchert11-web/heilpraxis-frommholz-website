@@ -274,6 +274,16 @@ Alle Aussagen in den Flyern stammen aus dem gepflegten Website-Content. Quelle i
 | Themen Verhinderungspflege, Demenzbegleitung, Palliativ zu Hause, Krankenhausbegleitung | `lib/themen.ts` |
 | Markenfarben | `app/globals.css` |
 
-**Offene Belege, die dem Flyer fehlen (Audit 2026-07-20):** Der Flyer behauptet Qualität ausschließlich über sich selbst — kein Gründungsjahr, keine Teamgröße, kein Gesicht, keine dritte Instanz. Testimonials sind gesperrt (UWG/HWG), überprüfbare Zahlen wären aber zulässig und fehlen. **Von Eric zu liefern: Gründungsjahr der Heilpraxis und aktuelle Mitarbeitendenzahl.**
+**Erfahrung — geklärt am 2026-07-20 (Eric):** Die Heilpraxis besteht **seit 2026**. Der Vorgängerbetrieb war **Simeons eigener** und hat rund **zehn Jahre lang Privatkunden versorgt**.
+
+> ⚠️ **„Seit zehn Jahren" darf nie auf den Betrieb bezogen werden** — das wäre irreführende Werbung nach UWG § 5, weil die Heilpraxis dieses Jahr gegründet wurde. Zulässig ist ausschließlich die personengebundene Fassung, weil Erfahrung an Simeon haftet, nicht am Firmennamen:
+>
+> Angehörigen-Flyer, Seite 3, fünfter Beleg — „**Erfahrung, die älter ist als der Name.** Simeon Frommholz begleitet seit über zehn Jahren Privatkundinnen und Privatkunden in Berlin — seit 2026 unter dem Namen Heilpraxis Frommholz."
+>
+> Praxis-Blatt, Rückseite, Zeile „Erfahrung" — „Simeon Frommholz begleitet seit über zehn Jahren privat versorgte Klientinnen und Klienten in Berlin — seit 2026 unter diesem Namen."
+
+Um Platz für die neue Zeile zu schaffen, entfiel auf der Rückseite des Praxis-Blatts die Schlagzeile „Privatpflege für Berliner Familien …" (steht sinngemäß auf der Vorderseite) und die Team-Zeile wurde gestrafft.
+
+**Weiterhin offener Beleg:** **aktuelle Mitarbeitendenzahl** (von Eric zu liefern). Sie belegt das zentrale Versprechen — ein festes Team von 4–6 Personen je 24-Stunden-Fall trägt nur mit ausreichender Personaldecke. Testimonials bleiben gesperrt (UWG/HWG), überprüfbare Zahlen sind der einzige verbleibende Fremdbeleg.
 
 **Nicht belegt und deshalb nicht verwendbar:** Anzahl betreuter Familien, Jahre am Markt, Zufriedenheitswerte, Auszeichnungen, Versicherungssumme. Falls solche Angaben gewünscht sind, müssen sie zuvor faktisch geklärt werden.
