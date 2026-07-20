@@ -2,6 +2,34 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [Mehrsprachigkeit Etappe 3+4: Spanisch und Italienisch] – 2026-07-20
+
+Etappe 2 hat Englisch mit Inhalt gefüllt, Etappe 3 und 4 tun dasselbe für Spanisch und Italienisch. Damit tragen alle vier Sprachen eigenen Text — der Rückfall auf Deutsch greift nirgends mehr. Die deutschen Dateien in `lib/` bleiben unangetastet und die Quelle der Wahrheit; ES und IT liegen wie EN als Überlagerung je Eintrag daneben. Der ehrliche Kern dieser Etappe: Spanisch und Italienisch tragen nur die Erstanfrage, die laufende Betreuung läuft auf Deutsch oder Englisch — und die Seiten sagen das offen, statt spanisch- oder italienischsprachige Pflege zu versprechen.
+
+### Drin
+
+- **9 Leistungs-Detailseiten, 8 Ratgeberseiten und 16 Standortseiten auf Spanisch und Italienisch** — Fließtext, Zwischenüberschriften, Listen, FAQ und Meta-Angaben. Dazu Familienbereich und Soziales Engagement.
+- **Startseite:** die 6 Leistungskarten und die globale FAQ auf Spanisch und Italienisch.
+- **Oberfläche komplett:** Navigation, Footer, Kontaktformular (Feldbeschriftungen, Platzhalter, Betreffauswahl, Erfolgs- und Fehlermeldungen) und Detailseiten-Oberfläche in beiden Sprachen. Der Footer-Hinweis, dass Impressum, Datenschutz, AGB und Karriere nur auf Deutsch vorliegen, ist selbst übersetzt.
+- **Ehrlicher Sprachhinweis über dem Kontaktformular** — nur auf `/es` und `/it` sichtbar, auf `/` und `/en` bewusst leer und damit abwesend. Spanisch: „Atendemos con gusto su consulta en español. Tenga en cuenta que la atención diaria se presta en alemán o en inglés." Italienisch sinngemäß dasselbe. Auch die dritte Qualitätskarte nennt Betreuung auf Deutsch und Englisch und Spanisch bzw. Italienisch ausdrücklich nur für die Anfrage — kein Versprechen spanisch- oder italienischsprachiger Pflegekräfte auf einer der 78 Seiten.
+- **Meta-Titel und -Beschreibungen der ES/IT-Detailseiten** kommen jetzt aus der Überlagerung statt beim neutralen Sitename zu bleiben. Kein `<title>` über 60 und keine `<meta name="description">` über 160 Zeichen auf den ES/IT-Seiten.
+- **FAQ-Strukturdaten folgen der Übersetzung:** `FAQPage` erscheint jetzt auch auf `/es`, `/it` und ihren je 34 Detailseiten mit FAQ — mit Fragen auf Spanisch bzw. Italienisch, nicht mehr deutsch weggelassen.
+- **Zahlen bleiben deutsch:** Euro-Beträge, Prozente, Paragraphen und Jahre in den Ratgebern sind ziffern- und formatgleich zur deutschen Quelle (Punkt-Tausender: `1.612 €`, `4.000 €`, `§ 45b SGB XI`) — über alle Ratgeberseiten gegen Deutsch abgeglichen, kein Abweichler.
+- **Deutsche, als solche gewollte Fachbegriffe** stehen wie geplant in Klammern hinter der Übersetzung (`(Pflegegrad)`, `(Pflegekasse)`, `(Verhinderungspflege)`, `(Sitzwache)`, `(Entlastungsbetrag)`, `(Medizinischer Dienst)`, `(Hospiz)`, `(Kiez)`); kein deutscher Satz und kein deutsches Oberflächen-Label leckt sonst auf eine ES/IT-Seite.
+- **Deutsche Seiten unverändert:** `/`, `/leistungen`, `/leistungen/sitzwachen-berlin`, `/standorte/moabit` und `/themen/demenz-begleitung` sind gegen den Stand vor der Etappe diffed — im sichtbaren Text Byte für Byte identisch, Unterschiede nur in Build-Hashes. Der Routenbaum ist unverändert.
+- **Test auf Vollständigkeit** deckt jetzt auch ES und IT ab: `tests/i18n/content.test.ts` prüft über Referenzgleichheit, dass keine Leistung, kein Thema, kein Standort, keine Karte und keine FAQ still auf dem deutschen Objekt sitzen geblieben ist.
+
+### Weiterhin bewusst deutsch
+
+- **Impressum, Datenschutz, AGB und Karriere** bleiben einsprachig deutsch — ohne hreflang, mit übersetzten Link-Beschriftungen im Footer, die aber auf die deutschen Seiten zeigen. Der Sprachschalter dieser Seiten verweist auf die Startseite der Zielsprache.
+
+### Stand der Build
+
+- Alle vier Sprachen (DE, EN, ES, IT) inhaltlich vollständig; Rückfall auf Deutsch greift nur noch als Sicherheitsnetz, nicht mehr sichtbar.
+- 165 Sitemap-URLs, alle mit HTTP 200; `<html lang>` je Sprache korrekt (de/en/es/it).
+
+---
+
 ## [Mehrsprachigkeit Etappe 2: englische Inhalte] – 2026-07-20
 
 Etappe 1 hat den englischen Rahmen gebaut, Etappe 2 füllt ihn mit Inhalt. Die englischen Seiten tragen jetzt eigenen Text statt der deutschen Quelle. Die deutschen Dateien in `lib/` bleiben unangetastet und die Quelle der Wahrheit; Englisch liegt als Überlagerung je Eintrag daneben. ES und IT fallen weiterhin bewusst auf Deutsch zurück — das ist Etappe 3 und 4.
