@@ -377,6 +377,16 @@ export const de = {
     callBefore: '',
     callAfter: ' anrufen',
   },
+  /**
+   * Sichtbarer Hinweis zur Betreuungssprache im Kontaktbereich. Auf Deutsch
+   * und Englisch leer — dort ist die Betreuung in der Seitensprache gesichert.
+   * Spanisch und Italienisch füllen ihn: Anfrage in der Sprache möglich, die
+   * laufende Betreuung findet auf Deutsch oder Englisch statt. Leerer String
+   * heißt „nicht anzeigen".
+   */
+  sprachhinweis: {
+    text: '',
+  },
 } as const;
 
 /**

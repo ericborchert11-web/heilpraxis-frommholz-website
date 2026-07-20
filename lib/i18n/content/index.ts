@@ -25,6 +25,16 @@ import { THEMEN_EN } from './en/themen';
 import { STANDORTE_EN } from './en/standorte';
 import { LEISTUNGEN_EN } from './en/leistungen';
 import { GLOBAL_FAQ_EN } from './en/faq';
+import { LEISTUNGEN_SEO_ES } from './es/leistungen-seo';
+import { THEMEN_ES } from './es/themen';
+import { STANDORTE_ES } from './es/standorte';
+import { LEISTUNGEN_ES } from './es/leistungen';
+import { GLOBAL_FAQ_ES } from './es/faq';
+import { LEISTUNGEN_SEO_IT } from './it/leistungen-seo';
+import { THEMEN_IT } from './it/themen';
+import { STANDORTE_IT } from './it/standorte';
+import { LEISTUNGEN_IT } from './it/leistungen';
+import { GLOBAL_FAQ_IT } from './it/faq';
 import type { Overlay } from './types';
 
 function merge<T extends { slug: string }>(source: readonly T[], overlay: Overlay<T> | undefined): readonly T[] {
@@ -32,11 +42,11 @@ function merge<T extends { slug: string }>(source: readonly T[], overlay: Overla
   return source.map((entry) => overlay[entry.slug] ?? entry);
 }
 
-const LEISTUNGEN_SEO_BY_LANG: Partial<Record<Locale, Overlay<SeoLeistung>>> = { en: LEISTUNGEN_SEO_EN };
-const THEMEN_BY_LANG: Partial<Record<Locale, Overlay<SeoThema>>> = { en: THEMEN_EN };
-const STANDORTE_BY_LANG: Partial<Record<Locale, Overlay<SeoStandort>>> = { en: STANDORTE_EN };
-const LEISTUNGEN_BY_LANG: Partial<Record<Locale, Overlay<Leistung>>> = { en: LEISTUNGEN_EN };
-const FAQ_BY_LANG: Partial<Record<Locale, readonly FaqItem[]>> = { en: GLOBAL_FAQ_EN };
+const LEISTUNGEN_SEO_BY_LANG: Partial<Record<Locale, Overlay<SeoLeistung>>> = { en: LEISTUNGEN_SEO_EN, es: LEISTUNGEN_SEO_ES, it: LEISTUNGEN_SEO_IT };
+const THEMEN_BY_LANG: Partial<Record<Locale, Overlay<SeoThema>>> = { en: THEMEN_EN, es: THEMEN_ES, it: THEMEN_IT };
+const STANDORTE_BY_LANG: Partial<Record<Locale, Overlay<SeoStandort>>> = { en: STANDORTE_EN, es: STANDORTE_ES, it: STANDORTE_IT };
+const LEISTUNGEN_BY_LANG: Partial<Record<Locale, Overlay<Leistung>>> = { en: LEISTUNGEN_EN, es: LEISTUNGEN_ES, it: LEISTUNGEN_IT };
+const FAQ_BY_LANG: Partial<Record<Locale, readonly FaqItem[]>> = { en: GLOBAL_FAQ_EN, es: GLOBAL_FAQ_ES, it: GLOBAL_FAQ_IT };
 
 export function getLeistungenSeo(lang: Locale): readonly SeoLeistung[] {
   return merge(LEISTUNGEN_SEO, LEISTUNGEN_SEO_BY_LANG[lang]);

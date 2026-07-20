@@ -9,6 +9,14 @@ import { LEISTUNGEN_SEO_EN } from '@/lib/i18n/content/en/leistungen-seo';
 import { THEMEN_EN } from '@/lib/i18n/content/en/themen';
 import { STANDORTE_EN } from '@/lib/i18n/content/en/standorte';
 import { LEISTUNGEN_EN } from '@/lib/i18n/content/en/leistungen';
+import { LEISTUNGEN_SEO_ES } from '@/lib/i18n/content/es/leistungen-seo';
+import { THEMEN_ES } from '@/lib/i18n/content/es/themen';
+import { STANDORTE_ES } from '@/lib/i18n/content/es/standorte';
+import { LEISTUNGEN_ES } from '@/lib/i18n/content/es/leistungen';
+import { LEISTUNGEN_SEO_IT } from '@/lib/i18n/content/it/leistungen-seo';
+import { THEMEN_IT } from '@/lib/i18n/content/it/themen';
+import { STANDORTE_IT } from '@/lib/i18n/content/it/standorte';
+import { LEISTUNGEN_IT } from '@/lib/i18n/content/it/leistungen';
 
 describe('Rückfall auf Deutsch', () => {
   it('liefert für Deutsch exakt die Quelldaten', () => {
@@ -57,10 +65,18 @@ describe('Überlagerungs-Schlüssel zeigen auf echte Einträge', () => {
   // Ein vertippter Slug in einer Übersetzungsdatei würde sonst stillschweigend
   // ignoriert — der Eintrag bliebe deutsch, ohne dass irgendetwas fehlschlägt.
   const faelle = [
-    { name: 'leistungen-seo', overlay: LEISTUNGEN_SEO_EN, quelle: LEISTUNGEN_SEO },
-    { name: 'themen', overlay: THEMEN_EN, quelle: THEMEN },
-    { name: 'standorte', overlay: STANDORTE_EN, quelle: STANDORTE },
-    { name: 'leistungen', overlay: LEISTUNGEN_EN, quelle: LEISTUNGEN },
+    { name: 'en/leistungen-seo', overlay: LEISTUNGEN_SEO_EN, quelle: LEISTUNGEN_SEO },
+    { name: 'en/themen', overlay: THEMEN_EN, quelle: THEMEN },
+    { name: 'en/standorte', overlay: STANDORTE_EN, quelle: STANDORTE },
+    { name: 'en/leistungen', overlay: LEISTUNGEN_EN, quelle: LEISTUNGEN },
+    { name: 'es/leistungen-seo', overlay: LEISTUNGEN_SEO_ES, quelle: LEISTUNGEN_SEO },
+    { name: 'es/themen', overlay: THEMEN_ES, quelle: THEMEN },
+    { name: 'es/standorte', overlay: STANDORTE_ES, quelle: STANDORTE },
+    { name: 'es/leistungen', overlay: LEISTUNGEN_ES, quelle: LEISTUNGEN },
+    { name: 'it/leistungen-seo', overlay: LEISTUNGEN_SEO_IT, quelle: LEISTUNGEN_SEO },
+    { name: 'it/themen', overlay: THEMEN_IT, quelle: THEMEN },
+    { name: 'it/standorte', overlay: STANDORTE_IT, quelle: STANDORTE },
+    { name: 'it/leistungen', overlay: LEISTUNGEN_IT, quelle: LEISTUNGEN },
   ];
 
   it.each(faelle)('$name: jeder Schlüssel existiert auf Deutsch', ({ overlay, quelle }) => {

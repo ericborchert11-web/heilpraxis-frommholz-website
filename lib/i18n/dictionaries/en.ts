@@ -342,4 +342,8 @@ export const en: Dictionary = {
     callBefore: 'Call ',
     callAfter: '',
   },
+  // Englischsprachige Betreuung ist gesichert — kein Hinweis nötig.
+  sprachhinweis: {
+    text: '',
+  },
 };

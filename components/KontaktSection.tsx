@@ -53,6 +53,16 @@ export function KontaktSection({ lang }: { lang: Locale }) {
         </div>
 
         <Reveal delay={2}>
+          {/*
+            Sichtbarer Hinweis zur Betreuungssprache — nur gefüllt für Sprachen,
+            in denen die laufende Betreuung nicht in der Seitensprache erfolgt
+            (Spanisch, Italienisch). Bewusst über dem Formular, nicht im Footer.
+          */}
+          {t.sprachhinweis.text && (
+            <p className="mb-6 border-l-2 border-gold bg-cream-deep px-5 py-4 text-[14px] leading-relaxed text-anthracite-soft">
+              {t.sprachhinweis.text}
+            </p>
+          )}
           {success ? (
             <div className="bg-cream-deep border border-gold/40 p-8">
               <p className="font-serif text-xl text-anthracite">{t.kontakt.successTitle}</p>
