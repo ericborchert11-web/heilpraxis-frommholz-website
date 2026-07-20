@@ -82,6 +82,11 @@ Vier Aussagen, jede kurz, jede belegt (Quellen siehe Faktenanhang). Optisch als 
 **Block A — Das Erstgespräch (primärer CTA):**
 > Kostenlos, unverbindlich, sechzig bis neunzig Minuten. Auf Wunsch bei Ihnen zu Hause oder telefonisch. Wir hören erst zu, dann erhalten Sie einen schriftlichen Vorschlag mit verbindlichem Preis. Sie entscheiden in Ruhe.
 
+Abgesetzt im selben Block, durch eine feine Linie getrennt:
+> Vorhandenes Pflegegeld können Sie anteilig für unsere Rechnung einsetzen.
+
+Ergänzt im Audit vom 2026-07-20. Belegt über `lib/faq-global.ts`; spart Familien real Geld und war der einzige belegte Finanzierungshinweis, der im Entwurf fehlte.
+
 **Block B — Der Familienbereich (Differenzierer, sichtbar setzen):**
 > Ihr geschützter Online-Zugang: Dienstpläne, Rechnungen und Dokumentation jederzeit einsehbar — auch aus der Ferne. Für alle Klientinnen und Klienten inbegriffen.
 
@@ -113,7 +118,9 @@ Indikationsliste in der Sprache der Praxis:
 - Demenzbegleitung mit fester Bezugsperson
 
 Darunter, kollegial und knapp — die für den Arzt entscheidende Information, weil sie ihm Arbeit erspart:
-> Reiner Selbstzahler-Dienst. Keine Kassenabrechnung, keine Verordnung, kein Aufwand für Ihre Praxis. Sie empfehlen — den Rest übernehmen wir.
+> Reiner Selbstzahler-Dienst. Keine Kassenabrechnung, keine Verordnung, kein Aufwand für Ihre Praxis. Wir stellen uns als eine von mehreren Möglichkeiten vor — wählen tun Ihre Patientinnen und Patienten selbst.
+
+**Warum nicht „Sie empfehlen — den Rest übernehmen wir"** (ursprüngliche Fassung, im Audit vom 2026-07-20 verworfen): Nach § 31 Abs. 2 MBO-Ä darf ein Arzt Patienten nicht *ohne hinreichenden Grund* an einen bestimmten Anbieter verweisen. Die alte Formulierung bat ihn genau darum und exponierte ihn berufsrechtlich. Die neue Fassung überlässt die Wahl dem Patienten — und unsere Aufgabe verschiebt sich darauf, dem Arzt den *hinreichenden Grund* zu liefern: die nachprüfbaren Qualifikationsmerkmale auf der Rückseite.
 
 ### Rückseite — Wer wir sind
 
@@ -121,7 +128,9 @@ Darunter, kollegial und knapp — die für den Arzt entscheidende Information, w
 - **Team:** examinierte Pflegekräfte, qualifizierte Pflegehilfskräfte, Sozialpädagoginnen und Sozialpädagogen; sämtlich sozialversicherungspflichtig angestellt, Deutsch Muttersprache oder C1, erweitertes Führungszeugnis.
 - **Reaktionszeit:** Sitz- und Nachtwachen häufig noch am selben Tag, spätestens in 24 bis 48 Stunden; längerfristige Engagements mit fünf bis zehn Tagen Vorlauf.
 - **Einsatzgebiet:** ganz Berlin, Schwerpunkte Charlottenburg-Wilmersdorf, Steglitz-Zehlendorf, Mitte; dazu Kleinmachnow und Potsdam.
-- **Die Kooperationszusage:** Sie empfehlen, wir melden uns bei der Familie, Sie erhalten auf Wunsch Rückmeldung zum Verlauf.
+- **Die Kooperationszusage:** „Gern lassen wir Informationsmaterial zum Auslegen da. Die Familie meldet sich selbst bei uns — Patientendaten benötigen wir von Ihnen nicht."
+
+  **Warum nicht „Sie empfehlen, wir melden uns bei der Familie"** (ursprüngliche Fassung, im Audit verworfen): Der Satz unterstellte, die Praxis gebe uns Patientenkontaktdaten. Das wäre ein Bruch der ärztlichen Schweigepflicht (§ 203 StGB) und datenschutzwidrig — auf einem Blatt, das genau diese Praxis liest. Die neue Fassung dreht die Richtung um und macht die Datenschutz-Sauberkeit ausdrücklich zum Verkaufsargument.
 - Kontaktblock plus eigener QR-Code (siehe Abschnitt 8).
 
 ---
@@ -193,14 +202,38 @@ Notare, Steuerberater und Vermögensverwalter mit älterer Klientel; Apotheken i
 
 Deutlich schwächer, aber nicht wirkungslos: Beilagen in Kiez-Medien der Zielbezirke, Auslagen in Sanitätshäusern, Kulturorten und Konzerthäusern.
 
-### Erstauflage (Empfehlung)
+### Erstauflage (revidiert 2026-07-20)
 
-| Stück | Auflage |
+| Stück | Pilot | Nachauflage nach Pilot |
+|---|---|---|
+| Angehörigen-Flyer | **500** | 2.000–3.000 |
+| Praxis-Blatt | **100** | 500 |
+
+**Rechenweg:** Simeon schafft realistisch 5–8 Praxen pro Woche. Ein Pilot über acht Wochen sind 40–50 Praxen; pro Praxis ein Praxis-Blatt und 15–20 Angehörigen-Flyer zum Auslegen. 500/100 decken 25–30 Praxen mit Reserve — genug für belastbares Feedback, wenig genug, dass eine Textkorrektur nicht schmerzt.
+
+**Digitaldruck, nicht Offset.** Offset rechnet sich erst ab etwa 1.000 Stück — und genau diese Menge sollte vor dem Praxis-Feedback nicht gedruckt werden. Die ursprüngliche Empfehlung von 1.000/250 war zu optimistisch für eine Fassung, deren Wording sich nach den ersten zehn Besuchen mit hoher Wahrscheinlichkeit ändert.
+
+### Rechtlicher Fahrplan für die Praxen-Ansprache
+
+*Kein Rechtsrat. Vor dem Druck gehört die Reinzeichnung einmal über einen Fachanwalt für Medizin- oder Wettbewerbsrecht.*
+
+| Kanal | Bewertung |
 |---|---|
-| Angehörigen-Flyer | 1.000 |
-| Praxis-Blatt | 250 |
+| **E-Mail (kalt)** | **Nein.** Werbe-E-Mail ohne vorherige ausdrückliche Einwilligung ist nach § 7 UWG unzulässig — auch B2B. Klassischer Abmahnfall. |
+| **Telefon (kalt)** | **Meiden.** Gegenüber Gewerbetreibenden genügt mutmaßliche Einwilligung; ob eine Praxis den Anruf eines Pflegedienstes mutmaßlich wünscht, ist Graubereich. |
+| **Adressierter Brief** | **Zulässig.** Postwerbung an Unternehmen über berechtigtes Interesse gedeckt, Adressen aus öffentlichen Verzeichnissen unproblematisch. Der saubere Erstkontakt. |
+| **Persönlicher Besuch** | **Zulässig.** Es gilt das Hausrecht der Praxis. Kurz, in sprechstundenfreier Zeit; bei Abwinken gehen. |
+| **Zuwendungen jeder Art** | **Nie.** Keine Provision, kein Präsentkorb, kein Sponsoring. Berührt §§ 299a/b StGB und § 7 HWG. Auch gut gemeinte Kleinigkeiten weglassen — der Verdacht allein beschädigt die Beziehung. |
 
-Bewusst klein gehalten: Nach der ersten Empfehler-Runde wird nachgeschärft, bevor größere Mengen gedruckt werden.
+**Empfohlene Reihenfolge:**
+
+1. Zielliste 40–60 Praxen aus öffentlichen Quellen, nach Kiez priorisiert.
+2. Persönlich adressierter Brief an die Praxisleitung mit dem Praxis-Blatt, der den Besuch ankündigt — das macht den Besuch zur Fortsetzung statt zum Überfall.
+3. Kurzbesuch ohne Termin, 3–5 Minuten, Material dalassen. **Gatekeeper ist die Praxismanagerin.**
+4. Beim Besuch die **E-Mail-Einwilligung schriftlich einholen** (Datum, Person, Wortlaut dokumentieren). Ab dann ist der digitale Kanal legal offen.
+5. Nachfassen alle 8–12 Wochen mit Nachlegen von Flyern. Das ist der eigentliche Beziehungsaufbau — nicht der Erstbesuch.
+
+**Patientendaten fließen nie von der Praxis zu uns.** Die Familie meldet sich selbst. Gibt ein Sozialdienst dennoch einen Kontakt weiter, nur mit dokumentierter Einwilligung der Familie.
 
 ---
 
@@ -240,5 +273,7 @@ Alle Aussagen in den Flyern stammen aus dem gepflegten Website-Content. Quelle i
 | Indikationen Sitzwachen, Nachtwachen, Hospiz, Klinikbegleitung | `lib/leistungen-seo.ts` |
 | Themen Verhinderungspflege, Demenzbegleitung, Palliativ zu Hause, Krankenhausbegleitung | `lib/themen.ts` |
 | Markenfarben | `app/globals.css` |
+
+**Offene Belege, die dem Flyer fehlen (Audit 2026-07-20):** Der Flyer behauptet Qualität ausschließlich über sich selbst — kein Gründungsjahr, keine Teamgröße, kein Gesicht, keine dritte Instanz. Testimonials sind gesperrt (UWG/HWG), überprüfbare Zahlen wären aber zulässig und fehlen. **Von Eric zu liefern: Gründungsjahr der Heilpraxis und aktuelle Mitarbeitendenzahl.**
 
 **Nicht belegt und deshalb nicht verwendbar:** Anzahl betreuter Familien, Jahre am Markt, Zufriedenheitswerte, Auszeichnungen, Versicherungssumme. Falls solche Angaben gewünscht sind, müssen sie zuvor faktisch geklärt werden.
