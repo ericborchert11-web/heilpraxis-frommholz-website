@@ -1,6 +1,7 @@
 'use client';
 
 import { useActionState } from 'react';
+import Link from 'next/link';
 import { BUSINESS } from '@/lib/site-config';
 import { Reveal } from './Reveal';
 import { sendContact, initialContactState } from '@/app/actions/send-contact';
@@ -159,7 +160,7 @@ export function KontaktSection({ lang }: { lang: Locale }) {
                 <span>
                   * Ich willige ein, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden.
                   Hinweise zur Datenverarbeitung finden Sie in der{' '}
-                  <a href="/datenschutz" className="underline hover:text-gold-deep">Datenschutzerklärung</a>.
+                  <Link href="/datenschutz" className="underline hover:text-gold-deep">Datenschutzerklärung</Link>.
                 </span>
               </label>
               {errorField('consent') && (
