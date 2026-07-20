@@ -27,13 +27,30 @@ describe('Rückfall auf Deutsch', () => {
     expect(getGlobalFaq('de')).toEqual(GLOBAL_FAQ);
   });
 
-  it('liefert für Spanisch und Italienisch die deutschen Daten', () => {
-    for (const lang of ['es', 'it'] as const) {
-      expect(getLeistungenSeo(lang)).toEqual(LEISTUNGEN_SEO);
-      expect(getThemen(lang)).toEqual(THEMEN);
-      expect(getStandorte(lang)).toEqual(STANDORTE);
-    }
-  });
+});
+
+describe('Alle Sprachen sind vollständig übersetzt', () => {
+  // Identität statt Inhalt: der Rückfall in `merge` gibt bei fehlender
+  // Übersetzung exakt das deutsche Objekt zurück. Ein Eintrag, der === dem
+  // deutschen ist, wurde also nie übersetzt. Nach Etappe 2–4 darf das für
+  // keine der drei Sprachen mehr vorkommen.
+  for (const lang of ['en', 'es', 'it'] as const) {
+    it(`${lang}: jede Leistung, jedes Thema, jeder Standort, jede Karte und die FAQ`, () => {
+      getLeistungenSeo(lang).forEach((l, i) => {
+        expect(l, `${lang}: Leistung ${l.slug} fehlt`).not.toBe(LEISTUNGEN_SEO[i]);
+      });
+      getThemen(lang).forEach((t, i) => {
+        expect(t, `${lang}: Thema ${t.slug} fehlt`).not.toBe(THEMEN[i]);
+      });
+      getStandorte(lang).forEach((s, i) => {
+        expect(s, `${lang}: Standort ${s.slug} fehlt`).not.toBe(STANDORTE[i]);
+      });
+      getLeistungen(lang).forEach((l, i) => {
+        expect(l, `${lang}: Karte ${l.slug} fehlt`).not.toBe(LEISTUNGEN[i]);
+      });
+      expect(getGlobalFaq(lang), `${lang}: FAQ fehlt`).not.toBe(GLOBAL_FAQ);
+    });
+  }
 });
 
 describe('Reihenfolge und Vollständigkeit', () => {
@@ -93,23 +110,3 @@ describe('Überlagerungs-Schlüssel zeigen auf echte Einträge', () => {
   });
 });
 
-describe('Englische Übersetzung ist vollständig', () => {
-  // Die Zusammenführung gibt bei fehlender Überlagerung das DEUTSCHE Objekt
-  // unverändert zurück. Referenzgleichheit ist deshalb der genaue Nachweis,
-  // dass ein Eintrag nie übersetzt wurde — `toEqual` würde hier nicht reichen.
-  it('übersetzt jede Leistung, jedes Thema und jeden Standort', () => {
-    getLeistungenSeo('en').forEach((l, i) => {
-      expect(l, `Leistung ${l.slug} fehlt auf Englisch`).not.toBe(LEISTUNGEN_SEO[i]);
-    });
-    getThemen('en').forEach((t, i) => {
-      expect(t, `Thema ${t.slug} fehlt auf Englisch`).not.toBe(THEMEN[i]);
-    });
-    getStandorte('en').forEach((s, i) => {
-      expect(s, `Standort ${s.slug} fehlt auf Englisch`).not.toBe(STANDORTE[i]);
-    });
-    getLeistungen('en').forEach((l, i) => {
-      expect(l, `Karte ${l.slug} fehlt auf Englisch`).not.toBe(LEISTUNGEN[i]);
-    });
-    expect(getGlobalFaq('en')).not.toBe(GLOBAL_FAQ);
-  });
-});

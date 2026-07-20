@@ -5,6 +5,8 @@ import { localizedHref } from '@/lib/i18n/slugs';
 import { hatUebersetzung } from '@/lib/i18n/dictionaries';
 import { de } from '@/lib/i18n/dictionaries/de';
 import { en } from '@/lib/i18n/dictionaries/en';
+import { es } from '@/lib/i18n/dictionaries/es';
+import { it as itDict } from '@/lib/i18n/dictionaries/it';
 import { leistungenWithDetail } from '@/lib/leistungen-seo';
 import { THEMEN } from '@/lib/themen';
 import { STANDORTE } from '@/lib/standorte';
@@ -171,6 +173,12 @@ const INDEX_META_KEYS = [
   ['/soziales-engagement', 'sozialesEngagement'],
 ] as const;
 
+const UEBERSETZT = [
+  { lang: 'en', dict: en },
+  { lang: 'es', dict: es },
+  { lang: 'it', dict: itDict },
+] as const;
+
 describe('indexMeta der Übersichtsseiten', () => {
   it.each(INDEX_META_KEYS)('%s trägt auf Englisch Titel und Beschreibung', (_dePath, key) => {
     const meta = en.indexMeta[key];
@@ -199,11 +207,22 @@ describe('indexMeta der Übersichtsseiten', () => {
     }
   });
 
-  it('lässt Spanisch und Italienisch bewusst ohne eigene Titel', () => {
-    // Solange ihre Inhalte deutsch sind, dürfen die Routen nichts setzen —
-    // `hatUebersetzung` ist der Schalter, an dem das hängt.
-    for (const lang of ['es', 'it'] as const) {
-      expect(hatUebersetzung(lang)).toBe(false);
+  it.each(UEBERSETZT)('$lang: jede Übersichtsseite hat Titel und Beschreibung, keine deutsch, alle in Länge', ({ dict }) => {
+    for (const [, key] of INDEX_META_KEYS) {
+      const meta = dict.indexMeta[key];
+      expect(meta.title.trim().length, `Titel für ${key} fehlt`).toBeGreaterThan(0);
+      expect(meta.description.trim().length, `Beschreibung für ${key} fehlt`).toBeGreaterThan(0);
+      // Ein aus dem Deutschen kopierter Titel wäre schlimmer als gar keiner.
+      expect(meta.title, `Titel für ${key} ist noch deutsch`).not.toBe(de.indexMeta[key].title);
+      expect([...meta.title].length, `Titel für ${key} zu lang`).toBeLessThanOrEqual(60);
+      expect([...meta.description].length, `Beschreibung für ${key} zu lang`).toBeLessThanOrEqual(160);
+    }
+  });
+
+  it('alle drei Sprachen gelten als übersetzt, Deutsch als Referenz nicht', () => {
+    expect(hatUebersetzung('de')).toBe(false);
+    for (const { lang } of UEBERSETZT) {
+      expect(hatUebersetzung(lang)).toBe(true);
     }
   });
 });

@@ -2,26 +2,30 @@ import { describe, it, expect } from 'vitest';
 import { getDictionary, hatUebersetzung } from '@/lib/i18n/dictionaries';
 import { de } from '@/lib/i18n/dictionaries/de';
 import { en } from '@/lib/i18n/dictionaries/en';
+import { es } from '@/lib/i18n/dictionaries/es';
+import { it as itDict } from '@/lib/i18n/dictionaries/it';
 
 describe('getDictionary', () => {
   it('liefert das passende Wörterbuch', () => {
     expect(getDictionary('de')).toBe(de);
     expect(getDictionary('en')).toBe(en);
+    expect(getDictionary('es')).toBe(es);
+    expect(getDictionary('it')).toBe(itDict);
   });
 
-  it('fällt für noch nicht übersetzte Sprachen auf Deutsch zurück', () => {
-    expect(getDictionary('es')).toBe(de);
-    expect(getDictionary('it')).toBe(de);
-  });
+  const keys = (obj: object, prefix = ''): string[] =>
+    Object.entries(obj).flatMap(([k, v]) =>
+      v !== null && typeof v === 'object' && !Array.isArray(v)
+        ? keys(v, `${prefix}${k}.`)
+        : [`${prefix}${k}`],
+    );
 
-  it('das englische Wörterbuch hat exakt dieselben Schlüssel wie das deutsche', () => {
-    const keys = (obj: object, prefix = ''): string[] =>
-      Object.entries(obj).flatMap(([k, v]) =>
-        v !== null && typeof v === 'object' && !Array.isArray(v)
-          ? keys(v, `${prefix}${k}.`)
-          : [`${prefix}${k}`],
-      );
-    expect(keys(en).sort()).toEqual(keys(de).sort());
+  it.each([
+    { lang: 'en', dict: en },
+    { lang: 'es', dict: es },
+    { lang: 'it', dict: itDict },
+  ])('$lang hat exakt dieselben Schlüssel wie das deutsche Wörterbuch', ({ dict }) => {
+    expect(keys(dict).sort()).toEqual(keys(de).sort());
   });
 
   it('enthält keine deutschen Restbestände im englischen Wörterbuch', () => {
@@ -37,12 +41,11 @@ describe('getDictionary', () => {
     }
   });
 
-  it('kennt für jede Sprache, ob ihre Oberfläche übersetzt ist', () => {
-    expect(hatUebersetzung('en')).toBe(true);
+  it('erkennt alle drei Übersetzungen als übersetzt, Deutsch nicht', () => {
     // Deutsch ist die Referenz, nicht eine Übersetzung.
     expect(hatUebersetzung('de')).toBe(false);
-    for (const lang of ['es', 'it'] as const) {
-      expect(hatUebersetzung(lang), `${lang} hat noch kein eigenes Wörterbuch`).toBe(false);
+    for (const lang of ['en', 'es', 'it'] as const) {
+      expect(hatUebersetzung(lang), `${lang} ist übersetzt`).toBe(true);
     }
   });
 });
