@@ -2,6 +2,33 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [Mehrsprachigkeit Etappe 2: englische Inhalte] – 2026-07-20
+
+Etappe 1 hat den englischen Rahmen gebaut, Etappe 2 füllt ihn mit Inhalt. Die englischen Seiten tragen jetzt eigenen Text statt der deutschen Quelle. Die deutschen Dateien in `lib/` bleiben unangetastet und die Quelle der Wahrheit; Englisch liegt als Überlagerung je Eintrag daneben. ES und IT fallen weiterhin bewusst auf Deutsch zurück — das ist Etappe 3 und 4.
+
+### Drin
+
+- **Inhaltsüberlagerung je Sprache** (`lib/i18n/content/`), gekeyt nach dem DEUTSCHEN Slug, mit Rückfall auf Deutsch pro Eintrag. Eine Lücke bleibt dadurch sichtbar unübersetzt statt leer und kann den Build nicht brechen.
+- **9 Leistungs-Detailseiten, 8 Ratgeberseiten und 16 Standortseiten auf Englisch** — Fließtext, Zwischenüberschriften, Listen, FAQ und Meta-Angaben.
+- **Startseite:** die 6 Leistungskarten und die globale FAQ auf Englisch.
+- **Kontaktformular und Detailseiten-Oberfläche** übersetzt (Feldbeschriftungen, Platzhalter, Betreffauswahl, Erfolgs- und Fehlermeldungen).
+- **Meta-Titel und -Beschreibungen der englischen Detailseiten** kommen jetzt aus der Überlagerung. Solange ein Eintrag unübersetzt ist, bleibt es beim neutralen Sitename — ein deutscher `<title>` auf einer englischen Seite wäre schlechter als gar keiner. ES/IT tragen deshalb weiter nur den Sitename.
+- **FAQ-Strukturdaten sind an die Übersetzung gekoppelt:** `FAQPage` erscheint auf `/en` und allen 33 englischen Detailseiten mit FAQ, auf den 78 ES/IT-Seiten bewusst gar nicht — deutsche Fragen unter einer englischen URL wären ein Fehlsignal an die Suchmaschine.
+- **Deutsche Seiten unverändert:** `/`, `/leistungen`, `/leistungen/sitzwachen-berlin`, `/standorte/moabit` und `/themen/demenz-begleitung` sind gegen den Stand vor der Etappe diffed — im sichtbaren Text Byte für Byte identisch, Unterschiede nur in Build-Hashes. Der Routenbaum ist unverändert.
+- **Test auf Vollständigkeit:** `tests/i18n/content.test.ts` prüft über Referenzgleichheit, dass keine Leistung, kein Thema, kein Standort und keine Karte still auf dem deutschen Objekt sitzen geblieben ist.
+
+### Offen für Etappe 3 ff.
+
+- **`/en/family-portal` und `/en/social-commitment` sind noch vollständig deutsch** (rund 2.700 bzw. 3.600 Zeichen Fließtext, inklusive Brotkrumen „Start /"). Beide waren nicht Teil der Inhaltsübersetzung; die Navigation verlinkt sie aber bereits auf Englisch.
+- **Die englischen Index- und Sonderseiten haben keinen eigenen `<title>` und keine `<meta name="description">`** — betrifft `/en`, `/en/services`, `/en/guides`, `/en/locations`, `/en/family-portal`, `/en/social-commitment` (und die ES/IT-Gegenstücke). `intlPageMeta` setzt nur Canonical, hreflang und OpenGraph; die Detailseiten ergänzen Titel und Beschreibung selbst, die Indexseiten nicht. Besteht unverändert seit Etappe 1.
+- `NotFoundPage` ignoriert die `lang`-Prop noch und zeigt in allen Sprachen deutschen Text.
+
+### Stand der Build
+
+- 170 statisch generierte Pages, 165 Sitemap-URLs, alle mit HTTP 200
+
+---
+
 ## [Mehrsprachigkeit Etappe 1: Fundament] – 2026-07-20
 
 Grundgerüst für die mehrsprachige Site. Deutsch bleibt ohne Präfix auf `/`, EN/ES/IT bekommen eigene Pfade mit übersetzten Slugs. ES und IT fallen inhaltlich bewusst noch auf Deutsch zurück — die Wörterbücher kommen in Etappe 3 und 4.

@@ -76,3 +76,24 @@ describe('Überlagerungs-Schlüssel zeigen auf echte Einträge', () => {
     }
   });
 });
+
+describe('Englische Übersetzung ist vollständig', () => {
+  // Die Zusammenführung gibt bei fehlender Überlagerung das DEUTSCHE Objekt
+  // unverändert zurück. Referenzgleichheit ist deshalb der genaue Nachweis,
+  // dass ein Eintrag nie übersetzt wurde — `toEqual` würde hier nicht reichen.
+  it('übersetzt jede Leistung, jedes Thema und jeden Standort', () => {
+    getLeistungenSeo('en').forEach((l, i) => {
+      expect(l, `Leistung ${l.slug} fehlt auf Englisch`).not.toBe(LEISTUNGEN_SEO[i]);
+    });
+    getThemen('en').forEach((t, i) => {
+      expect(t, `Thema ${t.slug} fehlt auf Englisch`).not.toBe(THEMEN[i]);
+    });
+    getStandorte('en').forEach((s, i) => {
+      expect(s, `Standort ${s.slug} fehlt auf Englisch`).not.toBe(STANDORTE[i]);
+    });
+    getLeistungen('en').forEach((l, i) => {
+      expect(l, `Karte ${l.slug} fehlt auf Englisch`).not.toBe(LEISTUNGEN[i]);
+    });
+    expect(getGlobalFaq('en')).not.toBe(GLOBAL_FAQ);
+  });
+});
