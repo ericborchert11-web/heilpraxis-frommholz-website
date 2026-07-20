@@ -2,6 +2,31 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [Mehrsprachigkeit Etappe 1: Fundament] – 2026-07-20
+
+Grundgerüst für die mehrsprachige Site. Deutsch bleibt ohne Präfix auf `/`, EN/ES/IT bekommen eigene Pfade mit übersetzten Slugs. ES und IT fallen inhaltlich bewusst noch auf Deutsch zurück — die Wörterbücher kommen in Etappe 3 und 4.
+
+### Drin
+
+- **EN/ES/IT unter eigenen Pfaden** (`/en`, `/es`, `/it`) mit übersetzten Slugs (`/en/services`, `/es/ubicaciones/moabit`, `/it/sedi/moabit`).
+- **Sprachschalter im Kopfbereich**, der den jeweils entsprechenden Pfad ansteuert; einsprachige Seiten wie `/karriere` verweisen auf die Startseite der Zielsprache.
+- **hreflang und Canonical je Sprache**, wechselseitig verlinkt inklusive `x-default` auf die deutsche Fassung. Einsprachige Seiten (`/karriere`, Rechtstexte) tragen bewusst kein hreflang.
+- **Sitemap erweitert** auf 165 URLs — 48 deutsche (unverändert) plus 117 für EN/ES/IT.
+- **Englische Startseite und gesamte Oberfläche auf Englisch** (Navigation, Footer, Kontaktformular); ES/IT fallen bewusst auf Deutsch zurück.
+- **Deutsche URLs unverändert** — der Routenbaum ist gegen den Stand vor der Etappe diffed, keine einzige deutsche Route hat sich geändert.
+- **Nebenbefund behoben:** Das Kontaktformular antwortete in Produktion mit HTTP 500, weil die Server-Action-Datei neben der Action auch einen Wert exportierte.
+- **Nebenbefund behoben:** Die gebrandete 404-Seite greift wieder für unbekannte URLs. Je Sprachraum fängt ein Catch-all nicht zugeordnete Pfade ab, damit sie im passenden Root-Layout landen und `<html lang>` stimmt.
+
+### Offen für Etappe 2 ff.
+
+- `NotFoundPage` ignoriert die `lang`-Prop noch und zeigt in allen Sprachen deutschen Text — die Übersetzung folgt mit den Wörterbüchern.
+
+### Stand der Build
+
+- 170 statisch generierte Pages (vorher 53)
+
+---
+
 ## [Soziales Engagement: toter Link aufgelöst] – 2026-05-15
 
 Die HaltungSection auf der Startseite verlinkte mit „Soziales Engagement →" auf `/soziales-engagement`, was 404 lieferte (einziger toter Link auf der Site nach Audit). Seite jetzt angelegt.
