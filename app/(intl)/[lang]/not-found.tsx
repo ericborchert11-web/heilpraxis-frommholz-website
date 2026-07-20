@@ -10,8 +10,8 @@ export default function NotFound() {
   // Fassungen. Das umgebende Root-Layout setzt `<html lang>` trotzdem korrekt
   // je Sprache, weil dort params verfügbar sind.
   //
-  // Achtung: `NotFoundPage` wertet die Prop derzeit noch gar nicht aus und
-  // zeigt in jeder Sprache deutschen Text (siehe Aufgabe 12). Bis dahin ist
-  // dieses `lang="en"` nur die Absichtserklärung, nicht die Wirkung.
+  // Praktische Folge: `/en/unsinn` zeigt die englische 404-Seite, `/es/unsinn`
+  // und `/it/unsinn` ebenfalls die englische — für Spanisch und Italienisch
+  // gibt es ohnehin noch kein Wörterbuch, sie fallen sonst auf Deutsch zurück.
   return <NotFoundPage lang="en" />;
 }
