@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { LeistungDetailPage } from '@/components/pages/LeistungDetailPage';
 import { pageMeta } from '@/lib/site-config';
 import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
+import { getLeistungSeo } from '@/lib/i18n/content';
+import { DEFAULT_LOCALE } from '@/lib/i18n/config';
 
 type RouteParams = { slug: string };
 
@@ -16,7 +18,7 @@ export async function generateMetadata(
   { params }: { params: Promise<RouteParams> }
 ): Promise<Metadata> {
   const { slug } = await params;
-  const l = LEISTUNGEN_SEO.find((x) => x.slug === slug);
+  const l = getLeistungSeo(slug, DEFAULT_LOCALE);
   if (!l || !hasDetail(l)) return {};
   return {
     title: { absolute: l.metaTitle },

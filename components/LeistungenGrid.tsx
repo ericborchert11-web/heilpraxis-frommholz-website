@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LEISTUNGEN } from '@/lib/leistungen';
+import { getLeistungen } from '@/lib/i18n/content';
 import { LeistungCard } from './LeistungCard';
 import { Reveal } from './Reveal';
 import { getDictionary } from '@/lib/i18n/dictionaries';
@@ -8,6 +8,7 @@ import type { Locale } from '@/lib/i18n/config';
 
 export function LeistungenGrid({ lang }: { lang: Locale }) {
   const t = getDictionary(lang);
+  const leistungen = getLeistungen(lang);
   return (
     <section id="leistungen" className="px-6 md:px-12 py-24 max-w-6xl mx-auto scroll-mt-32">
       <div className="text-center max-w-2xl mx-auto">
@@ -27,7 +28,7 @@ export function LeistungenGrid({ lang }: { lang: Locale }) {
       </div>
 
       <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {LEISTUNGEN.map((l, i) => (
+        {leistungen.map((l, i) => (
           <Reveal key={l.slug} delay={((i % 6) + 1) as 1 | 2 | 3 | 4 | 5 | 6}>
             <LeistungCard leistung={l} lang={lang} />
           </Reveal>

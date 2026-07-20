@@ -1,15 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { BUSINESS, SITE } from '@/lib/site-config';
-import { STANDORTE } from '@/lib/standorte';
-import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
-import { THEMEN } from '@/lib/themen';
+import { hasDetail } from '@/lib/leistungen-seo';
+import { getLeistungenSeo, getStandorte, getThemen } from '@/lib/i18n/content';
 import { getDictionary } from '@/lib/i18n/dictionaries';
 import { localizedHref } from '@/lib/i18n/slugs';
 import { DEFAULT_LOCALE, type Locale } from '@/lib/i18n/config';
 
 export function Footer({ lang }: { lang: Locale }) {
   const t = getDictionary(lang);
+  const leistungen = getLeistungenSeo(lang);
+  const themen = getThemen(lang);
+  const standorte = getStandorte(lang);
   const year = new Date().getFullYear();
   const isGerman = lang === DEFAULT_LOCALE;
 
@@ -39,7 +41,7 @@ export function Footer({ lang }: { lang: Locale }) {
         <div>
           <h2 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">{t.footer.headingLeistungen}</h2>
           <ul className="list-none space-y-2.5">
-            {LEISTUNGEN_SEO.filter(hasDetail).map((l) => (
+            {leistungen.filter(hasDetail).map((l) => (
               <li key={l.slug}>
                 <Link href={localizedHref(`/leistungen/${l.slug}`, lang)} className="text-sm hover:text-gold-soft">
                   {l.title}
@@ -57,7 +59,7 @@ export function Footer({ lang }: { lang: Locale }) {
         <div>
           <h2 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">{t.footer.headingThemen}</h2>
           <ul className="list-none space-y-2.5">
-            {THEMEN.map((thema) => (
+            {themen.map((thema) => (
               <li key={thema.slug}>
                 <Link href={localizedHref(`/themen/${thema.slug}`, lang)} className="text-sm hover:text-gold-soft">
                   {thema.title}
@@ -75,7 +77,7 @@ export function Footer({ lang }: { lang: Locale }) {
         <div>
           <h2 className="font-sans text-[11px] uppercase tracking-[2.5px] text-gold mb-4">{t.footer.headingStandorte}</h2>
           <ul className="list-none grid grid-cols-2 gap-x-4 gap-y-2">
-            {STANDORTE.filter((s) => !s.hideInFooter).map((s) => (
+            {standorte.filter((s) => !s.hideInFooter).map((s) => (
               <li key={s.slug}>
                 <Link href={localizedHref(`/standorte/${s.slug}`, lang)} className="text-[13px] hover:text-gold-soft">
                   {s.name}

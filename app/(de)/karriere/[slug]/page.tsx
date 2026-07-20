@@ -6,6 +6,7 @@ import { FaqJsonLd } from '@/components/SEO/FaqJsonLd';
 import { SeoDetailContent } from '@/components/SeoDetailContent';
 import { pageMeta } from '@/lib/site-config';
 import { KARRIERE, getKarriere } from '@/lib/karriere';
+import { DEFAULT_LOCALE } from '@/lib/i18n/config';
 
 type RouteParams = { slug: string };
 
@@ -54,7 +55,7 @@ export default async function KarriereDetailPage({
       <h1 className="mt-6 font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight font-light text-anthracite">
         {k.h1}
       </h1>
-      <SeoDetailContent detail={k.detail} />
+      <SeoDetailContent detail={k.detail} lang={DEFAULT_LOCALE} />
       <FaqJsonLd items={k.detail.faq} />
     </article>
   );

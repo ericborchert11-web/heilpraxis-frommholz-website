@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { StandortDetailPage } from '@/components/pages/StandortDetailPage';
 import { pageMeta } from '@/lib/site-config';
-import { STANDORTE, getStandort } from '@/lib/standorte';
+import { STANDORTE } from '@/lib/standorte';
+import { getStandort } from '@/lib/i18n/content';
+import { DEFAULT_LOCALE } from '@/lib/i18n/config';
 
 type RouteParams = { slug: string };
 
@@ -15,7 +17,7 @@ export async function generateMetadata(
   { params }: { params: Promise<RouteParams> }
 ): Promise<Metadata> {
   const { slug } = await params;
-  const s = getStandort(slug);
+  const s = getStandort(slug, DEFAULT_LOCALE);
   if (!s) return {};
   return {
     title: { absolute: s.metaTitle },

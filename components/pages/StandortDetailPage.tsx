@@ -4,22 +4,21 @@ import { BreadcrumbJsonLd } from '@/components/SEO/BreadcrumbJsonLd';
 import { FaqJsonLd } from '@/components/SEO/FaqJsonLd';
 import { ServiceJsonLd } from '@/components/SEO/JsonLd';
 import { SeoDetailContent } from '@/components/SeoDetailContent';
-import { getStandort } from '@/lib/standorte';
+import { getStandort } from '@/lib/i18n/content';
+import { localizedHref } from '@/lib/i18n/slugs';
 import type { Locale } from '@/lib/i18n/config';
 
 /** `slug` ist immer der deutsche Slug — übersetzte Slugs werden vorher zurückgerechnet. */
 export function StandortDetailPage({ lang, slug }: { lang: Locale; slug: string }) {
-  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
-  void lang;
-  const s = getStandort(slug);
+  const s = getStandort(slug, lang);
   if (!s) {
     notFound();
   }
 
   const crumbs = [
-    { name: 'Start', href: '/' },
-    { name: 'Standorte', href: '/standorte' },
-    { name: s.name, href: `/standorte/${s.slug}` },
+    { name: 'Start', href: localizedHref('/', lang) },
+    { name: 'Standorte', href: localizedHref('/standorte', lang) },
+    { name: s.name, href: localizedHref(`/standorte/${s.slug}`, lang) },
   ];
 
   return (
@@ -29,7 +28,7 @@ export function StandortDetailPage({ lang, slug }: { lang: Locale; slug: string 
       <h1 className="mt-6 font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight font-light text-anthracite">
         {s.h1}
       </h1>
-      <SeoDetailContent detail={s.detail} />
+      <SeoDetailContent detail={s.detail} lang={lang} />
       <ServiceJsonLd
         serviceName={`Pflege & Sitzwachen in ${s.name}`}
         serviceDescription={s.metaDescription}

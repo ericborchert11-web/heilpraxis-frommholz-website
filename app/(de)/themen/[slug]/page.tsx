@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { ThemaDetailPage } from '@/components/pages/ThemaDetailPage';
 import { pageMeta } from '@/lib/site-config';
-import { THEMEN, getThema } from '@/lib/themen';
+import { THEMEN } from '@/lib/themen';
+import { getThema } from '@/lib/i18n/content';
+import { DEFAULT_LOCALE } from '@/lib/i18n/config';
 
 type RouteParams = { slug: string };
 
@@ -15,7 +17,7 @@ export async function generateMetadata(
   { params }: { params: Promise<RouteParams> }
 ): Promise<Metadata> {
   const { slug } = await params;
-  const t = getThema(slug);
+  const t = getThema(slug, DEFAULT_LOCALE);
   if (!t) return {};
   return {
     title: { absolute: t.metaTitle },

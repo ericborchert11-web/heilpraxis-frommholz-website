@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { FaqAccordion } from './FaqAccordion';
+import { localizedHref } from '@/lib/i18n/slugs';
+import type { Locale } from '@/lib/i18n/config';
 import type { SeoLeistungDetail, SeoLeistungSection } from '@/lib/leistungen-seo';
 
 function Section({ section }: { section: SeoLeistungSection }) {
@@ -43,8 +45,12 @@ function Section({ section }: { section: SeoLeistungSection }) {
  * Rendert intro + sections + FAQ + CTA + related links für eine
  * SEO-Detail-Seite (Money-Page oder Themen-Seite). JSON-LD-Wrapper sind
  * Sache der jeweiligen Route, da sie sich unterscheiden (Service vs. Article).
+ *
+ * `cta.href` und `relatedLinks[].href` stehen in den Inhaltsdaten als deutsche
+ * Referenzpfade. Sie laufen darum durch `localizedHref`, sonst verlinkten die
+ * übersetzten Seiten zurück auf die deutschen URLs.
  */
-export function SeoDetailContent({ detail }: { detail: SeoLeistungDetail }) {
+export function SeoDetailContent({ detail, lang }: { detail: SeoLeistungDetail; lang: Locale }) {
   return (
     <>
       {detail.intro.map((p, i) => (
@@ -73,7 +79,7 @@ export function SeoDetailContent({ detail }: { detail: SeoLeistungDetail }) {
           einem konkreten Vorschlag zurück.
         </p>
         <Link
-          href={detail.cta.href}
+          href={localizedHref(detail.cta.href, lang)}
           className="mt-5 inline-block bg-anthracite text-cream px-7 py-3 font-sans text-sm uppercase tracking-[1.5px] hover:bg-gold-deep transition-colors"
         >
           {detail.cta.text}
@@ -88,7 +94,7 @@ export function SeoDetailContent({ detail }: { detail: SeoLeistungDetail }) {
           <ul className="mt-4 space-y-2 list-none">
             {detail.relatedLinks.map((r) => (
               <li key={r.href} className="text-[15px] leading-relaxed">
-                <Link href={r.href} className="text-anthracite hover:text-gold-deep underline">
+                <Link href={localizedHref(r.href, lang)} className="text-anthracite hover:text-gold-deep underline">
                   {r.label}
                 </Link>
                 {r.note && <span className="text-anthracite-soft"> — {r.note}</span>}

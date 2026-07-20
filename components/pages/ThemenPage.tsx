@@ -1,25 +1,25 @@
 import Link from 'next/link';
 import { PageLayout } from '@/components/PageLayout';
-import { THEMEN } from '@/lib/themen';
+import { getThemen } from '@/lib/i18n/content';
+import { localizedHref } from '@/lib/i18n/slugs';
 import type { Locale } from '@/lib/i18n/config';
 
 export function ThemenPage({ lang }: { lang: Locale }) {
-  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
-  void lang;
+  const themen = getThemen(lang);
   return (
     <PageLayout
       title="Themen rund um Pflege"
       lead="Hintergrundwissen zu den Fragen, die viele Familien zuerst haben — Pflegegrad, Leistungsansprüche, Demenz, Sterbephase. Verständlich, ohne Werbe-Floskeln, aus über 15 Jahren Praxis."
       crumbs={[
-        { name: 'Start', href: '/' },
-        { name: 'Themen', href: '/themen' },
+        { name: 'Start', href: localizedHref('/', lang) },
+        { name: 'Themen', href: localizedHref('/themen', lang) },
       ]}
     >
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-5 list-none">
-        {THEMEN.map((t) => (
+        {themen.map((t) => (
           <li key={t.slug}>
             <Link
-              href={`/themen/${t.slug}`}
+              href={localizedHref(`/themen/${t.slug}`, lang)}
               className="block p-6 bg-cream border border-gold/20 hover:border-gold/60 transition-colors"
             >
               <h3 className="font-serif text-xl font-medium text-anthracite">{t.title}</h3>
@@ -34,7 +34,7 @@ export function ThemenPage({ lang }: { lang: Locale }) {
 
       <p className="mt-10 text-anthracite-soft">
         Eine konkrete Frage zur eigenen Situation?{' '}
-        <Link href="/leistungen/pflegeberatung-berlin" className="underline hover:text-gold-deep">
+        <Link href={localizedHref('/leistungen/pflegeberatung-berlin', lang)} className="underline hover:text-gold-deep">
           → Pflegeberatung
         </Link>
       </p>

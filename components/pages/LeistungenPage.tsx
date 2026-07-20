@@ -1,22 +1,23 @@
 import Link from 'next/link';
 import { PageLayout } from '@/components/PageLayout';
-import { LEISTUNGEN_SEO, hasDetail } from '@/lib/leistungen-seo';
+import { hasDetail } from '@/lib/leistungen-seo';
+import { getLeistungenSeo } from '@/lib/i18n/content';
+import { localizedHref } from '@/lib/i18n/slugs';
 import type { Locale } from '@/lib/i18n/config';
 
 export function LeistungenPage({ lang }: { lang: Locale }) {
-  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
-  void lang;
+  const leistungen = getLeistungenSeo(lang);
   return (
     <PageLayout
       title="Unsere Leistungen"
       lead="Acht Wege, in denen wir Menschen in Berlin begleiten — von der Sitzwache im Krankenhaus bis zur 24-Stunden-Betreuung zu Hause. Alle als Selbstzahler-Leistung, mit kleinem festem Team."
       crumbs={[
-        { name: 'Start', href: '/' },
-        { name: 'Leistungen', href: '/leistungen' },
+        { name: 'Start', href: localizedHref('/', lang) },
+        { name: 'Leistungen', href: localizedHref('/leistungen', lang) },
       ]}
     >
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-5 list-none">
-        {LEISTUNGEN_SEO.map((l) => {
+        {leistungen.map((l) => {
           const linked = hasDetail(l);
           const className = 'block p-6 bg-cream border border-gold/20 transition-colors';
           const inner = (
@@ -37,7 +38,7 @@ export function LeistungenPage({ lang }: { lang: Locale }) {
           return (
             <li key={l.slug}>
               {linked ? (
-                <Link href={`/leistungen/${l.slug}`} className={`${className} hover:border-gold/60`}>
+                <Link href={localizedHref(`/leistungen/${l.slug}`, lang)} className={`${className} hover:border-gold/60`}>
                   {inner}
                 </Link>
               ) : (
@@ -50,7 +51,7 @@ export function LeistungenPage({ lang }: { lang: Locale }) {
 
       <p className="mt-10 text-anthracite-soft">
         Sie wissen nicht, welche Leistung passt? Wir hören erst zu, dann beraten wir.{' '}
-        <Link href="/#kontakt" className="underline hover:text-gold-deep">
+        <Link href={localizedHref('/#kontakt', lang)} className="underline hover:text-gold-deep">
           Erstgespräch anfragen →
         </Link>
       </p>
