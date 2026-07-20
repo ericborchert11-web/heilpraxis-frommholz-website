@@ -7,7 +7,7 @@ import { deHrefFrom, localizedHref } from '@/lib/i18n/slugs';
 import { leistungenWithDetail } from '@/lib/leistungen-seo';
 import { THEMEN } from '@/lib/themen';
 import { STANDORTE } from '@/lib/standorte';
-import { pageMeta } from '@/lib/site-config';
+import { intlPageMeta } from '@/lib/site-config';
 
 export const dynamicParams = false;
 
@@ -36,7 +36,7 @@ export async function generateMetadata({
 }) {
   const { lang, segment, slug } = await params;
   if (!isIntlLocale(lang)) return {};
-  return pageMeta(deHrefFrom(`/${lang}/${segment}/${slug}`, lang));
+  return intlPageMeta(deHrefFrom(`/${lang}/${segment}/${slug}`, lang), lang);
 }
 
 export default async function Page({

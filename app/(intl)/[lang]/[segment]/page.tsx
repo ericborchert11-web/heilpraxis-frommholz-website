@@ -6,7 +6,7 @@ import { FamilienbereichPage } from '@/components/pages/FamilienbereichPage';
 import { SozialesEngagementPage } from '@/components/pages/SozialesEngagementPage';
 import { INTL_LOCALES, isIntlLocale } from '@/lib/i18n/config';
 import { SEGMENTS, deHrefFrom, type TranslatedSegment } from '@/lib/i18n/slugs';
-import { pageMeta } from '@/lib/site-config';
+import { intlPageMeta } from '@/lib/site-config';
 
 export const dynamicParams = false;
 
@@ -26,7 +26,7 @@ export async function generateMetadata({
 }) {
   const { lang, segment } = await params;
   if (!isIntlLocale(lang)) return {};
-  return pageMeta(deHrefFrom(`/${lang}/${segment}`, lang));
+  return intlPageMeta(deHrefFrom(`/${lang}/${segment}`, lang), lang);
 }
 
 export default async function Page({

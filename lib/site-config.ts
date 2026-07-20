@@ -1,3 +1,6 @@
+import { LOCALES, OG_LOCALE, DEFAULT_LOCALE, type Locale } from './i18n/config';
+import { localizedHref } from './i18n/slugs';
+
 // Wenn Eric jemals von Apex auf www (oder umgekehrt) wechseln will,
 // reicht das Setzen von NEXT_PUBLIC_SITE_URL in den Vercel-Project-ENVs
 // + ein Redeploy. Kein Code-Change nötig.
@@ -83,21 +86,62 @@ export const SHOW_TESTIMONIALS = false;
  */
 export const OG_BASE = {
   type: 'website',
-  locale: 'de_DE',
   siteName: SITE.name,
   images: [SITE.defaultOgImage],
 } as const;
 
+/** Absolute URL für einen deutschen Referenzpfad in der Sprache `lang`. */
+function absoluteUrl(deHref: string, lang: Locale): string {
+  const path = localizedHref(deHref, lang);
+  return path === '/' ? SITE.url : `${SITE.url}${path}`;
+}
+
 /**
- * Baut Canonical + og:url für einen Seitenpfad synchron, sodass beide immer
- * identisch sind. `path` beginnt mit '/'. Startseite: pageMeta('/') → SITE.url.
+ * Existiert die Seite überhaupt übersetzt? Nicht übersetzte Seiten
+ * (Karriere, Impressum, Datenschutz, AGB) dürfen keine hreflang-Verweise
+ * tragen — sie zeigten sonst auf Seiten, die es nicht gibt.
+ *
+ * Das Kriterium ist die Rückfall-Semantik von `localizedHref`: alles ohne
+ * Übersetzung landet auf der Sprachstartseite. Einzige Ausnahme ist die
+ * Startseite selbst, die dort legitim landet. `tests/i18n/meta.test.ts`
+ * prüft das gegen jeden echten Seitenpfad der Site.
+ */
+function hasTranslations(deHref: string): boolean {
+  return localizedHref(deHref, 'en') !== '/en' || deHref === '/';
+}
+
+function languageAlternates(deHref: string): Record<string, string> | undefined {
+  if (!hasTranslations(deHref)) return undefined;
+  const entries: Record<string, string> = {};
+  for (const lang of LOCALES) entries[lang] = absoluteUrl(deHref, lang);
+  entries['x-default'] = absoluteUrl(deHref, DEFAULT_LOCALE);
+  return entries;
+}
+
+/**
+ * Canonical + og:url + hreflang für einen deutschen Seitenpfad.
+ * `path` beginnt mit '/'. Startseite: pageMeta('/') → SITE.url.
  */
 export function pageMeta(path: string) {
-  const url = path === '/' ? SITE.url : `${SITE.url}${path}`;
+  return intlPageMeta(path, DEFAULT_LOCALE);
+}
+
+/** Dasselbe für eine übersetzte Fassung. `dePath` ist der deutsche Referenzpfad. */
+export function intlPageMeta(dePath: string, lang: Locale) {
+  const url = absoluteUrl(dePath, lang);
+  // `languages` bewusst immer als Schlüssel, notfalls undefined — ein
+  // bedingtes Objekt ergäbe einen Union-Typ, an dem `.languages` im Test
+  // nicht mehr zugreifbar wäre.
+  const languages = languageAlternates(dePath);
   return {
-    alternates: { canonical: url },
+    alternates: { canonical: url, languages },
     // images bewusst als frische, veränderbare Kopie — Next's OpenGraph-Typ
     // akzeptiert das `readonly`-Tupel aus `OG_BASE` (as const) nicht.
-    openGraph: { ...OG_BASE, images: [...OG_BASE.images], url },
+    openGraph: {
+      ...OG_BASE,
+      images: [...OG_BASE.images],
+      locale: OG_LOCALE[lang],
+      url,
+    },
   };
 }
