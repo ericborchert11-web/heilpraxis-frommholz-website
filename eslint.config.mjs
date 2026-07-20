@@ -6,9 +6,9 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   {
-    // SiteShell rendert das Root-Layout-Geruest inklusive <html> und <head>.
-    // Die Regel no-head-element ueberspringt nur Dateien unterhalb von app/;
-    // App-Router-Code in components/ meldet sie faelschlich als Pages-Router.
+    // SiteShell rendert das Root-Layout-Gerüst inklusive <html> und <head>.
+    // Die Regel no-head-element überspringt nur Dateien unterhalb von app/;
+    // App-Router-Code in components/ meldet sie fälschlich als Pages-Router.
     files: ['components/SiteShell.tsx'],
     rules: { '@next/next/no-head-element': 'off' },
   },

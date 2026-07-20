@@ -7,7 +7,7 @@ import { THEMEN } from '@/lib/themen';
 import type { Locale } from '@/lib/i18n/config';
 
 export function Footer({ lang }: { lang: Locale }) {
-  // lang wird ab Etappe 1 / Aufgabe 7 fuer die Uebersetzung gebraucht.
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
   void lang;
   const year = new Date().getFullYear();
 

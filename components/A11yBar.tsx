@@ -7,7 +7,7 @@ import type { Locale } from '@/lib/i18n/config';
 type Size = 'normal' | 'large' | 'xlarge';
 
 export function A11yBar({ lang }: { lang: Locale }) {
-  // lang wird ab Etappe 1 / Aufgabe 7 fuer die Uebersetzung gebraucht.
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
   void lang;
   const [size, setSize] = useState<Size>(() =>
     typeof window !== 'undefined'

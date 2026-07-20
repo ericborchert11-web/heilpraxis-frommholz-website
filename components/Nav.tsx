@@ -14,7 +14,7 @@ const LINKS = [
 ];
 
 export function Nav({ lang }: { lang: Locale }) {
-  // lang wird ab Etappe 1 / Aufgabe 7 fuer die Uebersetzung gebraucht.
+  // lang wird ab Aufgabe 12 für die Übersetzung gebraucht.
   void lang;
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
