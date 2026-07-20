@@ -1,11 +1,11 @@
 /**
- * Uebersetzte URLs. Die deutsche Fassung ist die Referenz: jeder interne Link
+ * Übersetzte URLs. Die deutsche Fassung ist die Referenz: jeder interne Link
  * wird als deutscher Pfad geschrieben und per `localizedHref` in die aktuelle
  * Sprache gebracht. `deHrefFrom` ist die Gegenrichtung und wird vom
- * Sprachschalter gebraucht, um von der aktuellen Seite auf ihr Gegenstueck
+ * Sprachschalter gebraucht, um von der aktuellen Seite auf ihr Gegenstück
  * in einer anderen Sprache zu kommen.
  *
- * Ortsteil-Slugs werden bewusst NICHT uebersetzt — Moabit heisst in jeder
+ * Ortsteil-Slugs werden bewusst NICHT übersetzt — Moabit heißt in jeder
  * Sprache Moabit. Anker-IDs bleiben ebenfalls deutsch (`#kontakt`), sie sind
  * nicht suchmaschinenrelevant.
  */
@@ -24,7 +24,7 @@ const SEGMENTS = {
 type TranslatedSegment = keyof typeof SEGMENTS;
 
 /**
- * Detailseiten unter /leistungen/… — das sind die NEUN Eintraege aus
+ * Detailseiten unter /leistungen/… — das sind die NEUN Einträge aus
  * `lib/leistungen-seo.ts`, nicht die sechs Karten aus `lib/leistungen.ts`.
  */
 const LEISTUNG_SLUGS = {
@@ -51,7 +51,7 @@ const THEMA_SLUGS = {
   'wohnungsaufloesung-pflegefall': { en: 'clearing-a-home-when-care-begins', es: 'vaciado-de-vivienda-por-cuidados', it: 'svuotare-casa-inizio-assistenza' },
 } as const satisfies Record<string, Record<IntlLocale, string>>;
 
-/** Segmente mit uebersetzten Detail-Slugs. Standorte fehlen hier bewusst. */
+/** Segmente mit übersetzten Detail-Slugs. Standorte fehlen hier bewusst. */
 const DETAIL_SLUGS: Partial<Record<TranslatedSegment, Record<string, Record<IntlLocale, string>>>> = {
   leistungen: LEISTUNG_SLUGS,
   themen: THEMA_SLUGS,
@@ -66,7 +66,7 @@ function splitHash(path: string): [string, string] {
   return i === -1 ? [path, ''] : [path.slice(0, i), path.slice(i)];
 }
 
-/** Umkehrtabelle bauen: uebersetzter Slug → deutscher Slug. */
+/** Umkehrtabelle bauen: übersetzter Slug → deutscher Slug. */
 function invert(
   table: Record<string, Record<IntlLocale, string>>,
   lang: IntlLocale,
@@ -80,12 +80,12 @@ function invert(
 
 /**
  * Deutscher Pfad → Pfad in `lang`.
- * Seiten ohne Uebersetzung (Karriere, Impressum, Datenschutz, AGB) liefern die
+ * Seiten ohne Übersetzung (Karriere, Impressum, Datenschutz, AGB) liefern die
  * Sprachstartseite statt einer 404.
  */
 export function localizedHref(deHref: string, lang: Locale): string {
-  // Nicht-praefigiert = Deutsch, der Referenzpfad bleibt unveraendert.
-  // `isIntlLocale` engt `lang` zugleich auf die praefigierten Sprachen ein.
+  // Nicht-präfigiert = Deutsch, der Referenzpfad bleibt unverändert.
+  // `isIntlLocale` engt `lang` zugleich auf die präfigierten Sprachen ein.
   if (!isIntlLocale(lang)) return deHref;
 
   const [pathname, hash] = splitHash(deHref);
@@ -110,7 +110,7 @@ export function localizedHref(deHref: string, lang: Locale): string {
 }
 
 /**
- * Pfad in `lang` → deutscher Referenzpfad. Gegenstueck zu `localizedHref`;
+ * Pfad in `lang` → deutscher Referenzpfad. Gegenstück zu `localizedHref`;
  * der Sprachschalter verkettet beide.
  */
 export function deHrefFrom(href: string, lang: Locale): string {
@@ -119,7 +119,7 @@ export function deHrefFrom(href: string, lang: Locale): string {
   const [pathname, hash] = splitHash(href);
   const parts = pathname.split('/').filter(Boolean);
 
-  // parts[0] ist der Sprachpraefix
+  // parts[0] ist der Sprachpräfix
   if (parts.length <= 1) return `/${hash}`;
 
   const translatedSegment = parts[1];
@@ -140,14 +140,14 @@ export function deHrefFrom(href: string, lang: Locale): string {
   return `/${deSegment}/${deSlug}${hash}`;
 }
 
-/** Alle uebersetzten Slugs eines Segments — fuer `generateStaticParams`. */
+/** Alle übersetzten Slugs eines Segments — für `generateStaticParams`. */
 export function translatedSlugsFor(segment: TranslatedSegment, lang: IntlLocale): string[] {
   const table = DETAIL_SLUGS[segment];
   if (!table) return [];
   return Object.values(table).map((t) => t[lang]);
 }
 
-/** Uebersetztes Segment — fuer `generateStaticParams` der Segment-Route. */
+/** Übersetztes Segment — für `generateStaticParams` der Segment-Route. */
 export function segmentFor(segment: TranslatedSegment, lang: IntlLocale): string {
   return SEGMENTS[segment][lang];
 }

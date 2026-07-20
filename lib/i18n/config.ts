@@ -1,5 +1,5 @@
 /**
- * Sprachgrundlagen. Deutsch ist der Standard und liegt ohne Praefix auf `/`;
+ * Sprachgrundlagen. Deutsch ist der Standard und liegt ohne Präfix auf `/`;
  * en/es/it liegen unter `/<lang>/…`. Diese Trennung zieht sich durch das
  * gesamte Routing (Route-Groups `(de)` und `(intl)`).
  */
@@ -9,7 +9,7 @@ export type Locale = (typeof LOCALES)[number];
 
 export const DEFAULT_LOCALE: Locale = 'de';
 
-/** Die praefigierten Sprachen — genau die Werte von `generateStaticParams`. */
+/** Die präfigierten Sprachen — genau die Werte von `generateStaticParams`. */
 export const INTL_LOCALES = ['en', 'es', 'it'] as const;
 export type IntlLocale = (typeof INTL_LOCALES)[number];
 
@@ -37,7 +37,7 @@ export const LOCALE_LABEL: Record<Locale, string> = {
   it: 'IT',
 };
 
-/** Ausgeschriebener Sprachname in der jeweiligen Sprache — fuer aria-label. */
+/** Ausgeschriebener Sprachname in der jeweiligen Sprache — für aria-label. */
 export const LOCALE_NAME: Record<Locale, string> = {
   de: 'Deutsch',
   en: 'English',
