@@ -11,14 +11,14 @@ describe('locale config', () => {
     expect(INTL_LOCALES).toEqual(['en', 'es', 'it']);
   });
 
-  it('isLocale erkennt gueltige und ungueltige Werte', () => {
+  it('isLocale erkennt gültige und ungültige Werte', () => {
     expect(isLocale('de')).toBe(true);
     expect(isLocale('it')).toBe(true);
     expect(isLocale('fr')).toBe(false);
     expect(isLocale('leistungen')).toBe(false);
   });
 
-  it('isIntlLocale schliesst Deutsch aus', () => {
+  it('isIntlLocale schließt Deutsch aus', () => {
     expect(isIntlLocale('en')).toBe(true);
     expect(isIntlLocale('de')).toBe(false);
   });

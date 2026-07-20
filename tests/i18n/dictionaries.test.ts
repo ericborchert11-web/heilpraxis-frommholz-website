@@ -4,17 +4,17 @@ import { de } from '@/lib/i18n/dictionaries/de';
 import { en } from '@/lib/i18n/dictionaries/en';
 
 describe('getDictionary', () => {
-  it('liefert das passende Woerterbuch', () => {
+  it('liefert das passende Wörterbuch', () => {
     expect(getDictionary('de')).toBe(de);
     expect(getDictionary('en')).toBe(en);
   });
 
-  it('faellt fuer noch nicht uebersetzte Sprachen auf Deutsch zurueck', () => {
+  it('fällt für noch nicht übersetzte Sprachen auf Deutsch zurück', () => {
     expect(getDictionary('es')).toBe(de);
     expect(getDictionary('it')).toBe(de);
   });
 
-  it('das englische Woerterbuch hat exakt dieselben Schluessel wie das deutsche', () => {
+  it('das englische Wörterbuch hat exakt dieselben Schlüssel wie das deutsche', () => {
     const keys = (obj: object, prefix = ''): string[] =>
       Object.entries(obj).flatMap(([k, v]) =>
         v !== null && typeof v === 'object' && !Array.isArray(v)
@@ -24,10 +24,10 @@ describe('getDictionary', () => {
     expect(keys(en).sort()).toEqual(keys(de).sort());
   });
 
-  it('enthaelt keine deutschen Restbestaende im englischen Woerterbuch', () => {
+  it('enthält keine deutschen Restbestände im englischen Wörterbuch', () => {
     const flat = JSON.stringify(en);
     for (const wort of ['Pflege', 'Beratung', 'Angehörige', 'Erstgespräch']) {
-      expect(flat, `"${wort}" steht noch im englischen Woerterbuch`).not.toContain(wort);
+      expect(flat, `"${wort}" steht noch im englischen Wörterbuch`).not.toContain(wort);
     }
   });
 });

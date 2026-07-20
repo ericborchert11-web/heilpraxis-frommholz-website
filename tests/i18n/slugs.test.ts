@@ -6,37 +6,37 @@ import { THEMEN } from '@/lib/themen';
 import { STANDORTE } from '@/lib/standorte';
 
 describe('localizedHref', () => {
-  it('laesst deutsche Pfade unveraendert', () => {
+  it('lässt deutsche Pfade unverändert', () => {
     expect(localizedHref('/leistungen', 'de')).toBe('/leistungen');
     expect(localizedHref('/', 'de')).toBe('/');
   });
 
-  it('uebersetzt die Startseite', () => {
+  it('übersetzt die Startseite', () => {
     expect(localizedHref('/', 'en')).toBe('/en');
     expect(localizedHref('/', 'it')).toBe('/it');
   });
 
-  it('uebersetzt Segmentnamen', () => {
+  it('übersetzt Segmentnamen', () => {
     expect(localizedHref('/leistungen', 'en')).toBe('/en/services');
     expect(localizedHref('/standorte', 'es')).toBe('/es/ubicaciones');
     expect(localizedHref('/themen', 'it')).toBe('/it/guide');
   });
 
-  it('uebersetzt Leistungs-Slugs', () => {
+  it('übersetzt Leistungs-Slugs', () => {
     expect(localizedHref('/leistungen/sitzwachen-berlin', 'en')).toBe('/en/services/bedside-companion-berlin');
   });
 
-  it('laesst Ortsteil-Slugs unveraendert — Eigennamen', () => {
+  it('lässt Ortsteil-Slugs unverändert — Eigennamen', () => {
     expect(localizedHref('/standorte/moabit', 'en')).toBe('/en/locations/moabit');
     expect(localizedHref('/standorte/moabit', 'it')).toBe('/it/sedi/moabit');
   });
 
-  it('behaelt Anker bei', () => {
+  it('behält Anker bei', () => {
     expect(localizedHref('/#kontakt', 'en')).toBe('/en#kontakt');
     expect(localizedHref('/leistungen#faq', 'es')).toBe('/es/servicios#faq');
   });
 
-  it('faellt bei nicht uebersetzten Seiten auf die Sprachstartseite zurueck', () => {
+  it('fällt bei nicht übersetzten Seiten auf die Sprachstartseite zurück', () => {
     expect(localizedHref('/karriere', 'en')).toBe('/en');
     expect(localizedHref('/impressum', 'en')).toBe('/en');
     expect(localizedHref('/karriere/pflegefachkraft', 'es')).toBe('/es');
@@ -53,12 +53,12 @@ describe('deHrefFrom', () => {
     }
   });
 
-  it('gibt deutsche Pfade unveraendert zurueck', () => {
+  it('gibt deutsche Pfade unverändert zurück', () => {
     expect(deHrefFrom('/leistungen/sitzwachen-berlin', 'de')).toBe('/leistungen/sitzwachen-berlin');
   });
 });
 
-describe('Vollstaendigkeit der Slug-Tabellen', () => {
+describe('Vollständigkeit der Slug-Tabellen', () => {
   it('kennt jeden SEO-Leistungs-Slug in jeder Sprache', () => {
     for (const lang of LOCALES) {
       for (const l of LEISTUNGEN_SEO) {
@@ -86,7 +86,7 @@ describe('Vollstaendigkeit der Slug-Tabellen', () => {
     }
   });
 
-  it('behaelt alle Standort-Slugs unveraendert', () => {
+  it('behält alle Standort-Slugs unverändert', () => {
     for (const s of STANDORTE) {
       expect(localizedHref(`/standorte/${s.slug}`, 'en')).toBe(`/en/locations/${s.slug}`);
     }
