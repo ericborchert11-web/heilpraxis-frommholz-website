@@ -163,4 +163,14 @@ export const en: Dictionary = {
     schichtplanerTitle: 'Staff area (scheduler) — external site',
     germanOnlyNote: 'Legal notice, privacy policy, terms and careers are available in German only.',
   },
+  notFound: {
+    eyebrow: '404',
+    title: 'Page not found',
+    lead: 'This page does not exist, or it has moved. Here is where to go next:',
+    ctaHome: 'To the home page',
+    ctaServices: 'View our services',
+    ctaContact: 'Contact',
+    callBefore: 'Call ',
+    callAfter: '',
+  },
 };

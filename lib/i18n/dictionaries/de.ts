@@ -170,6 +170,21 @@ export const de = {
     /** Nur in den übersetzten Fassungen sichtbar. Auf Deutsch leer. */
     germanOnlyNote: '',
   },
+  notFound: {
+    eyebrow: '404',
+    title: 'Seite nicht gefunden',
+    lead: 'Diese Seite existiert nicht (mehr) oder wurde verschoben. Hier geht es weiter:',
+    ctaHome: 'Zur Startseite',
+    ctaServices: 'Leistungen ansehen',
+    ctaContact: 'Kontakt',
+    /**
+     * Die Telefonnummer steht im Deutschen vor dem Verb, im Englischen dahinter
+     * („0151 … anrufen" vs. „Call 0151 …"). Darum zwei Teile statt eines
+     * Platzhalters — sonst ergibt eine der beiden Sprachen keinen Satz.
+     */
+    callBefore: '',
+    callAfter: ' anrufen',
+  },
 } as const;
 
 /**
