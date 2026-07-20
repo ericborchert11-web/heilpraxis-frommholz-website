@@ -29,7 +29,7 @@ type TranslatedSegment = keyof typeof SEGMENTS;
  */
 const LEISTUNG_SLUGS = {
   'sitzwachen-berlin': { en: 'bedside-companion-berlin', es: 'acompanamiento-al-paciente-berlin', it: 'assistenza-al-capezzale-berlino' },
-  'systemsprenger-betreuung': { en: 'complex-needs-youth-care', es: 'apoyo-a-jovenes-con-necesidades-complejas', it: 'supporto-giovani-bisogni-complessi' },
+  'systemsprenger-betreuung': { en: 'complex-needs-one-to-one-care', es: 'atencion-individual-casos-complejos', it: 'assistenza-individuale-casi-complessi' },
   'pflegedienst-selbstzahler': { en: 'private-pay-nursing-berlin', es: 'servicio-privado-de-enfermeria-berlin', it: 'assistenza-privata-berlino' },
   '24-stunden-betreuung': { en: '24-hour-care-berlin', es: 'atencion-24-horas-berlin', it: 'assistenza-24-ore-berlino' },
   'pflegeberatung-berlin': { en: 'care-consulting-berlin', es: 'asesoramiento-en-cuidados-berlin', it: 'consulenza-assistenziale-berlino' },
