@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getDictionary } from '@/lib/i18n/dictionaries';
+import { getDictionary, hatUebersetzung } from '@/lib/i18n/dictionaries';
 import { de } from '@/lib/i18n/dictionaries/de';
 import { en } from '@/lib/i18n/dictionaries/en';
 
@@ -25,9 +25,24 @@ describe('getDictionary', () => {
   });
 
   it('enthält keine deutschen Restbestände im englischen Wörterbuch', () => {
-    const flat = JSON.stringify(en);
+    // Eigennamen bleiben in jeder Sprache stehen und werden vor der Prüfung
+    // herausgeschnitten — „Leben Pflegen Reisen e.V." ist der eingetragene
+    // Name des Partnervereins, nicht unübersetzter Fließtext.
+    const EIGENNAMEN = ['Leben Pflegen Reisen e.V.'];
+    let flat = JSON.stringify(en);
+    for (const name of EIGENNAMEN) flat = flat.split(name).join('');
+
     for (const wort of ['Pflege', 'Beratung', 'Angehörige', 'Erstgespräch']) {
       expect(flat, `"${wort}" steht noch im englischen Wörterbuch`).not.toContain(wort);
+    }
+  });
+
+  it('kennt für jede Sprache, ob ihre Oberfläche übersetzt ist', () => {
+    expect(hatUebersetzung('en')).toBe(true);
+    // Deutsch ist die Referenz, nicht eine Übersetzung.
+    expect(hatUebersetzung('de')).toBe(false);
+    for (const lang of ['es', 'it'] as const) {
+      expect(hatUebersetzung(lang), `${lang} hat noch kein eigenes Wörterbuch`).toBe(false);
     }
   });
 });

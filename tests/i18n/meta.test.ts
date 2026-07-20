@@ -2,6 +2,9 @@ import { describe, it, expect } from 'vitest';
 import { intlPageMeta, pageMeta, SITE } from '@/lib/site-config';
 import { LOCALES } from '@/lib/i18n/config';
 import { localizedHref } from '@/lib/i18n/slugs';
+import { hatUebersetzung } from '@/lib/i18n/dictionaries';
+import { de } from '@/lib/i18n/dictionaries/de';
+import { en } from '@/lib/i18n/dictionaries/en';
 import { leistungenWithDetail } from '@/lib/leistungen-seo';
 import { THEMEN } from '@/lib/themen';
 import { STANDORTE } from '@/lib/standorte';
@@ -148,6 +151,59 @@ describe('hreflang-Abdeckung über alle echten Seitenpfade', () => {
       for (const lang of ['en', 'es', 'it'] as const) {
         expect(localizedHref(dePath, lang)).not.toBe(`/${lang}`);
       }
+    }
+  });
+});
+
+/**
+ * Titel und Beschreibung der sechs Übersichtsseiten. `intlPageMeta` liefert
+ * bewusst nur Canonical, hreflang und OpenGraph — die Texte kommen aus dem
+ * Wörterbuch. Ohne diese Prüfung fiel monatelang nicht auf, dass die
+ * englischen Übersichtsseiten mit dem nackten Layout-Titel und ganz ohne
+ * Beschreibung ausgeliefert wurden.
+ */
+const INDEX_META_KEYS = [
+  ['/', 'home'],
+  ['/leistungen', 'leistungen'],
+  ['/themen', 'themen'],
+  ['/standorte', 'standorte'],
+  ['/familienbereich', 'familienbereich'],
+  ['/soziales-engagement', 'sozialesEngagement'],
+] as const;
+
+describe('indexMeta der Übersichtsseiten', () => {
+  it.each(INDEX_META_KEYS)('%s trägt auf Englisch Titel und Beschreibung', (_dePath, key) => {
+    const meta = en.indexMeta[key];
+    expect(meta.title.trim().length, `Titel für ${key} fehlt`).toBeGreaterThan(0);
+    expect(meta.description.trim().length, `Beschreibung für ${key} fehlt`).toBeGreaterThan(0);
+  });
+
+  it.each(INDEX_META_KEYS)('%s hält auf Englisch die Längengrenzen ein', (_dePath, key) => {
+    const meta = en.indexMeta[key];
+    // Google schneidet darüber hinaus ab. Gezählt wird in Code-Points, damit
+    // Gedankenstriche und Umlaute nicht doppelt zu Buche schlagen.
+    expect([...meta.title].length, `Titel für ${key} zu lang: "${meta.title}"`).toBeLessThanOrEqual(60);
+    expect([...meta.description].length, `Beschreibung für ${key} zu lang`).toBeLessThanOrEqual(160);
+  });
+
+  it('unterscheidet sich auf Englisch durchgehend vom deutschen Wörterbuch', () => {
+    // Ein aus dem Deutschen kopierter Titel wäre schlimmer als gar keiner —
+    // Google bekäme deutschen Text als englisch deklariert.
+    for (const [, key] of INDEX_META_KEYS) {
+      expect(en.indexMeta[key].title, `Titel für ${key} ist noch deutsch`).not.toBe(
+        de.indexMeta[key].title,
+      );
+      expect(en.indexMeta[key].description, `Beschreibung für ${key} ist noch deutsch`).not.toBe(
+        de.indexMeta[key].description,
+      );
+    }
+  });
+
+  it('lässt Spanisch und Italienisch bewusst ohne eigene Titel', () => {
+    // Solange ihre Inhalte deutsch sind, dürfen die Routen nichts setzen —
+    // `hatUebersetzung` ist der Schalter, an dem das hängt.
+    for (const lang of ['es', 'it'] as const) {
+      expect(hatUebersetzung(lang)).toBe(false);
     }
   });
 });

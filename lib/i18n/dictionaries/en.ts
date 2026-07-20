@@ -17,6 +17,8 @@ export const en: Dictionary = {
     leistungen: 'Services',
     themen: 'Guides',
     standorte: 'Locations',
+    familienbereich: 'Family portal',
+    sozialesEngagement: 'Social commitment',
   },
   nav: {
     leistungen: 'Services',
@@ -191,6 +193,126 @@ export const en: Dictionary = {
     outroHeading: 'Beyond these focus areas',
     outroText: 'We are available across the whole of Berlin — with a travel surcharge outside our core boroughs. If you live in another part of the city and need support, do get in touch. We will look at your enquiry and tell you honestly whether we are the right fit.',
     outroCta: 'Request a first conversation',
+  },
+  familienbereichPage: {
+    title: 'Your family portal — everything that matters, in one protected place',
+    lead: 'When someone is being looked after, their family wants to know what is happening — even when they cannot be at the bedside. The family portal gives you exactly that: protected online access to schedules, invoices and documentation. Included for every one of our clients.',
+    warumH2: 'Why a family portal',
+    warumText: 'Being looked after never concerns one person alone; it concerns the whole family. Those who cannot be there every day still want to know: who is with them right now? What was done? What does it cost? The family portal answers these questions without your having to ring round — and takes a measure of worry off the family.',
+    bausteineH2: 'The three parts',
+    bausteine: [
+      {
+        label: 'Schedules.',
+        text: 'You can see who is coming to your relative and when — always current, visible at any time.',
+      },
+      {
+        label: 'Invoices.',
+        text: 'Every invoice in one place, itemised transparently, with all surcharges visible and available whenever you need them.',
+      },
+      {
+        label: 'Documentation.',
+        text: 'What was done and observed? The care record is traceable for authorised relatives — close to daily life, free of jargon.',
+      },
+    ],
+    inklusiveH2: 'Included for every client',
+    inklusiveText: 'The family portal costs nothing extra. It belongs to our understanding of honest, transparent work: anyone who engages us should be able to see at any time what is happening — not on request, but as a matter of course.',
+    sicherheitH2: 'Security & data protection',
+    sicherheitBefore: 'Access is protected and the data is transmitted over an encrypted (TLS) connection. Only the relatives you authorise can see it. We process the data in accordance with the GDPR and treat the particularly sensitive contents of the care record with corresponding diligence. How we handle your data is set out in our',
+    sicherheitLink: 'privacy policy',
+    sicherheitAfter: ' (in German).',
+    individuellH2: 'Set up to suit your needs',
+    individuellText: 'We set the family portal up individually for each family and extend it as required — with further authorised relatives, for instance, or additional content. Whatever you need, we put in place.',
+    faqH2: 'Common questions',
+    faq: [
+      {
+        question: 'Who gets access?',
+        answer: 'You and the relatives you name. Every account is set up individually and protected.',
+      },
+      {
+        question: 'What does the family portal cost?',
+        answer: 'Nothing extra — it is included for every one of our clients.',
+      },
+      {
+        question: 'How secure is my data?',
+        answer:
+          'Access is protected, the data is transmitted over a TLS-encrypted connection, processing follows the requirements of the GDPR, and only authorised relatives see the contents. Details are in our privacy policy.',
+      },
+    ],
+    ctaTitle: 'Set up access in your first conversation',
+    ctaText: 'Wondering whether support from us is the right fit? In the free first conversation we will set up your family portal at the same time, if you wish.',
+    ctaButton: 'Request a first conversation',
+  },
+  sozialesEngagementPage: {
+    title: 'Social commitment — care as a social responsibility',
+    lead: 'Social responsibility is part of our work — much of it runs today through our non-profit partner association Leben Pflegen Reisen e.V. Here we show where this stance comes from and what the collaboration looks like.',
+    vereinH2: 'Carried together with our partner association Leben Pflegen Reisen e.V.',
+    vereinBefore: 'For',
+    vereinLinkSitzwachen: 'bedside companions',
+    vereinBetween1: ',',
+    vereinLinkHospiz: 'hospice companions',
+    vereinBetween2: 'and',
+    vereinLinkReise: 'travel companionship',
+    vereinAfterLinks: 'we work closely with the non-profit association',
+    vereinName: 'Leben Pflegen Reisen e.V.',
+    vereinAfter: 'The association contributes a volunteer network and many years of experience in accompanying people who need support on journeys — a complement to our paid nursing shifts, so that families are left alone neither in the final hours of a life nor on a last journey together.',
+    teamH2: 'Who works with us',
+    teamText1: 'The people who work with us are often those for whom the standard system made returning to work difficult: the long-term unemployed, women who changed career later in life, older carers who were sorted out elsewhere, people from what is known here as the second labour market. A good many of our staff came to us by exactly this route.',
+    teamText2: 'We train them, support them, and give them a setting in which they can grow. And we notice every day how much warmth, patience and life experience they bring to the work — qualities that standardised job profiles never ask about, but that make the difference in daily work with people.',
+    herkunftH2: 'Where our stance comes from',
+    herkunftBefore: 'Heilpraxis Frommholz grew out of the non-profit Krankenpflege Frommholz — a charitable company that has for years organised support in Berlin for people who struggle to find a place in the standard system. That experience shapes us to this day: in whom we employ, in our readiness to take on difficult client constellations (see',
+    herkunftLink: 'complex needs one-to-one care',
+    herkunftAfter: '), and in how we approach questions of inclusion.',
+    simeonBefore: 'More on the non-profit sister organisation and on Simeon Frommholz himself at',
+    simeonLink: 'simeonfrommholz.de',
+    simeonAfter: '.',
+    ausbildungH2: 'Training and placement positions',
+    ausbildungText: 'We regularly offer places for young people on a voluntary social year and for career changers with an interest in this field. In particular for people who, after a crisis in their life or a change of profession, want to move into work that means something. That too is part of what we understand by social commitment: creating places where gaining experience and finding a profession are possible.',
+    karriereBefore: 'Specific role descriptions can be found on our',
+    karriereLink: 'careers page',
+    karriereBetween1: '— in particular',
+    karriereLinkEhrenamt: 'Paid voluntary work: bedside companions',
+    karriereBetween2: 'and',
+    karriereLinkRente: 'Continuing to work in retirement',
+    karriereAfter: 'are frequent points of entry.',
+    klientinnenH2: 'What this means for our clients',
+    klientinnenText1: 'We take on enquiries that others turn away: difficult psychiatric histories, advanced dementia with challenging behaviour, complex palliative companionship, clients without a stable social network. Not because we can do everything — but because our stance is to look, rather than to look away.',
+    klientinnenText2: 'And we take the time not to work in fifteen-minute intervals where the actual work with the person happens. That is only possible because we work privately paid, without insurer bureaucracy — a decision that has its price, but that creates the setting in which socially minded work of this kind is possible at all.',
+    ctaTitle: 'Join us, or become a client?',
+    ctaText: 'We welcome applications — particularly from people who have fallen through the net elsewhere. And we listen when you are looking, for yourself or a relative, for support that is more than piecework.',
+    ctaKarriere: 'View role descriptions',
+    ctaKontakt: 'Request a first conversation',
+  },
+  indexMeta: {
+    home: {
+      title: 'Private Nursing Care in Berlin — English-Speaking',
+      description:
+        'Private-pay nursing, companionship and counselling across Berlin. English-speaking carers, directly employed, from a few hours a week to 24/7.',
+    },
+    leistungen: {
+      title: 'Private Care Services in Berlin — Hourly to 24/7',
+      description:
+        'Bedside companions, night care, round-the-clock care at home and care counselling in Berlin. Privately paid, from a small and settled team.',
+    },
+    themen: {
+      title: 'Guides to Care in Germany — For Families in Berlin',
+      description:
+        'Care levels, respite care, dementia and palliative care at home, explained plainly for families in Berlin. From more than 15 years of practice.',
+    },
+    standorte: {
+      title: 'Where We Work — Private Care Across Berlin',
+      description:
+        'Our office is in Moabit and we work across Berlin, with a focus on Charlottenburg, Wilmersdorf, Grunewald, Zehlendorf, Westend and Mitte.',
+    },
+    familienbereich: {
+      title: 'Family Portal — Schedules, Invoices, Care Records',
+      description:
+        'A protected online portal for relatives: see the care schedule, every invoice and the care documentation at any time. Included for every client.',
+    },
+    sozialesEngagement: {
+      title: 'Social Commitment — Care as a Social Responsibility',
+      description:
+        'Where our approach comes from: non-profit roots in Berlin, our partner association Leben Pflegen Reisen e.V., and the people we employ and train.',
+    },
   },
   footer: {
     familyLink: '→ Family portal for relatives',

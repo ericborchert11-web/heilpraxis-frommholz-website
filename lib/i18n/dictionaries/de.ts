@@ -24,6 +24,8 @@ export const de = {
     leistungen: 'Leistungen',
     themen: 'Themen',
     standorte: 'Standorte',
+    familienbereich: 'Familienbereich',
+    sozialesEngagement: 'Soziales Engagement',
   },
   nav: {
     leistungen: 'Leistungen',
@@ -207,6 +209,139 @@ export const de = {
     outroHeading: 'Auch außerhalb dieser Schwerpunkte',
     outroText: 'Wir sind grundsätzlich für ganz Berlin verfügbar — mit Anfahrtspauschale außerhalb unserer Kernbezirke. Wenn Sie in einem anderen Berliner Stadtteil wohnen und Pflege brauchen, melden Sie sich gerne. Wir prüfen die Anfrage und sagen ehrlich, ob wir die richtigen sind.',
     outroCta: 'Erstgespräch anfragen',
+  },
+  /**
+   * Seite /familienbereich. Die Absätze mit Inline-Link sind in Vor-, Link-
+   * und Nachtext zerlegt — ein Platzhalter im Fließtext ginge beim Rendern
+   * als React-Knoten nicht mehr auf.
+   */
+  familienbereichPage: {
+    title: 'Ihr Familienbereich — alles Wichtige an einem geschützten Ort',
+    lead: 'Wenn ein Mensch gepflegt wird, wollen Angehörige wissen, was passiert — auch wenn sie nicht daneben stehen können. Der Familienbereich gibt Ihnen genau das: einen geschützten Online-Zugang zu Dienstplänen, Rechnungen und Dokumentation. Für alle unsere Klient:innen inklusive.',
+    warumH2: 'Warum ein Familienbereich',
+    warumText: 'Pflege betrifft nie nur eine Person, sondern die ganze Familie. Gerade wer nicht täglich vor Ort sein kann, möchte trotzdem wissen: Wer ist gerade da? Was wurde gemacht? Was kostet es? Der Familienbereich beantwortet diese Fragen, ohne dass Sie nachtelefonieren müssen — und nimmt Angehörigen ein Stück Sorge ab.',
+    bausteineH2: 'Die drei Bausteine',
+    bausteine: [
+      {
+        label: 'Dienstpläne.',
+        text: 'Sie sehen, wer wann zu Ihrer/Ihrem Angehörigen kommt — immer aktuell, jederzeit einsehbar.',
+      },
+      {
+        label: 'Rechnungen.',
+        text: 'Alle Rechnungen an einem Ort, transparent aufgeschlüsselt, mit allen Zuschlägen sichtbar und jederzeit abrufbar.',
+      },
+      {
+        label: 'Dokumentation.',
+        text: 'Was wurde geleistet und beobachtet? Die Pflegedokumentation ist für berechtigte Angehörige nachvollziehbar — nah am Alltag, ohne Fachchinesisch.',
+      },
+    ],
+    inklusiveH2: 'Für alle Klient:innen inklusive',
+    inklusiveText: 'Der Familienbereich kostet nichts extra. Er gehört zu unserem Verständnis von ehrlicher, transparenter Pflege: Wer uns beauftragt, soll jederzeit sehen können, was passiert — nicht auf Nachfrage, sondern selbstverständlich.',
+    sicherheitH2: 'Sicherheit & Datenschutz',
+    sicherheitBefore: 'Der Zugang ist geschützt und die Daten werden über eine verschlüsselte (TLS-)Verbindung übertragen. Es sehen ausschließlich die Angehörigen, die Sie berechtigen. Wir verarbeiten die Daten nach den Vorgaben der DSGVO und behandeln die besonders sensiblen Inhalte der Pflegedokumentation mit entsprechender Sorgfalt. Wie wir mit Ihren Daten umgehen, lesen Sie in unserer',
+    sicherheitLink: 'Datenschutzerklärung',
+    sicherheitAfter: '.',
+    individuellH2: 'Individuell nach Bedarf eingerichtet',
+    individuellText: 'Wir richten den Familienbereich für jede Familie individuell ein und erweitern ihn bei Bedarf — etwa um weitere berechtigte Angehörige oder zusätzliche Inhalte. Was Sie brauchen, setzen wir um.',
+    faqH2: 'Häufige Fragen',
+    faq: [
+      {
+        question: 'Wer bekommt Zugang?',
+        answer: 'Sie und die Angehörigen, die Sie benennen. Jeder Zugang wird individuell und geschützt eingerichtet.',
+      },
+      {
+        question: 'Was kostet der Familienbereich?',
+        answer: 'Nichts extra — er ist für alle unsere Klient:innen inklusive.',
+      },
+      {
+        question: 'Wie sicher sind meine Daten?',
+        answer:
+          'Der Zugang ist geschützt, die Daten werden über eine TLS-verschlüsselte Verbindung übertragen, die Verarbeitung erfolgt nach den Vorgaben der DSGVO, und nur berechtigte Angehörige sehen die Inhalte. Details in unserer Datenschutzerklärung.',
+      },
+    ],
+    ctaTitle: 'Zugang im Erstgespräch einrichten',
+    ctaText: 'Sie überlegen, ob Betreuung durch uns das Richtige ist? Im kostenlosen Erstgespräch richten wir auf Wunsch gleich Ihren Familienbereich mit ein.',
+    ctaButton: 'Erstgespräch anfragen',
+  },
+  /**
+   * Seite /soziales-engagement. Die Beschriftungen der Karriere-Links sind
+   * übersetzt, ihre Ziele bleiben deutsch — darauf weist `footer.germanOnlyNote`
+   * allgemein hin.
+   */
+  sozialesEngagementPage: {
+    title: 'Soziales Engagement — Pflege als soziale Aufgabe',
+    lead: 'Soziale Verantwortung gehört für uns zur Pflege — ein großer Teil davon läuft heute über unseren gemeinnützigen Partnerverein Leben Pflegen Reisen e.V. Hier zeigen wir, woher diese Haltung kommt und wie die Zusammenarbeit aussieht.',
+    vereinH2: 'Getragen mit dem Partnerverein Leben Pflegen Reisen e.V.',
+    vereinBefore: 'Für',
+    vereinLinkSitzwachen: 'Sitzwachen',
+    vereinBetween1: ',',
+    vereinLinkHospiz: 'Hospiz-Sitzwachen',
+    vereinBetween2: 'und',
+    vereinLinkReise: 'Reisebegleitung',
+    vereinAfterLinks: 'arbeiten wir eng mit dem gemeinnützigen Verein',
+    vereinName: 'Leben Pflegen Reisen e.V.',
+    vereinAfter: 'zusammen. Der Verein bringt ein ehrenamtliches Netzwerk und langjährige Erfahrung in der Begleitung pflegebedürftiger Menschen auf Reisen mit — eine Ergänzung zu unseren bezahlten pflegerischen Schichten, die Familien gerade in den letzten Stunden eines Lebens oder auf einer letzten gemeinsamen Reise nicht alleine lässt.',
+    teamH2: 'Wer bei uns arbeitet',
+    teamText1: 'Bei uns arbeiten Menschen, denen das Regelsystem den Wiedereinstieg schwer gemacht hat: Langzeitarbeitslose, Quereinsteigerinnen mit Lebenserfahrung, ältere Pflegekräfte, die anderswo aussortiert wurden, Menschen aus dem sogenannten zweiten Arbeitsmarkt. Etliche unserer Mitarbeitenden sind über genau diesen Weg zu uns gekommen.',
+    teamText2: 'Wir bilden sie aus, begleiten sie, geben ihnen einen Rahmen, in dem sie wachsen können. Und merken jeden Tag, wie viel Wärme, Geduld und Lebenserfahrung sie in die Pflege bringen — Qualitäten, die in standardisierten Stellenprofilen nicht abgefragt werden, in der täglichen Arbeit am Menschen aber den Unterschied machen.',
+    herkunftH2: 'Woher unsere Haltung kommt',
+    herkunftBefore: 'Die Heilpraxis Frommholz ist aus der gemeinnützigen Krankenpflege Frommholz hervorgegangen — eine gGmbH, die seit Jahren in Berlin Pflege für Menschen organisiert, die im Regelsystem schwer Platz finden. Diese Erfahrung prägt uns bis heute: in der Auswahl unserer Mitarbeitenden, in der Bereitschaft, schwierige Klient-Konstellationen anzunehmen (siehe',
+    herkunftLink: 'Systemsprenger-Betreuung',
+    herkunftAfter: '), in der Haltung gegenüber Inklusionsfragen.',
+    simeonBefore: 'Mehr über die gemeinnützige Schwesterorganisation und die Person Simeon Frommholz auf',
+    simeonLink: 'simeonfrommholz.de',
+    simeonAfter: '.',
+    ausbildungH2: 'Ausbildungs- und Praktikumsplätze',
+    ausbildungText: 'Wir bieten regelmäßig Plätze für FSJler*innen und Quereinsteigerinnen mit Pflegeinteresse an. Insbesondere für Menschen, die nach einer Lebenskrise oder einem Berufswechsel in einen sinnstiftenden Tätigkeitsbereich kommen wollen. Auch das ist Teil dessen, was wir unter sozialem Engagement verstehen: Plätze schaffen, an denen Erfahrung gewinnen und einen Beruf finden möglich ist.',
+    karriereBefore: 'Konkrete Stellenkonzepte finden Sie auf der',
+    karriereLink: 'Karriere-Seite',
+    karriereBetween1: '— insbesondere',
+    karriereLinkEhrenamt: 'Bezahltes Ehrenamt: Sitzwachen',
+    karriereBetween2: 'und',
+    karriereLinkRente: 'In der Rente weiterarbeiten',
+    karriereAfter: 'sind häufige Einstiege.',
+    klientinnenH2: 'Was das für unsere Klient*innen heißt',
+    klientinnenText1: 'Wir nehmen Anfragen an, bei denen andere abwinken: schwierige psychiatrische Verläufe, fortgeschrittene Demenz mit herausforderndem Verhalten, komplexe palliative Begleitungen, Klient*innen ohne stabiles soziales Netz. Nicht weil wir alles können — sondern weil wir die Haltung haben, hinzusehen, statt wegzuschauen.',
+    klientinnenText2: 'Und wir nehmen uns Zeit, in der eigentlichen Pflegearbeit nicht im 15-Minuten-Takt zu sein. Das ist nur möglich, weil wir als Selbstzahler-Pflegedienst ohne Kassenbürokratie arbeiten — diese Entscheidung hat einen Preis, aber sie schafft den Rahmen, in dem soziale Pflegearbeit überhaupt möglich ist.',
+    ctaTitle: 'Mitarbeiten oder Klient*in werden?',
+    ctaText: 'Wir freuen uns über Bewerbungen — gerade von Menschen, die anderswo durchs Raster gefallen sind. Und wir hören zu, wenn Sie für sich selbst oder Angehörige Pflege suchen, die mehr ist als Akkord.',
+    ctaKarriere: 'Stellenkonzepte ansehen',
+    ctaKontakt: 'Erstgespräch anfragen',
+  },
+  /**
+   * Titel und Beschreibung der sechs Übersichtsseiten. `title` ist der
+   * VOLLSTÄNDIGE Seitentitel: die Routen setzen ihn als `title.absolute`, die
+   * Vorlage aus dem Layout greift also nicht.
+   *
+   * Verbraucher sind ausschließlich die übersetzten Routen unter `app/(intl)`.
+   * Die deutschen Routen tragen ihre eigenen `metadata`-Exporte; die deutschen
+   * Werte hier bilden sie nur ab, damit das Wörterbuch vollständig ist.
+   */
+  indexMeta: {
+    home: {
+      title: 'Pflege, Sitzwachen & Begleitung Berlin – Heilpraxis Frommholz',
+      description: 'Private Pflege, Alltagsbegleitung und Beratung in Berlin und Umland. Stundenweise bis 24/7. Mit Erfahrung, Sorgfalt und Haltung.',
+    },
+    leistungen: {
+      title: 'Leistungen · Heilpraxis Frommholz',
+      description: 'Sitzwachen, Pflege für Selbstzahler, 24-Stunden-Betreuung, Pflegeberatung — die Leistungen der Heilpraxis Frommholz in Berlin.',
+    },
+    themen: {
+      title: 'Themen · Heilpraxis Frommholz',
+      description: 'Pflegegrad, Verhinderungspflege, MDK-Begutachtung, Demenz, Palliativ — Hintergrundwissen für Familien in Berlin, kompakt und ehrlich.',
+    },
+    standorte: {
+      title: 'Standorte in Berlin · Heilpraxis Frommholz',
+      description: 'Wo wir pflegen in Berlin — Schwerpunkte in Charlottenburg, Wilmersdorf, Zehlendorf, Grunewald und Mitte. Überblick aller Stadtteile.',
+    },
+    familienbereich: {
+      title: 'Familienbereich — geschützter Online-Zugang für Angehörige',
+      description: 'Als Angehörige jederzeit im Bild: Dienstpläne, Rechnungen und Pflegedokumentation im geschützten Familienbereich. Für alle Klient:innen der Heilpraxis Frommholz inklusive.',
+    },
+    sozialesEngagement: {
+      title: 'Soziales Engagement · Heilpraxis Frommholz',
+      description: 'Soziales Engagement der Heilpraxis Frommholz: getragen gemeinsam mit unserem Partnerverein Leben Pflegen Reisen e.V. Pflege als soziale Aufgabe — Herkunft, Haltung, Kooperation.',
+    },
   },
   footer: {
     familyLink: '→ Familienbereich für Angehörige',
