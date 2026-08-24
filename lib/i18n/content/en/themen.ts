@@ -137,8 +137,8 @@ export const THEMEN_EN: Overlay<SeoThema> = {
               text: 'The €1,612 can be split into many small units — for example 3 hours a week across 50 weeks makes 150 hours in the year.',
             },
             {
-              label: 'It can also be used after a hospital discharge',
-              text: 'If the family carer is overwhelmed by their relative coming home from hospital, respite care can bridge the gap and take some of the load.',
+              label: 'It can also be used when needs rise suddenly',
+              text: 'If the family carer is overwhelmed by a suddenly changed situation, respite care can bridge the gap and take some of the load.',
             },
             {
               label: 'It can be combined with short-term residential care',
@@ -179,7 +179,7 @@ export const THEMEN_EN: Overlay<SeoThema> = {
             'No. Neighbours, friends or you yourself can be billed as the “substitute” — though for close relatives only at the care allowance rate.',
         },
         {
-          question: 'Can a bedside companion be billed through respite care?',
+          question: 'Can one-to-one care be billed through respite care?',
           answer:
             'Yes, and it is in fact one of the most common uses. We issue you the invoice and you submit it to the Pflegekasse.',
         },
@@ -235,7 +235,7 @@ export const THEMEN_EN: Overlay<SeoThema> = {
             },
             {
               label: 'Not reimbursable',
-              text: 'private help without recognised provider status, conventional nursing staff (that runs through the care allowance or benefits in kind), and residential-home or hospital costs.',
+              text: 'private help without recognised provider status, conventional nursing staff (that runs through the care allowance or benefits in kind), and the costs of a care home or of inpatient treatment.',
             },
           ],
         },
@@ -565,7 +565,7 @@ export const THEMEN_EN: Overlay<SeoThema> = {
             },
             {
               label: 'Pillar 4: private-pay 1:1 companionship (what we provide)',
-              text: 'Where the family cannot be there continuously, where volunteer bedside companions are not enough, where an additional dependable presence is needed — we step in.',
+              text: 'Where the family cannot be there continuously, where volunteer company is not enough, where an additional dependable presence is needed — we step in.',
             },
           ],
         },

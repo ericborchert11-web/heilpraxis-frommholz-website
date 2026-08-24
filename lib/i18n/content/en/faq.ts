@@ -23,7 +23,7 @@ export const GLOBAL_FAQ_EN: readonly FaqItem[] = [
   {
     question: 'How quickly can you start?',
     answer:
-      'For urgent requests (bedside companions, night care) often the same day, or within 24 to 48 hours. For longer engagements (round-the-clock care, bridging the wait for a care-home place) we usually need five to ten days’ notice.',
+      'For urgent requests (one-to-one care, night care) often the same day, or within 24 to 48 hours. For longer engagements (round-the-clock care, bridging the wait for a care-home place) we usually need five to ten days’ notice.',
   },
   {
     question: 'Which parts of the city do you cover?',

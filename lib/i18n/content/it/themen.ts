@@ -112,7 +112,7 @@ export const THEMEN_IT: Overlay<SeoThema> = {
           heading: 'Ciò che raccomandiamo in particolare',
           stronglist: [
             { label: 'Usarla a ore anziché a blocchi', text: 'I 1.612 € si possono suddividere in molte piccole unità — per esempio: 3 ore a settimana per 50 settimane danno 150 ore l\'anno.' },
-            { label: 'Utilizzabile anche dopo la dimissione dall\'ospedale', text: 'Se la persona che assiste è sopraffatta dalla dimissione ospedaliera del proprio familiare, l\'assistenza sostitutiva può servire in via transitoria come sgravio.' },
+            { label: 'Utilizzabile anche quando il bisogno cresce all\'improvviso', text: 'Se la persona che assiste è sopraffatta da una situazione del proprio familiare cambiata all\'improvviso, l\'assistenza sostitutiva può servire in via transitoria come sgravio.' },
             { label: 'Combinabile con il ricovero di sollievo di breve durata', text: 'Fino al 50 % del diritto non utilizzato al ricovero di sollievo di breve durata (Kurzzeitpflege) (fino a 806 € in più) può essere trasferito sull\'assistenza sostitutiva. In teoria sarebbero così possibili fino a 2.418 €.' },
           ],
         },
@@ -138,7 +138,7 @@ export const THEMEN_IT: Overlay<SeoThema> = {
       faq: [
         { question: 'A quanto ammonta l\'assistenza sostitutiva nel 2026?', answer: 'Fino a 1.612 € per anno solare. Combinata con il ricovero di sollievo di breve durata non utilizzato, fino a 2.418 €.' },
         { question: 'La sostituzione deve essere professionale?', answer: 'No. Anche vicini, amici o Lei stesso possono essere fatturati come „sostituzione" — nel caso di parenti stretti però solo alla tariffa dell\'indennità di assistenza.' },
-        { question: 'Posso fatturare le veglie tramite l\'assistenza sostitutiva?', answer: 'Sì, è anzi uno degli impieghi più frequenti. Le emettiamo la fattura e Lei la presenta all\'assicurazione per la non autosufficienza.' },
+        { question: 'Posso fatturare l\'assistenza individuale tramite l\'assistenza sostitutiva?', answer: 'Sì, è anzi uno degli impieghi più frequenti. Le emettiamo la fattura e Lei la presenta all\'assicurazione per la non autosufficienza.' },
         { question: 'Il diritto decade se non lo utilizzo?', answer: 'Sì, alla fine dell\'anno solare. Conviene pianificarlo già in estate, invece di aspettare.' },
         { question: 'Vale anche per il livello di assistenza 1?', answer: 'No. Il livello 1 non ha diritto all\'assistenza sostitutiva.' },
       ],
@@ -177,7 +177,7 @@ export const THEMEN_IT: Overlay<SeoThema> = {
           paragraphs: ['Non per tutto. Sono rimborsabili solo le prestazioni di fornitori riconosciuti ai sensi del § 45a SGB XI — quindi non un aiuto qualsiasi.'],
           stronglist: [
             { label: 'Tipicamente usato per', text: 'assistenza a ore tramite servizi di supporto certificati, assistenza diurna (spesso combinata proporzionalmente), ricovero di sollievo di breve durata (Kurzzeitpflege) (fino al 50 % trasferibile), aiuti domestici tramite servizi riconosciuti, offerte di supporto nella vita quotidiana (accompagnatori per la demenza, assistenti quotidiani).' },
-            { label: 'Non rimborsabile', text: 'aiuti privati senza status di ente riconosciuto, personale di assistenza classico (che passa dall\'indennità di assistenza o dalle prestazioni in natura), costi di casa di riposo o di ospedale.' },
+            { label: 'Non rimborsabile', text: 'aiuti privati senza status di ente riconosciuto, personale di assistenza classico (che passa dall\'indennità di assistenza o dalle prestazioni in natura), costi di una casa di riposo o di un ricovero.' },
           ],
         },
         {
@@ -369,7 +369,7 @@ export const THEMEN_IT: Overlay<SeoThema> = {
             { label: 'Pilastro 1: AAPV (cure palliative ambulatoriali generali)', text: 'Medico di famiglia + servizio di assistenza domiciliare con esperienza palliativa. Il caso standard. Funziona quando la sintomatologia è moderata.' },
             { label: 'Pilastro 2: SAPV (cure palliative ambulatoriali specializzate)', text: 'Un\'équipe palliativa di medici e infermieri palliativisti viene a domicilio, è raggiungibile 24/7, si assume il controllo di sintomi complessi. Presupposto: prescrizione da parte dell\'ospedale o dello specialista. I costi li assume la cassa malattia.' },
             { label: 'Pilastro 3: accompagnamento hospice', text: 'Servizi hospice volontari vengono a casa, sostengono i familiari, sono presenti senza essere di natura medica. Gratuito.' },
-            { label: 'Pilastro 4: accompagnamento 1:1 a pagamento privato (ciò che offriamo noi)', text: 'Quando la famiglia non può essere presente in modo continuativo, le veglie volontarie non bastano, serve una presenza aggiuntiva e affidabile — subentriamo noi.' },
+            { label: 'Pilastro 4: accompagnamento 1:1 a pagamento privato (ciò che offriamo noi)', text: 'Quando la famiglia non può essere presente in modo continuativo, l\'accompagnamento volontario non basta, serve una presenza aggiuntiva e affidabile — subentriamo noi.' },
           ],
         },
         {

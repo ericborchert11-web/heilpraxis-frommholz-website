@@ -116,7 +116,7 @@ export const THEMEN: readonly SeoThema[] = [
           heading: 'Was wir besonders empfehlen',
           stronglist: [
             { label: 'Stundenweise statt blockweise nutzen', text: 'Die 1.612 € lassen sich in viele kleine Einheiten splitten — zum Beispiel: 3 Stunden pro Woche an 50 Wochen ergibt 150 Stunden im Jahr.' },
-            { label: 'Auch nach Krankenhaus-Entlassung nutzbar', text: 'Wenn die pflegende Person durch die Klinikentlassung ihres Angehörigen überfordert ist, kann Verhinderungspflege übergangsweise zur Entlastung dienen.' },
+            { label: 'Auch bei plötzlich steigendem Bedarf nutzbar', text: 'Wenn die pflegende Person durch eine plötzlich veränderte Lage überfordert ist, kann Verhinderungspflege übergangsweise zur Entlastung dienen.' },
             { label: 'Mit Kurzzeitpflege kombinierbar', text: 'Bis zu 50 % des nicht verbrauchten Kurzzeitpflege-Anspruchs (bis zu 806 € extra) lassen sich auf die Verhinderungspflege übertragen. Damit wären theoretisch bis zu 2.418 € möglich.' },
           ],
         },
@@ -142,7 +142,7 @@ export const THEMEN: readonly SeoThema[] = [
       faq: [
         { question: 'Wie hoch ist die Verhinderungspflege 2026?', answer: 'Bis zu 1.612 € pro Kalenderjahr. Kombiniert mit ungenutzter Kurzzeitpflege bis zu 2.418 €.' },
         { question: 'Muss die Vertretung professionell sein?', answer: 'Nein. Auch Nachbarn, Freunde oder Sie selbst können als „Vertretung" abgerechnet werden — bei nahen Angehörigen jedoch nur zum Pflegegeld-Satz.' },
-        { question: 'Kann ich Sitzwachen über Verhinderungspflege abrechnen?', answer: 'Ja, das ist sogar eine der häufigsten Anwendungen. Wir stellen Ihnen die Rechnung aus, Sie reichen sie bei der Pflegekasse ein.' },
+        { question: 'Kann ich eine 1:1-Betreuung über Verhinderungspflege abrechnen?', answer: 'Ja, das ist sogar eine der häufigsten Anwendungen. Wir stellen Ihnen die Rechnung aus, Sie reichen sie bei der Pflegekasse ein.' },
         { question: 'Verfällt der Anspruch, wenn ich ihn nicht nutze?', answer: 'Ja, am Ende des Kalenderjahres. Es lohnt sich, ihn schon im Sommer zu planen, statt zu warten.' },
         { question: 'Gilt das auch bei Pflegegrad 1?', answer: 'Nein. Pflegegrad 1 hat keinen Anspruch auf Verhinderungspflege.' },
       ],
@@ -181,7 +181,7 @@ export const THEMEN: readonly SeoThema[] = [
           paragraphs: ['Nicht für alles. Erstattungsfähig sind nur Leistungen von anerkannten Anbietern nach § 45a SGB XI — also nicht jede beliebige Hilfe.'],
           stronglist: [
             { label: 'Typisch genutzt für', text: 'stundenweise Betreuung durch zertifizierte Betreuungsdienste, Tagespflege (oft anteilig kombiniert), Kurzzeitpflege (bis 50 % übertragbar), Haushaltshilfen durch anerkannte Dienste, Angebote zur Unterstützung im Alltag (Demenzbegleiter, Alltagshelfer).' },
-            { label: 'Nicht erstattungsfähig', text: 'private Hilfen ohne Trägerstatus, klassische Pflegekräfte (das läuft über Pflegegeld/Sachleistung), Heim- oder Krankenhauskosten.' },
+            { label: 'Nicht erstattungsfähig', text: 'private Hilfen ohne Trägerstatus, klassische Pflegekräfte (das läuft über Pflegegeld/Sachleistung), Heimkosten und Kosten stationärer Behandlung.' },
           ],
         },
         {
@@ -371,7 +371,7 @@ export const THEMEN: readonly SeoThema[] = [
             { label: 'Säule 1: AAPV (Allgemeine Ambulante Palliativversorgung)', text: 'Hausarzt + ambulanter Pflegedienst mit palliativer Erfahrung. Der Standardfall. Funktioniert, wenn die Symptomatik moderat ist.' },
             { label: 'Säule 2: SAPV (Spezialisierte Ambulante Palliativversorgung)', text: 'Ein Palliativ-Team aus Palliativ-Medizinerinnen und -Pflegekräften kommt ins Haus, ist 24/7 erreichbar, übernimmt komplexe Symptomkontrolle. Voraussetzung: Verordnung durch Klinik oder Facharzt. Kosten übernimmt die Krankenkasse.' },
             { label: 'Säule 3: Hospizliche Begleitung', text: 'Ehrenamtliche Hospizdienste kommen in die Wohnung, unterstützen Angehörige, sind da, ohne medizinisch zu sein. Kostenlos.' },
-            { label: 'Säule 4: Selbstzahler-1:1-Begleitung (das, was wir leisten)', text: 'Wenn die Familie nicht durchgehend da sein kann, ehrenamtliche Sitzwachen nicht ausreichen, eine zusätzliche verlässliche Anwesenheit gebraucht wird — übernehmen wir.' },
+            { label: 'Säule 4: Selbstzahler-1:1-Begleitung (das, was wir leisten)', text: 'Wenn die Familie nicht durchgehend da sein kann, ehrenamtliche Begleitung nicht ausreicht, eine zusätzliche verlässliche Anwesenheit gebraucht wird — übernehmen wir.' },
           ],
         },
         {
@@ -414,9 +414,8 @@ export const THEMEN: readonly SeoThema[] = [
     },
   },
 
-  // === Thema 7: Krankenhaus-Begleitung =========================================
 
-  // === Thema 8: Wohnungsauflösung im Pflegefall ================================
+  // === Thema 7: Wohnungsauflösung im Pflegefall ================================
   {
     slug: 'wohnungsaufloesung-pflegefall',
     title: 'Wohnungsauflösung im Pflegefall',

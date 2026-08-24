@@ -33,7 +33,7 @@ export default function AgbPage() {
       <section>
         <h2 className="font-serif text-2xl text-anthracite font-light">§ 2 Vertragsgegenstand und Leistungsumfang</h2>
         <p className="mt-3">
-          (1) Der Anbieter erbringt Pflege- und Betreuungsleistungen für Privatpersonen (Selbstzahler) in deren häuslicher Umgebung oder an einem vom Auftraggeber benannten Ort (z. B. Krankenhaus, Pflegeheim, Hospiz).
+          (1) Der Anbieter erbringt Pflege- und Betreuungsleistungen für Privatpersonen (Selbstzahler) in deren häuslicher Umgebung oder an einem vom Auftraggeber benannten Ort (z. B. Pflegeheim, Einrichtung des Betreuten Wohnens).
         </p>
         <p className="mt-3">
           (2) Der konkrete Leistungsumfang wird in einer schriftlichen Leistungsvereinbarung zwischen Anbieter und Auftraggeber festgelegt.
@@ -42,7 +42,7 @@ export default function AgbPage() {
           (3) Die Leistungen umfassen je nach Vereinbarung insbesondere:
         </p>
         <ul className="mt-3 list-disc list-outside pl-6 space-y-1">
-          <li>Sitzwachen und 1:1-Betreuung</li>
+          <li>1:1-Betreuung, stundenweise bis rund um die Uhr</li>
           <li>Stundenweise und mehrstündige Alltagsbegleitung</li>
           <li>24-Stunden-Betreuung im Wechselschichtmodell</li>
           <li>Pflegeberatung</li>

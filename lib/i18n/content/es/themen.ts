@@ -137,8 +137,8 @@ export const THEMEN_ES: Overlay<SeoThema> = {
               text: 'Los 1.612 € pueden repartirse en muchas unidades pequeñas; por ejemplo: 3 horas por semana durante 50 semanas suman 150 horas al año.',
             },
             {
-              label: 'Utilizable también tras el alta hospitalaria',
-              text: 'Si la persona cuidadora se ve desbordada por el alta hospitalaria de su familiar, el cuidado de relevo puede servir de descarga de forma transitoria.',
+              label: 'Utilizable también cuando la necesidad aumenta de repente',
+              text: 'Si la persona cuidadora se ve desbordada por un cambio repentino de la situación, el cuidado de relevo puede servir de descarga de forma transitoria.',
             },
             {
               label: 'Combinable con el cuidado de corta duración (Kurzzeitpflege)',
@@ -235,7 +235,7 @@ export const THEMEN_ES: Overlay<SeoThema> = {
             },
             {
               label: 'No reembolsable',
-              text: 'ayudas privadas sin estatus de proveedor reconocido, personal de cuidados clásico (eso se tramita a través de la asignación por dependencia (Pflegegeld) o las prestaciones en especie (Sachleistungen)) y costes de residencia u hospital.',
+              text: 'ayudas privadas sin estatus de proveedor reconocido, personal de cuidados clásico (eso se tramita a través de la asignación por dependencia (Pflegegeld) o las prestaciones en especie (Sachleistungen)) y los costes de una residencia o de un tratamiento hospitalizado.',
             },
           ],
         },
@@ -565,7 +565,7 @@ export const THEMEN_ES: Overlay<SeoThema> = {
             },
             {
               label: 'Pilar 4: acompañamiento 1:1 de pago privado (lo que nosotros prestamos)',
-              text: 'Cuando la familia no puede estar presente de forma continua, cuando las guardias de acompañamiento voluntarias no bastan, cuando se necesita una presencia adicional fiable, lo asumimos nosotros.',
+              text: 'Cuando la familia no puede estar presente de forma continua, cuando el acompañamiento voluntario no basta, cuando se necesita una presencia adicional fiable, lo asumimos nosotros.',
             },
           ],
         },
