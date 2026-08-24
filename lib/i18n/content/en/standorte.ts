@@ -23,9 +23,9 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     geo: { lat: 52.5349, lng: 13.3432 },
     hook: 'Our own address, our own neighbourhood.',
     isHauptstandort: true,
-    metaTitle: 'Care & Bedside Companions Moabit — Your Neighbourhood',
-    metaDescription: 'Nursing care, bedside companions and 24-hour support in Moabit. Our address is Stephanstraße 46 — few providers know this neighbourhood as well.',
-    h1: 'Nursing care and bedside companions in Moabit — from your neighbourhood, for your neighbourhood',
+    metaTitle: 'Care & One-to-One Support Moabit — Your Neighbourhood',
+    metaDescription: 'Nursing care, one-to-one support and 24-hour care in Moabit. Our address is Stephanstraße 46 — few providers know this neighbourhood as well.',
+    h1: 'Nursing care and one-to-one support in Moabit — from your neighbourhood, for your neighbourhood',
     primaryKeyword: 'private nursing care Moabit Berlin',
     detail: {
       intro: [
@@ -37,24 +37,12 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
           heading: 'What we offer in Moabit',
           paragraphs: ['Our full range of services — with the advantage that we are right around the corner:'],
           list: [
-            'Bedside companions (Sitzwachen) — in hospital, at home, in a hospice.',
+            'One-to-one care at home — by the hour or around the clock.',
             '24-hour care with a German-speaking team of carers.',
             'Companionship by the hour for older people.',
             'Care advice — usually in your own home.',
-            'Overnight care and hospice bedside companions.',
+            'Overnight care and company in the final phase of life.',
           ],
-        },
-        {
-          heading: 'Hospitals in and around Moabit',
-          paragraphs: ['We know the main hospitals:'],
-          list: [
-            'Klinikum am Urban (Vivantes) — 15 minutes away.',
-            'Vivantes Klinikum am Friedrichshain — 20 minutes.',
-            'DRK Kliniken Westend — 18 minutes.',
-            'Charité Campus Virchow — 8 minutes.',
-            'Lazarus-Krankenhaus (Wedding) — 10 minutes.',
-          ],
-          trailingParagraphs: ['We have provided bedside companions and accompaniment in all of these hospitals. We know the nursing managers, we know how access is arranged, and we reach the ward without detours.'],
         },
         {
           heading: 'What makes Moabit Moabit',
@@ -63,12 +51,12 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             'Older women in the large pre-war flats around Huttenstraße, Calvinstraße and Bremer Straße who want some help.',
             'Families in the tenement buildings around Stephanstraße and Stromstraße whose parents are visiting.',
             'Residents of sheltered-housing schemes who would like additional private-pay support.',
-            'Tenants whose relatives are in hospital and need someone with them.',
+            'Families who need dependable company for a relative at short notice.',
           ],
         },
       ],
       faq: [
-        { question: 'Can you get to an emergency in Moabit particularly quickly?', answer: 'Yes — we are often with you within 5 to 10 minutes, depending on the time of day and the traffic. For urgent bedside-companion requests from the immediate neighbourhood, we offer the fastest response anywhere in the city.' },
+        { question: 'Can you get to an emergency in Moabit particularly quickly?', answer: 'Yes — we are often with you within 5 to 10 minutes, depending on the time of day and the traffic. For urgent care requests from the immediate neighbourhood, we offer the fastest response anywhere in the city.' },
         { question: 'Which care homes in Moabit do you work in?', answer: 'We come into care homes and sheltered-housing schemes as additional support, when a family wants extra one-to-one hours. We discuss the specific facilities at the first meeting.' },
         { question: 'Do all your staff live in Moabit?', answer: 'No — but many live in the centre of the city. That means short journeys and good local knowledge.' },
       ],
@@ -90,7 +78,7 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     plz: ['10785', '10787', '10557'],
     geo: { lat: 52.514, lng: 13.351 },
     hook: 'Discretion, and a short journey.',
-    metaTitle: 'Care & Bedside Companions Tiergarten — Discreet',
+    metaTitle: 'Care & One-to-One Support Tiergarten — Discreet',
     metaDescription: 'Private-pay home care in Tiergarten. Discreet, a short journey from our base in Moabit. Experienced with embassies and diplomatic households.',
     h1: 'Care in Tiergarten — discreet, quick, close at hand',
     primaryKeyword: 'private nursing care Tiergarten Berlin',
@@ -106,7 +94,7 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             'Embassy staff with family members who need care.',
             'Diplomatic missions arranging private-pay care for visiting dignitaries.',
             'Residents of the better apartment buildings around the Großer Tiergarten, Lützowplatz and Hofjägerallee.',
-            'Patients from the nearby Bundeswehrkrankenhaus who need continued support after discharge.',
+            'People whose care at home has to start afresh at short notice.',
             'Older residents of the sheltered-housing schemes on Klingelhöferstraße and nearby.',
           ],
         },
@@ -118,15 +106,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Short notice', text: 'Diplomatic life is planned late. We are set up to start within 24 hours if we have to.' },
             { label: 'Concierge etiquette', text: 'We know how to announce ourselves in buildings with a concierge or security staff, and how to maintain the impression our clients want to keep there.' },
           ],
-        },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'Bundeswehrkrankenhaus Berlin (Scharnhorststraße) — 7 minutes.',
-            'Charité Campus Mitte — 10 minutes.',
-            'Vivantes Klinikum am Friedrichshain — 15 minutes.',
-          ],
-          trailingParagraphs: ['From Stephanplatz in Moabit via Beethovenstraße to Tiergarten: roughly 8 to 12 minutes, depending on the time of day. We can come more often and stay longer, with no call-out charges.'],
         },
       ],
       faq: [
@@ -150,37 +129,37 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     bezirk: 'Mitte',
     plz: ['10117', '10115', '10119', '10178', '10179'],
     geo: { lat: 52.52, lng: 13.408 },
-    hook: 'Close to the Charité Mitte.',
+    hook: 'Discreet care between the Spreebogen and the Hackescher Markt.',
     metaTitle: 'Home Care Berlin-Mitte — Discreet and Dependable',
-    metaDescription: 'Nursing care, bedside companions and accompaniment in Berlin-Mitte. Hospital-side support at the Charité Mitte and Sankt Hedwig.',
-    h1: 'Care and bedside companions in Berlin-Mitte — close to the hospitals, quick to arrive',
+    metaDescription: 'Nursing care, one-to-one support and accompaniment in Berlin-Mitte. Private care at home, by the hour or around the clock.',
+    h1: 'Care and one-to-one support in Berlin-Mitte — quick to arrive',
     primaryKeyword: 'private nursing care Berlin Mitte',
     detail: {
       intro: [
-        'Berlin-Mitte is government, tourism, housing — and hospitals. Charité Mitte (Luisenstraße/Charitéplatz), Sankt Hedwig (Große Hamburger Straße), Vivantes Friedrichshain (on the Landsberger Allee boundary): some of Berlin’s most important hospitals are in Mitte.',
-        'Many of our enquiries from Mitte come from exactly these buildings: bedside companions for patients, accompaniment during transfers, handovers back home. But Mitte is a residential district too — long-standing tenants between Hackescher Markt and Friedrichstraße, newer residents in the buildings at the Spreebogen.',
+        'Berlin-Mitte is government, tourism — and a residential district. Long-standing tenants between the Hackescher Markt and Friedrichstraße, newer residents in the buildings at the Spreebogen, older people in the quiet side streets around the Oranienburger and the Große Hamburger Straße.',
+        'From our base on Stephanstraße we are in Mitte within minutes. That makes us quick there — including when care has to start at short notice.',
       ],
       sections: [
         {
-          heading: 'What we most often do in Berlin-Mitte',
+          heading: 'What we often do in Berlin-Mitte',
           stronglist: [
-            { label: 'Bedside companions at the Charité Mitte', text: 'One-to-one support after surgery, company for people with dementia during a hospital stay, presence in the final phase of life. We know the wards and we know the routines.' },
-            { label: 'Accompaniment at Sankt Hedwig', text: 'Sankt Hedwig is a Catholic hospital with its own routines. We respect that. Our staff are experienced in working within church-run structures.' },
-            { label: 'Transitions on discharge from hospital', text: 'As discharge approaches, many families need a bridge between the ward and home. We take on the first few days at home, often on a 12- or 24-hour model.' },
+            { label: 'One-to-one care at home', text: 'Undivided attention in your own flat — for dementia, while recovering from an operation, in the final phase of life.' },
+            { label: 'Overnight care in inner-city flats', text: 'In large old flats with long corridors, falling at night is a real risk. We are there when someone gets up.' },
+            { label: 'When care at home is starting afresh', text: 'When the situation changes suddenly, families need a bridge. We take on the first days and weeks at home, often on 12- or 24-hour models.' },
             { label: 'Care advice in Mitte flats', text: 'We come to you and talk things through with the family and the GP.' },
           ],
         },
         {
-          heading: 'Journey time from Moabit',
+          heading: 'Journey times from Moabit',
           paragraphs: [
-            'By car via Invalidenstraße to the Charité Mitte: about 7 minutes. To the residential streets between Friedrichstraße and Alexanderplatz: 10 to 15 minutes.',
+            'By car along Invalidenstraße into Mitte: about 7 minutes. To the residential areas between Friedrichstraße and Alexanderplatz: 10 to 15 minutes.',
           ],
         },
       ],
       faq: [
-        { question: 'Can you provide bedside companions at the Charité Mitte?', answer: 'Yes — regularly. Before the first shift we contact the ward’s nursing manager and, where necessary, obtain written agreement.' },
-        { question: 'How quickly can you get to a hospital?', answer: 'To most hospitals in Mitte, 10 to 15 minutes. For urgent situations we are often available the same day.' },
-        { question: 'Can we book a bedside companion before a planned operation?', answer: 'We strongly recommend it — for scheduled procedures we can put the bedside companion in place for day one after surgery. That reduces the risk of delirium and supports recovery.' },
+        { question: 'How quickly can you be in Mitte?', answer: 'Usually within 10 to 15 minutes. For a first assignment we need two or three days’ notice; in acute situations we try to manage it within 24 hours.' },
+        { question: 'Can we arrange care in advance of a planned procedure?', answer: 'We strongly recommend it. For scheduled procedures we reserve the carer for the days immediately afterwards — exactly the period with the highest risk of confusion and falls.' },
+        { question: 'Do you also work in the new flats on the Spreebogen?', answer: 'Yes. Concierge, underground parking, lifts — that is everyday work for us. We agree access and hours with you in advance and arrive discreetly.' },
       ],
       cta: { text: 'Request a first conversation', href: '/#kontakt' },
       relatedLinks: [
@@ -198,7 +177,7 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     geo: { lat: 52.518, lng: 13.343 },
     hook: 'Quiet presence in the architects’ quarter.',
     metaTitle: 'Home Care Hansaviertel — In the Green Centre',
-    metaDescription: 'Nursing care, bedside companions and accompaniment in the Hansaviertel. Quiet presence for older residents of its landmark apartment buildings.',
+    metaDescription: 'Nursing care, one-to-one support and accompaniment in the Hansaviertel. Quiet presence for older residents of its landmark apartment buildings.',
     h1: 'Care in the Hansaviertel — in the quiet quarter between Tiergarten and the Spree',
     primaryKeyword: 'private home care Hansaviertel Berlin',
     detail: {
@@ -223,14 +202,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Weekend cover', text: 'When there is a cleaner during the week and volunteer visitors, but the weekend is empty — we step in.' },
             { label: 'Overnight care where there is anxiety', text: 'In small flats where getting up to the bathroom at night brings a fear of falling.' },
             { label: 'Accompaniment to cultural events', text: 'Some clients still want to go to a concert, to the theatre, to an exhibition — with an experienced companion, that remains possible.' },
-          ],
-        },
-        {
-          heading: 'Hospitals',
-          list: [
-            'Charité Campus Virchow Klinikum (Forckenbeckplatz) — 5 minutes.',
-            'Bundeswehrkrankenhaus Berlin — 5 minutes.',
-            'DRK Kliniken Westend — 10 minutes.',
           ],
         },
       ],
@@ -271,15 +242,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Discerning, but never intrusive', text: 'Our clients in Charlottenburg are often cultivated, academically minded, with a clear sense of style and discretion. We assign staff whose manner and language suit these homes.' },
             { label: 'Continuity', text: 'Charlottenburg is where our long-standing clients are. Many families work with us for years, sometimes across generations. The regular team knows the family, knows their preferences, knows the flat.' },
             { label: 'A private matter', text: 'We arrive without visible branding, usually in our own cars, and leave no conspicuous trace in the stairwell.' },
-          ],
-        },
-        {
-          heading: 'Hospitals in Charlottenburg',
-          list: [
-            'DRK Kliniken Berlin Westend — one of the hospitals we work in most.',
-            'Schlosspark-Klinik — an exclusive private hospital.',
-            'Vivantes Klinikum Spandau — 15 minutes.',
-            'St. Gertrauden Krankenhaus — 8 minutes.',
           ],
         },
         {
@@ -328,15 +290,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Discretion towards the other residents', text: 'The community in these buildings is often close-knit. We arrive unobtrusively, avoid drawing attention and protect our clients’ privacy.' },
           ],
         },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'St. Gertrauden Krankenhaus — 5 minutes from many Wilmersdorf addresses.',
-            'Schlosspark-Klinik — 10 minutes.',
-            'DRK Kliniken Westend — 12 minutes.',
-          ],
-          trailingParagraphs: ['From Moabit via Berliner Straße to central Wilmersdorf, about 12 minutes. To the southern parts of Wilmersdorf (Hohenzollerndamm, Wittelsbacher Straße), about 18 to 22 minutes.'],
-        },
       ],
       faq: [
         { question: 'My father is 92 and refuses a care service because he does not want strangers in the flat. What can we do?', answer: 'A common situation. We take it slowly — often with a first visit where no care happens at all, only a conversation. Our staff are experienced at building trust. The resistance usually dissolves within a few visits.' },
@@ -377,17 +330,8 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Large properties', text: 'Round-the-clock care in a 200-square-metre villa works differently from care in a 60-square-metre flat. Several floors, long distances, often large gardens — all of that has to be thought through in advance.' },
             { label: 'Lives with a great deal in them', text: 'Someone growing old in a Westend house usually has a long life behind them, held in the furniture, the pictures, the books. Our staff are practised at working with such biographies.' },
             { label: 'Household staff and carers together', text: 'Many Westend families have employed housekeepers and gardeners for decades. When we join, we have to fit into those arrangements.' },
-            { label: 'Dying well', text: 'Someone who has grown old in a Westend house often wants to die there too. We accompany people through that in these houses — with everything it takes, from hospice care to the last day.' },
+            { label: 'Dying well', text: 'Someone who has grown old in a Westend house often wants to die there too. We accompany people through that in these houses — with everything it takes, from palliative care to the last day.' },
           ],
-        },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'DRK Kliniken Berlin Westend — 5 minutes from many Westend addresses.',
-            'Schlosspark-Klinik (Charlottenburg) — 10 minutes.',
-            'Vivantes Klinikum Spandau — 12 minutes.',
-          ],
-          trailingParagraphs: ['Through Charlottenburg to the Westend — about 18 to 22 minutes, depending on the time of day. We plan the journey in advance so that we arrive on time.'],
         },
       ],
       faq: [
@@ -432,15 +376,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Willingness to put things in writing', text: 'Non-disclosure agreements, detailed data-protection arrangements — in Grunewald these are more often standard than elsewhere.' },
           ],
         },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'DRK Kliniken Berlin Westend — 10 minutes.',
-            'Schlosspark-Klinik — 12 minutes (frequently used for inpatient stays from Grunewald).',
-            'Sankt Gertrauden — 15 minutes.',
-          ],
-          trailingParagraphs: ['From our base in Moabit to Grunewald, about 22 to 30 minutes depending on traffic and destination.'],
-        },
       ],
       faq: [
         { question: 'Can you guarantee absolute confidentiality?', answer: 'A carer’s duty of confidentiality is set out in law — any breach is a criminal offence. For particularly sensitive clients we add written confidentiality agreements with contractual penalties. Even so: nobody can promise 100 per cent, because people are people. We do everything that can be done.' },
@@ -468,7 +403,7 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     geo: { lat: 52.432, lng: 13.255 },
     hook: 'Quiet family streets, houses, gardens.',
     metaTitle: 'Home Care Zehlendorf — Family Care in the Green',
-    metaDescription: 'Home care and bedside companions in Zehlendorf. An experienced team that knows the quiet streets from Mexikoplatz to the Krumme Lanke.',
+    metaDescription: 'Home care and one-to-one support in Zehlendorf. An experienced team that knows the quiet streets from Mexikoplatz to the Krumme Lanke.',
     h1: 'Home care in Zehlendorf — family care in green surroundings',
     primaryKeyword: 'private home care Zehlendorf Berlin',
     detail: {
@@ -492,14 +427,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Accepting the longer journey', text: 'From Moabit to Zehlendorf is 25 to 35 minutes. We accept that, because continuity matters more to our clients than saving on call-out charges.' },
             { label: 'Getting there by car', text: 'Many Zehlendorf addresses are only really reachable by car. Our staff have a licence and a car.' },
             { label: 'Time in the garden', text: 'Many of our Zehlendorf clients spend their days in the garden. Being with them there is part of the work — from a walk on the terrace to gardening together, for as long as their strength allows.' },
-          ],
-        },
-        {
-          heading: 'Hospitals in the district',
-          list: [
-            'Helios-Klinikum Emil von Behring (southern Zehlendorf) — local and well regarded.',
-            'Vivantes Klinikum Steglitz — 10 minutes.',
-            'Charité Campus Benjamin Franklin — 15 minutes.',
           ],
         },
       ],
@@ -555,15 +482,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Discretion within the university community', text: 'Talk too freely in Dahlem about a colleague’s private life and it will get back to her. Our team understands that.' },
           ],
         },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'Charité Campus Benjamin Franklin (Steglitz) — 12 minutes.',
-            'Helios-Klinikum Emil von Behring — 15 minutes.',
-            'Schlosspark-Klinik — 20 minutes.',
-          ],
-          trailingParagraphs: ['Roughly 25 to 30 minutes from Moabit to most Dahlem addresses.'],
-        },
       ],
       faq: [
         { question: 'Do your staff speak English?', answer: 'Several members of the team speak fluent business English. If you have a specific requirement, we settle it before any contract begins.' },
@@ -615,15 +533,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Care advice with a sense of proportion', text: 'Families often want to know how to get the most out of a care level (Pflegegrad), what respite care (Verhinderungspflege) can do, and how the coming years can be planned for.' },
           ],
         },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'DRK Kliniken Berlin Westend — 10 minutes.',
-            'Sankt Gertrauden (Wilmersdorf) — 8 minutes.',
-            'Schlosspark-Klinik — 12 minutes.',
-          ],
-          trailingParagraphs: ['From Moabit to Schmargendorf, about 22 to 28 minutes.'],
-        },
       ],
       faq: [
         { question: 'Can you come for just three or four hours in the afternoon?', answer: 'Yes — in fact that is often exactly what people here want. An afternoon from two until six for a walk, coffee and conversation is a typical arrangement.' },
@@ -650,7 +559,7 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     hook: 'The villa colony by the lake.',
     hideInFooter: true,
     metaTitle: 'Home Care Nikolassee — Discreet in the Villa Colony',
-    metaDescription: 'Private home care in Nikolassee: care, bedside companions and 24-hour support for the villa colony by the Schlachtensee and Nikolassee.',
+    metaDescription: 'Private home care in Nikolassee: care, one-to-one support and 24-hour care for the villa colony by the Schlachtensee and Nikolassee.',
     h1: 'Home care in Nikolassee — by the lake, in the villa colony',
     primaryKeyword: 'private nursing care Nikolassee Berlin',
     detail: {
@@ -675,15 +584,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'The pull of the lakes', text: 'The daily walk to the Schlachtensee or the Nikolassee is part of life for many people here. We go with them for as long as it is possible — movement in familiar places keeps people steady longer than any programme.' },
             { label: 'Discretion within the colony', text: 'In a small villa colony, everyone knows everyone. Our team keeps a low profile, arrives without a branded car, and respects that neighbourhood here also means visibility.' },
           ],
-        },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'Helios Klinikum Emil von Behring (Zehlendorf) — about 4 km.',
-            'Krankenhaus Waldfriede — about 3 km.',
-            'Immanuel Krankenhaus Wannsee — 3 to 4 km.',
-          ],
-          trailingParagraphs: ['From our base in Moabit it is roughly 20 to 30 minutes via the AVUS and the A115, depending on traffic.'],
         },
       ],
       faq: [
@@ -711,7 +611,7 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     hook: 'By the water, in peace.',
     hideInFooter: true,
     metaTitle: 'Home Care Wannsee — Care by the Water, Discreet',
-    metaDescription: 'Private home care in Wannsee: care, bedside companions and 24-hour support in the villa and waterside properties by the Großer Wannsee.',
+    metaDescription: 'Private home care in Wannsee: care, one-to-one support and 24-hour care in the villa and waterside properties by the Großer Wannsee.',
     h1: 'Home care in Wannsee — staying at home by the water',
     primaryKeyword: 'private nursing care Wannsee Berlin',
     detail: {
@@ -733,23 +633,13 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
           heading: 'What defines care in Wannsee',
           stronglist: [
             { label: 'Secluded settings', text: 'Waterside properties are often at the end of long drives, and some paths lead through the garden down to the shore. Our team plans for those distances and brings what the day requires.' },
-            { label: 'A hospital in the neighbourhood', text: 'The Immanuel Krankenhaus is right here in the Ortsteil. For transitions between hospital and home — after rehabilitation or an operation — that is a real advantage, and we make use of it.' },
             { label: 'Round-the-clock arrangements', text: 'Because of the location and the often higher level of need, continuous care is more common here than elsewhere. We work with small settled teams, so that someone familiar is there at night as well.' },
           ],
         },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'Immanuel Krankenhaus Wannsee (Königstr. 63) — in the Ortsteil itself.',
-            'Helios Klinikum Emil von Behring — about 6 km.',
-            'Klinikum Ernst von Bergmann Potsdam — about 8 km.',
-          ],
-          trailingParagraphs: ['From Moabit to Wannsee, allow roughly 25 to 35 minutes via the A115 and the AVUS, depending on traffic.'],
-        },
       ],
       faq: [
+        { question: 'How quickly can you be in Wannsee?', answer: 'For a first assignment we normally need two or three days’ notice. In acute situations we try to manage it within 24 hours — we plan the journey in advance so that we arrive on time.' },
         { question: 'Our house is right on the water with a long drive — will you still come?', answer: 'Yes. We regularly look after addresses in secluded waterside settings. All we need is to know the access and the parking in advance, so that every shift starts smoothly.' },
-        { question: 'My husband is coming home from the Immanuel Krankenhaus soon. Can you take over his care?', answer: 'Gladly. Because the Immanuel is here in the Ortsteil, the move from hospital to home is easy to coordinate. We set up care at home so that it follows on seamlessly from discharge.' },
         { question: 'Is the journey from Moabit even worth it for you?', answer: 'Yes — we cover Wannsee deliberately. With a journey time of 25 to 35 minutes we plan shifts in advance and in sensible blocks; brief 20-minute visits are less practical here than longer, dependable ones.' },
       ],
       cta: { text: 'Request a first conversation', href: '/#kontakt' },
@@ -773,7 +663,7 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     hook: 'The garden suburb in the north.',
     hideInFooter: true,
     metaTitle: 'Home Care Frohnau — The Northern Garden Suburb',
-    metaDescription: 'Private home care in Frohnau: care, bedside companions and 24-hour support in the garden suburb in northern Berlin. Dependable, despite the distance.',
+    metaDescription: 'Private home care in Frohnau: care, one-to-one support and 24-hour care in the garden suburb in northern Berlin. Dependable, despite the distance.',
     h1: 'Home care in Frohnau — in the garden suburb in the north',
     primaryKeyword: 'private home care Frohnau Berlin',
     detail: {
@@ -798,13 +688,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Planning rather than call-outs', text: 'Because of the location out to the north, we work with fixed rotas and small teams. That keeps the days calm and makes sure someone familiar is always there.' },
             { label: 'Home on their own terms', text: 'Our clients in Frohnau are mostly independent people with clear ideas of their own. We support them without taking over, and keep their familiar routines going for as long as possible.' },
           ],
-        },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'Vivantes Humboldt-Klinikum (Am Nordgraben, Reinickendorf) — 5 to 6 km.',
-          ],
-          trailingParagraphs: ['From Moabit to Frohnau is roughly 25 to 35 minutes via the A111, depending on traffic. Frohnau sits at our northern edge — depending on the scale of the arrangement, a travel charge may apply for the longer journey, which we discuss openly in advance.'],
         },
       ],
       faq: [
@@ -831,7 +714,7 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     hook: 'Right on the city boundary.',
     hideInFooter: true,
     metaTitle: 'Home Care Kleinmachnow — Just Over the Boundary',
-    metaDescription: 'Private home care in Kleinmachnow: care, bedside companions and 24-hour support in the municipality on Berlin’s edge. We cross the boundary.',
+    metaDescription: 'Private home care in Kleinmachnow: care, one-to-one support and 24-hour care in the municipality on Berlin’s edge. We cross the boundary.',
     h1: 'Home care in Kleinmachnow — just over the boundary in Brandenburg',
     primaryKeyword: 'private nursing care Kleinmachnow',
     detail: {
@@ -857,19 +740,10 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
             { label: 'Clarity about the journey', text: 'Because we cross the city boundary, we plan shifts ahead and in sensible blocks. That keeps care dependable without the travelling time eating into the visit.' },
           ],
         },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'Helios Klinikum Emil von Behring (Zehlendorf) — 5 to 6 km, the nearest large acute hospital.',
-            'Ev. Krankenhaus Ludwigsfelde-Teltow — 6 to 8 km.',
-            'Klinikum Ernst von Bergmann Potsdam — about 12 km.',
-          ],
-          trailingParagraphs: ['From Moabit to Kleinmachnow is roughly 25 to 40 minutes via the A115, depending on traffic. Because we are crossing the Berlin city boundary, a travel charge may apply depending on the scale of the arrangement — we settle that in advance.'],
-        },
       ],
       faq: [
+        { question: 'Do you really cross the city boundary?', answer: 'Yes. Kleinmachnow is part of our regular area. We build the journey into our planning, so the time agreed is the time we spend with you.' },
         { question: 'Kleinmachnow is in Brandenburg — do you actually work there?', answer: 'Yes. We cross the city boundary to Kleinmachnow regularly. Because the municipality borders directly on Zehlendorf, it is easy to reach from the south-western areas we cover.' },
-        { question: 'Which hospital is nearest in an emergency?', answer: 'For acute care the nearest large hospital is usually the Helios Klinikum Emil von Behring in Zehlendorf, only 5 to 6 km away. For particular specialisms, Potsdam or Ludwigsfelde-Teltow also come into it.' },
         { question: 'Does crossing the state boundary cost extra?', answer: 'Depending on the scale of the arrangement, a travel charge may apply. We discuss it openly at the first meeting, before you decide — with nothing hidden.' },
       ],
       cta: { text: 'Request a first conversation', href: '/#kontakt' },
@@ -891,7 +765,7 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
     geo: { lat: 52.399, lng: 13.066 },
     hook: 'The state capital among the lakes.',
     metaTitle: 'Home Care Potsdam — Private Care in the Capital',
-    metaDescription: 'Private home care in Potsdam: care, bedside companions and 24-hour support in Babelsberg, the Berliner Vorstadt and the lakeside streets.',
+    metaDescription: 'Private home care in Potsdam: care, one-to-one support and 24-hour care in Babelsberg, the Berliner Vorstadt and the lakeside streets.',
     h1: 'Home care in Potsdam — in the state capital among the lakes',
     primaryKeyword: 'private nursing care Potsdam',
     hideInFooter: true,
@@ -914,24 +788,14 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
           heading: 'What defines care in Potsdam',
           stronglist: [
             { label: 'Large, quiet properties', text: 'The typical address in Babelsberg or the Berliner Vorstadt is a generous house with a garden, often near the water or a park. We fit the care to that setting rather than forcing it into a standard pattern.' },
-            { label: 'The city’s own hospitals', text: 'Potsdam has a large hospital of its own in the Klinikum Ernst von Bergmann. For transitions between hospital and home — after an operation or rehabilitation — we make use of the short distances within the city.' },
             { label: 'Planning rather than reacting', text: 'Because of the distance from Moabit, we work in Potsdam with fixed rotas and small teams. That makes care dependable and ensures that someone familiar is always there.' },
           ],
         },
-        {
-          heading: 'Hospitals and journey times',
-          list: [
-            'Klinikum Ernst von Bergmann (Charlottenstr. 72) — the city’s largest hospital, around 1,100 beds.',
-            'Oberlinklinik Babelsberg — specialising in orthopaedics.',
-            'St. Josefs-Krankenhaus Potsdam-Sanssouci.',
-          ],
-          trailingParagraphs: ['From Moabit to Potsdam, allow roughly 35 to 50 minutes via the A115 and the AVUS, depending on traffic. For this longer journey a travel charge may apply depending on the scale of the arrangement, which we discuss openly with you beforehand.'],
-        },
       ],
       faq: [
+        { question: 'Do you come as far as Potsdam?', answer: 'Yes, Potsdam is part of our area — Babelsberg, the Berliner Vorstadt and the lakeside streets as much as the city centre. We plan for the longer journey; it does not come out of your care time.' },
         { question: 'Potsdam is a fair distance from Berlin — do you really work there?', answer: 'Yes, though honestly it is at the edge of our area. From Moabit it is 35 to 50 minutes. That is why we plan Potsdam with longer, fixed shifts rather than short visits — so that care is dependable and the travelling time is well spent.' },
         { question: 'Is there a travel charge for Potsdam?', answer: 'Depending on the scale of the arrangement, yes. We give you the full terms at the first meeting, before you commit to anything. There are no hidden extras with us.' },
-        { question: 'Which hospital here matters most?', answer: 'The Klinikum Ernst von Bergmann on Charlottenstraße is the city’s largest, with around 1,100 beds. For orthopaedics the Oberlinklinik in Babelsberg is the place to go, along with the St. Josefs-Krankenhaus in Sanssouci.' },
       ],
       cta: { text: 'Request a first conversation', href: '/#kontakt' },
       relatedLinks: [
