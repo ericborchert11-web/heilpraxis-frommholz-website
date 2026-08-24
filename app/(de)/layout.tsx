@@ -6,7 +6,7 @@ import { SITE, pageMeta } from '@/lib/site-config';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `Pflege, Sitzwachen & Begleitung Berlin – ${SITE.name}`,
+    default: `Pflege, 1:1-Betreuung & Begleitung Berlin – ${SITE.name}`,
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,

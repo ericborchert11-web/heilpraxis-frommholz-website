@@ -38,7 +38,7 @@ export function StandortDetailPage({ lang, slug }: { lang: Locale; slug: string 
       </h1>
       <SeoDetailContent detail={s.detail} lang={lang} />
       <ServiceJsonLd
-        serviceName={`Pflege & Sitzwachen in ${s.name}`}
+        serviceName={`Pflege & 1:1-Betreuung in ${s.name}`}
         serviceDescription={s.metaDescription}
         areaServed={[s.name]}
       />
