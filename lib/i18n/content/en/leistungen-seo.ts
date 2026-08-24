@@ -120,11 +120,11 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Co-occurring psychiatric illness and addiction',
-              text: 'A young adult with severe psychotic episodes alongside cannabis and alcohol misuse. Inpatient addiction treatment founders on the psychiatric illness, psychiatric admissions founder on the substance use. We provide support at home — with a clear framework, regular contact and a settled key worker.',
+              text: 'A young adult with severe psychotic episodes alongside cannabis and alcohol misuse. Addiction treatment founders on the psychiatric illness, psychiatric treatment founders on the substance use. We provide support at home — with a clear framework, regular contact and a settled key worker.',
             },
             {
               label: 'Acute risk of self-harm at home',
-              text: 'A woman in her mid-50s with severe depression, discharged from hospital after several suicide attempts. Her family cannot be there around the clock, and she does not want another admission. We provide 24-hour care on a rotating shift model — until outpatient therapy takes hold.',
+              text: 'A woman in her mid-50s with severe depression, back at home after several suicide attempts. Her family cannot be there around the clock, and she does not want to be treated away from home again. We provide 24-hour care on a rotating shift model — until outpatient therapy takes hold.',
             },
             {
               label: 'Supported shared housing breaks down',
@@ -153,7 +153,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
             },
             {
               label: 'Connected to the wider support system',
-              text: 'We work closely with hospitals, community psychiatrists, court-appointed guardians and social psychiatric services. We are not a substitute for a professional treatment team — we are its extended arm in everyday life at home.',
+              text: 'We work closely with the treating doctors, community psychiatrists, court-appointed guardians and social psychiatric services. We are not a substitute for a professional treatment team — we are its extended arm in everyday life at home.',
             },
           ],
         },
@@ -175,11 +175,11 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Compulsory measures',
-              text: 'are not our remit — where someone poses an acute danger to others and will not accept care voluntarily, that belongs in a hospital with a secure ward.',
+              text: 'are not our remit — where someone poses an acute danger to others and will not accept care voluntarily, that belongs in a facility with a secure unit.',
             },
             {
               label: 'Detoxification',
-              text: 'is not something we do — that belongs in a qualified addiction clinic.',
+              text: 'is not something we do — that belongs in qualified withdrawal treatment.',
             },
             {
               label: 'Extended acute psychotherapy',
@@ -202,7 +202,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
         {
           question: 'How quickly can you take over?',
           answer:
-            'For acute handovers from hospital, usually within three to seven days, depending on the complexity of the setting. Faster handover is possible in emergencies.',
+            'For acute handovers, usually within three to seven days, depending on the complexity of the setting. Faster handover is possible in emergencies.',
         },
         {
           question: 'Roughly what does 24-hour one-to-one care of this kind cost per month?',
@@ -455,7 +455,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
         {
           question: 'Can we start at short notice?',
           answer:
-            'For acute handovers (discharge from hospital, for example) we need five to ten days. With a longer planning horizon we can be more individual in our approach.',
+            'Where care at home has to start at short notice, we need five to ten days. With a longer planning horizon we can be more individual in our approach.',
         },
         {
           question: 'What happens if our family member dies?',
@@ -523,7 +523,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
             },
             {
               label: 'Managing transitions',
-              text: 'When discharge from hospital draws closer, when day care or a home care service is being changed, when a care home place has to be found — we help you take the right steps in the right order.',
+              text: 'When care at home is starting afresh, when day care or a home care service is being changed, when a care home place has to be found — we help you take the right steps in the right order.',
             },
             {
               label: 'Powers of attorney and advance planning',
@@ -561,7 +561,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
           list: [
             'Before the first assessment appointment — the preparation often decides a difference of one or two care levels.',
             'When a care level has been refused or set too low — the deadline for an objection has to be met (four weeks).',
-            'On discharge from hospital — the first weeks decide how stable the arrangements will be.',
+            'When care at home is starting afresh — the first weeks decide how stable the arrangements will be.',
             'When care is suddenly needed (a stroke, a fall) — applying quickly secures benefits backdated to the date of application.',
             'When there is family conflict over the care of a parent.',
           ],
@@ -632,7 +632,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
     short: 'A waking presence when the night grows long.',
     metaTitle: 'Overnight Care Berlin – Safe Company Through the Night',
     metaDescription:
-      'Overnight care in Berlin for hospital, hospice and at home. Experienced team, available at once. Also for dementia, falls risk and the dying phase.',
+      'Overnight care in Berlin, in your own home. Experienced team, available at short notice. For dementia, falls risk and the final phase of life.',
     h1: 'Overnight care in Berlin — safe company through the night',
     primaryKeyword: 'overnight care Berlin',
     secondaryKeywords: [
@@ -662,8 +662,8 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
               text: 'Some people die on a particular night. No one can predict it, but everyone can prepare to be there. Overnight care takes over when the family has to sleep in between.',
             },
             {
-              label: 'After discharge from hospital',
-              text: 'The first nights at home after a hospital stay are often the most critical. Overnight care bridges the gap until stability returns.',
+              label: 'While recovering from an operation',
+              text: 'The first nights after a procedure are often the most critical — unsteadiness on getting up, confusion, pain. Overnight care bridges the gap until stability returns.',
             },
             {
               label: 'In acute psychological distress',

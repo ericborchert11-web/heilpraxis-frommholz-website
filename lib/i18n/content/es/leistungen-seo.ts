@@ -120,11 +120,11 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Enfermedad psiquiátrica y adicción concurrentes',
-              text: 'Un adulto joven con episodios psicóticos graves y, a la vez, abuso de cannabis y alcohol. Las terapias de deshabituación hospitalarias fracasan por la enfermedad psiquiátrica; los ingresos psiquiátricos, por el consumo. Nosotros lo acompañamos en su domicilio, con un marco claro, contactos regulares y una persona de referencia fija.',
+              text: 'Un adulto joven con episodios psicóticos graves y, a la vez, abuso de cannabis y alcohol. Las terapias de deshabituación fracasan por la enfermedad psiquiátrica; el tratamiento psiquiátrico, por el consumo. Nosotros lo acompañamos en su domicilio, con un marco claro, contactos regulares y una persona de referencia fija.',
             },
             {
               label: 'Riesgo agudo de autolesión en el entorno doméstico',
-              text: 'Una mujer de unos cincuenta y cinco años, con depresión grave, dada de alta del hospital tras varios intentos de suicidio. La familia no puede estar presente las veinticuatro horas y ella no quiere otro ingreso. Establecemos una atención de veinticuatro horas en modelo de turnos rotativos, hasta que la terapia ambulatoria surte efecto.',
+              text: 'Una mujer de unos cincuenta y cinco años, con depresión grave, de vuelta en casa tras varios intentos de suicidio. La familia no puede estar presente las veinticuatro horas y ella no quiere volver a tratarse fuera de casa. Establecemos una atención de veinticuatro horas en modelo de turnos rotativos, hasta que la terapia ambulatoria surte efecto.',
             },
             {
               label: 'La vivienda compartida asistida fracasa',
@@ -153,7 +153,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
             },
             {
               label: 'Conexión con la red de ayuda',
-              text: 'Trabajamos en estrecha colaboración con hospitales, psiquiatras de consulta, tutores legales y servicios sociopsiquiátricos. No somos un sustituto de un equipo de tratamiento profesional: somos su brazo prolongado en la vida cotidiana en casa.',
+              text: 'Trabajamos en estrecha colaboración con los médicos responsables, psiquiatras de consulta, tutores legales y servicios sociopsiquiátricos. No somos un sustituto de un equipo de tratamiento profesional: somos su brazo prolongado en la vida cotidiana en casa.',
             },
           ],
         },
@@ -175,11 +175,11 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Medidas coercitivas',
-              text: 'no forman parte de nuestro cometido: cuando alguien supone un peligro agudo para terceros y no acepta la atención de forma voluntaria, eso corresponde a un hospital con unidad cerrada.',
+              text: 'no forman parte de nuestro cometido: cuando alguien supone un peligro agudo para terceros y no acepta la atención de forma voluntaria, eso corresponde a un centro con unidad cerrada.',
             },
             {
               label: 'Desintoxicación',
-              text: 'no la realizamos: eso corresponde a clínicas de adicciones cualificadas.',
+              text: 'no la realizamos: eso corresponde a un tratamiento de deshabituación cualificado.',
             },
             {
               label: 'Psicoterapia aguda prolongada',
@@ -202,7 +202,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
         {
           question: '¿Con qué rapidez pueden asumir el caso?',
           answer:
-            'En traspasos agudos desde el hospital, por regla general en un plazo de tres a siete días, según la complejidad del entorno. Un traspaso más rápido es posible en situaciones de urgencia.',
+            'En traspasos agudos, por regla general en un plazo de tres a siete días, según la complejidad del entorno. Un traspaso más rápido es posible en situaciones de urgencia.',
         },
         {
           question: '¿Cuánto cuesta aproximadamente al mes una atención 1:1 de veinticuatro horas de este tipo?',
@@ -455,7 +455,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
         {
           question: '¿Podemos empezar con poca antelación?',
           answer:
-            'En traspasos agudos (por ejemplo, un alta hospitalaria) necesitamos de cinco a diez días. Con un horizonte de planificación más amplio podemos ajustarnos de forma más individual.',
+            'Cuando la atención en casa debe comenzar a corto plazo, necesitamos de cinco a diez días. Con un horizonte de planificación más amplio podemos ajustarnos de forma más individual.',
         },
         {
           question: '¿Qué ocurre si nuestro familiar fallece?',
@@ -523,7 +523,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
             },
             {
               label: 'Gestionar las transiciones',
-              text: 'Cuando se acerca el alta hospitalaria, cuando se cambia de centro de día o de servicio a domicilio, cuando hay que buscar una plaza en residencia, le ayudamos a dar los pasos adecuados en el orden adecuado.',
+              text: 'Cuando la atención en casa comienza de nuevo, cuando se cambia de centro de día o de servicio a domicilio, cuando hay que buscar una plaza en residencia, le ayudamos a dar los pasos adecuados en el orden adecuado.',
             },
             {
               label: 'Poderes y previsión',
@@ -561,7 +561,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
           list: [
             'Antes de la primera cita del peritaje: la preparación decide a menudo una diferencia de uno o dos grados de dependencia.',
             'Con un grado de dependencia denegado o demasiado bajo: aquí hay que respetar el plazo de recurso (cuatro semanas).',
-            'En el alta hospitalaria: las primeras semanas son decisivas para la estabilidad de la atención.',
+            'Cuando la atención en casa comienza de nuevo: las primeras semanas son decisivas para su estabilidad.',
             'Ante una necesidad de cuidados repentina (ictus, caída): una solicitud rápida asegura prestaciones con efecto retroactivo desde la fecha de solicitud.',
             'En conflictos familiares sobre el cuidado de los padres.',
           ],
@@ -632,7 +632,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
     short: 'Una presencia despierta cuando la noche se hace larga.',
     metaTitle: 'Acompañamiento nocturno Berlín – noches seguras',
     metaDescription:
-      'Acompañamiento nocturno en Berlín: hospital, paliativos, domicilio. Equipo experimentado, disponible de inmediato. Demencia, riesgo de caídas, final de la vida.',
+      'Acompañamiento nocturno en Berlín, en el propio domicilio. Equipo experimentado, disponible a corto plazo. Demencia, riesgo de caídas, final de la vida.',
     h1: 'Acompañamiento nocturno en Berlín — a salvo a lo largo de la noche',
     primaryKeyword: 'acompañamiento nocturno Berlín',
     secondaryKeywords: [
@@ -662,8 +662,8 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
               text: 'Algunas personas mueren en una noche determinada. Nadie puede predecirlo, pero todos pueden prepararse para estar presentes. Un acompañamiento nocturno toma el relevo cuando la familia necesita dormir entretanto.',
             },
             {
-              label: 'Tras el alta hospitalaria',
-              text: 'Las primeras noches en casa tras un ingreso hospitalario son a menudo las más críticas. Un acompañamiento nocturno hace de puente hasta que regresa la estabilidad.',
+              label: 'En la convalecencia tras una operación',
+              text: 'Las primeras noches tras una intervención son a menudo las más críticas: inseguridad al levantarse, confusión, dolor. Un acompañamiento nocturno hace de puente hasta que regresa la estabilidad.',
             },
             {
               label: 'En un momento de carga psíquica aguda',

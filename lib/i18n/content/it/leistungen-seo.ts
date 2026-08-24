@@ -120,11 +120,11 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Comorbilità psichiatrica e dipendenza',
-              text: 'Un giovane adulto con gravi episodi psicotici e, insieme, abuso di cannabis e alcol. Le terapie residenziali per la dipendenza falliscono a causa della malattia psichiatrica, i ricoveri psichiatrici a causa del consumo. Noi accompagniamo a casa — con un quadro chiaro, contatti regolari, una figura di riferimento fissa.',
+              text: 'Un giovane adulto con gravi episodi psicotici e, insieme, abuso di cannabis e alcol. Le terapie per la dipendenza falliscono a causa della malattia psichiatrica, il trattamento psichiatrico a causa del consumo. Noi accompagniamo a casa — con un quadro chiaro, contatti regolari, una figura di riferimento fissa.',
             },
             {
               label: 'Acuto pericolo per sé nell\'ambiente domestico',
-              text: 'Una donna di poco più di 50 anni, grave depressione, dimessa dalla clinica dopo diversi tentativi di suicidio. I familiari non possono essere presenti 24 ore su 24, e lei non vuole un nuovo ricovero. Predisponiamo un\'assistenza di 24 ore su turni alternati — finché la terapia ambulatoriale non fa effetto.',
+              text: 'Una donna di poco più di 50 anni, grave depressione, di nuovo a casa dopo diversi tentativi di suicidio. I familiari non possono essere presenti 24 ore su 24, e lei non vuole essere curata di nuovo fuori casa. Predisponiamo un\'assistenza di 24 ore su turni alternati — finché la terapia ambulatoriale non fa effetto.',
             },
             {
               label: 'Fallimento della vita in comunità assistita',
@@ -153,7 +153,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
             },
             {
               label: 'Collegamento con la rete dei servizi di aiuto',
-              text: 'Collaboriamo strettamente con cliniche, psichiatri del territorio, amministratori di sostegno, servizi socio-psichiatrici. Non siamo un sostituto di un\'équipe terapeutica professionale — ne siamo il braccio esteso nella quotidianità domestica.',
+              text: 'Collaboriamo strettamente con i medici curanti, psichiatri del territorio, amministratori di sostegno, servizi socio-psichiatrici. Non siamo un sostituto di un\'équipe terapeutica professionale — ne siamo il braccio esteso nella quotidianità domestica.',
             },
           ],
         },
@@ -175,11 +175,11 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Misure coercitive',
-              text: 'non rientrano nel nostro incarico — se qualcuno rappresenta un pericolo acuto per gli altri e non accetta volontariamente l\'assistenza, ciò appartiene a una clinica con reparto chiuso.',
+              text: 'non rientrano nel nostro incarico — se qualcuno rappresenta un pericolo acuto per gli altri e non accetta volontariamente l\'assistenza, ciò appartiene a una struttura con reparto chiuso.',
             },
             {
               label: 'Disintossicazione',
-              text: 'non la facciamo — appartiene a cliniche specializzate nelle dipendenze.',
+              text: 'non la facciamo — appartiene a un trattamento specializzato per le dipendenze.',
             },
             {
               label: 'Psicoterapia acuta prolungata',
@@ -202,7 +202,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
         {
           question: 'Con quanta rapidità potete subentrare?',
           answer:
-            'Per i subentri acuti dalla clinica di norma entro 3-7 giorni, a seconda della complessità del contesto. In caso di emergenza è possibile un subentro più rapido.',
+            'Per i subentri acuti di norma entro 3-7 giorni, a seconda della complessità del contesto. In caso di emergenza è possibile un subentro più rapido.',
         },
         {
           question: 'Quanto costa all\'incirca al mese un\'assistenza 1:1 di 24 ore per situazioni così complesse?',
@@ -455,7 +455,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
         {
           question: 'Possiamo iniziare a breve termine?',
           answer:
-            'Per i subentri acuti (ad esempio la dimissione dalla clinica) ci servono 5-10 giorni. Con un orizzonte di pianificazione più lungo possiamo procedere in modo più personalizzato.',
+            'Quando l\'assistenza a casa deve iniziare in tempi brevi, ci servono 5-10 giorni. Con un orizzonte di pianificazione più lungo possiamo procedere in modo più personalizzato.',
         },
         {
           question: 'Che cosa succede se il nostro familiare muore?',
@@ -522,7 +522,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
             },
             {
               label: 'Gestire i passaggi',
-              text: 'Quando si avvicina la dimissione dall\'ospedale, quando si cambia l\'assistenza diurna o il servizio ambulatoriale, quando bisogna cercare un posto in una struttura — aiutiamo a compiere i passi giusti nell\'ordine giusto.',
+              text: 'Quando l\'assistenza a casa ricomincia, quando si cambia l\'assistenza diurna o il servizio ambulatoriale, quando bisogna cercare un posto in una struttura — aiutiamo a compiere i passi giusti nell\'ordine giusto.',
             },
             {
               label: 'Procure e disposizioni',
@@ -560,7 +560,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
           list: [
             'Prima del primo appuntamento con il servizio medico — la preparazione decide spesso una differenza di uno o due livelli di assistenza.',
             'In caso di livello di assistenza respinto o troppo basso — qui va rispettato il termine per il ricorso (4 settimane!).',
-            'In caso di dimissione dall\'ospedale — le prime settimane sono decisive per la stabilità dell\'assistenza.',
+            'Quando l\'assistenza a casa ricomincia — le prime settimane sono decisive per la sua stabilità.',
             'In caso di improvviso fabbisogno di assistenza (ictus, caduta) — una domanda tempestiva garantisce prestazioni retroattive dalla data della domanda.',
             'In caso di conflitti familiari sull\'assistenza dei genitori.',
           ],
@@ -630,7 +630,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
     short: 'Una presenza vigile quando la notte si fa lunga.',
     metaTitle: 'Veglia notturna Berlino – Accompagnamento sicuro',
     metaDescription:
-      'Veglie notturne a Berlino per ospedale, hospice e a casa. Squadra esperta, disponibile subito. Anche per demenza, rischio di caduta, fine della vita.',
+      'Assistenza notturna a Berlino, nella propria casa. Squadra esperta, disponibile in tempi brevi. Per demenza, rischio di caduta, ultima fase della vita.',
     h1: 'Veglie notturne a Berlino — accompagnamento sicuro attraverso la notte',
     primaryKeyword: 'veglia notturna Berlino',
     secondaryKeywords: [
@@ -660,8 +660,8 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
               text: 'Alcune persone muoiono in una determinata notte. Nessuno può prevederlo, ma tutti possono prepararsi a essere presenti. Una veglia notturna subentra quando la famiglia deve dormire nel frattempo.',
             },
             {
-              label: 'Dopo la dimissione dalla clinica',
-              text: 'Le prime notti a casa dopo un ricovero sono spesso le più critiche. Una veglia notturna fa da ponte finché non torna la stabilità.',
+              label: 'Nella convalescenza dopo un intervento',
+              text: 'Le prime notti dopo un intervento sono spesso le più critiche: insicurezza nell\'alzarsi, confusione, dolore. L\'assistenza notturna fa da ponte finché non torna la stabilità.',
             },
             {
               label: 'In caso di acuto carico psichico',
