@@ -2,6 +2,37 @@
 
 Alle nennenswerten Änderungen an diesem Repo. Format an „Keep a Changelog" angelehnt.
 
+## [Krankenhaus raus: Fokus privat gezahlte 1:1-Betreuung] – 2026-08-24
+
+Die Heilpraxis bietet keine Sitzwachen und keine Begleitung im Krankenhaus mehr an — dieses Feld liegt beim gemeinnützigen Verein Leben Pflegen Reisen e.V. Die Website führte dafür drei Leistungsseiten und eine Ratgeberseite, dazu Klinikbezüge auf allen Standortseiten sowie in Navigation, FAQ, Karriere, Schema-Markup und AGB — in vier Sprachen. Das ist raus. Was bleibt, ist eine Praxis für privat gezahlte 1:1-Betreuung in der häuslichen Umgebung.
+
+### Entfernt
+
+- **`/leistungen/sitzwachen-berlin`, `/leistungen/hospiz-sitzwachen`, `/leistungen/klinik-begleitung-berlin` und `/themen/krankenhaus-begleitung`** — komplett gelöscht, samt übersetzten Slugs und den Überlagerungen in EN, ES und IT. Von 9 Leistungs-Detailseiten bleiben 6, von 8 Ratgeberseiten bleiben 7.
+- **Die „Krankenhäuser in der Nähe"-Blöcke auf allen 16 Standortseiten** — je Sprache 15 Abschnitte, aus denen reine Anfahrt-Abschnitte geworden sind. Kein Klinikname mehr auf der Seite.
+- **Der Begriff „Sitzwache"** — durchgehend ersetzt durch „1:1-Betreuung", auch in Titel-Template, Formular-Betreffen, Standort-Keywords, `serviceName` im Schema-Markup und den Wörterbüchern aller vier Sprachen. „Nachtwache" bleibt als eigener Begriff bestehen.
+- **Vereinsverweis auf `/soziales-engagement`** zeigt nur noch auf die Reisebegleitung; die Wörterbuch-Schlüssel `vereinLinkSitzwachen`, `vereinLinkHospiz` und ihre Trenntexte sind entfallen.
+- **AGB § 1 Abs. 1** nannte Krankenhaus und Hospiz als Leistungsort — das war die bindende Zusage genau der Leistung, die entfällt.
+
+### Neu
+
+- **`/leistungen/1-zu-1-betreuung-berlin`** in allen vier Sprachen (`one-to-one-care-at-home-berlin`, `atencion-individual-en-casa-berlin`, `assistenza-individuale-a-domicilio-berlino`). Nimmt die brauchbaren Bausteine der drei gelöschten Seiten auf, konsequent auf die eigene Wohnung gedreht: Demenz mit nächtlicher Unruhe, Sturzgefahr, letzte Lebensphase zu Hause, Genesung nach einer Operation, Entlastung der Familie. Wache Begleitung gegenüber Bereitschaft, Kosten als Selbstzahler-Leistung mit § 39 und § 45b SGB XI, Zuschläge nach § 3b EStG.
+- **`middleware.ts`** beantwortet die 16 alten Adressen (vier Pfade in vier Sprachen) mit **HTTP 410 Gone**. Bewusst keine Weiterleitung: Es gibt keine Seite, die dasselbe verspricht.
+- **`tests/middleware.test.ts`** hält die 410-Liste fest und prüft zugleich, dass die lebenden Adressen unberührt bleiben. `tests/i18n/slugs.test.ts` prüft neu, dass die vier Slugs aus dem Register verschwunden sind.
+
+### Bewusst stehen geblieben
+
+- **Reisebegleitung für Senioren** behält ihre Krankenhausbezüge (Rückholung aus einer Klinik im Ausland, Abstimmung vor medizinisch motivierten Reisen). Das ist eine andere Leistung, keine Sitzwache.
+- **`/themen/palliativ-zuhause`** erklärt weiterhin SAPV, AAPV und ehrenamtliche Hospizdienste. Die Seite beschreibt das gesetzliche Versorgungssystem und grenzt die eigene Leistung ausdrücklich davon ab („Säule 4: das, was wir leisten").
+- **AGB-Absageklausel** nennt den Krankenhausaufenthalt der betreuten Person als Beispiel für einen nicht erforderlichen Einsatz. Rechtsfolge, kein Leistungsversprechen.
+- **Karriere-Seiten** beschreiben die Herkunft von Bewerberinnen und Bewerbern („Pflegekräfte aus Kliniken, die nicht mehr im Schichtdienst arbeiten wollen") und die Arbeitsbedingungen dort. Kein Angebot an Kundinnen und Kunden.
+
+### Stand der Build
+
+- 153 Sitemap-URLs, keine der vier entfernten darunter, die neue Seite in allen vier Sprachen mit HTTP 200.
+- Alle 16 alten Adressen liefern am laufenden Server 410.
+- 210 Tests grün, `typecheck` und `lint` ohne Befund.
+
 ## [Mehrsprachigkeit Etappe 3+4: Spanisch und Italienisch] – 2026-07-20
 
 Etappe 2 hat Englisch mit Inhalt gefüllt, Etappe 3 und 4 tun dasselbe für Spanisch und Italienisch. Damit tragen alle vier Sprachen eigenen Text — der Rückfall auf Deutsch greift nirgends mehr. Die deutschen Dateien in `lib/` bleiben unangetastet und die Quelle der Wahrheit; ES und IT liegen wie EN als Überlagerung je Eintrag daneben. Der ehrliche Kern dieser Etappe: Spanisch und Italienisch tragen nur die Erstanfrage, die laufende Betreuung läuft auf Deutsch oder Englisch — und die Seiten sagen das offen, statt spanisch- oder italienischsprachige Pflege zu versprechen.
