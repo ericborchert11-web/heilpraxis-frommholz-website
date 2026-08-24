@@ -24,19 +24,17 @@ const SEGMENTS = {
 type TranslatedSegment = keyof typeof SEGMENTS;
 
 /**
- * Detailseiten unter /leistungen/… — das sind die NEUN Einträge aus
+ * Detailseiten unter /leistungen/… — das sind die SIEBEN Einträge aus
  * `lib/leistungen-seo.ts`, nicht die sechs Karten aus `lib/leistungen.ts`.
  */
 const LEISTUNG_SLUGS = {
-  'sitzwachen-berlin': { en: 'bedside-companion-berlin', es: 'acompanamiento-al-paciente-berlin', it: 'assistenza-al-capezzale-berlino' },
+  '1-zu-1-betreuung-berlin': { en: 'one-to-one-care-at-home-berlin', es: 'atencion-individual-en-casa-berlin', it: 'assistenza-individuale-a-domicilio-berlino' },
   'systemsprenger-betreuung': { en: 'complex-needs-one-to-one-care', es: 'atencion-individual-casos-complejos', it: 'assistenza-individuale-casi-complessi' },
   'pflegedienst-selbstzahler': { en: 'private-pay-nursing-berlin', es: 'servicio-privado-de-enfermeria-berlin', it: 'assistenza-privata-berlino' },
   '24-stunden-betreuung': { en: '24-hour-care-berlin', es: 'atencion-24-horas-berlin', it: 'assistenza-24-ore-berlino' },
   'pflegeberatung-berlin': { en: 'care-consulting-berlin', es: 'asesoramiento-en-cuidados-berlin', it: 'consulenza-assistenziale-berlino' },
   'nachtwachen-berlin': { en: 'night-care-berlin', es: 'atencion-nocturna-berlin', it: 'assistenza-notturna-berlino' },
-  'hospiz-sitzwachen': { en: 'hospice-companion-care', es: 'acompanamiento-en-hospicio', it: 'accompagnamento-in-hospice' },
   'reisebegleitung-senioren': { en: 'senior-travel-companion', es: 'acompanante-de-viaje-para-mayores', it: 'accompagnatore-di-viaggio-anziani' },
-  'klinik-begleitung-berlin': { en: 'hospital-companion-berlin', es: 'acompanamiento-hospitalario-berlin', it: 'accompagnamento-ospedaliero-berlino' },
 } as const satisfies Record<string, Record<IntlLocale, string>>;
 
 /** Ratgeberseiten unter /themen/… */
@@ -47,7 +45,6 @@ const THEMA_SLUGS = {
   'mdk-begutachtung': { en: 'care-level-assessment', es: 'evaluacion-del-grado-de-dependencia', it: 'valutazione-del-grado-di-assistenza' },
   'demenz-begleitung': { en: 'dementia-support', es: 'acompanamiento-en-demencia', it: 'accompagnamento-nella-demenza' },
   'palliativ-zuhause': { en: 'palliative-care-at-home', es: 'cuidados-paliativos-en-casa', it: 'cure-palliative-a-domicilio' },
-  'krankenhaus-begleitung': { en: 'hospital-support', es: 'acompanamiento-hospitalario', it: 'accompagnamento-ospedaliero' },
   'wohnungsaufloesung-pflegefall': { en: 'clearing-a-home-when-care-begins', es: 'vaciado-de-vivienda-por-cuidados', it: 'svuotare-casa-inizio-assistenza' },
 } as const satisfies Record<string, Record<IntlLocale, string>>;
 

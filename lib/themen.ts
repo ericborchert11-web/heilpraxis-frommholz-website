@@ -116,7 +116,7 @@ export const THEMEN: readonly SeoThema[] = [
           heading: 'Was wir besonders empfehlen',
           stronglist: [
             { label: 'Stundenweise statt blockweise nutzen', text: 'Die 1.612 € lassen sich in viele kleine Einheiten splitten — zum Beispiel: 3 Stunden pro Woche an 50 Wochen ergibt 150 Stunden im Jahr.' },
-            { label: 'Auch nach Krankenhaus-Entlassung nutzbar', text: 'Wenn die pflegende Person durch die Klinikentlassung ihres Angehörigen überfordert ist, kann Verhinderungspflege übergangsweise zur Entlastung dienen.' },
+            { label: 'Auch bei plötzlich steigendem Bedarf nutzbar', text: 'Wenn die pflegende Person durch eine plötzlich veränderte Lage überfordert ist, kann Verhinderungspflege übergangsweise zur Entlastung dienen.' },
             { label: 'Mit Kurzzeitpflege kombinierbar', text: 'Bis zu 50 % des nicht verbrauchten Kurzzeitpflege-Anspruchs (bis zu 806 € extra) lassen sich auf die Verhinderungspflege übertragen. Damit wären theoretisch bis zu 2.418 € möglich.' },
           ],
         },
@@ -142,15 +142,15 @@ export const THEMEN: readonly SeoThema[] = [
       faq: [
         { question: 'Wie hoch ist die Verhinderungspflege 2026?', answer: 'Bis zu 1.612 € pro Kalenderjahr. Kombiniert mit ungenutzter Kurzzeitpflege bis zu 2.418 €.' },
         { question: 'Muss die Vertretung professionell sein?', answer: 'Nein. Auch Nachbarn, Freunde oder Sie selbst können als „Vertretung" abgerechnet werden — bei nahen Angehörigen jedoch nur zum Pflegegeld-Satz.' },
-        { question: 'Kann ich Sitzwachen über Verhinderungspflege abrechnen?', answer: 'Ja, das ist sogar eine der häufigsten Anwendungen. Wir stellen Ihnen die Rechnung aus, Sie reichen sie bei der Pflegekasse ein.' },
+        { question: 'Kann ich eine 1:1-Betreuung über Verhinderungspflege abrechnen?', answer: 'Ja, das ist sogar eine der häufigsten Anwendungen. Wir stellen Ihnen die Rechnung aus, Sie reichen sie bei der Pflegekasse ein.' },
         { question: 'Verfällt der Anspruch, wenn ich ihn nicht nutze?', answer: 'Ja, am Ende des Kalenderjahres. Es lohnt sich, ihn schon im Sommer zu planen, statt zu warten.' },
         { question: 'Gilt das auch bei Pflegegrad 1?', answer: 'Nein. Pflegegrad 1 hat keinen Anspruch auf Verhinderungspflege.' },
       ],
       cta: { text: 'Pflegeberatung anfragen', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'oft als Verhinderungspflege abgerechnet' },
         { label: 'Pflegegrad beantragen', href: '/themen/pflegegrad-beantragen' },
         { label: 'Entlastungsbudget', href: '/themen/entlastungsbudget' },
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'oft als Verhinderungspflege abgerechnet' },
       ],
     },
   },
@@ -181,7 +181,7 @@ export const THEMEN: readonly SeoThema[] = [
           paragraphs: ['Nicht für alles. Erstattungsfähig sind nur Leistungen von anerkannten Anbietern nach § 45a SGB XI — also nicht jede beliebige Hilfe.'],
           stronglist: [
             { label: 'Typisch genutzt für', text: 'stundenweise Betreuung durch zertifizierte Betreuungsdienste, Tagespflege (oft anteilig kombiniert), Kurzzeitpflege (bis 50 % übertragbar), Haushaltshilfen durch anerkannte Dienste, Angebote zur Unterstützung im Alltag (Demenzbegleiter, Alltagshelfer).' },
-            { label: 'Nicht erstattungsfähig', text: 'private Hilfen ohne Trägerstatus, klassische Pflegekräfte (das läuft über Pflegegeld/Sachleistung), Heim- oder Krankenhauskosten.' },
+            { label: 'Nicht erstattungsfähig', text: 'private Hilfen ohne Trägerstatus, klassische Pflegekräfte (das läuft über Pflegegeld/Sachleistung), Heimkosten und Kosten stationärer Behandlung.' },
           ],
         },
         {
@@ -344,10 +344,9 @@ export const THEMEN: readonly SeoThema[] = [
       ],
       cta: { text: 'Pflegeberatung anfragen', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
-        { label: 'Klinik-Begleitung Berlin', href: '/leistungen/klinik-begleitung-berlin', note: 'für Demenz-Patient*innen im Krankenhaus' },
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin' },
         { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin' },
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin' },
       ],
     },
   },
@@ -372,7 +371,7 @@ export const THEMEN: readonly SeoThema[] = [
             { label: 'Säule 1: AAPV (Allgemeine Ambulante Palliativversorgung)', text: 'Hausarzt + ambulanter Pflegedienst mit palliativer Erfahrung. Der Standardfall. Funktioniert, wenn die Symptomatik moderat ist.' },
             { label: 'Säule 2: SAPV (Spezialisierte Ambulante Palliativversorgung)', text: 'Ein Palliativ-Team aus Palliativ-Medizinerinnen und -Pflegekräften kommt ins Haus, ist 24/7 erreichbar, übernimmt komplexe Symptomkontrolle. Voraussetzung: Verordnung durch Klinik oder Facharzt. Kosten übernimmt die Krankenkasse.' },
             { label: 'Säule 3: Hospizliche Begleitung', text: 'Ehrenamtliche Hospizdienste kommen in die Wohnung, unterstützen Angehörige, sind da, ohne medizinisch zu sein. Kostenlos.' },
-            { label: 'Säule 4: Selbstzahler-1:1-Begleitung (das, was wir leisten)', text: 'Wenn die Familie nicht durchgehend da sein kann, ehrenamtliche Sitzwachen nicht ausreichen, eine zusätzliche verlässliche Anwesenheit gebraucht wird — übernehmen wir.' },
+            { label: 'Säule 4: Selbstzahler-1:1-Begleitung (das, was wir leisten)', text: 'Wenn die Familie nicht durchgehend da sein kann, ehrenamtliche Begleitung nicht ausreicht, eine zusätzliche verlässliche Anwesenheit gebraucht wird — übernehmen wir.' },
           ],
         },
         {
@@ -408,90 +407,15 @@ export const THEMEN: readonly SeoThema[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Hospiz-Sitzwachen', href: '/leistungen/hospiz-sitzwachen' },
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin' },
         { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin' },
         { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
       ],
     },
   },
 
-  // === Thema 7: Krankenhaus-Begleitung =========================================
-  {
-    slug: 'krankenhaus-begleitung',
-    title: 'Krankenhaus-Begleitung',
-    short: 'Wenn jemand zu Hause sicherer ist als alleine im Krankenhaus.',
-    metaTitle: 'Krankenhaus-Begleitung Berlin – Sitzwache und Beistand',
-    metaDescription: 'Begleitung im Krankenhaus: 1:1-Anwesenheit, Sitzwache, Übersetzung. Für Demenz, Verwirrtheit, Sturzgefahr, Sterbephase.',
-    h1: 'Krankenhaus-Begleitung Berlin — wenn alleine im Bett nicht reicht',
-    primaryKeyword: 'Krankenhaus Begleitung Berlin',
-    detail: {
-      intro: [
-        'Ein Krankenhausaufenthalt ist für gesunde Menschen schon anstrengend. Für verwirrte, ängstliche oder schwerkranke Menschen kann er traumatisch sein. Unbekannte Stimmen, fremde Geräusche, ständig wechselndes Personal, lange Stunden des Wartens.',
-        'Eine 1:1-Begleitung im Krankenhaus macht den Unterschied. Wir kommen ins Krankenhaus, wir bleiben, wir sind da.',
-        'Diese Seite erklärt das Thema im Hintergrund. Wer direkt eine private Klinik-Begleitung in Berlin buchen möchte, findet die konkrete Leistungsseite weiter unten in den Verweisen.',
-      ],
-      sections: [
-        {
-          heading: 'Wer Krankenhaus-Begleitung braucht',
-          stronglist: [
-            { label: 'Demenzpatient*innen', text: 'Im Krankenhaus dekompensieren Demenzkranke oft massiv — fremde Umgebung, fehlende Routinen, ständige Reize. Eine vertraute Begleitung beruhigt, vermittelt Sicherheit, kennt die Routinen von zu Hause.' },
-            { label: 'Patient*innen mit postoperativer Verwirrtheit (Delir-Risiko)', text: 'Vor allem ältere Menschen nach großen Operationen entwickeln in den ersten 24-72 Stunden oft ein Delir. Eine wache, vertraute Begleitung reduziert die Häufigkeit deutlich.' },
-            { label: 'Sterbende Patient*innen', text: 'Auf vielen Stationen ist 1:1-Anwesenheit nicht möglich, aber gewünscht. Wir übernehmen.' },
-            { label: 'Patient*innen mit Sprachbarrieren', text: 'Wenn jemand nur eingeschränkt Deutsch spricht, ist eine vertraute, sprachkompetente Begleitperson oft Gold wert — übersetzt für die Visite, vermittelt zwischen Patient und Team.' },
-            { label: 'Verängstigte Patient*innen', text: 'Besonders bei längeren Aufenthalten, schweren Diagnosen, häufigen Untersuchungen.' },
-          ],
-        },
-        {
-          heading: 'Wie das organisiert wird',
-          stronglist: [
-            { label: 'Abstimmung mit der Station', text: 'Wir nehmen vor dem ersten Einsatz Kontakt mit der Pflegedienstleitung der Station auf. In der Regel wird eine schriftliche Zustimmung des Patienten oder Vertretungsberechtigten eingeholt.' },
-            { label: 'Schichten', text: 'Typische Modelle: 8-Stunden-Schichten (Tag, Spät, Nacht), 12-Stunden-Schichten (Tag/Nacht), oder gezielte Phasen (z. B. erste 48 Stunden nach OP, letzte 24-72 Stunden vor Verlegung).' },
-          ],
-        },
-        {
-          heading: 'Was unsere Mitarbeitenden tun (und was nicht)',
-          list: [
-            'Wache Anwesenheit, Beobachtung des Zustands.',
-            'Beruhigen bei Unruhe, Reorientieren bei Verwirrung.',
-            'Hilfe bei Mahlzeiten, Trinken anreichen.',
-            'Toilettengang-Begleitung (falls Mobilität).',
-            'Information der Stationspflege bei Bedarfen.',
-            'Information der Familie.',
-            'Bei Demenzpatient*innen: Aktivierung im Rahmen der Möglichkeiten.',
-          ],
-          paragraphs: ['Was wir nicht tun: Wundversorgung, Medikamentengabe, invasive Pflegehandlungen — das macht die Stationspflege.'],
-        },
-        {
-          heading: 'Was es kostet',
-          paragraphs: [
-            'Stundenweise Krankenhaus-Begleitung wird nach Qualifikation, Tageszeit und Wochentag kalkuliert. Eine durchgehende Begleitung über mehrere Tage (z. B. erste 48 Stunden nach OP, letzte Tage vor Verlegung) wird zur Gesamtsumme zusammengefasst. Zuschläge nach § 3b EStG (Nacht 25 %, Sonn-/Feiertag 50 %) sind transparent ausgewiesen.',
-            'Im Erstgespräch klären wir Setting und Dauer und nennen Ihnen eine konkrete Summe für die geplante Begleitung.',
-          ],
-        },
-        {
-          heading: 'Versicherungsfragen',
-          paragraphs: [
-            'Bei einigen privaten Krankenversicherungen sind Begleitperson-Kosten ganz oder anteilig erstattbar — wir geben gerne eine Rechnung mit, die für die Einreichung geeignet ist. Bei der gesetzlichen Krankenkasse besteht in der Regel kein Anspruch.',
-          ],
-        },
-      ],
-      faq: [
-        { question: 'Lassen Berliner Kliniken externe Sitzwachen zu?', answer: 'Ja, in der Regel mit Zustimmung der Pflegedienstleitung der Station. Wir kümmern uns um die Anmeldung.' },
-        { question: 'Wie schnell können Sie auf eine Station kommen?', answer: 'Bei Vorlauf ab 24 Stunden zuverlässig. Bei Notaufnahme-Fällen oft noch am selben Tag.' },
-        { question: 'Kann ich eine Begleitung vor einer geplanten OP buchen?', answer: 'Sehr empfehlenswert — wir können dann ab dem ersten Aufwachen einsatzbereit sein.' },
-        { question: 'Übernimmt die Krankenkasse?', answer: 'Bei gesetzlichen Kassen normalerweise nicht. Bei einigen privaten Versicherungen teils erstattbar.' },
-      ],
-      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
-      relatedLinks: [
-        { label: 'Klinik-Begleitung Berlin (Leistung)', href: '/leistungen/klinik-begleitung-berlin', note: 'die buchbare Premium-Begleitung' },
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin' },
-        { label: 'Demenz-Begleitung', href: '/themen/demenz-begleitung' },
-      ],
-    },
-  },
 
-  // === Thema 8: Wohnungsauflösung im Pflegefall ================================
+  // === Thema 7: Wohnungsauflösung im Pflegefall ================================
   {
     slug: 'wohnungsaufloesung-pflegefall',
     title: 'Wohnungsauflösung im Pflegefall',

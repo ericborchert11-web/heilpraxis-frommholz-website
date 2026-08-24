@@ -9,154 +9,84 @@ import type { SeoLeistung } from '@/lib/leistungen-seo';
  * Das sind deutsche Referenzpfade, die `localizedHref` beim Rendern übersetzt.
  */
 export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
-  // === Money Page 1: Sitzwachen Berlin =========================================
-  'sitzwachen-berlin': {
-    slug: 'sitzwachen-berlin',
-    title: 'Vigilanza al capezzale Berlino',
-    short: 'Presenza 1:1 in ospedale, hospice e a casa.',
-    metaTitle: 'Vigilanza al capezzale Berlino – 1:1 ospedale e casa',
+  // === Money Page 1: 1:1-Betreuung zu Hause ====================================
+  '1-zu-1-betreuung-berlin': {
+    slug: '1-zu-1-betreuung-berlin',
+    title: 'Assistenza individuale a domicilio',
+    short: 'Una persona, un operatore, attenzione non divisa — a ore oppure ventiquattr\'ore su ventiquattro, nella propria casa.',
+    metaTitle: 'Assistenza individuale Berlino – accompagnamento privato a casa',
     metaDescription:
-      'Vigilanze al capezzale professionali a Berlino: ospedale, psichiatria, hospice, a casa. Squadra esperta, disponibile a breve termine. Primo colloquio gratuito.',
-    h1: 'Vigilanza al capezzale a Berlino — quando nessuno deve restare solo',
-    primaryKeyword: 'vigilanza al capezzale Berlino',
+      'Assistenza individuale privata a Berlino: una figura di riferimento fissa a domicilio, a ore o in modo continuativo. In caso di demenza, rischio di cadute o nell\'ultima fase della vita.',
+    h1: 'Assistenza individuale a domicilio — tutta l\'attenzione per una sola persona',
+    primaryKeyword: 'assistenza individuale Berlino',
     secondaryKeywords: [
-      'assistenza notturna ospedale Berlino',
-      'assistenza psichiatrica 1:1 Berlino',
-      'veglia notturna Berlino',
+      'badante privata a domicilio Berlino',
+      'assistenza demenza Berlino',
+      'assistenza privata Berlino',
     ],
     detail: {
       intro: [
-        'Una vigilanza al capezzale (Sitzwache) significa questo: qualcuno è presente. Non per l\'assistenza medica — per quella ci sono i medici e il personale infermieristico. Ma per la presenza stessa. Per la sensazione che qualcuno resti quando la notte si fa lunga, quando si avvicina l\'operazione, quando la confusione arriva e passa e torna di nuovo.',
-        'La Heilpraxis Frommholz organizza vigilanze al capezzale a Berlino — in ospedale, in psichiatria, nell\'hospice e a casa. Da oltre 15 anni siamo specializzati nell\'assistenza 1:1. Chi ha bisogno di una vigilanza al capezzale ha spesso già molto alle spalle. Comprendiamo che in questi momenti conta meno la competenza tecnica che l\'umanità — e i nostri collaboratori portano entrambe.',
-        'Una parte dei nostri incarichi di vigilanza al capezzale la sosteniamo insieme alla nostra associazione partner senza scopo di lucro Leben Pflegen Reisen e.V. — soprattutto là dove, accanto alla competenza assistenziale, servono impegno volontario e fasi di presenza più lunghe.',
+        'Nell\'assistenza domiciliare ordinaria l\'orologio è sempre nella stanza. Quindici minuti per il bagno, dodici per la colazione, poi la casa successiva. La prima cosa che si perde è proprio quella che conta: il tempo in cui nessuno deve andare oltre.',
+        'Assistenza individuale significa questo: un\'operatrice è lì per una sola persona. Nessun giro, nessuna assistenza in parallelo, nessun cambio nel mezzo di una conversazione. Nella propria casa, in un ambiente familiare, con le proprie abitudini. A ore, per singole notti, per una fase difficile o in modo permanente.',
+        'Lavoriamo esclusivamente come servizio infermieristico privato (*Selbstzahler-Pflegedienst*) con una piccola équipe stabile. È una scelta consapevole: ha un prezzo, ma è ciò che rende possibile questo tipo di tempo.',
       ],
       sections: [
         {
-          heading: 'Quando una vigilanza al capezzale è opportuna',
+          heading: 'Quando l\'assistenza individuale è la strada giusta',
           paragraphs: [
-            'Una vigilanza al capezzale è più di una sedia accanto al letto. Protegge, rassicura, previene il peggio. Situazioni tipiche in cui i nostri clienti ci chiamano:',
+            'Non ogni situazione richiede una presenza costante. Queste di solito sì:',
           ],
           stronglist: [
-            {
-              label: 'Dopo le operazioni',
-              text: 'La confusione postoperatoria (delirium) è una delle complicanze più frequenti nei pazienti anziani. Una presenza familiare può ridurre il rischio di delirium e sostenere il decorso della guarigione.',
-            },
-            {
-              label: 'In caso di rischio di caduta',
-              text: 'Chi di notte diventa irrequieto, vuole alzarsi, non si orienta più, è a rischio di caduta. Una vigilanza al capezzale osserva, rassicura, aiuta ad alzarsi — e può prevenire cadute e le lesioni connesse, che altrimenti possono segnare un\'intera fase della vita.',
-            },
-            {
-              label: 'Nella fase terminale',
-              text: 'Quando è chiaro che la fine è vicina, molti familiari non vogliono che la persona cara se ne vada da sola. Ma non tutti possono restare al capezzale senza sosta. Noi assumiamo le ore notturne, i fine settimana, le fasi in cui Lei stesso ha bisogno di riposo.',
-            },
-            {
-              label: 'Nelle crisi psichiatriche',
-              text: 'Acuto pericolo per sé o per altri, fasi suicidarie, gravi episodi depressivi. Un\'assistenza 1:1 protegge — e in alcuni casi può aiutare a evitare un ricovero coatto.',
-            },
-            {
-              label: 'In caso di demenza',
-              text: 'Fasi di veglia notturna, rischio di allontanamento, disorientamento — una vigilanza al capezzale porta calma in una situazione che altrimenti logora i familiari.',
-            },
+            { label: 'Demenza con irrequietezza notturna', text: 'Alzarsi, vagare, confondere il giorno con la notte. I familiari reggono qualche settimana, poi sono esausti a loro volta. Una figura di riferimento fissa restituisce struttura — e sonno alla famiglia.' },
+            { label: 'Rischio di cadute', text: 'Chi si alza di notte e non è più stabile non dovrebbe restare solo in casa. Siamo lì quando si alza, aiutiamo per tempo e preveniamo cadute che altrimenti segnerebbero un\'intera fase della vita.' },
+            { label: 'L\'ultima fase della vita a casa', text: 'Molte persone desiderano morire a casa propria. Perché sia possibile, la famiglia ha bisogno di qualcuno che sostenga con lei le ore lunghe: sveglio, calmo, esperto, senza fretta.' },
+            { label: 'Dopo un intervento', text: 'Le prime notti della convalescenza sono le più critiche: confusione, insicurezza nell\'alzarsi, dolore. L\'accompagnamento copre quel tratto finché la stabilità non ritorna.' },
+            { label: 'Quando i familiari arrivano al limite', text: 'Chi assiste ha bisogno di notti in cui dorme senza interruzioni e di giorni in cui non deve essere reperibile. Quelle ore le assumiamo noi, con affidabilità.' },
           ],
         },
         {
-          heading: 'Dove offriamo vigilanze al capezzale',
-          paragraphs: [
-            'Siamo attivi in tutta Berlino. La nostra sede a Moabit (Stephanstraße 46) si trova in posizione comoda nel centro della città — da qui raggiungiamo Charlottenburg in dieci minuti, Wilmersdorf in dodici, Zehlendorf in venticinque.',
-            'Organizziamo vigilanze al capezzale in:',
-          ],
+          heading: 'Che cosa fa da noi un\'operatrice',
           stronglist: [
-            {
-              label: 'Ospedali',
-              text: 'Charité (tutte le sedi), cliniche Vivantes, Schlosspark-Klinik, Sankt Gertrauden, DRK Kliniken, Lazarus, Helios e tutti gli altri ospedali di Berlino.',
-            },
-            {
-              label: 'Cliniche psichiatriche',
-              text: 'Vivantes Wenckebach, St. Hedwig, Schlosspark-Klinik e tutte le cliniche per acuti e diurne dell\'area cittadina.',
-            },
-            {
-              label: 'Hospice e reparti di cure palliative',
-              text: 'in stretto coordinamento con l\'équipe presente.',
-            },
-            {
-              label: 'Case di riposo',
-              text: 'quando i familiari hanno bisogno di sollievo o quando una situazione particolare richiede un\'assistenza 1:1.',
-            },
-            {
-              label: 'A casa',
-              text: 'nell\'ambiente familiare, con tutto ciò che rende propria la propria casa.',
-            },
+            { label: 'Esserci', text: 'Presente, attenta, disponibile. Parlare quando qualcuno vuole parlare. Tacere quando qualcuno vuole silenzio.' },
+            { label: 'Osservare e dare un senso a ciò che si osserva', text: 'Notare i cambiamenti e riferirli con chiarezza — alla famiglia, al medico di base, al servizio infermieristico. Con oltre quindici anni di esperienza, la nostra équipe sa che cosa è importante e che cosa può attendere.' },
+            { label: 'Tenere insieme la giornata', text: 'Aiutare a mangiare e bere, accompagnare in bagno, aiutare nei cambi di posizione, somministrare i farmaci secondo prescrizione, mantenere calma e ordine.' },
+            { label: 'Accompagnare dove serve', text: 'Dal medico di base, dallo specialista, a passeggio, a una festa di famiglia. Nessuno aspetta da solo in un corridoio.' },
+            { label: 'Alleggerire la famiglia', text: 'Non dovete correre ogni sera. Sapete che c\'è qualcuno — e vi viene raccontato com\'è andata.' },
           ],
         },
         {
-          heading: 'Quanto costa da noi una vigilanza al capezzale',
-          paragraphs: [
-            'Le vigilanze al capezzale sono di norma una prestazione a pagamento privato. L\'assicurazione per la non autosufficienza (Pflegekasse) non le copre direttamente — in alcuni casi si può utilizzare l\'assistenza sostitutiva (Verhinderungspflege, § 39 SGB XI) o l\'importo di sollievo (Entlastungsbetrag, § 45b SGB XI), e su questo La consigliamo volentieri.',
-            'Non indichiamo tariffe forfettarie, perché le situazioni sono troppo diverse. Una vigilanza notturna in ospedale si calcola diversamente da un accompagnamento di dodici ore a casa. Nel primo colloquio gratuito stabiliamo di che cosa ha bisogno e quanto costerà concretamente. Supplementi trasparenti secondo il § 3b EStG (25 % di notte, 50 % la domenica e nei giorni festivi) si applicano a ogni incarico.',
+          heading: 'Presenza sveglia o reperibilità?',
+          paragraphs: ['Per le ore notturne distinguiamo due modelli, e la differenza pesa sensibilmente sul prezzo:'],
+          stronglist: [
+            { label: 'Presenza attiva (sveglia)', text: 'L\'operatrice resta sveglia per tutta la notte, osserva attivamente, documenta con regolarità. Indicata nelle situazioni acute: fase terminale, confusione grave, alto rischio di cadute.' },
+            { label: 'Reperibilità', text: 'L\'operatrice dorme in una stanza attigua oppure su una poltrona reclinabile nella stessa stanza, e si sveglia a ogni rumore. Indicata quando le notti sono di solito tranquille ma nessuno deve restare solo.' },
           ],
+          trailingParagraphs: ['Quale modello sia adatto lo chiariamo nel primo colloquio. Si può cambiare in qualsiasi momento, se la situazione cambia.'],
         },
         {
-          heading: 'Che cosa sanno fare le nostre vigilanze al capezzale',
+          heading: 'Quanto costa l\'assistenza individuale',
           paragraphs: [
-            'La nostra squadra è mista: infermieri diplomati, ausiliari, pedagogisti sociali, operatori di assistenza con lunga esperienza psichiatrica. A seconda della situazione impieghiamo la qualifica adatta. Ciò che tutti hanno in comune:',
-          ],
-          list: [
-            'Calma nelle situazioni impegnative',
-            'Capacità di osservazione e di documentazione oggettiva',
-            'Esperienza nella gestione di confusione, aggressività, paura',
-            'Discrezione — ciò che si vede e si sente nell\'abitazione resta lì',
+            'L\'assistenza individuale è una prestazione privata. L\'assicurazione pubblica per la non autosufficienza non la copre direttamente. In presenza di un grado di assistenza (*Pflegegrad*) si possono spesso impiegare l\'assistenza sostitutiva (*Verhinderungspflege*, § 39 SGB XI) o l\'importo di sollievo (*Entlastungsbetrag*, § 45b SGB XI) — la nostra fattura la presentate poi voi. Vi consigliamo su ciò che è possibile nel vostro caso.',
+            'Non indichiamo prezzi forfettari, perché le situazioni sono troppo diverse: la tariffa oraria dipende dalla qualifica necessaria, dall\'ampiezza e dal fatto che si tratti di presenza sveglia o di reperibilità. Nel primo colloquio, gratuito, prima ascoltiamo e poi formuliamo una proposta concreta e trasparente, con tariffa oraria e importo complessivo previsto.',
+            'Le maggiorazioni ai sensi del § 3b EStG le indichiamo apertamente: 25 % di notte, 50 % la domenica e nei giorni festivi.',
           ],
         },
       ],
       faq: [
-        {
-          question: 'Qual è la differenza tra una vigilanza al capezzale e un infermiere?',
-          answer:
-            'Una vigilanza al capezzale è presente, osserva, protegge e rassicura — ma non svolge attività infermieristiche come il cambio di posizione, la cura delle ferite o la somministrazione di farmaci. Gli infermieri fanno entrambe le cose; una vigilanza al capezzale si specializza nella presenza.',
-        },
-        {
-          question: 'Le vigilanze al capezzale possono venire anche di notte?',
-          answer:
-            'Sì. Le veglie notturne sono una delle nostre richieste più frequenti. Arriviamo all\'orario concordato e restiamo fino al mattino — se necessario anche per più notti consecutive, con turni all\'interno di una squadra stabile.',
-        },
-        {
-          question: 'Con quanta rapidità è disponibile una vigilanza al capezzale?',
-          answer:
-            'Nelle emergenze spesso entro 24 ore, talvolta lo stesso giorno. Per incarichi pianificabili con più anticipo (ad esempio dopo un\'operazione) ci bastano 2-3 giorni di preavviso.',
-        },
-        {
-          question: 'Le vigilanze al capezzale sono qualificate dal punto di vista professionale?',
-          answer:
-            'A seconda della situazione impieghiamo qualifiche diverse. Nelle situazioni delicate dal punto di vista medico interviene un infermiere diplomato. Dove basta la sola presenza è spesso sufficiente un operatore di assistenza esperto. Lo chiariamo nel primo colloquio.',
-        },
-        {
-          question: 'Possiamo far rimborsare la vigilanza al capezzale tramite l\'assicurazione per la non autosufficienza?',
-          answer:
-            'No, non direttamente — fatturiamo esclusivamente come prestazione a pagamento privato. In presenza di un livello di assistenza (Pflegegrad) può però utilizzare l\'importo di sollievo (125 € al mese) o l\'assistenza sostitutiva e presentare Lei stesso la nostra fattura. La consigliamo su ciò che è possibile.',
-        },
-        {
-          question: 'Chi è responsabile se accade qualcosa?',
-          answer:
-            'Disponiamo di un\'assicurazione di responsabilità civile professionale. I danni causati dai nostri collaboratori vengono gestiti tramite questa polizza.',
-        },
+        { question: 'Con che rapidità potete iniziare?', answer: 'Nelle situazioni programmabili bastano due o tre giorni. Nei casi acuti cerchiamo di garantire un primo accompagnamento entro 24 ore — a seconda del giorno e dell\'ora, anche prima. Ci chiami e le diremo con franchezza che cosa è possibile.' },
+        { question: 'Possiamo prenotare solo singole notti?', answer: 'Sì. Molti dei nostri interventi sono esattamente questo: una, due o tre notti in una fase critica. Singole notti nel fine settimana o una notte fissa a settimana sono possibili quanto un accompagnamento continuativo per mesi.' },
+        { question: 'È sempre la stessa persona?', answer: 'Per quanto possibile, sì. Lavoriamo con una piccola équipe stabile e, negli accompagnamenti lunghi, con due o tre operatrici che si alternano, così che anche in caso di malattia o ferie arrivi un volto conosciuto. Un personale in continuo cambiamento sarebbe l\'opposto di ciò a cui serve l\'assistenza individuale.' },
+        { question: 'E se a mia madre la persona non piace?', answer: 'Allora la sostituiamo. Di solito l\'estraneità passa dopo la prima ora, ma la sintonia personale non è un dettaglio secondario in questo lavoro. Ce lo dica e organizziamo il cambio senza discussioni.' },
+        { question: 'Che qualifica ha il personale?', answer: 'Dipende dalla situazione. Dove le esigenze assistenziali sono elevate arriva un\'infermiera diplomata. Dove contano presenza, attenzione e vita quotidiana, un\'operatrice esperta è spesso la scelta migliore. Che cosa serve nel vostro caso lo chiariamo prima, non dopo.' },
+        { question: 'La copre la cassa malattia?', answer: 'No. La cassa malattia pubblica paga il trattamento medico, non la presenza continuativa di una figura di riferimento. Alcune polizze private integrative rimborsano una parte — conviene chiarirlo in anticipo.' },
+        { question: 'Serve una stanza dedicata per l\'operatrice?', answer: 'Per la reperibilità bastano un divano, una poltrona o una poltrona reclinabile — non serve un letto. Per la presenza sveglia bastano una sedia e una luce da lettura. Ci adattiamo alla vostra casa, non il contrario.' },
+        { question: 'Che cosa succede in caso di emergenza?', answer: 'L\'operatrice chiama il servizio di emergenza (112), informa i familiari e resta accanto alla persona finché non arrivano i soccorsi. Che cosa fare viene stabilito per iscritto con voi all\'inizio dell\'accompagnamento e, se lo desiderate, con il medico di base.' },
       ],
-      cta: { text: 'Richiedi un primo colloquio', href: '/#kontakt' },
+      cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
-        {
-          label: 'Assistenza in ospedale Berlino',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'vigilanze al capezzale specificamente in ospedale',
-        },
-        {
-          label: 'Servizio di assistenza a pagamento privato',
-          href: '/leistungen/pflegedienst-selbstzahler',
-          note: 'il nostro orientamento di base',
-        },
-        {
-          label: 'Assistenza 1:1 per situazioni complesse',
-          href: '/leistungen/systemsprenger-betreuung',
-          note: 'in decorsi psichiatrici complessi',
-        },
+        { label: 'Assistenza notturna Berlino', href: '/leistungen/nachtwachen-berlin', note: 'quando bastano le notti' },
+        { label: 'Assistenza 24 ore', href: '/leistungen/24-stunden-betreuung', note: 'copertura continuativa a turni' },
+        { label: 'Accompagnamento nella demenza', href: '/themen/demenz-begleitung', note: 'approfondimento sulla demenza' },
       ],
     },
   },
@@ -190,11 +120,11 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Comorbilità psichiatrica e dipendenza',
-              text: 'Un giovane adulto con gravi episodi psicotici e, insieme, abuso di cannabis e alcol. Le terapie residenziali per la dipendenza falliscono a causa della malattia psichiatrica, i ricoveri psichiatrici a causa del consumo. Noi accompagniamo a casa — con un quadro chiaro, contatti regolari, una figura di riferimento fissa.',
+              text: 'Un giovane adulto con gravi episodi psicotici e, insieme, abuso di cannabis e alcol. Le terapie per la dipendenza falliscono a causa della malattia psichiatrica, il trattamento psichiatrico a causa del consumo. Noi accompagniamo a casa — con un quadro chiaro, contatti regolari, una figura di riferimento fissa.',
             },
             {
               label: 'Acuto pericolo per sé nell\'ambiente domestico',
-              text: 'Una donna di poco più di 50 anni, grave depressione, dimessa dalla clinica dopo diversi tentativi di suicidio. I familiari non possono essere presenti 24 ore su 24, e lei non vuole un nuovo ricovero. Predisponiamo un\'assistenza di 24 ore su turni alternati — finché la terapia ambulatoriale non fa effetto.',
+              text: 'Una donna di poco più di 50 anni, grave depressione, di nuovo a casa dopo diversi tentativi di suicidio. I familiari non possono essere presenti 24 ore su 24, e lei non vuole essere curata di nuovo fuori casa. Predisponiamo un\'assistenza di 24 ore su turni alternati — finché la terapia ambulatoriale non fa effetto.',
             },
             {
               label: 'Fallimento della vita in comunità assistita',
@@ -223,7 +153,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
             },
             {
               label: 'Collegamento con la rete dei servizi di aiuto',
-              text: 'Collaboriamo strettamente con cliniche, psichiatri del territorio, amministratori di sostegno, servizi socio-psichiatrici. Non siamo un sostituto di un\'équipe terapeutica professionale — ne siamo il braccio esteso nella quotidianità domestica.',
+              text: 'Collaboriamo strettamente con i medici curanti, psichiatri del territorio, amministratori di sostegno, servizi socio-psichiatrici. Non siamo un sostituto di un\'équipe terapeutica professionale — ne siamo il braccio esteso nella quotidianità domestica.',
             },
           ],
         },
@@ -245,11 +175,11 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Misure coercitive',
-              text: 'non rientrano nel nostro incarico — se qualcuno rappresenta un pericolo acuto per gli altri e non accetta volontariamente l\'assistenza, ciò appartiene a una clinica con reparto chiuso.',
+              text: 'non rientrano nel nostro incarico — se qualcuno rappresenta un pericolo acuto per gli altri e non accetta volontariamente l\'assistenza, ciò appartiene a una struttura con reparto chiuso.',
             },
             {
               label: 'Disintossicazione',
-              text: 'non la facciamo — appartiene a cliniche specializzate nelle dipendenze.',
+              text: 'non la facciamo — appartiene a un trattamento specializzato per le dipendenze.',
             },
             {
               label: 'Psicoterapia acuta prolungata',
@@ -272,7 +202,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
         {
           question: 'Con quanta rapidità potete subentrare?',
           answer:
-            'Per i subentri acuti dalla clinica di norma entro 3-7 giorni, a seconda della complessità del contesto. In caso di emergenza è possibile un subentro più rapido.',
+            'Per i subentri acuti di norma entro 3-7 giorni, a seconda della complessità del contesto. In caso di emergenza è possibile un subentro più rapido.',
         },
         {
           question: 'Quanto costa all\'incirca al mese un\'assistenza 1:1 di 24 ore per situazioni così complesse?',
@@ -296,11 +226,6 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
           label: 'Servizio di assistenza a pagamento privato',
           href: '/leistungen/pflegedienst-selbstzahler',
           note: 'il nostro orientamento di base',
-        },
-        {
-          label: 'Vigilanza al capezzale Berlino',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'accompagnamento 1:1 per periodi più brevi',
         },
       ],
     },
@@ -413,11 +338,6 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
       ],
       cta: { text: 'Richiedi un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
-        {
-          label: 'Vigilanza al capezzale Berlino',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'accompagnamento 1:1 per periodi più brevi',
-        },
         {
           label: 'Assistenza 1:1 per situazioni complesse',
           href: '/leistungen/systemsprenger-betreuung',
@@ -535,7 +455,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
         {
           question: 'Possiamo iniziare a breve termine?',
           answer:
-            'Per i subentri acuti (ad esempio la dimissione dalla clinica) ci servono 5-10 giorni. Con un orizzonte di pianificazione più lungo possiamo procedere in modo più personalizzato.',
+            'Quando l\'assistenza a casa deve iniziare in tempi brevi, ci servono 5-10 giorni. Con un orizzonte di pianificazione più lungo possiamo procedere in modo più personalizzato.',
         },
         {
           question: 'Che cosa succede se il nostro familiare muore?',
@@ -554,11 +474,6 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
           label: 'Servizio di assistenza a pagamento privato',
           href: '/leistungen/pflegedienst-selbstzahler',
           note: 'il nostro orientamento di base',
-        },
-        {
-          label: 'Assistenza in ospedale Berlino',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'quando l\'accompagnamento continuativo avviene in ospedale',
         },
         {
           label: 'Veglie notturne Berlino',
@@ -607,7 +522,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
             },
             {
               label: 'Gestire i passaggi',
-              text: 'Quando si avvicina la dimissione dall\'ospedale, quando si cambia l\'assistenza diurna o il servizio ambulatoriale, quando bisogna cercare un posto in una struttura — aiutiamo a compiere i passi giusti nell\'ordine giusto.',
+              text: 'Quando l\'assistenza a casa ricomincia, quando si cambia l\'assistenza diurna o il servizio ambulatoriale, quando bisogna cercare un posto in una struttura — aiutiamo a compiere i passi giusti nell\'ordine giusto.',
             },
             {
               label: 'Procure e disposizioni',
@@ -645,7 +560,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
           list: [
             'Prima del primo appuntamento con il servizio medico — la preparazione decide spesso una differenza di uno o due livelli di assistenza.',
             'In caso di livello di assistenza respinto o troppo basso — qui va rispettato il termine per il ricorso (4 settimane!).',
-            'In caso di dimissione dall\'ospedale — le prime settimane sono decisive per la stabilità dell\'assistenza.',
+            'Quando l\'assistenza a casa ricomincia — le prime settimane sono decisive per la sua stabilità.',
             'In caso di improvviso fabbisogno di assistenza (ictus, caduta) — una domanda tempestiva garantisce prestazioni retroattive dalla data della domanda.',
             'In caso di conflitti familiari sull\'assistenza dei genitori.',
           ],
@@ -715,7 +630,7 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
     short: 'Una presenza vigile quando la notte si fa lunga.',
     metaTitle: 'Veglia notturna Berlino – Accompagnamento sicuro',
     metaDescription:
-      'Veglie notturne a Berlino per ospedale, hospice e a casa. Squadra esperta, disponibile subito. Anche per demenza, rischio di caduta, fine della vita.',
+      'Assistenza notturna a Berlino, nella propria casa. Squadra esperta, disponibile in tempi brevi. Per demenza, rischio di caduta, ultima fase della vita.',
     h1: 'Veglie notturne a Berlino — accompagnamento sicuro attraverso la notte',
     primaryKeyword: 'veglia notturna Berlino',
     secondaryKeywords: [
@@ -745,8 +660,8 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
               text: 'Alcune persone muoiono in una determinata notte. Nessuno può prevederlo, ma tutti possono prepararsi a essere presenti. Una veglia notturna subentra quando la famiglia deve dormire nel frattempo.',
             },
             {
-              label: 'Dopo la dimissione dalla clinica',
-              text: 'Le prime notti a casa dopo un ricovero sono spesso le più critiche. Una veglia notturna fa da ponte finché non torna la stabilità.',
+              label: 'Nella convalescenza dopo un intervento',
+              text: 'Le prime notti dopo un intervento sono spesso le più critiche: insicurezza nell\'alzarsi, confusione, dolore. L\'assistenza notturna fa da ponte finché non torna la stabilità.',
             },
             {
               label: 'In caso di acuto carico psichico',
@@ -810,146 +725,9 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
       cta: { text: 'Richiedi un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
         {
-          label: 'Vigilanza al capezzale Berlino',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'accompagnamento 1:1 puntuale di giorno e di notte',
-        },
-        {
-          label: 'Vigilanza al capezzale in hospice',
-          href: '/leistungen/hospiz-sitzwachen',
-          note: 'nell\'accompagnamento alla fine della vita',
-        },
-        {
           label: 'Assistenza 24 ore su 24',
           href: '/leistungen/24-stunden-betreuung',
           note: 'quando non deve essere coperta solo la notte',
-        },
-      ],
-    },
-  },
-  // === Money Page 7: Hospiz-Sitzwachen ========================================
-  'hospiz-sitzwachen': {
-    slug: 'hospiz-sitzwachen',
-    title: 'Vigilanza al capezzale in hospice',
-    short: 'Presenza nelle ultime ore — per la persona e per i familiari.',
-    metaTitle: 'Vigilanza al capezzale hospice Berlino – Ultime ore',
-    metaDescription:
-      'Vigilanze al capezzale in hospice, nel reparto di cure palliative o a casa. Discrete, esperte, dignitose. Sollievo per i familiari nelle ultime ore.',
-    h1: 'Vigilanza al capezzale in hospice — qualcuno resta',
-    primaryKeyword: 'vigilanza al capezzale hospice Berlino',
-    secondaryKeywords: [
-      'accompagnamento fine vita Berlino',
-      'veglia palliativa Berlino',
-      'assistenza ultime ore Berlino',
-    ],
-    detail: {
-      intro: [
-        'C\'è un compito particolare nel nostro lavoro: essere presenti quando qualcuno se ne va. Non come figura medica — per questo ci sono le équipe di cure palliative. Ma come presenza vigile e quieta, che non chiede più che ascoltare, tenere, attendere.',
-        'Le vigilanze al capezzale (Sitzwache) in hospice si distinguono dalle altre in un punto decisivo: non hanno più un obiettivo medico. Non si tratta che qualcosa migliori. Si tratta del fatto che la persona non sia sola — e che la famiglia non si spezzi nel frattempo.',
-        'In questo lavoro cooperiamo strettamente con la nostra associazione partner Leben Pflegen Reisen e.V., la cui rete di volontari integra le ore della Heilpraxis proprio negli accompagnamenti alla fine della vita — e non lascia sola la famiglia quando i nostri turni retribuiti giungono al termine.',
-      ],
-      sections: [
-        {
-          heading: 'Dove offriamo vigilanze al capezzale in hospice',
-          stronglist: [
-            {
-              label: 'Nell\'hospice',
-              text: 'La maggior parte degli hospice di Berlino (Ricam Hospiz, Hospiz Schöneberg-Steglitz, Hospiz Wilmersdorf, Christophorus Hospiz, Lazarus Hospiz e altri) ha proprie strutture di vigilanza al capezzale volontaria. Noi ci aggiungiamo come integrazione — spesso per clienti che desiderano un accompagnamento continuativo, che va oltre l\'offerta del volontariato.',
-            },
-            {
-              label: 'Nel reparto di cure palliative',
-              text: 'Veniamo in ospedale, in accordo con l\'équipe infermieristica. Non siamo un\'offerta concorrente — alleggeriamo il personale infermieristico assumendo la presenza 1:1, raramente possibile nella routine del reparto.',
-            },
-            {
-              label: 'A casa',
-              text: 'Molte persone vogliono morire a casa — e possono farlo, se la famiglia riesce a organizzarlo. Veniamo allora spesso per le ore notturne, per i fine settimana, per le fasi in cui i familiari stessi sentono lo sfinimento.',
-            },
-          ],
-        },
-        {
-          heading: 'Che cosa fanno le vigilanze al capezzale in hospice (e che cosa no)',
-          stronglist: [
-            {
-              label: 'Fanno',
-              text: 'restare sveglie, osservare, parlare sottovoce, leggere ad alta voce, tacere, tenere la mano, inumidire le labbra, stare in silenzio. Chiamano i familiari quando è il momento. Chiamano l\'équipe di cure palliative quando la sintomatologia cambia.',
-            },
-            {
-              label: 'Non fanno',
-              text: 'regolare gli antidolorifici (lo fa il medico), svolgere l\'assistenza in senso stretto (lo fa il servizio di assistenza), offrire un conforto che suoni falso. Non parlano di religione se non è la persona morente a farlo. Non piangono ad alta voce quando ciò che serve è tenere la posizione.',
-            },
-          ],
-        },
-        {
-          heading: 'Che cosa distingue i nostri collaboratori in questo lavoro',
-          paragraphs: [
-            'La vigilanza al capezzale in hospice è un compito particolare. Impieghiamo colleghi che:',
-          ],
-          list: [
-            'hanno esperienza dell\'accompagnamento alla fine della vita (un tirocinio in hospice, esperienza assistenziale, una formazione all\'elaborazione del lutto).',
-            'sono calmi, davvero calmi — non silenziosi per insicurezza, ma quieti per indole.',
-            'hanno elaborato lutti propri, così che non sia il loro dolore a riempire la stanza.',
-            'non si agitano di fronte ai cambiamenti fisici della fase terminale.',
-          ],
-          trailingParagraphs: [
-            'Accompagnare qualcuno mentre muore non è un lavoro per principianti. Lo affidiamo solo a collaboratori esperti.',
-          ],
-        },
-        {
-          heading: 'Quanto costano le vigilanze al capezzale in hospice',
-          paragraphs: [
-            'Le vigilanze al capezzale alla fine della vita cadono spesso in giornate già costose, in una fase già costosa. Applichiamo una tariffa ridotta per l\'accompagnamento alla fine della vita, inferiore al nostro standard — la somma esatta per un turno notturno o per un accompagnamento di più giorni gliela indichiamo nel primo colloquio.',
-            'I supplementi notturni (25 %) e quelli domenicali e festivi (50 %) secondo il § 3b EStG sono indicati in modo trasparente.',
-          ],
-        },
-      ],
-      faq: [
-        {
-          question: 'Potete venire nell\'hospice anche se lì ci sono già delle vigilanze?',
-          answer:
-            'Sì — in accordo con l\'équipe dell\'hospice. Ci consideriamo un\'integrazione, non un sostituto. Spesso portiamo una presenza aggiuntiva proprio nelle ultime 24 ore, perché le vigilanze volontarie non sono disponibili in modo continuativo.',
-        },
-        {
-          question: 'Con quanta rapidità potete venire, quando diventa chiaro che la fine è vicina?',
-          answer:
-            'Se abbiamo un preavviso di 24 ore, sì. In situazioni davvero acute (poche ore) ci proviamo, ma non sempre possiamo garantirlo.',
-        },
-        {
-          question: 'I vostri collaboratori parlano con la persona morente della morte?',
-          answer:
-            'Solo se è la persona stessa a introdurre l\'argomento. Noi ascoltiamo. Non diamo impulso a temi che non siamo in grado di valutare.',
-        },
-        {
-          question: 'Potete aiutare anche dopo il decesso?',
-          answer:
-            'Se desiderato, restiamo nelle prime ore dopo il decesso. Aiutiamo a chiamare il medico d\'emergenza per la constatazione del decesso, siamo presenti per la famiglia, effettuiamo la consegna all\'impresa di pompe funebri. Per l\'elaborazione del lutto nelle settimane successive indirizziamo a servizi specializzati.',
-        },
-        {
-          question: 'Vi intendete di diverse tradizioni religiose?',
-          answer:
-            'Rispettiamo ogni tradizione. In presenza di riti specifici (ad esempio l\'usanza musulmana della lavatura da parte dei familiari, le liturgie ortodosse, le usanze ebraiche della Shiva) chiediamo alla famiglia indicazioni chiare. Impariamo in fretta, ma non diamo nulla per scontato.',
-        },
-        {
-          question: 'Potete accompagnare anche processi di morte non religiosi?',
-          answer:
-            'Naturalmente. La maggior parte dei nostri accompagnamenti alla fine della vita è laica. Non imponiamo a nessuno nulla di religioso che non voglia.',
-        },
-      ],
-      cta: { text: 'Richiedi un primo colloquio', href: '/#kontakt' },
-      relatedLinks: [
-        {
-          label: 'Vigilanza al capezzale Berlino',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'l\'offerta generale',
-        },
-        {
-          label: 'Cure palliative a casa',
-          href: '/themen/palliativ-zuhause',
-          note: 'approfondimento',
-        },
-        {
-          label: 'Veglie notturne Berlino',
-          href: '/leistungen/nachtwachen-berlin',
-          note: 'quando servono solo le ore notturne',
         },
       ],
     },
@@ -1074,195 +852,8 @@ export const LEISTUNGEN_SEO_IT: Overlay<SeoLeistung> = {
           href: '/leistungen/pflegedienst-selbstzahler',
           note: 'il nostro orientamento di base',
         },
-        {
-          label: 'Accompagnamento in ospedale',
-          href: '/themen/krankenhaus-begleitung',
-          note: 'durante i ricoveri',
-        },
-        {
-          label: 'Vigilanza al capezzale Berlino',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'per l\'accompagnamento 1:1 in reparto',
-        },
       ],
     },
   },
 
-  // === Money Page 9: Klinik-Begleitung Berlin ==================================
-  'klinik-begleitung-berlin': {
-    slug: 'klinik-begleitung-berlin',
-    title: 'Assistenza in ospedale Berlino',
-    short: 'Accompagnamento 1:1 in ospedale — quando i familiari non possono essere presenti in ogni momento.',
-    metaTitle: 'Assistenza in ospedale Berlino — 1:1 in reparto',
-    metaDescription:
-      'Assistenza privata in ospedale a Berlino: quando gli infermieri seguono 18 pazienti, noi siamo 1:1 per il Suo familiare. Demenza, cadute, dopo operazioni.',
-    h1: 'Assistenza in ospedale a Berlino — quando i familiari non possono essere presenti in ogni momento',
-    primaryKeyword: 'assistenza in ospedale Berlino',
-    secondaryKeywords: [
-      'vigilanza privata in ospedale Berlino',
-      'accompagnamento demenza ospedale Berlino',
-      'veglia notturna post-operatoria Berlino',
-      'prevenzione cadute dopo intervento',
-    ],
-    detail: {
-      intro: [
-        'Un ricovero in ospedale è per gli anziani spesso una situazione eccezionale — un ambiente estraneo, personale che cambia, lunghe attese al pulsante di chiamata. Nella routine del reparto il personale infermieristico assiste spesso 18 o più pazienti contemporaneamente; una presenza 1:1 è raramente possibile.',
-        'Accompagniamo il Suo familiare privatamente in ospedale: in preparazione a una riabilitazione, nella notte dopo un\'operazione, in caso di demenza o rischio di caduta, durante degenze prolungate. A ore o 24 ore su 24 — come integrazione al personale della clinica, non come suo sostituto.',
-      ],
-      sections: [
-        {
-          heading: 'Che cosa facciamo concretamente',
-          stronglist: [
-            {
-              label: 'Essere presenti quando il personale non può',
-              text: 'Il personale infermieristico assiste spesso 18 o più pazienti contemporaneamente durante un turno. Noi siamo presenti 1:1 — in modo continuativo, vigili, osservando.',
-            },
-            {
-              label: 'Prevenzione delle cadute dopo un\'operazione',
-              text: 'Soprattutto di notte dopo l\'anestesia, in caso di confusione, in un ambiente estraneo. Restiamo accanto al letto e aiutiamo ad alzarsi, prima che accada qualcosa.',
-            },
-            {
-              label: 'Accompagnamento della demenza in ospedale',
-              text: 'Conosciamo la gestione della fuga dal letto, della perdita di orientamento, del delirium postoperatorio. Una presenza calma riduce nettamente lo stress e il bisogno di contenzioni o sedazione.',
-            },
-            {
-              label: 'Aiutare a mangiare, offrire da bere',
-              text: 'Ciò che il personale della clinica per mancanza di tempo spesso non riesce a fare con calma — soprattutto con i malati di demenza, che semplicemente «dimenticano» di mangiare.',
-            },
-            {
-              label: 'Il pulsante di chiamata sotto controllo, punto di riferimento per personale e medici',
-              text: 'Trasmissione delle osservazioni, mediazione durante la visita, promemoria per le domande che nella routine ospedaliera vanno spesso perdute.',
-            },
-            {
-              label: 'Accompagnamento a esami e trasferimenti',
-              text: 'Il paziente non resta solo in corridoio o durante l\'attesa — restiamo con lui.',
-            },
-            {
-              label: 'Sollievo per la famiglia',
-              text: 'Non deve correre ogni sera dopo il lavoro. Sa che qualcuno è presente.',
-            },
-          ],
-        },
-        {
-          heading: 'Quando ha senso?',
-          paragraphs: ['Quattro situazioni tipiche in cui le famiglie ci chiamano:'],
-          stronglist: [
-            {
-              label: 'Dopo un\'operazione programmata',
-              text: 'Le prime 2-5 notti per sicurezza — la fase con il più alto rischio di delirium e di caduta.',
-            },
-            {
-              label: 'In caso di demenza o confusione',
-              text: 'Accompagnamento continuativo per l\'intera degenza, perché l\'ambiente ospedaliero spesso peggiora nettamente la demenza.',
-            },
-            {
-              label: 'Durante degenze prolungate (oltre una settimana)',
-              text: 'A giornate o a ore, dove i familiari non possono essere presenti di continuo.',
-            },
-            {
-              label: 'Nel pronto soccorso',
-              text: 'Supporto a breve termine, quando nessuno della famiglia può arrivare abbastanza in fretta.',
-            },
-          ],
-        },
-        {
-          heading: 'Che cosa ci distingue',
-          stronglist: [
-            {
-              label: 'Infermieri esperti, non personale ausiliario',
-              text: 'L\'assistenza in ospedale è impegnativa. Questi incarichi da noi vengono affidati solo a personale con adeguata esperienza professionale — capacità di osservazione, modi calmi, gestione della confusione e dei familiari, valutazione professionale delle osservazioni da riferire al personale della clinica.',
-            },
-            {
-              label: 'Rapporto con il personale infermieristico e i medici',
-              text: 'Sappiamo come muoverci nella routine ospedaliera senza intralciare. Ci annunciamo all\'accettazione e alla direzione infermieristica, concordiamo gli orari di presenza, ci integriamo nella routine del reparto.',
-            },
-            {
-              label: 'Discreti e rispettosi della dignità',
-              text: 'Non parliamo di altri pazienti, integriamo l\'équipe del reparto con rispetto, ci facciamo da parte quando la famiglia è presente.',
-            },
-          ],
-        },
-      ],
-      faq: [
-        {
-          question: 'Quanto costa un\'assistenza privata in ospedale a Berlino?',
-          answer:
-            'I costi dipendono dal numero di ore, dalla quota diurna e notturna e dalla qualifica necessaria. Non indichiamo tariffe forfettarie, perché le situazioni sono molto diverse. Nel primo colloquio gratuito prima ascoltiamo — poi facciamo una proposta concreta e trasparente.',
-        },
-        {
-          question: 'La cassa malattia si fa carico di un\'assistenza in ospedale tramite un servizio di assistenza?',
-          answer:
-            'Nella maggior parte dei casi no. La cassa malattia obbligatoria paga l\'assistenza medica in ospedale, ma non un\'ulteriore assistenza 1:1 tramite un servizio esterno. Vi sono eccezioni per il «rooming-in» dei bambini e in rari casi particolari. Per gli adulti con demenza, rischio di caduta o particolare bisogno di assistenza, l\'assistenza privata in ospedale è di norma una prestazione a pagamento privato. Alcune assicurazioni integrative private rimborsano in parte — La preghiamo di chiarirlo in anticipo.',
-        },
-        {
-          question: 'Che cosa può fare concretamente un accompagnamento privato in ospedale?',
-          answer:
-            'Essere presente, tenere sotto controllo il pulsante di chiamata e il paziente, aiutare a mangiare e bere, assistere nei cambi di posizione, rassicurare in caso di confusione, informare personale infermieristico e medici sulle osservazioni, accompagnare agli esami. Non sostituiamo il personale della clinica — lo integriamo con una figura di riferimento costantemente presente. Le attività mediche (somministrazione di farmaci, cura delle ferite, cambio di medicazioni) restano al personale della clinica.',
-        },
-        {
-          question: 'Mio padre dopo l\'operazione è confuso (delirium) — che cosa possiamo fare?',
-          answer:
-            'Il delirium postoperatorio riguarda soprattutto gli anziani e compare spesso nelle prime notti dopo un\'operazione. La misura più efficace è una presenza calma e familiare — gli studi mostrano che le vigilanze al capezzale (Sitzwache) possono ridurre nettamente il bisogno di contenzioni e sedazione. Se Lei stesso non può essere presente di continuo, ce ne occupiamo noi. Soprattutto nelle ore notturne, quando la confusione spesso si aggrava.',
-        },
-        {
-          question: 'Mia madre ha la demenza e deve andare in ospedale — come possiamo aiutare?',
-          answer:
-            'I ricoveri sono particolarmente gravosi per le persone con demenza: ambiente estraneo, routine mancanti, molti volti sconosciuti. Un accompagnamento costante riduce nettamente l\'ansia, la fuga dal letto e il rischio di caduta. Se la famiglia non può essere presente di continuo, ci occupiamo noi dell\'accompagnamento — conosciamo la gestione della demenza e ci coordiniamo strettamente con il personale della clinica. Vi rientra anche l\'aiuto a mangiare, che con la demenza viene spesso «dimenticato».',
-        },
-        {
-          question: 'Con quanta rapidità potete venire?',
-          answer:
-            'Per le degenze programmate (operazione, riabilitazione) è meglio qualche giorno di preavviso. Nelle situazioni acute (pronto soccorso, bisogno improvviso) cerchiamo di organizzare un primo accompagnamento entro 24 ore — a seconda del giorno della settimana e dell\'ora anche più rapidamente. Ci chiami e discuteremo che cosa è possibile.',
-        },
-        {
-          question: 'L\'ospedale può ammettere un accompagnatore privato?',
-          answer:
-            'Sì. I familiari e gli accompagnatori da loro incaricati hanno in linea di principio accesso al paziente. Naturalmente ci annunciamo all\'accettazione e al personale infermieristico e concordiamo gli orari di presenza. La maggior parte delle cliniche berlinesi conosce il modello e collabora bene. Nelle stanze a più letti concordiamo il rispetto per gli altri pazienti.',
-        },
-        {
-          question: 'Potete assumere anche una sola notte?',
-          answer:
-            'Sì. Molti dei nostri incarichi sono esattamente questo: una, due o tre notti subito dopo un\'operazione, quando il rischio di caduta o di confusione è più alto. Accompagnamenti più lunghi di diverse settimane li facciamo allo stesso modo.',
-        },
-        {
-          question: 'In quali ospedali operate?',
-          answer:
-            'Accompagniamo in tutte le cliniche di Berlino — Charité, Helios, Vivantes, DRK, Park-Klinik Weissensee, St. Joseph, Schlosspark-Klinik, St. Gertrauden e tutte le altre. Il fulcro della nostra area di attività è l\'ovest di Berlino (Zehlendorf, Grunewald, Charlottenburg, Wilmersdorf, Dahlem, Schmargendorf, Westend), ma siamo attivi anche a Mitte, Moabit, Tiergarten e nei dintorni.',
-        },
-        {
-          question: 'Chi svolge concretamente l\'incarico — tirocinanti o personale esperto?',
-          answer:
-            'Infermieri esperti con adeguata qualifica. L\'assistenza in ospedale è impegnativa: capacità di osservazione, modi calmi, gestione della confusione e dei familiari, valutazione professionale delle osservazioni da riferire al personale della clinica. Questi incarichi da noi vengono affidati solo a personale con adeguata esperienza.',
-        },
-        {
-          question: 'E se mia madre non si trova bene con il vostro collaboratore?',
-          answer:
-            'Di norma diventiamo in breve tempo un volto familiare — la maggior parte dei pazienti si tranquillizza già dopo la prima ora. Se in un singolo caso non dovesse funzionare, sostituiamo il collaboratore. L\'intesa personale è molto importante proprio in queste situazioni.',
-        },
-        {
-          question: 'Come si prenota?',
-          answer:
-            'Basta una prima telefonata. Chiariamo la situazione (operazione programmata, acuta, continuativa), il quadro del fabbisogno (demenza, rischio di caduta, insicurezza generale), l\'entità (giorno, notte, continuativo) e l\'ospedale. Entro 24 ore riceve una proposta concreta.',
-        },
-      ],
-      cta: { text: 'Richiedi un primo colloquio', href: '/#kontakt' },
-      relatedLinks: [
-        {
-          label: 'Vigilanza al capezzale Berlino',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'la parentela più stretta — anche a casa e in hospice',
-        },
-        {
-          label: 'Accompagnamento in ospedale (approfondimento)',
-          href: '/themen/krankenhaus-begleitung',
-          note: 'quando un accompagnamento è opportuno, chi ne ha bisogno',
-        },
-        {
-          label: 'Accompagnamento della demenza',
-          href: '/themen/demenz-begleitung',
-          note: 'approfondimento sull\'accompagnamento dei malati di demenza',
-        },
-      ],
-    },
-  },
 };

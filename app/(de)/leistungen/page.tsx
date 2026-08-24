@@ -4,7 +4,7 @@ import { pageMeta } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Leistungen',
-  description: 'Sitzwachen, Pflege für Selbstzahler, 24-Stunden-Betreuung, Pflegeberatung — die Leistungen der Heilpraxis Frommholz in Berlin.',
+  description: '1:1-Betreuung, Pflege für Selbstzahler, 24-Stunden-Betreuung, Pflegeberatung — die Leistungen der Heilpraxis Frommholz in Berlin.',
   ...pageMeta('/leistungen'),
   robots: { index: true, follow: true },
 };

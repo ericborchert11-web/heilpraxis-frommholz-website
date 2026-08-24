@@ -9,154 +9,84 @@ import type { SeoLeistung } from '@/lib/leistungen-seo';
  * Das sind deutsche Referenzpfade, die `localizedHref` beim Rendern übersetzt.
  */
 export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
-  // === Money Page 1: Sitzwachen Berlin =========================================
-  'sitzwachen-berlin': {
-    slug: 'sitzwachen-berlin',
-    title: 'Acompañamiento a pie de cama en Berlín',
-    short: 'Presencia 1:1 en el hospital, en cuidados paliativos y en casa.',
-    metaTitle: 'Acompañante a pie de cama Berlín – atención 1:1',
+  // === Money Page 1: 1:1-Betreuung zu Hause ====================================
+  '1-zu-1-betreuung-berlin': {
+    slug: '1-zu-1-betreuung-berlin',
+    title: 'Atención individual en casa',
+    short: 'Una persona, un cuidador, atención sin dividir — por horas o las veinticuatro horas, en el propio domicilio.',
+    metaTitle: 'Atención individual Berlín – acompañamiento privado en casa',
     metaDescription:
-      'Acompañantes a pie de cama en Berlín: hospital, psiquiatría, paliativos, domicilio. Equipo experimentado, disponible pronto. Primera consulta gratuita.',
-    h1: 'Acompañamiento a pie de cama en Berlín — cuando nadie debería estar solo',
-    primaryKeyword: 'acompañante para enfermos Berlín',
+      'Atención individual privada en Berlín: una persona de referencia en el propio domicilio, por horas o de forma continua. En caso de demencia, riesgo de caídas o en la última etapa de la vida.',
+    h1: 'Atención individual en casa — toda la atención para una sola persona',
+    primaryKeyword: 'atención individual Berlín',
     secondaryKeywords: [
-      'acompañamiento en hospital Berlín',
-      'vela nocturna enfermos Berlín',
-      'acompañante hospital privado Berlín',
+      'cuidador privado en casa Berlín',
+      'atención individual demencia Berlín',
+      'cuidados privados Berlín',
     ],
     detail: {
       intro: [
-        'Un acompañamiento a pie de cama (Sitzwache) significa esto: hay alguien presente. No para la atención médica —de eso se ocupan los médicos y el personal de enfermería—, sino para la presencia misma. Para la sensación de que alguien se queda cuando la noche se hace larga, cuando llega la operación, cuando la confusión aparece y se va y vuelve a aparecer.',
-        'La Heilpraxis Frommholz proporciona acompañantes a pie de cama en toda Berlín: en el hospital, en psiquiatría, en centros de cuidados paliativos y en el domicilio. Llevamos más de quince años especializados en la atención 1:1. Quien necesita un acompañamiento a pie de cama suele haber pasado ya por mucho. Entendemos que en esos momentos importa menos la técnica que la humanidad, y nuestro personal reúne ambas cosas.',
-        'Una parte de nuestros acompañamientos la asumimos junto con nuestra asociación asociada sin ánimo de lucro Leben Pflegen Reisen e.V., sobre todo allí donde, además de competencia asistencial, hacen falta compromiso voluntario y periodos de presencia más prolongados.',
+        'En la asistencia domiciliaria habitual el reloj está siempre en la habitación. Quince minutos para ir al baño, doce para el desayuno, y después el siguiente domicilio. Lo primero que se pierde es justo lo que importa: tiempo en el que nadie tiene que seguir adelante.',
+        'Atención individual significa esto: una profesional está ahí para una sola persona. Sin ruta, sin atender a varios a la vez, sin relevos en mitad de una conversación. En la propia vivienda, en un entorno conocido, con las costumbres de siempre. Por horas, para noches sueltas, para una fase difícil o de forma permanente.',
+        'Trabajamos exclusivamente como servicio de enfermería privado (*Selbstzahler-Pflegedienst*) con un equipo pequeño y estable. Es una decisión consciente: tiene un precio, pero es lo que hace posible este tipo de tiempo.',
       ],
       sections: [
         {
-          heading: 'Cuándo tiene sentido un acompañamiento a pie de cama',
+          heading: 'Cuándo la atención individual es el camino correcto',
           paragraphs: [
-            'Un acompañamiento a pie de cama es más que una silla junto a la cama. Protege, tranquiliza, evita males mayores. Situaciones típicas en las que nos llaman nuestros clientes:',
+            'No toda situación necesita una presencia constante. Estas suelen necesitarla:',
           ],
           stronglist: [
-            {
-              label: 'Después de una operación',
-              text: 'La confusión posoperatoria (delirio) es una de las complicaciones más frecuentes en pacientes mayores. Una presencia familiar puede reducir el riesgo de delirio y favorecer el curso de la recuperación.',
-            },
-            {
-              label: 'Cuando hay riesgo de caídas',
-              text: 'Quien se inquieta por la noche, quiere levantarse, ya no se orienta, corre riesgo de caerse. Un acompañante a pie de cama observa, tranquiliza, ayuda a incorporarse, y puede prevenir caídas y las lesiones que las acompañan, que de otro modo pueden marcar toda una etapa de la vida.',
-            },
-            {
-              label: 'En la fase final de la vida',
-              text: 'Cuando está claro que se acerca el final, muchas familias no quieren que su ser querido se vaya solo. Pero no todos pueden estar junto a la cama sin descanso. Nosotros asumimos las horas de la noche, los fines de semana, las fases en las que usted mismo necesita descansar.',
-            },
-            {
-              label: 'En crisis psiquiátricas',
-              text: 'Riesgo agudo para uno mismo o para terceros, fases suicidas, episodios depresivos graves. Una atención 1:1 protege, y en algunos casos puede ayudar a evitar un ingreso involuntario.',
-            },
-            {
-              label: 'En casos de demencia',
-              text: 'Fases de vigilia nocturna, riesgo de deambulación, desorientación: un acompañante a pie de cama aporta calma a una situación que, de otro modo, agota a la familia.',
-            },
+            { label: 'Demencia con inquietud nocturna', text: 'Levantarse, deambular, confundir el día y la noche. Los familiares aguantan unas semanas y después están agotados. Una persona de referencia fija devuelve la estructura — y el sueño a la familia.' },
+            { label: 'Riesgo de caídas', text: 'Quien se levanta de noche y ya no se sostiene con seguridad no debería quedarse solo en casa. Estamos ahí cuando se levanta, ayudamos a tiempo y prevenimos caídas que de otro modo marcarían toda una etapa de la vida.' },
+            { label: 'La última etapa de la vida en casa', text: 'Muchas personas quieren morir en su casa. Para que sea posible, la familia necesita a alguien que sostenga con ella las horas largas: despierto, tranquilo, con experiencia, sin prisa.' },
+            { label: 'Después de una operación', text: 'Las primeras noches de la recuperación son las más críticas: confusión, inseguridad al levantarse, dolor. El acompañamiento cubre ese tramo hasta que vuelve la estabilidad.' },
+            { label: 'Cuando los familiares llegan a su límite', text: 'Quien cuida necesita noches en las que duerme de un tirón y días en los que no tiene que estar localizable. Nosotros asumimos esas horas con fiabilidad.' },
           ],
         },
         {
-          heading: 'Dónde ofrecemos acompañamiento a pie de cama',
-          paragraphs: [
-            'Trabajamos en toda Berlín. Nuestra sede en Moabit (Stephanstraße 46) queda bien comunicada, en el centro de la ciudad: desde aquí llegamos a Charlottenburg en diez minutos, a Wilmersdorf en doce y a Zehlendorf en veinticinco.',
-            'Proporcionamos acompañantes a pie de cama en:',
-          ],
+          heading: 'Qué hace una cuidadora con nosotros',
           stronglist: [
-            {
-              label: 'Hospitales',
-              text: 'Charité (todas las sedes), clínicas Vivantes, Schlosspark-Klinik, Sankt Gertrauden, DRK Kliniken, Lazarus, Helios y todos los demás hospitales de Berlín.',
-            },
-            {
-              label: 'Clínicas psiquiátricas',
-              text: 'Vivantes Wenckebach, St. Hedwig, Schlosspark-Klinik y todas las clínicas de agudos y hospitales de día del término municipal.',
-            },
-            {
-              label: 'Centros de cuidados paliativos y unidades de paliativos',
-              text: 'en estrecha coordinación con el equipo del centro.',
-            },
-            {
-              label: 'Residencias de mayores',
-              text: 'cuando la familia necesita alivio o cuando una situación particular exige una atención 1:1.',
-            },
-            {
-              label: 'En el domicilio',
-              text: 'en la vivienda de siempre, con todo lo que hace propio el entorno de uno.',
-            },
+            { label: 'Estar ahí', text: 'Presente, atenta, disponible. Hablar cuando alguien quiere hablar. Callar cuando alguien quiere silencio.' },
+            { label: 'Observar y ordenar lo observado', text: 'Detectar cambios y transmitirlos con claridad — a la familia, al médico de cabecera, al servicio de enfermería. Con más de quince años de experiencia, nuestro equipo sabe qué es importante y qué puede esperar.' },
+            { label: 'Sostener la vida cotidiana', text: 'Ayudar con la comida y la bebida, acompañar al baño, ayudar en los cambios posturales, administrar la medicación según pauta, mantener la calma y el orden.' },
+            { label: 'Acompañar a donde haga falta', text: 'Al médico de cabecera, al especialista, a pasear, a una celebración familiar. Nadie espera solo en un pasillo.' },
+            { label: 'Aliviar a la familia', text: 'No hace falta correr cada tarde. Usted sabe que hay alguien ahí — y se entera de cómo ha ido.' },
           ],
         },
         {
-          heading: 'Qué cuesta un acompañamiento a pie de cama con nosotros',
-          paragraphs: [
-            'Los acompañamientos a pie de cama son, por regla general, una prestación de pago privado. El seguro de dependencia legal (Pflegekasse) no los cubre de forma directa; en algunos casos puede utilizarse el cuidado de relevo (Verhinderungspflege, § 39 SGB XI) o la prestación de descarga (Entlastungsbetrag, § 45b SGB XI), y con mucho gusto le asesoramos al respecto.',
-            'No indicamos precios cerrados, porque las situaciones difieren demasiado. Un acompañamiento nocturno en el hospital se calcula de otra manera que un acompañamiento de doce horas en el domicilio. En la primera consulta gratuita aclaramos qué necesita usted y qué cuesta en concreto. Los recargos transparentes conforme al § 3b EStG (25 % por la noche, 50 % domingos y festivos) rigen en todos los servicios.',
+          heading: '¿Presencia despierta o localizada?',
+          paragraphs: ['Para las horas de la noche distinguimos dos modelos, y la diferencia se nota claramente en el precio:'],
+          stronglist: [
+            { label: 'Presencia activa (despierta)', text: 'La profesional permanece despierta toda la noche, observa activamente y documenta con regularidad. Adecuado en situaciones agudas: fase final, confusión grave, alto riesgo de caídas.' },
+            { label: 'Presencia localizada', text: 'La profesional duerme en una habitación contigua o en un sillón reclinable en la misma habitación, y se despierta con cualquier ruido. Adecuado cuando las noches suelen ser tranquilas pero nadie debe quedarse solo.' },
           ],
+          trailingParagraphs: ['Qué modelo encaja lo aclaramos en la primera conversación. Se puede cambiar en cualquier momento si la situación cambia.'],
         },
         {
-          heading: 'Qué saben hacer nuestros acompañantes a pie de cama',
+          heading: 'Qué cuesta la atención individual',
           paragraphs: [
-            'Nuestro equipo es mixto: personal de enfermería titulado, auxiliares de enfermería, educadores y educadoras sociales, personal de acompañamiento con años de experiencia en psiquiatría. Según la situación, asignamos la cualificación adecuada. Lo que todos tienen en común:',
-          ],
-          list: [
-            'Calma en situaciones exigentes',
-            'Capacidad de observar y de documentar con objetividad',
-            'Experiencia en el trato con la confusión, la agresividad y el miedo',
-            'Discreción: lo que se ve y se oye en la vivienda se queda ahí',
+            'La atención individual es una prestación privada. El seguro público de dependencia no la cubre directamente. Si existe un grado de dependencia (*Pflegegrad*), a menudo pueden emplearse el cuidado de respiro (*Verhinderungspflege*, § 39 SGB XI) o el importe de alivio (*Entlastungsbetrag*, § 45b SGB XI) — usted presenta después nuestra factura. Le asesoramos sobre lo que es posible en su caso.',
+            'No damos precios cerrados, porque las situaciones son demasiado distintas: la tarifa por hora depende de la cualificación necesaria, del alcance y de si se trata de presencia despierta o localizada. En la primera conversación, que es gratuita, primero escuchamos y después hacemos una propuesta concreta y transparente, con tarifa por hora e importe total previsto.',
+            'Los recargos según el § 3b EStG los indicamos abiertamente: 25 % de noche, 50 % domingos y festivos.',
           ],
         },
       ],
       faq: [
-        {
-          question: '¿Qué diferencia hay entre un acompañante a pie de cama y personal de enfermería?',
-          answer:
-            'Un acompañante a pie de cama está presente, observa, protege y tranquiliza, pero no realiza tareas asistenciales como cambios posturales, cura de heridas o administración de medicación. El personal de enfermería hace ambas cosas; un acompañante a pie de cama se especializa en la presencia.',
-        },
-        {
-          question: '¿Pueden venir los acompañantes también de noche?',
-          answer:
-            'Sí. El acompañamiento nocturno es una de nuestras solicitudes más frecuentes. Llegamos a la hora acordada y nos quedamos hasta la mañana; si hace falta, varias noches seguidas, por turnos dentro de un equipo estable.',
-        },
-        {
-          question: '¿Con qué rapidez está disponible un acompañante a pie de cama?',
-          answer:
-            'En urgencias, a menudo en menos de veinticuatro horas, a veces el mismo día. Para servicios que pueden planificarse con más antelación (por ejemplo, tras una operación) solo necesitamos dos o tres días de aviso.',
-        },
-        {
-          question: '¿Están los acompañantes cualificados profesionalmente?',
-          answer:
-            'Según la situación asignamos distintas cualificaciones. En situaciones médicamente delicadas acude personal de enfermería titulado. Cuando basta con la presencia, a menudo es suficiente un profesional de acompañamiento con experiencia. Lo aclaramos en la primera consulta.',
-        },
-        {
-          question: '¿Podemos facturar el acompañamiento a través del seguro de dependencia?',
-          answer:
-            'De forma directa, no: facturamos exclusivamente como prestación de pago privado. Ahora bien, si existe un grado de dependencia (Pflegegrad), puede utilizar la prestación de descarga (125 € al mes) o el cuidado de relevo y presentar usted mismo nuestra factura. Le asesoramos sobre lo que es posible.',
-        },
-        {
-          question: '¿Quién responde si ocurre algo?',
-          answer:
-            'Disponemos de un seguro de responsabilidad civil profesional. Los daños causados por nuestro personal se gestionan a través de ese seguro.',
-        },
+        { question: '¿Con qué rapidez pueden empezar?', answer: 'En situaciones previsibles bastan dos o tres días. En casos agudos intentamos ofrecer un primer acompañamiento en 24 horas — según el día y la hora, incluso antes. Llámenos y le diremos con franqueza qué es posible.' },
+        { question: '¿Podemos contratar solo noches sueltas?', answer: 'Sí. Muchos de nuestros servicios son exactamente eso: una, dos o tres noches en una fase crítica. Noches sueltas de fin de semana o una noche fija por semana son tan posibles como un acompañamiento continuo durante meses.' },
+        { question: '¿Es siempre la misma persona?', answer: 'En la medida de lo posible, sí. Trabajamos con un equipo pequeño y estable y, en acompañamientos largos, con dos o tres profesionales que se alternan, para que también en caso de enfermedad o vacaciones llegue una cara conocida. Un personal en cambio constante sería lo contrario de lo que busca la atención individual.' },
+        { question: '¿Y si a mi madre no le gusta la persona?', answer: 'Entonces la cambiamos. Normalmente la extrañeza desaparece tras la primera hora, pero la química personal no es un detalle menor en este trabajo. Díganoslo y lo organizamos sin discusión.' },
+        { question: '¿Qué cualificación tiene el personal?', answer: 'Depende de la situación. Cuando las exigencias asistenciales son altas, acude una enfermera titulada. Cuando se trata de presencia, atención y vida cotidiana, una cuidadora con experiencia suele ser la mejor opción. Qué necesita su caso lo aclaramos antes, no después.' },
+        { question: '¿Lo cubre el seguro de enfermedad?', answer: 'No. El seguro público de enfermedad paga el tratamiento médico, no la presencia continua de una persona de referencia. Algunos seguros privados complementarios reembolsan una parte — conviene aclararlo de antemano.' },
+        { question: '¿Necesitamos una habitación propia para la cuidadora?', answer: 'Para la presencia localizada basta un sofá, un sillón o una butaca reclinable — no hace falta una cama. Para la presencia despierta basta una silla y luz para leer. Nos adaptamos a su vivienda, y no al revés.' },
+        { question: '¿Qué ocurre en una emergencia?', answer: 'La cuidadora avisa al servicio de urgencias (112), informa a los familiares y permanece junto a la persona hasta que llega la ayuda. Lo que hay que hacer se fija por escrito con usted al inicio del acompañamiento y, si lo desea, con el médico de cabecera.' },
       ],
-      cta: { text: 'Solicitar una primera consulta', href: '/#kontakt' },
+      cta: { text: 'Solicitar una primera conversación', href: '/#kontakt' },
       relatedLinks: [
-        {
-          label: 'Acompañamiento hospitalario en Berlín',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'acompañamiento a pie de cama específico en el hospital',
-        },
-        {
-          label: 'Servicio de enfermería para pago privado',
-          href: '/leistungen/pflegedienst-selbstzahler',
-          note: 'nuestra orientación de base',
-        },
-        {
-          label: 'Atención 1:1 en situaciones complejas',
-          href: '/leistungen/systemsprenger-betreuung',
-          note: 'en cuadros psiquiátricos complejos',
-        },
+        { label: 'Atención nocturna Berlín', href: '/leistungen/nachtwachen-berlin', note: 'cuando solo hay que cubrir las noches' },
+        { label: 'Atención 24 horas', href: '/leistungen/24-stunden-betreuung', note: 'cobertura continua en turnos' },
+        { label: 'Acompañamiento en demencia', href: '/themen/demenz-begleitung', note: 'información de fondo sobre la demencia' },
       ],
     },
   },
@@ -190,11 +120,11 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Enfermedad psiquiátrica y adicción concurrentes',
-              text: 'Un adulto joven con episodios psicóticos graves y, a la vez, abuso de cannabis y alcohol. Las terapias de deshabituación hospitalarias fracasan por la enfermedad psiquiátrica; los ingresos psiquiátricos, por el consumo. Nosotros lo acompañamos en su domicilio, con un marco claro, contactos regulares y una persona de referencia fija.',
+              text: 'Un adulto joven con episodios psicóticos graves y, a la vez, abuso de cannabis y alcohol. Las terapias de deshabituación fracasan por la enfermedad psiquiátrica; el tratamiento psiquiátrico, por el consumo. Nosotros lo acompañamos en su domicilio, con un marco claro, contactos regulares y una persona de referencia fija.',
             },
             {
               label: 'Riesgo agudo de autolesión en el entorno doméstico',
-              text: 'Una mujer de unos cincuenta y cinco años, con depresión grave, dada de alta del hospital tras varios intentos de suicidio. La familia no puede estar presente las veinticuatro horas y ella no quiere otro ingreso. Establecemos una atención de veinticuatro horas en modelo de turnos rotativos, hasta que la terapia ambulatoria surte efecto.',
+              text: 'Una mujer de unos cincuenta y cinco años, con depresión grave, de vuelta en casa tras varios intentos de suicidio. La familia no puede estar presente las veinticuatro horas y ella no quiere volver a tratarse fuera de casa. Establecemos una atención de veinticuatro horas en modelo de turnos rotativos, hasta que la terapia ambulatoria surte efecto.',
             },
             {
               label: 'La vivienda compartida asistida fracasa',
@@ -223,7 +153,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
             },
             {
               label: 'Conexión con la red de ayuda',
-              text: 'Trabajamos en estrecha colaboración con hospitales, psiquiatras de consulta, tutores legales y servicios sociopsiquiátricos. No somos un sustituto de un equipo de tratamiento profesional: somos su brazo prolongado en la vida cotidiana en casa.',
+              text: 'Trabajamos en estrecha colaboración con los médicos responsables, psiquiatras de consulta, tutores legales y servicios sociopsiquiátricos. No somos un sustituto de un equipo de tratamiento profesional: somos su brazo prolongado en la vida cotidiana en casa.',
             },
           ],
         },
@@ -245,11 +175,11 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Medidas coercitivas',
-              text: 'no forman parte de nuestro cometido: cuando alguien supone un peligro agudo para terceros y no acepta la atención de forma voluntaria, eso corresponde a un hospital con unidad cerrada.',
+              text: 'no forman parte de nuestro cometido: cuando alguien supone un peligro agudo para terceros y no acepta la atención de forma voluntaria, eso corresponde a un centro con unidad cerrada.',
             },
             {
               label: 'Desintoxicación',
-              text: 'no la realizamos: eso corresponde a clínicas de adicciones cualificadas.',
+              text: 'no la realizamos: eso corresponde a un tratamiento de deshabituación cualificado.',
             },
             {
               label: 'Psicoterapia aguda prolongada',
@@ -272,7 +202,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
         {
           question: '¿Con qué rapidez pueden asumir el caso?',
           answer:
-            'En traspasos agudos desde el hospital, por regla general en un plazo de tres a siete días, según la complejidad del entorno. Un traspaso más rápido es posible en situaciones de urgencia.',
+            'En traspasos agudos, por regla general en un plazo de tres a siete días, según la complejidad del entorno. Un traspaso más rápido es posible en situaciones de urgencia.',
         },
         {
           question: '¿Cuánto cuesta aproximadamente al mes una atención 1:1 de veinticuatro horas de este tipo?',
@@ -296,11 +226,6 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
           label: 'Servicio de enfermería para pago privado',
           href: '/leistungen/pflegedienst-selbstzahler',
           note: 'nuestra orientación de base',
-        },
-        {
-          label: 'Acompañamiento a pie de cama en Berlín',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'acompañamiento 1:1 puntual',
         },
       ],
     },
@@ -413,11 +338,6 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
       ],
       cta: { text: 'Solicitar una primera consulta', href: '/#kontakt' },
       relatedLinks: [
-        {
-          label: 'Acompañamiento a pie de cama en Berlín',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'acompañamiento 1:1 puntual',
-        },
         {
           label: 'Atención 1:1 en situaciones complejas',
           href: '/leistungen/systemsprenger-betreuung',
@@ -535,7 +455,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
         {
           question: '¿Podemos empezar con poca antelación?',
           answer:
-            'En traspasos agudos (por ejemplo, un alta hospitalaria) necesitamos de cinco a diez días. Con un horizonte de planificación más amplio podemos ajustarnos de forma más individual.',
+            'Cuando la atención en casa debe comenzar a corto plazo, necesitamos de cinco a diez días. Con un horizonte de planificación más amplio podemos ajustarnos de forma más individual.',
         },
         {
           question: '¿Qué ocurre si nuestro familiar fallece?',
@@ -554,11 +474,6 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
           label: 'Servicio de enfermería para pago privado',
           href: '/leistungen/pflegedienst-selbstzahler',
           note: 'nuestra orientación de base',
-        },
-        {
-          label: 'Acompañamiento hospitalario en Berlín',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'cuando el acompañamiento continuo tiene lugar en el hospital',
         },
         {
           label: 'Acompañamiento nocturno en Berlín',
@@ -608,7 +523,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
             },
             {
               label: 'Gestionar las transiciones',
-              text: 'Cuando se acerca el alta hospitalaria, cuando se cambia de centro de día o de servicio a domicilio, cuando hay que buscar una plaza en residencia, le ayudamos a dar los pasos adecuados en el orden adecuado.',
+              text: 'Cuando la atención en casa comienza de nuevo, cuando se cambia de centro de día o de servicio a domicilio, cuando hay que buscar una plaza en residencia, le ayudamos a dar los pasos adecuados en el orden adecuado.',
             },
             {
               label: 'Poderes y previsión',
@@ -646,7 +561,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
           list: [
             'Antes de la primera cita del peritaje: la preparación decide a menudo una diferencia de uno o dos grados de dependencia.',
             'Con un grado de dependencia denegado o demasiado bajo: aquí hay que respetar el plazo de recurso (cuatro semanas).',
-            'En el alta hospitalaria: las primeras semanas son decisivas para la estabilidad de la atención.',
+            'Cuando la atención en casa comienza de nuevo: las primeras semanas son decisivas para su estabilidad.',
             'Ante una necesidad de cuidados repentina (ictus, caída): una solicitud rápida asegura prestaciones con efecto retroactivo desde la fecha de solicitud.',
             'En conflictos familiares sobre el cuidado de los padres.',
           ],
@@ -717,7 +632,7 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
     short: 'Una presencia despierta cuando la noche se hace larga.',
     metaTitle: 'Acompañamiento nocturno Berlín – noches seguras',
     metaDescription:
-      'Acompañamiento nocturno en Berlín: hospital, paliativos, domicilio. Equipo experimentado, disponible de inmediato. Demencia, riesgo de caídas, final de la vida.',
+      'Acompañamiento nocturno en Berlín, en el propio domicilio. Equipo experimentado, disponible a corto plazo. Demencia, riesgo de caídas, final de la vida.',
     h1: 'Acompañamiento nocturno en Berlín — a salvo a lo largo de la noche',
     primaryKeyword: 'acompañamiento nocturno Berlín',
     secondaryKeywords: [
@@ -747,8 +662,8 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
               text: 'Algunas personas mueren en una noche determinada. Nadie puede predecirlo, pero todos pueden prepararse para estar presentes. Un acompañamiento nocturno toma el relevo cuando la familia necesita dormir entretanto.',
             },
             {
-              label: 'Tras el alta hospitalaria',
-              text: 'Las primeras noches en casa tras un ingreso hospitalario son a menudo las más críticas. Un acompañamiento nocturno hace de puente hasta que regresa la estabilidad.',
+              label: 'En la convalecencia tras una operación',
+              text: 'Las primeras noches tras una intervención son a menudo las más críticas: inseguridad al levantarse, confusión, dolor. Un acompañamiento nocturno hace de puente hasta que regresa la estabilidad.',
             },
             {
               label: 'En un momento de carga psíquica aguda',
@@ -812,16 +727,6 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
       cta: { text: 'Solicitar una primera consulta', href: '/#kontakt' },
       relatedLinks: [
         {
-          label: 'Acompañamiento a pie de cama en Berlín',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'acompañamiento 1:1 puntual, de día y de noche',
-        },
-        {
-          label: 'Acompañamiento a pie de cama en cuidados paliativos',
-          href: '/leistungen/hospiz-sitzwachen',
-          note: 'en el final de la vida',
-        },
-        {
           label: 'Atención de veinticuatro horas',
           href: '/leistungen/24-stunden-betreuung',
           note: 'cuando no basta con cubrir la noche',
@@ -830,133 +735,6 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
     },
   },
 
-  // === Money Page 7: Hospiz-Sitzwachen ========================================
-  'hospiz-sitzwachen': {
-    slug: 'hospiz-sitzwachen',
-    title: 'Acompañamiento a pie de cama en cuidados paliativos',
-    short: 'Presencia en las últimas horas, para la persona y para la familia.',
-    metaTitle: 'Acompañamiento paliativo Berlín – últimos días',
-    metaDescription:
-      'Acompañamiento a pie de cama en cuidados paliativos, en la unidad o en casa. Discreto, experimentado, digno. Alivio para la familia en las últimas horas.',
-    h1: 'Acompañamiento a pie de cama en cuidados paliativos — alguien se queda',
-    primaryKeyword: 'acompañamiento en el final de la vida Berlín',
-    secondaryKeywords: [
-      'acompañamiento cuidados paliativos Berlín',
-      'acompañante en la agonía Berlín',
-      'vela en el final de la vida Berlín',
-    ],
-    detail: {
-      intro: [
-        'Hay una tarea particular dentro de nuestro trabajo: estar presente cuando alguien se marcha. No como personal clínico —de eso se ocupan los equipos de paliativos—, sino como una presencia despierta y serena que no pide nada más que escuchar, sostener, esperar.',
-        'El acompañamiento a pie de cama en cuidados paliativos (Sitzwache) se distingue de otros acompañamientos en un punto decisivo: ya no tiene un objetivo médico. No se trata de que nada mejore. Se trata de que la persona no esté sola, y de que la familia no se rompa por el camino.',
-        'En este trabajo cooperamos estrechamente con nuestra asociación asociada Leben Pflegen Reisen e.V., cuya red de voluntariado complementa las horas que prestamos, sobre todo en el final de la vida, para que la familia no se quede sola cuando terminan nuestros turnos remunerados.',
-      ],
-      sections: [
-        {
-          heading: 'Dónde ofrecemos acompañamiento a pie de cama en cuidados paliativos',
-          stronglist: [
-            {
-              label: 'En el centro de cuidados paliativos',
-              text: 'La mayoría de los centros de cuidados paliativos de Berlín (Ricam Hospiz, Hospiz Schöneberg-Steglitz, Hospiz Wilmersdorf, Christophorus Hospiz, Lazarus Hospiz y otros) tienen sus propias estructuras de acompañantes voluntarios. Nosotros acudimos como complemento, a menudo con clientes que desean un acompañamiento continuo, que va más allá de lo que puede ofrecer el servicio de voluntariado.',
-            },
-            {
-              label: 'En la unidad de paliativos',
-              text: 'Acudimos al hospital, en coordinación con el equipo de enfermería. No somos un servicio en competencia: aliviamos al personal de enfermería asumiendo la presencia 1:1 que rara vez es posible en la rutina de la planta.',
-            },
-            {
-              label: 'En el domicilio',
-              text: 'Muchas personas quieren morir en casa, y pueden hacerlo si la familia logra organizarlo. Nosotros acudimos a menudo para las horas de la noche, para los fines de semana, para las fases en las que la familia misma siente el agotamiento.',
-            },
-          ],
-        },
-        {
-          heading: 'Qué hacen los acompañantes en cuidados paliativos (y qué no)',
-          stronglist: [
-            {
-              label: 'Hacen',
-              text: 'estar despiertos, observar, hablar en voz baja, leer en voz alta, callar, sostener una mano, humedecer los labios, permanecer en silencio. Llaman a la familia cuando llega el momento. Llaman al equipo de paliativos cuando cambian los síntomas.',
-            },
-            {
-              label: 'No hacen',
-              text: 'ajustar la analgesia (eso lo hace el médico), realizar cuidados en sentido estricto (eso lo hace el servicio de enfermería) ni ofrecer un consuelo que suene falso. No hablan de religión salvo que lo inicie la persona que se está muriendo. No lloran en voz alta cuando lo que hace falta es mantener la firmeza.',
-            },
-          ],
-        },
-        {
-          heading: 'Qué distingue a nuestro personal en este trabajo',
-          paragraphs: [
-            'El acompañamiento a pie de cama en cuidados paliativos es una tarea particular. Asignamos a colegas que:',
-          ],
-          list: [
-            'tienen experiencia en el final de la vida (una estancia en un centro de paliativos, experiencia asistencial, formación en acompañamiento al duelo).',
-            'son serenos, de verdad serenos: no callados por inseguridad, sino tranquilos por carácter.',
-            'han trabajado sus propias pérdidas, de modo que no es su duelo el que ocupa la habitación.',
-            'no se alteran ante los cambios corporales del final de la vida.',
-          ],
-          trailingParagraphs: [
-            'Acompañar a alguien mientras muere no es una tarea para principiantes. Solo la asignamos a personal con experiencia.',
-          ],
-        },
-        {
-          heading: 'Qué cuesta el acompañamiento a pie de cama en cuidados paliativos',
-          paragraphs: [
-            'El acompañamiento a pie de cama en el final de la vida cae a menudo en días ya de por sí costosos, en una fase ya de por sí costosa. Aplicamos una tarifa reducida de final de vida, por debajo de nuestro estándar; le indicamos el importe exacto para un turno de noche o para un acompañamiento de varios días en la primera consulta.',
-            'Los recargos de noche (25 %) y de domingos y festivos (50 %) conforme al § 3b EStG se indican de forma transparente.',
-          ],
-        },
-      ],
-      faq: [
-        {
-          question: '¿Pueden acudir al centro de cuidados paliativos aunque allí ya haya acompañantes?',
-          answer:
-            'Sí, de acuerdo con el equipo del centro. Nos entendemos como un complemento, no como un sustituto. A menudo aportamos presencia adicional, sobre todo en las últimas veinticuatro horas, porque los acompañantes voluntarios no están disponibles de forma continua.',
-        },
-        {
-          question: '¿Con qué rapidez pueden venir cuando queda claro que se acerca el final?',
-          answer:
-            'Con veinticuatro horas de aviso, sí. En situaciones realmente agudas (cuestión de horas) lo intentamos, pero no siempre podemos garantizarlo.',
-        },
-        {
-          question: '¿Su personal habla con la persona que se está muriendo sobre la muerte?',
-          answer:
-            'Solo si la propia persona lo plantea. Escuchamos. No damos pie a temas que no podemos valorar.',
-        },
-        {
-          question: '¿Pueden ayudar también después del fallecimiento?',
-          answer:
-            'Si así se desea, nos quedamos las primeras horas tras el fallecimiento. Ayudamos a llamar al médico para la certificación de la defunción, estamos con la familia y hacemos el traspaso a la funeraria. Para el acompañamiento al duelo en las semanas siguientes le derivamos a servicios especializados.',
-        },
-        {
-          question: '¿Conocen distintas tradiciones religiosas?',
-          answer:
-            'Respetamos todas las tradiciones. Ante ritos específicos (el uso musulmán del lavado por parte de los familiares, las liturgias ortodoxas, las costumbres judías del shiva) pedimos a la familia indicaciones claras. Aprendemos deprisa, pero no damos nada por supuesto.',
-        },
-        {
-          question: '¿Pueden acompañar también procesos de muerte no religiosos?',
-          answer:
-            'Por supuesto. La mayoría de los acompañamientos en el final de la vida que realizamos son laicos. No imponemos nada religioso a quien no lo desea.',
-        },
-      ],
-      cta: { text: 'Solicitar una primera consulta', href: '/#kontakt' },
-      relatedLinks: [
-        {
-          label: 'Acompañamiento a pie de cama en Berlín',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'la oferta general',
-        },
-        {
-          label: 'Cuidados paliativos en casa',
-          href: '/themen/palliativ-zuhause',
-          note: 'información de fondo',
-        },
-        {
-          label: 'Acompañamiento nocturno en Berlín',
-          href: '/leistungen/nachtwachen-berlin',
-          note: 'cuando solo se necesitan las horas de la noche',
-        },
-      ],
-    },
-  },
 
   // === Money Page 8: Reisebegleitung für Senioren =============================
   'reisebegleitung-senioren': {
@@ -1078,195 +856,8 @@ export const LEISTUNGEN_SEO_ES: Overlay<SeoLeistung> = {
           href: '/leistungen/pflegedienst-selbstzahler',
           note: 'nuestra orientación de base',
         },
-        {
-          label: 'Acompañamiento en el hospital',
-          href: '/themen/krankenhaus-begleitung',
-          note: 'durante estancias hospitalarias',
-        },
-        {
-          label: 'Acompañamiento a pie de cama en Berlín',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'para el acompañamiento 1:1 en la planta',
-        },
       ],
     },
   },
 
-  // === Money Page 9: Klinik-Begleitung Berlin ==================================
-  'klinik-begleitung-berlin': {
-    slug: 'klinik-begleitung-berlin',
-    title: 'Acompañamiento hospitalario en Berlín',
-    short: 'Acompañamiento 1:1 en el hospital, cuando la familia no puede estar en cada momento.',
-    metaTitle: 'Acompañamiento hospitalario Berlín – atención 1:1',
-    metaDescription:
-      'Acompañamiento hospitalario privado en Berlín: 1:1 para su familiar cuando el personal atiende a 18 pacientes a la vez. Demencia, caídas, tras operaciones.',
-    h1: 'Acompañamiento hospitalario en Berlín — cuando la familia no puede estar en cada momento',
-    primaryKeyword: 'acompañamiento hospitalario Berlín',
-    secondaryKeywords: [
-      'acompañante privado hospital Berlín',
-      'acompañamiento demencia hospital Berlín',
-      'acompañante nocturno tras operación Berlín',
-      'prevención de caídas tras cirugía',
-    ],
-    detail: {
-      intro: [
-        'Una estancia en el hospital es a menudo una situación excepcional para las personas mayores: un entorno desconocido, personal cambiante, largas esperas tras pulsar el timbre. En la rutina de la planta, el personal de enfermería atiende con frecuencia a 18 pacientes o más al mismo tiempo; una presencia 1:1 rara vez es posible.',
-        'Nosotros acompañamos a su familiar de forma privada en el hospital: en la preparación de la rehabilitación, en la noche posterior a una operación, en casos de demencia o riesgo de caídas, durante estancias prolongadas. Por horas o todo el día, como complemento al personal del hospital, no como su sustituto.',
-      ],
-      sections: [
-        {
-          heading: 'Qué hacemos en concreto',
-          stronglist: [
-            {
-              label: 'Estar presentes cuando el personal no puede',
-              text: 'El personal de enfermería atiende a menudo a 18 pacientes o más a la vez a lo largo de un turno. Nosotros estamos presentes 1:1: de forma continua, despiertos, observando.',
-            },
-            {
-              label: 'Prevenir caídas tras una operación',
-              text: 'Sobre todo de noche tras la anestesia, en estados de confusión, en un entorno desconocido. Permanecemos junto a la cama y ayudamos a incorporarse antes de que ocurra nada.',
-            },
-            {
-              label: 'Acompañamiento en demencia en el hospital',
-              text: 'Sabemos manejar los intentos de salir de la cama, la desorientación, el delirio posoperatorio. Una presencia serena reduce de forma notable el estrés y la necesidad de contención o sedación.',
-            },
-            {
-              label: 'Ayudar con la comida, ofrecer líquidos',
-              text: 'Lo que el personal del hospital a menudo no puede hacer con calma por falta de tiempo, en particular con personas con demencia, que sencillamente «se olvidan» de comer.',
-            },
-            {
-              label: 'Un ojo en el timbre, un punto de contacto para enfermería y médicos',
-              text: 'Transmitir observaciones, mediar en el pase de visita, servir de recordatorio para las preguntas que en la rutina hospitalaria se pierden con tanta facilidad.',
-            },
-            {
-              label: 'Acompañamiento a pruebas y traslados',
-              text: 'El paciente no se queda solo en el pasillo ni durante la espera: permanecemos a su lado.',
-            },
-            {
-              label: 'Alivio para la familia',
-              text: 'Usted no tiene que correr cada tarde después del trabajo. Sabe que hay alguien presente.',
-            },
-          ],
-        },
-        {
-          heading: '¿Cuándo tiene sentido?',
-          paragraphs: ['Cuatro situaciones típicas en las que las familias nos llaman:'],
-          stronglist: [
-            {
-              label: 'Tras una operación programada',
-              text: 'Las primeras dos a cinco noches por seguridad: la fase con mayor riesgo de delirio y de caídas.',
-            },
-            {
-              label: 'En casos de demencia o confusión',
-              text: 'Acompañamiento continuo durante toda la estancia, porque el entorno hospitalario a menudo empeora notablemente la demencia.',
-            },
-            {
-              label: 'En estancias prolongadas (más de una semana)',
-              text: 'Por días o por horas, allí donde la familia no puede estar presente de forma continua por sí misma.',
-            },
-            {
-              label: 'En urgencias',
-              text: 'Apoyo con poca antelación, cuando nadie de la familia puede llegar con suficiente rapidez.',
-            },
-          ],
-        },
-        {
-          heading: 'Qué nos distingue',
-          stronglist: [
-            {
-              label: 'Personal de enfermería con experiencia, no personal auxiliar',
-              text: 'El acompañamiento en el hospital es exigente. Estos servicios los asumen con nosotros únicamente profesionales con la experiencia laboral correspondiente: capacidad de observación, presencia serena, trato con la confusión y con los familiares, y criterio profesional para transmitir las observaciones al personal del hospital.',
-            },
-            {
-              label: 'Una relación de trabajo con enfermería y médicos',
-              text: 'Sabemos movernos en la rutina hospitalaria sin estorbar. Nos presentamos en admisión y ante el personal de enfermería responsable, acordamos nuestras horas de presencia y nos integramos en la rutina de la planta.',
-            },
-            {
-              label: 'Discretos y dignos',
-              text: 'No hablamos de otros pacientes, complementamos al equipo de la planta con respeto y nos hacemos a un lado cuando la familia está presente.',
-            },
-          ],
-        },
-      ],
-      faq: [
-        {
-          question: '¿Qué cuesta un acompañamiento hospitalario privado en Berlín?',
-          answer:
-            'El coste depende del número de horas, de la proporción de día y de noche y de la cualificación necesaria. No indicamos precios cerrados, porque las situaciones difieren mucho. En la primera consulta gratuita escuchamos primero; después hacemos una propuesta concreta y transparente.',
-        },
-        {
-          question: '¿Cubre el seguro de enfermedad un acompañamiento hospitalario a través de un servicio asistencial?',
-          answer:
-            'En la mayoría de los casos, no. El seguro de enfermedad legal paga el tratamiento médico en el hospital, pero no una atención 1:1 adicional por parte de un servicio asistencial externo. Hay excepciones para el ingreso conjunto de padres con hijos y en casos especiales poco frecuentes. Para adultos con demencia, riesgo de caídas o necesidades particulares de atención, el acompañamiento hospitalario privado es, por regla general, una prestación de pago privado. Algunos seguros complementarios privados reembolsan una parte; conviene aclararlo de antemano.',
-        },
-        {
-          question: '¿Qué puede hacer en realidad un acompañamiento privado en el hospital?',
-          answer:
-            'Estar presente, vigilar el timbre y al paciente, ayudar con la comida y la bebida, asistir en los cambios de posición, tranquilizar en estados de confusión, informar a enfermería y médicos de las observaciones, acompañar al paciente a las pruebas. No sustituimos al personal del hospital: añadimos una persona de referencia constantemente presente. Las tareas médicas (medicación, cura de heridas, cambio de apósitos) siguen correspondiendo al personal del hospital.',
-        },
-        {
-          question: 'Mi padre está confuso tras la operación (delirio), ¿qué podemos hacer?',
-          answer:
-            'El delirio posoperatorio afecta sobre todo a las personas mayores y aparece a menudo en las primeras noches tras una operación. La medida más eficaz es una presencia serena y familiar; los estudios muestran que los acompañantes a pie de cama pueden reducir de forma notable la necesidad de contención y sedación. Si usted mismo no puede estar presente de forma continua, lo asumimos nosotros. En particular durante las horas de la noche, cuando la confusión suele acentuarse.',
-        },
-        {
-          question: 'Mi madre tiene demencia y tiene que ir al hospital, ¿cómo podemos ayudar?',
-          answer:
-            'Las estancias hospitalarias son especialmente difíciles para las personas con demencia: entorno desconocido, ausencia de rutinas, muchas caras nuevas. Un acompañamiento constante reduce de forma notable la ansiedad, los intentos de salir de la cama y el riesgo de caídas. Si la familia no puede estar presente de forma continua, lo asumimos nosotros; sabemos manejar la demencia y nos coordinamos estrechamente con el personal del hospital. Eso incluye ayudar con la comida, que con la demencia tan a menudo se «olvida».',
-        },
-        {
-          question: '¿Con qué rapidez pueden venir?',
-          answer:
-            'Para estancias programadas (una operación, rehabilitación) lo mejor es avisar con unos días de antelación. En situaciones agudas (urgencias, una necesidad repentina) intentamos organizar un primer acompañamiento en un plazo de veinticuatro horas; según el día y la hora, a veces antes. Llámenos y hablamos de lo que es posible.',
-        },
-        {
-          question: '¿Puede el hospital admitir siquiera a un acompañante privado?',
-          answer:
-            'Sí. Los familiares, y los acompañantes contratados por familiares, tienen acceso al paciente como algo natural. Naturalmente, nos presentamos en admisión y ante el personal de enfermería y acordamos nuestras horas de presencia. La mayoría de los hospitales de Berlín conocen esta modalidad y cooperan bien. En habitaciones compartidas hablamos de la consideración hacia los demás pacientes.',
-        },
-        {
-          question: '¿Pueden asumir solo una noche suelta?',
-          answer:
-            'Sí. Muchos de nuestros servicios son exactamente eso: una, dos o tres noches justo después de una operación, cuando el riesgo de caída o de confusión es más alto. Los acompañamientos más largos, de varias semanas, los realizamos con la misma disposición.',
-        },
-        {
-          question: '¿En qué hospitales trabajan?',
-          answer:
-            'Acompañamos en todos los hospitales de Berlín: Charité, Helios, Vivantes, DRK, Park-Klinik Weissensee, St. Joseph, Schlosspark-Klinik, St. Gertrauden y todos los demás. El foco de nuestra zona de trabajo es el oeste de Berlín (Zehlendorf, Grunewald, Charlottenburg, Wilmersdorf, Dahlem, Schmargendorf, Westend), pero también trabajamos en Mitte, Moabit, Tiergarten y los alrededores.',
-        },
-        {
-          question: '¿Quién realiza el servicio en concreto, personal en formación o personal con experiencia?',
-          answer:
-            'Personal de enfermería con experiencia y la cualificación correspondiente. El acompañamiento en el hospital es exigente: capacidad de observación, presencia serena, trato con la confusión y con los familiares, y criterio profesional para transmitir las observaciones al personal del hospital. Estos servicios los asumen con nosotros únicamente profesionales con la experiencia correspondiente.',
-        },
-        {
-          question: '¿Y si mi madre no se entiende con su cuidadora?',
-          answer:
-            'Por regla general nos convertimos en poco tiempo en una cara familiar; la mayoría de los pacientes se tranquilizan ya tras la primera hora. Si en un caso concreto no encaja, cambiamos a la persona. La química personal importa mucho en estas situaciones.',
-        },
-        {
-          question: '¿Cómo lo reservamos?',
-          answer:
-            'Basta una primera llamada telefónica. Determinamos la situación (una operación programada, aguda, continuada), lo que se necesita (demencia, riesgo de caídas, inseguridad general), el alcance (día, noche, continuo) y el hospital. En un plazo de veinticuatro horas recibe una propuesta concreta.',
-        },
-      ],
-      cta: { text: 'Solicitar una primera consulta', href: '/#kontakt' },
-      relatedLinks: [
-        {
-          label: 'Acompañamiento a pie de cama en Berlín',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'el pariente más cercano, también en casa y en cuidados paliativos',
-        },
-        {
-          label: 'Acompañamiento en el hospital (información de fondo)',
-          href: '/themen/krankenhaus-begleitung',
-          note: 'cuándo tiene sentido un acompañamiento y quién lo necesita',
-        },
-        {
-          label: 'Acompañamiento en demencia',
-          href: '/themen/demenz-begleitung',
-          note: 'información de fondo sobre el acompañamiento de personas con demencia',
-        },
-      ],
-    },
-  },
 };

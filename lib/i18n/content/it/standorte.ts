@@ -11,7 +11,7 @@ import type { SeoStandort } from '@/lib/standorte';
  * riferimento tedesco e viene localizzato solo al momento del rendering.
  *
  * Il renderer del dettaglio produce testo semplice (niente Markdown). I termini
- * tecnici tedeschi stanno perciò tra parentesi tonde: "vigilanza al capezzale (Sitzwache)".
+ * tecnici tedeschi stanno perciò tra parentesi tonde: "grado di assistenza (Pflegegrad)".
  */
 export const STANDORTE_IT: Overlay<SeoStandort> = {
   // === 1. Moabit (Hauptstandort) ==============================================
@@ -24,8 +24,8 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
     hook: 'La nostra sede, il nostro quartiere.',
     isHauptstandort: true,
     metaTitle: 'Assistenza e vigilanza Moabit — nel Suo quartiere',
-    metaDescription: 'Assistenza, vigilanza al capezzale e cura 24h a Moabit. La nostra sede è in Stephanstraße 46 — conosciamo il Suo quartiere come pochi.',
-    h1: 'Assistenza e vigilanza al capezzale a Moabit — dal Suo quartiere, per il Suo quartiere',
+    metaDescription: 'Assistenza, cura individuale e 24h a Moabit. La nostra sede è in Stephanstraße 46 — conosciamo il Suo quartiere come pochi.',
+    h1: 'Assistenza e cura individuale a Moabit — dal Suo quartiere, per il Suo quartiere',
     primaryKeyword: 'assistenza domiciliare Moabit Berlino',
     detail: {
       intro: [
@@ -37,24 +37,12 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
           heading: 'Cosa offriamo a Moabit',
           paragraphs: ['Tutta la nostra gamma di servizi — con il vantaggio di essere qui, proprio dietro l’angolo:'],
           list: [
-            'Vigilanza al capezzale (Sitzwache) — in ospedale, a casa, in hospice.',
+            'Assistenza individuale a domicilio — a ore o ventiquattr’ore su ventiquattro.',
             'Assistenza 24 ore su 24 con un team di personale di lingua tedesca.',
             'Accompagnamento a ore per signore e signori anziani.',
             'Consulenza sull’assistenza — spesso a casa Sua.',
-            'Vigilanza notturna e vigilanza al capezzale in hospice.',
+            'Assistenza notturna e compagnia nell’ultima fase della vita.',
           ],
-        },
-        {
-          heading: 'Ospedali a Moabit e dintorni',
-          paragraphs: ['Conosciamo le strutture più importanti:'],
-          list: [
-            'Klinikum am Urban (Vivantes) — 15 minuti di tragitto.',
-            'Vivantes Klinikum am Friedrichshain — 20 minuti.',
-            'DRK Kliniken Westend — 18 minuti.',
-            'Charité Campus Virchow — 8 minuti.',
-            'Lazarus-Krankenhaus (Wedding) — 10 minuti.',
-          ],
-          trailingParagraphs: ['In tutte queste strutture abbiamo già svolto vigilanze al capezzale e accompagnamenti. Conosciamo i responsabili del servizio infermieristico, sappiamo come è regolato l’accesso e raggiungiamo il reparto senza deviazioni.'],
         },
         {
           heading: 'Cosa rende Moabit ciò che è',
@@ -63,12 +51,12 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             'Signore anziane nei grandi appartamenti d’epoca intorno a Huttenstraße, Calvinstraße e Bremer Straße, che desiderano un aiuto.',
             'Famiglie nei caseggiati intorno a Stephanstraße e Stromstraße, i cui genitori sono in visita.',
             'Residenti delle residenze per anziani che desiderano un’assistenza privata aggiuntiva.',
-            'Inquilini i cui familiari sono ricoverati in ospedale e hanno bisogno di accompagnamento.',
+            'Famiglie che hanno bisogno in tempi brevi di un accompagnamento affidabile per un familiare.',
           ],
         },
       ],
       faq: [
-        { question: 'In caso di emergenza a Moabit arrivate particolarmente in fretta?', answer: 'Sì — spesso siamo da Lei in 5-10 minuti, a seconda dell’ora e del traffico. Per le richieste urgenti di vigilanza al capezzale dal quartiere immediato offriamo la reazione più rapida di tutta la città.' },
+        { question: 'In caso di emergenza a Moabit arrivate particolarmente in fretta?', answer: 'Sì — spesso siamo da Lei in 5-10 minuti, a seconda dell’ora e del traffico. Per le richieste urgenti di assistenza dal quartiere immediato offriamo la reazione più rapida di tutta la città.' },
         { question: 'Con quali case di riposo di Moabit collaborate?', answer: 'Interveniamo nelle case di riposo e nelle residenze assistite come supporto aggiuntivo, quando una famiglia desidera ore individuali in più. Delle strutture concrete parliamo nel primo colloquio.' },
         { question: 'I Suoi collaboratori sono tutti di Moabit?', answer: 'No — ma molti abitano nel centro città. Questo significa tragitti brevi e una buona conoscenza del territorio.' },
       ],
@@ -106,7 +94,7 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             'Membri delle ambasciate con familiari non autosufficienti.',
             'Rappresentanze diplomatiche che organizzano assistenza privata per dignitari in visita.',
             'Residenti degli eleganti complessi residenziali intorno al Großer Tiergarten, al Lützowplatz, alla Hofjägerallee.',
-            'Pazienti del vicino Bundeswehrkrankenhaus che dopo le dimissioni hanno bisogno di ulteriore accompagnamento.',
+            'Persone la cui assistenza a casa deve ricominciare in tempi brevi.',
             'Signore anziane delle residenze assistite nella Klingelhöferstraße e dintorni.',
           ],
         },
@@ -118,15 +106,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Tempestività', text: 'La vita diplomatica programma con poco anticipo. Siamo pronti a iniziare anche entro 24 ore.' },
             { label: 'Etichetta con la portineria', text: 'Sappiamo come annunciarci negli edifici con portineria o servizio di sicurezza e come mantenere l’immagine che i nostri committenti desiderano preservare.' },
           ],
-        },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'Bundeswehrkrankenhaus Berlin (Scharnhorststraße) — 7 minuti.',
-            'Charité Campus Mitte — 10 minuti.',
-            'Vivantes Klinikum am Friedrichshain — 15 minuti.',
-          ],
-          trailingParagraphs: ['Dallo Stephanplatz a Moabit, lungo la Beethovenstraße fino a Tiergarten: circa 8-12 minuti a seconda dell’ora. Se serve, siamo sul posto più spesso e più a lungo, senza forfait di trasferta.'],
         },
       ],
       faq: [
@@ -150,42 +129,40 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
     bezirk: 'Mitte',
     plz: ['10117', '10115', '10119', '10178', '10179'],
     geo: { lat: 52.52, lng: 13.408 },
-    hook: 'A due passi dalla Charité Mitte.',
-    metaTitle: 'Assistenza Berlin-Mitte — discreta e affidabile',
-    metaDescription: 'Assistenza, vigilanza al capezzale e accompagnamento a Berlin-Mitte. Cure vicino agli ospedali Charité Mitte e Sankt Hedwig.',
-    h1: 'Assistenza e vigilanza al capezzale a Berlin-Mitte — vicino agli ospedali e rapida',
-    primaryKeyword: 'assistenza domiciliare Berlin-Mitte',
+    hook: 'Assistenza discreta tra lo Spreebogen e l’Hackescher Markt.',
+    metaTitle: 'Servizio di assistenza Berlin-Mitte — discreto e affidabile',
+    metaDescription: 'Assistenza, cura individuale e accompagnamento a Berlin-Mitte. Assistenza privata a casa, a ore o ventiquattr’ore su ventiquattro.',
+    h1: 'Assistenza e cura individuale a Berlin-Mitte — rapidi sul posto',
+    primaryKeyword: 'servizio infermieristico privato Berlin Mitte',
     detail: {
       intro: [
-        'Berlin-Mitte è amministrazione, turismo, abitazione — e assistenza ospedaliera. Charité Mitte (Luisenstraße/Charitéplatz), Sankt Hedwig (Große Hamburger Straße), Vivantes Friedrichshain (al confine con la Landsberger Allee) — a Mitte si trovano alcuni dei più importanti ospedali di Berlino.',
-        'Molte delle nostre richieste da Mitte arrivano proprio da queste strutture: vigilanze al capezzale per pazienti, accompagnamento nei trasferimenti, passaggi di consegne verso casa. Ma Mitte è anche un quartiere residenziale — vecchi inquilini tra Hackescher Markt e Friedrichstraße, nuovi residenti nei nuovi edifici allo Spreebogen.',
+        'Berlin-Mitte è amministrazione, turismo — e quartiere residenziale. Inquiline di lunga data tra l’Hackescher Markt e la Friedrichstraße, nuovi residenti negli edifici dello Spreebogen, anziani nelle vie tranquille attorno alla Oranienburger e alla Große Hamburger Straße.',
+        'Dalla nostra sede in Stephanstraße arriviamo a Mitte in pochi minuti. Questo ci rende rapidi, anche quando l’assistenza deve iniziare in tempi brevi.',
       ],
       sections: [
         {
-          heading: 'Cosa facciamo spesso a Berlin-Mitte',
+          heading: 'Che cosa facciamo spesso a Berlin-Mitte',
           stronglist: [
-            { label: 'Vigilanza al capezzale (Sitzwache) alla Charité Mitte', text: 'Accompagnamento individuale nel post-operatorio, compagnia alle persone con demenza durante il ricovero, presenza nell’ultima fase della vita. Conosciamo i reparti, conosciamo le routine.' },
-            { label: 'Accompagnamento al Sankt Hedwig', text: 'Il Sankt Hedwig è una struttura cattolica con routine proprie. Le rispettiamo. I nostri collaboratori hanno esperienza nel muoversi in strutture di impronta ecclesiastica.' },
-            { label: 'Passaggi alla dimissione dall’ospedale', text: 'Quando la dimissione si avvicina, molte famiglie hanno bisogno di un ponte tra ospedale e casa. Ci occupiamo dei primi giorni a casa, spesso con modelli da 12 o 24 ore.' },
-            { label: 'Consulenza sull’assistenza negli appartamenti di Mitte', text: 'Veniamo da Lei, parliamo con la famiglia e con il medico di base.' },
+            { label: 'Assistenza individuale a domicilio', text: 'Attenzione non divisa nella propria casa: in caso di demenza, nella convalescenza dopo un intervento, nell’ultima fase della vita.' },
+            { label: 'Assistenza notturna negli appartamenti del centro', text: 'Nei grandi appartamenti d’epoca, con corridoi lunghi, il rischio di cadute notturne è reale. Siamo lì quando qualcuno si alza.' },
+            { label: 'Quando l’assistenza a casa ricomincia', text: 'Quando la situazione cambia all’improvviso, le famiglie hanno bisogno di un ponte. Ci occupiamo dei primi giorni e delle prime settimane a casa, spesso con modelli da 12 o 24 ore.' },
+            { label: 'Consulenza negli appartamenti di Mitte', text: 'Veniamo da voi e parliamo con la famiglia e con il medico di base.' },
           ],
         },
         {
-          heading: 'Tempi di percorrenza da Moabit',
+          heading: 'Tragitti da Moabit',
           paragraphs: [
-            'In auto lungo la Invalidenstraße fino alla Charité Mitte: circa 7 minuti. Verso le zone residenziali tra Friedrichstraße e Alexanderplatz: 10-15 minuti.',
+            'In auto lungo la Invalidenstraße fino a Mitte: circa 7 minuti. Verso le zone residenziali tra la Friedrichstraße e Alexanderplatz: 10-15 minuti.',
           ],
         },
       ],
       faq: [
-        { question: 'Potete svolgere vigilanze al capezzale alla Charité Mitte?', answer: 'Sì — regolarmente. Prima del primo intervento contattiamo il responsabile del servizio infermieristico del reparto e, se necessario, otteniamo un’autorizzazione scritta.' },
-        { question: 'Quanto rapidamente arrivate in ospedale?', answer: 'Alla maggior parte degli ospedali di Mitte in 10-15 minuti. In caso di emergenze a breve termine siamo spesso disponibili in giornata.' },
-        { question: 'Possiamo prenotare una vigilanza al capezzale prima di un intervento programmato?', answer: 'Molto consigliabile — per gli interventi programmabili possiamo fissare la vigilanza già per il giorno 1 dopo l’operazione. Questo riduce il rischio di delirio e favorisce la guarigione.' },
+        { question: 'Quanto rapidamente arrivate a Mitte?', answer: 'Di norma in 10-15 minuti. Per un primo intervento ci servono due o tre giorni di preavviso; nelle situazioni acute cerchiamo di farcela entro 24 ore.' },
+        { question: 'Possiamo concordare l’assistenza prima di un intervento programmato?', answer: 'È molto consigliabile. Per gli interventi programmabili riserviamo l’accompagnamento per i giorni immediatamente successivi, proprio il periodo con il rischio più alto di confusione e cadute.' },
+        { question: 'Lavorate anche negli appartamenti nuovi dello Spreebogen?', answer: 'Sì. Portineria, garage interrato, ascensore: per noi è quotidianità. Concordiamo in anticipo accesso e orari e arriviamo con discrezione.' },
       ],
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Vigilanza al capezzale a Berlino', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Accompagnamento in ospedale', href: '/themen/krankenhaus-begleitung' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'direttamente adiacente' },
       ],
     },
@@ -200,7 +177,7 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
     geo: { lat: 52.518, lng: 13.343 },
     hook: 'Presenza discreta nel quartiere dell’architettura.',
     metaTitle: 'Assistenza Hansaviertel — nel cuore verde',
-    metaDescription: 'Assistenza, vigilanza al capezzale e accompagnamento nell’Hansaviertel. Presenza discreta per residenti anziani nei palazzi d’autore.',
+    metaDescription: 'Assistenza, cura individuale e accompagnamento nell’Hansaviertel. Presenza discreta per residenti anziani nei palazzi d’autore.',
     h1: 'Assistenza nell’Hansaviertel — nel quartiere silenzioso tra Tiergarten e Spree',
     primaryKeyword: 'assistenza domiciliare Hansaviertel Berlino',
     detail: {
@@ -227,14 +204,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Accompagnamento a eventi culturali', text: 'Alcuni clienti vogliono ancora andare al concerto, a teatro, a una mostra — con l’accompagnamento di una persona esperta è possibile.' },
           ],
         },
-        {
-          heading: 'Ospedali',
-          list: [
-            'Charité Campus Virchow Klinikum (Forckenbeckplatz) — 5 minuti.',
-            'Bundeswehrkrankenhaus Berlin — 5 minuti.',
-            'DRK Kliniken Westend — 10 minuti.',
-          ],
-        },
       ],
       faq: [
         { question: 'Mio padre vive solo nell’Hansaviertel e non vuole andare in una casa di riposo. Cosa è possibile?', answer: 'Molto. Con 2-3 ore di accompagnamento al giorno più una vigilanza notturna 2-3 giorni a settimana si riesce spesso a creare un contesto sicuro anche in appartamenti piccoli. Nel primo colloquio chiariamo cosa ha senso.' },
@@ -243,7 +212,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Vigilanza al capezzale a Berlino', href: '/leistungen/sitzwachen-berlin', note: 'spesso a ore' },
         { label: 'Assistenza notturna a Berlino', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Consulenza sull’assistenza', href: '/leistungen/pflegeberatung-berlin' },
       ],
@@ -274,15 +242,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Esigente, ma mai invadente', text: 'La nostra clientela a Charlottenburg è spesso colta, di formazione accademica, con un senso preciso dello stile e della discrezione. Impieghiamo collaboratori che, per linguaggio e portamento, si addicono a queste case.' },
             { label: 'Continuità', text: 'Charlottenburg è clientela affezionata. Molte famiglie lavorano con noi per anni, a volte per generazioni. Il team fisso conosce la famiglia, conosce le preferenze, conosce la casa.' },
             { label: 'Carattere privato', text: 'Arriviamo senza logo visibile, spesso con la nostra auto, senza lasciare tracce evidenti negli androni.' },
-          ],
-        },
-        {
-          heading: 'Ospedali a Charlottenburg',
-          list: [
-            'DRK Kliniken Berlin Westend — una delle strutture in cui operiamo più spesso.',
-            'Schlosspark-Klinik — clinica privata esclusiva.',
-            'Vivantes Klinikum Spandau — 15 minuti.',
-            'St. Gertrauden Krankenhaus — 8 minuti.',
           ],
         },
         {
@@ -331,15 +290,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Discrezione verso il condominio', text: 'Le comunità dei palazzi d’epoca sono spesso molto affiatate. Arriviamo con discrezione, evitiamo di dare nell’occhio, tuteliamo la sfera privata.' },
           ],
         },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'St. Gertrauden Krankenhaus — 5 minuti da molti indirizzi di Wilmersdorf.',
-            'Schlosspark-Klinik — 10 minuti.',
-            'DRK Kliniken Westend — 12 minuti.',
-          ],
-          trailingParagraphs: ['Da Moabit lungo la Berliner Straße fino al centro di Wilmersdorf circa 12 minuti. Verso le zone meridionali di Wilmersdorf (Hohenzollerndamm, Wittelsbacher Straße) circa 18-22 minuti.'],
-        },
       ],
       faq: [
         { question: 'Mio padre ha 92 anni e non vuole un servizio di assistenza perché non vuole “estranei” in casa. Cosa fare?', answer: 'Situazione frequente. La affrontiamo con calma — spesso con una prima visita in cui non si presta alcuna assistenza, si fa solo una conversazione. I nostri collaboratori hanno esperienza nel costruire fiducia. Spesso la resistenza si scioglie nel giro di poche visite.' },
@@ -380,17 +330,8 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Grandi proprietà', text: 'Un’assistenza 24 ore su 24 in una villa di 200 mq si svolge diversamente da quella in un appartamento di 60 mq. Più piani, grandi distanze, spesso anche grandi giardini — tutto questo va considerato nell’organizzazione dell’assistenza.' },
             { label: 'Vite ricche di storia', text: 'Chi invecchia in una casa del Westend ha spesso alle spalle una vita lunga, custodita nei mobili, nei quadri, nei libri. I nostri collaboratori sono abituati a trattare con simili biografie.' },
             { label: 'Personale domestico e assistenza insieme', text: 'Molte famiglie del Westend impiegano da decenni collaboratori domestici e giardinieri. Quando ci inseriamo, dobbiamo adattarci a queste strutture.' },
-            { label: 'Morire con stile', text: 'Chi è invecchiato in una casa del Westend spesso vuole anche morirvi. Accompagniamo i processi di fine vita in queste case — con tutto ciò che serve, dall’assistenza in hospice fino all’ultimo giorno.' },
+            { label: 'Morire con stile', text: 'Chi è invecchiato in una casa del Westend spesso vuole anche morirvi. Accompagniamo i processi di fine vita in queste case — con tutto ciò che serve, dalle cure palliative fino all’ultimo giorno.' },
           ],
-        },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'DRK Kliniken Berlin Westend — 5 minuti da molti indirizzi del Westend.',
-            'Schlosspark-Klinik (Charlottenburg) — 10 minuti.',
-            'Vivantes Klinikum Spandau — 12 minuti.',
-          ],
-          trailingParagraphs: ['Attraverso Charlottenburg fino al Westend — circa 18-22 minuti, a seconda dell’ora. Pianifichiamo il tragitto in anticipo, così da arrivare puntuali.'],
         },
       ],
       faq: [
@@ -402,7 +343,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
       relatedLinks: [
         { label: 'Assistenza 24 ore su 24', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Assistenza domiciliare per privati', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Vigilanza al capezzale in hospice', href: '/leistungen/hospiz-sitzwachen' },
         { label: 'Charlottenburg', href: '/standorte/charlottenburg', note: 'il quartiere adiacente' },
       ],
     },
@@ -436,15 +376,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Disponibilità ad accordi scritti', text: 'Accordi di riservatezza (clausole NDA), regolamenti dettagliati sulla protezione dei dati — a Grunewald tutto ciò è più spesso lo standard che altrove.' },
           ],
         },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'DRK Kliniken Berlin Westend — 10 minuti.',
-            'Schlosspark-Klinik — 12 minuti (spesso utilizzata per i ricoveri da Grunewald).',
-            'Sankt Gertrauden — 15 minuti.',
-          ],
-          trailingParagraphs: ['Dalla nostra sede di Moabit a Grunewald circa 22-30 minuti, a seconda dell’ora e della destinazione.'],
-        },
       ],
       faq: [
         { question: 'Potete garantire riservatezza assoluta?', answer: 'Il segreto professionale in ambito assistenziale è previsto dalla legge — ogni violazione è perseguibile penalmente. Con la clientela particolarmente sensibile integriamo il segreto con accordi di riservatezza scritti e penali contrattuali. Ciononostante: una garanzia al 100% non può darla nessuno, perché gli esseri umani sono esseri umani. Facciamo tutto ciò che è possibile.' },
@@ -472,7 +403,7 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
     geo: { lat: 52.432, lng: 13.255 },
     hook: 'Zona tranquilla per famiglie, case, giardini.',
     metaTitle: 'Assistenza Zehlendorf — cure nel verde',
-    metaDescription: 'Assistenza e vigilanza al capezzale a Zehlendorf. Un team esperto, che conosce le vie quiete dal Mexikoplatz al Krumme Lanke.',
+    metaDescription: 'Assistenza e cura individuale a Zehlendorf. Un team esperto, che conosce le vie quiete dal Mexikoplatz al Krumme Lanke.',
     h1: 'Assistenza a Zehlendorf — cure per la famiglia nel verde',
     primaryKeyword: 'assistenza domiciliare Zehlendorf Berlino',
     detail: {
@@ -496,14 +427,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Accettare tragitti più lunghi', text: 'Da Moabit a Zehlendorf sono 25-35 minuti. Lo accettiamo, perché la continuità per la clientela conta più dei forfait di trasferta.' },
             { label: 'Compatibilità con l’auto', text: 'Molti indirizzi di Zehlendorf sono raggiungibili bene solo in auto. I nostri collaboratori hanno patente e automobile.' },
             { label: 'Accompagnamento in giardino', text: 'Molti clienti di Zehlendorf trascorrono le loro giornate in giardino. L’accompagnamento vi rientra — dalla passeggiata in terrazza al giardinaggio insieme, finché le forze lo consentono.' },
-          ],
-        },
-        {
-          heading: 'Ospedali del distretto',
-          list: [
-            'Helios-Klinikum Emil von Behring (Zehlendorf-Süd) — locale e apprezzato.',
-            'Vivantes Klinikum Steglitz — 10 minuti.',
-            'Charité Campus Benjamin Franklin — 15 minuti.',
           ],
         },
       ],
@@ -559,15 +482,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Discrezione verso la comunità universitaria', text: 'Chi a Dahlem parla troppo a lungo della vita privata di una collega se lo sente tornare indietro da lei stessa. Il nostro team lo capisce.' },
           ],
         },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'Charité Campus Benjamin Franklin (Steglitz) — 12 minuti.',
-            'Helios-Klinikum Emil von Behring — 15 minuti.',
-            'Schlosspark-Klinik — 20 minuti.',
-          ],
-          trailingParagraphs: ['Circa 25-30 minuti da Moabit a molti indirizzi di Dahlem.'],
-        },
       ],
       faq: [
         { question: 'I Suoi collaboratori parlano inglese?', answer: 'Nel team vi sono diversi collaboratori con un inglese fluente e sicuro. In caso di esigenze specifiche le chiariamo prima dell’inizio del contratto.' },
@@ -619,15 +533,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Consulenza sull’assistenza con misura', text: 'Le famiglie vogliono spesso sapere come ottenere il massimo dal livello di assistenza (Pflegegrad), cosa può fare l’assistenza sostitutiva (Verhinderungspflege), come rendere programmabili gli anni a venire.' },
           ],
         },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'DRK Kliniken Berlin Westend — 10 minuti.',
-            'Sankt Gertrauden (Wilmersdorf) — 8 minuti.',
-            'Schlosspark-Klinik — 12 minuti.',
-          ],
-          trailingParagraphs: ['Da Moabit a Schmargendorf circa 22-28 minuti.'],
-        },
       ],
       faq: [
         { question: 'Potete venire anche solo per 3-4 ore nel pomeriggio?', answer: 'Sì — anzi qui è spesso il modello richiesto. Un accompagnamento pomeridiano dalle 14 alle 18 per una passeggiata insieme, un caffè e una conversazione è tipico.' },
@@ -654,7 +559,7 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
     hook: 'La colonia di ville sul lago.',
     hideInFooter: true,
     metaTitle: 'Assistenza Nikolassee — discreta sul lago',
-    metaDescription: 'Assistenza privata a Nikolassee: cure, vigilanza al capezzale e 24h per la colonia di ville sullo Schlachtensee. Discreta e affidabile.',
+    metaDescription: 'Assistenza privata a Nikolassee: cura individuale e 24h per la colonia di ville sullo Schlachtensee. Discreta e affidabile.',
     h1: 'Assistenza a Nikolassee — sul lago, nella colonia di ville',
     primaryKeyword: 'assistenza domiciliare Nikolassee Berlino',
     detail: {
@@ -679,15 +584,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Il richiamo dei laghi', text: 'Il tragitto quotidiano fino allo Schlachtensee o al Nikolassee fa parte della vita per molti. Accompagniamo queste passeggiate finché è possibile — il movimento in luoghi familiari mantiene stabili più a lungo di qualsiasi programma.' },
             { label: 'Discrezione nella colonia', text: 'In una piccola colonia di ville ci si conosce. Il nostro team si presenta con riserbo, senza sfoggio di auto aziendali, e rispetta il fatto che qui vicinato significa anche visibilità.' },
           ],
-        },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'Helios Klinikum Emil von Behring (Zehlendorf) — circa 4 km.',
-            'Krankenhaus Waldfriede — circa 3 km.',
-            'Immanuel Krankenhaus Wannsee — 3-4 km.',
-          ],
-          trailingParagraphs: ['Dalla nostra sede di Moabit sono circa 20-30 minuti a seconda del traffico, lungo la AVUS e la A115.'],
         },
       ],
       faq: [
@@ -715,7 +611,7 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
     hook: 'In riva all’acqua, nella quiete.',
     hideInFooter: true,
     metaTitle: 'Assistenza Wannsee — cure in riva all’acqua',
-    metaDescription: 'Assistenza privata a Wannsee: cure, vigilanza al capezzale e 24h nelle ville e proprietà sul Großer Wannsee. Affidabile e discreta.',
+    metaDescription: 'Assistenza privata a Wannsee: cura individuale e 24h nelle ville e proprietà sul Großer Wannsee. Affidabile e discreta.',
     h1: 'Assistenza a Wannsee — restare a casa in riva all’acqua',
     primaryKeyword: 'assistenza domiciliare Wannsee Berlino',
     detail: {
@@ -737,23 +633,13 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
           heading: 'Cosa caratterizza l’assistenza a Wannsee',
           stronglist: [
             { label: 'Posizioni isolate', text: 'I lotti sull’acqua si trovano spesso al termine di lunghi vialetti, qualche sentiero conduce attraverso il giardino fino alla riva. Il nostro team si prepara a questi percorsi e porta con sé ciò che serve per la giornata.' },
-            { label: 'Vicinanza a un ospedale', text: 'Con l’Immanuel Krankenhaus una struttura si trova direttamente nell’Ortsteil. Per i passaggi tra ospedale e casa — ad esempio dopo una riabilitazione o un intervento — è un vero vantaggio, che sfruttiamo per l’assistenza.' },
             { label: 'Modelli 24 ore su 24', text: 'Per via della posizione e del fabbisogno spesso più elevato, qui le assistenze continuative sono più frequenti che altrove. Lavoriamo con team piccoli e fissi, così che anche di notte ci sia qualcuno di familiare.' },
           ],
         },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'Immanuel Krankenhaus Wannsee (Königstr. 63) — nell’Ortsteil.',
-            'Helios Klinikum Emil von Behring — circa 6 km.',
-            'Klinikum Ernst von Bergmann Potsdam — circa 8 km.',
-          ],
-          trailingParagraphs: ['Da Moabit a Wannsee si calcolano circa 25-35 minuti a seconda del traffico, lungo la A115 e la AVUS.'],
-        },
       ],
       faq: [
+        { question: 'Quanto rapidamente arrivate a Wannsee?', answer: 'Per un primo intervento ci servono di norma due o tre giorni di preavviso. Nelle situazioni acute cerchiamo di farcela entro 24 ore: pianifichiamo il tragitto in anticipo per arrivare puntuali.' },
         { question: 'La nostra casa è proprio sull’acqua, con un lungo vialetto — venite lo stesso?', answer: 'Sì. Assistiamo regolarmente indirizzi in zone appartate sull’acqua. Importante è solo che conosciamo in anticipo l’accesso e la situazione dei parcheggi, così che ogni turno cominci senza intoppi.' },
-        { question: 'Mio marito torna presto dall’Immanuel Krankenhaus. Potete assumervi l’assistenza?', answer: 'Volentieri. Poiché l’Immanuel si trova nell’Ortsteil, il passaggio dall’ospedale a casa si coordina bene. Organizziamo l’assistenza domiciliare in modo che segua senza interruzioni alle dimissioni.' },
         { question: 'Ne vale la pena per voi il tragitto da Moabit?', answer: 'Sì — assistiamo Wannsee di proposito. Con un tempo di percorrenza di 25-35 minuti pianifichiamo i turni in anticipo e in blocchi sensati; brevi visite di 20 minuti sono qui meno pratiche di interventi più lunghi e affidabili.' },
       ],
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
@@ -777,7 +663,7 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
     hook: 'La città-giardino a nord.',
     hideInFooter: true,
     metaTitle: 'Assistenza Frohnau — la città-giardino a nord',
-    metaDescription: 'Assistenza privata a Frohnau: cure, vigilanza al capezzale e 24h nella città-giardino a nord di Berlino. Affidabile anche da lontano.',
+    metaDescription: 'Assistenza privata a Frohnau: cura individuale e 24h nella città-giardino a nord di Berlino. Affidabile anche da lontano.',
     h1: 'Assistenza a Frohnau — nella città-giardino a nord',
     primaryKeyword: 'assistenza domiciliare Frohnau Berlino',
     detail: {
@@ -802,13 +688,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Programmabilità invece di interventi spontanei', text: 'Per via della posizione periferica a nord lavoriamo con turni fissi e piccoli team. Questo dà tranquillità nello svolgimento e assicura che ci sia sempre qualcuno di familiare sul posto.' },
             { label: 'Casa vissuta con autodeterminazione', text: 'La clientela di Frohnau è per lo più fatta di persone autonome con idee chiare. Sosteniamo senza sostituirci, e manteniamo il più a lungo possibile le abitudini consuete.' },
           ],
-        },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'Vivantes Humboldt-Klinikum (Am Nordgraben, Reinickendorf) — 5-6 km.',
-          ],
-          trailingParagraphs: ['Da Moabit a Frohnau sono circa 25-35 minuti a seconda del traffico, lungo la A111. Frohnau è per noi al margine settentrionale — per il tragitto più lungo può, a seconda dell’entità, essere previsto un forfait di trasferta, che concordiamo in modo trasparente in anticipo.'],
         },
       ],
       faq: [
@@ -835,7 +714,7 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
     hook: 'Proprio al confine della città.',
     hideInFooter: true,
     metaTitle: 'Assistenza Kleinmachnow — al confine di Berlino',
-    metaDescription: 'Assistenza privata a Kleinmachnow: cure, vigilanza al capezzale e 24h nel comune al confine di Berlino. Superiamo il confine cittadino.',
+    metaDescription: 'Assistenza privata a Kleinmachnow: cura individuale e 24h nel comune al confine di Berlino. Superiamo il confine cittadino.',
     h1: 'Assistenza a Kleinmachnow — al confine, nel Brandeburgo',
     primaryKeyword: 'assistenza domiciliare Kleinmachnow',
     detail: {
@@ -861,19 +740,10 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
             { label: 'Chiarezza sui tragitti', text: 'Poiché attraversiamo il confine cittadino, pianifichiamo i turni con lungimiranza e in blocchi sensati. Così l’assistenza resta affidabile, senza che il tempo di percorrenza divori l’intervento.' },
           ],
         },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'Helios Klinikum Emil von Behring (Zehlendorf) — 5-6 km, il più vicino grande ospedale per acuti.',
-            'Ev. Krankenhaus Ludwigsfelde-Teltow — 6-8 km.',
-            'Klinikum Ernst von Bergmann Potsdam — circa 12 km.',
-          ],
-          trailingParagraphs: ['Da Moabit a Kleinmachnow sono circa 25-40 minuti a seconda del traffico, lungo la A115. Poiché qui attraversiamo il confine cittadino di Berlino, a seconda dell’entità dell’intervento può essere previsto un forfait di trasferta — lo chiariamo in anticipo.'],
-        },
       ],
       faq: [
+        { question: 'Superate davvero il confine cittadino?', answer: 'Sì. Kleinmachnow fa parte della nostra area abituale. Il tragitto lo includiamo nella pianificazione, così il tempo concordato è il tempo che passiamo da voi.' },
         { question: 'Kleinmachnow è nel Brandeburgo — vi operate davvero?', answer: 'Sì. Attraversiamo regolarmente il confine cittadino verso Kleinmachnow. Poiché il comune confina direttamente con Zehlendorf, è ben raggiungibile dalle nostre zone sud-occidentali.' },
-        { question: 'Quale ospedale è più vicino in caso di emergenza?', answer: 'Per l’assistenza in acuto il più vicino grande ospedale è di solito l’Helios Klinikum Emil von Behring a Zehlendorf, a soli 5-6 km. Per singole specialità entrano in gioco anche Potsdam o Ludwigsfelde-Teltow.' },
         { question: 'Il tragitto oltre il confine regionale costa di più?', answer: 'A seconda dell’entità dell’intervento può essere previsto un forfait di trasferta. Lo discutiamo apertamente nel primo colloquio, prima che Lei decida — senza voci nascoste.' },
       ],
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
@@ -896,7 +766,7 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
     hook: 'Capitale del Land, tra i laghi.',
     hideInFooter: true,
     metaTitle: 'Assistenza Potsdam — cure private nella capitale',
-    metaDescription: 'Assistenza privata a Potsdam: cure, vigilanza al capezzale e 24h a Babelsberg, Berliner Vorstadt e sui laghi. Discreta anche da lontano.',
+    metaDescription: 'Assistenza privata a Potsdam: cura individuale e 24h a Babelsberg, Berliner Vorstadt e sui laghi. Discreta anche da lontano.',
     h1: 'Assistenza a Potsdam — nella capitale del Land, tra i laghi',
     primaryKeyword: 'assistenza domiciliare Potsdam',
     detail: {
@@ -918,24 +788,14 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
           heading: 'Cosa caratterizza l’assistenza a Potsdam',
           stronglist: [
             { label: 'Grandi proprietà tranquille', text: 'L’indirizzo tipico a Babelsberg o nella Berliner Vorstadt è una casa ampia con giardino, spesso vicino all’acqua o a un parco. Adattiamo l’assistenza a questa situazione abitativa, invece di comprimerla in uno schema standard.' },
-            { label: 'Un panorama ospedaliero proprio', text: 'Con il Klinikum Ernst von Bergmann, Potsdam ha in loco una grande struttura. Per i passaggi tra ospedale e casa — dopo un intervento o una riabilitazione — sfruttiamo i tragitti brevi all’interno della città.' },
             { label: 'Pianificazione invece di reazione', text: 'Per via della distanza da Moabit, a Potsdam lavoriamo con turni fissi e piccoli team. Questo rende l’assistenza affidabile e fa sì che ci sia sempre qualcuno di familiare sul posto.' },
           ],
         },
-        {
-          heading: 'Ospedali e tragitti',
-          list: [
-            'Klinikum Ernst von Bergmann (Charlottenstr. 72) — la struttura più grande della città, circa 1.100 posti letto.',
-            'Oberlinklinik Babelsberg — specializzata in ortopedia.',
-            'St. Josefs-Krankenhaus Potsdam-Sanssouci.',
-          ],
-          trailingParagraphs: ['Da Moabit a Potsdam si calcolano circa 35-50 minuti a seconda del traffico, lungo la A115 e la AVUS. Per questo tragitto più lungo può, a seconda dell’entità dell’intervento, essere previsto un forfait di trasferta, che concordiamo apertamente con Lei in anticipo.'],
-        },
       ],
       faq: [
+        { question: 'Arrivate anche fino a Potsdam?', answer: 'Sì, Potsdam fa parte della nostra area: Babelsberg, la Berliner Vorstadt e le rive dei laghi come il centro. Il tragitto più lungo lo mettiamo in conto noi, non viene sottratto al vostro tempo di assistenza.' },
         { question: 'Potsdam è a una certa distanza da Berlino — vi assistete davvero lì?', answer: 'Sì, ma a dire il vero al margine della nostra area. Da Moabit sono 35-50 minuti. Per questo pianifichiamo Potsdam con turni fissi e più lunghi, invece di brevi visite — così l’assistenza è affidabile e il tempo di percorrenza è impiegato in modo sensato.' },
         { question: 'Per Potsdam è previsto un forfait di trasferta?', answer: 'A seconda dell’entità dell’intervento, sì. Le indichiamo le condizioni per intero nel primo colloquio, prima che Lei si impegni. Da noi non ci sono costi aggiuntivi nascosti.' },
-        { question: 'Qual è da voi in loco l’ospedale più importante?', answer: 'Il Klinikum Ernst von Bergmann nella Charlottenstraße è, con circa 1.100 posti letto, la struttura più grande della città. Per l’ortopedia la Oberlinklinik a Babelsberg è un riferimento, insieme al St. Josefs-Krankenhaus a Sanssouci.' },
       ],
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
       relatedLinks: [

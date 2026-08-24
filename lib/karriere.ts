@@ -54,7 +54,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
         {
           heading: 'Was Sie tun',
           paragraphs: [
-            'Stundenweise oder schichtweise 1:1-Betreuung von Selbstzahler-Klient*innen in Berlin. Konkret: Sitzwachen, Nachtwachen, Begleitung in Krankenhaus und Hospiz, Pflege zu Hause. Klassische ambulante Pflege in mehreren Wohnungen pro Schicht machen wir nicht.',
+            'Stundenweise oder schichtweise 1:1-Betreuung von Selbstzahler-Klient*innen in Berlin. Konkret: Begleitung zu Hause, Nachtwachen, Pflege in der eigenen Wohnung. Klassische ambulante Pflege in mehreren Wohnungen pro Schicht machen wir nicht.',
           ],
         },
         {
@@ -138,9 +138,9 @@ export const KARRIERE: readonly SeoKarriere[] = [
   {
     slug: 'pflege-ohne-koerperliche-belastung',
     title: 'Pflege ohne körperliche Belastung',
-    short: 'Sitzwachen und Begleitung statt Lagerung im Akkord.',
+    short: '1:1-Betreuung und Begleitung statt Lagerung im Akkord.',
     metaTitle: 'Pflege ohne körperliche Belastung Berlin — 1:1 statt Schwerstpflege',
-    metaDescription: 'Sitzwachen und Begleitung statt Lagerung im Akkord. Pflegejob mit deutlich reduzierter körperlicher Belastung in Berlin.',
+    metaDescription: '1:1-Betreuung und Begleitung statt Lagerung im Akkord. Pflegejob mit deutlich reduzierter körperlicher Belastung in Berlin.',
     h1: 'Pflegejob mit deutlich reduzierter körperlicher Belastung',
     primaryKeyword: 'Pflege ohne körperliche Belastung',
     detail: {
@@ -152,7 +152,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
         {
           heading: 'Was körperlich anders ist bei uns',
           stronglist: [
-            { label: 'Sitzwachen', text: 'Hier ist die Hauptaufgabe das Wachsein und die Anwesenheit. Bei Bedarf wird beruhigt, geholfen, dokumentiert. Physisch wenig anstrengend.' },
+            { label: '1:1-Betreuung', text: 'Hier ist die Hauptaufgabe das Wachsein und die Anwesenheit. Bei Bedarf wird beruhigt, geholfen, dokumentiert. Physisch wenig anstrengend.' },
             { label: 'Begleitung zu Hause', text: 'Beim Essen begleiten, beim Spaziergang, beim Vorlesen. Es gibt Pflege-Tätigkeiten — aber nicht im Tour-Akkord, sondern mit Zeit.' },
             { label: 'Nachtwachen', text: 'Anwesenheit, Beobachtung, gelegentliche Toiletten-Hilfe. Selten Schwerstpflege.' },
             { label: 'Pflegeberatung', text: 'Beratung im Gespräch — körperlich gar nicht anstrengend.' },
@@ -164,7 +164,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
             'Wir machen auch klassische Pflege, vor allem in der 24-Stunden-Betreuung. Wenn Sie ausdrücklich körperliche Belastung vermeiden wollen, klären wir das vor Vertragsabschluss und setzen Sie nur in den weniger belastenden Tätigkeiten ein:',
           ],
           list: [
-            'Sitzwachen.',
+            '1:1-Betreuung.',
             'Nachtwachen mit Bereitschaft.',
             'Stundenweise Begleitung.',
             'Pflegeberatung.',
@@ -185,9 +185,9 @@ export const KARRIERE: readonly SeoKarriere[] = [
         },
       ],
       faq: [
-        { question: 'Muss ich gar nichts mehr heben?', answer: 'Komplett ohne Heben geht es bei Sitzwachen meistens. Aber: Eine Person kann beim Aufstehen umfallen — dann müssen Sie reagieren. Wir können „nie schwerheben" nicht garantieren, aber „selten schwerheben" schon.' },
+        { question: 'Muss ich gar nichts mehr heben?', answer: 'Komplett ohne Heben geht es bei der 1:1-Betreuung meistens. Aber: Eine Person kann beim Aufstehen umfallen — dann müssen Sie reagieren. Wir können „nie schwerheben" nicht garantieren, aber „selten schwerheben" schon.' },
         { question: 'Kann ich nach einem Bandscheiben-Vorfall bei Ihnen arbeiten?', answer: 'Ja — viele unserer Mitarbeitenden sind so zu uns gekommen. Wir setzen Sie da ein, wo Sie sicher sind.' },
-        { question: 'Werden Sie mich auf 24-Stunden-Schichten setzen?', answer: 'Nur wenn Sie es wollen. Wir haben genug Sitzwachen und Begleitungen, sodass „nur das" für Sie reichen kann.' },
+        { question: 'Werden Sie mich auf 24-Stunden-Schichten setzen?', answer: 'Nur wenn Sie es wollen. Wir haben genug Betreuungen und Begleitungen, sodass „nur das" für Sie reichen kann.' },
       ],
       cta: { text: 'Jetzt bewerben', href: 'mailto:simeon@heilpraxis-frommholz.de' },
       relatedLinks: [
@@ -217,7 +217,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
           heading: 'Was das für Sie heißt',
           stronglist: [
             { label: 'Sie bestimmen die Zeit', text: '5 Stunden pro Woche? 15? 25? Nach Verfügbarkeit. Wir planen langfristig.' },
-            { label: 'Sie bestimmen das Modell', text: 'Sitzwachen am Wochenende? Nachmittag-Begleitungen im Kiez? Nachtwachen, weil Sie eh nicht durchschlafen? Wir finden eine Konstellation, die zu Ihnen passt.' },
+            { label: 'Sie bestimmen das Modell', text: 'Betreuungen am Wochenende? Nachmittag-Begleitungen im Kiez? Nachtwachen, weil Sie eh nicht durchschlafen? Wir finden eine Konstellation, die zu Ihnen passt.' },
             { label: 'Sie haben Erfahrung — wir schätzen das', text: 'Pflegekräfte, die 30 Jahre oder länger im Beruf waren, bringen einen Schatz mit, der nicht durch Schulungen ersetzt werden kann. Wir setzen Sie da ein, wo Ihre Erfahrung gebraucht wird.' },
           ],
         },
@@ -253,20 +253,20 @@ export const KARRIERE: readonly SeoKarriere[] = [
   // === 5. Bezahltes Ehrenamt ===================================================
   {
     slug: 'bezahltes-ehrenamt',
-    title: 'Bezahltes Ehrenamt: Sitzwachen',
-    short: 'Sitzwachen und Begleitung als bezahltes Ehrenamt.',
-    metaTitle: 'Bezahltes Ehrenamt Berlin — Sitzwachen mit Sinn',
-    metaDescription: 'Sitzwachen und Begleitung als bezahltes Ehrenamt. Ideal für Studierende, Quereinsteiger*innen, Sinnsuchende. Berlin.',
-    h1: 'Bezahltes Ehrenamt: Sitzwachen bei Heilpraxis Frommholz',
+    title: 'Bezahltes Ehrenamt: 1:1-Betreuung',
+    short: '1:1-Betreuung und Begleitung als bezahltes Ehrenamt.',
+    metaTitle: 'Bezahltes Ehrenamt Berlin — 1:1-Betreuung mit Sinn',
+    metaDescription: '1:1-Betreuung und Begleitung als bezahltes Ehrenamt. Ideal für Studierende, Quereinsteiger*innen, Sinnsuchende. Berlin.',
+    h1: 'Bezahltes Ehrenamt: 1:1-Betreuung bei Heilpraxis Frommholz',
     primaryKeyword: 'Bezahltes Ehrenamt Berlin',
     detail: {
       intro: [
         'Es gibt Menschen, die nicht in der Pflege ausgebildet sind, aber die das Wesentliche mitbringen: Ruhe, Aufmerksamkeit, Bereitschaft, einfach da zu sein. Wir nennen das „bezahltes Ehrenamt", weil es eine Tätigkeit ist, die im Charakter ehrenamtlich ist — aber bezahlt wird.',
-        'Wir suchen solche Menschen für Sitzwachen.',
+        'Wir suchen solche Menschen für die 1:1-Betreuung.',
       ],
       sections: [
         {
-          heading: 'Was Sitzwachen tun',
+          heading: 'Was Betreuungskräfte tun',
           paragraphs: [
             'Sie sitzen am Bett. Sie sind da. Sie reden, wenn jemand reden will. Sie schweigen, wenn jemand schweigen will. Sie halten die Hand. Sie rufen die Pflege, wenn etwas Pflegerisches ansteht. Sie rufen den Notarzt, wenn etwas Medizinisches ansteht.',
             'Sie tun, was eine vertraute Person tun würde, die zufällig nicht da sein kann.',
@@ -285,7 +285,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
         },
         {
           heading: 'Was Sie verdienen',
-          paragraphs: ['Sitzwachen werden marktüblich vergütet, gestaffelt nach Vorerfahrung. Zuschläge bei Nacht- und Wochenenddiensten nach § 3b EStG: Nacht (22-6) +25 %, Sonntag +50 %, Feiertag +100 %. Konkrete Sätze klären wir im Bewerbungsgespräch — Wochenend- und Nachtdienste lohnen sich besonders.'],
+          paragraphs: ['Betreuungskräfte werden marktüblich vergütet, gestaffelt nach Vorerfahrung. Zuschläge bei Nacht- und Wochenenddiensten nach § 3b EStG: Nacht (22-6) +25 %, Sonntag +50 %, Feiertag +100 %. Konkrete Sätze klären wir im Bewerbungsgespräch — Wochenend- und Nachtdienste lohnen sich besonders.'],
         },
         {
           heading: 'Was Sie können müssen',
@@ -301,7 +301,7 @@ export const KARRIERE: readonly SeoKarriere[] = [
           heading: 'Wie das praktisch läuft',
           stronglist: [
             { label: 'Einarbeitung', text: 'Wir geben Ihnen eine kompakte Einführung in 1-2 Tagen (bezahlt). Sie lernen, was zu beobachten ist, wie Sie dokumentieren, wann Sie wen rufen.' },
-            { label: 'Erste Einsätze in Begleitung', text: 'Ihre ersten 2-3 Sitzwachen machen Sie zusammen mit einer erfahrenen Kollegin.' },
+            { label: 'Erste Einsätze in Begleitung', text: 'Ihre ersten 2-3 Einsätze machen Sie zusammen mit einer erfahrenen Kollegin.' },
             { label: 'Dann selbstständig', text: 'Sie bekommen Einsätze über unsere Disposition. Sie sagen, an welchen Tagen Sie wie viele Stunden Zeit haben — wir buchen Sie ein.' },
           ],
         },
@@ -309,12 +309,12 @@ export const KARRIERE: readonly SeoKarriere[] = [
       faq: [
         { question: 'Brauche ich eine Ausbildung?', answer: 'Nein. Lebensreife und Eignung zählen. Pflegerische Tätigkeiten machen Sie nicht.' },
         { question: 'Wie viel kann ich verdienen pro Monat?', answer: 'Das hängt von Ihrer Stundenzahl pro Woche und der Verteilung der Dienste ab (Wochenend- und Nachtdienste bringen Zuschläge). Konkrete Erwartung können wir im Bewerbungsgespräch durchrechnen.' },
-        { question: 'Kann ich Sitzwachen mit Studium oder Hauptberuf kombinieren?', answer: 'Ja — die meisten Sitzwachen-Schichten finden abends, nachts oder am Wochenende statt. Genau dafür entworfen.' },
+        { question: 'Kann ich die Einsätze mit Studium oder Hauptberuf kombinieren?', answer: 'Ja — die meisten Schichten finden abends, nachts oder am Wochenende statt. Genau dafür entworfen.' },
       ],
       cta: { text: 'Jetzt bewerben', href: 'mailto:simeon@heilpraxis-frommholz.de' },
       relatedLinks: [
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'die Leistung, die Sie übernehmen' },
         { label: 'Alle Stellenkonzepte', href: '/karriere' },
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'die Leistung, die Sie übernehmen' },
       ],
     },
   },

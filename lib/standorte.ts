@@ -37,9 +37,9 @@ export const STANDORTE: readonly SeoStandort[] = [
     geo: { lat: 52.5349, lng: 13.3432 },
     hook: 'Unser Sitz, unser Kiez.',
     isHauptstandort: true,
-    metaTitle: 'Pflege & Sitzwachen Moabit — ansässig in Ihrem Kiez',
-    metaDescription: 'Pflege, Sitzwachen und 24h-Betreuung in Moabit. Wir sind ansässig in der Stephanstraße 46 — kennen Ihren Kiez wie kaum ein anderer Anbieter.',
-    h1: 'Pflege und Sitzwachen in Moabit — aus Ihrem Kiez für Ihren Kiez',
+    metaTitle: 'Pflege & 1:1-Betreuung Moabit — ansässig in Ihrem Kiez',
+    metaDescription: 'Pflege, 1:1-Betreuung und 24h-Betreuung in Moabit. Wir sind ansässig in der Stephanstraße 46 — kennen Ihren Kiez wie kaum ein anderer Anbieter.',
+    h1: 'Pflege und 1:1-Betreuung in Moabit — aus Ihrem Kiez für Ihren Kiez',
     primaryKeyword: 'Pflegedienst Moabit',
     detail: {
       intro: [
@@ -51,24 +51,12 @@ export const STANDORTE: readonly SeoStandort[] = [
           heading: 'Was wir in Moabit anbieten',
           paragraphs: ['Unser komplettes Leistungsspektrum — mit dem Vorteil, dass wir hier direkt um die Ecke sind:'],
           list: [
-            'Sitzwachen — im Krankenhaus, zu Hause, im Hospiz.',
+            '1:1-Betreuung zu Hause — stundenweise bis rund um die Uhr.',
             '24-Stunden-Betreuung mit deutschem Pflegekräfte-Team.',
             'Stundenweise Begleitung für Seniorinnen und Senioren.',
             'Pflegeberatung — oft bei Ihnen zu Hause.',
-            'Nachtwachen und Hospiz-Sitzwachen.',
+            'Nachtwachen und Begleitung in der letzten Lebensphase.',
           ],
-        },
-        {
-          heading: 'Krankenhäuser in und um Moabit',
-          paragraphs: ['Wir kennen die wichtigsten Häuser:'],
-          list: [
-            'Klinikum am Urban (Vivantes) — 15 Minuten Fahrtzeit.',
-            'Vivantes Klinikum am Friedrichshain — 20 Minuten.',
-            'DRK Kliniken Westend — 18 Minuten.',
-            'Charité Campus Virchow — 8 Minuten.',
-            'Lazarus-Krankenhaus (Wedding) — 10 Minuten.',
-          ],
-          trailingParagraphs: ['In all diesen Häusern haben wir bereits Sitzwachen und Begleitungen durchgeführt. Wir kennen die Pflegedienstleitungen, wir wissen, wie der Zutritt geregelt ist, wir kommen ohne Umwege auf die Station.'],
         },
         {
           heading: 'Was Moabit besonders macht',
@@ -77,12 +65,12 @@ export const STANDORTE: readonly SeoStandort[] = [
             'Seniorinnen in den großen Altbau-Wohnungen rund um die Hutten-, Calvin- und Bremer Straße, die Hilfe wollen.',
             'Familien in den Mietshäusern um Stephan- und Stromstraße, deren Eltern zu Besuch sind.',
             'Bewohner der Seniorenwohnanlagen, die zusätzliche Selbstzahler-Betreuung möchten.',
-            'Mieter, deren Angehörige im Krankenhaus liegen und Begleitung brauchen.',
+            'Familien, die für einen Angehörigen kurzfristig eine verlässliche Begleitung brauchen.',
           ],
         },
       ],
       faq: [
-        { question: 'Sind Sie bei einem Notfall in Moabit besonders schnell vor Ort?', answer: 'Ja — wir sind oft in 5-10 Minuten bei Ihnen, je nach Tageszeit und Verkehrslage. Für akute Sitzwachen-Anfragen aus dem unmittelbaren Kiez bieten wir die schnellste Reaktion im gesamten Stadtgebiet.' },
+        { question: 'Sind Sie bei einem Notfall in Moabit besonders schnell vor Ort?', answer: 'Ja — wir sind oft in 5-10 Minuten bei Ihnen, je nach Tageszeit und Verkehrslage. Für akute Betreuungsanfragen aus dem unmittelbaren Kiez bieten wir die schnellste Reaktion im gesamten Stadtgebiet.' },
         { question: 'Welche Pflegeheime in Moabit unterstützen Sie?', answer: 'Wir kommen als Zusatz-Betreuung in Pflegeheime und Service-Wohnanlagen, wenn die Familie zusätzliche 1:1-Stunden wünscht. Über die konkreten Einrichtungen sprechen wir im Erstgespräch.' },
         { question: 'Sind Ihre Mitarbeitenden alle aus Moabit?', answer: 'Nein — aber viele wohnen in der Stadtmitte. Das bedeutet kurze Anfahrtswege und gute lokale Kenntnis.' },
       ],
@@ -104,7 +92,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     plz: ['10785', '10787', '10557'],
     geo: { lat: 52.514, lng: 13.351 },
     hook: 'Diskretion und kurze Wege.',
-    metaTitle: 'Pflege & Sitzwachen Tiergarten — schnell, diskret',
+    metaTitle: 'Pflege & 1:1-Betreuung Tiergarten — schnell, diskret',
     metaDescription: 'Pflegedienst für Selbstzahler in Tiergarten. Diskret, mit kurzen Wegen von unserem Standort in Moabit. Auch für Botschaften und Diplomatie.',
     h1: 'Pflege in Tiergarten — diskret, schnell, vor Ort',
     primaryKeyword: 'Pflegedienst Tiergarten',
@@ -120,7 +108,7 @@ export const STANDORTE: readonly SeoStandort[] = [
             'Botschaftsangehörige mit pflegebedürftigen Familienmitgliedern.',
             'Diplomatische Vertretungen, die für reisende Würdenträger Selbstzahler-Pflege organisieren.',
             'Bewohner der gehobenen Apartmentkomplexe rund um Großer Tiergarten, Lützowplatz, Hofjägerallee.',
-            'Patientinnen aus dem nahegelegenen Bundeswehrkrankenhaus, die nach Klinikentlassung weitere Begleitung brauchen.',
+            'Menschen, deren Versorgung zu Hause kurzfristig neu beginnen muss.',
             'Seniorinnen aus den Service-Wohnanlagen in der Klingelhöferstraße und Umgebung.',
           ],
         },
@@ -132,15 +120,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Kurzfristigkeit', text: 'Diplomatischer Alltag plant kurz. Wir sind darauf eingestellt, auch innerhalb von 24 Stunden zu starten.' },
             { label: 'Concierge-Etikette', text: 'Wir wissen, wie wir uns in Häusern mit Concierge oder Sicherheitsdienst anmelden, und wie wir den Eindruck wahren, den unsere Auftraggeber dort haben wollen.' },
           ],
-        },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'Bundeswehrkrankenhaus Berlin (Scharnhorststraße) — 7 Minuten.',
-            'Charité Campus Mitte — 10 Minuten.',
-            'Vivantes Klinikum am Friedrichshain — 15 Minuten.',
-          ],
-          trailingParagraphs: ['Vom Stephanplatz in Moabit über die Beethovenstraße nach Tiergarten: ca. 8-12 Minuten je nach Tageszeit. Bei Bedarf öfter und länger vor Ort, ohne Anfahrtspauschalen.'],
         },
       ],
       faq: [
@@ -164,42 +143,41 @@ export const STANDORTE: readonly SeoStandort[] = [
     bezirk: 'Mitte',
     plz: ['10117', '10115', '10119', '10178', '10179'],
     geo: { lat: 52.52, lng: 13.408 },
-    hook: 'Nähe zur Charité Mitte.',
+    hook: 'Diskrete Betreuung zwischen Spreebogen und Hackeschem Markt.',
     metaTitle: 'Pflegedienst Berlin-Mitte — diskret & verlässlich',
-    metaDescription: 'Pflegeleistungen, Sitzwachen und Begleitung in Berlin-Mitte. Krankenhausnahe Versorgung an Charité Mitte und Sankt Hedwig.',
-    h1: 'Pflege und Sitzwachen in Berlin-Mitte — klinikennah und schnell',
+    metaDescription: 'Pflege, 1:1-Betreuung und Begleitung in Berlin-Mitte. Private Versorgung zu Hause, stundenweise bis rund um die Uhr.',
+    h1: 'Pflege und 1:1-Betreuung in Berlin-Mitte — schnell vor Ort',
     primaryKeyword: 'Pflegedienst Berlin Mitte',
     detail: {
       intro: [
-        'Berlin-Mitte ist Verwaltung, Tourismus, Wohnen — und Klinikversorgung. Charité Mitte (Luisenstraße/Charitéplatz), Sankt Hedwig (Große Hamburger Straße), Vivantes Friedrichshain (Landsberger Allee Grenze) — in Mitte liegen einige der wichtigsten Berliner Krankenhäuser.',
-        'Viele unserer Anfragen aus Mitte kommen aus genau diesen Häusern: Sitzwachen für Patientinnen und Patienten, Begleitung bei Verlegungen, Übergaben nach Hause. Aber Mitte ist auch ein Wohnstadtteil — alte Mieter zwischen Hackeschem Markt und Friedrichstraße, neue Bewohner in den Neubauten am Spreebogen.',
+        'Berlin-Mitte ist Verwaltung, Tourismus — und Wohnstadtteil. Alte Mieterinnen zwischen Hackeschem Markt und Friedrichstraße, neue Bewohner in den Neubauten am Spreebogen, Seniorinnen in den stillen Seitenstraßen rund um die Oranienburger und die Große Hamburger Straße.',
+        'Von unserem Standort in der Stephanstraße sind wir in wenigen Minuten in Mitte. Das macht uns dort schnell — auch dann, wenn eine Versorgung kurzfristig beginnen muss.',
       ],
       sections: [
         {
           heading: 'Was wir in Berlin-Mitte oft tun',
           stronglist: [
-            { label: 'Sitzwachen in der Charité Mitte', text: 'Postoperative 1:1-Begleitung, Demenz-Begleitung bei Klinikaufenthalt, Begleitung in der letzten Lebensphase. Wir kennen die Stationen, wir kennen die Routinen.' },
-            { label: 'Begleitung in Sankt Hedwig', text: 'Das Sankt Hedwig ist ein katholisches Haus mit eigenen Routinen. Wir respektieren das. Unsere Mitarbeitenden sind im Umgang mit kirchlich geprägten Strukturen erfahren.' },
-            { label: 'Übergänge bei Klinikentlassungen', text: 'Wenn die Entlassung näher rückt, brauchen viele Familien eine Brücke zwischen Klinik und Zuhause. Wir übernehmen die ersten Tage zu Hause, oft mit 12- oder 24-Stunden-Modellen.' },
+            { label: '1:1-Betreuung zu Hause', text: 'Ungeteilte Aufmerksamkeit in der eigenen Wohnung — bei Demenz, in der Genesungsphase nach einer Operation, in der letzten Lebensphase.' },
+            { label: 'Nachtwachen in den Wohnungen der Innenstadt', text: 'Gerade in großen Altbauwohnungen mit langen Fluren ist nächtliche Sturzgefahr ein Thema. Wir sind da, wenn aufgestanden wird.' },
+            { label: 'Wenn die Versorgung zu Hause neu beginnt', text: 'Wenn sich die Lage plötzlich ändert, brauchen Familien eine Brücke. Wir übernehmen die ersten Tage und Wochen zu Hause, oft mit 12- oder 24-Stunden-Modellen.' },
             { label: 'Pflegeberatung in Mitte-Wohnungen', text: 'Wir kommen zu Ihnen, sprechen mit Familie und Hausarzt.' },
           ],
         },
         {
           heading: 'Anfahrtszeit von Moabit',
           paragraphs: [
-            'Mit dem Auto über die Invalidenstraße zur Charité Mitte: ca. 7 Minuten. Zu den Wohngegenden zwischen Friedrichstraße und Alexanderplatz: 10-15 Minuten.',
+            'Mit dem Auto über die Invalidenstraße nach Mitte: ca. 7 Minuten. Zu den Wohngegenden zwischen Friedrichstraße und Alexanderplatz: 10-15 Minuten.',
           ],
         },
       ],
       faq: [
-        { question: 'Können Sie in der Charité Mitte Sitzwachen übernehmen?', answer: 'Ja — regelmäßig. Wir nehmen vor dem ersten Einsatz Kontakt mit der Pflegedienstleitung der Station auf, holen ggf. eine schriftliche Zustimmung ein.' },
-        { question: 'Wie schnell kommen Sie in einem Krankenhaus an?', answer: 'Zu den meisten Mitte-Kliniken in 10-15 Minuten. Bei kurzfristigen Notfällen oft am gleichen Tag verfügbar.' },
-        { question: 'Können wir Sitzwachen vor einer geplanten OP buchen?', answer: 'Sehr empfehlenswert — bei planbaren Eingriffen können wir die Sitzwache schon für Tag 1 nach OP fest einplanen. Das reduziert das Delir-Risiko und verbessert die Genesung.' },
+        { question: 'Wie schnell sind Sie in Mitte vor Ort?', answer: 'In der Regel in 10-15 Minuten. Für einen ersten Einsatz brauchen wir zwei bis drei Tage Vorlauf, in akuten Situationen versuchen wir es innerhalb von 24 Stunden.' },
+        { question: 'Können wir eine Betreuung schon vor einem geplanten Eingriff verabreden?', answer: 'Sehr empfehlenswert. Bei planbaren Eingriffen reservieren wir die Begleitung fest für die ersten Tage danach — genau die Zeit mit dem höchsten Risiko für Verwirrtheit und Stürze.' },
+        { question: 'Arbeiten Sie auch in den Neubauwohnungen am Spreebogen?', answer: 'Ja. Concierge, Tiefgarage, Aufzug — das ist für uns Alltag. Wir stimmen Zutritt und Anwesenheitszeiten vorab mit Ihnen ab und kommen unauffällig.' },
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Krankenhaus-Begleitung', href: '/themen/krankenhaus-begleitung' },
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'direkt angrenzend' },
       ],
     },
@@ -214,7 +192,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     geo: { lat: 52.518, lng: 13.343 },
     hook: 'Stille Anwesenheit im Architekturviertel.',
     metaTitle: 'Pflegedienst Hansaviertel — im grünen Zentrum',
-    metaDescription: 'Pflege, Sitzwachen und Begleitung im Hansaviertel. Stille Anwesenheit für ältere Bewohner in den Apartmenthäusern der Stadtarchitektur.',
+    metaDescription: 'Pflege, 1:1-Betreuung und Begleitung im Hansaviertel. Stille Anwesenheit für ältere Bewohner in den Apartmenthäusern der Stadtarchitektur.',
     h1: 'Pflege im Hansaviertel — im stillen Quartier zwischen Tiergarten und Spree',
     primaryKeyword: 'Pflegedienst Hansaviertel',
     detail: {
@@ -241,14 +219,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Begleitung bei Kulturveranstaltungen', text: 'Manche Klient*innen wollen weiter ins Konzert, ins Theater, zur Ausstellung — mit Begleitung durch eine erfahrene Person ist das möglich.' },
           ],
         },
-        {
-          heading: 'Krankenhäuser',
-          list: [
-            'Charité Campus Virchow Klinikum (Forckenbeckplatz) — 5 Minuten.',
-            'Bundeswehrkrankenhaus Berlin — 5 Minuten.',
-            'DRK Kliniken Westend — 10 Minuten.',
-          ],
-        },
       ],
       faq: [
         { question: 'Mein Vater wohnt alleine im Hansaviertel und will nicht ins Heim. Was ist möglich?', answer: 'Vieles. Mit 2-3 Stunden Begleitung pro Tag plus einer Nachtwache an 2-3 Tagen pro Woche lässt sich in kleinen Wohnungen oft ein sicheres Setting schaffen. Im Erstgespräch klären wir, was sinnvoll ist.' },
@@ -257,7 +227,7 @@ export const STANDORTE: readonly SeoStandort[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'oft auf Stundenbasis' },
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'oft auf Stundenbasis' },
         { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Pflegeberatung', href: '/leistungen/pflegeberatung-berlin' },
       ],
@@ -272,7 +242,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     plz: ['10585', '10587', '10589', '10623', '10625', '10627', '10629'],
     geo: { lat: 52.516, lng: 13.302 },
     hook: 'Gehobene Selbstzahler-Klientel zwischen Schloss und Kudamm.',
-    metaTitle: 'Pflegedienst Charlottenburg — Selbstzahler, Sitzwachen',
+    metaTitle: 'Pflegedienst Charlottenburg — Selbstzahler, 1:1-Betreuung',
     metaDescription: 'Pflege und 1:1-Betreuung in Charlottenburg. Erfahrenes Team, kurze Wege — von Schloss-Park bis Kurfürstendamm.',
     h1: 'Pflegedienst Charlottenburg — für anspruchsvolle Selbstzahler',
     primaryKeyword: 'Pflegedienst Charlottenburg',
@@ -288,15 +258,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Anspruchsvoll, aber unaufdringlich', text: 'Unsere Klient*innen in Charlottenburg sind oft kultiviert, akademisch geprägt, mit einer klaren Vorstellung von Stil und Diskretion. Wir setzen Mitarbeitende ein, die sprachlich und im Auftreten in diese Wohnungen passen.' },
             { label: 'Beständigkeit', text: 'Charlottenburg ist Stammkundschaft. Viele Familien arbeiten über Jahre mit uns, manchmal über Generationen. Das feste Team kennt die Familie, kennt die Vorlieben, kennt die Wohnung.' },
             { label: 'Privater Charakter', text: 'Wir kommen ohne sichtbares Logo, oft mit dem eigenen Auto, ohne in den Hausfluren auffällige Spuren zu hinterlassen.' },
-          ],
-        },
-        {
-          heading: 'Krankenhäuser in Charlottenburg',
-          list: [
-            'DRK Kliniken Berlin Westend — eines unserer Schwerpunkthäuser.',
-            'Schlosspark-Klinik — exklusive Privatklinik.',
-            'Vivantes Klinikum Spandau — 15 Minuten.',
-            'St. Gertrauden Krankenhaus — 8 Minuten.',
           ],
         },
         {
@@ -345,15 +306,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Diskretion gegenüber Hausgemeinschaften', text: 'Altbau-Hausgemeinschaften sind oft sehr eng. Wir kommen unauffällig, vermeiden das Auffallen, schützen die Privatsphäre.' },
           ],
         },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'St. Gertrauden Krankenhaus — 5 Minuten von vielen Wilmersdorf-Adressen.',
-            'Schlosspark-Klinik — 10 Minuten.',
-            'DRK Kliniken Westend — 12 Minuten.',
-          ],
-          trailingParagraphs: ['Von Moabit über die Berliner Straße bis Wilmersdorf-Mitte ca. 12 Minuten. Zu den südlichen Teilen Wilmersdorfs (Hohenzollerndamm, Wittelsbacher Straße) ca. 18-22 Minuten.'],
-        },
       ],
       faq: [
         { question: 'Mein Vater ist 92 und will keinen Pflegedienst, weil er keine „fremden Leute" in der Wohnung haben will. Was tun?', answer: 'Häufige Situation. Wir gehen das langsam an — oft mit einem ersten Besuch, in dem nichts gepflegt wird, nur ein Gespräch geführt. Unsere Mitarbeitenden sind erfahren im Aufbau von Vertrauen. Oft löst sich der Widerstand innerhalb weniger Besuche.' },
@@ -394,17 +346,8 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Große Anwesen', text: 'Eine 24-Stunden-Betreuung in einer 200qm-Villa läuft anders ab als in einer 60qm-Wohnung. Mehrere Stockwerke, große Distanzen, oft auch große Gärten — all das muss bei der Betreuung mitgedacht werden.' },
             { label: 'Inhaltsreiche Lebensgeschichten', text: 'Wer in einem Westend-Haus alt wird, hat oft ein langes Leben hinter sich, das in Möbeln, Bildern, Büchern gespeichert ist. Unsere Mitarbeitenden sind im Umgang mit solchen Biografien geübt.' },
             { label: 'Haushaltsangestellte und Pflegekräfte gemeinsam', text: 'Viele Westend-Familien beschäftigen seit Jahrzehnten Haushaltshilfen und Gartenmitarbeiter. Wenn wir dazustoßen, müssen wir uns in diese Strukturen einfügen.' },
-            { label: 'Stilvolles Sterben', text: 'Wer im Westend-Haus alt geworden ist, will oft auch dort sterben. Wir begleiten Sterbeprozesse in diesen Häusern — mit allem, was es braucht, von Hospizpflege bis zum letzten Tag.' },
+            { label: 'Stilvolles Sterben', text: 'Wer im Westend-Haus alt geworden ist, will oft auch dort sterben. Wir begleiten Sterbeprozesse in diesen Häusern — mit allem, was es braucht, von palliativer Pflege bis zum letzten Tag.' },
           ],
-        },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'DRK Kliniken Berlin Westend — 5 Minuten von vielen Westend-Adressen.',
-            'Schlosspark-Klinik (Charlottenburg) — 10 Minuten.',
-            'Vivantes Klinikum Spandau — 12 Minuten.',
-          ],
-          trailingParagraphs: ['Über Charlottenburg ins Westend — ca. 18-22 Minuten, je nach Tageszeit. Wir planen die Anfahrt vor, sodass wir pünktlich vor Ort sind.'],
         },
       ],
       faq: [
@@ -414,9 +357,9 @@ export const STANDORTE: readonly SeoStandort[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin' },
         { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Hospiz-Sitzwachen', href: '/leistungen/hospiz-sitzwachen' },
         { label: 'Charlottenburg', href: '/standorte/charlottenburg', note: 'angrenzender Stadtteil' },
       ],
     },
@@ -450,15 +393,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Bereitschaft zu schriftlichen Vereinbarungen', text: 'Geheimhaltungsvereinbarungen (NDA-Klauseln), ausführliche Datenschutz-Regelungen — all das ist in Grunewald häufiger als anderswo Standard.' },
           ],
         },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'DRK Kliniken Berlin Westend — 10 Minuten.',
-            'Schlosspark-Klinik — 12 Minuten (häufig genutzt für stationäre Aufenthalte aus Grunewald).',
-            'Sankt Gertrauden — 15 Minuten.',
-          ],
-          trailingParagraphs: ['Vom Sitz Moabit nach Grunewald ca. 22-30 Minuten je nach Tageszeit und Zielort.'],
-        },
       ],
       faq: [
         { question: 'Können Sie absolute Vertraulichkeit garantieren?', answer: 'Pflegerische Schweigepflicht ist gesetzlich vorgegeben — jeder Verstoß ist strafbar. Bei besonders sensiblen Klient*innen ergänzen wir die Schweigepflicht durch schriftliche Vertraulichkeitsvereinbarungen mit Vertragsstrafen. Trotzdem: 100 % Garantie kann niemand geben, weil Menschen Menschen sind. Wir tun, was sich tun lässt.' },
@@ -486,7 +420,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     geo: { lat: 52.432, lng: 13.255 },
     hook: 'Ruhige Familien-Gegend, Häuser, Gärten.',
     metaTitle: 'Pflegedienst Zehlendorf — Familienpflege im Grünen',
-    metaDescription: 'Pflegedienst und Sitzwachen in Zehlendorf. Erfahrenes Team, das die ruhigen Straßen von Mexikoplatz bis Krumme Lanke kennt.',
+    metaDescription: 'Pflegedienst und 1:1-Betreuung in Zehlendorf. Erfahrenes Team, das die ruhigen Straßen von Mexikoplatz bis Krumme Lanke kennt.',
     h1: 'Pflegedienst Zehlendorf — Familienpflege in grüner Umgebung',
     primaryKeyword: 'Pflegedienst Zehlendorf',
     detail: {
@@ -510,14 +444,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Lange Anfahrtswege akzeptieren', text: 'Von Moabit nach Zehlendorf sind es 25-35 Minuten. Wir akzeptieren das, weil die Kontinuität für die Klient*innen wichtiger ist als Anfahrtspauschalen.' },
             { label: 'Auto-Kompatibilität', text: 'Viele Zehlendorf-Adressen sind nur mit dem Auto gut erreichbar. Unsere Mitarbeitenden haben Führerschein und Auto.' },
             { label: 'Garten-Begleitung', text: 'Viele Zehlendorf-Klient*innen verbringen ihre Lebensspanne im Garten. Begleitung dahin gehört dazu — vom Spaziergang auf der Terrasse bis zum gemeinsamen Gärtnern, soweit die Kräfte reichen.' },
-          ],
-        },
-        {
-          heading: 'Krankenhäuser im Bezirk',
-          list: [
-            'Helios-Klinikum Emil von Behring (Zehlendorf-Süd) — lokal und geschätzt.',
-            'Vivantes Klinikum Steglitz — 10 Minuten.',
-            'Charité Campus Benjamin Franklin — 15 Minuten.',
           ],
         },
       ],
@@ -573,15 +499,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Diskretion gegenüber Universitäts-Communities', text: 'Wer in Dahlem zu lange über das Privatleben einer Kollegin spricht, hört von ihr selbst zurück. Unser Team versteht das.' },
           ],
         },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'Charité Campus Benjamin Franklin (Steglitz) — 12 Minuten.',
-            'Helios-Klinikum Emil von Behring — 15 Minuten.',
-            'Schlosspark-Klinik — 20 Minuten.',
-          ],
-          trailingParagraphs: ['Etwa 25-30 Minuten von Moabit zu vielen Dahlem-Adressen.'],
-        },
       ],
       faq: [
         { question: 'Können Ihre Mitarbeitenden Englisch sprechen?', answer: 'Im Team gibt es mehrere Mitarbeitende mit verhandlungssicherem Englisch. Bei spezifischen Anforderungen klären wir das vor Vertragsbeginn.' },
@@ -633,15 +550,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Pflegeberatung mit Augenmaß', text: 'Familien wollen oft wissen, wie sie das Optimum aus dem Pflegegrad herausholen können, was Verhinderungspflege kann, wie die nächsten Jahre planbar gemacht werden können.' },
           ],
         },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'DRK Kliniken Berlin Westend — 10 Minuten.',
-            'Sankt Gertrauden (Wilmersdorf) — 8 Minuten.',
-            'Schlosspark-Klinik — 12 Minuten.',
-          ],
-          trailingParagraphs: ['Von Moabit nach Schmargendorf ca. 22-28 Minuten.'],
-        },
       ],
       faq: [
         { question: 'Können Sie auch nur für 3-4 Stunden am Nachmittag kommen?', answer: 'Ja — das ist sogar oft das gewünschte Modell hier. Eine Nachmittagsbegleitung von 14-18 Uhr für gemeinsamen Spaziergang, Kaffee und Gespräch ist typisch.' },
@@ -668,7 +576,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     hook: 'Villenkolonie am See.',
     hideInFooter: true,
     metaTitle: 'Pflegedienst Nikolassee — diskret in der Villenkolonie',
-    metaDescription: 'Privater Pflegedienst in Nikolassee: Pflege, Sitzwachen und 24h-Betreuung für die Villenkolonie am Schlachtensee und Nikolassee. Diskret und verlässlich.',
+    metaDescription: 'Privater Pflegedienst in Nikolassee: Pflege, 1:1-Betreuung und 24h-Betreuung für die Villenkolonie am Schlachtensee und Nikolassee. Diskret und verlässlich.',
     h1: 'Pflegedienst Nikolassee — am See, in der Villenkolonie',
     primaryKeyword: 'Pflegedienst Nikolassee',
     detail: {
@@ -693,15 +601,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Bindung an die Seenlage', text: 'Der tägliche Weg an den Schlachtensee oder Nikolassee gehört für viele zum Leben. Wir begleiten diese Spaziergänge, solange es geht — Bewegung an vertrauten Orten hält länger stabil als jedes Programm.' },
             { label: 'Diskretion in der Kolonie', text: 'In einer überschaubaren Villenkolonie kennt man einander. Unser Team tritt zurückhaltend auf, ohne Firmenwagen-Show, und respektiert, dass Nachbarschaft hier auch Öffentlichkeit bedeutet.' },
           ],
-        },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'Helios Klinikum Emil von Behring (Zehlendorf) — rund 4 km.',
-            'Krankenhaus Waldfriede — rund 3 km.',
-            'Immanuel Krankenhaus Wannsee — 3-4 km.',
-          ],
-          trailingParagraphs: ['Von unserem Sitz in Moabit sind es je nach Verkehr etwa 20-30 Minuten über AVUS und A115.'],
         },
       ],
       faq: [
@@ -729,7 +628,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     hook: 'Am Wasser, in Ruhe.',
     hideInFooter: true,
     metaTitle: 'Pflegedienst Wannsee — Pflege am Wasser, diskret',
-    metaDescription: 'Privater Pflegedienst in Wannsee: Pflege, Sitzwachen und 24h-Betreuung in den Villen- und Wasserlagen am Großen Wannsee. Verlässlich und diskret.',
+    metaDescription: 'Privater Pflegedienst in Wannsee: Pflege, 1:1-Betreuung und 24h-Betreuung in den Villen- und Wasserlagen am Großen Wannsee. Verlässlich und diskret.',
     h1: 'Pflegedienst Wannsee — am Wasser zu Hause bleiben',
     primaryKeyword: 'Pflegedienst Wannsee',
     detail: {
@@ -751,23 +650,13 @@ export const STANDORTE: readonly SeoStandort[] = [
           heading: 'Was Pflege in Wannsee ausmacht',
           stronglist: [
             { label: 'Abgeschiedene Lagen', text: 'Wassergrundstücke liegen oft am Ende langer Zufahrten, mancher Weg führt durch den Garten bis ans Ufer. Unser Team stellt sich auf diese Wege ein und bringt mit, was für den Tag gebraucht wird.' },
-            { label: 'Nähe zum eigenen Krankenhaus', text: 'Mit dem Immanuel Krankenhaus liegt ein Haus direkt im Ortsteil. Für Übergänge zwischen Klinik und Zuhause — etwa nach einer Reha oder OP — ist das ein echter Vorteil, den wir für die Betreuung nutzen.' },
             { label: '24-Stunden-Modelle', text: 'Wegen der Lage und des oft höheren Pflegebedarfs sind hier durchgehende Betreuungen häufiger als anderswo. Wir arbeiten mit festen, kleinen Teams, damit auch nachts jemand Vertrautes da ist.' },
           ],
         },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'Immanuel Krankenhaus Wannsee (Königstr. 63) — im Ortsteil.',
-            'Helios Klinikum Emil von Behring — rund 6 km.',
-            'Klinikum Ernst von Bergmann Potsdam — rund 8 km.',
-          ],
-          trailingParagraphs: ['Von Moabit nach Wannsee sind je nach Verkehr etwa 25-35 Minuten über A115 und AVUS zu rechnen.'],
-        },
       ],
       faq: [
+        { question: 'Wie schnell sind Sie in Wannsee vor Ort?', answer: 'Für einen ersten Einsatz brauchen wir in der Regel zwei bis drei Tage Vorlauf. In akuten Situationen versuchen wir es innerhalb von 24 Stunden — die Anfahrt planen wir vor, damit wir pünktlich da sind.' },
         { question: 'Unser Haus liegt direkt am Wasser mit langer Zufahrt — kommen Sie trotzdem?', answer: 'Ja. Wir betreuen regelmäßig Adressen in abgelegenen Wasserlagen. Wichtig ist nur, dass wir die Zufahrt und Parksituation vorab kennen, damit jeder Dienst reibungslos beginnt.' },
-        { question: 'Mein Mann kommt bald aus dem Immanuel Krankenhaus zurück. Können Sie die Versorgung übernehmen?', answer: 'Gerne. Weil das Immanuel im Ortsteil liegt, lässt sich der Übergang von der Klinik nach Hause gut abstimmen. Wir richten die häusliche Betreuung so ein, dass sie nahtlos an die Entlassung anschließt.' },
         { question: 'Lohnt sich der Weg aus Moabit für Sie überhaupt?', answer: 'Ja — wir betreuen Wannsee bewusst mit. Bei der Fahrzeit von 25-35 Minuten planen wir Dienste im Voraus und in sinnvollen Blöcken; kurze Stippvisiten von 20 Minuten sind hier weniger praktikabel als längere, verlässliche Einsätze.' },
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
@@ -791,7 +680,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     hook: 'Gartenstadt im Norden.',
     hideInFooter: true,
     metaTitle: 'Pflegedienst Frohnau — Gartenstadt im Berliner Norden',
-    metaDescription: 'Privater Pflegedienst in Frohnau: Pflege, Sitzwachen und 24h-Betreuung in der Gartenstadt im Norden Berlins. Verlässliche Versorgung, auch bei weiter Anfahrt.',
+    metaDescription: 'Privater Pflegedienst in Frohnau: Pflege, 1:1-Betreuung und 24h-Betreuung in der Gartenstadt im Norden Berlins. Verlässliche Versorgung, auch bei weiter Anfahrt.',
     h1: 'Pflegedienst Frohnau — in der Gartenstadt im Norden',
     primaryKeyword: 'Pflegedienst Frohnau',
     detail: {
@@ -816,13 +705,6 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Planbarkeit statt Spontaneinsatz', text: 'Wegen der nördlichen Randlage arbeiten wir mit festen Dienstplänen und kleinen Teams. Das gibt Ruhe im Ablauf und stellt sicher, dass immer jemand Vertrautes vor Ort ist.' },
             { label: 'Selbstbestimmtes Zuhause', text: 'Die Frohnauer Klient*innen sind meist eigenständige Menschen mit klaren Vorstellungen. Wir unterstützen, ohne zu bevormunden, und halten die gewohnten Abläufe so lange wie möglich aufrecht.' },
           ],
-        },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'Vivantes Humboldt-Klinikum (Am Nordgraben, Reinickendorf) — 5-6 km.',
-          ],
-          trailingParagraphs: ['Von Moabit nach Frohnau sind es je nach Verkehr etwa 25-35 Minuten über die A111. Frohnau liegt für uns am nördlichen Rand — für die längere Anfahrt kann je nach Umfang eine Anfahrtspauschale anfallen, die wir vorab transparent besprechen.'],
         },
       ],
       faq: [
@@ -849,7 +731,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     hook: 'Direkt an der Stadtgrenze.',
     hideInFooter: true,
     metaTitle: 'Pflegedienst Kleinmachnow — grenznah in Brandenburg',
-    metaDescription: 'Privater Pflegedienst in Kleinmachnow: Pflege, Sitzwachen und 24h-Betreuung in der Gemeinde direkt an der Berliner Grenze. Einsatz über die Stadtgrenze.',
+    metaDescription: 'Privater Pflegedienst in Kleinmachnow: Pflege, 1:1-Betreuung und 24h-Betreuung in der Gemeinde direkt an der Berliner Grenze. Einsatz über die Stadtgrenze.',
     h1: 'Pflegedienst Kleinmachnow — grenznah in Brandenburg',
     primaryKeyword: 'Pflegedienst Kleinmachnow',
     detail: {
@@ -875,19 +757,10 @@ export const STANDORTE: readonly SeoStandort[] = [
             { label: 'Klarheit bei den Wegen', text: 'Weil wir über die Stadtgrenze fahren, planen wir Dienste vorausschauend und in sinnvollen Blöcken. So bleibt die Betreuung verlässlich, ohne dass die Fahrzeit den Einsatz auffrisst.' },
           ],
         },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'Helios Klinikum Emil von Behring (Zehlendorf) — 5-6 km, nächstes großes Akuthaus.',
-            'Ev. Krankenhaus Ludwigsfelde-Teltow — 6-8 km.',
-            'Klinikum Ernst von Bergmann Potsdam — rund 12 km.',
-          ],
-          trailingParagraphs: ['Von Moabit nach Kleinmachnow sind es je nach Verkehr etwa 25-40 Minuten über die A115. Weil wir hier über die Berliner Stadtgrenze fahren, kann je nach Einsatzumfang eine Anfahrtspauschale anfallen — das klären wir vorab.'],
-        },
       ],
       faq: [
+        { question: 'Fahren Sie wirklich über die Stadtgrenze?', answer: 'Ja. Kleinmachnow gehört zu unserem festen Einsatzgebiet. Die Anfahrt kalkulieren wir vorher ein, damit die vereinbarte Zeit auch die Zeit ist, in der wir bei Ihnen sind.' },
         { question: 'Kleinmachnow liegt in Brandenburg — sind Sie überhaupt dort tätig?', answer: 'Ja. Wir fahren regelmäßig über die Stadtgrenze nach Kleinmachnow. Weil die Gemeinde direkt an Zehlendorf grenzt, ist sie von unseren Südwest-Gebieten aus gut erreichbar.' },
-        { question: 'Welches Krankenhaus ist im Ernstfall am nächsten?', answer: 'Für die Akutversorgung ist meist das Helios Klinikum Emil von Behring in Zehlendorf das nächste große Haus, nur 5-6 km entfernt. Für einzelne Fachrichtungen kommen auch Potsdam oder Ludwigsfelde-Teltow in Frage.' },
         { question: 'Kostet die Fahrt über die Landesgrenze extra?', answer: 'Je nach Umfang des Einsatzes kann eine Anfahrtspauschale anfallen. Wir besprechen das offen im Erstgespräch, bevor Sie sich entscheiden — ohne versteckte Posten.' },
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
@@ -910,7 +783,7 @@ export const STANDORTE: readonly SeoStandort[] = [
     hook: 'Landeshauptstadt an den Seen.',
     hideInFooter: true,
     metaTitle: 'Pflegedienst Potsdam — private Pflege in der Landeshauptstadt',
-    metaDescription: 'Privater Pflegedienst in Potsdam: Pflege, Sitzwachen und 24h-Betreuung in Babelsberg, Berliner Vorstadt und den Seenlagen. Diskret, auch bei weiter Anfahrt.',
+    metaDescription: 'Privater Pflegedienst in Potsdam: Pflege, 1:1-Betreuung und 24h-Betreuung in Babelsberg, Berliner Vorstadt und den Seenlagen. Diskret, auch bei weiter Anfahrt.',
     h1: 'Pflegedienst Potsdam — in der Landeshauptstadt an den Seen',
     primaryKeyword: 'Pflegedienst Potsdam',
     detail: {
@@ -932,24 +805,14 @@ export const STANDORTE: readonly SeoStandort[] = [
           heading: 'Was Pflege in Potsdam ausmacht',
           stronglist: [
             { label: 'Große, ruhige Anwesen', text: 'Die typische Adresse in Babelsberg oder der Berliner Vorstadt ist ein großzügiges Haus mit Garten, oft in Wasser- oder Parknähe. Wir stellen die Betreuung auf diese Wohnsituation ein, statt sie in ein Standard-Raster zu pressen.' },
-            { label: 'Eigene Klinik-Landschaft', text: 'Potsdam hat mit dem Klinikum Ernst von Bergmann ein großes Haus vor Ort. Für Übergänge zwischen Klinik und Zuhause — nach OP oder Reha — nutzen wir die kurzen Wege innerhalb der Stadt.' },
             { label: 'Planung statt Reaktion', text: 'Wegen der Entfernung aus Moabit arbeiten wir in Potsdam mit festen Dienstplänen und kleinen Teams. Das macht die Betreuung verlässlich und sorgt dafür, dass immer jemand Vertrautes vor Ort ist.' },
           ],
         },
-        {
-          heading: 'Krankenhäuser & Anfahrt',
-          list: [
-            'Klinikum Ernst von Bergmann (Charlottenstr. 72) — größtes Haus der Stadt, rund 1.100 Betten.',
-            'Oberlinklinik Babelsberg — Schwerpunkt Orthopädie.',
-            'St. Josefs-Krankenhaus Potsdam-Sanssouci.',
-          ],
-          trailingParagraphs: ['Von Moabit nach Potsdam sind je nach Verkehr etwa 35-50 Minuten über A115 und AVUS zu rechnen. Für diese längere Anfahrt kann je nach Einsatzumfang eine Anfahrtspauschale anfallen, die wir vorab offen mit Ihnen besprechen.'],
-        },
       ],
       faq: [
+        { question: 'Kommen Sie auch bis nach Potsdam?', answer: 'Ja, Potsdam gehört zu unserem Einsatzgebiet — Babelsberg, Berliner Vorstadt und die Seenlagen ebenso wie die Innenstadt. Die längere Anfahrt planen wir ein, sie geht nicht von Ihrer Betreuungszeit ab.' },
         { question: 'Potsdam ist von Berlin ein gutes Stück entfernt — betreuen Sie dort wirklich?', answer: 'Ja, aber ehrlich gesagt am Rand unseres Gebiets. Von Moabit sind es 35-50 Minuten. Deshalb planen wir Potsdam mit festen, längeren Diensten statt mit kurzen Visiten — so ist die Betreuung verlässlich und die Wegzeit sinnvoll eingesetzt.' },
         { question: 'Fällt für Potsdam eine Anfahrtspauschale an?', answer: 'Je nach Umfang des Einsatzes ja. Wir sagen Ihnen die Konditionen vollständig im Erstgespräch, bevor Sie sich festlegen. Versteckte Zusatzkosten gibt es bei uns nicht.' },
-        { question: 'Welches Krankenhaus ist bei uns vor Ort das wichtigste?', answer: 'Das Klinikum Ernst von Bergmann in der Charlottenstraße ist mit rund 1.100 Betten das größte Haus der Stadt. Für Orthopädie ist die Oberlinklinik in Babelsberg eine Adresse, dazu das St. Josefs-Krankenhaus in Sanssouci.' },
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [

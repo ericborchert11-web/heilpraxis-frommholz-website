@@ -24,7 +24,7 @@ export async function generateMetadata(
     description: s.metaDescription,
     ...pageMeta(`/standorte/${s.slug}`),
     robots: { index: true, follow: true },
-    keywords: [s.primaryKeyword, `Pflege ${s.name}`, `Sitzwache ${s.name}`],
+    keywords: [s.primaryKeyword, `Pflege ${s.name}`, `1:1-Betreuung ${s.name}`],
   };
 }
 

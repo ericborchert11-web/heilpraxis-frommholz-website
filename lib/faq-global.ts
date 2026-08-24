@@ -19,7 +19,7 @@ export const GLOBAL_FAQ: readonly FaqItem[] = [
   {
     question: 'Wie schnell können Sie starten?',
     answer:
-      'Bei akuten Anfragen (Sitzwachen, Nachtwachen) oft am gleichen Tag oder innerhalb von 24-48 Stunden. Bei längerfristigen Engagements (24-Stunden-Betreuung, Heimüberbrückung) brauchen wir typischerweise 5-10 Tage Vorlauf.',
+      'Bei akuten Anfragen (1:1-Betreuung, Nachtwachen) oft am gleichen Tag oder innerhalb von 24-48 Stunden. Bei längerfristigen Engagements (24-Stunden-Betreuung, Heimüberbrückung) brauchen wir typischerweise 5-10 Tage Vorlauf.',
   },
   {
     question: 'Welche Stadtteile betreuen Sie?',

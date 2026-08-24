@@ -53,7 +53,7 @@ export default function KarriereHubPage() {
           <li>Examinierte Pflegekräfte aus Kliniken, die nicht mehr im Schichtdienst arbeiten wollen.</li>
           <li>Pflegehilfskräfte mit Erfahrung, die ihre Arbeit so machen wollen, wie es eigentlich richtig ist.</li>
           <li>Sozialpädagog*innen mit Psychiatrie-Erfahrung.</li>
-          <li>Quereinsteiger*innen mit Lebenserfahrung (oft die besten Sitzwachen).</li>
+          <li>Quereinsteiger*innen mit Lebenserfahrung (oft die besten Betreuungskräfte).</li>
           <li>Studierende im pflege- oder sozialpädagogischen Bereich (auf Stundenbasis).</li>
           <li>Rentner*innen mit Pflegehintergrund, die noch sinnvoll tätig sein wollen.</li>
         </ul>

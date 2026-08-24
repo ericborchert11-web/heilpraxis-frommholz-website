@@ -26,14 +26,6 @@ export function SozialesEngagementPage({ lang }: { lang: Locale }) {
         <h2 className="font-serif text-2xl text-anthracite font-light">{p.vereinH2}</h2>
         <p className="mt-3">
           {p.vereinBefore}{' '}
-          <Link href={localizedHref('/leistungen/sitzwachen-berlin', lang)} className="underline hover:text-gold-deep">
-            {p.vereinLinkSitzwachen}
-          </Link>
-          {p.vereinBetween1}{' '}
-          <Link href={localizedHref('/leistungen/hospiz-sitzwachen', lang)} className="underline hover:text-gold-deep">
-            {p.vereinLinkHospiz}
-          </Link>{' '}
-          {p.vereinBetween2}{' '}
           <Link href={localizedHref('/leistungen/reisebegleitung-senioren', lang)} className="underline hover:text-gold-deep">
             {p.vereinLinkReise}
           </Link>{' '}

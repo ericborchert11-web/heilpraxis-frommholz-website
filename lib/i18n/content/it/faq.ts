@@ -23,7 +23,7 @@ export const GLOBAL_FAQ_IT: readonly FaqItem[] = [
   {
     question: 'Con quale rapidità potete iniziare?',
     answer:
-      'Per richieste urgenti (veglie al capezzale, veglie notturne) spesso il giorno stesso, oppure entro 24-48 ore. Per impegni di più lunga durata (assistenza continuativa, copertura in attesa di un posto in casa di cura) di norma abbiamo bisogno di un preavviso di 5-10 giorni.',
+      'Per richieste urgenti (assistenza individuale, assistenza notturna) spesso il giorno stesso, oppure entro 24-48 ore. Per impegni di più lunga durata (assistenza continuativa, copertura in attesa di un posto in casa di cura) di norma abbiamo bisogno di un preavviso di 5-10 giorni.',
   },
   {
     question: 'Quali quartieri della città coprite?',

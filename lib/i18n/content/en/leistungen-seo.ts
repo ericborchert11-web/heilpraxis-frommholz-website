@@ -9,154 +9,84 @@ import type { SeoLeistung } from '@/lib/leistungen-seo';
  * Das sind deutsche Referenzpfade, die `localizedHref` beim Rendern übersetzt.
  */
 export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
-  // === Money Page 1: Sitzwachen Berlin =========================================
-  'sitzwachen-berlin': {
-    slug: 'sitzwachen-berlin',
-    title: 'Bedside Companions Berlin',
-    short: 'One-to-one presence in hospital, hospice and at home.',
-    metaTitle: 'Bedside Companion Berlin – 1:1 Care in Hospital & Home',
+  // === Money Page 1: 1:1-Betreuung zu Hause ====================================
+  '1-zu-1-betreuung-berlin': {
+    slug: '1-zu-1-betreuung-berlin',
+    title: 'One-to-One Care at Home',
+    short: 'One carer, one person, undivided attention — by the hour or around the clock, in your own home.',
+    metaTitle: 'One-to-One Care Berlin – Private Support at Home',
     metaDescription:
-      'Professional bedside companions in Berlin: hospital, psychiatric wards, hospice, at home. Experienced team, available at short notice. First talk free.',
-    h1: 'Bedside companions in Berlin — when no one should be alone',
-    primaryKeyword: 'private patient sitter Berlin',
+      'Privately funded one-to-one care in Berlin: a constant companion at home, by the hour or around the clock. For dementia, fall risk, the final phase of life. First conversation free.',
+    h1: 'One-to-one care at home — undivided attention for one person',
+    primaryKeyword: 'one-to-one care Berlin',
     secondaryKeywords: [
-      'hospital sitter Berlin',
-      'psychiatric one-to-one care Berlin',
-      'overnight care Berlin',
+      'private carer at home Berlin',
+      'dementia one-to-one care Berlin',
+      'private pay carer Berlin',
     ],
     detail: {
       intro: [
-        'A bedside companion (Sitzwache) means this: someone is there. Not for medical treatment — doctors and nurses do that. But for the presence itself. For the sense that someone stays when the night grows long, when the operation is coming, when the confusion arrives and passes and arrives again.',
-        'Heilpraxis Frommholz arranges bedside companions across Berlin — in hospital, on psychiatric wards, in hospices and at home. We have specialised in one-to-one care for over 15 years. People who need a bedside companion have usually been through a great deal already. We understand that in these moments it is less about expertise than about humanity — and our staff bring both.',
-        'Part of our bedside companion work we carry together with our non-profit partner association Leben Pflegen Reisen e.V. — above all where nursing competence needs to be joined by voluntary commitment and longer stretches of presence.',
+        'In ordinary home nursing the clock is always in the room. Fifteen minutes for the bathroom, twelve for breakfast, then the next household. What goes first is the thing that matters: time in which nobody has to move on.',
+        'One-to-one care means this: one member of staff is there for one person. No round, no parallel patients, no handover in the middle of a conversation. In your own flat, in familiar surroundings, with your own habits. By the hour, for single nights, for a difficult phase, or permanently.',
+        'We work exclusively as a private-pay nursing service (*Selbstzahler-Pflegedienst*) with a small, settled team. That is a deliberate choice: it has a price, but it creates the conditions in which this kind of time is possible at all.',
       ],
       sections: [
         {
-          heading: 'When a bedside companion makes sense',
+          heading: 'When one-to-one care is the right answer',
           paragraphs: [
-            'A bedside companion is more than a chair beside the bed. It protects, it calms, it prevents worse. Typical situations in which our clients call us:',
+            'Not every situation needs constant company. These usually do:',
           ],
           stronglist: [
-            {
-              label: 'After operations',
-              text: 'Postoperative confusion (delirium) is one of the most common complications in older patients. A familiar presence can lower the risk of delirium and support the course of recovery.',
-            },
-            {
-              label: 'Where there is a risk of falling',
-              text: 'Someone who becomes restless at night, wants to get up, no longer knows where they are, is at risk of falling. A bedside companion watches, reassures, helps with getting up — and can prevent falls and the injuries that come with them, which can otherwise shape an entire phase of life.',
-            },
-            {
-              label: 'In the dying phase',
-              text: 'When it is clear that the end is near, many families do not want their loved one to go alone. But not everyone can be at the bedside without a break. We take the night hours, the weekends, the stretches when you need a rest yourself.',
-            },
-            {
-              label: 'In psychiatric crises',
-              text: 'Acute risk of harm to self or others, suicidal phases, severe depressive episodes. One-to-one care protects — and can in some cases help to avoid an involuntary admission.',
-            },
-            {
-              label: 'With dementia',
-              text: 'Waking phases at night, the risk of wandering off, disorientation — a bedside companion brings calm to a situation that otherwise wears families down.',
-            },
+            { label: 'Dementia with night-time restlessness', text: 'Getting up, wandering, confusion between day and night. Relatives manage a few weeks of this, then they are finished themselves. A constant companion brings structure back — and sleep for the family.' },
+            { label: 'Risk of falling', text: 'Someone who gets up at night and is no longer steady should not be alone in the flat. We are there when they get up, we help in time, and we prevent falls that would otherwise shape a whole phase of life.' },
+            { label: 'The final phase of life at home', text: 'Many people would like to die at home. For that to work, the family needs someone who carries the long hours with them — awake, calm, experienced, unhurried.' },
+            { label: 'After an operation', text: 'The first nights of recovery are the most critical: confusion, unsteadiness, pain. Company bridges the gap until things are stable again.' },
+            { label: 'When relatives reach their limit', text: 'Family carers need nights when they sleep through and days when they do not have to be reachable. We take those hours on, reliably.' },
           ],
         },
         {
-          heading: 'Where we provide bedside companions',
-          paragraphs: [
-            'We work across the whole of Berlin. Our base in Moabit (Stephanstraße 46) sits conveniently in the middle of the city — from here we reach Charlottenburg in ten minutes, Wilmersdorf in twelve, Zehlendorf in twenty-five.',
-            'We arrange bedside companions in:',
-          ],
+          heading: 'What a carer does with us',
           stronglist: [
-            {
-              label: 'Hospitals',
-              text: 'Charité (all sites), Vivantes hospitals, Schlosspark-Klinik, Sankt Gertrauden, DRK Kliniken, Lazarus, Helios and every other Berlin hospital.',
-            },
-            {
-              label: 'Psychiatric clinics',
-              text: 'Vivantes Wenckebach, St. Hedwig, Schlosspark-Klinik and all acute and day clinics within the city.',
-            },
-            {
-              label: 'Hospices and palliative care wards',
-              text: 'in close coordination with the team on site.',
-            },
-            {
-              label: 'Care homes',
-              text: 'when families need relief, or when a particular situation calls for one-to-one care.',
-            },
-            {
-              label: 'At home',
-              text: 'in familiar surroundings, with everything that makes a home your own.',
-            },
+            { label: 'Be there', text: 'Present, attentive, approachable. Talking when someone wants to talk. Silent when someone wants silence.' },
+            { label: 'Observe and make sense of it', text: 'Noticing changes and passing them on plainly — to the family, to the GP, to the nursing service. With more than fifteen years of experience, our staff know what matters and what can wait.' },
+            { label: 'Hold the day together', text: 'Helping with food and drink, accompanying trips to the bathroom, helping with repositioning, giving medication as prescribed, keeping things calm and in order.' },
+            { label: 'Come along where needed', text: 'To the GP, to a specialist, on a walk, to a family occasion. Nobody waits alone in a corridor.' },
+            { label: 'Take the weight off the family', text: 'You do not have to rush over every evening. You know someone is there — and you hear how it went.' },
           ],
         },
         {
-          heading: 'What a bedside companion costs with us',
-          paragraphs: [
-            'Bedside companions are as a rule a private-pay service. Statutory long-term care insurance (Pflegekasse) does not cover them directly — in some cases respite care (Verhinderungspflege, § 39 SGB XI) or the relief allowance (Entlastungsbetrag, § 45b SGB XI) can be used, and we are glad to advise you on that.',
-            'We do not quote flat rates, because the situations differ too much. A night in hospital is calculated differently from a twelve-hour accompaniment at home. In the free first talk we establish what you need and what it will cost. Transparent supplements under § 3b EStG (25 % at night, 50 % on Sundays and public holidays) apply to every assignment.',
+          heading: 'Awake company or on-call?',
+          paragraphs: ['For the night hours we distinguish two models — the difference shows clearly in the price:'],
+          stronglist: [
+            { label: 'Active (awake) company', text: 'The carer stays awake throughout, observes actively, documents regularly. Right for acute situations — the dying phase, severe confusion, high risk of falling.' },
+            { label: 'On-call', text: 'The carer sleeps in an adjoining room, or in a reclining chair in the same room, and wakes at every sound. Right when the nights are usually quiet but nobody should be left alone.' },
           ],
+          trailingParagraphs: ['Which model fits, we settle in the first conversation. Switching is possible at any time if the situation changes.'],
         },
         {
-          heading: 'What our bedside companions can do',
+          heading: 'What one-to-one care costs',
           paragraphs: [
-            'Our team is mixed: registered nurses, nursing assistants, social workers, care staff with many years of psychiatric experience. Depending on the situation we deploy the appropriate qualification. What they all have in common:',
-          ],
-          list: [
-            'Calm in demanding situations',
-            'The ability to observe and to document matter-of-factly',
-            'Experience with confusion, aggression and fear',
-            'Discretion — what is seen and heard in the home stays there',
+            'One-to-one care is a private-pay service. Statutory long-term care insurance does not cover it directly. Where a care level (*Pflegegrad*) is in place, respite care (*Verhinderungspflege*, § 39 SGB XI) or the relief amount (*Entlastungsbetrag*, § 45b SGB XI) can often be used — you submit our invoice yourself. We will advise you on what applies in your case.',
+            'We do not quote flat rates, because situations differ too much: the hourly rate depends on the qualification required, on the extent, and on whether it is awake company or on-call. In the free first conversation we listen first, and then make a concrete, transparent proposal with an hourly rate and the likely total.',
+            'Supplements under § 3b EStG are stated openly: 25 % at night, 50 % on Sundays and public holidays.',
           ],
         },
       ],
       faq: [
-        {
-          question: 'What is the difference between a bedside companion and a nurse?',
-          answer:
-            'A bedside companion is present, observes, protects and reassures — but does not carry out nursing tasks such as repositioning, wound care or giving medication. Nurses do both; a bedside companion specialises in being there.',
-        },
-        {
-          question: 'Can bedside companions come at night?',
-          answer:
-            'Yes. Overnight care is one of our most frequent requests. We arrive at the agreed time and stay until morning — if needed for several nights in succession, on a rota within a settled team.',
-        },
-        {
-          question: 'How quickly is a bedside companion available?',
-          answer:
-            'In emergencies often within 24 hours, sometimes the same day. For assignments that can be planned further ahead (after an operation, for instance) we need only two to three days of notice.',
-        },
-        {
-          question: 'Are the bedside companions professionally qualified?',
-          answer:
-            'We deploy different qualifications depending on the situation. In medically delicate situations a registered nurse comes. Where presence alone is required, an experienced care worker is often enough. We clarify this in the first talk.',
-        },
-        {
-          question: 'Can we claim the bedside companion through the long-term care insurer?',
-          answer:
-            'Not directly — we invoice exclusively as a private-pay service. Where a care level (Pflegegrad) has been awarded you can, however, use the relief allowance (125 € per month) or respite care and submit our invoice yourself. We will advise you on what is possible.',
-        },
-        {
-          question: 'Who is liable if something happens?',
-          answer:
-            'We carry professional indemnity insurance. Damage caused by our staff is settled through that policy.',
-        },
+        { question: 'How quickly can you start?', answer: 'For situations that can be planned, two or three days is enough. In acute cases we try to provide a first carer within 24 hours — depending on the day and time, sometimes sooner. Call us and we will tell you honestly what is possible.' },
+        { question: 'Can we book single nights only?', answer: 'Yes. Many of our assignments are exactly that: one, two or three nights during a critical phase. Single weekend nights or one fixed night a week work just as well as continuous company over months.' },
+        { question: 'Is it always the same person?', answer: 'As far as possible, yes. We work with a small settled team and use two or three carers in rotation for longer assignments, so that a familiar face still comes when someone is ill or on holiday. Constantly changing staff would be the opposite of what one-to-one care is for.' },
+        { question: 'What if my mother does not like the person?', answer: 'Then we replace them. Usually the strangeness is gone after the first hour, but personal chemistry is not a side issue in this work. Tell us and we will arrange it without debate.' },
+        { question: 'What qualifications do your staff have?', answer: 'It depends on the situation. Where the nursing demands are high, a registered nurse comes. Where it is about presence, attention and daily life, an experienced carer is often the better choice. What your case needs, we settle beforehand — not afterwards.' },
+        { question: 'Does health insurance cover this?', answer: 'No. Statutory health insurance pays for medical treatment, not for the continuous presence of a carer. Some private supplementary policies reimburse part of it — worth checking in advance.' },
+        { question: 'Do we need a separate room for the carer?', answer: 'For on-call care a sofa, an armchair or a reclining chair is enough — a bed is not necessary. For awake company a chair and a reading light will do. We fit ourselves around your home, not the other way round.' },
+        { question: 'What happens in an emergency?', answer: 'The carer calls the emergency doctor (112), informs the relatives and stays with the person until help arrives. What is to be done is agreed in writing with you at the start of the assignment — and, if you wish, with the GP.' },
       ],
-      cta: { text: 'Request a first talk', href: '/#kontakt' },
+      cta: { text: 'Request a first conversation', href: '/#kontakt' },
       relatedLinks: [
-        {
-          label: 'Hospital Companions Berlin',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'bedside companions specifically in hospital',
-        },
-        {
-          label: 'Private-Pay Care Service',
-          href: '/leistungen/pflegedienst-selbstzahler',
-          note: 'our basic approach',
-        },
-        {
-          label: 'Complex Needs One-to-One Care',
-          href: '/leistungen/systemsprenger-betreuung',
-          note: 'in complex psychiatric situations',
-        },
+        { label: 'Night care Berlin', href: '/leistungen/nachtwachen-berlin', note: 'when only the nights need covering' },
+        { label: '24-hour care', href: '/leistungen/24-stunden-betreuung', note: 'continuous cover in rotating shifts' },
+        { label: 'Dementia support', href: '/themen/demenz-begleitung', note: 'background on supporting people with dementia' },
       ],
     },
   },
@@ -190,11 +120,11 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Co-occurring psychiatric illness and addiction',
-              text: 'A young adult with severe psychotic episodes alongside cannabis and alcohol misuse. Inpatient addiction treatment founders on the psychiatric illness, psychiatric admissions founder on the substance use. We provide support at home — with a clear framework, regular contact and a settled key worker.',
+              text: 'A young adult with severe psychotic episodes alongside cannabis and alcohol misuse. Addiction treatment founders on the psychiatric illness, psychiatric treatment founders on the substance use. We provide support at home — with a clear framework, regular contact and a settled key worker.',
             },
             {
               label: 'Acute risk of self-harm at home',
-              text: 'A woman in her mid-50s with severe depression, discharged from hospital after several suicide attempts. Her family cannot be there around the clock, and she does not want another admission. We provide 24-hour care on a rotating shift model — until outpatient therapy takes hold.',
+              text: 'A woman in her mid-50s with severe depression, back at home after several suicide attempts. Her family cannot be there around the clock, and she does not want to be treated away from home again. We provide 24-hour care on a rotating shift model — until outpatient therapy takes hold.',
             },
             {
               label: 'Supported shared housing breaks down',
@@ -223,7 +153,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
             },
             {
               label: 'Connected to the wider support system',
-              text: 'We work closely with hospitals, community psychiatrists, court-appointed guardians and social psychiatric services. We are not a substitute for a professional treatment team — we are its extended arm in everyday life at home.',
+              text: 'We work closely with the treating doctors, community psychiatrists, court-appointed guardians and social psychiatric services. We are not a substitute for a professional treatment team — we are its extended arm in everyday life at home.',
             },
           ],
         },
@@ -245,11 +175,11 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
           stronglist: [
             {
               label: 'Compulsory measures',
-              text: 'are not our remit — where someone poses an acute danger to others and will not accept care voluntarily, that belongs in a hospital with a secure ward.',
+              text: 'are not our remit — where someone poses an acute danger to others and will not accept care voluntarily, that belongs in a facility with a secure unit.',
             },
             {
               label: 'Detoxification',
-              text: 'is not something we do — that belongs in a qualified addiction clinic.',
+              text: 'is not something we do — that belongs in qualified withdrawal treatment.',
             },
             {
               label: 'Extended acute psychotherapy',
@@ -272,7 +202,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
         {
           question: 'How quickly can you take over?',
           answer:
-            'For acute handovers from hospital, usually within three to seven days, depending on the complexity of the setting. Faster handover is possible in emergencies.',
+            'For acute handovers, usually within three to seven days, depending on the complexity of the setting. Faster handover is possible in emergencies.',
         },
         {
           question: 'Roughly what does 24-hour one-to-one care of this kind cost per month?',
@@ -296,11 +226,6 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
           label: 'Private-Pay Care Service',
           href: '/leistungen/pflegedienst-selbstzahler',
           note: 'our basic approach',
-        },
-        {
-          label: 'Bedside Companions Berlin',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'one-to-one company for shorter periods',
         },
       ],
     },
@@ -413,11 +338,6 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
       ],
       cta: { text: 'Request a first talk', href: '/#kontakt' },
       relatedLinks: [
-        {
-          label: 'Bedside Companions Berlin',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'one-to-one company for shorter periods',
-        },
         {
           label: 'Complex Needs One-to-One Care',
           href: '/leistungen/systemsprenger-betreuung',
@@ -535,7 +455,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
         {
           question: 'Can we start at short notice?',
           answer:
-            'For acute handovers (discharge from hospital, for example) we need five to ten days. With a longer planning horizon we can be more individual in our approach.',
+            'Where care at home has to start at short notice, we need five to ten days. With a longer planning horizon we can be more individual in our approach.',
         },
         {
           question: 'What happens if our family member dies?',
@@ -554,11 +474,6 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
           label: 'Private-Pay Care Service',
           href: '/leistungen/pflegedienst-selbstzahler',
           note: 'our basic approach',
-        },
-        {
-          label: 'Hospital Companions Berlin',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'when continuous company is needed in hospital',
         },
         {
           label: 'Overnight Care Berlin',
@@ -608,7 +523,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
             },
             {
               label: 'Managing transitions',
-              text: 'When discharge from hospital draws closer, when day care or a home care service is being changed, when a care home place has to be found — we help you take the right steps in the right order.',
+              text: 'When care at home is starting afresh, when day care or a home care service is being changed, when a care home place has to be found — we help you take the right steps in the right order.',
             },
             {
               label: 'Powers of attorney and advance planning',
@@ -646,7 +561,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
           list: [
             'Before the first assessment appointment — the preparation often decides a difference of one or two care levels.',
             'When a care level has been refused or set too low — the deadline for an objection has to be met (four weeks).',
-            'On discharge from hospital — the first weeks decide how stable the arrangements will be.',
+            'When care at home is starting afresh — the first weeks decide how stable the arrangements will be.',
             'When care is suddenly needed (a stroke, a fall) — applying quickly secures benefits backdated to the date of application.',
             'When there is family conflict over the care of a parent.',
           ],
@@ -717,7 +632,7 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
     short: 'A waking presence when the night grows long.',
     metaTitle: 'Overnight Care Berlin – Safe Company Through the Night',
     metaDescription:
-      'Overnight care in Berlin for hospital, hospice and at home. Experienced team, available at once. Also for dementia, falls risk and the dying phase.',
+      'Overnight care in Berlin, in your own home. Experienced team, available at short notice. For dementia, falls risk and the final phase of life.',
     h1: 'Overnight care in Berlin — safe company through the night',
     primaryKeyword: 'overnight care Berlin',
     secondaryKeywords: [
@@ -747,8 +662,8 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
               text: 'Some people die on a particular night. No one can predict it, but everyone can prepare to be there. Overnight care takes over when the family has to sleep in between.',
             },
             {
-              label: 'After discharge from hospital',
-              text: 'The first nights at home after a hospital stay are often the most critical. Overnight care bridges the gap until stability returns.',
+              label: 'While recovering from an operation',
+              text: 'The first nights after a procedure are often the most critical — unsteadiness on getting up, confusion, pain. Overnight care bridges the gap until stability returns.',
             },
             {
               label: 'In acute psychological distress',
@@ -812,16 +727,6 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
       cta: { text: 'Request a first talk', href: '/#kontakt' },
       relatedLinks: [
         {
-          label: 'Bedside Companions Berlin',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'one-to-one company by day and by night',
-        },
-        {
-          label: 'Hospice Bedside Companions',
-          href: '/leistungen/hospiz-sitzwachen',
-          note: 'in the dying phase',
-        },
-        {
           label: '24-Hour Care',
           href: '/leistungen/24-stunden-betreuung',
           note: 'when more than the night has to be covered',
@@ -830,133 +735,6 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
     },
   },
 
-  // === Money Page 7: Hospiz-Sitzwachen ========================================
-  'hospiz-sitzwachen': {
-    slug: 'hospiz-sitzwachen',
-    title: 'Hospice Bedside Companions',
-    short: 'Presence in the last hours — for the dying person and for the family.',
-    metaTitle: 'Hospice Companion Berlin – Company in the Last Days',
-    metaDescription:
-      'Bedside companions in the hospice, on the palliative ward or at home. Discreet, experienced, dignified. Relief for families in the last hours.',
-    h1: 'Hospice bedside companions — someone stays',
-    primaryKeyword: 'end of life care companion Berlin',
-    secondaryKeywords: [
-      'hospice sitter Berlin',
-      'palliative care companion Berlin',
-      'vigil care Berlin',
-    ],
-    detail: {
-      intro: [
-        'There is a particular task within our work: being there when someone is leaving. Not as a clinician — palliative teams do that. But as a waking, quiet presence that asks nothing more than to listen, to hold, to wait.',
-        'Hospice bedside companions (Sitzwachen) differ from other bedside companions in one decisive respect: they no longer have a medical aim. It is not about anything getting better. It is about the person not being alone — and about the family not breaking under it.',
-        'In this work we cooperate closely with our partner association Leben Pflegen Reisen e.V., whose network of volunteers complements the hours we provide, particularly in the dying phase — so that the family is not left alone when our paid shifts come to an end.',
-      ],
-      sections: [
-        {
-          heading: 'Where we provide hospice bedside companions',
-          stronglist: [
-            {
-              label: 'In the hospice',
-              text: 'Most hospices in Berlin (Ricam Hospiz, Hospiz Schöneberg-Steglitz, Hospiz Wilmersdorf, Christophorus Hospiz, Lazarus Hospiz and others) have their own structures of volunteer companions. We come in addition — often for clients who wish for continuous company, which goes beyond what the volunteer service can offer.',
-            },
-            {
-              label: 'On the palliative ward',
-              text: 'We come into the hospital, in coordination with the nursing team. We are not a competing service — we relieve the nurses by providing the one-to-one presence that is seldom possible in the routine of a ward.',
-            },
-            {
-              label: 'At home',
-              text: 'Many people want to die at home — and can, if the family manages to organise it. We often come for the night hours, for the weekends, for the stretches when the family itself feels the exhaustion.',
-            },
-          ],
-        },
-        {
-          heading: 'What hospice bedside companions do (and do not do)',
-          stronglist: [
-            {
-              label: 'They do',
-              text: 'stay awake, observe, speak quietly, read aloud, keep silent, hold a hand, moisten lips, be still. They call the family when it is time. They call the palliative team when the symptoms change.',
-            },
-            {
-              label: 'They do not',
-              text: 'adjust pain relief (the doctor does that), carry out nursing in the narrower sense (the care service does that), or offer comfort that rings false. They do not talk about religion unless the dying person begins it. They do not weep aloud when what is called for is holding steady.',
-            },
-          ],
-        },
-        {
-          heading: 'What sets our staff apart in this work',
-          paragraphs: [
-            'Hospice bedside companionship is a particular task. We deploy colleagues who:',
-          ],
-          list: [
-            'have experience of the dying phase (a hospice placement, nursing experience, training in bereavement support).',
-            'are calm, genuinely calm — not silent out of uncertainty, but quiet by disposition.',
-            'have worked through losses of their own, so that it is not their grief filling the room.',
-            'do not become agitated by the bodily changes of the dying phase.',
-          ],
-          trailingParagraphs: [
-            'Accompanying someone as they die is not work for beginners. We assign it only to experienced staff.',
-          ],
-        },
-        {
-          heading: 'What hospice bedside companions cost',
-          paragraphs: [
-            'Bedside companions at the end of life often fall within days that are already expensive, in a phase that is already expensive. We charge a reduced end-of-life rate, below our standard — we give you the exact sum for a night shift or for company over several days in the first talk.',
-            'Night supplements (25 %) and Sunday and public holiday supplements (50 %) under § 3b EStG are shown transparently.',
-          ],
-        },
-      ],
-      faq: [
-        {
-          question: 'Can you come into the hospice even though there are companions there already?',
-          answer:
-            'Yes — in agreement with the hospice team. We see ourselves as an addition, not a replacement. Often we bring additional presence in the last 24 hours in particular, because volunteer companions are not available continuously.',
-        },
-        {
-          question: 'How quickly can you come once it becomes clear that the end is near?',
-          answer:
-            'With 24 hours of notice, yes. In genuinely acute situations (a matter of hours) we try, but we cannot always guarantee it.',
-        },
-        {
-          question: 'Do your staff talk with the dying person about death?',
-          answer:
-            'Only if the person raises it themselves. We listen. We do not initiate subjects we cannot judge.',
-        },
-        {
-          question: 'Can you also help after the death?',
-          answer:
-            'If it is wanted, we stay for the first hours after the death. We help to call the doctor to certify the death, we are there for the family, and we hand over to the funeral director. For bereavement support in the weeks that follow we refer you to specialist services.',
-        },
-        {
-          question: 'Are you familiar with different religious traditions?',
-          answer:
-            'We respect every tradition. Where there are specific rites (the Muslim practice of washing by family members, Orthodox liturgies, the Jewish customs of shiva) we ask the family for clear guidance. We learn quickly, but we assume nothing.',
-        },
-        {
-          question: 'Can you also be there where dying has no religious dimension?',
-          answer:
-            'Of course. Most of the deaths we attend are secular. We impose nothing religious on anyone who does not want it.',
-        },
-      ],
-      cta: { text: 'Request a first talk', href: '/#kontakt' },
-      relatedLinks: [
-        {
-          label: 'Bedside Companions Berlin',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'the general service',
-        },
-        {
-          label: 'Palliative care at home',
-          href: '/themen/palliativ-zuhause',
-          note: 'background reading',
-        },
-        {
-          label: 'Overnight Care Berlin',
-          href: '/leistungen/nachtwachen-berlin',
-          note: 'when only the night hours are needed',
-        },
-      ],
-    },
-  },
 
   // === Money Page 8: Reisebegleitung für Senioren =============================
   'reisebegleitung-senioren': {
@@ -1078,195 +856,8 @@ export const LEISTUNGEN_SEO_EN: Overlay<SeoLeistung> = {
           href: '/leistungen/pflegedienst-selbstzahler',
           note: 'our basic approach',
         },
-        {
-          label: 'Company in hospital',
-          href: '/themen/krankenhaus-begleitung',
-          note: 'during hospital stays',
-        },
-        {
-          label: 'Bedside Companions Berlin',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'for one-to-one company on the ward',
-        },
       ],
     },
   },
 
-  // === Money Page 9: Klinik-Begleitung Berlin ==================================
-  'klinik-begleitung-berlin': {
-    slug: 'klinik-begleitung-berlin',
-    title: 'Hospital Companions Berlin',
-    short: 'One-to-one company in hospital — when family cannot be there every moment.',
-    metaTitle: 'Hospital Companion Berlin — 1:1 Care on the Ward',
-    metaDescription:
-      'Private hospital companions in Berlin: one-to-one for your relative where nurses look after 18 patients at once. Dementia, falls risk, after operations.',
-    h1: 'Hospital companions in Berlin — when family cannot be there every moment',
-    primaryKeyword: 'hospital companion Berlin',
-    secondaryKeywords: [
-      'private hospital sitter Berlin',
-      'dementia support in hospital Berlin',
-      'post-operative night sitter Berlin',
-      'falls prevention after surgery',
-    ],
-    detail: {
-      intro: [
-        'A stay in hospital is often an extreme situation for older people — unfamiliar surroundings, changing staff, long waits after pressing the call button. In ward routine, nurses often look after 18 or more patients at the same time; one-to-one presence is seldom possible.',
-        'We accompany your relative privately in hospital: in preparation for rehabilitation, on the night after an operation, where there is dementia or a risk of falling, during longer stays. By the hour or around the clock — as an addition to the hospital staff, not as a replacement for them.',
-      ],
-      sections: [
-        {
-          heading: 'What we actually do',
-          stronglist: [
-            {
-              label: 'Being there when the staff cannot be',
-              text: 'Nurses often care for 18 or more patients at once across a shift. We are there one-to-one — continuously, awake, observing.',
-            },
-            {
-              label: 'Preventing falls after an operation',
-              text: 'Especially at night after an anaesthetic, in confusion, in unfamiliar surroundings. We stay by the bed and help with getting up, before anything happens.',
-            },
-            {
-              label: 'Dementia support in hospital',
-              text: 'We know how to handle attempts to leave the bed, loss of orientation, post-operative delirium. A calm presence markedly reduces stress and the need for restraint or sedation.',
-            },
-            {
-              label: 'Helping with food, offering drinks',
-              text: 'What hospital staff often cannot do unhurried for lack of time — particularly with people with dementia, who simply “forget” to eat.',
-            },
-            {
-              label: 'An eye on the call button, a point of contact for nurses and doctors',
-              text: 'Passing on observations, mediating on the ward round, remembering the questions that are so easily lost in hospital routine.',
-            },
-            {
-              label: 'Company to examinations and transfers',
-              text: 'The patient is not left alone in the corridor or while waiting — we stay with them.',
-            },
-            {
-              label: 'Relief for the family',
-              text: 'You do not have to rush over every evening after work. You know that someone is there.',
-            },
-          ],
-        },
-        {
-          heading: 'When does this make sense?',
-          paragraphs: ['Four typical situations in which families call us:'],
-          stronglist: [
-            {
-              label: 'After a planned operation',
-              text: 'The first two to five nights for safety — the phase with the highest risk of delirium and of falls.',
-            },
-            {
-              label: 'With dementia or confusion',
-              text: 'Continuous company for the whole stay, because the hospital environment often makes dementia markedly worse.',
-            },
-            {
-              label: 'During longer stays (more than a week)',
-              text: 'By the day or by the hour, where family cannot be there continuously themselves.',
-            },
-            {
-              label: 'In the emergency department',
-              text: 'Support at short notice, when no one in the family can get there quickly enough.',
-            },
-          ],
-        },
-        {
-          heading: 'What sets us apart',
-          stronglist: [
-            {
-              label: 'Experienced nurses, not auxiliary staff',
-              text: 'Company in hospital is demanding. These assignments are taken on here only by staff with the relevant professional experience — powers of observation, a calm manner, the ability to deal with confusion and with relatives, and the professional judgement to pass observations on to hospital staff.',
-            },
-            {
-              label: 'A working relationship with nurses and doctors',
-              text: 'We know how to move within hospital routine without getting in the way. We report to admissions and to the nurse in charge, agree our hours of presence, and fit into the routine of the ward.',
-            },
-            {
-              label: 'Discreet and dignified',
-              text: 'We do not talk about other patients, we complement the ward team respectfully, and we step back when the family is there.',
-            },
-          ],
-        },
-      ],
-      faq: [
-        {
-          question: 'What does a private hospital companion cost in Berlin?',
-          answer:
-            'The cost depends on the number of hours, the proportion of day and night, and the qualification required. We do not quote flat rates, because the situations differ so much. In the free first talk we listen first — then we make a specific, transparent proposal.',
-        },
-        {
-          question: 'Will health insurance cover a hospital companion from a care service?',
-          answer:
-            'In most cases, no. Statutory health insurance pays for medical treatment in hospital, but not for additional one-to-one care by an external care service. There are exceptions for parents rooming in with children, and in rare special cases. For adults with dementia, a risk of falling or particular care needs, private company in hospital is as a rule a private-pay service. Some private supplementary policies reimburse part of the cost — please clarify this in advance.',
-        },
-        {
-          question: 'What can a private companion in hospital actually do?',
-          answer:
-            'Be present, keep an eye on the call button and on the patient, help with food and drink, assist with changes of position, provide reassurance in confusion, inform nurses and doctors of observations, accompany the patient to examinations. We do not replace the hospital staff — we add a constantly present, familiar person. Medical tasks (medication, wound care, changing dressings) remain with the hospital staff.',
-        },
-        {
-          question: 'My father is confused after his operation (delirium) — what can we do?',
-          answer:
-            'Post-operative delirium affects older people above all and often appears in the first nights after an operation. The most effective measure is a calm, familiar presence — studies show that bedside companions can markedly reduce the need for restraint and sedation. If you cannot be there continuously yourself, we take that on. Particularly during the night hours, when confusion often becomes more pronounced.',
-        },
-        {
-          question: 'My mother has dementia and has to go into hospital — how can we help?',
-          answer:
-            'Hospital stays are especially difficult for people with dementia: unfamiliar surroundings, missing routines, many unknown faces. A constant companion markedly reduces anxiety, attempts to leave the bed and the risk of falling. If the family cannot be there continuously, we take that on — we know how to work with dementia and coordinate closely with the hospital staff. That includes helping with food, which with dementia is so often “forgotten”.',
-        },
-        {
-          question: 'How quickly can you come?',
-          answer:
-            'For planned stays (an operation, rehabilitation) a few days of notice is best. In acute situations (the emergency department, a sudden need) we try to arrange a first period of company within 24 hours — depending on the day and the time, sometimes sooner. Call us and we will discuss what is possible.',
-        },
-        {
-          question: 'Is a hospital allowed to admit a private companion at all?',
-          answer:
-            'Yes. Relatives, and companions engaged by relatives, have access to the patient as a matter of course. We of course report to admissions and to the nursing staff and agree our hours of presence. Most Berlin hospitals know the arrangement and cooperate well. In shared rooms we discuss consideration for the other patients.',
-        },
-        {
-          question: 'Can you take on just a single night?',
-          answer:
-            'Yes. Many of our assignments are exactly that: one, two or three nights straight after an operation, when the risk of a fall or of confusion is highest. We provide longer company over several weeks just as readily.',
-        },
-        {
-          question: 'Which hospitals do you work in?',
-          answer:
-            'We accompany patients in every Berlin hospital — Charité, Helios, Vivantes, DRK, Park-Klinik Weissensee, St. Joseph, Schlosspark-Klinik, St. Gertrauden and all the others. The focus of our area is the west of Berlin (Zehlendorf, Grunewald, Charlottenburg, Wilmersdorf, Dahlem, Schmargendorf, Westend), but we also work in Mitte, Moabit, Tiergarten and the surrounding area.',
-        },
-        {
-          question: 'Who actually carries out the work — trainees or experienced staff?',
-          answer:
-            'Experienced nurses with the relevant qualification. Company in hospital is demanding: powers of observation, a calm manner, the ability to deal with confusion and with relatives, and the professional judgement to pass observations on to hospital staff. These assignments are taken on here only by staff with the relevant experience.',
-        },
-        {
-          question: 'What if my mother does not take to your carer?',
-          answer:
-            'As a rule we become a familiar face within a short time — most patients settle after the first hour. If in an individual case it does not fit, we change the member of staff. Personal chemistry matters a great deal in these situations.',
-        },
-        {
-          question: 'How do we book this?',
-          answer:
-            'A first telephone call is enough. We establish the situation (a planned operation, acute, ongoing), what is needed (dementia, risk of falling, general insecurity), the extent (day, night, continuous) and the hospital. Within 24 hours you receive a specific proposal.',
-        },
-      ],
-      cta: { text: 'Request a first talk', href: '/#kontakt' },
-      relatedLinks: [
-        {
-          label: 'Bedside Companions Berlin',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'the closest relation — also at home and in the hospice',
-        },
-        {
-          label: 'Company in hospital (background)',
-          href: '/themen/krankenhaus-begleitung',
-          note: 'when company makes sense, and who needs it',
-        },
-        {
-          label: 'Dementia companionship',
-          href: '/themen/demenz-begleitung',
-          note: 'background on accompanying people with dementia',
-        },
-      ],
-    },
-  },
 };

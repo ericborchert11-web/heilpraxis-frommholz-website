@@ -23,7 +23,7 @@ export const GLOBAL_FAQ_ES: readonly FaqItem[] = [
   {
     question: '¿Con qué rapidez pueden comenzar?',
     answer:
-      'Para solicitudes urgentes (acompañamiento junto a la cama, cuidado nocturno) a menudo el mismo día, o en un plazo de 24 a 48 horas. Para compromisos de mayor duración (atención las veinticuatro horas, transición hasta una plaza en residencia) solemos necesitar un preaviso de cinco a diez días.',
+      'Para solicitudes urgentes (atención individual, cuidado nocturno) a menudo el mismo día, o en un plazo de 24 a 48 horas. Para compromisos de mayor duración (atención las veinticuatro horas, transición hasta una plaza en residencia) solemos necesitar un preaviso de cinco a diez días.',
   },
   {
     question: '¿Qué zonas de la ciudad atienden?',
