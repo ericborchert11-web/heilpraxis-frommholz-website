@@ -184,8 +184,6 @@ export const STANDORTE_ES: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Solicitar una primera conversación', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Acompañamiento (Sitzwache) en Berlín', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Acompañamiento hospitalario', href: '/themen/krankenhaus-begleitung' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'directamente contiguo' },
       ],
     },
@@ -243,7 +241,6 @@ export const STANDORTE_ES: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Solicitar una primera conversación', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Acompañamiento (Sitzwache) en Berlín', href: '/leistungen/sitzwachen-berlin', note: 'a menudo por horas' },
         { label: 'Guardias nocturnas en Berlín', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Asesoramiento en materia de cuidados', href: '/leistungen/pflegeberatung-berlin' },
       ],
@@ -402,7 +399,6 @@ export const STANDORTE_ES: Overlay<SeoStandort> = {
       relatedLinks: [
         { label: 'Atención las veinticuatro horas', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Cuidado a domicilio de pago privado', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Acompañamiento en hospicio', href: '/leistungen/hospiz-sitzwachen' },
         { label: 'Charlottenburg', href: '/standorte/charlottenburg', note: 'el barrio contiguo' },
       ],
     },

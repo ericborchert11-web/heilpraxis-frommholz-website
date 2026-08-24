@@ -313,8 +313,8 @@ export const KARRIERE: readonly SeoKarriere[] = [
       ],
       cta: { text: 'Jetzt bewerben', href: 'mailto:simeon@heilpraxis-frommholz.de' },
       relatedLinks: [
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'die Leistung, die Sie übernehmen' },
         { label: 'Alle Stellenkonzepte', href: '/karriere' },
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'die Leistung, die Sie übernehmen' },
       ],
     },
   },

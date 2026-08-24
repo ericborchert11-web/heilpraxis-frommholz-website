@@ -197,11 +197,6 @@ export const THEMEN_ES: Overlay<SeoThema> = {
       relatedLinks: [
         { label: 'Solicitar un grado de dependencia', href: '/themen/pflegegrad-beantragen' },
         { label: 'El presupuesto de descarga', href: '/themen/entlastungsbudget' },
-        {
-          label: 'Guardias de acompañamiento en Berlín',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'a menudo facturadas como cuidado de relevo',
-        },
       ],
     },
   },
@@ -532,14 +527,8 @@ export const THEMEN_ES: Overlay<SeoThema> = {
       ],
       cta: { text: 'Solicitar asesoramiento', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
-        {
-          label: 'Acompañamiento en la clínica en Berlín',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'para pacientes con demencia en el hospital',
-        },
         { label: 'Atención las veinticuatro horas', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Guardias nocturnas en Berlín', href: '/leistungen/nachtwachen-berlin' },
-        { label: 'Guardias de acompañamiento en Berlín', href: '/leistungen/sitzwachen-berlin' },
       ],
     },
   },
@@ -640,132 +629,12 @@ export const THEMEN_ES: Overlay<SeoThema> = {
       ],
       cta: { text: 'Solicitar una primera consulta', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Guardias de acompañamiento en residencia (Hospiz)', href: '/leistungen/hospiz-sitzwachen' },
         { label: 'Guardias nocturnas en Berlín', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Atención las veinticuatro horas', href: '/leistungen/24-stunden-betreuung' },
       ],
     },
   },
 
-  // === Thema 7: Krankenhaus-Begleitung =========================================
-  'krankenhaus-begleitung': {
-    slug: 'krankenhaus-begleitung',
-    title: 'Acompañamiento hospitalario',
-    short: 'Cuando alguien está más seguro en casa que solo en el hospital.',
-    metaTitle: 'Acompañamiento hospitalario Berlín – guardia y apoyo',
-    metaDescription:
-      'Acompañamiento en el hospital: presencia 1:1, guardia junto a la cama, traducción. Para demencia, confusión, riesgo de caídas, fase final.',
-    h1: 'Acompañamiento hospitalario en Berlín — cuando estar solo en la cama no basta',
-    primaryKeyword: 'acompañamiento hospitalario Berlín',
-    detail: {
-      intro: [
-        'Una estancia hospitalaria ya resulta agotadora para las personas sanas. Para las personas confusas, angustiadas o gravemente enfermas puede ser traumática. Voces desconocidas, ruidos extraños, personal que cambia sin cesar, largas horas de espera.',
-        'Un acompañamiento 1:1 en el hospital marca la diferencia. Acudimos al hospital, nos quedamos, estamos ahí.',
-        'Esta página explica el tema de fondo. Quien desee reservar directamente un acompañamiento privado en la clínica en Berlín encontrará la página de servicio concreta más abajo, en los enlaces.',
-      ],
-      sections: [
-        {
-          heading: 'Quién necesita acompañamiento hospitalario',
-          stronglist: [
-            {
-              label: 'Pacientes con demencia',
-              text: 'En el hospital, las personas con demencia se descompensan a menudo de forma grave: entorno desconocido, ausencia de rutinas, estímulos constantes. Un acompañamiento de confianza calma, transmite seguridad y conoce las rutinas de casa.',
-            },
-            {
-              label: 'Pacientes con confusión posoperatoria (riesgo de delirio)',
-              text: 'Sobre todo las personas mayores, tras grandes operaciones, desarrollan a menudo un delirio en las primeras 24-72 horas. Un acompañamiento atento y de confianza reduce claramente su frecuencia.',
-            },
-            {
-              label: 'Pacientes moribundos',
-              text: 'En muchas plantas no es posible una presencia 1:1, aunque se desee. Nosotros la asumimos.',
-            },
-            {
-              label: 'Pacientes con barreras idiomáticas',
-              text: 'Cuando alguien habla alemán solo de forma limitada, una persona acompañante de confianza y con competencia lingüística vale a menudo su peso en oro: traduce durante el pase de visita y media entre el paciente y el equipo.',
-            },
-            {
-              label: 'Pacientes atemorizados',
-              text: 'Especialmente en estancias prolongadas, diagnósticos graves y exploraciones frecuentes.',
-            },
-          ],
-        },
-        {
-          heading: 'Cómo se organiza',
-          stronglist: [
-            {
-              label: 'Coordinación con la planta',
-              text: 'Antes de la primera intervención, contactamos con la dirección de enfermería de la planta. Por lo general se recaba el consentimiento por escrito del paciente o de su representante legal.',
-            },
-            {
-              label: 'Los turnos',
-              text: 'Modelos habituales: turnos de 8 horas (día, tarde, noche), turnos de 12 horas (día/noche) o fases concretas (p. ej., las primeras 48 horas tras la operación, las últimas 24-72 horas antes de un traslado).',
-            },
-          ],
-        },
-        {
-          heading: 'Lo que hace nuestro personal (y lo que no)',
-          list: [
-            'Presencia atenta, observación del estado.',
-            'Calmar en caso de inquietud, reorientar en caso de confusión.',
-            'Ayuda con las comidas, ofrecer de beber.',
-            'Acompañamiento al baño (si hay movilidad).',
-            'Informar al personal de enfermería de la planta de lo que se necesita.',
-            'Informar a la familia.',
-            'En pacientes con demencia: activación dentro de lo posible.',
-          ],
-          paragraphs: [
-            'Lo que no hacemos: cura de heridas, administración de medicamentos, procedimientos de cuidado invasivos; de eso se encarga el personal de enfermería de la planta.',
-          ],
-        },
-        {
-          heading: 'Lo que cuesta',
-          paragraphs: [
-            'El acompañamiento hospitalario por horas se calcula según la cualificación, la hora del día y el día de la semana. Un acompañamiento continuo durante varios días (p. ej., las primeras 48 horas tras la operación, los últimos días antes de un traslado) se reúne en una suma total. Los recargos conforme al § 3b EStG (noche 25 %, domingo/festivo 50 %) se indican de forma transparente.',
-            'En la primera consulta aclaramos el contexto y la duración y le indicamos una cifra concreta para el acompañamiento previsto.',
-          ],
-        },
-        {
-          heading: 'Cuestiones de seguro',
-          paragraphs: [
-            'En algunos seguros privados de enfermedad, los costes de una persona acompañante son reembolsables en su totalidad o en parte; con gusto le entregamos una factura apta para su presentación. En el seguro público de enfermedad, por lo general no existe derecho a ello.',
-          ],
-        },
-      ],
-      faq: [
-        {
-          question: '¿Permiten las clínicas de Berlín guardias de acompañamiento externas?',
-          answer:
-            'Sí, por lo general con el consentimiento de la dirección de enfermería de la planta. Nosotros nos ocupamos del registro.',
-        },
-        {
-          question: '¿Con qué rapidez pueden acudir a una planta?',
-          answer:
-            'Con una antelación de 24 horas, de forma fiable. En casos de urgencias, a menudo el mismo día.',
-        },
-        {
-          question: '¿Puedo reservar un acompañamiento antes de una operación programada?',
-          answer:
-            'Muy recomendable: así podemos estar disponibles desde el primer despertar.',
-        },
-        {
-          question: '¿Paga el seguro de enfermedad?',
-          answer:
-            'Con los seguros públicos, normalmente no. Con algunos seguros privados, reembolsable en parte.',
-        },
-      ],
-      cta: { text: 'Solicitar una primera consulta', href: '/#kontakt' },
-      relatedLinks: [
-        {
-          label: 'Acompañamiento en la clínica en Berlín (servicio)',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'el acompañamiento premium reservable',
-        },
-        { label: 'Guardias de acompañamiento en Berlín', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Guardias nocturnas en Berlín', href: '/leistungen/nachtwachen-berlin' },
-        { label: 'Acompañamiento en la demencia', href: '/themen/demenz-begleitung' },
-      ],
-    },
-  },
 
   // === Thema 8: Wohnungsauflösung im Pflegefall ================================
   'wohnungsaufloesung-pflegefall': {

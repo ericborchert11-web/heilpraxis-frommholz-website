@@ -146,7 +146,6 @@ export const THEMEN_IT: Overlay<SeoThema> = {
       relatedLinks: [
         { label: 'Richiedere il livello di assistenza', href: '/themen/pflegegrad-beantragen' },
         { label: 'Il budget di sgravio', href: '/themen/entlastungsbudget' },
-        { label: 'Veglie diurne a Berlino', href: '/leistungen/sitzwachen-berlin', note: 'spesso fatturate come assistenza sostitutiva' },
       ],
     },
   },
@@ -343,10 +342,8 @@ export const THEMEN_IT: Overlay<SeoThema> = {
       ],
       cta: { text: 'Richiedere una consulenza', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
-        { label: 'Accompagnamento in ospedale a Berlino', href: '/leistungen/klinik-begleitung-berlin', note: 'per pazienti con demenza in ospedale' },
         { label: 'Assistenza 24 ore su 24', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Veglie notturne a Berlino', href: '/leistungen/nachtwachen-berlin' },
-        { label: 'Veglie diurne a Berlino', href: '/leistungen/sitzwachen-berlin' },
       ],
     },
   },
@@ -408,89 +405,12 @@ export const THEMEN_IT: Overlay<SeoThema> = {
       ],
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Veglie in hospice', href: '/leistungen/hospiz-sitzwachen' },
         { label: 'Veglie notturne a Berlino', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Assistenza 24 ore su 24', href: '/leistungen/24-stunden-betreuung' },
       ],
     },
   },
 
-  // === Thema 7: Krankenhaus-Begleitung =========================================
-  'krankenhaus-begleitung': {
-    slug: 'krankenhaus-begleitung',
-    title: 'Accompagnamento in ospedale',
-    short: 'Quando qualcuno è più al sicuro a casa che solo in ospedale.',
-    metaTitle: 'Accompagnamento in ospedale Berlino – veglia e assistenza',
-    metaDescription:
-      'Accompagnamento in ospedale: presenza 1:1, veglia, traduzione. Per demenza, stato confusionale, rischio di cadute, fase terminale.',
-    h1: 'Accompagnamento in ospedale a Berlino — quando stare soli a letto non basta',
-    primaryKeyword: 'accompagnamento ospedale Berlino',
-    detail: {
-      intro: [
-        'Una degenza in ospedale è faticosa già per le persone sane. Per persone confuse, spaventate o gravemente malate può essere traumatica. Voci sconosciute, rumori estranei, personale che cambia di continuo, lunghe ore di attesa.',
-        'Un accompagnamento 1:1 in ospedale fa la differenza. Veniamo in ospedale, restiamo, siamo presenti.',
-        'Questa pagina spiega il tema sullo sfondo. Chi desidera prenotare direttamente un accompagnamento privato in clinica a Berlino trova la pagina di servizio concreta più in basso, tra i rimandi.',
-      ],
-      sections: [
-        {
-          heading: 'Chi ha bisogno di accompagnamento in ospedale',
-          stronglist: [
-            { label: 'Persone con demenza', text: 'In ospedale le persone con demenza spesso scompensano in modo grave — ambiente estraneo, routine mancanti, stimoli continui. Un accompagnamento familiare tranquillizza, trasmette sicurezza, conosce le routine di casa.' },
-            { label: 'Pazienti con stato confusionale post-operatorio (rischio di delirio)', text: 'Soprattutto gli anziani, dopo grandi interventi, sviluppano spesso un delirio nelle prime 24-72 ore. Un accompagnamento vigile e familiare ne riduce nettamente la frequenza.' },
-            { label: 'Pazienti morenti', text: 'In molti reparti una presenza 1:1 non è possibile, pur essendo desiderata. La assumiamo noi.' },
-            { label: 'Pazienti con barriere linguistiche', text: 'Se qualcuno parla il tedesco solo in modo limitato, un accompagnatore familiare e competente sul piano linguistico vale spesso oro — traduce durante il giro visite, media tra paziente ed équipe.' },
-            { label: 'Pazienti spaventati', text: 'Soprattutto in caso di degenze più lunghe, diagnosi gravi, esami frequenti.' },
-          ],
-        },
-        {
-          heading: 'Come viene organizzato',
-          stronglist: [
-            { label: 'Accordo con il reparto', text: 'Prima del primo intervento prendiamo contatto con la direzione infermieristica del reparto. Di norma si acquisisce il consenso scritto del paziente o del rappresentante legale.' },
-            { label: 'Turni', text: 'Modelli tipici: turni di 8 ore (giorno, pomeriggio, notte), turni di 12 ore (giorno/notte), oppure fasi mirate (ad es. le prime 48 ore dopo l\'intervento, le ultime 24-72 ore prima del trasferimento).' },
-          ],
-        },
-        {
-          heading: 'Che cosa fanno i nostri collaboratori (e che cosa no)',
-          list: [
-            'Presenza vigile, osservazione delle condizioni.',
-            'Tranquillizzare in caso di agitazione, riorientare in caso di confusione.',
-            'Aiuto durante i pasti, offrire da bere.',
-            'Accompagnamento alla toilette (se la mobilità lo consente).',
-            'Informazione del personale infermieristico del reparto in caso di bisogni.',
-            'Informazione della famiglia.',
-            'Per pazienti con demenza: attivazione nei limiti del possibile.',
-          ],
-          paragraphs: ['Che cosa non facciamo: cura delle ferite, somministrazione di farmaci, procedure assistenziali invasive — questo lo fa il personale infermieristico del reparto.'],
-        },
-        {
-          heading: 'Quanto costa',
-          paragraphs: [
-            'L\'accompagnamento in ospedale a ore viene calcolato in base a qualifica, ora del giorno e giorno della settimana. Un accompagnamento continuativo su più giorni (ad es. le prime 48 ore dopo l\'intervento, gli ultimi giorni prima del trasferimento) viene riunito in un importo complessivo. Le maggiorazioni ai sensi del § 3b EStG (notte 25 %, domenica/festivi 50 %) sono indicate in modo trasparente.',
-            'Nel primo colloquio chiariamo contesto e durata e Le indichiamo una somma concreta per l\'accompagnamento previsto.',
-          ],
-        },
-        {
-          heading: 'Questioni assicurative',
-          paragraphs: [
-            'Presso alcune assicurazioni sanitarie private i costi di un accompagnatore sono rimborsabili in tutto o in parte — volentieri Le forniamo una fattura adatta alla presentazione. Presso la cassa malattia obbligatoria di norma non sussiste alcun diritto.',
-          ],
-        },
-      ],
-      faq: [
-        { question: 'Le cliniche di Berlino ammettono veglie esterne?', answer: 'Sì, di norma con il consenso della direzione infermieristica del reparto. Ci occupiamo noi della registrazione.' },
-        { question: 'Quanto velocemente potete arrivare in un reparto?', answer: 'Con un preavviso di 24 ore in modo affidabile. Nei casi di pronto soccorso spesso lo stesso giorno.' },
-        { question: 'Posso prenotare un accompagnamento prima di un intervento programmato?', answer: 'Molto consigliabile — possiamo così essere operativi già dal primo risveglio.' },
-        { question: 'La cassa malattia copre i costi?', answer: 'Con le casse obbligatorie normalmente no. Con alcune assicurazioni private in parte rimborsabile.' },
-      ],
-      cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
-      relatedLinks: [
-        { label: 'Accompagnamento in clinica a Berlino (servizio)', href: '/leistungen/klinik-begleitung-berlin', note: 'l\'accompagnamento premium prenotabile' },
-        { label: 'Veglie diurne a Berlino', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Veglie notturne a Berlino', href: '/leistungen/nachtwachen-berlin' },
-        { label: 'Accompagnamento nella demenza', href: '/themen/demenz-begleitung' },
-      ],
-    },
-  },
 
   // === Thema 8: Wohnungsauflösung im Pflegefall ================================
   'wohnungsaufloesung-pflegefall': {

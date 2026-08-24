@@ -184,8 +184,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Request a first conversation', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Bedside companions in Berlin', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Support during a hospital stay', href: '/themen/krankenhaus-begleitung' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'immediately adjacent' },
       ],
     },
@@ -243,7 +241,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Request a first conversation', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Bedside companions in Berlin', href: '/leistungen/sitzwachen-berlin', note: 'often booked by the hour' },
         { label: 'Overnight care in Berlin', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Care advice', href: '/leistungen/pflegeberatung-berlin' },
       ],
@@ -402,7 +399,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
       relatedLinks: [
         { label: 'Round-the-clock care', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Private-pay home care service', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Hospice bedside companions', href: '/leistungen/hospiz-sitzwachen' },
         { label: 'Charlottenburg', href: '/standorte/charlottenburg', note: 'the neighbouring district' },
       ],
     },

@@ -198,8 +198,7 @@ export const STANDORTE: readonly SeoStandort[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Krankenhaus-Begleitung', href: '/themen/krankenhaus-begleitung' },
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'direkt angrenzend' },
       ],
     },
@@ -257,7 +256,7 @@ export const STANDORTE: readonly SeoStandort[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'oft auf Stundenbasis' },
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'oft auf Stundenbasis' },
         { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Pflegeberatung', href: '/leistungen/pflegeberatung-berlin' },
       ],
@@ -414,9 +413,9 @@ export const STANDORTE: readonly SeoStandort[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin' },
         { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Hospiz-Sitzwachen', href: '/leistungen/hospiz-sitzwachen' },
         { label: 'Charlottenburg', href: '/standorte/charlottenburg', note: 'angrenzender Stadtteil' },
       ],
     },

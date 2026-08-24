@@ -88,8 +88,8 @@ describe('intlPageMeta', () => {
   });
 
   it('übersetzt Segment und Slug einer Leistungsseite', () => {
-    expect(intlPageMeta('/leistungen/sitzwachen-berlin', 'en').alternates.canonical).toBe(
-      `${SITE.url}/en/services/bedside-companion-berlin`,
+    expect(intlPageMeta('/leistungen/1-zu-1-betreuung-berlin', 'en').alternates.canonical).toBe(
+      `${SITE.url}/en/services/one-to-one-care-at-home-berlin`,
     );
   });
 });

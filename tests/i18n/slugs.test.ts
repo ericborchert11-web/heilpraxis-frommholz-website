@@ -23,7 +23,21 @@ describe('localizedHref', () => {
   });
 
   it('übersetzt Leistungs-Slugs', () => {
-    expect(localizedHref('/leistungen/sitzwachen-berlin', 'en')).toBe('/en/services/bedside-companion-berlin');
+    expect(localizedHref('/leistungen/1-zu-1-betreuung-berlin', 'en')).toBe('/en/services/one-to-one-care-at-home-berlin');
+  });
+
+  it('kennt die entfernten Krankenhaus-Seiten nicht mehr', () => {
+    // Ohne Registereintrag fällt localizedHref auf die Sprachstartseite
+    // zurück — genau das belegt, dass der Slug wirklich verschwunden ist.
+    const entfernt = [
+      '/leistungen/sitzwachen-berlin',
+      '/leistungen/hospiz-sitzwachen',
+      '/leistungen/klinik-begleitung-berlin',
+      '/themen/krankenhaus-begleitung',
+    ];
+    for (const pfad of entfernt) {
+      expect(localizedHref(pfad, 'en'), pfad).toBe('/en');
+    }
   });
 
   it('lässt Ortsteil-Slugs unverändert — Eigennamen', () => {
@@ -45,7 +59,7 @@ describe('localizedHref', () => {
 
 describe('deHrefFrom', () => {
   it('ist die Umkehrung von localizedHref', () => {
-    const paths = ['/', '/leistungen', '/leistungen/sitzwachen-berlin', '/standorte/moabit', '/themen/demenz-begleitung', '/familienbereich'];
+    const paths = ['/', '/leistungen', '/leistungen/1-zu-1-betreuung-berlin', '/standorte/moabit', '/themen/demenz-begleitung', '/familienbereich'];
     for (const lang of LOCALES) {
       for (const p of paths) {
         expect(deHrefFrom(localizedHref(p, lang), lang)).toBe(p);
@@ -54,7 +68,7 @@ describe('deHrefFrom', () => {
   });
 
   it('gibt deutsche Pfade unverändert zurück', () => {
-    expect(deHrefFrom('/leistungen/sitzwachen-berlin', 'de')).toBe('/leistungen/sitzwachen-berlin');
+    expect(deHrefFrom('/leistungen/1-zu-1-betreuung-berlin', 'de')).toBe('/leistungen/1-zu-1-betreuung-berlin');
   });
 });
 

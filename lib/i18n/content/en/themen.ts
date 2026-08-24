@@ -197,11 +197,6 @@ export const THEMEN_EN: Overlay<SeoThema> = {
       relatedLinks: [
         { label: 'Applying for a care level', href: '/themen/pflegegrad-beantragen' },
         { label: 'The relief budget', href: '/themen/entlastungsbudget' },
-        {
-          label: 'Bedside companions in Berlin',
-          href: '/leistungen/sitzwachen-berlin',
-          note: 'often billed as respite care',
-        },
       ],
     },
   },
@@ -532,14 +527,8 @@ export const THEMEN_EN: Overlay<SeoThema> = {
       ],
       cta: { text: 'Request care advice', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
-        {
-          label: 'Hospital companionship in Berlin',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'for patients with dementia in hospital',
-        },
         { label: '24-hour care', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Night companions in Berlin', href: '/leistungen/nachtwachen-berlin' },
-        { label: 'Bedside companions in Berlin', href: '/leistungen/sitzwachen-berlin' },
       ],
     },
   },
@@ -640,132 +629,12 @@ export const THEMEN_EN: Overlay<SeoThema> = {
       ],
       cta: { text: 'Request an initial consultation', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Hospice bedside companions', href: '/leistungen/hospiz-sitzwachen' },
         { label: 'Night companions in Berlin', href: '/leistungen/nachtwachen-berlin' },
         { label: '24-hour care', href: '/leistungen/24-stunden-betreuung' },
       ],
     },
   },
 
-  // === Thema 7: Krankenhaus-Begleitung =========================================
-  'krankenhaus-begleitung': {
-    slug: 'krankenhaus-begleitung',
-    title: 'Hospital companionship',
-    short: 'When someone is safer at home than alone in hospital.',
-    metaTitle: 'Hospital companionship Berlin – bedside support',
-    metaDescription:
-      'Companionship in hospital: 1:1 presence, a bedside companion, translation. For dementia, confusion, the risk of falls, the final phase.',
-    h1: 'Hospital companionship in Berlin — when lying there alone is not enough',
-    primaryKeyword: 'hospital sitter Berlin',
-    detail: {
-      intro: [
-        'A stay in hospital is demanding even for healthy people. For someone confused, frightened or seriously ill it can be traumatic. Unfamiliar voices, strange noises, staff who change constantly, long hours of waiting.',
-        '1:1 companionship in hospital makes the difference. We come to the hospital, we stay, we are there.',
-        'This page explains the background to the subject. If you would rather book private hospital companionship in Berlin directly, you will find the specific service page further down among the references.',
-      ],
-      sections: [
-        {
-          heading: 'Who needs hospital companionship',
-          stronglist: [
-            {
-              label: 'People with dementia',
-              text: 'In hospital, people with dementia often decompensate badly — unfamiliar surroundings, missing routines, constant stimulation. A familiar companion calms things, gives a sense of safety and knows the routines from home.',
-            },
-            {
-              label: 'Patients with post-operative confusion (at risk of delirium)',
-              text: 'Older people in particular often develop delirium in the first 24-72 hours after major surgery. An alert, familiar companion markedly reduces how often this happens.',
-            },
-            {
-              label: 'Dying patients',
-              text: 'On many wards 1:1 presence is not possible, though it is wanted. We take that on.',
-            },
-            {
-              label: 'Patients facing a language barrier',
-              text: 'If someone speaks only limited German, a familiar companion with the right languages is often worth their weight in gold — translating for the ward round, mediating between patient and team.',
-            },
-            {
-              label: 'Frightened patients',
-              text: 'Especially during longer stays, after serious diagnoses, or where there are frequent investigations.',
-            },
-          ],
-        },
-        {
-          heading: 'How it is organised',
-          stronglist: [
-            {
-              label: 'Agreeing it with the ward',
-              text: 'Before the first shift we contact the ward’s nursing management. As a rule, written consent is obtained from the patient or their authorised representative.',
-            },
-            {
-              label: 'Shifts',
-              text: 'Typical patterns: 8-hour shifts (day, late, night), 12-hour shifts (day/night), or targeted periods (for example the first 48 hours after surgery, or the last 24-72 hours before a transfer).',
-            },
-          ],
-        },
-        {
-          heading: 'What our staff do (and what they do not)',
-          list: [
-            'Alert presence, observing how the person is.',
-            'Calming agitation, reorienting where there is confusion.',
-            'Help with meals, offering drinks.',
-            'Accompanying trips to the toilet (where mobility allows).',
-            'Telling the ward nursing team what is needed.',
-            'Keeping the family informed.',
-            'For patients with dementia: activity within what is possible.',
-          ],
-          paragraphs: [
-            'What we do not do: wound care, giving medication, invasive nursing procedures — that is the ward nursing team’s work.',
-          ],
-        },
-        {
-          heading: 'What it costs',
-          paragraphs: [
-            'Hospital companionship by the hour is costed according to qualification, time of day and day of the week. Continuous companionship over several days (for example the first 48 hours after surgery, or the last days before a transfer) is drawn together into a single total. Supplements under § 3b EStG (25 % at night, 50 % on Sundays and public holidays) are shown transparently.',
-            'In the initial consultation we establish the setting and the duration and give you a concrete figure for the companionship you are planning.',
-          ],
-        },
-        {
-          heading: 'Questions of insurance',
-          paragraphs: [
-            'With some private health insurers the cost of a companion is reimbursable in full or in part — we are happy to provide an invoice suitable for submission. With statutory health insurance there is generally no entitlement.',
-          ],
-        },
-      ],
-      faq: [
-        {
-          question: 'Do Berlin hospitals allow external bedside companions?',
-          answer:
-            'Yes, generally with the agreement of the ward’s nursing management. We take care of registering it.',
-        },
-        {
-          question: 'How quickly can you get to a ward?',
-          answer:
-            'Reliably with 24 hours’ notice or more. For A&E cases, often on the same day.',
-        },
-        {
-          question: 'Can I book companionship before planned surgery?',
-          answer:
-            'Highly advisable — we can then be ready from the moment your relative first wakes up.',
-        },
-        {
-          question: 'Does the health insurer pay?',
-          answer:
-            'With statutory funds, normally not. With some private insurers, partly reimbursable.',
-        },
-      ],
-      cta: { text: 'Request an initial consultation', href: '/#kontakt' },
-      relatedLinks: [
-        {
-          label: 'Hospital companionship in Berlin (service)',
-          href: '/leistungen/klinik-begleitung-berlin',
-          note: 'the bookable premium companionship',
-        },
-        { label: 'Bedside companions in Berlin', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Night companions in Berlin', href: '/leistungen/nachtwachen-berlin' },
-        { label: 'Dementia companionship', href: '/themen/demenz-begleitung' },
-      ],
-    },
-  },
 
   // === Thema 8: Wohnungsauflösung im Pflegefall ================================
   'wohnungsaufloesung-pflegefall': {

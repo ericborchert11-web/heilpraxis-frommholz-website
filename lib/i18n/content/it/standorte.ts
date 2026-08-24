@@ -184,8 +184,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Vigilanza al capezzale a Berlino', href: '/leistungen/sitzwachen-berlin' },
-        { label: 'Accompagnamento in ospedale', href: '/themen/krankenhaus-begleitung' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'direttamente adiacente' },
       ],
     },
@@ -243,7 +241,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Vigilanza al capezzale a Berlino', href: '/leistungen/sitzwachen-berlin', note: 'spesso a ore' },
         { label: 'Assistenza notturna a Berlino', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Consulenza sull’assistenza', href: '/leistungen/pflegeberatung-berlin' },
       ],
@@ -402,7 +399,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
       relatedLinks: [
         { label: 'Assistenza 24 ore su 24', href: '/leistungen/24-stunden-betreuung' },
         { label: 'Assistenza domiciliare per privati', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Vigilanza al capezzale in hospice', href: '/leistungen/hospiz-sitzwachen' },
         { label: 'Charlottenburg', href: '/standorte/charlottenburg', note: 'il quartiere adiacente' },
       ],
     },

@@ -38,88 +38,83 @@ export type SeoLeistung = {
 };
 
 export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
-  // === Money Page 1: Sitzwachen Berlin =========================================
+  // === Money Page 1: 1:1-Betreuung zu Hause ==================================
   {
-    slug: 'sitzwachen-berlin',
-    title: 'Sitzwachen Berlin',
-    short: '1:1-Anwesenheit im Krankenhaus, Hospiz und zu Hause.',
-    metaTitle: 'Sitzwache Berlin – 1:1-Betreuung Krankenhaus & Zuhause',
-    metaDescription: 'Professionelle Sitzwachen in Berlin: Krankenhaus, Psychiatrie, Hospiz, zu Hause. Erfahrenes Team, kurzfristig verfügbar. Erstgespräch kostenlos.',
-    h1: 'Sitzwachen in Berlin — wenn niemand alleine sein soll',
-    primaryKeyword: 'Sitzwache Berlin',
-    secondaryKeywords: ['Sitzwache Krankenhaus', 'Sitzwache Psychiatrie', 'Nachtwache Berlin'],
+    slug: '1-zu-1-betreuung-berlin',
+    title: '1:1-Betreuung zu Hause',
+    short: 'Eine Person, ein Mensch, ungeteilte Aufmerksamkeit — stundenweise bis rund um die Uhr in der eigenen Wohnung.',
+    metaTitle: '1:1-Betreuung Berlin – private Begleitung zu Hause',
+    metaDescription: 'Privat gezahlte 1:1-Betreuung in Berlin: eine feste Bezugsperson zu Hause, stundenweise bis durchgehend. Bei Demenz, Sturzgefahr, in der letzten Lebensphase. Erstgespräch kostenlos.',
+    h1: '1:1-Betreuung zu Hause — ungeteilte Aufmerksamkeit für einen Menschen',
+    primaryKeyword: '1:1-Betreuung Berlin',
+    secondaryKeywords: ['private Betreuung zu Hause Berlin', 'Einzelbetreuung Demenz Berlin', 'Betreuungskraft Selbstzahler Berlin'],
     detail: {
       intro: [
-        'Eine Sitzwache bedeutet: Jemand ist da. Nicht zur medizinischen Versorgung — dafür gibt es Ärztinnen und Pflegekräfte. Sondern für die Anwesenheit selbst. Für das Gefühl, dass jemand bleibt, wenn die Nacht lang wird, wenn die Operation ansteht, wenn die Verwirrtheit kommt und wieder geht.',
-        'Die Heilpraxis Frommholz vermittelt Sitzwachen in Berlin — im Krankenhaus, in der Psychiatrie, im Hospiz und zu Hause. Wir sind seit über 15 Jahren auf 1:1-Betreuung spezialisiert. Wer eine Sitzwache braucht, hat oft schon viel hinter sich. Wir verstehen, dass es in diesen Momenten weniger um Fachlichkeit als um Menschlichkeit geht — und unsere Mitarbeitenden bringen beides mit.',
-        'Einen Teil unserer Sitzwachen-Einsätze tragen wir gemeinsam mit unserem gemeinnützigen Partnerverein Leben Pflegen Reisen e.V. — vor allem dort, wo neben Pflegekompetenz auch ehrenamtliches Engagement und längere Anwesenheitsphasen gefragt sind.',
+        'In der ambulanten Pflege ist die Uhr immer im Raum. Fünfzehn Minuten für den Toilettengang, zwölf für das Frühstück, dann der nächste Haushalt. Was dabei zuerst verloren geht, ist das, worauf es ankommt: Zeit, in der niemand weitermuss.',
+        '1:1-Betreuung heißt: Eine Mitarbeiterin ist für einen einzigen Menschen da. Keine Tour, keine Parallelversorgung, keine Übergabe mitten im Gespräch. In der eigenen Wohnung, in vertrauter Umgebung, mit den eigenen Gewohnheiten. Stundenweise, für einzelne Nächte, für eine schwierige Phase oder dauerhaft.',
+        'Wir arbeiten ausschließlich als Selbstzahler-Pflegedienst mit einem kleinen festen Team. Das ist eine bewusste Entscheidung: Sie hat einen Preis, aber sie schafft den Rahmen, in dem diese Art von Zeit überhaupt möglich ist.',
       ],
       sections: [
         {
-          heading: 'Wann eine Sitzwache sinnvoll ist',
+          heading: 'Wann 1:1-Betreuung der richtige Weg ist',
           paragraphs: [
-            'Eine Sitzwache ist mehr als ein Stuhl neben dem Bett. Sie schützt, sie beruhigt, sie verhindert Schlimmeres. Typische Situationen, in denen unsere Klientinnen und Klienten uns rufen:',
+            'Nicht jede Situation braucht eine ständige Begleitung. Diese hier tun es meistens:',
           ],
           stronglist: [
-            { label: 'Nach Operationen', text: 'Postoperative Verwirrtheit (Delir) ist eine der häufigsten Komplikationen bei älteren Patientinnen und Patienten. Eine vertraute Anwesenheit kann das Risiko eines Delirs senken und den Genesungsverlauf unterstützen.' },
-            { label: 'Bei Sturzgefahr', text: 'Wer nachts unruhig wird, aufstehen will, sich nicht mehr orientiert, ist sturzgefährdet. Eine Sitzwache beobachtet, beruhigt, hilft beim Aufstehen — und kann Stürzen und damit verbundenen Verletzungen vorbeugen, die sonst eine ganze Lebensphase prägen können.' },
-            { label: 'In der Sterbephase', text: 'Wenn klar ist, dass es zu Ende geht, wollen viele Angehörige nicht, dass ihre Liebsten allein gehen. Aber nicht jeder kann durchgehend am Bett sein. Wir übernehmen die Nachtstunden, die Wochenenden, die Phasen, in denen Sie selbst Pause brauchen.' },
-            { label: 'Bei psychiatrischen Krisen', text: 'Akute Eigen- oder Fremdgefährdung, suizidale Phasen, schwere depressive Episoden. Eine 1:1-Betreuung schützt — und kann in manchen Fällen helfen, eine Zwangseinweisung zu vermeiden.' },
-            { label: 'Bei Demenz', text: 'Nächtliche Wachphasen, Weglaufgefahr, Orientierungslosigkeit — eine Sitzwache bringt Ruhe in eine Situation, die Angehörige sonst zermürbt.' },
+            { label: 'Demenz mit nächtlicher Unruhe', text: 'Aufstehen, Wandern, Verwirrung über Tag und Nacht. Angehörige halten das wenige Wochen durch, dann sind sie selbst am Ende. Eine feste Begleitperson bringt Struktur zurück — und Schlaf für die Familie.' },
+            { label: 'Sturzgefahr', text: 'Wer nachts aufsteht und nicht mehr sicher steht, gehört nicht allein in die Wohnung. Wir sind da, wenn aufgestanden wird, helfen rechtzeitig und beugen Stürzen vor, die sonst eine ganze Lebensphase prägen.' },
+            { label: 'Die letzte Lebensphase zu Hause', text: 'Viele Menschen möchten zu Hause sterben. Damit das gelingt, braucht die Familie jemanden, der die langen Stunden mitträgt — wach, ruhig, erfahren, ohne Hektik.' },
+            { label: 'Nach einer Operation', text: 'Die ersten Nächte in der Genesungsphase sind die kritischsten: Verwirrtheit, Unsicherheit beim Aufstehen, Schmerz. Eine Begleitung überbrückt, bis Stabilität zurück ist.' },
+            { label: 'Wenn Angehörige an ihre Grenze kommen', text: 'Pflegende Angehörige brauchen Nächte, in denen sie durchschlafen, und Tage, an denen sie nicht erreichbar sein müssen. Wir übernehmen diese Stunden verlässlich.' },
           ],
         },
         {
-          heading: 'Wo wir Sitzwachen anbieten',
-          paragraphs: [
-            'Wir sind in ganz Berlin unterwegs. Unser Sitz in Moabit (Stephanstraße 46) liegt verkehrsgünstig in der Mitte der Stadt — von hier erreichen wir Charlottenburg in zehn Minuten, Wilmersdorf in zwölf, Zehlendorf in fünfundzwanzig.',
-            'Wir vermitteln Sitzwachen in:',
-          ],
+          heading: 'Was eine Betreuungskraft bei uns tut',
           stronglist: [
-            { label: 'Krankenhäusern', text: 'Charité (alle Standorte), Vivantes-Kliniken, Schlosspark-Klinik, Sankt Gertrauden, DRK Kliniken, Lazarus, Helios und allen anderen Berliner Häusern.' },
-            { label: 'Psychiatrischen Kliniken', text: 'Vivantes Wenckebach, St. Hedwig, Schlosspark-Klinik und allen Akut- und Tageskliniken im Stadtgebiet.' },
-            { label: 'Hospizen und Palliativstationen', text: 'in enger Abstimmung mit dem dortigen Team.' },
-            { label: 'Pflegeheimen', text: 'wenn Angehörige Entlastung brauchen oder eine besondere Situation eine 1:1-Betreuung erfordert.' },
-            { label: 'Zu Hause', text: 'in der vertrauten Wohnung, mit allem, was eine eigene Umgebung ausmacht.' },
+            { label: 'Da sein', text: 'Anwesend, aufmerksam, ansprechbar. Reden, wenn jemand reden will. Schweigen, wenn jemand schweigen will.' },
+            { label: 'Beobachten und einordnen', text: 'Veränderungen bemerken und sachlich weitergeben — an die Familie, an den Hausarzt, an den Pflegedienst. Aus über 15 Jahren Erfahrung wissen unsere Kräfte, was wichtig ist und was warten kann.' },
+            { label: 'Den Alltag halten', text: 'Essen und Trinken anreichen, Toilettengänge begleiten, beim Lagewechsel helfen, Medikamente nach Plan geben, für Ruhe und Ordnung sorgen.' },
+            { label: 'Begleiten, wohin es nötig ist', text: 'Zum Hausarzt, zum Facharzt, zum Spaziergang, zur Familienfeier. Niemand wartet allein im Flur.' },
+            { label: 'Die Familie entlasten', text: 'Sie müssen nicht jeden Abend hetzen. Sie wissen: Jemand ist da, und Sie erfahren, was war.' },
           ],
         },
         {
-          heading: 'Was eine Sitzwache bei uns kostet',
-          paragraphs: [
-            'Sitzwachen sind in der Regel Selbstzahler-Leistungen. Die gesetzliche Pflegekasse übernimmt sie nicht direkt — in manchen Fällen lässt sich die Verhinderungspflege (§ 39 SGB XI) oder der Entlastungsbetrag (§ 45b SGB XI) nutzen, dazu beraten wir Sie gerne.',
-            'Pauschalpreise nennen wir nicht, weil die Situationen zu unterschiedlich sind. Eine Nachtsitzwache im Krankenhaus ist anders zu kalkulieren als eine 12-Stunden-Begleitung zu Hause. Im kostenlosen Erstgespräch klären wir, was Sie brauchen und was es konkret kostet. Transparente Zuschläge nach § 3b EStG (25 % nachts, 50 % sonn- und feiertags) gelten bei allen Einsätzen.',
+          heading: 'Wache Begleitung oder Bereitschaft?',
+          paragraphs: ['Für die Nachtstunden unterscheiden wir zwei Modelle — der Unterschied schlägt deutlich auf den Preis durch:'],
+          stronglist: [
+            { label: 'Aktive (wache) Begleitung', text: 'Die Mitarbeiterin bleibt durchgehend wach, beobachtet aktiv, dokumentiert regelmäßig. Sinnvoll bei akuten Situationen — Sterbephase, schwere Verwirrtheit, hohe Sturzgefahr.' },
+            { label: 'Bereitschaft', text: 'Die Mitarbeiterin schläft in einem angrenzenden Raum oder in einem Schlafstuhl im selben Zimmer und wird bei jedem Geräusch geweckt. Sinnvoll, wenn nachts meist Ruhe herrscht, aber niemand allein bleiben soll.' },
           ],
+          trailingParagraphs: ['Welches Modell passt, klären wir im Erstgespräch. Wechseln ist jederzeit möglich, wenn sich die Lage ändert.'],
         },
         {
-          heading: 'Was unsere Sitzwachen können',
+          heading: 'Was 1:1-Betreuung kostet',
           paragraphs: [
-            'Unser Team ist gemischt: examinierte Pflegekräfte, Pflegehilfskräfte, Sozialpädagoginnen und Sozialpädagogen, Betreuungskräfte mit langjähriger psychiatrischer Erfahrung. Je nach Situation setzen wir die passende Qualifikation ein. Was alle gemeinsam haben:',
-          ],
-          list: [
-            'Ruhe in herausfordernden Situationen',
-            'Fähigkeit zur Beobachtung und sachlichen Dokumentation',
-            'Erfahrung im Umgang mit Verwirrtheit, Aggression, Angst',
-            'Diskretion — was in der Wohnung gesehen und gehört wird, bleibt dort',
+            '1:1-Betreuung ist eine Selbstzahler-Leistung. Die gesetzliche Pflegekasse übernimmt sie nicht direkt. Bei vorhandenem Pflegegrad lassen sich aber häufig die Verhinderungspflege (§ 39 SGB XI) oder der Entlastungsbetrag (§ 45b SGB XI) einsetzen — Sie reichen unsere Rechnung dann selbst ein. Wir beraten Sie, was in Ihrem Fall möglich ist.',
+            'Pauschalpreise nennen wir nicht, weil die Situationen zu unterschiedlich sind: Der Stundensatz hängt von der erforderlichen Qualifikation, vom Umfang und davon ab, ob es eine wache Begleitung oder eine Bereitschaft ist. Im kostenlosen Erstgespräch hören wir erst zu und machen danach einen konkreten, transparenten Vorschlag mit Stundensatz und voraussichtlicher Gesamtsumme.',
+            'Zuschläge nach § 3b EStG weisen wir offen aus: nachts 25 %, sonn- und feiertags 50 %.',
           ],
         },
       ],
       faq: [
-        { question: 'Was ist der Unterschied zwischen einer Sitzwache und einer Pflegekraft?', answer: 'Eine Sitzwache ist anwesend, beobachtet, schützt und beruhigt — sie übernimmt aber keine pflegerischen Tätigkeiten wie Lagerung, Wundversorgung oder Medikamentengabe. Pflegekräfte tun beides; eine Sitzwache spezialisiert sich auf die Anwesenheit.' },
-        { question: 'Können Sitzwachen auch nachts kommen?', answer: 'Ja. Nachtwachen sind eine unserer häufigsten Anfragen. Wir kommen ab Dienstbeginn zur vereinbarten Uhrzeit und bleiben bis morgens — bei Bedarf auch über mehrere Nächte hintereinander mit Wechseldienst im festen Team.' },
-        { question: 'Wie schnell ist eine Sitzwache verfügbar?', answer: 'In Notfällen oft innerhalb von 24 Stunden, manchmal noch am selben Tag. Bei längerfristig planbaren Einsätzen (z. B. nach einer OP) brauchen wir nur 2-3 Tage Vorlauf.' },
-        { question: 'Sind die Sitzwachen fachlich qualifiziert?', answer: 'Je nach Situation setzen wir unterschiedliche Qualifikationen ein. Bei medizinisch heiklen Situationen kommt eine examinierte Kraft. Bei reiner Anwesenheit reicht oft eine erfahrene Betreuungskraft. Wir klären das im Erstgespräch.' },
-        { question: 'Können wir die Sitzwache über die Pflegekasse abrechnen?', answer: 'Nein, direkt nicht — wir rechnen ausschließlich als Selbstzahler-Leistung ab. Sie können aber bei vorhandenem Pflegegrad den Entlastungsbetrag (125 € monatlich) oder die Verhinderungspflege nutzen und uns die Rechnung dann selbst einreichen. Wir beraten Sie, was möglich ist.' },
-        { question: 'Wer haftet, wenn etwas passiert?', answer: 'Wir sind berufshaftpflichtversichert. Schäden, die durch unsere Mitarbeitenden verschuldet sind, werden über diese Versicherung abgewickelt.' },
+        { question: 'Wie schnell können Sie anfangen?', answer: 'Bei planbaren Situationen genügen zwei bis drei Tage Vorlauf. In akuten Fällen versuchen wir, innerhalb von 24 Stunden eine erste Begleitung zu stellen — je nach Wochentag und Tageszeit auch schneller. Rufen Sie an, dann sagen wir Ihnen ehrlich, was geht.' },
+        { question: 'Können wir nur einzelne Nächte buchen?', answer: 'Ja. Viele Einsätze sind genau das: eine, zwei oder drei Nächte in einer kritischen Phase. Einzelne Wochenendnächte oder eine feste Nacht pro Woche gehen ebenso wie eine durchgehende Begleitung über Monate.' },
+        { question: 'Ist es immer dieselbe Person?', answer: 'So weit es geht, ja. Wir arbeiten mit einem kleinen festen Team und setzen bei längeren Begleitungen zwei bis drei Kräfte im Wechsel ein, damit auch bei Krankheit oder Urlaub ein vertrautes Gesicht kommt. Ständig wechselndes Personal wäre das Gegenteil dessen, wofür 1:1-Betreuung da ist.' },
+        { question: 'Was, wenn meine Mutter die Person nicht mag?', answer: 'Dann tauschen wir sie aus. Meistens ist die Fremdheit nach der ersten Stunde vorbei, aber persönliche Chemie ist in dieser Arbeit kein Nebenaspekt. Sagen Sie uns Bescheid, wir organisieren das ohne Diskussion.' },
+        { question: 'Welche Qualifikation haben die Kräfte?', answer: 'Das richtet sich nach der Situation. Bei pflegerisch anspruchsvollen Lagen kommt eine examinierte Pflegefachkraft. Wo es um Anwesenheit, Aufmerksamkeit und Alltag geht, ist eine erfahrene Betreuungskraft oft die bessere Wahl. Was Ihr Fall braucht, klären wir vorher — nicht hinterher.' },
+        { question: 'Übernimmt die Krankenkasse das?', answer: 'Nein. Die gesetzliche Krankenkasse zahlt medizinische Behandlung, nicht die durchgehende Anwesenheit einer Betreuungsperson. Manche privaten Zusatzversicherungen erstatten anteilig — das lohnt sich vorab zu klären.' },
+        { question: 'Brauchen wir ein eigenes Zimmer für die Betreuungskraft?', answer: 'Bei Bereitschaft reicht ein Sofa, ein Sessel oder ein Schlafstuhl — ein Bett ist nicht nötig. Bei wacher Begleitung genügt ein Stuhl und Licht zum Lesen. Wir richten uns nach Ihrer Wohnung, nicht umgekehrt.' },
+        { question: 'Was passiert in einem Notfall?', answer: 'Die Betreuungskraft verständigt den Notarzt (112), informiert die Angehörigen und bleibt bei der Person, bis Hilfe da ist. Was zu tun ist, wird bei Beginn der Begleitung mit Ihnen und — sofern gewünscht — mit dem Hausarzt schriftlich festgelegt.' },
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Klinik-Begleitung Berlin', href: '/leistungen/klinik-begleitung-berlin', note: 'Sitzwachen speziell im Krankenhaus' },
-        { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
-        { label: 'Systemsprenger-Betreuung', href: '/leistungen/systemsprenger-betreuung', note: 'bei komplexen psychiatrischen Verläufen' },
+        { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin', note: 'wenn nur die Nächte abgedeckt werden müssen' },
+        { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung', note: 'durchgehende Versorgung im Wechseldienst' },
+        { label: 'Demenz-Begleitung', href: '/themen/demenz-begleitung', note: 'Hintergrund zur Begleitung Demenzerkrankter' },
       ],
     },
   },
-
-  // === Money Page 2: Systemsprenger-Betreuung ==================================
+  // === Money Page 2: Systemsprenger-Betreuung ================================
   {
     slug: 'systemsprenger-betreuung',
     title: 'Systemsprenger-Betreuung',
@@ -190,13 +185,13 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'ungeteilte Aufmerksamkeit zu Hause' },
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'punktuelle 1:1-Begleitung' },
       ],
     },
   },
 
-  // === Money Page 3: Pflegedienst für Selbstzahler =============================
+  // === Money Page 3: Pflegedienst für Selbstzahler ===========================
   {
     slug: 'pflegedienst-selbstzahler',
     title: 'Pflegedienst für Selbstzahler',
@@ -259,13 +254,13 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'punktuelle 1:1-Begleitung' },
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'ungeteilte Aufmerksamkeit zu Hause' },
         { label: 'Systemsprenger-Betreuung', href: '/leistungen/systemsprenger-betreuung', note: 'für komplexe Fälle' },
       ],
     },
   },
 
-  // === Money Page 4: 24-Stunden-Betreuung =====================================
+  // === Money Page 4: 24-Stunden-Betreuung ====================================
   {
     slug: '24-stunden-betreuung',
     title: '24-Stunden-Betreuung',
@@ -330,13 +325,12 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
-        { label: 'Klinik-Begleitung Berlin', href: '/leistungen/klinik-begleitung-berlin', note: 'wenn die durchgehende Begleitung im Krankenhaus stattfindet' },
         { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin', note: 'wenn nur die Nacht abgedeckt werden muss' },
         { label: 'Pflegeberatung', href: '/leistungen/pflegeberatung-berlin', note: 'zu Pflegegrad und Finanzierung' },
       ],
     },
   },
-  // === Money Page 5: Pflegeberatung Berlin =====================================
+  // === Money Page 5: Pflegeberatung Berlin ===================================
   {
     slug: 'pflegeberatung-berlin',
     title: 'Pflegeberatung Berlin',
@@ -408,7 +402,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       ],
     },
   },
-  // === Money Page 6: Nachtwachen Berlin =======================================
+  // === Money Page 6: Nachtwachen Berlin ======================================
   {
     slug: 'nachtwachen-berlin',
     title: 'Nachtwachen Berlin',
@@ -460,80 +454,12 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'punktuelle 1:1-Begleitung tags und nachts' },
-        { label: 'Hospiz-Sitzwachen', href: '/leistungen/hospiz-sitzwachen', note: 'bei Sterbebegleitung' },
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'wenn es nicht bei den Nächten bleibt' },
         { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung', note: 'wenn nicht nur die Nacht abgedeckt werden muss' },
       ],
     },
   },
-  // === Money Page 7: Hospiz-Sitzwachen ========================================
-  {
-    slug: 'hospiz-sitzwachen',
-    title: 'Hospiz-Sitzwachen',
-    short: 'Anwesenheit in den letzten Stunden — für Betroffene und Angehörige.',
-    metaTitle: 'Hospiz-Sitzwache Berlin – Begleitung in der Sterbephase',
-    metaDescription: 'Sitzwachen im Hospiz, auf der Palliativstation oder zu Hause. Diskret, erfahren, würdevoll. Entlastung für Angehörige in den letzten Stunden.',
-    h1: 'Hospiz-Sitzwachen — jemand bleibt da',
-    primaryKeyword: 'Hospiz Sitzwache Berlin',
-    secondaryKeywords: ['Sterbebegleitung', 'Palliativ-Sitzwache', 'Letzte Stunden Begleitung'],
-    detail: {
-      intro: [
-        'Es gibt einen besonderen Auftrag in unserer Arbeit: Da zu sein, wenn jemand geht. Nicht als medizinische Kraft — dafür gibt es Palliativteams. Sondern als wache, ruhige Anwesenheit, die nicht mehr verlangt als zuhören, halten, warten.',
-        'Hospiz-Sitzwachen unterscheiden sich von anderen Sitzwachen in einem entscheidenden Punkt: Sie haben kein medizinisches Ziel mehr. Es geht nicht darum, dass etwas besser wird. Es geht darum, dass der Mensch nicht alleine ist — und dass die Familie dabei nicht zerbricht.',
-        'In dieser Arbeit kooperieren wir eng mit unserem Partnerverein Leben Pflegen Reisen e.V., dessen ehrenamtliches Netzwerk gerade bei Sterbebegleitungen die Heilpraxis-Stunden ergänzt — und die Familie nicht allein lässt, wenn unsere bezahlten Schichten zu Ende gehen.',
-      ],
-      sections: [
-        {
-          heading: 'Wo wir Hospiz-Sitzwachen anbieten',
-          stronglist: [
-            { label: 'Im Hospiz', text: 'Die meisten Hospize in Berlin (Ricam Hospiz, Hospiz Schöneberg-Steglitz, Hospiz Wilmersdorf, Christophorus Hospiz, Lazarus Hospiz, u. a.) haben ihre eigenen ehrenamtlichen Sitzwachen-Strukturen. Wir kommen als Ergänzung dazu — oft bei Klientinnen und Klienten, die eine durchgehende Begleitung wünschen, was über das ehrenamtliche Angebot hinausgeht.' },
-            { label: 'Auf der Palliativstation', text: 'Wir kommen ins Krankenhaus, in Abstimmung mit dem Pflegeteam. Wir sind kein Konkurrenz-Angebot — wir entlasten die Pflege, indem wir die 1:1-Anwesenheit übernehmen, die im Stationsalltag selten möglich ist.' },
-            { label: 'Zu Hause', text: 'Viele Menschen wollen zu Hause sterben — und können das auch, wenn die Familie es organisiert bekommt. Wir kommen dann oft für die Nachtstunden, für die Wochenenden, für die Phasen, in denen die Angehörigen selbst Erschöpfung spüren.' },
-          ],
-        },
-        {
-          heading: 'Was Hospiz-Sitzwachen tun (und was nicht)',
-          stronglist: [
-            { label: 'Sie tun', text: 'wach sein, beobachten, ruhig sprechen, vorlesen, schweigen, Hand halten, Lippen befeuchten, leise sein. Sie rufen die Angehörigen, wenn es Zeit ist. Sie rufen das Palliativteam, wenn die Symptomatik sich verändert.' },
-            { label: 'Sie tun nicht', text: 'Schmerzmittel anpassen (das macht der Arzt), Pflege im engeren Sinne durchführen (das macht der Pflegedienst), Trost spenden, der unecht wirkt. Sie reden nicht über Religion, wenn es nicht von der sterbenden Person ausgeht. Sie weinen nicht laut, wenn es um Halten geht.' },
-          ],
-        },
-        {
-          heading: 'Was unsere Mitarbeitenden in dieser Arbeit ausmacht',
-          paragraphs: ['Hospiz-Sitzwachen sind eine besondere Aufgabe. Wir setzen Kolleginnen und Kollegen ein, die:'],
-          list: [
-            'Erfahrung mit Sterbebegleitung haben (Hospizpraktikum, Pflegeerfahrung, Trauerbegleitungs-Ausbildung).',
-            'ruhig sind, wirklich ruhig — nicht still aus Unsicherheit, sondern still aus Haltung.',
-            'mit eigenen Verlusten gearbeitet haben, sodass nicht ihre Trauer im Zimmer steht.',
-            'bei körperlichen Veränderungen in der Sterbephase nicht in Hektik geraten.',
-          ],
-          trailingParagraphs: ['Sterbebegleitung ist keine Anfänger-Aufgabe. Wir vermitteln sie nur an erfahrene Mitarbeitende.'],
-        },
-        {
-          heading: 'Was Hospiz-Sitzwachen kosten',
-          paragraphs: [
-            'Sitzwachen am Lebensende sind oft schon teure Tage in einer ohnehin teuren Phase. Wir berechnen einen reduzierten Sterbebegleitungs-Tarif, der unter unserem Standard liegt — die genaue Summe für eine Nachtschicht oder mehrtägige Begleitung nennen wir im Erstgespräch.',
-            'Nacht- (25 %) und Sonn-/Feiertagszuschläge (50 %) nach § 3b EStG sind transparent ausgewiesen.',
-          ],
-        },
-      ],
-      faq: [
-        { question: 'Können Sie auch im Hospiz dazukommen, obwohl es dort schon Sitzwachen gibt?', answer: 'Ja — in Absprache mit dem Hospizteam. Wir verstehen uns als Ergänzung, nicht als Ersatz. Oft bringen wir gerade in den letzten 24 Stunden zusätzliche Anwesenheit ein, weil ehrenamtliche Sitzwachen nicht durchgehend verfügbar sind.' },
-        { question: 'Wie schnell können Sie kommen, wenn klar wird, dass es zu Ende geht?', answer: 'Wenn wir Vorlauf von 24 Stunden haben, ja. In echten Akutsituationen (wenige Stunden) versuchen wir es, können es aber nicht immer garantieren.' },
-        { question: 'Reden Ihre Mitarbeitenden mit dem Sterbenden über den Tod?', answer: 'Nur, wenn der Mensch selbst es initiiert. Wir hören zu. Wir geben keinen Anstoß zu Themen, die wir nicht einschätzen können.' },
-        { question: 'Können Sie auch nach dem Tod helfen?', answer: 'Wir bleiben — wenn gewünscht — in den ersten Stunden nach dem Versterben da. Wir helfen, den Notarzt für die Todesfeststellung zu rufen, sind für die Familie da, übergeben an den Bestatter. Trauerbegleitung in den darauffolgenden Wochen vermitteln wir an spezialisierte Stellen.' },
-        { question: 'Kennen Sie sich mit verschiedenen religiösen Traditionen aus?', answer: 'Wir respektieren alle Traditionen. Bei spezifischen Riten (z. B. muslimischer Brauch der Waschung durch Familienangehörige, orthodoxe Liturgien, jüdische Bräuche der Schiwa) bitten wir die Familie um klare Hinweise. Wir lernen schnell, aber wir setzen nichts voraus.' },
-        { question: 'Können Sie auch bei nicht-religiösen Sterbeprozessen begleiten?', answer: 'Selbstverständlich. Die meisten unserer Sterbebegleitungen sind säkular. Wir machen niemandem etwas religiös, was er nicht selbst will.' },
-      ],
-      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
-      relatedLinks: [
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'das allgemeine Angebot' },
-        { label: 'Palliativ zu Hause', href: '/themen/palliativ-zuhause', note: 'Hintergrundwissen' },
-        { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin', note: 'wenn nur die Nachtstunden gebraucht werden' },
-      ],
-    },
-  },
-  // === Money Page 8: Reisebegleitung für Senioren =============================
+  // === Money Page 7: Reisebegleitung für Senioren ============================
   {
     slug: 'reisebegleitung-senioren',
     title: 'Reisebegleitung für Senioren',
@@ -595,82 +521,12 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
+        { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'ungeteilte Aufmerksamkeit zu Hause' },
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
-        { label: 'Krankenhaus-Begleitung', href: '/themen/krankenhaus-begleitung', note: 'bei Klinikaufenthalten' },
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'für stationäre 1:1-Begleitung' },
       ],
     },
   },
 
-  // === Money Page 9: Klinik-Begleitung Berlin ==================================
-  {
-    slug: 'klinik-begleitung-berlin',
-    title: 'Klinik-Begleitung Berlin',
-    short: '1:1-Begleitung im Krankenhaus — wenn Angehörige nicht jeden Moment vor Ort sein können.',
-    metaTitle: 'Klinik-Begleitung Berlin — 1:1-Betreuung im Krankenhaus',
-    metaDescription: 'Private Klinik-Begleitung in Berlin: Wenn Pflegekräfte 18 Patienten parallel betreuen, sind wir 1:1 für Ihren Angehörigen da. Bei Demenz, Sturzgefahr, nach OPs. Stundenweise bis durchgehend.',
-    h1: 'Klinik-Begleitung in Berlin — wenn Angehörige nicht jeden Moment vor Ort sein können',
-    primaryKeyword: 'Klinik-Begleitung Berlin',
-    secondaryKeywords: ['Krankenhaus Begleitung Berlin', 'private Sitzwache Krankenhaus', 'Demenz Klinik Begleitung', 'Sturzprophylaxe nach OP'],
-    detail: {
-      intro: [
-        'Ein Krankenhausaufenthalt ist für ältere Menschen oft eine Ausnahmesituation — fremde Umgebung, wechselndes Personal, lange Wartezeiten am Klingelknopf. Pflegekräfte versorgen im Stationsalltag oft 18 oder mehr Patientinnen und Patienten parallel; eine 1:1-Anwesenheit ist im Klinikalltag selten möglich.',
-        'Wir begleiten Ihre Angehörigen privat im Krankenhaus: zur Vorbereitung auf eine Reha, in der Nacht nach einer Operation, bei Demenz oder Sturzgefahr, bei längeren Aufenthalten. Stundenweise oder rund um die Uhr — als Ergänzung zum Klinikpersonal, nicht als dessen Ersatz.',
-      ],
-      sections: [
-        {
-          heading: 'Was wir konkret tun',
-          stronglist: [
-            { label: 'Da sein, wenn das Personal nicht kann', text: 'Pflegekräfte versorgen oft 18 oder mehr Patientinnen parallel im Schichtdienst. Wir sind 1:1 vor Ort — durchgehend, wach, beobachtend.' },
-            { label: 'Sturzprophylaxe nach OP', text: 'Gerade nachts nach Narkose, bei Verwirrtheit, in fremder Umgebung. Wir bleiben am Bett und helfen beim Aufstehen, bevor etwas passiert.' },
-            { label: 'Demenz-Begleitung im Krankenhaus', text: 'Wir kennen den Umgang mit Bettflucht, Orientierungsverlust, postoperativem Delir. Eine ruhige Anwesenheit reduziert Stress und den Bedarf an Fixierungen oder Sedierung deutlich.' },
-            { label: 'Essen anreichen, Trinken anbieten', text: 'Was Klinikpersonal aus Zeitnot oft nicht in Ruhe leisten kann — gerade bei Demenzkranken, die das Essen schlicht „vergessen".' },
-            { label: 'Klingel im Blick, Ansprechpartner für Pflege und Ärzte', text: 'Übermittlung von Beobachtungen, Vermittlung bei der Visite, Gedächtnisstütze für Fragen, die im Klinikalltag oft untergehen.' },
-            { label: 'Begleitung zu Untersuchungen und Transporten', text: 'Patientin oder Patient nicht allein auf dem Gang oder beim Warten — wir bleiben dabei.' },
-            { label: 'Entlastung der Familie', text: 'Sie müssen nicht jeden Abend nach der Arbeit hetzen. Sie wissen: Jemand ist da.' },
-          ],
-        },
-        {
-          heading: 'Wann macht das Sinn?',
-          paragraphs: ['Vier typische Situationen, in denen Familien uns rufen:'],
-          stronglist: [
-            { label: 'Nach geplanter OP', text: 'Erste 2–5 Nächte zur Sicherheit — die Phase mit dem höchsten Delir- und Sturzrisiko.' },
-            { label: 'Bei Demenz oder Verwirrtheit', text: 'Dauerhafte Begleitung für die gesamte Aufenthaltszeit, weil die Klinik-Umgebung Demenz oft massiv verschlechtert.' },
-            { label: 'Bei längeren Aufenthalten (über eine Woche)', text: 'Tageweise oder stundenweise, dort wo Angehörige nicht durchgehend selbst kommen können.' },
-            { label: 'In der Notaufnahme', text: 'Kurzfristige Unterstützung, wenn niemand aus der Familie schnell genug vor Ort sein kann.' },
-          ],
-        },
-        {
-          heading: 'Was uns auszeichnet',
-          stronglist: [
-            { label: 'Erfahrene Pflegekräfte, kein Hilfspersonal', text: 'Klinik-Begleitung ist anspruchsvoll. Diese Einsätze übernehmen bei uns nur Kräfte mit entsprechender Berufserfahrung — Beobachtungsgabe, ruhiges Auftreten, Umgang mit Verwirrtheit und Angehörigen, fachliche Einordnung von Beobachtungen für die Übergabe an Klinikpersonal.' },
-            { label: 'Beziehung zur Pflege und zu Ärzten', text: 'Wir wissen, wie man sich im Klinikalltag bewegt, ohne zu stören. Wir melden uns bei Aufnahme und Pflegeleitung an, stimmen Anwesenheitszeiten ab, integrieren uns in die Stationsroutine.' },
-            { label: 'Diskret und würdig', text: 'Wir reden nicht über andere Patienten, ergänzen das Stationsteam respektvoll, nehmen uns zurück, wenn die Familie da ist.' },
-          ],
-        },
-      ],
-      faq: [
-        { question: 'Was kostet eine private Krankenhausbegleitung in Berlin?', answer: 'Die Kosten richten sich nach Stundenumfang, Tag-/Nachtanteil und der erforderlichen Qualifikation. Pauschalpreise nennen wir nicht, weil die Situationen sehr unterschiedlich sind. Im kostenlosen Erstgespräch hören wir erst zu — danach machen wir einen konkreten, transparenten Vorschlag.' },
-        { question: 'Übernimmt die Krankenkasse eine Klinik-Begleitung durch einen Pflegedienst?', answer: 'In den meisten Fällen nicht. Die gesetzliche Krankenkasse zahlt die medizinische Versorgung im Krankenhaus, aber keine zusätzliche 1:1-Betreuung durch einen externen Pflegedienst. Ausnahmen gibt es bei „Rooming-In" für Kinder und in seltenen Sonderfällen. Für Erwachsene mit Demenz, Sturzgefahr oder besonderem Betreuungsbedarf ist die private Klinik-Begleitung in der Regel eine Selbstzahlerleistung. Manche private Zusatzversicherungen erstatten anteilig — bitte vorab klären.' },
-        { question: 'Was kann eine private Begleitung im Krankenhaus überhaupt tun?', answer: 'Anwesend sein, Klingel und Patient im Blick behalten, Essen und Trinken anreichen, beim Lagewechsel helfen, bei Verwirrtheit beruhigen, Pflegekräfte und Ärzte über Beobachtungen informieren, zu Untersuchungen begleiten. Wir ersetzen nicht das Klinikpersonal — wir ergänzen es um eine ständig anwesende Bezugsperson. Medizinische Aufgaben (Medikation, Wundversorgung, Verbandswechsel) liegen weiter beim Klinikpersonal.' },
-        { question: 'Mein Vater hat nach der OP Verwirrtheit (Delir) — was können wir tun?', answer: 'Postoperatives Delir betrifft vor allem ältere Menschen und tritt häufig in den ersten Nächten nach einer Operation auf. Die wirksamste Maßnahme ist eine ruhige, vertraute Anwesenheit — Studien zeigen, dass Sitzwachen den Bedarf an Fixierungen und Sedierung deutlich reduzieren können. Wenn Sie selbst nicht durchgehend vor Ort sein können, übernehmen wir das. Besonders in den Nachtstunden, wenn Verwirrtheit häufig stärker wird.' },
-        { question: 'Meine Mutter hat Demenz und muss ins Krankenhaus — wie können wir helfen?', answer: 'Krankenhausaufenthalte sind für Menschen mit Demenz besonders belastend: fremde Umgebung, fehlende Routinen, viele unbekannte Gesichter. Eine konstante Begleitperson reduziert Angst, Bettflucht und Sturzgefahr deutlich. Wenn Familie nicht durchgehend vor Ort sein kann, übernehmen wir die Begleitung — wir kennen den Umgang mit Demenz und stimmen uns eng mit dem Klinikpersonal ab. Auch das Anreichen von Essen, das bei Demenz oft „vergessen" wird, gehört dazu.' },
-        { question: 'Wie schnell können Sie kommen?', answer: 'Bei geplanten Aufenthalten (OP, Reha) am besten ein paar Tage Vorlauf. Bei akuten Situationen (Notaufnahme, plötzlicher Bedarf) versuchen wir, innerhalb von 24 Stunden eine erste Begleitung zu organisieren — je nach Wochentag und Tageszeit auch schneller. Rufen Sie uns an, dann besprechen wir, was geht.' },
-        { question: 'Darf das Krankenhaus eine private Begleitperson überhaupt zulassen?', answer: 'Ja. Angehörige und von Angehörigen beauftragte Begleitpersonen haben grundsätzlich Zugang zum Patienten. Wir melden uns selbstverständlich bei Aufnahme und Pflegepersonal an und stimmen Anwesenheitszeiten ab. Die meisten Berliner Kliniken kennen das Modell und kooperieren gut. Bei Mehrbettzimmern besprechen wir Rücksichtnahme auf Mitpatienten.' },
-        { question: 'Können Sie auch nur eine einzelne Nacht übernehmen?', answer: 'Ja. Viele unserer Einsätze sind genau das: eine, zwei oder drei Nächte direkt nach einer OP, wenn das Risiko für Sturz oder Verwirrtheit am höchsten ist. Längere Begleitungen über mehrere Wochen machen wir genauso.' },
-        { question: 'In welchen Krankenhäusern sind Sie tätig?', answer: 'Wir begleiten in allen Berliner Kliniken — Charité, Helios, Vivantes, DRK, Park-Klinik Weissensee, St. Joseph, Schlosspark-Klinik, St. Gertrauden und allen weiteren. Schwerpunkt unseres Einsatzgebietes ist der Berliner Westen (Zehlendorf, Grunewald, Charlottenburg, Wilmersdorf, Dahlem, Schmargendorf, Westend), aber wir sind auch in Mitte, Moabit, Tiergarten und Umland aktiv.' },
-        { question: 'Wer macht den Einsatz konkret — Auszubildende oder erfahrene Kräfte?', answer: 'Erfahrene Pflegekräfte mit entsprechender Qualifikation. Klinik-Begleitung ist anspruchsvoll: Beobachtungsgabe, ruhiges Auftreten, Umgang mit Verwirrtheit und Angehörigen, fachliche Einordnung von Beobachtungen für die Übergabe an Klinikpersonal. Diese Einsätze übernehmen bei uns nur Kräfte mit entsprechender Erfahrung.' },
-        { question: 'Was, wenn meine Mutter Sie nicht mag?', answer: 'In der Regel sind wir binnen kurzer Zeit ein vertrautes Gesicht — die meisten Patientinnen und Patienten beruhigen sich schon nach der ersten Stunde. Sollte es im Einzelfall nicht passen, tauschen wir die Kraft aus. Persönliche Chemie ist gerade in diesen Situationen wichtig.' },
-        { question: 'Wie buchen wir das?', answer: 'Ein erstes Telefonat genügt. Wir klären die Situation (geplante OP, akut, dauerhaft), das Bedarfsbild (Demenz, Sturzgefahr, allgemeine Unsicherheit), den Umfang (Tag, Nacht, durchgehend) und das Krankenhaus. Innerhalb von 24 Stunden bekommen Sie ein konkretes Angebot.' },
-      ],
-      cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
-      relatedLinks: [
-        { label: 'Sitzwachen Berlin', href: '/leistungen/sitzwachen-berlin', note: 'die engste Verwandtschaft — auch zu Hause und im Hospiz' },
-        { label: 'Krankenhaus-Begleitung (Hintergrundwissen)', href: '/themen/krankenhaus-begleitung', note: 'wann eine Begleitung sinnvoll ist, wer sie braucht' },
-        { label: 'Demenz-Begleitung', href: '/themen/demenz-begleitung', note: 'Hintergrund zur Begleitung Demenzerkrankter' },
-      ],
-    },
-  },
 ] as const;
 
 export function getSeoLeistung(slug: string): SeoLeistung | undefined {
