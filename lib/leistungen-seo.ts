@@ -43,11 +43,11 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
     slug: '1-zu-1-betreuung-berlin',
     title: '1:1-Betreuung zu Hause',
     short: 'Eine Person, ein Mensch, ungeteilte Aufmerksamkeit — stundenweise bis rund um die Uhr in der eigenen Wohnung.',
-    metaTitle: '1:1-Betreuung Berlin – private Begleitung zu Hause',
-    metaDescription: 'Privat gezahlte 1:1-Betreuung in Berlin: eine feste Bezugsperson zu Hause, stundenweise bis durchgehend. Bei Demenz, Sturzgefahr, in der letzten Lebensphase. Erstgespräch kostenlos.',
+    metaTitle: '1:1-Betreuung zu Hause Berlin – privat gezahlt, examinierte Kraft',
+    metaDescription: 'Privat gezahlte 1:1-Betreuung in der eigenen Wohnung in Berlin: eine examinierte Pflegekraft, ungeteilte Aufmerksamkeit, feste Bezugsperson. Kein Krankenhaus, keine Vermittlung.',
     h1: '1:1-Betreuung zu Hause — ungeteilte Aufmerksamkeit für einen Menschen',
     primaryKeyword: '1:1-Betreuung Berlin',
-    secondaryKeywords: ['private Betreuung zu Hause Berlin', 'Einzelbetreuung Demenz Berlin', 'Betreuungskraft Selbstzahler Berlin'],
+    secondaryKeywords: ['1:1-Betreuung zu Hause', 'Privat gezahlte Einzelbetreuung Berlin', 'Examinierte Pflegekraft Einzelbetreuung'],
     detail: {
       intro: [
         'In der ambulanten Pflege ist die Uhr immer im Raum. Fünfzehn Minuten für den Toilettengang, zwölf für das Frühstück, dann der nächste Haushalt. Was dabei zuerst verloren geht, ist das, worauf es ankommt: Zeit, in der niemand weitermuss.',
