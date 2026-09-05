@@ -49,23 +49,12 @@ export const LEISTUNGEN_IT: Overlay<Leistung> = {
     card: {
       lead: 'Per quando un familiare che assiste ha bisogno di una pausa — una vacanza, una malattia, o semplicemente un momento per respirare. Subentriamo noi, con affidabilità.',
     },
-    href: '/themen/verhinderungspflege',
-    detail: emptyDetail,
-  },
-  reisebegleitung: {
-    slug: 'reisebegleitung',
-    numeral: 'IV.',
-    title: 'Accompagnamento in viaggio',
-    iconKey: 'travel',
-    card: {
-      lead: 'Viaggi accompagnati per persone non autosufficienti — cure termali, visite ai familiari, vacanze. In collaborazione con la nostra associazione partner Leben Pflegen Reisen e.V.',
-    },
-    href: '/leistungen/reisebegleitung-senioren',
+    href: '/leistungen',
     detail: emptyDetail,
   },
   pflegeberatung: {
     slug: 'pflegeberatung',
-    numeral: 'V.',
+    numeral: 'IV.',
     title: 'Consulenza sull’assistenza',
     iconKey: 'document',
     card: {
@@ -76,7 +65,7 @@ export const LEISTUNGEN_IT: Overlay<Leistung> = {
   },
   inklusionsberatung: {
     slug: 'inklusionsberatung',
-    numeral: 'VI.',
+    numeral: 'V.',
     title: 'Consulenza sull’inclusione',
     iconKey: 'people',
     card: {

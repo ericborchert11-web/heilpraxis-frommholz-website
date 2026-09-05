@@ -48,23 +48,12 @@ export const LEISTUNGEN_EN: Overlay<Leistung> = {
     card: {
       lead: 'For when a family carer needs time away — a holiday, an illness, or simply room to breathe. We take over, reliably.',
     },
-    href: '/themen/verhinderungspflege',
-    detail: emptyDetail,
-  },
-  reisebegleitung: {
-    slug: 'reisebegleitung',
-    numeral: 'IV.',
-    title: 'Travel companionship',
-    iconKey: 'travel',
-    card: {
-      lead: 'Accompanied travel for people who need care — a health cure, a visit to family, a holiday. In cooperation with our partner association Leben Pflegen Reisen e.V.',
-    },
-    href: '/leistungen/reisebegleitung-senioren',
+    href: '/leistungen',
     detail: emptyDetail,
   },
   pflegeberatung: {
     slug: 'pflegeberatung',
-    numeral: 'V.',
+    numeral: 'IV.',
     title: 'Care advice',
     iconKey: 'document',
     card: {
@@ -75,7 +64,7 @@ export const LEISTUNGEN_EN: Overlay<Leistung> = {
   },
   inklusionsberatung: {
     slug: 'inklusionsberatung',
-    numeral: 'VI.',
+    numeral: 'V.',
     title: 'Inclusion advice',
     iconKey: 'people',
     card: {

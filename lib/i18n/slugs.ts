@@ -33,18 +33,13 @@ const LEISTUNG_SLUGS = {
   'pflegedienst-selbstzahler': { en: 'private-pay-nursing-berlin', es: 'servicio-privado-de-enfermeria-berlin', it: 'assistenza-privata-berlino' },
   '24-stunden-betreuung': { en: '24-hour-care-berlin', es: 'atencion-24-horas-berlin', it: 'assistenza-24-ore-berlino' },
   'pflegeberatung-berlin': { en: 'care-consulting-berlin', es: 'asesoramiento-en-cuidados-berlin', it: 'consulenza-assistenziale-berlino' },
-  'nachtwachen-berlin': { en: 'night-care-berlin', es: 'atencion-nocturna-berlin', it: 'assistenza-notturna-berlino' },
-  'reisebegleitung-senioren': { en: 'senior-travel-companion', es: 'acompanante-de-viaje-para-mayores', it: 'accompagnatore-di-viaggio-anziani' },
 } as const satisfies Record<string, Record<IntlLocale, string>>;
 
 /** Ratgeberseiten unter /themen/… */
 const THEMA_SLUGS = {
   'pflegegrad-beantragen': { en: 'applying-for-a-care-level', es: 'solicitar-grado-de-dependencia', it: 'richiedere-il-grado-di-assistenza' },
-  'verhinderungspflege': { en: 'respite-care', es: 'cuidado-de-respiro', it: 'assistenza-sostitutiva' },
   'entlastungsbudget': { en: 'relief-budget', es: 'presupuesto-de-alivio', it: 'budget-di-sollievo' },
   'mdk-begutachtung': { en: 'care-level-assessment', es: 'evaluacion-del-grado-de-dependencia', it: 'valutazione-del-grado-di-assistenza' },
-  'demenz-begleitung': { en: 'dementia-support', es: 'acompanamiento-en-demencia', it: 'accompagnamento-nella-demenza' },
-  'palliativ-zuhause': { en: 'palliative-care-at-home', es: 'cuidados-paliativos-en-casa', it: 'cure-palliative-a-domicilio' },
   'wohnungsaufloesung-pflegefall': { en: 'clearing-a-home-when-care-begins', es: 'vaciado-de-vivienda-por-cuidados', it: 'svuotare-casa-inizio-assistenza' },
 } as const satisfies Record<string, Record<IntlLocale, string>>;
 

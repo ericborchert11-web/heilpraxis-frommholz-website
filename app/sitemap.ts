@@ -10,7 +10,7 @@ import { localizedHref } from '@/lib/i18n/slugs';
 // Bewusst statisch statt `new Date()` — sonst meldet jeder Deploy ALLE URLs als
 // frisch geändert, was bei einer jungen, noch wenig gecrawlten Domain schadet.
 // Dieses Datum nur bewusst hochsetzen, wenn sich Inhalte tatsächlich ändern.
-const LAST_MODIFIED = new Date('2026-07-20');
+const LAST_MODIFIED = new Date('2026-09-05');
 
 type Entry = { dePath: string; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']; priority: number };
 

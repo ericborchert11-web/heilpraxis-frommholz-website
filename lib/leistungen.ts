@@ -1,10 +1,9 @@
-export type IconKey = 'clock' | 'home' | 'rotate' | 'travel' | 'document' | 'people';
+export type IconKey = 'clock' | 'home' | 'rotate' | 'document' | 'people';
 
 export type LeistungSlug =
   | '24h-betreuung'
   | 'alltagsbegleitung'
   | 'verhinderungspflege'
-  | 'reisebegleitung'
   | 'pflegeberatung'
   | 'inklusionsberatung';
 
@@ -64,23 +63,12 @@ export const LEISTUNGEN: readonly Leistung[] = [
     card: {
       lead: 'Wenn pflegende Angehörige eine Auszeit brauchen — Urlaub, Krankheit, oder einfach einmal durchatmen. Wir übernehmen verlässlich.',
     },
-    href: '/themen/verhinderungspflege',
-    detail: emptyDetail,
-  },
-  {
-    slug: 'reisebegleitung',
-    numeral: 'IV.',
-    title: 'Reisebegleitung',
-    iconKey: 'travel',
-    card: {
-      lead: 'Begleitete Reisen für pflegebedürftige Menschen — Kur, Familienbesuch, Urlaub. In Kooperation mit unserem Partnerverein Leben Pflegen Reisen e.V.',
-    },
-    href: '/leistungen/reisebegleitung-senioren',
+    href: '/leistungen',
     detail: emptyDetail,
   },
   {
     slug: 'pflegeberatung',
-    numeral: 'V.',
+    numeral: 'IV.',
     title: 'Pflegeberatung',
     iconKey: 'document',
     card: {
@@ -91,7 +79,7 @@ export const LEISTUNGEN: readonly Leistung[] = [
   },
   {
     slug: 'inklusionsberatung',
-    numeral: 'VI.',
+    numeral: 'V.',
     title: 'Inklusionsberatung',
     iconKey: 'people',
     card: {

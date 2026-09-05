@@ -116,7 +116,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
         { label: 'Assistenza domiciliare per privati', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Accompagnamento in viaggio per anziani', href: '/leistungen/reisebegleitung-senioren', note: 'spesso utile per i viaggi di rientro della clientela diplomatica' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'la nostra sede, direttamente adiacente' },
       ],
     },
@@ -212,7 +211,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Assistenza notturna a Berlino', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Consulenza sull’assistenza', href: '/leistungen/pflegeberatung-berlin' },
       ],
     },
@@ -493,7 +491,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
         { label: 'Assistenza domiciliare per privati', href: '/leistungen/pflegedienst-selbstzahler' },
         { label: 'Zehlendorf', href: '/standorte/zehlendorf', note: 'direttamente adiacente' },
         { label: 'Grunewald', href: '/standorte/grunewald', note: 'confinante' },
-        { label: 'Accompagnamento nella demenza', href: '/themen/demenz-begleitung' },
         { label: 'Kleinmachnow', href: '/standorte/kleinmachnow', note: 'vicino al confine' },
       ],
     },
@@ -544,7 +541,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
         { label: 'Assistenza domiciliare per privati', href: '/leistungen/pflegedienst-selbstzahler' },
         { label: 'Wilmersdorf', href: '/standorte/wilmersdorf', note: 'direttamente adiacente' },
         { label: 'Grunewald', href: '/standorte/grunewald', note: 'direttamente adiacente' },
-        { label: 'Assistenza notturna a Berlino', href: '/leistungen/nachtwachen-berlin' },
       ],
     },
   },
@@ -699,7 +695,6 @@ export const STANDORTE_IT: Overlay<SeoStandort> = {
       relatedLinks: [
         { label: 'Moabit', href: '/standorte/moabit', note: 'la nostra sede' },
         { label: 'Assistenza 24 ore su 24', href: '/leistungen/24-stunden-betreuung' },
-        { label: 'Accompagnamento nella demenza', href: '/themen/demenz-begleitung' },
       ],
     },
   },

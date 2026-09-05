@@ -72,83 +72,12 @@ export const THEMEN_IT: Overlay<SeoThema> = {
       cta: { text: 'Richiedere una consulenza', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
         { label: 'Prepararsi alla valutazione MDK', href: '/themen/mdk-begutachtung' },
-        { label: 'Usare l\'assistenza sostitutiva', href: '/themen/verhinderungspflege' },
         { label: 'Il budget di sgravio', href: '/themen/entlastungsbudget' },
       ],
     },
   },
 
   // === Thema 2: Verhinderungspflege ============================================
-  verhinderungspflege: {
-    slug: 'verhinderungspflege',
-    title: 'Assistenza sostitutiva',
-    short: 'Fino a 1.612 € l\'anno — così sfrutta il diritto.',
-    metaTitle: 'Verhinderungspflege 2026 – fino a 1.612 € l\'anno',
-    metaDescription:
-      'Assistenza sostitutiva (Verhinderungspflege) ai sensi del § 39 SGB XI: presupposti, importo, domanda. Le spieghiamo come sfruttare al meglio il diritto.',
-    h1: 'Assistenza sostitutiva — fino a 1.612 € l\'anno, spesso inutilizzati',
-    primaryKeyword: 'assistenza sostitutiva Germania',
-    detail: {
-      intro: [
-        'L\'assistenza sostitutiva (Verhinderungspflege) è una delle prestazioni più importanti dell\'assicurazione obbligatoria per la non autosufficienza — e al tempo stesso una delle più spesso inutilizzate. Le spieghiamo che cos\'è, chi ne ha diritto e come impiegarla in modo sensato.',
-      ],
-      sections: [
-        {
-          heading: 'Che cos\'è l\'assistenza sostitutiva?',
-          paragraphs: [
-            'L\'assistenza sostitutiva ai sensi del § 39 SGB XI è un diritto che subentra quando la persona che di solito presta l\'assistenza viene a mancare — per ferie, malattia, riposo o altri motivi. Fino a 1.612 € per anno solare vengono assunti per una persona sostitutiva.',
-          ],
-        },
-        {
-          heading: 'Chi ne ha diritto?',
-          paragraphs: ['I presupposti:'],
-          list: [
-            'Livello di assistenza (Pflegegrad) 2-5 (il livello 1 non basta).',
-            'L\'assistenza è prestata da familiari o da persone che assistono a titolo volontario.',
-            'La persona assistente ha assistito il bisognoso da almeno 6 mesi („Vorpflegezeit", periodo di assistenza pregressa) — questo ostacolo è caduto dal 2025, il periodo di assistenza pregressa non è più richiesto.',
-          ],
-        },
-        {
-          heading: 'Ciò che raccomandiamo in particolare',
-          stronglist: [
-            { label: 'Usarla a ore anziché a blocchi', text: 'I 1.612 € si possono suddividere in molte piccole unità — per esempio: 3 ore a settimana per 50 settimane danno 150 ore l\'anno.' },
-            { label: 'Utilizzabile anche quando il bisogno cresce all\'improvviso', text: 'Se la persona che assiste è sopraffatta da una situazione del proprio familiare cambiata all\'improvviso, l\'assistenza sostitutiva può servire in via transitoria come sgravio.' },
-            { label: 'Combinabile con il ricovero di sollievo di breve durata', text: 'Fino al 50 % del diritto non utilizzato al ricovero di sollievo di breve durata (Kurzzeitpflege) (fino a 806 € in più) può essere trasferito sull\'assistenza sostitutiva. In teoria sarebbero così possibili fino a 2.418 €.' },
-          ],
-        },
-        {
-          heading: 'Come richiedere l\'assistenza sostitutiva',
-          paragraphs: ['Domanda senza formalità all\'assicurazione per la non autosufficienza (Pflegekasse):'],
-          list: [
-            'Chi presta normalmente l\'assistenza?',
-            'Perché serve una sostituzione?',
-            'Chi assume la sostituzione?',
-            'Quali costi ne derivano?',
-          ],
-          trailingParagraphs: ['Le prove (fattura della persona sostitutiva) le presenta successivamente. L\'assicurazione per la non autosufficienza Le rimborsa i costi direttamente — non alla persona sostitutiva.'],
-        },
-        {
-          heading: 'Assistenza sostitutiva prestata da parenti stretti',
-          paragraphs: [
-            'Importante da sapere: se sono parenti stretti (genitori, figli, fratelli, coniugi) ad assumere l\'assistenza sostitutiva, non viene pagato l\'importo pieno — ma una tariffa nettamente ridotta (l\'ammontare dell\'indennità di assistenza del livello, in misura proporzionale).',
-            'Se l\'assistenza sostitutiva avviene tramite fornitori esterni (come noi), vale l\'importo pieno.',
-          ],
-        },
-      ],
-      faq: [
-        { question: 'A quanto ammonta l\'assistenza sostitutiva nel 2026?', answer: 'Fino a 1.612 € per anno solare. Combinata con il ricovero di sollievo di breve durata non utilizzato, fino a 2.418 €.' },
-        { question: 'La sostituzione deve essere professionale?', answer: 'No. Anche vicini, amici o Lei stesso possono essere fatturati come „sostituzione" — nel caso di parenti stretti però solo alla tariffa dell\'indennità di assistenza.' },
-        { question: 'Posso fatturare l\'assistenza individuale tramite l\'assistenza sostitutiva?', answer: 'Sì, è anzi uno degli impieghi più frequenti. Le emettiamo la fattura e Lei la presenta all\'assicurazione per la non autosufficienza.' },
-        { question: 'Il diritto decade se non lo utilizzo?', answer: 'Sì, alla fine dell\'anno solare. Conviene pianificarlo già in estate, invece di aspettare.' },
-        { question: 'Vale anche per il livello di assistenza 1?', answer: 'No. Il livello 1 non ha diritto all\'assistenza sostitutiva.' },
-      ],
-      cta: { text: 'Richiedere una consulenza', href: '/leistungen/pflegeberatung-berlin' },
-      relatedLinks: [
-        { label: 'Richiedere il livello di assistenza', href: '/themen/pflegegrad-beantragen' },
-        { label: 'Il budget di sgravio', href: '/themen/entlastungsbudget' },
-      ],
-    },
-  },
 
   // === Thema 3: Entlastungsbudget ==============================================
   entlastungsbudget: {
@@ -202,7 +131,6 @@ export const THEMEN_IT: Overlay<SeoThema> = {
       ],
       cta: { text: 'Richiedere una consulenza', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
-        { label: 'Assistenza sostitutiva', href: '/themen/verhinderungspflege' },
         { label: 'Richiedere il livello di assistenza', href: '/themen/pflegegrad-beantragen' },
       ],
     },
@@ -280,136 +208,8 @@ export const THEMEN_IT: Overlay<SeoThema> = {
   },
 
   // === Thema 5: Demenz-Begleitung ==============================================
-  'demenz-begleitung': {
-    slug: 'demenz-begleitung',
-    title: 'Accompagnamento nella demenza',
-    short: 'Ciò di cui la demenza ha davvero bisogno — e ciò che non aiuta.',
-    metaTitle: 'Accompagnamento demenza Berlino – aiuto ai familiari',
-    metaDescription:
-      'Capire e accompagnare la demenza: consigli concreti per la vita quotidiana con chi soffre di demenza. Consulenza e accompagnamento a Berlino.',
-    h1: 'Accompagnamento nella demenza — ciò che aiuta davvero e ciò che no',
-    primaryKeyword: 'accompagnamento demenza Berlino',
-    detail: {
-      intro: [
-        'La demenza non cambia solo la persona malata — cambia anche tutti coloro che la accompagnano. Condividiamo l\'esperienza di oltre 15 anni di accompagnamento nella demenza a Berlino: che cosa aiuta. Che cosa non aiuta. Che cosa dovrebbe sapere.',
-      ],
-      sections: [
-        {
-          heading: 'La demenza non è una sola malattia',
-          paragraphs: ['Sotto il termine „demenza" si raggruppano oltre 50 diverse patologie. Le più frequenti:'],
-          stronglist: [
-            { label: 'Demenza di Alzheimer (ca. 60–70 % di tutti i casi)', text: 'a lenta progressione, spesso inizia con la memoria a breve termine.' },
-            { label: 'Demenza vascolare (ca. 15–20 %)', text: 'dovuta a disturbi della circolazione, spesso con peggioramento a gradini.' },
-            { label: 'Demenza a corpi di Lewy (ca. 5–10 %)', text: 'quadro misto di demenza e Parkinson, spesso con allucinazioni.' },
-            { label: 'Demenza frontotemporale (ca. 5 %)', text: 'spesso con un cambiamento del carattere come primo sintomo, malati piuttosto giovani.' },
-            { label: 'Demenze secondarie', text: 'forme miste, conseguenza di altre malattie.' },
-          ],
-          trailingParagraphs: ['La distinzione è importante, perché il decorso e il quadro sintomatologico si differenziano molto.'],
-        },
-        {
-          heading: 'Quattro fasi, quattro bisogni',
-          stronglist: [
-            { label: 'Fase 1: demenza lieve', text: 'Dimentica, cerca le parole, si vergogna. Ha bisogno di un supporto discreto sullo sfondo, del mantenimento delle routine, di un approccio rispettoso verso il sapere perduto. Qui molto è ancora possibile da soli.' },
-            { label: 'Fase 2: demenza moderata', text: 'Gravi problemi di orientamento, possibile cambiamento del carattere, necessità di aiuto nella cura di sé. Ha bisogno di accompagnamento a ore o per mezza giornata, di una chiara struttura della giornata, di una paziente ripetizione.' },
-            { label: 'Fase 3: demenza grave', text: 'Perdita del linguaggio, completa non autosufficienza, spesso incontinenza. Ha bisogno di assistenza 24 ore su 24 o di un posto in struttura, di stimolazione sensoriale (tatto, musica, profumi), di un ambiente tranquillizzante.' },
-            { label: 'Fase 4: fase terminale', text: 'Allettamento, disturbi della deglutizione, processo del morire. Ha bisogno di accompagnamento palliativo, di accompagnamento alla morte, di controllo palliativo dei sintomi.' },
-          ],
-        },
-        {
-          heading: 'Ciò che aiuta davvero',
-          stronglist: [
-            { label: 'Le routine', text: 'La demenza divora il nuovo. Ma rispetta il vecchio. Uno svolgimento fisso della giornata — colazione alle 8, passeggiata alle 10, pranzo alle 12, pisolino alle 14, caffè alle 15:30 — protegge dalla confusione e dall\'aggressività.' },
-            { label: 'Il sensoriale', text: 'Quando le parole e la comprensione svaniscono, restano i sensi. La musica della giovinezza. Il profumo di lavanda. Una coperta ruvida. Un tè caldo che si può annusare.' },
-            { label: 'Il contatto', text: 'Una mano sulla mano. Un braccio intorno alla spalla. La demenza isola — il contatto unisce, anche senza parole.' },
-            { label: 'Validazione anziché correzione', text: '„Vado subito da mia madre" dice una signora di 88 anni. Sbagliato: „Tua madre è morta 30 anni fa." Giusto: „Sua madre è importante per Lei. Mi parli di lei."' },
-          ],
-        },
-        {
-          heading: 'Ciò che non aiuta',
-          stronglist: [
-            { label: 'La ragione', text: 'La demenza non argomenta. Chi arriva con la logica frustra sé stesso e la persona malata.' },
-            { label: 'Il confronto', text: '„Hai appena mangiato." Non aiuta — la persona con demenza davvero non lo sa più.' },
-            { label: 'Troppi stimoli', text: 'Televisione + radio + conversazione + telefono — questo sovraccarica e provoca inquietudine. Riduca i rumori di fondo.' },
-            { label: 'Il sovraccarico dei familiari', text: '„Ce la faccio da solo" è la frase più pericolosa dei familiari che assistono. Cerchi supporto prima di essere sfinito, non dopo.' },
-          ],
-        },
-      ],
-      faq: [
-        { question: 'Da quando la demenza necessita di trattamento?', answer: 'Non appena cambiano la quotidianità o la sicurezza. Una diagnosi precoce può aiutare a influenzare favorevolmente il decorso e a costruire per tempo delle strutture.' },
-        { question: 'Le persone con demenza possono ancora vivere da sole?', answer: 'Nella fase 1 spesso sì, con supporto. Nella fase 2 solo con una chiara struttura della giornata e accompagnamento a ore. Nella fase 3, di norma, non più.' },
-        { question: 'Quanto costa un accompagnamento a ore nella demenza?', answer: 'Le tariffe orarie dipendono dalla qualifica impiegata; si aggiungono le maggiorazioni ai sensi del § 3b EStG (25 % di notte, 50 % la domenica/nei giorni festivi). Calcolo concreto nel primo colloquio gratuito.' },
-        { question: 'L\'assicurazione per la non autosufficienza copre i costi?', answer: 'Non direttamente — fatturiamo come prestazione a pagamento privato. L\'indennità di assistenza (Pflegegeld) e l\'importo di sgravio (Entlastungsbetrag) possono però essere usati in parte.' },
-      ],
-      cta: { text: 'Richiedere una consulenza', href: '/leistungen/pflegeberatung-berlin' },
-      relatedLinks: [
-        { label: 'Assistenza 24 ore su 24', href: '/leistungen/24-stunden-betreuung' },
-        { label: 'Veglie notturne a Berlino', href: '/leistungen/nachtwachen-berlin' },
-      ],
-    },
-  },
 
   // === Thema 6: Palliativ zu Hause =============================================
-  'palliativ-zuhause': {
-    slug: 'palliativ-zuhause',
-    title: 'Cure palliative a casa',
-    short: 'Ciò che serve perché il morire a casa possa riuscire.',
-    metaTitle: 'Cure palliative a casa a Berlino – una guida',
-    metaDescription:
-      'Cure palliative a casa a Berlino: SAPV, AAPV, servizi hospice, il nostro accompagnamento. Le spieghiamo le strutture e le Sue possibilità.',
-    h1: 'Cure palliative a casa — ciò che serve perché riescano',
-    primaryKeyword: 'cure palliative a domicilio Berlino',
-    detail: {
-      intro: [
-        'La maggior parte delle persone vuole morire a casa. Pochissime ci riescono. La differenza non sta nel desiderio — sta nell\'organizzazione. Le spieghiamo che cosa serve perché le cure palliative (Palliativversorgung) a casa possano funzionare.',
-      ],
-      sections: [
-        {
-          heading: 'Tre pilastri delle cure palliative domiciliari — più un quarto',
-          stronglist: [
-            { label: 'Pilastro 1: AAPV (cure palliative ambulatoriali generali)', text: 'Medico di famiglia + servizio di assistenza domiciliare con esperienza palliativa. Il caso standard. Funziona quando la sintomatologia è moderata.' },
-            { label: 'Pilastro 2: SAPV (cure palliative ambulatoriali specializzate)', text: 'Un\'équipe palliativa di medici e infermieri palliativisti viene a domicilio, è raggiungibile 24/7, si assume il controllo di sintomi complessi. Presupposto: prescrizione da parte dell\'ospedale o dello specialista. I costi li assume la cassa malattia.' },
-            { label: 'Pilastro 3: accompagnamento hospice', text: 'Servizi hospice volontari vengono a casa, sostengono i familiari, sono presenti senza essere di natura medica. Gratuito.' },
-            { label: 'Pilastro 4: accompagnamento 1:1 a pagamento privato (ciò che offriamo noi)', text: 'Quando la famiglia non può essere presente in modo continuativo, l\'accompagnamento volontario non basta, serve una presenza aggiuntiva e affidabile — subentriamo noi.' },
-          ],
-        },
-        {
-          heading: 'Chi guida tutto questo?',
-          paragraphs: [
-            'La responsabilità delle cure palliative spetta in linea di principio al medico di famiglia. In caso di SAPV coordina l\'équipe SAPV. In pratica molto viene organizzato dai familiari — qui spesso diamo una mano, perché le famiglie in questa fase sono sopraffatte.',
-          ],
-        },
-        {
-          heading: 'Ciò che le famiglie dovrebbero sapere',
-          stronglist: [
-            { label: 'Lasciar andare non è una mancanza', text: 'Quando la fase della vita giunge al termine, non tutte le opzioni mediche devono essere sfruttate. Le disposizioni anticipate di trattamento (Patientenverfügung) proteggono dal fatto che vengano proseguite terapie che nessuno vuole più.' },
-            { label: 'L\'assenza di dolore è possibile', text: 'Una buona terapia palliativa del dolore porta, in quasi tutti i casi, a una sofferenza controllabile. Se ha la sensazione che non sia controllata: chiami un altro medico, coinvolga la SAPV.' },
-            { label: 'L\'ultimo respiro può durare a lungo', text: 'Nel processo attivo del morire la respirazione diventa spesso irregolare, a volte per ore o giorni. Questo inquieta i familiari — ma per lo più non è una sofferenza per la persona morente. Un accompagnamento esperto può qui tranquillizzare molto.' },
-            { label: 'Non c\'è nulla da dire', text: 'Nelle ultime ore nessuno ha bisogno di un grande discorso. La presenza basta. Tenere la mano basta.' },
-          ],
-        },
-        {
-          heading: 'Ciò che possiamo concretamente offrire',
-          list: [
-            'Veglie notturne, perché la famiglia possa dormire.',
-            'Accompagnamento nel fine settimana, perché i familiari possano tirare il fiato.',
-            'Assistenza 24 ore su 24 negli ultimi 2-5 giorni, quando il processo del morire è iniziato.',
-            'Accompagnamento dopo la morte — finché non arrivano l\'impresa funebre e il medico.',
-          ],
-        },
-      ],
-      faq: [
-        { question: 'Chi decide se la SAPV viene prescritta?', answer: 'La prescrizione arriva dal medico di famiglia, da un ospedale o da uno specialista. Presupposto è una situazione palliativa complessa.' },
-        { question: 'Si può ricevere assistenza palliativa a casa anche senza SAPV?', answer: 'Sì, con l\'AAPV (medico di famiglia + servizio di assistenza) e servizi hospice integrativi. Spesso interveniamo dove questo non basta.' },
-        { question: 'Quanto velocemente è possibile un accompagnamento alla morte?', answer: 'In modo affidabile con 24 ore di preavviso, nelle emergenze spesso lo stesso giorno.' },
-        { question: 'Un\'assicurazione copre il nostro accompagnamento?', answer: 'Di norma no. Alcune assicurazioni sanitarie private rimborsano in parte — volentieri Le forniamo una fattura adatta alla presentazione.' },
-      ],
-      cta: { text: 'Richiedere un primo colloquio', href: '/#kontakt' },
-      relatedLinks: [
-        { label: 'Veglie notturne a Berlino', href: '/leistungen/nachtwachen-berlin' },
-        { label: 'Assistenza 24 ore su 24', href: '/leistungen/24-stunden-betreuung' },
-      ],
-    },
-  },
 
 
   // === Thema 8: Wohnungsauflösung im Pflegefall ================================

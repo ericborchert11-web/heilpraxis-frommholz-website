@@ -130,7 +130,6 @@ export const STANDORTE: readonly SeoStandort[] = [
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Reisebegleitung für Senioren', href: '/leistungen/reisebegleitung-senioren', note: 'oft für Heimreisen diplomatischer Klient*innen relevant' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'unser direkt angrenzender Standort' },
       ],
     },
@@ -228,7 +227,6 @@ export const STANDORTE: readonly SeoStandort[] = [
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
         { label: '1:1-Betreuung zu Hause', href: '/leistungen/1-zu-1-betreuung-berlin', note: 'oft auf Stundenbasis' },
-        { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Pflegeberatung', href: '/leistungen/pflegeberatung-berlin' },
       ],
     },
@@ -450,7 +448,7 @@ export const STANDORTE: readonly SeoStandort[] = [
       faq: [
         { question: 'Wir wohnen in der Onkel-Tom-Straße. Können Sie auch in die kleinen Reihenhäuser?', answer: 'Selbstverständlich. Die Größe der Wohnung spielt für uns keine Rolle.' },
         { question: 'Können Ihre Mitarbeitenden auch im Garten helfen?', answer: 'Die eigentliche Gartenarbeit ist nicht unsere Aufgabe — dafür gibt es Gartenservices. Aber die Begleitung der Klient*innen in den Garten, das Hineinsetzen in den Liegestuhl, das gemeinsame Beobachten der Rosen — all das gehört zu unserer Arbeit.' },
-        { question: 'Wir wollen unsere Mutter, die in Bayern lebt, zu uns nach Zehlendorf holen. Wie organisieren wir das?', answer: 'Wir helfen. Reisebegleitung von Bayern hierher, anschließende Betreuung in Zehlendorf, Aufbau der Versorgungsstruktur. Erstgespräch am besten 4-6 Wochen vor dem geplanten Umzug.' },
+        { question: 'Wir wollen unsere Mutter, die in Bayern lebt, zu uns nach Zehlendorf holen. Wie organisieren wir das?', answer: 'Wir helfen bei der Versorgung nach der Ankunft: Betreuung in Zehlendorf, Aufbau der Versorgungsstruktur, Begleitung zu Terminen. Erstgespräch am besten 4-6 Wochen vor dem geplanten Umzug.' },
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
@@ -510,7 +508,6 @@ export const STANDORTE: readonly SeoStandort[] = [
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler' },
         { label: 'Zehlendorf', href: '/standorte/zehlendorf', note: 'direkt angrenzend' },
         { label: 'Grunewald', href: '/standorte/grunewald', note: 'benachbart' },
-        { label: 'Demenz-Begleitung', href: '/themen/demenz-begleitung' },
         { label: 'Kleinmachnow', href: '/standorte/kleinmachnow', note: 'grenznah' },
       ],
     },
@@ -561,7 +558,6 @@ export const STANDORTE: readonly SeoStandort[] = [
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler' },
         { label: 'Wilmersdorf', href: '/standorte/wilmersdorf', note: 'direkt angrenzend' },
         { label: 'Grunewald', href: '/standorte/grunewald', note: 'direkt angrenzend' },
-        { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin' },
       ],
     },
   },
@@ -716,7 +712,6 @@ export const STANDORTE: readonly SeoStandort[] = [
       relatedLinks: [
         { label: 'Moabit', href: '/standorte/moabit', note: 'unser Sitz' },
         { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung' },
-        { label: 'Demenz-Begleitung', href: '/themen/demenz-begleitung' },
       ],
     },
   },

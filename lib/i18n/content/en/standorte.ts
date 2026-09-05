@@ -116,7 +116,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
       cta: { text: 'Request a first conversation', href: '/#kontakt' },
       relatedLinks: [
         { label: 'Private-pay home care service', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Travel companionship for older people', href: '/leistungen/reisebegleitung-senioren', note: 'often relevant for diplomatic clients travelling home' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'our own base, immediately adjacent' },
       ],
     },
@@ -212,7 +211,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Request a first conversation', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Overnight care in Berlin', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Care advice', href: '/leistungen/pflegeberatung-berlin' },
       ],
     },
@@ -493,7 +491,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
         { label: 'Private-pay home care service', href: '/leistungen/pflegedienst-selbstzahler' },
         { label: 'Zehlendorf', href: '/standorte/zehlendorf', note: 'immediately adjacent' },
         { label: 'Grunewald', href: '/standorte/grunewald', note: 'neighbouring' },
-        { label: 'Support with dementia', href: '/themen/demenz-begleitung' },
         { label: 'Kleinmachnow', href: '/standorte/kleinmachnow', note: 'just over the city boundary' },
       ],
     },
@@ -544,7 +541,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
         { label: 'Private-pay home care service', href: '/leistungen/pflegedienst-selbstzahler' },
         { label: 'Wilmersdorf', href: '/standorte/wilmersdorf', note: 'immediately adjacent' },
         { label: 'Grunewald', href: '/standorte/grunewald', note: 'immediately adjacent' },
-        { label: 'Overnight care in Berlin', href: '/leistungen/nachtwachen-berlin' },
       ],
     },
   },
@@ -699,7 +695,6 @@ export const STANDORTE_EN: Overlay<SeoStandort> = {
       relatedLinks: [
         { label: 'Moabit', href: '/standorte/moabit', note: 'our own base' },
         { label: 'Round-the-clock care', href: '/leistungen/24-stunden-betreuung' },
-        { label: 'Support with dementia', href: '/themen/demenz-begleitung' },
       ],
     },
   },
