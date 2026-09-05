@@ -116,7 +116,6 @@ export const STANDORTE_ES: Overlay<SeoStandort> = {
       cta: { text: 'Solicitar una primera conversación', href: '/#kontakt' },
       relatedLinks: [
         { label: 'Cuidado a domicilio de pago privado', href: '/leistungen/pflegedienst-selbstzahler' },
-        { label: 'Acompañamiento en viajes para mayores', href: '/leistungen/reisebegleitung-senioren', note: 'a menudo relevante para los viajes de regreso de clientes diplomáticos' },
         { label: 'Moabit', href: '/standorte/moabit', note: 'nuestra sede, directamente contigua' },
       ],
     },
@@ -212,7 +211,6 @@ export const STANDORTE_ES: Overlay<SeoStandort> = {
       ],
       cta: { text: 'Solicitar una primera conversación', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Guardias nocturnas en Berlín', href: '/leistungen/nachtwachen-berlin' },
         { label: 'Asesoramiento en materia de cuidados', href: '/leistungen/pflegeberatung-berlin' },
       ],
     },
@@ -493,7 +491,6 @@ export const STANDORTE_ES: Overlay<SeoStandort> = {
         { label: 'Cuidado a domicilio de pago privado', href: '/leistungen/pflegedienst-selbstzahler' },
         { label: 'Zehlendorf', href: '/standorte/zehlendorf', note: 'directamente contiguo' },
         { label: 'Grunewald', href: '/standorte/grunewald', note: 'colindante' },
-        { label: 'Acompañamiento en demencia', href: '/themen/demenz-begleitung' },
         { label: 'Kleinmachnow', href: '/standorte/kleinmachnow', note: 'junto al límite urbano' },
       ],
     },
@@ -544,7 +541,6 @@ export const STANDORTE_ES: Overlay<SeoStandort> = {
         { label: 'Cuidado a domicilio de pago privado', href: '/leistungen/pflegedienst-selbstzahler' },
         { label: 'Wilmersdorf', href: '/standorte/wilmersdorf', note: 'directamente contiguo' },
         { label: 'Grunewald', href: '/standorte/grunewald', note: 'directamente contiguo' },
-        { label: 'Guardias nocturnas en Berlín', href: '/leistungen/nachtwachen-berlin' },
       ],
     },
   },
@@ -699,7 +695,6 @@ export const STANDORTE_ES: Overlay<SeoStandort> = {
       relatedLinks: [
         { label: 'Moabit', href: '/standorte/moabit', note: 'nuestra sede' },
         { label: 'Atención las veinticuatro horas', href: '/leistungen/24-stunden-betreuung' },
-        { label: 'Acompañamiento en demencia', href: '/themen/demenz-begleitung' },
       ],
     },
   },
