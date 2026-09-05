@@ -77,7 +77,6 @@ export const THEMEN: readonly SeoThema[] = [
       cta: { text: 'Pflegeberatung anfragen', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
         { label: 'MDK-Begutachtung vorbereiten', href: '/themen/mdk-begutachtung' },
-        { label: 'Verhinderungspflege nutzen', href: '/themen/verhinderungspflege' },
         { label: 'Entlastungsbudget', href: '/themen/entlastungsbudget' },
       ],
     },
@@ -134,7 +133,6 @@ export const THEMEN: readonly SeoThema[] = [
       ],
       cta: { text: 'Pflegeberatung anfragen', href: '/leistungen/pflegeberatung-berlin' },
       relatedLinks: [
-        { label: 'Verhinderungspflege', href: '/themen/verhinderungspflege' },
         { label: 'Pflegegrad beantragen', href: '/themen/pflegegrad-beantragen' },
       ],
     },

@@ -108,9 +108,7 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       ],
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
-        { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin', note: 'wenn nur die Nächte abgedeckt werden müssen' },
         { label: '24-Stunden-Betreuung', href: '/leistungen/24-stunden-betreuung', note: 'durchgehende Versorgung im Wechseldienst' },
-        { label: 'Demenz-Begleitung', href: '/themen/demenz-begleitung', note: 'Hintergrund zur Begleitung Demenzerkrankter' },
       ],
     },
   },
@@ -325,7 +323,6 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       cta: { text: 'Erstgespräch anfragen', href: '/#kontakt' },
       relatedLinks: [
         { label: 'Pflegedienst für Selbstzahler', href: '/leistungen/pflegedienst-selbstzahler', note: 'unsere Grundausrichtung' },
-        { label: 'Nachtwachen Berlin', href: '/leistungen/nachtwachen-berlin', note: 'wenn nur die Nacht abgedeckt werden muss' },
         { label: 'Pflegeberatung', href: '/leistungen/pflegeberatung-berlin', note: 'zu Pflegegrad und Finanzierung' },
       ],
     },
@@ -398,7 +395,6 @@ export const LEISTUNGEN_SEO: readonly SeoLeistung[] = [
       relatedLinks: [
         { label: 'Pflegegrad beantragen', href: '/themen/pflegegrad-beantragen', note: 'die konkrete Anleitung' },
         { label: 'MDK-Begutachtung', href: '/themen/mdk-begutachtung', note: 'was Sie erwartet' },
-        { label: 'Verhinderungspflege', href: '/themen/verhinderungspflege', note: 'der oft unterschätzte Anspruch' },
       ],
     },
   },

@@ -48,23 +48,12 @@ export const LEISTUNGEN_ES: Overlay<Leistung> = {
     card: {
       lead: 'Para cuando un familiar cuidador necesita un respiro — unas vacaciones, una enfermedad o, sencillamente, un momento para tomar aliento. Nosotros asumimos el relevo, con toda fiabilidad.',
     },
-    href: '/themen/verhinderungspflege',
-    detail: emptyDetail,
-  },
-  reisebegleitung: {
-    slug: 'reisebegleitung',
-    numeral: 'IV.',
-    title: 'Acompañamiento en viajes',
-    iconKey: 'travel',
-    card: {
-      lead: 'Viajes acompañados para personas que necesitan cuidados — una cura de salud, una visita a la familia, unas vacaciones. En cooperación con nuestra asociación asociada Leben Pflegen Reisen e.V.',
-    },
-    href: '/leistungen/reisebegleitung-senioren',
+    href: '/leistungen',
     detail: emptyDetail,
   },
   pflegeberatung: {
     slug: 'pflegeberatung',
-    numeral: 'V.',
+    numeral: 'IV.',
     title: 'Asesoramiento en materia de cuidados',
     iconKey: 'document',
     card: {
@@ -75,7 +64,7 @@ export const LEISTUNGEN_ES: Overlay<Leistung> = {
   },
   inklusionsberatung: {
     slug: 'inklusionsberatung',
-    numeral: 'VI.',
+    numeral: 'V.',
     title: 'Asesoramiento en materia de inclusión',
     iconKey: 'people',
     card: {

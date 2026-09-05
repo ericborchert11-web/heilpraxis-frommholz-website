@@ -35,14 +35,6 @@ export function LeistungIcon({ iconKey, className = '' }: Props) {
           <path d="M10 28 L10 38 C10 42 14 46 18 46 L38 46 C42 46 46 42 46 38 L46 28" />
         </svg>
       );
-    case 'travel':
-      return (
-        <svg {...common}>
-          <path d="M8 38 L28 18 L48 38" />
-          <path d="M14 32 L14 46 L42 46 L42 32" />
-          <path d="M24 46 L24 36 L32 36 L32 46" />
-        </svg>
-      );
     case 'document':
       return (
         <svg {...common}>
