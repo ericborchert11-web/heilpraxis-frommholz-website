@@ -14,46 +14,58 @@
 
 ---
 
-### Task 1: Middleware von 410 auf 301 umstellen
+### Task 1: Weiterleitungs-Landkarte anlegen und auf die Next-16-Konvention wechseln
 
-Die Abbildung enthält von Anfang an alle 36 Adressen. Die fünf noch existierenden Seiten werden dadurch sofort von der Weiterleitung verdeckt — das ist gewollt, die Löschung in Task 2–4 ist danach nur noch Aufräumen.
+Zwei Dinge in einem Schritt, weil sie dieselbe Datei betreffen:
+
+1. **410 wird 301.** Die Abbildung enthält von Anfang an alle 36 Adressen. Die fünf noch existierenden Seiten werden dadurch sofort von der Weiterleitung verdeckt — das ist gewollt, die Löschung in Task 2–4 ist danach nur noch Aufräumen.
+2. **`middleware.ts` wird `proxy.ts`.** Next.js 16 hat die Datei umbenannt und den Export von `middleware` auf `proxy` gedreht; die alte Form ist deprecated (`node_modules/next/dist/docs/01-app/02-guides/upgrading/version-16.md`). `AGENTS.md` verlangt, Deprecation-Hinweise zu beachten.
+
+Die Landkarte liegt in `lib/weiterleitungen.ts`, nicht in `proxy.ts`: Die API-Referenz sagt, die Proxy-Datei solle genau eine Funktion plus `config` exportieren (`node_modules/next/dist/docs/01-app/03-api-reference/03-file-conventions/proxy.md`). Getrennt ist die Landkarte außerdem ohne Next-Laufzeit testbar.
 
 **Files:**
-- Modify: `middleware.ts`
-- Test: `tests/middleware.test.ts`
+- Create: `lib/weiterleitungen.ts`
+- Create: `proxy.ts`
+- Delete: `middleware.ts`
+- Test: `tests/weiterleitungen.test.ts` (neu), `tests/middleware.test.ts` (gelöscht)
 
-- [ ] **Step 1: Test komplett ersetzen**
+- [ ] **Step 1: Test schreiben**
 
-Inhalt von `tests/middleware.test.ts`:
+Neue Datei `tests/weiterleitungen.test.ts`:
 
 ```ts
 import { describe, expect, it } from 'vitest';
 import { NextRequest } from 'next/server';
-import { middleware, WEITERLEITUNGEN } from '@/middleware';
+import { WEITERLEITUNGEN } from '@/lib/weiterleitungen';
+import { proxy } from '@/proxy';
 
 function anfrage(pfad: string) {
   return new NextRequest(new URL(`https://heilpraxis-frommholz.de${pfad}`));
 }
 
 describe('301 auf den Verein', () => {
-  it('deckt fünf Themen in vier Sprachen ab — 36 Adressen', () => {
+  it('deckt neun Seiten in vier Sprachen ab — 36 Adressen', () => {
     // 4 alte Krankenhaus-Adressen + 5 neue, jeweils de/en/es/it.
     expect(Object.keys(WEITERLEITUNGEN)).toHaveLength(36);
   });
 
-  it('antwortet auf jede Adresse mit 301 und einem Ziel beim Verein', () => {
-    for (const pfad of Object.keys(WEITERLEITUNGEN)) {
-      const antwort = middleware(anfrage(pfad));
-      expect(antwort.status, pfad).toBe(301);
-      expect(antwort.headers.get('location'), pfad).toMatch(
-        /^https:\/\/lebenpflegenreisen\.de\/[a-z-]+\/$/,
-      );
+  it('zeigt ausschliesslich auf Adressen des Vereins', () => {
+    for (const [pfad, ziel] of Object.entries(WEITERLEITUNGEN)) {
+      expect(ziel, pfad).toMatch(/^https:\/\/lebenpflegenreisen\.de\/[a-z-]+\/$/);
     }
   });
 
-  it('leitet auch mit abschließendem Schrägstrich weiter', () => {
+  it('antwortet auf jede Adresse mit 301 und dem hinterlegten Ziel', () => {
+    for (const [pfad, ziel] of Object.entries(WEITERLEITUNGEN)) {
+      const antwort = proxy(anfrage(pfad));
+      expect(antwort.status, pfad).toBe(301);
+      expect(antwort.headers.get('location'), pfad).toBe(ziel);
+    }
+  });
+
+  it('leitet auch mit abschliessendem Schraegstrich weiter', () => {
     for (const pfad of Object.keys(WEITERLEITUNGEN)) {
-      expect(middleware(anfrage(`${pfad}/`)).status, pfad).toBe(301);
+      expect(proxy(anfrage(`${pfad}/`)).status, pfad).toBe(301);
     }
   });
 
@@ -78,7 +90,7 @@ describe('301 auf den Verein', () => {
     expect(WEITERLEITUNGEN['/themen/palliativ-zuhause']).toBe('https://lebenpflegenreisen.de/beistand-lebensende/');
   });
 
-  it('lässt lebende Adressen durch', () => {
+  it('laesst lebende Adressen durch', () => {
     const lebend = [
       '/',
       '/leistungen',
@@ -91,39 +103,40 @@ describe('301 auf den Verein', () => {
       '/it/servizi/assistenza-individuale-a-domicilio-berlino',
     ];
     for (const pfad of lebend) {
-      expect(middleware(anfrage(pfad)).status, pfad).not.toBe(301);
+      expect(proxy(anfrage(pfad)).status, pfad).not.toBe(301);
     }
   });
 });
 ```
 
-- [ ] **Step 2: Test laufen lassen, Fehlschlag bestätigen**
+- [ ] **Step 2: Test laufen lassen, Fehlschlag bestaetigen**
 
-Run: `npm test -- tests/middleware.test.ts`
-Expected: FAIL — `WEITERLEITUNGEN` wird nicht exportiert.
+Run: `npm test -- tests/weiterleitungen.test.ts`
+Expected: FAIL — weder `@/lib/weiterleitungen` noch `@/proxy` existieren.
 
-- [ ] **Step 3: Middleware neu schreiben**
+- [ ] **Step 3: Die Landkarte anlegen**
 
-Inhalt von `middleware.ts`:
+Neue Datei `lib/weiterleitungen.ts`:
 
 ```ts
-import { NextResponse, type NextRequest } from 'next/server';
-
 /**
- * Sitzwachen und begleitete Reisen sind Sache des gemeinnützigen Vereins
+ * Sitzwachen und begleitete Reisen sind Sache des gemeinnuetzigen Vereins
  * Leben Pflegen Reisen e.V., nicht der Heilpraxis. Damit beide Domains sich
- * nicht länger auf denselben Suchanfragen gegenseitig ausbieten, gibt die
+ * nicht laenger auf denselben Suchanfragen gegenseitig ausbieten, gibt die
  * Heilpraxis diese Adressen an den Verein ab.
  *
- * 301 statt 410: Eine dauerhafte Weiterleitung überträgt die aufgebaute
+ * 301 statt 410: Eine dauerhafte Weiterleitung uebertraegt die aufgebaute
  * Ranking-Kraft an das Ziel, ein 410 wirft sie weg. Die vier Sprachfassungen
  * zeigen auf dieselbe deutsche Vereinsseite — der Verein hat keine
- * Übersetzungen, und ein Sprachbruch ist besser als eine tote Adresse.
+ * Uebersetzungen, und ein Sprachbruch ist besser als eine tote Adresse.
+ *
+ * Absichtlich getrennt von `proxy.ts`: Die Proxy-Datei soll laut Next-16-Doku
+ * genau eine Funktion plus `config` exportieren.
  */
 const VEREIN = 'https://lebenpflegenreisen.de';
 
 export const WEITERLEITUNGEN: Record<string, string> = {
-  // Sitzwachen — das Angebot im Überblick
+  // Sitzwachen — das Angebot im Ueberblick
   '/leistungen/sitzwachen-berlin': `${VEREIN}/sitzwachen/`,
   '/en/services/bedside-companion-berlin': `${VEREIN}/sitzwachen/`,
   '/es/servicios/acompanamiento-al-paciente-berlin': `${VEREIN}/sitzwachen/`,
@@ -176,8 +189,25 @@ export const WEITERLEITUNGEN: Record<string, string> = {
   '/es/guias/cuidados-paliativos-en-casa': `${VEREIN}/beistand-lebensende/`,
   '/it/guide/cure-palliative-a-domicilio': `${VEREIN}/beistand-lebensende/`,
 };
+```
 
-export function middleware(request: NextRequest) {
+- [ ] **Step 4: `proxy.ts` anlegen und `middleware.ts` loeschen**
+
+```bash
+git rm middleware.ts tests/middleware.test.ts
+```
+
+Neue Datei `proxy.ts`:
+
+```ts
+import { NextResponse, type NextRequest } from 'next/server';
+import { WEITERLEITUNGEN } from '@/lib/weiterleitungen';
+
+/**
+ * Heisst `proxy` und nicht mehr `middleware`: Next.js 16 hat die Konvention
+ * umbenannt, die alte Form ist deprecated.
+ */
+export function proxy(request: NextRequest) {
   const pfad = request.nextUrl.pathname.replace(/\/+$/, '') || '/';
   const ziel = WEITERLEITUNGEN[pfad];
   if (ziel) {
@@ -191,16 +221,21 @@ export const config = {
 };
 ```
 
-- [ ] **Step 4: Test laufen lassen, Erfolg bestätigen**
+- [ ] **Step 5: Test laufen lassen, Erfolg bestaetigen**
 
-Run: `npm test -- tests/middleware.test.ts`
-Expected: PASS, 6 Tests.
+Run: `npm test -- tests/weiterleitungen.test.ts`
+Expected: PASS, 7 Tests.
 
-- [ ] **Step 5: Committen**
+- [ ] **Step 6: Pruefen, dass Next die neue Datei annimmt**
+
+Run: `npm run build`
+Expected: erfolgreicher Bau, **keine** Deprecation-Warnung zu `middleware`. Erscheint eine Warnung, dass keine Proxy-Datei gefunden wurde, liegt `proxy.ts` im falschen Verzeichnis — sie gehoert neben `app/`, also ins Projektwurzelverzeichnis.
+
+- [ ] **Step 7: Committen**
 
 ```bash
-git add middleware.ts tests/middleware.test.ts
-git commit -m "feat: 36 Adressen per 301 an den Verein statt 410"
+git add lib/weiterleitungen.ts proxy.ts tests/weiterleitungen.test.ts
+git commit -m "feat: 36 Adressen per 301 an den Verein, middleware.ts auf proxy.ts gedreht"
 ```
 
 ---
@@ -222,7 +257,7 @@ import { LEISTUNGEN_SEO } from '@/lib/leistungen-seo';
 import { THEMEN } from '@/lib/themen';
 import { LEISTUNGEN } from '@/lib/leistungen';
 import { STANDORTE } from '@/lib/standorte';
-import { WEITERLEITUNGEN } from '@/middleware';
+import { WEITERLEITUNGEN } from '@/lib/weiterleitungen';
 
 /** Jeder interne Link, den die Website irgendwo ausgibt. */
 function alleInternenLinks(): string[] {
