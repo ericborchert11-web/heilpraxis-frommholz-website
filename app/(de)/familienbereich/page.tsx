@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   description:
     'Als Angehörige jederzeit im Bild: Dienstpläne, Rechnungen und Pflegedokumentation im geschützten Familienbereich. Für alle Klient:innen der Heilpraxis Frommholz inklusive.',
   ...pageMeta('/familienbereich'),
-  robots: { index: true, follow: true },
 };
 
 export default function Page() {

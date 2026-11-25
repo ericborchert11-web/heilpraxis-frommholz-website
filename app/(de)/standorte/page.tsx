@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: 'Standorte in Berlin',
   description: 'Wo wir pflegen in Berlin — Schwerpunkte in Charlottenburg, Wilmersdorf, Zehlendorf, Grunewald und Mitte. Überblick aller Stadtteile.',
   ...pageMeta('/standorte'),
-  robots: { index: true, follow: true },
 };
 
 export default function Page() {

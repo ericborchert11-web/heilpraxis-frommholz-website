@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: 'AGB',
   description: 'Allgemeine Geschäftsbedingungen für Pflege- und Begleitleistungen der Heilpraxis Frommholz.',
   ...pageMeta('/agb'),
-  robots: { index: true, follow: true },
 };
 
 export default function AgbPage() {

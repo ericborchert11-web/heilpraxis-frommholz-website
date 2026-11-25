@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: 'Impressum',
   description: `Impressum und rechtliche Angaben der ${SITE.name}, Inh. ${BUSINESS.owner}, ${BUSINESS.address.streetLong}, ${BUSINESS.address.zip} ${BUSINESS.address.city}.`,
   ...pageMeta('/impressum'),
-  robots: { index: true, follow: true },
 };
 
 export default function ImpressumPage() {

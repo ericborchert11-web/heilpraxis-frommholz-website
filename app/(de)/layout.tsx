@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   },
   description: SITE.description,
   ...pageMeta('/'),
-  // Kein `robots`-Feld: „index, follow" ist ohnehin das Crawler-Verhalten
-  // ohne Meta-Tag. Gesetzt im Root-Layout galt es auch für 404-Seiten und
-  // stand dort im Widerspruch zu Nexts automatischem `noindex` — die Seite
-  // trug beide Tags gleichzeitig.
+  // Seite bewusst aus Suchmaschinen raus (25.11.2026), zusätzlich zum
+  // X-Robots-Tag-Header in next.config.ts. Deckt sich mit Nexts
+  // automatischem `noindex` der 404-Seite, widerspricht ihm also nicht mehr.
+  robots: { index: false, follow: true },
 };
 
 export default function DeRootLayout({ children }: { children: React.ReactNode }) {

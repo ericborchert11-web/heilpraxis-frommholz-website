@@ -24,7 +24,6 @@ export async function generateMetadata(
     title: { absolute: l.metaTitle },
     description: l.metaDescription,
     ...pageMeta(`/leistungen/${l.slug}`),
-    robots: { index: true, follow: true },
     keywords: [l.primaryKeyword, ...l.secondaryKeywords],
   };
 }

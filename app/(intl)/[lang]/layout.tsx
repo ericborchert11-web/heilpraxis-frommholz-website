@@ -25,8 +25,8 @@ export async function generateMetadata({
     // kommen mit den Übersetzungen (Aufgabe 11/12).
     title: { default: SITE.name, template: `%s · ${SITE.name}` },
     openGraph: { locale: OG_LOCALE[lang] },
-    // Kein `robots`-Feld — siehe app/(de)/layout.tsx: es widerspräche sonst
-    // dem automatischen `noindex` der 404-Seite.
+    // Seite bewusst aus Suchmaschinen raus — siehe app/(de)/layout.tsx.
+    robots: { index: false, follow: true },
   };
 }
 

@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   title: 'Karriere — Pflegejobs Berlin',
   description: 'Pflegejob bei Heilpraxis Frommholz: ohne klassischen Schichtdienst, mit Zeit pro Klient*in, korrekt nach Arbeitsrecht. Auch für Rentner*innen und Quereinsteiger*innen.',
   ...pageMeta('/karriere'),
-  robots: { index: true, follow: true },
 };
 
 export default function KarriereHubPage() {

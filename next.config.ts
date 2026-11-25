@@ -30,6 +30,12 @@ const nextConfig: NextConfig = {
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
           { key: 'Content-Security-Policy', value: cspHeader },
+          // Seite bewusst aus Suchmaschinen raus (Entscheidung 25.11.2026):
+          // direkt aufrufbar, aber nicht über Suchbegriffe auffindbar. Als
+          // Header statt nur Meta-Tag, damit es auch für Bilder und PDFs gilt.
+          // `follow` bleibt erlaubt (Links zum Verein zählen weiter).
+          // robots.txt darf NICHT sperren, sonst sieht Google das noindex nie.
+          { key: 'X-Robots-Tag', value: 'noindex' },
         ],
       },
     ];

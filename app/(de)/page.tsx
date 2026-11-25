@@ -5,7 +5,6 @@ import { HomePage } from '@/components/pages/HomePage';
 // 404-Seite und widersprach Nexts automatischem `noindex`. Alle übrigen
 // deutschen Seiten setzen `robots` ohnehin selbst.
 export const metadata: Metadata = {
-  robots: { index: true, follow: true },
 };
 
 export default function Page() {

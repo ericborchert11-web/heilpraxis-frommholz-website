@@ -23,7 +23,6 @@ export async function generateMetadata(
     title: { absolute: t.metaTitle },
     description: t.metaDescription,
     ...pageMeta(`/themen/${t.slug}`),
-    robots: { index: true, follow: true },
     keywords: [t.primaryKeyword],
   };
 }
